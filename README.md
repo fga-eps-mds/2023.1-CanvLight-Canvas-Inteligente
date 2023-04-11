@@ -1,1 +1,1 @@
-# Repositório brabo do Grupo 2 de MDS
+# Repositório Brabo sobre o projeto do Canvas Inteligente
