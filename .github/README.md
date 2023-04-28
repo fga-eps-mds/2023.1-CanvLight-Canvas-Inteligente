@@ -2,11 +2,11 @@
 
   Bem-vindo ao nosso repositório do projeto de **Matéria de Métodos e Desenvolvimento de Software (MDS)**. Nós somos um grupo de estudantes apaixonados por tecnologia e inovação, e criamos este Canvas Inteligente para ajudar as pessoas a organizar e gerenciar suas ideias de forma mais eficiente.
 ##
-[Link do Pages](https://fga-eps-mds.github.io/2023.1-Canvas-Inteligente/)
+### [Canvas inteligente Web App](https://fga-eps-mds.github.io/2023.1-Canvas-Inteligente/) ⚛️🚀
 ##
   Nosso projeto foi desenvolvido usando as mais recentes tecnologias e práticas de desenvolvimento de software, para garantir que ele seja rápido, confiável e fácil de usar. Nosso Canvas Inteligente é intuitivo e totalmente personalizável, permitindo que você organize suas ideias e projetos da maneira que melhor se adapta a você.
 
-Algumas das principais características do nosso Canvas Inteligente incluem:
+Algumas das principais características do nosso Canvas Inteligente incluem: 
 
 - Interface de usuário intuitiva e fácil de usar.
 - Personalização completa para atender às suas necessidades.
