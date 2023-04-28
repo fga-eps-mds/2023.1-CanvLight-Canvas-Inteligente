@@ -1,6 +1,7 @@
 {
   "name": "2023.1-canvas-inteligente",
   "version": "0.1.0",
+  "homepage": "2023.1-Canvas-Inteligente",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
