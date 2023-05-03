@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+.navbar{
+    display: flex;
+    background: #FF9000;
+    height: 90px;
+    color: white;
+}
+
+.logo{
+    width: 50%;
+    float: left;
+    padding: 30px 30px;
+    font-size: 20px;
+    /* background: #fff; */
+}
+
+.desktop{
+    width: 50%;
+    float: right;
+}
+
+.desktop ul{
+    float: right;
+}
+
+.desktop ul li{
+    float: left;
+    list-style-type: none;
+    padding: 30px 30px;
+    font-size: 20px;
+}
+
+
+
+
+
