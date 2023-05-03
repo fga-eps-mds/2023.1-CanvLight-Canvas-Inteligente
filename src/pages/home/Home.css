@@ -39,6 +39,22 @@
     font-size: 20px;
 }
 
+.sobre{
+    display: inline-block
+}
+
+.sobre h2{
+    text-align: center;
+    margin: 40px;
+    color: #FF9000;
+    font-size: 30px;
+}
+
+.sobre p{
+    text-align: justify;
+    margin: 10px;
+}
+
 
 
 
