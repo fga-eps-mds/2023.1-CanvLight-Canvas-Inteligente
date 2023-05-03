@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/2023.1-Canvas-Inteligente/static/css/main.15b98904.css",
-    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.b46049f9.js",
+    "main.css": "/2023.1-Canvas-Inteligente/static/css/main.bc3758c6.css",
+    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.d1b4a787.js",
     "static/js/787.cee539d5.chunk.js": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js",
     "index.html": "/2023.1-Canvas-Inteligente/index.html",
-    "main.15b98904.css.map": "/2023.1-Canvas-Inteligente/static/css/main.15b98904.css.map",
-    "main.b46049f9.js.map": "/2023.1-Canvas-Inteligente/static/js/main.b46049f9.js.map",
+    "main.bc3758c6.css.map": "/2023.1-Canvas-Inteligente/static/css/main.bc3758c6.css.map",
+    "main.d1b4a787.js.map": "/2023.1-Canvas-Inteligente/static/js/main.d1b4a787.js.map",
     "787.cee539d5.chunk.js.map": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15b98904.css",
-    "static/js/main.b46049f9.js"
+    "static/css/main.bc3758c6.css",
+    "static/js/main.d1b4a787.js"
   ]
 }
