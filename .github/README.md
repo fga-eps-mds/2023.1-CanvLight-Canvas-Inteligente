@@ -31,7 +31,9 @@ git clone https://github.com/seu-username/nome-do-repositorio.git
 ```
 - Abra o terminal na pasta raiz do projeto e execute o seguinte comando para instalar as dependências do projeto:
 
-```npm install```
+```
+npm install
+```
 
 - Agora que as dependências estão instaladas, execute o seguinte comando na raiz do repositório para iniciar o projeto:
 ```
