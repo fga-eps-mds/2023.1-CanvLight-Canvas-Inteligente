@@ -1,7 +1,7 @@
 | Controle de Horas Trabalhadas - Sprint 4 |  |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Feriado? | Data | Nome (Colaborador) | Entrada | Saída intervalo | Retorno intervalo | Saída | Total horas |  | Nome (Colaborador) | Total horas do sprint |
-|  | 27/04/2023 | BrenoA | 20:30 |  |  | 22:00 | 1:30:00 |  | BrenoA | 01:30 |
+|  | 27/04/2023 | BrenoA | 20:30 |  |  | 22:00 | 1:30:00 |  | BrenoA | 02:59 |
 |  | 27/04/2023 | Felipe | 20:00 |  |  | 23:00 | 3:00:00 |  | Bruno | 01:30 |
 |  | 27/04/2023 | Bruno | 20:30 |  |  | 22:00 | 1:30:00 |  | Felipe | 04:30 |
 |  | 27/04/2023 | Raquel | 20:30 |  |  | 22:00 | 1:30:00 |  | Henrique | 01:30 |
@@ -14,3 +14,4 @@
 |  | 03/05/2023 | Pedro | 08:00 |  |  | 09:30 | 1:30:00 |  |  |  |
 |  | 03/05/2023 | Pedro | 17:30 |  |  | 19:30 | 2:00:00 |  |  |  |
 |  | 03/05/2023 | Pedro | 08:00 |  |  | 09:20 | 1:20:00 |  |  |  |
+|  | 27/04/2023 | BrenoA | 10:07 | 10:30 | 14:54 | 16:00 | 1:29:00 |  |  |  |
