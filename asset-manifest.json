@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/2023.1-Canvas-Inteligente/static/css/main.95fec30c.css",
-    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.9972eb2d.js",
+    "main.css": "/2023.1-Canvas-Inteligente/static/css/main.ab8858a3.css",
+    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.283f60d2.js",
     "static/js/787.cee539d5.chunk.js": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js",
     "static/media/cerebro.png": "/2023.1-Canvas-Inteligente/static/media/cerebro.df23f6ed5cb0d7377d78.png",
     "static/media/Cabeceira.jpg": "/2023.1-Canvas-Inteligente/static/media/Cabeceira.9abf80df00f7a21cd320.jpg",
+    "static/media/limirio.jpg": "/2023.1-Canvas-Inteligente/static/media/limirio.1e3dd943d8b66fff7980.jpg",
     "index.html": "/2023.1-Canvas-Inteligente/index.html",
-    "main.95fec30c.css.map": "/2023.1-Canvas-Inteligente/static/css/main.95fec30c.css.map",
-    "main.9972eb2d.js.map": "/2023.1-Canvas-Inteligente/static/js/main.9972eb2d.js.map",
+    "main.ab8858a3.css.map": "/2023.1-Canvas-Inteligente/static/css/main.ab8858a3.css.map",
+    "main.283f60d2.js.map": "/2023.1-Canvas-Inteligente/static/js/main.283f60d2.js.map",
     "787.cee539d5.chunk.js.map": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95fec30c.css",
-    "static/js/main.9972eb2d.js"
+    "static/css/main.ab8858a3.css",
+    "static/js/main.283f60d2.js"
   ]
 }
