@@ -25,13 +25,13 @@ function Home (){
                 <div className='membros'>
                     <nav>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li className='cabeceira'></li>
+                            <li className='limirio'></li>
+                            <li className='felipe'></li>
+                            <li className='breno'></li>
+                            <li className='raquel'></li>
+                            <li className='henrique'></li>
+                            <li className='bruno'></li>
                         </ul>
                     </nav>
                 </div>

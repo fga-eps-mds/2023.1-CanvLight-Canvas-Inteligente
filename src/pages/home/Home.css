@@ -76,6 +76,14 @@
     font-size: 25px;
 }
 
+.cabeceira{
+    background-image: url('../../images/Cabeceira.jpg');
+}
+
+.membros ul li.limirio{
+    background-image: url('../../images/limirio.jpg');
+}
+
 .membros ul li{
     background-image: url('../../images/Cabeceira.jpg');
     background-size: cover;
@@ -86,6 +94,9 @@
     list-style-type: none;
     cursor: pointer;
 }
+
+
+
 
 
 
