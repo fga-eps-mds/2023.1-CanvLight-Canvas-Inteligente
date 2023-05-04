@@ -13,6 +13,7 @@
     background: #FF9000;
     height: 90px;
     color: white;
+    z-index: 1;
 }
 
 .logo{
@@ -34,25 +35,46 @@
 
 .desktop ul li{
     float: left;
+    margin-top: 20px;
+    margin-left: 10px;
     list-style-type: none;
-    padding: 30px 30px;
+    padding: 10px 10px;
     font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #FF9000;
+}
+
+.desktop ul li:hover{
+    background: white;
+    color: #FF9000;
 }
 
 .sobre{
-    display: inline-block
+    display: inline-block;
+    background-image: url('../../images/cerebro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .sobre h2{
     text-align: center;
-    margin: 40px;
+    margin: 50px;
     color: #FF9000;
-    font-size: 30px;
+    font-size: 50px;
+    
 }
 
 .sobre p{
     text-align: justify;
-    margin: 10px;
+    margin: 100px;
+    font-size: 25px;
 }
 
 
