@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/2023.1-Canvas-Inteligente/static/css/main.ab8858a3.css",
-    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.283f60d2.js",
+    "main.css": "/2023.1-Canvas-Inteligente/static/css/main.57b4a495.css",
+    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.a804b7f4.js",
     "static/js/787.cee539d5.chunk.js": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js",
     "static/media/cerebro.png": "/2023.1-Canvas-Inteligente/static/media/cerebro.df23f6ed5cb0d7377d78.png",
     "static/media/Cabeceira.jpg": "/2023.1-Canvas-Inteligente/static/media/Cabeceira.9abf80df00f7a21cd320.jpg",
+    "static/media/bob.jpg": "/2023.1-Canvas-Inteligente/static/media/bob.115a293305d229bc3819.jpg",
     "static/media/limirio.jpg": "/2023.1-Canvas-Inteligente/static/media/limirio.1e3dd943d8b66fff7980.jpg",
+    "static/media/raquel.jpeg": "/2023.1-Canvas-Inteligente/static/media/raquel.513fefa65deadf9786a2.jpeg",
+    "static/media/henrique.jpeg": "/2023.1-Canvas-Inteligente/static/media/henrique.84205c01727f5cd203bb.jpeg",
+    "static/media/felipe.jpeg": "/2023.1-Canvas-Inteligente/static/media/felipe.f309d065fe07bac8dd5c.jpeg",
+    "static/media/bruno.jpeg": "/2023.1-Canvas-Inteligente/static/media/bruno.fd937b4428c22a2168db.jpeg",
     "index.html": "/2023.1-Canvas-Inteligente/index.html",
-    "main.ab8858a3.css.map": "/2023.1-Canvas-Inteligente/static/css/main.ab8858a3.css.map",
-    "main.283f60d2.js.map": "/2023.1-Canvas-Inteligente/static/js/main.283f60d2.js.map",
+    "main.57b4a495.css.map": "/2023.1-Canvas-Inteligente/static/css/main.57b4a495.css.map",
+    "main.a804b7f4.js.map": "/2023.1-Canvas-Inteligente/static/js/main.a804b7f4.js.map",
     "787.cee539d5.chunk.js.map": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab8858a3.css",
-    "static/js/main.283f60d2.js"
+    "static/css/main.57b4a495.css",
+    "static/js/main.a804b7f4.js"
   ]
 }
