@@ -25,13 +25,13 @@ function Home (){
                 <div className='membros'>
                     <nav>
                         <ul>
-                            <li className='cabeceira'></li>
-                            <li className='limirio'></li>
-                            <li className='felipe'></li>
-                            <li className='breno'></li>
-                            <li className='raquel'></li>
-                            <li className='henrique'></li>
-                            <li className='bruno'></li>
+                            <a href='https://github.com/pkbceira03'><li className='cabeceira'></li></a>
+                            <a href='https://github.com/LimirioGuimaraes'><li className='limirio'></li></a>
+                            <a href='https://github.com/fsousac'><li className='felipe'></li></a>
+                            <a href='https://github.com/brenoalexandre0'><li className='breno'></li></a>
+                            <a href='https://github.com/raquel-andrade'><li className='raquel'></li></a>
+                            <a href='https://github.com/HeBatalha'><li className='henrique'></li></a>
+                            <a href='https://github.com/brunotarquinio'><li className='bruno'></li></a>
                         </ul>
                     </nav>
                 </div>

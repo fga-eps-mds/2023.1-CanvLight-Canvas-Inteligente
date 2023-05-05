@@ -63,7 +63,7 @@
 
 .sobre h2{
     text-align: center;
-    margin: 50px;
+    padding: 50px;
     color: #FF9000;
     font-size: 50px;
     
@@ -71,21 +71,43 @@
 
 .sobre p{
     text-align: justify;
-    margin: 100px;
-    margin-left: 60px;
+    margin: 10px;
     font-size: 25px;
+}
+
+.membros{
+    padding: 50px;
 }
 
 .cabeceira{
     background-image: url('../../images/Cabeceira.jpg');
 }
 
-.membros ul li.limirio{
+.limirio{
     background-image: url('../../images/limirio.jpg');
 }
 
-.membros ul li{
-    background-image: url('../../images/Cabeceira.jpg');
+.breno{
+    background-image: url('../../images/bob.jpg');
+}
+
+.bruno{
+    background-image: url('../../images/bruno.jpeg');
+}
+
+.raquel{
+    background-image: url('../../images/raquel.jpeg');
+}
+
+.henrique{
+    background-image: url('../../images/henrique.jpeg');
+}
+
+.felipe{
+    background-image: url('../../images/felipe.jpeg');
+}
+
+.membros ul a li{
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -94,6 +116,7 @@
     list-style-type: none;
     cursor: pointer;
 }
+
 
 
 
