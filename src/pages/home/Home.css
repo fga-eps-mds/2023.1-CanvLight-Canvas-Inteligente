@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .clear{
@@ -45,16 +46,14 @@
     background: #FF9000;
 }
 
-.desktop ul li:hover{
+.desktop ul li:hover, 
+.desktop ul li.ativo{
     background: white;
     color: #FF9000;
 }
 
-.sobre{
-    
-}
-
 .sobre h2{
+    font-weight: bold;
     text-align: center;
     padding: 50px 2%;
     color: #FF9000;
