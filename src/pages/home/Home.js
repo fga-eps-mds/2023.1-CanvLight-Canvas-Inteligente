@@ -17,6 +17,11 @@ function Home (){
                 </nav>
                 <div className='clear'></div>
             </div>
+
+            {/* <div className='sol'>
+
+            </div> */}
+
             <div className='sobre'>
                 <h2>Quem Somos</h2>
 

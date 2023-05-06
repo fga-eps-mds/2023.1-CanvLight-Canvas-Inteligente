@@ -51,19 +51,12 @@
 }
 
 .sobre{
-    display: inline-block;
-    background-image: url('../../images/cerebro.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
+    
 }
 
 .sobre h2{
     text-align: center;
-    padding: 50px;
+    padding: 50px 2%;
     color: #FF9000;
     font-size: 50px;
     
@@ -71,7 +64,7 @@
 
 .sobre p{
     text-align: justify;
-    margin: 10px;
+    margin: 30px;
     font-size: 25px;
 }
 
@@ -107,7 +100,12 @@
     background-image: url('../../images/felipe.jpeg');
 }
 
+.membros ul {
+    text-align: center;
+}
+
 .membros ul a li{
+    display: inline-block;
     background-size: cover;
     width: 40px;
     height: 40px;
