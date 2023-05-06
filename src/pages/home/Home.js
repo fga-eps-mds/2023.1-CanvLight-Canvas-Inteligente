@@ -38,13 +38,13 @@ function Home (){
                 <div className='membros'>
                     <nav>
                         <ul>
-                            <a href='https://github.com/pkbceira03'><li className='cabeceira'></li></a>
-                            <a href='https://github.com/LimirioGuimaraes'><li className='limirio'></li></a>
-                            <a href='https://github.com/fsousac'><li className='felipe'></li></a>
-                            <a href='https://github.com/brenoalexandre0'><li className='breno'></li></a>
-                            <a href='https://github.com/raquel-andrade'><li className='raquel'></li></a>
-                            <a href='https://github.com/HeBatalha'><li className='henrique'></li></a>
-                            <a href='https://github.com/brunotarquinio'><li className='bruno'></li></a>
+                            <a href='https://github.com/pkbceira03' target='_black'><li className='cabeceira'></li></a>
+                            <a href='https://github.com/LimirioGuimaraes' target='_black'><li className='limirio'></li></a>
+                            <a href='https://github.com/fsousac' target='_black'><li className='felipe'></li></a>
+                            <a href='https://github.com/brenoalexandre0' target='_black'><li className='breno'></li></a>
+                            <a href='https://github.com/raquel-andrade' target='_black'><li className='raquel'></li></a>
+                            <a href='https://github.com/HeBatalha' target='_black'><li className='henrique'></li></a>
+                            <a href='https://github.com/brunotarquinio' target='_black'><li className='bruno'></li></a>
                         </ul>
                     </nav>
                 </div>
