@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
+
 }
 
 .clear{
@@ -13,7 +14,7 @@
     display: flex;
     background: #FF9000;
     height: 90px;
-    color: white;
+    color: rgb(255, 239, 210);
 }
 
 .logo{
@@ -48,7 +49,7 @@
 
 .desktop ul li:hover, 
 .desktop ul li.ativo{
-    background: white;
+    background: #fcdbc1;
     color: #FF9000;
 }
 
@@ -113,7 +114,57 @@
     list-style-type: none;
     cursor: pointer;
 }
-
+.logo-big{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin-top: -40%;   
+    font-size: 40px;
+    /* background-image: logo; */
+}
+.tutorial-btn{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10%;   
+    margin-right: 25px;
+    font-size: 40px;
+    background-color: #fcdbc1;
+    border-radius: 15%;
+    /* background-image: logo; */
+}
+.gerar-cnv-btn{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10%;   
+    margin-left: 15px;
+    font-size: 40px;
+    background-color: #fcdbc1;
+    border-radius: 10%;
+    /* background-image: logo; */
+}
+.sol-bg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1000;
+    background-image: linear-gradient(#E95420, #77216F);
+    width: 100%;
+    height: 1200px;
+    
+}
+.sol-inv{
+    position: absolute;
+    z-index: -999;
+    background-color: #fcdbc1;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    margin-top: 60%;
+    
+}
 
 
 

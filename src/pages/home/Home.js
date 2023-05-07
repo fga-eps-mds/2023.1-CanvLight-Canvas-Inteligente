@@ -18,9 +18,19 @@ function Home (){
                 <div className='clear'></div>
             </div>
 
-            {/* <div className='sol'>
+             <div className='sol-bg'>
+                <div className='logo-big'>
+                    <p>Logo</p>
+                </div>
+                <div className='tutorial-btn'>tutorial
+                    </div>
+                <div className='gerar-cnv-btn'>gerar canvas
+                    </div>
+                <div className='sol-inv'>
 
-            </div> */}
+                </div>
+
+            </div> 
 
             <div className='sobre'>
                 <h2>Quem Somos</h2>
