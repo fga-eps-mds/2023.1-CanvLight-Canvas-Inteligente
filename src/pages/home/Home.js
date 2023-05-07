@@ -11,7 +11,7 @@ function Home (){
                 <nav className='desktop'>
                     <ul>
                         <li className='ativo'>Home</li>
-                        <li>Tuturial</li>
+                        <li>Tutorial</li>
                         <li>Gerar canvas</li>
                     </ul>
                 </nav>
