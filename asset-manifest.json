@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/2023.1-Canvas-Inteligente/static/css/main.c2600279.css",
-    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.9f9eb17e.js",
+    "main.js": "/2023.1-Canvas-Inteligente/static/js/main.d680850e.js",
     "static/js/787.cee539d5.chunk.js": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js",
     "static/media/Cabeceira.jpg": "/2023.1-Canvas-Inteligente/static/media/Cabeceira.9abf80df00f7a21cd320.jpg",
     "static/media/bob.jpg": "/2023.1-Canvas-Inteligente/static/media/bob.115a293305d229bc3819.jpg",
@@ -12,11 +12,11 @@
     "static/media/bruno.jpeg": "/2023.1-Canvas-Inteligente/static/media/bruno.fd937b4428c22a2168db.jpeg",
     "index.html": "/2023.1-Canvas-Inteligente/index.html",
     "main.c2600279.css.map": "/2023.1-Canvas-Inteligente/static/css/main.c2600279.css.map",
-    "main.9f9eb17e.js.map": "/2023.1-Canvas-Inteligente/static/js/main.9f9eb17e.js.map",
+    "main.d680850e.js.map": "/2023.1-Canvas-Inteligente/static/js/main.d680850e.js.map",
     "787.cee539d5.chunk.js.map": "/2023.1-Canvas-Inteligente/static/js/787.cee539d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2600279.css",
-    "static/js/main.9f9eb17e.js"
+    "static/js/main.d680850e.js"
   ]
 }
