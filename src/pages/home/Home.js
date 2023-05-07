@@ -22,9 +22,9 @@ function Home (){
                 <div className='logo-big'>
                     <p>Logo</p>
                 </div>
-                <div className='tutorial-btn'>tutorial
+                <div className='tutorial-btn' /*onClick={tutorial()}*/>Tutorial
                     </div>
-                <div className='gerar-cnv-btn'>gerar canvas
+                <div className='gerar-cnv-btn' /*onClick={formulario()}*/>Gerar Canvas
                     </div>
                 <div className='sol-inv'>
 

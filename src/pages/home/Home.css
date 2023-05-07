@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
+    
 
 }
-
+body{
+    background-color: #fcdbc1;
+}
 .clear{
     clear: both;
 }
@@ -15,6 +18,7 @@
     background: #FF9000;
     height: 90px;
     color: rgb(255, 239, 210);
+    filter: drop-shadow(1px 1px 2px #252525);
 }
 
 .logo{
@@ -63,13 +67,14 @@
 }
 
 .sobre p{
+    margin: 1%;
     text-align: justify;
-    margin: 30px;
     font-size: 25px;
 }
 
 .membros{
     padding: 50px;
+    
 }
 
 .cabeceira{
@@ -107,13 +112,15 @@
 .membros ul a li{
     display: inline-block;
     background-size: cover;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
+    width: 5%;
+    height: 10vh;
+    border-radius: 0;
     margin: 20px;
     list-style-type: none;
     cursor: pointer;
 }
+
+
 .logo-big{
     position: absolute;
     display: inline-block;
@@ -123,25 +130,30 @@
     /* background-image: logo; */
 }
 .tutorial-btn{
+    padding: 1vh;
     position: relative;
     display: inline-block;
     text-align: center;
-    margin-top: 10%;   
-    margin-right: 25px;
+    margin-top: 20%;   
+    margin-right: 25%;
     font-size: 40px;
-    background-color: #fcdbc1;
-    border-radius: 15%;
+    background-color: #FF9000;
+    color: #252525;
+    border-radius: 1vh;
+    filter: drop-shadow(1px 1px 2px #252525);
     /* background-image: logo; */
 }
 .gerar-cnv-btn{
+    padding: 1vh;
     position: relative;
     display: inline-block;
     text-align: center;
-    margin-top: 10%;   
-    margin-left: 15px;
+    margin-top: 20%;   
     font-size: 40px;
-    background-color: #fcdbc1;
-    border-radius: 10%;
+    background-color: #FF9000;
+    color: #252525;
+    border-radius: 1vh;
+    filter: drop-shadow(1px 1px 2px #252525);
     /* background-image: logo; */
 }
 .sol-bg{
@@ -157,14 +169,20 @@
 }
 .sol-inv{
     position: absolute;
+    display: inline-block;
     z-index: -999;
     background-color: #fcdbc1;
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    margin-top: 60%;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    
     
 }
+
+
 
 
 
