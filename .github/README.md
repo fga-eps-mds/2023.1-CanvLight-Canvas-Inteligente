@@ -45,6 +45,6 @@ Para parar o servidor, basta pressionar `CTRL + C` no seu terminal.
 
 E pronto! Agora você já sabe como executar o projeto localmente. Caso tenha alguma dúvida, sinta-se à vontade para perguntar nas issues.
 ---
-### **Obrigado por visitar o nosso repositório do projeto de Canvas Inteligente!**
+### **Obrigado por visitar o nosso repositório do projeto de Canvas Inteligente!!**
 
 
