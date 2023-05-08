@@ -36,7 +36,7 @@ function Home (){
                 <h2>Quem Somos</h2>
 
                 <p>
-                    Bem-vindo ao nosso projeto de Matéria de Métodos e Desenvolvimento de Software (MDS). 
+                    Bem-vindo ao nosso projeto da matéria de Métodos e Desenvolvimento de Software (MDS). 
                     Nós somos um grupo de estudantes apaixonados por tecnologia e inovação, e criamos este Canvas 
                     Inteligente para ajudar as pessoas a organizar e gerenciar suas ideias de forma mais eficiente. 
                     Nosso projeto foi desenvolvido usando as mais recentes tecnologias e práticas de desenvolvimento 

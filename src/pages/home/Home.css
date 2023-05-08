@@ -90,7 +90,7 @@ body{
 }
 
 .bruno{
-    background-image: url('../../images/bruno.jpeg');
+    background-image: url('../../images/bruno2.jpg');
 }
 
 .raquel{
@@ -112,9 +112,8 @@ body{
 .membros ul a li{
     display: inline-block;
     background-size: cover;
-    width: 5%;
-    height: 10vh;
-    border-radius: 0;
+    padding: 50px;
+    border-radius: 50px;
     margin: 20px;
     list-style-type: none;
     cursor: pointer;
