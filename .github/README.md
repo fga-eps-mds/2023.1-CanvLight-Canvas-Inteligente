@@ -8,8 +8,6 @@ Algumas das principais características do nosso Canvas Inteligente incluem:
 - Interface de usuário intuitiva e fácil de usar.
 - Personalização completa para atender às suas necessidades.
 - Compatibilidade com todos os dispositivos e plataformas.
-- Armazenamento em nuvem seguro e confiável.
-- Integração perfeita com outras ferramentas de gerenciamento de projetos.
 
 Nós acreditamos que o nosso Canvas Inteligente pode ajudar as pessoas a serem mais produtivas e a alcançarem seus objetivos de forma mais eficaz. Nós estamos muito animados com este projeto e esperamos que você goste de usá-lo tanto quanto nós gostamos de desenvolvê-lo.
 
