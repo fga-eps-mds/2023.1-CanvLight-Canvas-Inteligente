@@ -12,23 +12,22 @@ function Home (){
                     <ul>
                         <li className='ativo'>Home</li>
                         <li>Tutorial</li>
-                        <li>Gerar canvas</li>
+                        <li>Gerar canvas</li>                         
                     </ul>
                 </nav>
                 <div className='clear'></div>
             </div>
 
-             <div className='sol-bg'>
+            <div className='sol-bg'>
                 <div className='logo-big'>
                     <p>Logo</p>
-                </div>
-                <button className='main-btn' /*onClick={tutorial()}*/>Tutorial
-                    </button>
-                <button className='main-btn' /*onClick={formulario()}*/>Gerar Canvas
-                    </button>
-                <div className='sol-inv'>
+                 </div>
 
-                </div>
+                <button className='main-btn' /*onClick={tutorial()}*/>Tutorial</button>
+
+                <button className='main-btn' /*onClick={formulario()}*/>Gerar Canvas</button>
+
+                <div className='sol-inv'></div>
 
             </div> 
 
