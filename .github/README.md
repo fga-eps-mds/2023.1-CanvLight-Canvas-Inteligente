@@ -1,4 +1,4 @@
-# Canvas Inteligente 📓✏
+# CanvLight 📓✏
 
   Bem-vindo ao nosso repositório do projeto de **Matéria de Métodos e Desenvolvimento de Software (MDS)**. Nós somos um grupo de estudantes apaixonados por tecnologia e inovação, e criamos este Canvas Inteligente para ajudar as pessoas a organizar e gerenciar suas ideias de forma mais eficiente.
   Nosso projeto foi desenvolvido usando as mais recentes tecnologias e práticas de desenvolvimento de software, para garantir que ele seja rápido, confiável e fácil de usar. Nosso Canvas Inteligente é intuitivo e totalmente personalizável, permitindo que você organize suas ideias e projetos da maneira que melhor se adapta a você.
