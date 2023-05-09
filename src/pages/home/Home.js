@@ -14,13 +14,13 @@ function Home (){
                     <ul>
                         <li className='ativo'>Home</li>
                         <li>Tutorial</li>
-                        <li>Gerar canvas</li>
+                        <li>Gerar canvas</li>                         
                     </ul>
                 </nav>
                 <div className='clear'></div>
             </div>
 
-             <div className='sol-bg'>
+            <div className='sol-bg'>
                 <div className='logo-big'>
                     <img src={logo} alt='Logo' className='logo_main'/>
                     
@@ -31,7 +31,11 @@ function Home (){
                     </button>
                 <div className='sol-inv'>
 
-                </div>
+                <button className='main-btn' /*onClick={tutorial()}*/>Tutorial</button>
+
+                <button className='main-btn' /*onClick={formulario()}*/>Gerar Canvas</button>
+
+                <div className='sol-inv'></div>
 
             </div> 
 
@@ -39,7 +43,7 @@ function Home (){
                 <h2>Quem Somos</h2>
 
                 <p>
-                    Bem-vindo ao nosso projeto de Matéria de Métodos e Desenvolvimento de Software (MDS). 
+                    Bem-vindo ao nosso projeto da matéria de Métodos e Desenvolvimento de Software (MDS). 
                     Nós somos um grupo de estudantes apaixonados por tecnologia e inovação, e criamos este Canvas 
                     Inteligente para ajudar as pessoas a organizar e gerenciar suas ideias de forma mais eficiente. 
                     Nosso projeto foi desenvolvido usando as mais recentes tecnologias e práticas de desenvolvimento 
@@ -64,7 +68,7 @@ function Home (){
 
             </div>
         </div>
-
+        </div>
     );
 }
 
