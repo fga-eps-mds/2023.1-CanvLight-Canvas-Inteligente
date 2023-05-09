@@ -21,13 +21,14 @@
 }
 .logo_navbar{
     position: relative;
-    height: 120%;
-    margin-top: -1%;
+    height: 85%;
+    margin: 1%;
+    margin-top: 0.5%;
     display: inline-block;
 }
 .logo_main{
     position: relative;
-    height: 85vh;
+    height: 55vh;
     margin-top: -45%;
     display: inline-block;
     filter: drop-shadow(1px 1px 5px #252525);
@@ -36,7 +37,7 @@
     position: relative;
     margin: 10%;
     align-self: center  ;
-    margin-top: -8%;
+    margin-top: -6.5%;
     font-family: "Google Sans",Roboto,Arial,sans-serif;
     font-size: 2.5vh;
     font-weight: 500;
