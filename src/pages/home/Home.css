@@ -39,12 +39,12 @@
     position: relative;
     margin: 10%;
     align-self: center  ;
-    margin-top: -6.5%;
+    margin-top: -7.5%;
     font-family: "Google Sans",Roboto,Arial,sans-serif;
     font-size: 2.5vh;
     font-weight: 500;
     color: #3c4043;
-    margin-left: 20px;
+    margin-left: 12%;
 }
 .desktop{
     width: 100%;
@@ -140,14 +140,6 @@
     margin: 20px;
     list-style-type: none;
     cursor: pointer;
-}
-
-.logo_main{
-    position: relative;
-    height: 85vh;
-    margin-top: -45%;
-    display: inline-block;
-    filter: drop-shadow(1px 1px 5px #252525);
 }
 
 .sol-bg{
