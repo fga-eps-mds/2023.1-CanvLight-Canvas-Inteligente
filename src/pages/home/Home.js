@@ -23,13 +23,7 @@ function Home (){
             <div className='sol-bg'>
                 <div className='logo-big'>
                     <img src={logo} alt='Logo' className='logo_main'/>
-                    
-                </div>
-                <button className='main-btn' /*onClick={tutorial()}*/>Tutorial
-                    </button>
-                <button className='main-btn' /*onClick={formulario()}*/>Gerar Canvas
-                    </button>
-                <div className='sol-inv'>
+                 </div>
 
                 <button className='main-btn' /*onClick={tutorial()}*/>Tutorial</button>
 
@@ -68,7 +62,7 @@ function Home (){
 
             </div>
         </div>
-        </div>
+
     );
 }
 
