@@ -14,7 +14,7 @@ Nós acreditamos que o nosso Canvas Inteligente pode ajudar as pessoas a serem m
 Então, sinta-se à vontade para explorar o nosso repositório, verificar o código-fonte e contribuir com ideias ou sugestões. Se você tiver alguma dúvida ou comentário, não hesite em entrar em contato conosco. 
 
 ## Link do projeto
- - [Canvas inteligente Web App](https://fga-eps-mds.github.io/2023.1-Canvas-Inteligente/) ⚛️🚀<br>
+ - [Canvas inteligente Web App](https://fga-eps-mds.github.io/2023.1-CanvLight-Canvas-Inteligente/) ⚛️🚀<br>
 
 ## Instruções para executar o projeto
 - Certifique-se de ter o Node.js instalado em seu computador. Você pode verificar se o Node.js está instalado digitando o seguinte comando no seu terminal:
