@@ -15,23 +15,19 @@
 .navbar{
     display: flex;
     background: #FF9000;
-    height: 90px;
+    height: 120px;
     color: rgb(255, 239, 210);
     filter: drop-shadow(1px 1px 2px #252525);
 }
+
 .logo_navbar{
     position: relative;
-    height: 120%;
-    margin-top: -1%;
+    height: 80%;
+    margin-top: -3%;
     display: inline-block;
+    margin-left: 20px;
 }
-.logo_main{
-    position: relative;
-    height: 85vh;
-    margin-top: -45%;
-    display: inline-block;
-    filter: drop-shadow(1px 1px 5px #252525);
-}
+
 .name_navbar{
     position: relative;
     margin: 10%;
@@ -41,10 +37,10 @@
     font-size: 2.5vh;
     font-weight: 500;
     color: #3c4043;
-    
+    margin-left: 20px;
 }
 .desktop{
-    width: 50%;
+    width: 100%;
     float: right;
 }
 
@@ -54,7 +50,7 @@
 
 .desktop ul li{
     float: left;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: 10px;
     list-style-type: none;
     padding: 10px 10px;
@@ -137,6 +133,14 @@
     margin: 20px;
     list-style-type: none;
     cursor: pointer;
+}
+
+.logo_main{
+    position: relative;
+    height: 85vh;
+    margin-top: -45%;
+    display: inline-block;
+    filter: drop-shadow(1px 1px 5px #252525);
 }
 
 .sol-bg{
