@@ -1,11 +1,13 @@
 import './Home.css'
+import logo from '../../images/logo_canvlight.png'
 
 function Home (){
     return(
         <div>
             <div className='navbar'>
                 <div className='logo'>
-                    <p>Logo</p>
+                    <img src={logo} alt='Logo' className='logo_navbar'/>
+                    <p className='name_navbar'>CanvLight</p>
                 </div>
 
                 <nav className='desktop'>
@@ -20,7 +22,8 @@ function Home (){
 
              <div className='sol-bg'>
                 <div className='logo-big'>
-                    <p>Logo</p>
+                    <img src={logo} alt='Logo' className='logo_main'/>
+                    
                 </div>
                 <button className='main-btn' /*onClick={tutorial()}*/>Tutorial
                     </button>

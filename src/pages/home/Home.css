@@ -20,15 +20,30 @@ body{
     color: rgb(255, 239, 210);
     filter: drop-shadow(1px 1px 2px #252525);
 }
-
-.logo{
-    width: 50%;
-    float: left;
-    padding: 30px 30px;
-    font-size: 20px;
-    /* background: #fff; */
+.logo_navbar{
+    position: relative;
+    height: 120%;
+    margin-top: -1%;
+    display: inline-block;
 }
-
+.logo_main{
+    position: relative;
+    height: 80vh;
+    margin-top: 15%;
+    display: inline-block;
+    filter: drop-shadow(1px 1px 5px #252525);
+}
+.name_navbar{
+    position: relative;
+    margin: 10%;
+    align-self: center  ;
+    margin-top: -8%;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 2.5vh;
+    font-weight: 500;
+    color: #3c4043;
+    
+}
 .desktop{
     width: 50%;
     float: right;
