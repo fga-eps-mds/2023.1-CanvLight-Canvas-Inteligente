@@ -1,38 +1,17 @@
-# Front-end
+# Documento de Arquitetura - Front-end e Back-end do Canvas Inteligente de Negócios
 
-O front-end do site será desenvolvido utilizando HTML, CSS e JavaScript. Além disso, será utilizado o framework de front-end React, para facilitar o desenvolvimento e a manutenção do código.
+## Introdução:
+Este documento tem como objetivo descrever a arquitetura da aplicação do Canvas Inteligente de Negócios e as tecnologias utilizadas no desenvolvimento do front-end e back-end. O front-end será desenvolvido em HTML, CSS e ReactJS, enquanto o back-end será desenvolvido em NodeJS.
 
-O front-end será responsável por coletar as informações do usuário e enviar para o servidor processar e gerar o canvas de negócios.
+## Visão geral da arquitetura:
+O Canvas Inteligente de Negócios é uma aplicação web que permite criar e gerenciar quadros com post-its virtuais para organização de ideias e tarefas relacionadas a projetos de negócios. A arquitetura da aplicação seguirá o padrão cliente-servidor, onde o front-end será responsável por fornecer a interface gráfica ao usuário final, enquanto o back-end será responsável por fornecer a lógica de negócios e o acesso aos dados.
 
-Serviço de interface: responsável por apresentar os resultados do canvas e da nota de maturidade ao usuário por meio de uma interface web e um arquivo PDF.
+## Front-end:
+O front-end será desenvolvido em HTML, CSS e ReactJS. O ReactJS é uma biblioteca JavaScript para construção de interfaces de usuário reativas e escaláveis, que permite a construção de componentes reutilizáveis para a interface gráfica. O HTML e CSS serão utilizados para a estruturação e estilização da página.
 
-# Back-end
+A arquitetura do front-end será baseada no padrão Flux, que é uma arquitetura de dados unidirecional que utiliza fluxos de dados unidirecionais para gerenciar o estado da aplicação. Essa arquitetura consiste em três componentes principais: ações (actions), despachantes (dispatchers) e lojas (stores).
 
-O back-end será desenvolvido em Node.js, uma plataforma de desenvolvimento de aplicações web em JavaScript.
+## Back-end:
+O back-end será desenvolvido em NodeJS, que é uma plataforma de desenvolvimento de aplicações de alto desempenho baseada em JavaScript. O NodeJS permite o desenvolvimento de aplicações de rede escaláveis e eficientes, com suporte para protocolos de rede, bancos de dados e outras bibliotecas.
 
-O servidor recebe as informações enviadas pelo front-end e processa esses dados para gerar o canvas de negócios.
-
-Calcula a nota de maturidade do projeto com base nas informações coletadas, utilizando algumas métricas que serão coletadas e implementadas pela equipe de desenvolvimento.
-
-Gerador de canvas de negócios:
-
-O gerador de canvas é responsável por transformar as informações coletadas em um modelo visual de negócios. Para isso, analisamos a possibilidade de ser utilizado um framework de geração de canvas de negócios, como o Business Model Canvas ou o Lean Canvas, mas é necessário mais algum tempo de estudo de requisitos e implementação para ver se será possível.
-
-Caso não seja possível utilizar o framework, o canvas será gerado utilizando o Node.js.
-
-# Comunicação
-
-A princípio os serviços se comunicaram por meio de APIs RESTful, usando o protocolo HTTP para trocar mensagens no formato JSON.
-
-O servidor HTTP é a camada que recebe as requisições do navegador web e as encaminha para o código Node.js, em que irá processá-las. Essa camada será implementada com o uso de um framework Node.js para servidores HTTP, como o Express.
-
-# Deploy
-
-O site ficará online utilizando o serviço de hospedagem de páginas fornecido pelo Github (pelo menos até o projeto ser entregue ao cliente).
-
-## Diagrama:
-
-| Usuário | <--> | Serviço de interface | <--> | Adquirir Informações |
-| ------- | ---- | -------------------- | ---- | --------------------- |
-|         |      |                      | <--> | Gerar de maturidade   |
-|         |      |                      | <--> | Gerar de Canvas       |
+A arquitetura do back-end será baseada em microsserviços, que é uma abordagem arquitetural para o desenvolvimento de sistemas distribuídos, onde cada serviço é um componente independente e modular da aplicação. Cada serviço terá sua própria camada de acesso a dados, permitindo o uso de diferentes bancos de dados para diferentes serviços.
