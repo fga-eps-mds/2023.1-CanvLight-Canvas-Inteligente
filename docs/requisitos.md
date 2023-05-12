@@ -31,9 +31,12 @@ Com base nessa necessidade, foram definidos os seguintes requisitos:
 
 
 ## Como são as categorias do MoSCow
-Must Have (Tenho que fazer) - Seriam equivalentes aos épicos, sem elas não existe o projeto
+Must Have (Tenho que fazer) - Seriam equivalentes aos épicos, sem elas não existe o projeto 
+
 Should Have (Devo fazer) - São importantes mas não comprometem a entrega
+
 Could Have (Poderia fazer) - Baixa importância, apenas se houver tempo
+
 Won’t Have (Não vou fazer) - Aquilo que não vamos fazer, definem o limite do nosso escopo
 
 
