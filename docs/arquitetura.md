@@ -1,38 +1,38 @@
-## Introdução
-Um Canvas de Negócio é uma ferramenta valiosa para os empreendedores e gestores de negócios, que permite visualizar de forma clara e concisa as principais atividades e processos que compõem a empresa. No entanto, para tornar essa ferramenta ainda mais eficiente, é necessário que o sistema que a suporta seja inteligente e forneça recursos adicionais.
+# Front-end
 
-Com base nessa necessidade, foram definidos os seguintes requisitos:
+O front-end do site será desenvolvido utilizando HTML, CSS e JavaScript. Além disso, será utilizado o framework de front-end React, para facilitar o desenvolvimento e a manutenção do código.
 
-## Requisitos Funcionais
+O front-end será responsável por coletar as informações do usuário e enviar para o servidor processar e gerar o canvas de negócios.
 
-| Código | Descrição | Prioridade - MoSCow
-|---|---|---|
-[RF001] | O sistema deve gerar o arquivo do canvas de negócio | Must
-[RF002] | O sistema deve fornecer um nível de maturidade no negócio com base nos dados fornecidos | Must
-[RF003] | O sistema deve disponibilizar uma página de tutorial para o uso do sistema | Must
-[RF004] | A página deve possuir um modo claro e um modo escuro | Should
-[RF005] | Relatório pode ser editado pelo usuário | Must
-[RF006] | Relatório deve ser exportado em formato PDF | Should
-[RF007] | Relatório pode ser pré-visualizado antes de exportar pelo usuário | Maybe
-[RF008] | Utilização e cálculo de métricas com base em teorias matématicas | Must
-[RF009] | Permitir backup na cache do browser para recuperação informações | Should
+Serviço de interface: responsável por apresentar os resultados do canvas e da nota de maturidade ao usuário por meio de uma interface web e um arquivo PDF.
 
-## Requisitos Não-Funcionais
+# Back-end
 
-| Código | Descrição | Prioridade - MoSCow
-|---|---|---|
-[NF001] | O sistema deve possuir usabilidade intuitiva|  Should
-[NF002] | Acessibilidade para microempreendedores | Must
-[NF003] | Linguagem de interação humano-computador acessível | Must
-[NF004] | Compatibilidade entre dispositivos diferentes | Must
-[NF005] | O site deve ter um tempo de resposta rápido e uma disponibilidade alta, usando técnicas de cache e balanceamento de carga | Should
-[NF006] | O site deve seguir as boas práticas de usabilidade e acessibilidade, usando cores contrastantes, fontes legíveis, ícones intuitivos e mensagens claras | Must
-[NF007] | Permitir que usuário dê feedback sobre o site | Maybe
+O back-end será desenvolvido em Node.js, uma plataforma de desenvolvimento de aplicações web em JavaScript.
 
+O servidor recebe as informações enviadas pelo front-end e processa esses dados para gerar o canvas de negócios.
 
-## Como são as categorias do MoSCow
-Must Have (Tenho que fazer) - Seriam equivalentes aos épicos, sem elas não existe o projeto
-Should Have (Devo fazer) - São importantes mas não comprometem a entrega
-Could Have (Poderia fazer) - Baixa importância, apenas se houver tempo
-Won’t Have (Não vou fazer) - Aquilo que não vamos fazer, definem o limite do nosso escopo
+Calcula a nota de maturidade do projeto com base nas informações coletadas, utilizando algumas métricas que serão coletadas e implementadas pela equipe de desenvolvimento.
 
+Gerador de canvas de negócios:
+
+O gerador de canvas é responsável por transformar as informações coletadas em um modelo visual de negócios. Para isso, analisamos a possibilidade de ser utilizado um framework de geração de canvas de negócios, como o Business Model Canvas ou o Lean Canvas, mas é necessário mais algum tempo de estudo de requisitos e implementação para ver se será possível.
+
+Caso não seja possível utilizar o framework, o canvas será gerado utilizando o Node.js.
+
+# Comunicação
+
+A princípio os serviços se comunicaram por meio de APIs RESTful, usando o protocolo HTTP para trocar mensagens no formato JSON.
+
+O servidor HTTP é a camada que recebe as requisições do navegador web e as encaminha para o código Node.js, em que irá processá-las. Essa camada será implementada com o uso de um framework Node.js para servidores HTTP, como o Express.
+
+# Deploy
+
+O site ficará online utilizando o serviço de hospedagem de páginas fornecido pelo Github (pelo menos até o projeto ser entregue ao cliente).
+
+## Diagrama:
+
+| Usuário | <--> | Serviço de interface | <--> | Adquirir Informações |
+| ------- | ---- | -------------------- | ---- | --------------------- |
+|         |      |                      | <--> | Gerar de maturidade   |
+|         |      |                      | <--> | Gerar de Canvas       |
