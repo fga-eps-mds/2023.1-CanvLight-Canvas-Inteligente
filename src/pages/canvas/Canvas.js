@@ -42,4 +42,4 @@ function handleArrowClick() {
   alert('Seta clicada!');
 }
 
-export default Canvas;
+export default Canvas
