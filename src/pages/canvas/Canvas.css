@@ -32,6 +32,7 @@ body {
     margin-top: 0.5%;
     display: inline-block;
     margin-left: 20px;
+    cursor: pointer;
 }
 .logo_main{
     position: relative;
@@ -50,6 +51,7 @@ body {
     font-weight: 500;
     color: #3c4043;
     margin-left: 12%;
+    cursor: pointer;
 }
 
   .container {
@@ -124,6 +126,7 @@ body {
     height: 20px;
     background-color: red;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .dot2 {
@@ -147,8 +150,8 @@ body {
   }
   
   .arrow-button {
-    width: 85px;
-    height: 85px;
+    width: 65px;
+    height: 50px;
     cursor: pointer;
   }
   
