@@ -151,3 +151,11 @@ html {
   height: 85px;
   cursor: pointer;
 }
+
+.form{
+  display: none;
+  position: absolute;
+  text-align: center;
+  z-index: 999999999;
+  padding:auto 30px;
+}
