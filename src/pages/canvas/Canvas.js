@@ -44,101 +44,116 @@ function Canvas() {
         </div>
 
         <div className='form'>
-          <div className='parte1'>
-            <form>
-              <p>Projeto:</p>
-              <input type="text" />  
+          <div className='center'>
+            <div className='esquerda'>
+              <div className='parte1'>
+                <form>
+                  <div>
+                    <span>Projeto:</span>
+                    <input type="text" /> 
+                  </div> 
 
-              <p>Equipe:</p>
-              <input type="text" />  
-            </form>
-          </div>
+                  <p>Equipe:</p>
+                  <input type="text" />  
+                </form>
+              </div>
 
-          <div className='tabela1'>
-            <table>
-              <tr>
-                <th>CONCEITO DNA</th>
-                <th>DNA DE NEGÓCIO</th>
-                <th>IMAGEM PAINEL SEMÂNTICO</th>
-              </tr>
+              <div className='tabela1'>
+                <table>
+                  <tr>
+                    <th>CONCEITO DNA</th>
+                    <th>DNA DE NEGÓCIO</th>
+                    <th>IMAGEM PAINEL SEMÂNTICO</th>
+                  </tr>
 
-              <tr>
-                <td>TÉCNICO</td>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+                  <tr >
+                    <td className='tecnico'>TÉCNICO</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
 
-              <tr>
-                <td>RESILIENTE</td>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+                  <tr>
+                    <td className='resiliencia'>RESILIENTE</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
 
-              <tr>
-                <td>EMOCIONAL</td>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+                  <tr>
+                    <td className='emocional'>EMOCIONAL</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
 
-              <tr>
-                <td>MERCADOLÓGICO</td>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+                  <tr>
+                    <td className='mercadologico'>MERCADOLÓGICO</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
 
-              <tr>
-                <td>INTEGRADOR</td>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+                  <tr>
+                    <td className='integrador'>INTEGRADOR</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
 
-            </table>
-          </div>
+                </table>
+              </div>
 
-          <div className='parte2'>
-            <p>ikigai</p>
-            <input type="text"/>
-          </div>
+              <div className='parte2'>
+                <p>ikigai:</p>
+                <input type="text"/>
+              </div>
 
-          <div className='tabela2'>
-            <h2>4P's do projeto</h2>
+              <div className='clear'></div>
+            </div>
 
-            <table>
-              <tr>
-                <td>P1:<input type="text"/></td>
-                <td>P2:<input type="text"/></td>
-              </tr>
 
-              <tr>
-                <td>P3:<input type="text"/></td>
-                <td>P4:<input type="text"/></td>
-              </tr>
-            </table>
-          </div>
+            <div className='direita'>
+              <div className='tabela2'>
+                <h2>4P's do projeto</h2>
 
-          <div className='tabela3'>
-            <table>
-              <tr>
-                <th>POTENCIALIDADES</th>
-                <th>RESULTADOS ESPERADOS</th>
-              </tr>
+                <table>
+                  <tr>
+                    <td>P1:<input type="text"/></td>
+                    <td>P2:<input type="text"/></td>
+                  </tr>
 
-              <tr>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+                  <tr>
+                    <td>P3:<input type="text"/></td>
+                    <td>P4:<input type="text"/></td>
+                  </tr>
+                </table>
+              </div>
 
-              <tr>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+              <div className='tabela3'>
+                <h2>Síntese</h2>
+                <table>
+                  <tr>
+                    <th>POTENCIALIDADES</th>
+                    <th>RESULTADOS ESPERADOS</th>
+                  </tr>
 
-              <tr>
-                <td><input type="text"/></td>
-                <td><input type="text"/></td>
-              </tr>
+                  <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
 
-            </table>
+                  <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
+
+                </table>
+              </div>
+
+              <div className='clear'></div>
+            </div>
+           
           </div>
         </div>
 
