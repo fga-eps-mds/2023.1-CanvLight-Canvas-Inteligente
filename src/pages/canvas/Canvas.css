@@ -1,17 +1,10 @@
-body {
+body, html{
     margin: 0;
     padding: 0;
     position: relative;
     min-height: 100vh;
     background: linear-gradient(to bottom right, #e95420, #6c0277);
-  }
-  
-  body,
-  html {
-    /* overflow: hidden; */
-    margin: 0;
-    padding: 0;
-  }
+}
   
 .clear{
   clear: both;
@@ -202,6 +195,17 @@ body {
   max-width: 1000px;
   margin: 30px 8%;
   border-radius: 30px;
+}
+
+.form .center button{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  top: -1px;
 }
 
 .esquerda{

@@ -17,6 +17,14 @@ function Canvas() {
     modal.style.display = "block";
   }
 
+  function fecharFormIntuicao(e){
+    e.preventDefault();
+
+    let modal = document.querySelector('.form');
+
+    modal.style.display = "none";
+  }
+
   return (
     <div className='body'>
         <div className='navbar'>
@@ -45,6 +53,7 @@ function Canvas() {
 
         <div className='form'>
           <div className='center'>
+            <button onClick={(e) => fecharFormIntuicao(e)}></button>
             <div className='esquerda'>
               <div className='parte1'>
                 <form>
