@@ -9,6 +9,14 @@ function Canvas() {
     alert('Seta clicada!');
   }
 
+  function clicouNaDuvida(){
+    alert('duvida clicada!')
+  }
+
+  function formIntuicaoTerminado(){
+    alert('form feito')
+  }
+
   function abrirFormIntuicao(e){
     e.preventDefault();
 
@@ -65,7 +73,7 @@ function Canvas() {
                   <p>Equipe:</p>
                   <input type="text" />  
                 </form>
-                <div className='duvida'></div>
+                <div onClick={clicouNaDuvida} className='duvida'></div>
               </div>
 
               <div className='tabela1'>
@@ -109,14 +117,14 @@ function Canvas() {
                 </table>
               </div>
 
-              <div className='duvida'></div>
+              <div onClick={clicouNaDuvida} className='duvida'></div>
 
               <div className='parte2'>
                 <p>ikigai:</p>
                 <input type="text"/>
               </div>
 
-              <div className='duvida'></div>
+              <div onClick={clicouNaDuvida} className='duvida'></div>
 
               <div className='clear'></div>
             </div>
@@ -139,7 +147,7 @@ function Canvas() {
                 </table>
               </div>
 
-              <div className='duvida'></div>
+              <div onClick={clicouNaDuvida} className='duvida'></div>
 
               <div className='tabela3'>
                 <h2>Síntese</h2>
@@ -167,7 +175,9 @@ function Canvas() {
                 </table>
               </div>
 
-              <div className='duvida'></div>
+              <div onClick={clicouNaDuvida} className='duvida'></div>
+
+              <div onClick={formIntuicaoTerminado} className='feito'></div>
 
               <div className='clear'></div>
             </div>
