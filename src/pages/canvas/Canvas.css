@@ -47,10 +47,12 @@ body, html{
     cursor: pointer;
 }
 
-  .container {
+  .container {  
+    width: 75%;
+    height: 60%;
+    max-width: 950px;
+    max-height: 550px;
     position: absolute;
-    width: 950px;
-    height: 550px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
@@ -69,7 +71,7 @@ body, html{
   }
   
   .button1 {
-    padding: 270px 45px;
+    padding: 20% 45px;
     margin: 10px;
     background-color: #72097e;
     color: white;
@@ -83,7 +85,7 @@ body, html{
   }
   
   .button2 {
-    padding: 270px 85px;
+    padding: 20% 85px;
     margin: 10px;
     background-color: #fb8218;
     color: white;
@@ -98,7 +100,7 @@ body, html{
   }
   
   .button3 {
-    padding: 270px 78px;
+    padding: 20%  78px;
     margin: 10px;
     background-color: #0e78c9;
     color: white;
