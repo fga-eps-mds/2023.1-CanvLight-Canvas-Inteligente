@@ -65,6 +65,7 @@ function Canvas() {
                   <p>Equipe:</p>
                   <input type="text" />  
                 </form>
+                <div className='duvida'></div>
               </div>
 
               <div className='tabela1'>
@@ -108,10 +109,14 @@ function Canvas() {
                 </table>
               </div>
 
+              <div className='duvida'></div>
+
               <div className='parte2'>
                 <p>ikigai:</p>
                 <input type="text"/>
               </div>
+
+              <div className='duvida'></div>
 
               <div className='clear'></div>
             </div>
@@ -133,6 +138,8 @@ function Canvas() {
                   </tr>
                 </table>
               </div>
+
+              <div className='duvida'></div>
 
               <div className='tabela3'>
                 <h2>Síntese</h2>
@@ -159,6 +166,8 @@ function Canvas() {
 
                 </table>
               </div>
+
+              <div className='duvida'></div>
 
               <div className='clear'></div>
             </div>

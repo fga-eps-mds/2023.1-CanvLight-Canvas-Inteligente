@@ -208,6 +208,14 @@ body, html{
   top: -1px;
 }
 
+.duvida{
+  background-image: url('../../images/request\ \(1\).png');
+  width: 16px;
+  height: 16px;
+  float: right;
+  cursor: pointer;
+}
+
 .esquerda{
   float: left;
   width: 50%;
@@ -219,6 +227,8 @@ body, html{
 
 .parte1 form{
   color: white;
+  float: left;
+  width: 90%;
 }
 
 .parte1 form input{
@@ -233,6 +243,8 @@ body, html{
 
 .tabela1{
   margin-top: 20px;
+  float: left;
+  width: 90%;
 }
 
 .tabela1 table{
@@ -276,6 +288,11 @@ body, html{
   background-color: blueviolet;
 }
 
+.parte2{
+  float: left;
+  width: 90%;
+}
+
 .parte2 p{
   color: white;
   font-size: 25px;
@@ -304,6 +321,8 @@ body, html{
   border: 1px solid #6c0277;
   border-radius: 8px;
   padding: 20px;
+  float: left;
+  width: 90%;
 }
 
 .tabela2 h2{
@@ -338,6 +357,8 @@ body, html{
   border: 1px solid #6c0277;
   border-radius: 15px;
   color: white;
+  float: left;
+  width: 90%;
 }
 
 .tabela3 table td{
