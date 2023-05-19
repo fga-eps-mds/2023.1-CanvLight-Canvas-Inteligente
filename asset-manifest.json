@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.5e61634a.css",
+    "main.css": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.cffe196a.css",
     "main.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.1280f512.js",
     "static/js/787.cee539d5.chunk.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/787.cee539d5.chunk.js",
     "static/media/logo_canvlight.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/logo_canvlight.c3be732bfe6f18e92b9c.png",
     "index.html": "/2023.1-CanvLight-Canvas-Inteligente/index.html",
-    "main.5e61634a.css.map": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.5e61634a.css.map",
+    "main.cffe196a.css.map": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.cffe196a.css.map",
     "main.1280f512.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.1280f512.js.map",
     "787.cee539d5.chunk.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/787.cee539d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e61634a.css",
+    "static/css/main.cffe196a.css",
     "static/js/main.1280f512.js"
   ]
 }
