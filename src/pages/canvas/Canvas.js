@@ -17,6 +17,7 @@ function Canvas() {
     alert('form feito')
   }
 
+  /*Chamadas para o form de Intuição*/ 
   function abrirFormIntuicao(e){
     e.preventDefault();
 
@@ -32,6 +33,24 @@ function Canvas() {
 
     modal.style.display = "none";
   }
+
+/*Chamadas para o form de Interção*/ 
+  function abrirFormInteracao(e){
+    e.preventDefault();
+
+    let modal = document.querySelector('.form_interacao');
+
+    modal.style.display = "block";
+  }
+
+  function fecharFormInteracao(e){
+    e.preventDefault();
+
+    let modal = document.querySelector('.form_interacao');
+
+    modal.style.display = "none";
+  }
+
 
   return (
     <div className='body'>
@@ -52,7 +71,7 @@ function Canvas() {
             <div className="dot3"></div>
             <button className='button1' onClick={(e) => abrirFormIntuicao(e)}>Intuição</button>
             <button className='button2'>Observação</button>
-            <button className='button3'>Interação</button>
+            <button className='button3' onClick={(e) => abrirFormInteracao(e)} >Interação</button>
             <div className="arrow" onClick={() => handleArrowClick()}></div> 
 
           </div>   
@@ -61,72 +80,72 @@ function Canvas() {
         <div className='form'>
           <div className='center'>
             <button onClick={(e) => fecharFormIntuicao(e)}></button>
-            <div className='esquerda'>
-              <div className='parte1'>
-                <form>
-                  <div>
-                    <span>Projeto:</span>
-                    <input type="text" /> 
-                  </div> 
+              <div className='esquerda'>
+                <div className='parte1'>
+                  <form>
+                    <div>
+                      <span>Projeto:</span>
+                      <input type="text" /> 
+                    </div> 
 
-                  <p>Equipe:</p>
-                  <input type="text" />  
-                </form>
+                    <p>Equipe:</p>
+                    <input type="text" />  
+                  </form>
+                  <div onClick={clicouNaDuvida} className='duvida'></div>
+                </div>
+
+                <div className='tabela1'>
+                  <table>
+                    <tr>
+                      <th>CONCEITO DNA</th>
+                      <th>DNA DE NEGÓCIO</th>
+                      <th>IMAGEM PAINEL SEMÂNTICO</th>
+                    </tr>
+
+                    <tr >
+                      <td className='tecnico'>TÉCNICO</td>
+                      <td><input type="text"/></td>
+                      <td><input type="text"/></td>
+                    </tr>
+
+                    <tr>
+                      <td className='resiliencia'>RESILIENTE</td>
+                      <td><input type="text"/></td>
+                      <td><input type="text"/></td>
+                    </tr>
+
+                    <tr>
+                      <td className='emocional'>EMOCIONAL</td>
+                      <td><input type="text"/></td>
+                      <td><input type="text"/></td>
+                    </tr>
+
+                    <tr>
+                      <td className='mercadologico'>MERCADOLÓGICO</td>
+                      <td><input type="text"/></td>
+                      <td><input type="text"/></td>
+                    </tr>
+
+                    <tr>
+                      <td className='integrador'>INTEGRADOR</td>
+                      <td><input type="text"/></td>
+                      <td><input type="text"/></td>
+                    </tr>
+
+                  </table>
+                </div>
+
                 <div onClick={clicouNaDuvida} className='duvida'></div>
+
+                <div className='parte2'>
+                  <p>ikigai:</p>
+                  <input type="text"/>
+                </div>
+
+                <div onClick={clicouNaDuvida} className='duvida'></div>
+
+                <div className='clear'></div>
               </div>
-
-              <div className='tabela1'>
-                <table>
-                  <tr>
-                    <th>CONCEITO DNA</th>
-                    <th>DNA DE NEGÓCIO</th>
-                    <th>IMAGEM PAINEL SEMÂNTICO</th>
-                  </tr>
-
-                  <tr >
-                    <td className='tecnico'>TÉCNICO</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                  </tr>
-
-                  <tr>
-                    <td className='resiliencia'>RESILIENTE</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                  </tr>
-
-                  <tr>
-                    <td className='emocional'>EMOCIONAL</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                  </tr>
-
-                  <tr>
-                    <td className='mercadologico'>MERCADOLÓGICO</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                  </tr>
-
-                  <tr>
-                    <td className='integrador'>INTEGRADOR</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                  </tr>
-
-                </table>
-              </div>
-
-              <div onClick={clicouNaDuvida} className='duvida'></div>
-
-              <div className='parte2'>
-                <p>ikigai:</p>
-                <input type="text"/>
-              </div>
-
-              <div onClick={clicouNaDuvida} className='duvida'></div>
-
-              <div className='clear'></div>
-            </div>
 
 
             <div className='direita'>
@@ -183,6 +202,98 @@ function Canvas() {
            
           </div>
         </div>
+
+
+        <div className='form_interacao'>
+          <div className='center'>
+          <button onClick={(e) => fecharFormInteracao(e)}></button>
+            <div className='tela1'>
+              <div className='parte1_interacao'>
+                <form>
+                  <div>
+                    <p>Análise de Custos: <div onClick={clicouNaDuvida} className='duvida'></div> </p>
+                  </div>
+                </form>
+              </div>
+
+              <div className='tabela_analise_custos'>
+                <table className='table_interacao'>
+                  <tr>
+                    <th>DESCRIÇÃO</th>
+                    <th>PREÇO</th>
+                    <th>QUANTIDADE</th>
+                    <th>CUSTO</th>
+                  </tr>
+
+                  <tr >
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
+
+                  <tr>
+                    <td className='nada'></td>
+                    <td className='nada'></td>
+                    <td className = 'total'>TOTAL</td>
+                    <td><input type="text"/></td>
+                  </tr>
+
+                </table>
+              </div>
+
+                <div className='parte2_interacao'>
+                  <form>
+                    <div>
+                      <p>Análise de Preços e Diferenciais: <div onClick={clicouNaDuvida} className='duvida'></div></p>
+                      
+                    </div>
+                  </form>
+                </div>
+
+                <div className='tabela_analise_preço'>
+                <table className='table_interacao'>
+                  <tr>
+                    <th>DIFERENCIAL</th>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
+
+                  <tr>
+                    <th>PREÇO</th>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                  </tr>
+                </table>
+              </div>
+
+              <div className='clear'></div>
+            </div>           
+
+          </div>
+        </div>
+        
+
 
         <img
           src={arrowIcon}
