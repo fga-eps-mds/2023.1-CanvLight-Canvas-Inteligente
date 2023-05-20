@@ -2,6 +2,7 @@ import React from 'react';
 import './Canvas.css';
 import logo from '../../images/logo_canvlight.png'
 import arrowIcon from '../../images/arrow.png';
+import rightArrow from '../../images/next-arrow.png'
 
 function Canvas() {
   
@@ -288,7 +289,16 @@ function Canvas() {
               </div>
 
               <div className='clear'></div>
+              
+              <img
+                src={rightArrow}
+                alt="Seta"
+                className="right-arrow"
+                onClick={handleArrowClick}
+              />
+
             </div>           
+
 
           </div>
         </div>

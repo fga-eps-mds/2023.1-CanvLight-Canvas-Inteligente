@@ -492,7 +492,7 @@ body, html{
 
 .tabela_analise_preço{
   margin-top: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 10px;
   float: left;
   width: 90%;
   font-weight: 100;
@@ -527,3 +527,9 @@ body, html{
   color: white;
 }
 
+.right-arrow {
+  float:right; 
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
