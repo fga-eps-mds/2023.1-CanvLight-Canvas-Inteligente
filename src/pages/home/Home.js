@@ -3,6 +3,9 @@ import logo from '../../images/logo_canvlight.png'
 
 function Home (){
     return(
+
+
+        
         <div>
             <div className='navbar'>
                 <div className='logo'>

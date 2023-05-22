@@ -38,7 +38,6 @@ function Canvas() {
             <button className='button1' onClick={(e) => abrirFormIntuicao(e)}>Intuição</button>
             <button className='button2'>Observação</button>
             <button className='button3'>Interação</button>
-
             <div className="arrow" onClick={() => handleArrowClick()}></div> 
 
           </div>   
