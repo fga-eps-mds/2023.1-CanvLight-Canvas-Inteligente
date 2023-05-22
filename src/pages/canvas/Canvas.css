@@ -320,6 +320,12 @@ body, html{
 
 .tabela1 table .terceiro-canto{
   border-radius: 0 0 15px 0;
+  border-bottom: 1px solid #6c0277;
+  border-right: 1px solid #6c0277;
+}
+
+.canto{
+  border-right: 1px solid #6c0277;
 }
 
 .parte2{

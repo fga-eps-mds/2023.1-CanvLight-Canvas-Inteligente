@@ -46,30 +46,30 @@ function Intuicao (){
                   <tr >
                     <td className='tecnico'>TÉCNICO</td>
                     <td><input type="text"/></td>
-                    <td><input type="text"/></td>
+                    <td className='canto'><input type="text"/></td>
                   </tr>
 
                   <tr>
                     <td className='resiliencia'>RESILIENTE</td>
                     <td><input type="text"/></td>
-                    <td><input type="text"/></td>
+                    <td className='canto'><input type="text"/></td>
                   </tr>
 
                   <tr>
                     <td className='emocional'>EMOCIONAL</td>
                     <td><input type="text"/></td>
-                    <td><input type="text"/></td>
+                    <td className='canto'><input type="text"/></td>
                   </tr>
 
                   <tr>
                     <td className='mercadologico'>MERCADOLÓGICO</td>
                     <td><input type="text"/></td>
-                    <td><input type="text"/></td>
+                    <td className='canto'><input type="text"/></td>
                   </tr>
 
                   <tr>
                     <td className='integrador'>INTEGRADOR</td>
-                    <td><input type="text"/></td>
+                    <td className='inferior'><input type="text"/></td>
                     <td className='terceiro-canto'><input type="text"/></td>
                   </tr>
 
