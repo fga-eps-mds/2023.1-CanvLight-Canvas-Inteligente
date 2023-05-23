@@ -1,37 +1,37 @@
-table{
+.benchmarking table{
     width: 90%;
     margin: auto;
     border-spacing: 0;
     color: white;
 }
   
-table th{
+.benchmarking table th{
     background-color: #fb8218;
     border: 1px solid #fb8218;
 }
   
-.primeiro-canto{
+.benchmarking .primeiro-canto{
     border-radius: 15px 0 0 0;
 }
   
-.segundo-canto{
+.benchmarking .segundo-canto{
     border-radius: 0 15px 0 0 ;
 }
   
-.terceiro-canto{
+.benchmarking .terceiro-canto{
     border-radius: 0 0 15px 0 ;
 }
   
-.quarto-canto{
+.benchmarking .quarto-canto{
     border-radius: 0 0 0 15px;
 }
   
-table td{
+.benchmarking table td{
     background-color: #252525;
     border: 1px solid #fb8218;
 }
   
-table input{
+.benchmarking table input{
     background-color: #252525;
     border: none;
     width: auto;

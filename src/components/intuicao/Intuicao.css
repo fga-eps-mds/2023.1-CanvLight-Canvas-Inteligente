@@ -1,243 +1,250 @@
 .center{
-    position:absolute;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    margin-right: 500px;
-    background-color: #252525;
-    max-width: 1000px;
-    margin: 30px 8%;
-    border-radius: 30px;
+  position:absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-right: 500px;
+  background-color: #252525;
+  max-width: 1000px;
+  margin: 30px 8%;
+  border-radius: 30px;
+}
+  
+.form .center button{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  top: -1px;
+}
+  
+  
+.duvida{
+  background-image: url('../../images/request\ \(1\).png');
+  width: 16px;
+  height: 16px;
+  float: right;
+  cursor: pointer;
+}
+  
+.esquerda{
+  float: left;
+  width: 50%;
+}
+  
+.parte1{
+  font-size: 20px;
+}
+  
+.parte1 form{
+  color: white;
+  float: left;
+  width: 90%;
+}
+  
+.parte1 form input{
+  margin-right: 10px;
+  margin-left: 10px;
+  /* float: right; */
+  background-color: #252525;
+  border: 1px solid #6c0277;
+  border-radius: 15px;
+  padding: 5px;
   }
   
-  .form .center button{
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 10px;
-    position: absolute;
-    border: none;
-    top: -1px;
-  }
+.tabela1{
+  margin-top: 20px;
+  float: left;
+  width: 90%;
+}
+  
+.tabela1 table{
+  text-align: center;
+  background-color: #252525;
+  border-spacing: 0;
+}
+  
+.tabela1 table th{
+  background-color: #6c0277;
+}
+  
+.tabela1 table td{
+  border-spacing: 0;
+}
+  
+.tabela1 table input{
+  width: 90%;
+  height: 90%;
+  border: none;
+  background-color: #252525;
+  color: white;
+}
+  
+.tecnico{
+  background-color: rgb(233, 31, 156);
+  border-left: 1px solid #6c0277;
+}
+  
+.mercadologico{
+  background-color: greenyellow;
+  border-left: 1px solid #6c0277;
+}
+  
+.emocional{
+  background-color:  #0e78c9;
+  border-left: 1px solid #6c0277;
+}
+  
+.resiliencia{
+  background-color: orangered;
+  border-left: 1px solid #6c0277;
+}
+  
+.integrador{
+  background-color: blueviolet;
+  border-left: 1px solid #6c0277;
+  border-bottom: 1px solid #6c0277;
+  border-radius: 0 0 0 15px;
+}
+  
+.tabela1 table .primeiro-canto{
+  border-radius: 15px 0 0 0;
+  background-color: #6c0277;
+}
+  
+.tabela1 table .segundo-canto{
+  border-radius: 0 15px 0 0;
+  background-color: #6c0277;
+}
+  
+.tabela1 table .terceiro-canto{
+  border-radius: 0 0 15px 0;
+  border-bottom: 1px solid #6c0277;
+  border-right: 1px solid #6c0277;
+}
+
+.tabela1 table .input-terceiro-canto{
+  border-radius: 0 0 15px 0;
+}
+
+.inferior{
+  border-bottom: 1px solid #6c0277;
+}
+  
+.canto{
+  border-right: 1px solid #6c0277;
+}
+  
+.parte2{
+  float: left;
+  width: 90%;
+}
+  
+.parte2 p{
+  color: white;
+  font-size: 25px;
+}
+  
+.parte2 input{
+  margin-right: 10px;
+  margin-left: 10px;
+  /* float: right; */
+  background-color: #252525;
+  border: 1px solid #6c0277;
+  border-radius: 15px;
+  color: white;
+  width: 400px;
+  height: 50px;
+}
+  
+.direita{
+  float: right;
+  width: 40%;
+}
+  
+.tabela2 table{
+  color: white;
+  background-color: #252525;
+  border: 1px solid #6c0277;
+  border-radius: 8px;
+  padding: 20px;
+  float: left;
+  width: 90%;
+}
+  
+.tabela2 h2{
+  color: white;
+}
+  
+.tabela2 table tr{
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  padding: 10px;
+}
+  
+.tabela2 input{
+  width: 70%;
+  height: 100%;
+  border-bottom: 1px solid white;
+  background-color: #252525;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  padding: 10px;
+}
+  
+.tabela3 h2{
+  color: white;
+}
+  
+.tabela3 table{
+  width: 90%;
+  float: left;
+  border-spacing: 0;
+}
+  
+.tabela3 table .primeiro-canto{
+  border-radius: 15px 0 0 0;
+  background-color: #6c0277;
+}
+  
+.tabela3 table .segundo-canto{
+  border-radius: 0 15px 0 0;
+  background-color: #6c0277;
+}
+  
+.tabela3 table .terceiro-canto{
+  border-radius: 0 0 15px 0;
+}
+  
+.tabela3 table .quarto-canto{
+  border-radius: 0 0 0 15px;
+}
+  
+.tabela3 th, .tabela3 td{
+  border: 1px solid black;
+  margin: 0;
+}
   
   
-  .duvida{
-    background-image: url('../../images/request\ \(1\).png');
-    width: 16px;
-    height: 16px;
-    float: right;
-    cursor: pointer;
-  }
+.tabela3 table input{
+  width: 95%;
+  height: 95%;
+  background-color: #252525;
+  border: none;
+}
   
-  .esquerda{
-    float: left;
-    width: 50%;
-  }
-  
-  .parte1{
-    font-size: 20px;
-  }
-  
-  .parte1 form{
-    color: white;
-    float: left;
-    width: 90%;
-  }
-  
-  .parte1 form input{
-    margin-right: 10px;
-    margin-left: 10px;
-    /* float: right; */
-    background-color: #252525;
-    border: 1px solid #6c0277;
-    border-radius: 15px;
-    padding: 5px;
-  }
-  
-  .tabela1{
-    margin-top: 20px;
-    float: left;
-    width: 90%;
-  }
-  
-  .tabela1 table{
-    text-align: center;
-    background-color: #252525;
-    border-spacing: 0;
-  }
-  
-  .tabela1 table th{
-    background-color: #6c0277;
-  }
-  
-  .tabela1 table td{
-    height: 30px;
-    border-spacing: 0;
-  }
-  
-  .tabela1 table input{
-    width: 90%;
-    height: 90%;
-    border: 1px solid black;
-    background-color: #252525;
-    color: white;
-  }
-  
-  .tecnico{
-    background-color: rgb(233, 31, 156);
-    border-left: 1px solid #6c0277;
-  }
-  
-  .mercadologico{
-    background-color: greenyellow;
-    border-left: 1px solid #6c0277;
-  }
-  
-  .emocional{
-    background-color:  #0e78c9;
-    border-left: 1px solid #6c0277;
-  }
-  
-  .resiliencia{
-    background-color: orangered;
-    border-left: 1px solid #6c0277;
-  }
-  
-  .integrador{
-    background-color: blueviolet;
-    border-left: 1px solid #6c0277;
-    border-bottom: 1px solid #6c0277;
-    border-radius: 0 0 0 15px;
-  }
-  
-  .tabela1 table .primeiro-canto{
-    border-radius: 15px 0 0 0;
-    background-color: #6c0277;
-  }
-  
-  .tabela1 table .segundo-canto{
-    border-radius: 0 15px 0 0;
-    background-color: #6c0277;
-  }
-  
-  .tabela1 table .terceiro-canto{
-    border-radius: 0 0 15px 0;
-    border-bottom: 1px solid #6c0277;
-    border-right: 1px solid #6c0277;
-  }
-  
-  .canto{
-    border-right: 1px solid #6c0277;
-  }
-  
-  .parte2{
-    float: left;
-    width: 90%;
-  }
-  
-  .parte2 p{
-    color: white;
-    font-size: 25px;
-  }
-  
-  .parte2 input{
-    margin-right: 10px;
-    margin-left: 10px;
-    /* float: right; */
-    background-color: #252525;
-    border: 1px solid #6c0277;
-    border-radius: 15px;
-    color: white;
-    width: 400px;
-    height: 50px;
-  }
-  
-  .direita{
-    float: right;
-    width: 40%;
-  }
-  
-  .tabela2 table{
-    color: white;
-    background-color: #252525;
-    border: 1px solid #6c0277;
-    border-radius: 8px;
-    padding: 20px;
-    float: left;
-    width: 90%;
-  }
-  
-  .tabela2 h2{
-    color: white;
-  }
-  
-  .tabela2 table tr{
-    width: 30%;
-    height: 100%;
-    text-align: left;
-    padding: 10px;
-  }
-  
-  .tabela2 input{
-    width: 70%;
-    height: 100%;
-    border-bottom: 1px solid white;
-    background-color: #252525;
-    border-right: none;
-    border-top: none;
-    border-left: none;
-    padding: 10px;
-  }
-  
-  .tabela3 h2{
-    color: white;
-  }
-  
-  .tabela3 table{
-    width: 90%;
-    float: left;
-    border-spacing: 0;
-  }
-  
-  .tabela3 table .primeiro-canto{
-    border-radius: 15px 0 0 0;
-    background-color: #6c0277;
-  }
-  
-  .tabela3 table .segundo-canto{
-    border-radius: 0 15px 0 0;
-    background-color: #6c0277;
-  }
-  
-  .tabela3 table .terceiro-canto{
-    border-radius: 0 0 15px 0;
-  }
-  
-  .tabela3 table .quarto-canto{
-    border-radius: 0 0 0 15px;
-  }
-  
-  .tabela3 th, .tabela3 td{
-    border: 1px solid black;
-    margin: 0;
-  }
-  
-  
-  .tabela3 table input{
-    width: 95%;
-    height: 95%;
-    background-color: #252525;
-    border: none;
-  }
-  
-  .feito{
-    background-image: url('../../images/check.png');
-    width: 32px;
-    height: 32px;
-    float: right;
-    cursor: pointer;
-    width: 50%;
-    background-repeat: no-repeat;
-  }
+.feito{
+  background-image: url('../../images/check.png');
+  width: 32px;
+  height: 32px;
+  float: right;
+  cursor: pointer;
+  width: 50%;
+  background-repeat: no-repeat;
+}

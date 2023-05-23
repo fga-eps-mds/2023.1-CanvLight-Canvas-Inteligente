@@ -70,7 +70,7 @@ function Intuicao (){
                   <tr>
                     <td className='integrador'>INTEGRADOR</td>
                     <td className='inferior'><input type="text"/></td>
-                    <td className='terceiro-canto'><input type="text"/></td>
+                    <td className='terceiro-canto'><input className='input-terceiro-canto' type="text"/></td>
                   </tr>
 
                 </table>
@@ -127,8 +127,8 @@ function Intuicao (){
                   </tr>
 
                   <tr>
-                    <td className='quarto-canto'><input type="text"/></td>
-                    <td className='terceiro-canto'><input type="text"/></td>
+                    <td className='quarto-canto'><input className='quarto-canto' type="text"/></td>
+                    <td className='terceiro-canto'><input className='teceiro-canto' type="text"/></td>
                   </tr>
 
                 </table>
