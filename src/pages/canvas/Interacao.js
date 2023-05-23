@@ -12,9 +12,6 @@ function Interacao (){
         let modal = document.querySelector('.form_interacao');
         modal.style.display = "none";
       }
-      function handleArrowClick() {
-        alert('Seta clicada!');
-      }
 
       function nextpage1(e){
         e.preventDefault();
@@ -90,7 +87,6 @@ function Interacao (){
                 <form>
                     <div>
                     <p>Análise de Preços e Diferenciais: <div onClick={clicouNaDuvida} className='duvida'></div></p>
-      
                     </div>
                 </form>
                 </div>
@@ -126,106 +122,106 @@ function Interacao (){
         </div>
     </div>
         <div className='tela_2_form_interacao'>
-        <div className='center'>
-    <button onClick={(e) => fecharFormInteracaoTela2(e)}></button>
+            <div className='center'>
+        <button onClick={(e) => fecharFormInteracaoTela2(e)}></button>
 
     <div className='tela2'>
         <div className='esquerda'>
-    <div className='parte3_interacao'>
-        <div>
-            <spam>Checklist: <div onClick={clicouNaDuvida} className='duvida'></div> </spam>
-            <input type="text" /> 
-        </div>
-        </div>
-        <div className='direita'>
-        <div className='parte4_interacao'>
-            <p>MVP: <div onClick={clicouNaDuvida} className='duvida'></div> </p> 
-        </div>
-    </div>
-    <div className='tabela_MVP'>
-        <table className='table_interacao_tela2'>
-        <tr>
-            <th>PRODUTO</th>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr >
-            <th>INDICADO PARA</th>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr>
-            <th>ORIENTAÇÕES DE USO</th>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr>
-            <th>RESULTADO</th>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        </table>
-        </div>
-    </div>
-        <div className='parte5_interacao'>
-        <form>
-            <div>
-            <p>Formação do Preço: <div onClick={clicouNaDuvida} className='duvida'></div></p>
+            <div className='parte3_interacao'>
+                <div>
+                    <spam>Checklist: <div onClick={clicouNaDuvida} className='duvida'></div> </spam>
+                    <input type="text" /> 
+                </div>
             </div>
-        </form>
+        <div className='direita'>
+            <div className='parte4_interacao'>
+                <p>MVP: <div onClick={clicouNaDuvida} className='duvida'></div> </p> 
+            </div>
         </div>
-        <div className='tabela_formacao'>
-        <table className='table_interacao_tela2/'>
-        <tr>
-            <th>DESCRIÇÃO</th>
-            <th>CUSTO</th>
-            <th>TAXA ADMINISTRATIVA</th>
-            <th>IMPOSTOS</th>
-            <th>MARGEM DE LUCRO</th>
-            <th>PREÇO</th>
-        </tr>
-        <tr>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        <tr>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-            <td><input type="text"/></td>
-        </tr>
-        </table>
-    </div>
+            <div className='tabela_MVP'>
+                <table className='table_interacao_tela2'>
+                <tr>
+                    <th>PRODUTO</th>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr >
+                    <th>INDICADO PARA</th>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <th>ORIENTAÇÕES DE USO</th>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <th>RESULTADO</th>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                </table>
+            </div>
+        </div>
+        <div className='parte5_interacao'>
+            <form>
+                <div>
+                    <p>Formação do Preço: <div onClick={clicouNaDuvida} className='duvida'></div></p>
+                </div>
+            </form>
+        </div>
+            <div className='tabela_formacao'>
+                <table className='table_interacao_tela2/'>
+                <tr>
+                    <th>DESCRIÇÃO</th>
+                    <th>CUSTO</th>
+                    <th>TAXA ADMINISTRATIVA</th>
+                    <th>IMPOSTOS</th>
+                    <th>MARGEM DE LUCRO</th>
+                    <th>PREÇO</th>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                </table>
+            </div>
     <div className='clear'></div>
     <img
         src={rightArrow}
@@ -240,14 +236,10 @@ function Interacao (){
     onClick={(e) =>backpage1(e)}
     />
     </div>           
-</div>
-
+            </div>
         </div>
-
     </div>
 
-
-        
     )
 }
 export default Interacao 
