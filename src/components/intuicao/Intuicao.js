@@ -1,4 +1,4 @@
-import './Canvas.css'
+import './Intuicao.css'
 
 function Intuicao (){
     function clicouNaDuvida(){

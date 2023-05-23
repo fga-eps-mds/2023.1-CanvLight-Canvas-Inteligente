@@ -2,7 +2,7 @@ import React from 'react';
 import './Canvas.css';
 import logo from '../../images/logo_canvlight.png'
 import arrowIcon from '../../images/arrow.png';
-import Intuicao from './Intuicao.js';
+import Intuicao from '../../components/intuicao/Intuicao.js';
 import Observacao1 from './Observacao1.js'
 
 function Canvas() {
