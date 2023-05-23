@@ -26,7 +26,7 @@ function Intuicao (){
                 <form>
                   <div>
                     <span>Projeto:</span>
-                    <input type="text" /> 
+                    <input className='margin' type="text" /> 
                   </div> 
 
                   <p>Equipe:</p>
