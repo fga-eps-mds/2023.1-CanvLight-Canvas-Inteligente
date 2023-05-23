@@ -186,7 +186,6 @@ body, html{
 
 /* intuição */
 
-
 .form{
   display: none;
   position: absolute;
@@ -218,6 +217,7 @@ body, html{
   border: none;
   top: -1px;
 }
+
 
 .duvida{
   background-image: url('../../images/request\ \(1\).png');
@@ -461,5 +461,97 @@ body, html{
   width: 50%;
   background-repeat: no-repeat;
 }
-  
 
+/* intuicao */
+
+/*observacao*/
+  
+.benchmarking{
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.concorrente table{
+  width: 90%;
+  margin: auto;
+  border-spacing: 0;
+  color: white;
+}
+
+.concorrente table th{
+  background-color: #fb8218;
+  border: 1px solid #fb8218;
+}
+
+.con-primeiro-canto{
+  border-radius: 15px 0 0 0;
+}
+
+.con-segundo-canto{
+  border-radius: 0 15px 0 0 ;
+}
+
+.con-terceiro-canto{
+  border-radius: 0 0 15px 0 ;
+}
+
+.con-quarto-canto{
+  border-radius: 0 0 0 15px;
+}
+
+.concorrente table td{
+  background-color: #252525;
+  border: 1px solid #fb8218;
+}
+
+.concorrente table input{
+  background-color: #252525;
+  border: none;
+  width: auto;
+  height: auto;
+}
+
+.parceiro table{
+  width: 90%;
+  margin: auto;
+  border-spacing: 0;
+  color: white;
+}
+
+.parceiro table th{
+  background-color: #fb8218;
+  border: 1px solid #fb8218;
+}
+
+.par-primeiro-canto{
+  border-radius: 15px 0 0 0;
+}
+
+.par-segundo-canto{
+  border-radius: 0 15px 0 0 ;
+}
+
+.par-terceiro-canto{
+  border-radius: 0 0 15px 0 ;
+}
+
+.par-quarto-canto{
+  border-radius: 0 0 0 15px;
+}
+
+.parceiro table td{
+  background-color: #252525;
+  border: 1px solid #fb8218;
+}
+
+.parceiro table input{
+  background-color: #252525;
+  border: none;
+  width: auto;
+  height: auto;
+}
