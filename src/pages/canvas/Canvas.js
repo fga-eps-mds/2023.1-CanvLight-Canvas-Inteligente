@@ -2,6 +2,7 @@ import React from "react";
 import "./Canvas.css";
 import logo from "../../images/logo_canvlight.png";
 import arrowIcon from "../../images/arrow.png";
+import checkIcon from "../../images/check.png";
 
 function Canvas() {
   function handleArrowClick() {
@@ -213,7 +214,14 @@ function Canvas() {
 
             <div onClick={clicouNaDuvida} className="duvida"></div>
 
-            <div onClick={formIntuicaoTerminado} className="feito"></div>
+            <div>
+              <img
+                src={checkIcon}
+                alt="Checa"
+                className="feito" 
+                onClick={formIntuicaoTerminado}
+              />
+            </div>
 
             <div className="clear"></div>
           </div>

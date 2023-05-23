@@ -401,11 +401,11 @@ html {
 }
 
 .feito {
-  background-image: url("../../images/check.png");
-  width: 32px;
-  height: 32px;
+  height: 6vh;
+  width: 3vw;
+  margin-top: 35%;
+  margin-right: 0%;
   float: right;
   cursor: pointer;
-  width: 50%;
   background-repeat: no-repeat;
 }
