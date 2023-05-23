@@ -1,0 +1,41 @@
+table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    color: white;
+}
+  
+table th{
+    background-color: #fb8218;
+    border: 1px solid #fb8218;
+}
+  
+.primeiro-canto{
+    border-radius: 15px 0 0 0;
+}
+  
+.segundo-canto{
+    border-radius: 0 15px 0 0 ;
+}
+  
+.terceiro-canto{
+    border-radius: 0 0 15px 0 ;
+}
+  
+.quarto-canto{
+    border-radius: 0 0 0 15px;
+}
+  
+table td{
+    background-color: #252525;
+    border: 1px solid #fb8218;
+}
+  
+table input{
+    background-color: #252525;
+    border: none;
+    width: auto;
+    height: auto;
+}
+  
+  
