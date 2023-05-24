@@ -1,6 +1,24 @@
 import './Observacao2.css'
 
 function Observacao2(){
+    function irParaObservacao1(e){
+        e.preventDefault();
+    
+        let modal = document.querySelector('.benchmarking');
+        let modal2 = document.querySelector('.Observacao2')
+        
+        modal.style.display = "block";
+        modal2.style.display = "none"
+    }
+
+    function irParaObservacao3(e){
+        e.preventDefault();
+    
+        let modal = document.querySelector('.Observacao2')
+        
+        modal.style.display = "none";
+    }
+
 	return(
 	    <div className="Observacao2">
             <div className='center'>
@@ -84,6 +102,12 @@ function Observacao2(){
                         </tr>
                     </table>
                 </div>
+
+                <div onClick={(e) => irParaObservacao1(e)} className='seta-esquerda'></div>
+
+                <div onClick={(e) => irParaObservacao3(e)} className='seta-direita'></div>
+
+                <div className='clear'></div>
             </div>
         </div>  
     )   
