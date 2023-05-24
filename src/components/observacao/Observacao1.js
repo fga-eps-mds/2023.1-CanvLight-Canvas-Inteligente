@@ -1,6 +1,10 @@
 import './Observacao1.css'
 
 function Observacao1(){
+    function clicouNaDuvida(){
+        alert('duvida clicada!')
+    }
+
     function irParaObservacao2(e){
         e.preventDefault();
     
@@ -16,6 +20,7 @@ function Observacao1(){
         <div className="benchmarking">
             <div className='center'>
                 <h2>Benchmarking</h2>
+                <div onClick={clicouNaDuvida} className='duvida'></div>
                 <div className="concorrente">
                     <p>Concorrente</p>
                     <table>
@@ -59,9 +64,16 @@ function Observacao1(){
                             <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
                         </tr>
                     </table>
+
+                    <div className='clear'></div>
                 </div>
 
                 <div className="parceiro">
+
+                    <div onClick={clicouNaDuvida} className='duvida'></div>
+
+                    <div className='clear'></div>
+
                     <p>Parceiro</p>
                     <table>
                         <tr>
