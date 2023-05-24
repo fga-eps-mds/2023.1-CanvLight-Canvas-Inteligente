@@ -4,6 +4,7 @@ import logo from '../../images/logo_canvlight.png'
 import arrowIcon from '../../images/arrow.png';
 import Intuicao from '../../components/intuicao/Intuicao.js';
 import Observacao1 from '../../components/observacao/Observacao1.js'
+import Observacao2 from '../../components/observacao/Observacao2.js'
 
 function Canvas() {
   
@@ -55,6 +56,8 @@ function Canvas() {
         <Intuicao/>
 
         <Observacao1/>
+
+        <Observacao2/>
 
         <img
           src={arrowIcon}

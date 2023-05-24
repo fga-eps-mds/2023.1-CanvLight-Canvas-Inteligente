@@ -210,3 +210,15 @@ body, html{
 }
 
 /*observação*/
+
+.Observacao2{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  color: white;
+  height: 100%;
+}
+
+
