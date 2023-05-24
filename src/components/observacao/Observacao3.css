@@ -1,0 +1,84 @@
+.Observacao3 .center{
+    width: 90%;
+    background-color: #252525;
+    height: 50%;
+    border-radius: 30px;
+    margin: auto;
+    color: white;
+}
+
+.Observacao3 p{
+    font-size: 30px;
+}
+
+.Observacao3 table{
+    width: 80%;
+    border-spacing: 0;
+    color: white;
+    margin: auto;
+}
+  
+.Observacao3 table th{
+    background-color: #fb8218;
+    border: 1px solid #fb8218;
+    font-size: 20px;
+}
+  
+.Observacao3 .primeiro-canto{
+    border-radius: 15px 0 0 0;
+}
+  
+.Observacao3 .segundo-canto{
+    border-radius: 0 15px 0 0 ;
+}
+  
+.Observacao3 .terceiro-canto{
+    border-radius: 0 0 15px 0 ;
+}
+  
+.Observacao3 .quarto-canto{
+    border-radius: 0 0 0 15px;
+}
+  
+.Observacao3 table td{
+    background-color: #252525;
+    border: 1px solid #fb8218;
+}
+  
+.Observacao3 table input{
+    background-color: #252525;
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+.seta-esquerda{
+    background-image: url('../../images/seta-esquerda.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    float: left;
+    cursor: pointer;
+}
+
+.Observacao-finalizada{
+    background-image: url('../../images/check2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    float: right;
+    cursor: pointer;
+}
+
+.duvida{
+    background-image: url('../../images/request\ \(1\).png');
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+    bottom: 5%;
+}

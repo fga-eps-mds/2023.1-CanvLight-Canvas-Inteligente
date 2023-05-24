@@ -15,8 +15,10 @@ function Observacao2(){
         e.preventDefault();
     
         let modal = document.querySelector('.Observacao2')
+        let modal2 = document.querySelector('.Observacao3')
         
         modal.style.display = "none";
+        modal2.style.display = 'block';
     }
 
 	return(
