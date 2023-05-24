@@ -1,6 +1,11 @@
 import './Observacao2.css'
 
 function Observacao2(){
+
+    function clicouNaDuvida(){
+        alert('duvida clicada!')
+    }
+
     function irParaObservacao1(e){
         e.preventDefault();
     
@@ -26,7 +31,7 @@ function Observacao2(){
             <div className='center'>
                 <div className='psdoprojeto'>
                     <h2>Revisão dos 4P's do projeto</h2>
-
+                    <div onClick={clicouNaDuvida} className='duvida'></div>
                     <table>
                     <tr>
                         <td>P1:<input type="text"/></td>
@@ -66,6 +71,7 @@ function Observacao2(){
 
                 <div className="conceito">
                     <p>Conceito</p>
+                    <div onClick={clicouNaDuvida} className='duvida'></div>
                     <table>
                         <tr>
                             <th className="primeiro-canto">Ferramentas</th>

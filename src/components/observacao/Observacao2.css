@@ -123,3 +123,13 @@
     float: right;
     cursor: pointer;
 }
+
+
+.duvida{
+    background-image: url('../../images/request\ \(1\).png');
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+    bottom: 5%;
+}
