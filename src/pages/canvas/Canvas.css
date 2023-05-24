@@ -207,9 +207,8 @@ body, html{
   width: 100%;
   height: 100%;
   color: white;
+  margin: auto;
 }
-
-/*observação*/
 
 .Observacao2{
   position: absolute;
@@ -220,5 +219,8 @@ body, html{
   color: white;
   height: 100%;
 }
+
+/*observação*/
+
 
 

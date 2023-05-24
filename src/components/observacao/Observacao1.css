@@ -1,8 +1,18 @@
-.benchmarking table{
+.benchmarking .center{
+    background-color: #252525;
     width: 90%;
+    height: 60%;
+    border-radius: 30px;
     margin: auto;
+    padding: 4%;
+}
+
+
+.benchmarking table{
+    width: 80%;
     border-spacing: 0;
     color: white;
+    margin: auto;
 }
   
 .benchmarking table th{
@@ -36,6 +46,14 @@
     border: none;
     width: auto;
     height: auto;
+}
+
+.benchmarking h2{
+    text-align: left;
+}
+
+.benchmarking p{
+    text-align: left;
 }
   
   
