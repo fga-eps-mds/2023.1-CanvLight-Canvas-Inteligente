@@ -117,9 +117,64 @@ function Observacao1(){
                         </tr>
                     </table>
                 </div>
-                <div onClick={(e) => irParaObservacao2(e)} className='setas'></div>
 
                 <div className='clear'></div>
+            
+                <div className='perfil'>
+                    <div onClick={clicouNaDuvida} className='duvida'></div>
+
+                    <div className='clear'></div>
+
+                    <h2>Perfil dos clientes</h2>
+
+                    <div className='dir'>
+                        <table>
+                            <tr>
+                                <th><div className='img-perfil'></div></th>
+                                <th><div className='img-crescendo'></div></th>
+                                <th><div className='img-descendo'></div></th>
+                            </tr>
+
+                            <tr>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div className='esq'>
+                        <table>
+                            <tr>
+                                <th><div className='img-perfil'></div></th>
+                                <th><div className='img-crescendo'></div></th>
+                                <th><div className='img-descendo'></div></th>
+                            </tr>
+
+                            <tr>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                                <td><input type='text' /></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div className='clear'></div>
+                </div>
+
+                <div onClick={(e) => irParaObservacao2(e)} className='setas'></div>
+                
             </div>
         </div>
     )
