@@ -160,22 +160,22 @@
 
   .parte3_interacao{
     float: left;
-    width: 40%; 
+    width: 20%; 
   }
     
   .parte3_interacao p{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .parte4_interacao{
     float: right;
-    width: 20%; 
+    width: 40%; 
   }
     
   .parte4_interacao p{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .tabela_MVP{
@@ -188,33 +188,77 @@
     
   .tabela_MVP table{
     box-sizing: border-box;
-    left: 8.11%;
-    right: 41.28%;
-    top: 12.75%;
+    left: 40.42%;
+    right: 16.18%;
+    top: 19.16%;
+    bottom: 50.04%;
     
     text-align: center;
     background-color: #2666E3;
-    border: 3px solid #2666E3;
-    border-radius: 12px;
+    border: 1px solid #2666E3;
+    border-radius: 15px;
     color: white;
     
   }
     
   .tabela_MVP table td{
-    height: 30px;
+    height: 35px;
     border-radius: 10px;
     font-weight: 400;
   }
     
   .tabela_MVP table input{
     width: 97%;
-    height: 96%;
+    height: 98%;
     background-color: #252525;
     border: 1px solid #252525;
     border-radius: 0px;
     color: white;
   }
+
+  .parte5_interacao{
+    float: center;
+    width: 20%; 
+  }
     
+  .parte5_interacao p{
+    color: white;
+    font-size: 18px;
+  }
+
+  .tabela_formacao{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    float: left;
+    width: 90%;
+    font-weight: 100;
+}
+
+  .tabela_formacao table{
+    text-align: center;
+    background-color: #2666E3;
+    border: 1px solid #2666E3;
+    border-radius: 15px;
+    color: white;
+    float: left;
+    width: 90%;
+    padding: 0;
+  }
+
+  .tabela_formacao table td{
+    border-radius: 10px;
+    font-weight: 400;
+    height: 40px;
+  }
+
+  .tabela_formacao table input{
+    width: 97%;
+    height: 98%;
+    background-color: #252525;
+    border: 1px solid #252525;
+    border-radius: 0px;
+    color: white;
+  }
 
 
   .left-arrow {
