@@ -1,6 +1,17 @@
 import './Observacao1.css'
 
 function Observacao1(){
+    function irParaObservacao2(e){
+        e.preventDefault();
+    
+        let modal = document.querySelector('.benchmarking');
+        let modal2 = document.querySelector('.Observacao2')
+        
+        modal.style.display = "none";
+        modal2.style.display = "block"
+    }
+
+
     return(
         <div className="benchmarking">
             <div className='center'>
@@ -94,6 +105,9 @@ function Observacao1(){
                         </tr>
                     </table>
                 </div>
+                <div onClick={(e) => irParaObservacao2(e)} className='setas'></div>
+
+                <div className='clear'></div>
             </div>
         </div>
     )

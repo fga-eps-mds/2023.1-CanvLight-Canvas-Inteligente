@@ -55,5 +55,14 @@
 .benchmarking p{
     text-align: left;
 }
-  
-  
+
+.setas{
+    background-image: url('../../images/seta-direita.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    float: right;
+    cursor: pointer;
+}
