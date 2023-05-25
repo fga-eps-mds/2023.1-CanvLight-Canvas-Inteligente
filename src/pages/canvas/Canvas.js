@@ -3,6 +3,7 @@ import "./Canvas.css";
 import logo from "../../images/logo_canvlight.png";
 import arrowIcon from "../../images/arrow.png";
 import checkIcon from "../../images/check.png";
+import dateIntuition from "../../images/dateIntuition.png";
 
 function Canvas() {
   function handleArrowClick() {
@@ -67,10 +68,7 @@ function Canvas() {
                   <span></span>
                 </div>
               </form>
-            </div>
-
-            <div onClick={clicouNaDuvida} className="duvida"></div>
-            
+            </div> 
             <div className="parte1_2">
               <form>
                   <div>
@@ -140,19 +138,26 @@ function Canvas() {
               </table>
             </div>
 
-            <div onClick={clicouNaDuvida} className="duvida"></div>
+            <div onClick={clicouNaDuvida} className="duvida1"></div>
 
             <div className="parte2">
-              <p>ikigai:</p>
+              <p>Ikigai:</p>
               <input type="text" />
             </div>
 
-            <div onClick={clicouNaDuvida} className="duvida"></div>
+            <div onClick={clicouNaDuvida} className="duvida2"></div>
 
             <div className="clear"></div>
           </div>
 
           <div className="direita">
+            <div>
+                <img
+                  src={dateIntuition}
+                  alt="DataIntuicao"
+                  className="dateInt"
+                />
+              </div>
             <div className="tabela2">
               <h2>4P's do projeto</h2>
 
@@ -181,7 +186,7 @@ function Canvas() {
               </table>
             </div>
 
-            <div onClick={clicouNaDuvida} className="duvida"></div>
+            <div onClick={clicouNaDuvida} className="duvida3"></div>
 
             <div className="tabela3">
               <h2>Síntese</h2>
@@ -220,7 +225,7 @@ function Canvas() {
               </table>
             </div>
 
-            <div onClick={clicouNaDuvida} className="duvida"></div>
+            <div onClick={clicouNaDuvida} className="duvida4"></div>
 
             <div>
               <img

@@ -242,12 +242,14 @@ html {
   top: 2%;
 }
 
-.duvida {
+.duvida1 {
   background-image: url("../../images/request\ \(1\).png");
-  width: 16px;
-  height: 16px;
+  width: 0.85vw;
+  height: 1.533vh;
   float: right;
   cursor: pointer;
+  margin-right: 8%;
+  margin-top: 0%;
 }
 
 .esquerda {
@@ -272,6 +274,7 @@ html {
   /* float: right; */
   background-color: #252525;
   border: 5px solid #6c0277;
+  color: white;
   border-radius: 15px;
   padding: 5px;
   width: 29vw;
@@ -292,6 +295,7 @@ html {
   /* float: right; */
   background-color: #252525;
   border: 5px solid #6c0277;
+  color: white;
   border-radius: 15px;
   padding: 5px;
   width: 35.2vw;
@@ -307,7 +311,7 @@ html {
 .tabela1 table {
   text-align: center;
   background-color: #6c0277;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
 }
 
@@ -327,7 +331,8 @@ html {
 
 .tecnico {
   background-color: rgb(233, 31, 156);
-  height: 10%;
+  height: 10vh;
+  width: 10vw;
 }
 
 .mercadologico {
@@ -346,6 +351,16 @@ html {
   background-color: blueviolet;
 }
 
+.duvida2 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 8%;
+  margin-top: 7%;
+}
+
 .parte2 {
   float: left;
   width: 90%;
@@ -358,14 +373,13 @@ html {
 
 .parte2 input {
   margin-right: 10px;
-  margin-left: 10px;
   /* float: right; */
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
-  width: 400px;
-  height: 100px;
+  width: 37.4vw;
+  height: 10vh;
 }
 
 .direita {
@@ -374,10 +388,20 @@ html {
   margin-top: 2%;
 }
 
+.dateInt {
+  height: 4vh;
+  width: 8vw;
+  margin-top: -6%;
+  margin-right: 0%;
+  float: right;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
 .tabela2 table {
   color: white;
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 8px;
   padding: 20px;
   float: left;
@@ -406,6 +430,16 @@ html {
   padding: 10px;
 }
 
+.duvida3 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-top: -4%;
+}
+
 .tabela3 h2 {
   color: white;
 }
@@ -413,7 +447,7 @@ html {
 .tabela3 table {
   text-align: center;
   background-color: #6c0277;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
   float: left;
@@ -432,6 +466,16 @@ html {
   background-color: #252525;
   border: 1px solid black;
   color: white;
+}
+
+.duvida4 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-top: -4%;
 }
 
 .feito {
