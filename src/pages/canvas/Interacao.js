@@ -75,7 +75,7 @@ function newTask(){
     <div body> 
         <div className='form_interacao'>
             <div className='center'>
-            <button onClick={(e) => fecharFormInteracao(e)}></button>
+            <button className='close_button' onClick={(e) => fecharFormInteracao(e)}></button>
 
                 <div className='tela1'>
                 <div className='parte1_interacao'>
@@ -159,7 +159,7 @@ function newTask(){
         </div>
         <div className='tela_2_form_interacao'>
             <div className='center'>
-                <button onClick={(e) => fecharFormInteracaoTela2(e)}></button>
+                <button className='close_button' onClick={(e) => fecharFormInteracaoTela2(e)}></button>
                 <div className='tela2'>
                 <div className='esquerda'>
                     <div className='parte3_interacao'>
@@ -168,11 +168,13 @@ function newTask(){
                     </div>
                     <div className='Inserir_tarefa'>
                         <input type="text" id='input-new-task' placeholder='Inserir tarefa'></input> 
-                        <button className='Inserir_tarefa' onClick={(e) => newTask(e)}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-                        </svg>
-                        </button>
+                        <span className='button_tarefa' onClick={(e) => newTask(e)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="black" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                            </svg>
+                        </span>
+
+
                     </div>
                     </div>
                 </div>
@@ -285,7 +287,7 @@ function newTask(){
         <div className='tela_3_form_interacao'>
             <div className='center'>
                 <div className='esquerda'>
-                    <button onClick={(e) => fecharTela_3(e)}></button>
+                    <button className='close_button' onClick={(e) => fecharTela_3(e)}></button>
                     <div className='digitalizacao'>
                         <p>Digitalização do Negócio:<div onClick={clicouNaDuvida} className='duvida'></div></p>
                     </div>

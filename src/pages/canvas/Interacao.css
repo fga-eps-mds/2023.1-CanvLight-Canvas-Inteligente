@@ -22,7 +22,7 @@
     border-radius: 30px;
   }
   
-  .form_interacao .center button{
+  .close_button{
     cursor: pointer;
     width: 20px;
     height: 20px;
@@ -147,7 +147,7 @@
     font-family: 'Ubuntu';
   }
     
-  .tela_2_form_interacao .center button{
+  .close_button{
     cursor: pointer;
     width: 20px;
     height: 20px;
@@ -157,6 +157,14 @@
     border: none;
     top: 2px;
   }
+
+  /*botao de inserir tarefa*/
+  .button_tarefa{
+    cursor: pointer;
+    margin-left: 0.3%;
+    position: absolute;
+  }
+
 
   .parte3_interacao{
     float: left;
@@ -294,7 +302,7 @@
   border-radius: 30px;
 }
 
-.tela_3_form_interacao .center button{
+.close_button{
   cursor: pointer;
   width: 20px;
   height: 20px;
