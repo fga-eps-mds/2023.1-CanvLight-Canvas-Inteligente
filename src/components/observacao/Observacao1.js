@@ -128,47 +128,25 @@ function Observacao1(){
                     <h2>Perfil dos clientes</h2>
 
                     <div className='dir'>
-                        <table>
-                            <tr>
-                                <th><div className='img-perfil'></div></th>
-                                <th><div className='img-crescendo'></div></th>
-                                <th><div className='img-descendo'></div></th>
-                            </tr>
+                        <div className='img-perfil'></div>
+                        <input className='primeiro-input' type='text'/>
 
-                            <tr>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                            </tr>
+                        <div className='crescendo'></div>
+                        <input className='segundo-input' type='text'/>
 
-                            <tr>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                            </tr>
-                        </table>
+                        <div className='decrescendo'></div>
+                        <input className='terceiro-input' type='text'/>
                     </div>
 
                     <div className='esq'>
-                        <table>
-                            <tr>
-                                <th><div className='img-perfil'></div></th>
-                                <th><div className='img-crescendo'></div></th>
-                                <th><div className='img-descendo'></div></th>
-                            </tr>
+                    <div className='img-perfil'></div>
+                        <input type='text'/>
 
-                            <tr>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                            </tr>
+                        <div className='crescendo'></div>
+                        <input type='text'/>
 
-                            <tr>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                                <td><input type='text' /></td>
-                            </tr>
-                        </table>
+                        <div className='decrescendo'></div>
+                        <input type='text'/>
                     </div>
                     <div className='clear'></div>
                 </div>

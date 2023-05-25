@@ -1,7 +1,7 @@
 .benchmarking .center{
     background-color: #252525;
     width: 90%;
-    height: 80%;
+    height: 100%;
     border-radius: 30px;
     margin: auto;
     padding: 4%;
@@ -94,14 +94,46 @@
     float: left;
 }
 
+.perfil input{
+    height: 5%;
+    background-color: #252525;
+    border: 1px solid #fb8218;
+    border-radius: 15px;
+    width: 50%;
+    margin: 1%;
+    padding: 2%;
+}
+
 .img-perfil{
+    top: 87%;
     background-image: url('../../images/profile\ \(1\).png');
     background-repeat: no-repeat;
     background-size: contain;
+    position: absolute;
     width: 5%;
     height: 5%;
-    position: absolute;
     bottom: 13%;
-    
+}
+
+.crescendo{
+    top: 95%;
+    background-image: url('../../images/stats.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    bottom: 8%;
+}
+
+.decrescendo{
+    top: 103%;
+    background-image: url('../../images/graph.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    bottom: 3%;
 }
 
