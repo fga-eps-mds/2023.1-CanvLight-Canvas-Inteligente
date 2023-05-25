@@ -64,12 +64,20 @@ function Canvas() {
                 <div>
                   <span>Projeto:</span>
                   <input type="text" />
+                  <span></span>
                 </div>
-
-                <p>Equipe:</p>
-                <input type="text" />
               </form>
-              <div onClick={clicouNaDuvida} className="duvida"></div>
+            </div>
+
+            <div onClick={clicouNaDuvida} className="duvida"></div>
+            
+            <div className="parte1_2">
+              <form>
+                  <div>
+                    <p>Equipe:</p>
+                    <input type="text" />
+                  </div>
+              </form>
             </div>
 
             <div className="tabela1">
@@ -217,7 +225,7 @@ function Canvas() {
             <div>
               <img
                 src={checkIcon}
-                alt="Checa"
+                alt="ConfirmaIntuicao"
                 className="feito" 
                 onClick={formIntuicaoTerminado}
               />
@@ -233,6 +241,13 @@ function Canvas() {
         className="arrow-button"
         onClick={handleArrowClick}
       />
+      <div>
+              <img
+                src={checkIcon}
+                alt="Confirma"
+                className="confirma" 
+              />
+            </div>
     </div>
   );
 }

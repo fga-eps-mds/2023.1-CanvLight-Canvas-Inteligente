@@ -34,12 +34,13 @@ html {
   cursor: pointer;
 }
 .name_navbar {
-  position: fixed;
+  position: relative;
   white-space: nowrap;
   overflow: hidden;
   width: fit-content;
   height: fit-content;
   left: 5%;
+  top: -10%;
   cursor: pointer;
 
   font-family: "Ubuntu";
@@ -195,6 +196,16 @@ html {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.confirma {
+  height: 10vh;
+  width: 5vw;
+  margin-top: 40%;
+  margin-right: 3%;
+  float: right;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
 /* intuição */
 
 .form {
@@ -256,13 +267,35 @@ html {
 }
 
 .parte1 form input {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 6%;
+  margin-left: 6%;
   /* float: right; */
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
   padding: 5px;
+  width: 29vw;
+}
+
+.parte1_2 {
+  font-size: 20px;
+}
+
+.parte1_2 form {
+  color: white;
+  float: left;
+  width: 90%;
+}
+
+.parte1_2 form input {
+  margin-right: 6%;
+  /* float: right; */
+  background-color: #252525;
+  border: 5px solid #6c0277;
+  border-radius: 15px;
+  padding: 5px;
+  width: 35.2vw;
+  height: 10vh;
 }
 
 .tabela1 {
