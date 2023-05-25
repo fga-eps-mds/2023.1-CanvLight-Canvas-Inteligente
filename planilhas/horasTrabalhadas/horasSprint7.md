@@ -1,7 +1,7 @@
 | Controle de Horas Trabalhadas - Sprint 7 |  |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Feriado? | Data | Nome (Colaborador) | Entrada | Saída intervalo | Retorno intervalo | Saída | Total horas |  | Nome (Colaborador) | Total horas do sprint |
-|  | 20/05/2023 | Limírio | 10:00 |  |  | 13:20 | 3:20:00 |  | BrenoA | 06:26 |
+|  | 20/05/2023 | Limírio | 10:00 |  |  | 13:20 | 3:20:00 |  | BrenoA | 08:28 |
 |  | 20/05/2023 | Raquel | 10:00 |  |  | 13:20 | 3:20:00 |  | Bruno | 04:00 |
 |  | 20/05/2023 | Pedro | 11:00 |  |  | 12:00 | 1:00:00 |  | Felipe | 01:30 |
 |  | 21/05/2023 | BrenoA | 16:20 |  |  | 18:50 | 2:30:00 |  | Henrique | 04:00 |
@@ -21,3 +21,5 @@
 |  | 24/05/2023 | Henrique | 19:50 |  |  | 20:50 | 1:00:00 |  |  |  |
 |  | 24/05/2023 | Bruno | 19:50 |  |  | 20:50 | 1:00:00 |  |  |  |
 |  | 24/05/2023 | Pedro | 19:50 |  |  | 20:50 | 1:00:00 |  |  |  |
+|  | 24/05/2023 | BrenoA | 23:20 |  |  | 23:59 | 0:39:00 |  |  |  |
+|  | 25/05/2023 | BrenoA | 00:00 |  |  | 01:23 | 1:23:00 |  |  |  |
