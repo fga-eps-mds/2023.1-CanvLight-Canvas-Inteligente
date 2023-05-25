@@ -161,9 +161,9 @@
   /*botao de inserir tarefa*/
   .button_tarefa{
     cursor: pointer;
-    margin-left: 0.3%;
+    margin-left: 16.5%;
     position: absolute;
-    color: white;
+    margin-top: -2%;
   }
 
 
