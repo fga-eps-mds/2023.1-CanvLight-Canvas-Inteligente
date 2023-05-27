@@ -1,4 +1,5 @@
 import './Intuicao.css'
+import dateIntuition from "../../images/dateIntuition.png";
 
 function Intuicao (){
     function clicouNaDuvida(){
