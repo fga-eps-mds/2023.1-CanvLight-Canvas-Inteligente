@@ -1,0 +1,139 @@
+.benchmarking .center{
+    background-color: #252525;
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    margin: auto;
+    padding: 4%;
+}
+
+
+.benchmarking table{
+    width: 80%;
+    border-spacing: 0;
+    color: white;
+    margin: auto;
+}
+  
+.benchmarking table th{
+    background-color: #fb8218;
+    border: 1px solid #fb8218;
+}
+  
+.benchmarking .primeiro-canto{
+    border-radius: 15px 0 0 0;
+}
+  
+.benchmarking .segundo-canto{
+    border-radius: 0 15px 0 0 ;
+}
+  
+.benchmarking .terceiro-canto{
+    border-radius: 0 0 15px 0 ;
+}
+  
+.benchmarking .quarto-canto{
+    border-radius: 0 0 0 15px;
+}
+  
+.benchmarking table td{
+    background-color: #252525;
+    border: 1px solid #fb8218;
+}
+  
+.benchmarking table input{
+    background-color: #252525;
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+.benchmarking h2{
+    text-align: left;
+}
+
+.benchmarking p{
+    text-align: left;
+}
+
+.setas{
+    background-image: url('../../images/seta-direita.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    float: right;
+    cursor: pointer;
+}
+
+.duvida{
+    background-image: url('../../images/request\ \(1\).png');
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+    bottom: 5%;
+}
+
+.perfil{
+    margin-top: 3%;
+}
+
+.perfil h2{
+    padding: 2%;
+}
+
+.dir{
+    width: 50%;
+    float: right;
+}
+
+.esq{
+    width: 50%;
+    float: left;
+}
+
+.perfil input{
+    height: 5%;
+    background-color: #252525;
+    border: 1px solid #fb8218;
+    border-radius: 15px;
+    width: 50%;
+    margin: 1%;
+    padding: 2%;
+}
+
+.img-perfil{
+    top: 87%;
+    background-image: url('../../images/profile\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    bottom: 13%;
+}
+
+.crescendo{
+    top: 95%;
+    background-image: url('../../images/stats.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    bottom: 8%;
+}
+
+.decrescendo{
+    top: 103%;
+    background-image: url('../../images/graph.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    bottom: 3%;
+}
+

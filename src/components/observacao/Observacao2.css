@@ -1,0 +1,135 @@
+.center{
+    background-color: #252525;
+    border-radius: 30px;
+    width: 90%;
+    height: 75%;
+}
+
+.Observacao2 .psdoprojeto h2{
+    text-align: left;
+}
+
+.Observacao2 .psdoprojeto table{
+  color: white;
+  background-color: #252525;
+  border: 1px solid #fb8218;
+  border-radius: 8px;
+  padding: 2%;
+  width: 30%; 
+  float: left; 
+}
+
+.psdoprojeto table tr{
+    width: 30%;
+    height: 100%;
+    text-align: left;
+}
+  
+.psdoprojeto table td{
+    padding: 5%;
+}
+    
+.psdoprojeto input{
+    width: 70%;
+    height: 100%;
+    border-bottom: 1px solid white;
+    background-color: #252525;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    padding: 2%;
+}
+
+.conceito table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    color: white;
+}
+  
+.conceito table th{
+    background-color: #fb8218;
+    border: 1px solid #fb8218;
+}
+  
+.conceito .primeiro-canto{
+    border-radius: 15px 0 0 0;
+}
+  
+.conceito .segundo-canto{
+    border-radius: 0 15px 0 0 ;
+}
+  
+.conceito .terceiro-canto{
+    border-radius: 0 0 15px 0 ;
+}
+  
+.conceito .quarto-canto{
+    border-radius: 0 0 0 15px;
+}
+  
+.conceito table td{
+    background-color: #252525;
+    border: 1px solid #fb8218;
+}
+  
+.conceito table input{
+    background-color: #252525;
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+.conceito p{
+    font-size: 30px;
+}
+
+.Single span{
+    font-size: 20px;
+}
+
+.Single input{
+    background-color: #252525;
+    border: 1px solid #fb8218;
+    width: 30%;
+    border-radius: 15px;
+    margin-left: 2%;
+}
+
+.Single{
+    margin-top: 2%;
+    width: 60%;
+}
+
+.seta-esquerda{
+    background-image: url('../../images/seta-esquerda.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    float: left;
+    cursor: pointer;
+}
+
+  
+.seta-direita{
+    background-image: url('../../images/seta-direita.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    float: right;
+    cursor: pointer;
+}
+
+
+.duvida{
+    background-image: url('../../images/request\ \(1\).png');
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+    bottom: 5%;
+}
