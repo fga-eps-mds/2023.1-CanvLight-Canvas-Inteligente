@@ -1,253 +1,242 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
 }
 
 /* body{
     background-color: #fcdbc1;
 } */
-.clear{
-    clear: both;
+.clear {
+  clear: both;
 }
 
-.navbar{
-    display: flex;
-    background: #FF9000;
-    height: 120px;
-    color: rgb(255, 239, 210);
-    filter: drop-shadow(1px 1px 2px #252525);
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  background: #ff9000;
+  height: 80px;
+  color: rgb(255, 239, 210);
+  filter: drop-shadow(1px 1px 2px #252525);
 }
 
-.logo_navbar{
-    position: relative;
-    height: 85%;
-    margin: 1%;
-    margin-top: 0.5%;
-    display: inline-block;
-    margin-left: 20px;
+.logo_navbar {
+  position: absolute;
+  width: 3%;
+  height: 78%;
+  left: 1%;
+  top: 10%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.logo_main{
-    position: relative;
-    height: 55vh;
-    margin-top: -45%;
-    display: inline-block;
-    filter: drop-shadow(1px 1px 5px #252525);
+.name_navbar {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 5%;
+  margin-top: 1%;
+  cursor: pointer;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #fff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.name_navbar{
-    position: relative;
-    margin: 10%;
-    align-self: center  ;
-    margin-top: -8%;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
-    font-size: 3vh;
-    font-weight: 500;
-    color: #3c4043;
-    margin-left: 12%;
-}
-.desktop{
-    width: 100%;
-    float: right;
+.cnvgen_navbar {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 80%;
+  top: -10%;
+  cursor: pointer;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #fff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.desktop ul{
-    float: right;
+.desktop {
+  width: 100%;
+  float: right;
 }
 
-.desktop ul li{
-    float: left;
-    margin-top: 35px;
-    margin-left: 11px;
-    list-style-type: none;
-    padding: 10px 10px;
-    font-size: 20px;
-    transition: .5s;
-    cursor: pointer;
-    border-radius: 30px;
-    background: #FF9000;
+.desktop ul {
+  float: right;
 }
 
-.desktop ul li:hover, 
-.desktop ul li.ativo{
-    background: #fcdbc1;
-    color: #FF9000;
+.desktop ul li {
+  float: left;
+  margin-top: 5%;
+  margin-left: 11px;
+  list-style-type: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+  background: #ff9000;
 }
 
-.sobre{
-    position: relative;
-    /* top: -160px; */
-    background-color: #fcdbc1;
+.desktop ul li:hover,
+.desktop ul li.ativo {
+  background: #fcdbc1;
+  color: #ff9000;
 }
 
-.sobre h2{
-    font-weight: bold;
-    text-align: center;
-    padding: 50px 2%;
-    color: #FF9000;
-    font-size: 50px;
-    
+.sobre {
+  position: relative;
+  /* top: -160px; */
+  background-color: #fcdbc1;
 }
 
-.sobre p{
-    margin: 5%;
-    text-align: justify;
-    font-size: 25px;
+.sobre h2 {
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 2%;
+  color: #ff9000;
+  font-size: 50px;
 }
 
-.membros{
-    padding: 50px;
-    
+.sobre p {
+  margin: 5%;
+  text-align: justify;
+  font-size: 25px;
 }
 
-.cabeceira{
-    background-image: url('../../images/Cabeceira.jpg');
+.membros {
+  padding: 50px;
 }
 
-.limirio{
-    background-image: url('../../images/limirio.jpg');
+.cabeceira {
+  background-image: url("../../images/Cabeceira.jpg");
 }
 
-.breno{
-    background-image: url('../../images/bob.jpg');
+.limirio {
+  background-image: url("../../images/limirio.jpg");
 }
 
-.bruno{
-    background-image: url('../../images/bruno2.jpg');
+.breno {
+  background-image: url("../../images/bob.jpg");
 }
 
-.raquel{
-    background-image: url('../../images/raquel.jpeg');
+.bruno {
+  background-image: url("../../images/bruno2.jpg");
 }
 
-.henrique{
-    background-image: url('../../images/henrique.jpeg');
+.raquel {
+  background-image: url("../../images/raquel.jpeg");
 }
 
-.felipe{
-    background-image: url('../../images/felipe.jpeg');
+.henrique {
+  background-image: url("../../images/henrique.jpeg");
+}
+
+.felipe {
+  background-image: url("../../images/felipe.jpeg");
 }
 
 .membros ul {
-    text-align: center;
+  text-align: center;
 }
 
-.membros ul a li{
-    display: inline-block;
-    background-size: cover;
-    padding: 50px;
-    border-radius: 50px;
-    margin: 20px;
-    list-style-type: none;
-    cursor: pointer;
+.membros ul a li {
+  display: inline-block;
+  background-size: cover;
+  padding: 50px;
+  border-radius: 50px;
+  margin: 20px;
+  list-style-type: none;
+  cursor: pointer;
 }
 
-.sol-bg{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1000;
-    background-image: linear-gradient(#E95420, #77216F);
-    width: 100%;
-    height: 1200px;
-    
+.sol-bg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1000;
+  background-image: linear-gradient(#e95420, #77216f);
+  width: 100%;
+  height: 1200px;
 }
 
-.logo-big{
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    margin-top: -20%;   
-    font-size: 40px;
-    /* background-image: logo; */
+.logo-big {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  margin-top: -20%;
+  font-size: 40px;
+  /* background-image: logo; */
 }
 
-.sol-inv{
-    position: absolute;
-    display: inline-block;
-    z-index: -999;
-    background-color: #fcdbc1;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    bottom: -50%;
-    left: 50%;
-    transform: translateX(-50%);
+.sol-inv {
+  position: absolute;
+  display: inline-block;
+  z-index: -999;
+  background-color: #fcdbc1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-
 
 .main-btn {
-  align-items: center;
-  margin-top: 30vh;
-  margin-left: 10vh;
-  margin-right: 10vh;
-  appearance: none;
-  background-color: #fff;
-  border-radius: 24px;
-  border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-  box-sizing: border-box;
-  color: #3c4043;
+  position: absolute;
+  padding: 1%;
+  width: fit-content;
+  height: fit-content;
+  margin-left: -35%;
+  margin-top: 35%;
+  border-radius: 6px;
   cursor: pointer;
-  display: inline-flex;
-  fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
-  font-size: 3vh;
-  font-weight: 500;
-  height: 5vh;
-  justify-content: center;
-  letter-spacing: .25px;
-  line-height: normal;
-  max-width: 100%;
-  overflow: visible;
-  padding: 1vh 3vh;
-  position: relative;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 34px;
   text-align: center;
-  text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: auto;
-  will-change: transform,opacity;
-  z-index: 0;
+  color: #fff;
+  background-color: #dd4814;
 }
+.main-btn1 {
+  position: absolute;
+  padding: 1%;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 35%;
+  margin-top: 35%;
+  border-radius: 6px;
+  cursor: pointer;
 
-.main-btn:hover {
-  background: #fcdbc1;
-  color: #174ea6;
-}
-
-.main-btn:active {
-  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-  outline: none;
-}
-
-.main-btn:focus {
-  outline: none;
-  border: 2px solid #4285f4;
-}
-
-.main-btn:not(:disabled) {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-.main-btn:not(:disabled):hover {
-  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
-}
-
-.main-btn:not(:disabled):focus {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-}
-
-.main-btn:not(:disabled):active {
-  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
-}
-
-.main-btn:disabled {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  background-color: #dd4814;
 }
 /*
 .tutorial-btn{
@@ -280,12 +269,3 @@
 */
 
 /**/
-
-
-
-
-
-
-
-
-

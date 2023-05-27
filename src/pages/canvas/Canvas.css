@@ -1,214 +1,236 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-    background: linear-gradient(to bottom right, #e95420, #6c0277);
-    max-width: 100%;
-    height: auto;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e95420 0%, #77216f 100%);
+  max-width: 100%;
 }
-  
-.clear{
+
+.clear {
   clear: both;
 }
 
-.navbar{
-    display: flex;
-    background: #FF9000;
-    height: 80px;
-    color: rgb(255, 239, 210);
-    filter: drop-shadow(1px 1px 2px #252525);
-   
+.navbar {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  display: flex;
+  background: #ff9000;
+  height: 9%;
+  color: rgb(255, 239, 210);
+  filter: drop-shadow(1px 1px 2px #252525);
 }
 
-.logo_navbar{
-    position: relative;
-    height: 85%;
-    margin: 1%;
-    margin-top: 0.5%;
-    display: inline-block;
-    margin-left: 20px;
-    cursor: pointer;
-    
+.logo_navbar {
+  position: absolute;
+  object-fit: cover;
+  width: 3%;
+  height: 78%;
+  left: 1%;
+  top: 10%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
 }
-.logo_main{
-    position: relative;
-    height: 55vh;
-    margin-top: -45%;
-    display: inline-block;
-    filter: drop-shadow(1px 1px 5px #252525);
-    
+.name_navbar {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  left: 5%;
+  top: -10%;
+  cursor: pointer;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #fff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.name_navbar{
-    position: relative;
-    margin: 10%;
-    align-self: center  ;
-    margin-top: -6%;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
-    font-size: 3vh;
-    font-weight: 500;
-    color: #3c4043;
-    margin-left: 12%;
-    cursor: pointer;
-    max-width: 100%;
-    height: auto;
-   
+.cnvgen_navbar {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 80%;
+  top: -10%;
+  cursor: pointer;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #fff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-  .container {  
-    width: 75%;
-    height: 60%;
-    max-width: 950px;
-    max-height: 550px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    border: 50px solid rgb(40, 36, 36);
-    border-radius: 30px;
-  }
-  
-  .rectangle {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(40, 36, 36);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button1 {
-    padding: 20% 45px;
-    margin: 10px;
-    background-color: #72097e;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    position: absolute;
-    left: 9%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    font-size: 40px;
-    
-  }
-  
-  .button2 {
-    padding: 20% 85px;
-    margin: 10px;
-    background-color: #fb8218;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    position: absolute;
-    left: 44.1%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    font-size: 40px;
-    
-  }
-  
-  .button3 {
-    padding: 20%  78px;
-    margin: 10px;
-    background-color: #0e78c9;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    position: absolute;
-    left: 84%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    font-size: 40px;
-  }
+.container {
+  width: 65%;
+  height: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  border: 50px solid rgb(40, 36, 36);
+  border-radius: 30px;
+}
 
-  .dot {
-    position: absolute;
-    top: -45px;
-    left: -30px;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+.rectangle {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(40, 36, 36);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .dot2 {
-    position: absolute;
-    top: -45px;
-    left: -5px;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(248, 225, 14);
-    border-radius: 50%;
-  }
+.button1 {
+  width: 20%;
+  height: 107%;
+  margin: 10px;
+  background-color: #72097e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top: -3.5%;
+  margin-left: -61%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button2 {
+  width: 45%;
+  height: 107%;
+  margin: 10px;
+  background-color: #fb8218;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top: -3.5%;
+  margin-left: 35%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button3 {
+  width: 30%;
+  height: 107%;
+  margin: 10px;
+  background-color: #0e78c9;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top: -3.5%;
+  margin-left: 102%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot {
+  position: absolute;
+  top: -7%;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .dot2 {
   position: absolute;
-  top: -45px;
+  top: -7%;
   left: -5px;
   width: 20px;
   height: 20px;
   background-color: rgb(248, 225, 14);
   border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .dot3 {
   position: absolute;
-  top: -45px;
+  top: -7%;
   left: 20px;
   width: 20px;
   height: 20px;
   background-color: rgb(45, 202, 25);
   border-radius: 50%;
-}
-
-.arrow-button {
-  width: 85px;
-  height: 85px;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.dot3 {
-    position: absolute;
-    top: -45px;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(45, 202, 25);
-    border-radius: 50%;
-}
-  
 .arrow-button {
-    width: 65px;
-    height: 50px;
-    cursor: pointer;
+  position: absolute;
+  margin-top: 5%;
+  left: 0.5%;
+  width: 2.5%;
+  cursor: pointer;
+  color: #e4964d;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.confirma {
+  height: 10vh;
+  width: 5vw;
+  margin-top: 40%;
+  margin-right: 3%;
+  float: right;
+  cursor: pointer;
+  background-repeat: no-repeat;
 }
 
 /* intuição */
 
-
-.form{
+.form {
   display: none;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.center{
-  position:absolute;
+.center {
+  position: absolute;
+  height: 70%;
   display: block;
   justify-content: center;
   align-items: center;
   padding: 30px;
   margin-right: 500px;
   background-color: #252525;
-  max-width: 1000px;
-  margin: 30px 8%;
+  margin: 5%;
   border-radius: 30px;
+  font-family: "Ubuntu";
 }
 
-.form .center button{
+.form .center button {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -216,138 +238,188 @@ body, html{
   border-radius: 10px;
   position: absolute;
   border: none;
-  top: -1px;
+  left: 1.5%;
+  top: 2%;
 }
 
-.duvida{
-  background-image: url('../../images/request\ \(1\).png');
-  width: 16px;
-  height: 16px;
+.duvida1 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
   float: right;
   cursor: pointer;
+  margin-right: 8%;
+  margin-top: 0%;
 }
 
-.esquerda{
+.esquerda {
   float: left;
   width: 50%;
+  margin-top: 2%;
 }
 
-.parte1{
+.parte1 {
   font-size: 20px;
 }
 
-.parte1 form{
+.parte1 form {
   color: white;
   float: left;
   width: 90%;
 }
 
-.parte1 form input{
-  margin-right: 10px;
-  margin-left: 10px;
+.parte1 form input {
+  margin-right: 6%;
+  margin-left: 6%;
   /* float: right; */
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
+  color: white;
   border-radius: 15px;
   padding: 5px;
+  width: 29vw;
 }
 
-.tabela1{
-  margin-top: 20px;
+.parte1_2 {
+  font-size: 20px;
+}
+
+.parte1_2 form {
+  color: white;
   float: left;
   width: 90%;
 }
 
-.tabela1 table{
+.parte1_2 form input {
+  margin-right: 6%;
+  /* float: right; */
+  background-color: #252525;
+  border: 5px solid #6c0277;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  width: 35.2vw;
+  height: 10vh;
+}
+
+.tabela1 {
+  margin-top: 2%;
+  float: left;
+  width: 90%;
+}
+
+.tabela1 table {
   text-align: center;
   background-color: #6c0277;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
 }
 
-.tabela1 table td{
-  height: 30px;
+.tabela1 table td {
+  height: 50%;
   border-radius: 8px;
 }
 
-.tabela1 table input{
+.tabela1 table input {
   width: 90%;
   height: 90%;
-  background-color: #252525;
   border: 1px solid black;
+  background-color: #252525;
   border-radius: 8px;
   color: white;
 }
 
-.tecnico{
+.tecnico {
   background-color: rgb(233, 31, 156);
+  height: 10vh;
+  width: 10vw;
 }
 
-.mercadologico{
+.mercadologico {
   background-color: greenyellow;
 }
 
-.emocional{
-  background-color:  #0e78c9;
+.emocional {
+  background-color: #0e78c9;
 }
 
-.resiliencia{
+.resiliencia {
   background-color: orangered;
 }
 
-.integrador{
+.integrador {
   background-color: blueviolet;
 }
 
-.parte2{
+.duvida2 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 8%;
+  margin-top: 7%;
+}
+
+.parte2 {
   float: left;
   width: 90%;
 }
 
-.parte2 p{
+.parte2 p {
   color: white;
   font-size: 25px;
 }
 
-.parte2 input{
+.parte2 input {
   margin-right: 10px;
-  margin-left: 10px;
   /* float: right; */
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
-  width: 400px;
-  height: 50px;
+  width: 37.4vw;
+  height: 10vh;
 }
 
-.direita{
+.direita {
   float: right;
   width: 40%;
+  margin-top: 2%;
 }
 
-.tabela2 table{
+.dateInt {
+  height: 4vh;
+  width: 8vw;
+  margin-top: -6%;
+  margin-right: 0%;
+  float: right;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.tabela2 table {
   color: white;
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 8px;
   padding: 20px;
   float: left;
   width: 90%;
 }
 
-.tabela2 h2{
+.tabela2 h2 {
   color: white;
 }
 
-.tabela2 table tr{
+.tabela2 table tr {
   width: 30%;
   height: 100%;
   text-align: left;
   padding: 10px;
 }
 
-.tabela2 input{
+.tabela2 input {
   width: 70%;
   height: 100%;
   border-bottom: 1px solid white;
@@ -358,14 +430,24 @@ body, html{
   padding: 10px;
 }
 
-.tabela3 h2{
+.duvida3 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-top: -4%;
+}
+
+.tabela3 h2 {
   color: white;
 }
 
-.tabela3 table{
+.tabela3 table {
   text-align: center;
   background-color: #6c0277;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
   float: left;
@@ -373,26 +455,36 @@ body, html{
   padding: 0;
 }
 
-.tabela3 table td{
+.tabela3 table td {
   width: 100%;
   height: 30px;
 }
 
-.tabela3 table input{
+.tabela3 table input {
   width: 95%;
   height: 95%;
   background-color: #252525;
   border: 1px solid black;
   color: white;
-}
+} 
 
-.feito{
-  background-image: url('../../images/check.png');
-  width: 32px;
-  height: 32px;
+.duvida4 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
   float: right;
   cursor: pointer;
-  width: 50%;
+  margin-right: 5%;
+  margin-top: -4%;
+}
+
+.feito {
+  height: 6vh;
+  width: 3vw;
+  margin-top: 35%;
+  margin-right: 0%;
+  float: right;
+  cursor: pointer;
   background-repeat: no-repeat;
 }
   
