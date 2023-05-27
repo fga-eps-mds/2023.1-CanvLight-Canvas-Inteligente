@@ -1,7 +1,8 @@
-import React from "react";
-import "./Canvas.css";
-import logo from "../../images/logo_canvlight.png";
-import arrowIcon from "../../images/arrow.png";
+import React from 'react';
+import './Canvas.css';
+import logo from '../../images/logo_canvlight.png'
+import arrowIcon from '../../images/arrow.png';
+import Interacao from './Interacao.js';
 import checkIcon from "../../images/check.png";
 import dateIntuition from "../../images/dateIntuition.png";
 
@@ -18,7 +19,8 @@ function Canvas() {
     alert("form feito");
   }
 
-  function abrirFormIntuicao(e) {
+  /*Chamadas para o form de Intuição*/ 
+  function abrirFormIntuicao(e){
     e.preventDefault();
 
     let modal = document.querySelector(".form");
@@ -34,25 +36,36 @@ function Canvas() {
     modal.style.display = "none";
   }
 
+/*Chamadas para o form de Interção*/ 
+  function abrirFormInteracao(e){
+    e.preventDefault();
+
+    let modal = document.querySelector('.form_interacao');
+
+    <Interacao/>
+
+    modal.style.display = "block";
+  }
+
   return (
     <div className="body">
       <div className="navbar">
         <div className="logo">
           <img src={logo} alt="Logo" className="logo_navbar" />
         </div>
-        <p className="name_navbar">CanvLight</p>
-        <p className="cnvgen_navbar">Gerar Canvas</p>
-      </div>
-      <div className="container">
-        <div className="rectangle">
-          <div className="dot"></div>
-          <div className="dot2"></div>
-          <div className="dot3"></div>
-          <button className="button1" onClick={(e) => abrirFormIntuicao(e)}>
-            Intuição
-          </button>
-          <button className="button2">Observação</button>
-          <button className="button3">Interação</button>
+        <div className="container">
+                
+          <div className="rectangle">
+
+            <div className="dot"></div>
+            <div className="dot2"></div>
+            <div className="dot3"></div>
+            <button className='button1' onClick={(e) => abrirFormIntuicao(e)}>Intuição</button>
+            <button className='button2'>Observação</button>
+            <button className='button3' onClick={(e) => abrirFormInteracao(e)} >Interação</button>
+            <div className="arrow" onClick={() => handleArrowClick()}></div> 
+
+          </div>   
         </div>
       </div>
 
@@ -240,6 +253,7 @@ function Canvas() {
           </div>
         </div>
       </div>
+        <Interacao/>
       <img
         src={arrowIcon}
         alt="Seta"
