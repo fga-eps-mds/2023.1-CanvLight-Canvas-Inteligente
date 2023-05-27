@@ -310,11 +310,6 @@ html {
 
 .tabela1 table {
   text-align: center;
-  background-color: #252525;
-  border-spacing: 0;
-}
-
-.tabela1 table th{
   background-color: #6c0277;
   border: 5px solid #6c0277;
   border-radius: 15px;
@@ -330,6 +325,7 @@ html {
   height: 90%;
   border: 1px solid black;
   background-color: #252525;
+  border-radius: 8px;
   color: white;
 }
 
@@ -337,49 +333,22 @@ html {
   background-color: rgb(233, 31, 156);
   height: 10vh;
   width: 10vw;
-  border-left: 1px solid #6c0277;
 }
 
 .mercadologico {
   background-color: greenyellow;
-  border-left: 1px solid #6c0277;
 }
 
 .emocional {
   background-color: #0e78c9;
-  border-left: 1px solid #6c0277;
 }
 
 .resiliencia {
   background-color: orangered;
-  border-left: 1px solid #6c0277;
 }
 
 .integrador {
   background-color: blueviolet;
-  border-left: 1px solid #6c0277;
-  border-bottom: 1px solid #6c0277;
-  border-radius: 0 0 0 15px;
-}
-
-.tabela1 table .primeiro-canto{
-  border-radius: 15px 0 0 0;
-  background-color: #6c0277;
-}
-
-.tabela1 table .segundo-canto{
-  border-radius: 0 15px 0 0;
-  background-color: #6c0277;
-}
-
-.tabela1 table .terceiro-canto{
-  border-radius: 0 0 15px 0;
-  border-bottom: 1px solid #6c0277;
-  border-right: 1px solid #6c0277;
-}
-
-.canto{
-  border-right: 1px solid #6c0277;
 }
 
 .duvida2 {
@@ -497,44 +466,7 @@ html {
   background-color: #252525;
   border: 1px solid black;
   color: white;
-} */
-
-.tabela3 table{
-  width: 90%;
-  float: left;
-  border-spacing: 0;
-}
-
-.tabela3 table .primeiro-canto{
-  border-radius: 15px 0 0 0;
-  background-color: #6c0277;
-}
-
-.tabela3 table .segundo-canto{
-  border-radius: 0 15px 0 0;
-  background-color: #6c0277;
-}
-
-.tabela3 table .terceiro-canto{
-  border-radius: 0 0 15px 0;
-}
-
-.tabela3 table .quarto-canto{
-  border-radius: 0 0 0 15px;
-}
-
-.tabela3 th, .tabela3 td{
-  border: 1px solid black;
-  margin: 0;
-}
-
-
-.tabela3 table input{
-  width: 95%;
-  height: 95%;
-  background-color: #252525;
-  border: none;
-}
+} 
 
 .duvida4 {
   background-image: url("../../images/request\ \(1\).png");

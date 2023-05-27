@@ -4,7 +4,6 @@ import logo from "../../images/logo_canvlight.png";
 import arrowIcon from "../../images/arrow.png";
 import checkIcon from "../../images/check.png";
 import dateIntuition from "../../images/dateIntuition.png";
-import Intuicao from './Intuicao.js';
 
 function Canvas() {
   function handleArrowClick() {
@@ -254,14 +253,6 @@ function Canvas() {
                 className="confirma" 
               />
             </div>
-        <Intuicao/>
-
-        <img
-          src={arrowIcon}
-          alt="Seta"
-          className="arrow-button"
-          onClick={handleArrowClick}
-        />
     </div>
   );
 }
