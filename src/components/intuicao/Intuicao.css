@@ -6,21 +6,22 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.center {
+.centerInt {
   position: absolute;
-  height: 70%;
+  height: 90vh;
+  width: 80vw;
   display: block;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  margin-right: 500px;
+  margin-left: 8%;
+  margin-top: 6%;
   background-color: #252525;
-  margin: 5%;
   border-radius: 30px;
   font-family: "Ubuntu";
 }
 
-.form .center button {
+.form .centerInt button {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -58,16 +59,18 @@
   width: 90%;
 }
 
-.parte1 form input {
-  margin-right: 6%;
-  margin-left: 6%;
-  /* float: right; */
+.inputProjeto {
+  box-sizing: border-box;
+  position: absolute;
+  width: 20vw;
+  height: 4vh;
+  left: 10%;
+  right: 52.43%;
+  top: 11.5%;
+  bottom: 88.61%;
+  border: 2px solid #77216F;
   background-color: #252525;
-  border: 5px solid #6c0277;
-  color: white;
-  border-radius: 15px;
-  padding: 5px;
-  width: 29vw;
+  border-radius: 20px;
 }
 
 .parte1_2 {
@@ -80,22 +83,24 @@
   width: 90%;
 }
 
-.parte1_2 form input {
-  margin-right: 6%;
-  /* float: right; */
+.inputEquipe {
+  box-sizing: border-box;
+  position: absolute;
+  width: 26.8vw;
+  height: 12vh;
+  left: 2%;
+  right: 52.43%;
+  top: 25%;
+  bottom: 73.78%;
+  border: 2px solid #77216F;
   background-color: #252525;
-  border: 5px solid #6c0277;
-  color: white;
-  border-radius: 15px;
-  padding: 5px;
-  width: 35.2vw;
-  height: 10vh;
+  border-radius: 20px;
 }
 
 .tabela1 {
-  margin-top: 2%;
+  margin-top: 30%;
   float: left;
-  width: 90%;
+  width: 100vw;
 }
 
 .tabela1 table {
@@ -103,6 +108,9 @@
   background-color: #6c0277;
   border: 5px solid #6c0277;
   border-radius: 15px;
+  border-collapse: collapse;
+  border-width: 1px;
+
 }
 
 .tabela1 table td {
@@ -111,8 +119,8 @@
 }
 
 .tabela1 table input {
-  width: 90%;
-  height: 90%;
+  width: 10vw;
+  height: 5vh;
   background-color: #252525;
   border: 1px solid black;
   border-radius: 8px;
@@ -168,7 +176,7 @@
   border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
-  width: 37.4vw;
+  width: 30vw;
   height: 10vh;
 }
 
@@ -194,16 +202,17 @@
   border: 5px solid #6c0277;
   border-radius: 8px;
   padding: 20px;
-  float: left;
-  width: 90%;
+  float: right;
+  width: 50%;
 }
 
 .tabela22 h2 {
   color: white;
+  margin-left: 20%;
 }
 
 .tabela22 table tr {
-  width: 30%;
+  width: 10vw;
   height: 100%;
   text-align: left;
   padding: 10px;
@@ -232,6 +241,9 @@
 
 .tabela3 h2 {
   color: white;
+  margin-right: 5%;
+  margin-top: 25%;
+  float: right;
 }
 
 .tabela3 table {
@@ -240,8 +252,10 @@
   border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
-  float: left;
-  width: 90%;
+  float: right;
+  width: 50%;
+  margin-right: 10%;
+  margin-top: 10%;
   padding: 0;
 }
 

@@ -9,7 +9,7 @@
   font-family: "Ubuntu";
 }
 
-.center {
+.centerItr {
   position: absolute;
   display: block;
   justify-content: center;

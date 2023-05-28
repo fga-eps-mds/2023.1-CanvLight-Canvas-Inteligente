@@ -72,7 +72,7 @@ function newTask(){
 
     <div body> 
         <div className='form_interacao'>
-            <div className='center'>
+            <div className='centerItr'>
             <button className='close_button' onClick={(e) => fecharFormInteracao(e)}></button>
 
                 <div className='tela1'>

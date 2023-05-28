@@ -18,7 +18,7 @@ function Observacao1(){
 
     return(
         <div className="benchmarking">
-            <div className='center'>
+            <div className='centerObs1'>
                 <h2>Benchmarking</h2>
                 <div onClick={clicouNaDuvida} className='duvida'></div>
                 <div className="concorrente">

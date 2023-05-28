@@ -25,7 +25,7 @@ function Observacao3(){
 
     return(
         <div className= "Observacao3">
-            <div className= 'center'>
+            <div className= 'centerObs3'>
                 <div className= 'Modelo'>
                     <p>Modelo</p>
                     <div onClick={clicouNaDuvida} className='duvida'></div>

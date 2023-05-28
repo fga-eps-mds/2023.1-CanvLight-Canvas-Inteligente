@@ -20,21 +20,22 @@ function Intuicao() {
 
   return (
     <div className="form">
-      <div className="center">
+      <div className="centerInt">
         <button onClick={(e) => fecharFormIntuicao(e)}></button>
         <div className="esquerda">
           <div className="parte1">
             <form>
               <div>
-                <span>Projeto:</span>
-                <input className="margin" type="text" />
+                <h2>Projeto:</h2>
+                <input className="inputProjeto" type="text" />
               </div>
 
-              <p>Equipe:</p>
-              <input type="text" />
+              <h2>Equipe:</h2>
+              <input className="inputEquipe" type="text" />
             </form>
-            <div onClick={clicouNaDuvida} className="duvida"></div>
           </div>
+
+          <div onClick={clicouNaDuvida} className="duvida"></div>
 
           <div className="tabela1">
             <table>
@@ -99,11 +100,9 @@ function Intuicao() {
           <div onClick={clicouNaDuvida} className="duvida"></div>
 
           <div className="parte2">
-            <p>ikigai:</p>
+            <h2>Ikigai:</h2>
             <input type="text" />
           </div>
-
-          <div onClick={clicouNaDuvida} className="duvida"></div>
 
           <div className="clear"></div>
         </div>

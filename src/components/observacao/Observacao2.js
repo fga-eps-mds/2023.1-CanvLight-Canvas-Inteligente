@@ -28,7 +28,7 @@ function Observacao2(){
 
 	return(
 	    <div className="Observacao2">
-            <div className='center'>
+            <div className='centerObs2'>
                 <div className='psdoprojeto'>
                     <h2>Revisão dos 4P's do projeto</h2>
                     <div onClick={clicouNaDuvida} className='duvida'></div>
