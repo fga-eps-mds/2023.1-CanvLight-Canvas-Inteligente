@@ -2,11 +2,15 @@
     background-color: #252525;
     border-radius: 30px;
     width: 90%;
-    height: 75%;
+    height: 60%;
+    margin-top: 8%;
+    margin: auto;
+    
 }
 
 .Observacao2 .psdoprojeto h2{
     text-align: left;
+    
 }
 
 .Observacao2 .psdoprojeto table{
@@ -17,6 +21,7 @@
   padding: 2%;
   width: 30%; 
   float: left; 
+  margin-left: 4%;
 }
 
 .psdoprojeto table tr{
@@ -110,6 +115,7 @@
     margin-top: 2%;
     float: left;
     cursor: pointer;
+    margin-left: 10%;
 }
 
   
@@ -122,6 +128,7 @@
     margin-top: 2%;
     float: right;
     cursor: pointer;
+    margin-right: 7%;
 }
 
 

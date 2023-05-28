@@ -1,9 +1,10 @@
 .benchmarking .centerObs1{
     background-color: #252525;
     width: 90%;
-    height: 100%;
+    height: 75%;
     border-radius: 30px;
     margin: auto;
+    margin-top: 2%;
     padding: 4%;
 }
 
@@ -105,7 +106,7 @@
 }
 
 .img-perfil{
-    top: 87%;
+    top: 57%;
     background-image: url('../../images/profile\ \(1\).png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -116,7 +117,7 @@
 }
 
 .crescendo{
-    top: 95%;
+    top: 63%;
     background-image: url('../../images/stats.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -127,7 +128,7 @@
 }
 
 .decrescendo{
-    top: 103%;
+    top: 69%;
     background-image: url('../../images/graph.png');
     background-repeat: no-repeat;
     background-size: contain;

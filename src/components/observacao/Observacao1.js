@@ -70,7 +70,7 @@ function Observacao1(){
 
                 <div className="parceiro">
 
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    {/* <div onClick={clicouNaDuvida} className='duvida'></div> */}
 
                     <div className='clear'></div>
 
