@@ -1,198 +1,215 @@
-.center{
-  justify-content: center;
-  align-items: right;
-  padding: 4%;
-  background-color: #252525;
-  border-radius: 30px;
-  width: 80%;
-  height: 60%;
-  margin: auto;
+.form {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.form .center button{
+.center {
+  position: absolute;
+  height: 70%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-right: 500px;
+  background-color: #252525;
+  margin: 5%;
+  border-radius: 30px;
+  font-family: "Ubuntu";
+}
+
+.form .center button {
   cursor: pointer;
-  width: 1%;
-  height: 2%;
+  width: 20px;
+  height: 20px;
   background-color: red;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
   border: none;
-  top: 1%;
-  right: 90%;
-  position: absolute;
+  left: 1.5%;
+  top: 2%;
 }
-  
-  
-.duvida{
-  background-image: url('../../images/request\ \(1\).png');
-  width: 16px;
-  height: 16px;
+
+.duvida1 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
   float: right;
   cursor: pointer;
+  margin-right: 8%;
+  margin-top: 0%;
 }
-  
-.esquerda{
+
+.esquerda {
   float: left;
   width: 50%;
+  margin-top: 2%;
 }
-  
-.parte1{
+
+.parte1 {
   font-size: 20px;
 }
-  
-.parte1 form{
+
+.parte1 form {
   color: white;
   float: left;
   width: 90%;
-  text-align: left;
 }
-  
-.parte1 form input{
+
+.parte1 form input {
+  margin-right: 6%;
+  margin-left: 6%;
   /* float: right; */
   background-color: #252525;
-  border: 1px solid #6c0277;
-  border-radius: 15px; 
+  border: 5px solid #6c0277;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  width: 29vw;
 }
 
-.margin{
-  margin-left: 5%;
+.parte1_2 {
+  font-size: 20px;
 }
-  
-.tabela1{
-  margin-top: 5%;
+
+.parte1_2 form {
+  color: white;
   float: left;
   width: 90%;
 }
-  
-.tabela1 table{
-  text-align: center;
+
+.parte1_2 form input {
+  margin-right: 6%;
+  /* float: right; */
   background-color: #252525;
-  border-spacing: 0;
+  border: 5px solid #6c0277;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  width: 35.2vw;
+  height: 10vh;
 }
-  
-.tabela1 table th{
+
+.tabela1 {
+  margin-top: 2%;
+  float: left;
+  width: 90%;
+}
+
+.tabela1 table {
+  text-align: center;
   background-color: #6c0277;
+  border: 5px solid #6c0277;
+  border-radius: 15px;
 }
-  
-.tabela1 table td{
-  border-spacing: 0;
+
+.tabela1 table td {
+  height: 50%;
+  border-radius: 8px;
 }
-  
-.tabela1 table input{
+
+.tabela1 table input {
   width: 90%;
   height: 90%;
-  border: none;
   background-color: #252525;
+  border: 1px solid black;
+  border-radius: 8px;
   color: white;
 }
-  
-.tecnico{
+
+.tecnico {
   background-color: rgb(233, 31, 156);
-  border-left: 1px solid #6c0277;
+  height: 10vh;
+  width: 10vw;
 }
-  
-.mercadologico{
+
+.mercadologico {
   background-color: greenyellow;
-  border-left: 1px solid #6c0277;
 }
-  
-.emocional{
-  background-color:  #0e78c9;
-  border-left: 1px solid #6c0277;
+
+.emocional {
+  background-color: #0e78c9;
 }
-  
-.resiliencia{
+
+.resiliencia {
   background-color: orangered;
-  border-left: 1px solid #6c0277;
 }
-  
-.integrador{
+
+.integrador {
   background-color: blueviolet;
-  border-left: 1px solid #6c0277;
-  border-bottom: 1px solid #6c0277;
-  border-radius: 0 0 0 15px;
-}
-  
-.tabela1 table .primeiro-canto{
-  border-radius: 15px 0 0 0;
-  background-color: #6c0277;
-}
-  
-.tabela1 table .segundo-canto{
-  border-radius: 0 15px 0 0;
-  background-color: #6c0277;
-}
-  
-.tabela1 table .terceiro-canto{
-  border-radius: 0 0 15px 0;
-  border-bottom: 1px solid #6c0277;
-  border-right: 1px solid #6c0277;
 }
 
-.tabela1 table .input-terceiro-canto{
-  border-radius: 0 0 15px 0;
+.duvida2 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 8%;
+  margin-top: 7%;
 }
 
-.inferior{
-  border-bottom: 1px solid #6c0277;
-}
-  
-.canto{
-  border-right: 1px solid #6c0277;
-}
-  
-.parte2{
+.parte2 {
   float: left;
   width: 90%;
-  height: 90%;
-  text-align: left;
 }
-  
-.parte2 p{
+
+.parte2 p {
   color: white;
   font-size: 25px;
 }
-  
-.parte2 input{
+
+.parte2 input {
+  margin-right: 10px;
   /* float: right; */
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
-  width: 100%;
-  height: 100%;
+  width: 37.4vw;
+  height: 10vh;
 }
-  
-.direita{
+
+.direita {
   float: right;
   width: 40%;
+  margin-top: 2%;
 }
-  
-.tabela2 table{
+
+.dateInt {
+  height: 4vh;
+  width: 8vw;
+  margin-top: -6%;
+  margin-right: 0%;
+  float: right;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.four_ps {
   color: white;
   background-color: #252525;
-  border: 1px solid #6c0277;
+  border: 5px solid #6c0277;
   border-radius: 8px;
-  padding: 5%;
+  padding: 20px;
   float: left;
   width: 90%;
 }
-  
-.tabela2 h2{
+
+.tabela22 h2 {
   color: white;
 }
-  
-.tabela2 table tr{
+
+.tabela22 table tr {
   width: 30%;
   height: 100%;
   text-align: left;
+  padding: 10px;
 }
 
-.tabela2 table td{
-  padding: 5%;
-}
-  
-.tabela2 input{
+.tabela22 input {
   width: 70%;
   height: 100%;
   border-bottom: 1px solid white;
@@ -200,58 +217,63 @@
   border-right: none;
   border-top: none;
   border-left: none;
-  padding: 2%;
+  padding: 10px;
 }
-  
-.tabela3 h2{
+
+.duvida3 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-top: -4%;
+}
+
+.tabela3 h2 {
   color: white;
 }
-  
-.tabela3 table{
-  width: 90%;
+
+.tabela3 table {
+  text-align: center;
+  background-color: #6c0277;
+  border: 5px solid #6c0277;
+  border-radius: 15px;
+  color: white;
   float: left;
-  border-spacing: 0;
+  width: 90%;
+  padding: 0;
 }
-  
-.tabela3 table .primeiro-canto{
-  border-radius: 15px 0 0 0;
-  background-color: #6c0277;
+
+.tabela3 table td {
+  width: 100%;
+  height: 30px;
 }
-  
-.tabela3 table .segundo-canto{
-  border-radius: 0 15px 0 0;
-  background-color: #6c0277;
-}
-  
-.tabela3 table .terceiro-canto{
-  border-radius: 0 0 15px 0;
-}
-  
-.tabela3 table .quarto-canto{
-  border-radius: 0 0 0 15px;
-}
-  
-.tabela3 th, .tabela3 td{
-  border: 1px solid black;
-  margin: 0;
-}
-  
-  
-.tabela3 table input{
+
+.tabela3 table input {
   width: 95%;
   height: 95%;
   background-color: #252525;
-  border: none;
+  border: 1px solid black;
+  color: white;
 }
-  
-.feito{
-  background-image: url('../../images/check2.png');
-  width: 10%;
-  height: 10%;
+
+.duvida4 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-top: -4%;
+}
+
+.feito {
+  height: 6vh;
+  width: 3vw;
+  margin-top: 35%;
+  margin-right: 0%;
+  float: right;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  left: 85%;
-  bottom: 25%;
 }

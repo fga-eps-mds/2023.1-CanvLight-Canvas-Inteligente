@@ -39,7 +39,7 @@ html {
   overflow: hidden;
   width: fit-content;
   height: fit-content;
-  left: 5%;
+  margin-left: 5vw;
   top: -10%;
   cursor: pointer;
 
@@ -79,10 +79,10 @@ html {
 }
 
 .container {
-  width: 65%;
-  height: 65%;
+  width: 65vw;
+  height: 65vh;
   position: absolute;
-  top: 50%;
+  margin-top: 25%;
   left: 50%;
   transform: translate(-50%, -45%);
   border: 50px solid rgb(40, 36, 36);
@@ -205,7 +205,6 @@ html {
   cursor: pointer;
   background-repeat: no-repeat;
 }
-
 /* intuição */
 
 .form {
@@ -220,39 +219,37 @@ html {
 /* intuicao */
 
 /*observacao*/
-  
-.benchmarking{
+
+.benchmarking {
   display: none;
   position: absolute;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   color: white;
   margin: auto;
 }
 
-.Observacao2{
+.Observacao2 {
   display: none;
   position: absolute;
   width: 100%;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   height: 120%;
 }
 
-.Observacao3{
+.Observacao3 {
   position: absolute;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   display: none;
 }
 
 /*observação*/
-
-
 
 .center {
   position: absolute;
@@ -436,38 +433,6 @@ html {
   background-repeat: no-repeat;
 }
 
-.tabela2 table {
-  color: white;
-  background-color: #252525;
-  border: 5px solid #6c0277;
-  border-radius: 8px;
-  padding: 20px;
-  float: left;
-  width: 90%;
-}
-
-.tabela2 h2 {
-  color: white;
-}
-
-.tabela2 table tr {
-  width: 30%;
-  height: 100%;
-  text-align: left;
-  padding: 10px;
-}
-
-.tabela2 input {
-  width: 70%;
-  height: 100%;
-  border-bottom: 1px solid white;
-  background-color: #252525;
-  border-right: none;
-  border-top: none;
-  border-left: none;
-  padding: 10px;
-}
-
 .duvida3 {
   background-image: url("../../images/request\ \(1\).png");
   width: 0.85vw;
@@ -504,7 +469,7 @@ html {
   background-color: #252525;
   border: 1px solid black;
   color: white;
-} 
+}
 
 .duvida4 {
   background-image: url("../../images/request\ \(1\).png");
@@ -516,13 +481,9 @@ html {
   margin-top: -4%;
 }
 
-.feito {
-  height: 6vh;
-  width: 3vw;
-  margin-top: 35%;
-  margin-right: 0%;
-  float: right;
-  cursor: pointer;
+.confirma {
+  width: 4vw;
+  height: 8vh;
+  margin-top: 44%;
   background-repeat: no-repeat;
 }
-  
