@@ -33,16 +33,6 @@
   top: 2%;
 }
 
-.duvida1 {
-  background-image: url("../../images/request\ \(1\).png");
-  width: 0.85vw;
-  height: 1.533vh;
-  float: right;
-  cursor: pointer;
-  margin-right: 8%;
-  margin-top: 0%;
-}
-
 .esquerda {
   float: left;
   width: 50%;
@@ -50,6 +40,7 @@
 }
 
 .parte1 {
+  margin-top: -4%;
   font-size: 20px;
 }
 
@@ -62,11 +53,11 @@
 .inputProjeto {
   box-sizing: border-box;
   position: absolute;
-  width: 20vw;
+  width: 23vw;
   height: 4vh;
   left: 10%;
   right: 52.43%;
-  top: 11.5%;
+  top: 8%;
   bottom: 88.61%;
   border: 2px solid #77216F;
   background-color: #252525;
@@ -86,11 +77,11 @@
 .inputEquipe {
   box-sizing: border-box;
   position: absolute;
-  width: 26.8vw;
+  width: 29.7vw;
   height: 12vh;
   left: 2%;
   right: 52.43%;
-  top: 25%;
+  top: 20%;
   bottom: 73.78%;
   border: 2px solid #77216F;
   background-color: #252525;
@@ -98,9 +89,24 @@
 }
 
 .tabela1 {
-  margin-top: 30%;
+  margin-top: 18%;
   float: left;
   width: 100vw;
+}
+
+.tabela1 .tituloDNA{
+  font-size: 25px;
+  color: white;
+}
+
+.duvida1 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.533vh;
+  float: right;
+  cursor: pointer;
+  margin-right: 0%;
+  margin-top: -60%;
 }
 
 .tabela1 table {
@@ -108,14 +114,14 @@
   background-color: #6c0277;
   border: 5px solid #6c0277;
   border-radius: 15px;
-  border-collapse: collapse;
   border-width: 1px;
-
 }
 
 .tabela1 table td {
   height: 50%;
   border-radius: 8px;
+  border-bottom: 1px solid #6c0277;
+  border-top: 1px solid #6c0277;
 }
 
 .tabela1 table input {
@@ -125,6 +131,7 @@
   border: 1px solid black;
   border-radius: 8px;
   color: white;
+  margin-left: 10%;
 }
 
 .tecnico {
@@ -162,22 +169,22 @@
 .parte2 {
   float: left;
   width: 90%;
+  color: white;
 }
 
-.parte2 p {
-  color: white;
+.parte2 form {
   font-size: 25px;
 }
 
 .parte2 input {
-  margin-right: 10px;
-  /* float: right; */
+  margin-right: 10%;
+  margin-top: -4%;
   background-color: #252525;
   border: 5px solid #6c0277;
   border-radius: 15px;
   color: white;
-  width: 30vw;
-  height: 10vh;
+  width: 35vw;
+  height: 14vh;
 }
 
 .direita {

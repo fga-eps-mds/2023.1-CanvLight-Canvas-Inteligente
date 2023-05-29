@@ -35,9 +35,8 @@ function Intuicao() {
             </form>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida"></div>
-
           <div className="tabela1">
+          <h2 className="tituloDNA">DNA do negócio:</h2>
             <table>
               <tr>
                 <th className="primeiro-canto">CONCEITO DNA</th>
@@ -50,7 +49,7 @@ function Intuicao() {
                 <td>
                   <input type="text" />
                 </td>
-                <td className="canto">
+                <td className="espacoA1">
                   <input type="text" />
                 </td>
               </tr>
@@ -60,7 +59,7 @@ function Intuicao() {
                 <td>
                   <input type="text" />
                 </td>
-                <td className="canto">
+                <td className="espacoA2">
                   <input type="text" />
                 </td>
               </tr>
@@ -70,7 +69,7 @@ function Intuicao() {
                 <td>
                   <input type="text" />
                 </td>
-                <td className="canto">
+                <td className="espacoA3">
                   <input type="text" />
                 </td>
               </tr>
@@ -80,37 +79,47 @@ function Intuicao() {
                 <td>
                   <input type="text" />
                 </td>
-                <td className="canto">
+                <td className="espacoA4">
                   <input type="text" />
                 </td>
               </tr>
 
               <tr>
                 <td className="integrador">INTEGRADOR</td>
-                <td className="inferior">
+                <td>
                   <input type="text" />
                 </td>
-                <td className="terceiro-canto">
-                  <input className="input-terceiro-canto" type="text" />
+                <td className="espacoA5">
+                  <input  type="text" />
                 </td>
               </tr>
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida"></div>
+          <div onClick={clicouNaDuvida} className="duvida1"></div>
 
           <div className="parte2">
             <h2>Ikigai:</h2>
             <input type="text" />
           </div>
 
+          <div onClick={clicouNaDuvida} className="duvida2"></div>
+
           <div className="clear"></div>
         </div>
 
         <div className="direita">
+
+          <div>
+            <img
+              src={dateIntuition}
+              alt="DataIntuicao"
+              className="dateInt"
+            />
+          </div>
+
           <div className="tabela22">
             <h2>4P's do projeto</h2>
-
             <table className="four_ps">
               <tr>
                 <td>
@@ -136,7 +145,7 @@ function Intuicao() {
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida"></div>
+          <div onClick={clicouNaDuvida} className="duvida3"></div>
 
           <div className="tabela3">
             <h2>Síntese</h2>
@@ -175,7 +184,7 @@ function Intuicao() {
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida"></div>
+          <div onClick={clicouNaDuvida} className="duvida4"></div>
 
           <div onClick={formIntuicaoTerminado} className="feito"></div>
 
