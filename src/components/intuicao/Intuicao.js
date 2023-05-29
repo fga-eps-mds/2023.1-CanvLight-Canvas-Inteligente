@@ -21,7 +21,12 @@ function Intuicao() {
   return (
     <div className="form">
       <div className="centerInt">
-        <button onClick={(e) => fecharFormIntuicao(e)}></button>
+        <button
+          className="close_int"
+          onClick={(e) => fecharFormIntuicao(e)}
+        ></button>
+        <div className="dot2_int"></div>
+        <div className="dot3_int"></div>
         <div className="esquerda">
           <div className="parte1">
             <form>
@@ -36,7 +41,7 @@ function Intuicao() {
           </div>
 
           <div className="tabela1">
-          <h2 className="tituloDNA">DNA do negócio:</h2>
+            <h2 className="tituloDNA">DNA do negócio:</h2>
             <table>
               <tr>
                 <th className="primeiro-canto">CONCEITO DNA</th>
@@ -90,32 +95,28 @@ function Intuicao() {
                   <input type="text" />
                 </td>
                 <td className="espacoA5">
-                  <input  type="text" />
+                  <input type="text" />
                 </td>
               </tr>
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida1"></div>
+          <div onClick={clicouNaDuvida} className="duvidaDNA_int"></div>
 
           <div className="parte2">
             <h2>Ikigai:</h2>
-            <input type="text" />
+            <br />
+            <textarea type="text" />
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida2"></div>
+          <div onClick={clicouNaDuvida} className="duvidaIkigai_int"></div>
 
           <div className="clear"></div>
         </div>
 
         <div className="direita">
-
           <div>
-            <img
-              src={dateIntuition}
-              alt="DataIntuicao"
-              className="dateInt"
-            />
+            <img src={dateIntuition} alt="DataIntuicao" className="dateInt" />
           </div>
 
           <div className="tabela22">

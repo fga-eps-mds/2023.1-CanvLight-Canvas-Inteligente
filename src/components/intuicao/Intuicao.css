@@ -21,7 +21,7 @@
   font-family: "Ubuntu";
 }
 
-.form .centerInt button {
+.close_int {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -30,6 +30,28 @@
   position: absolute;
   border: none;
   left: 1.5%;
+  top: 2%;
+}
+.dot2_int {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 3.3%;
+  top: 2%;
+}
+.dot3_int {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 5.1%;
   top: 2%;
 }
 
@@ -59,7 +81,7 @@
   right: 52.43%;
   top: 8%;
   bottom: 88.61%;
-  border: 2px solid #77216F;
+  border: 2px solid #77216f;
   background-color: #252525;
   border-radius: 20px;
 }
@@ -83,7 +105,7 @@
   right: 52.43%;
   top: 20%;
   bottom: 73.78%;
-  border: 2px solid #77216F;
+  border: 2px solid #77216f;
   background-color: #252525;
   border-radius: 20px;
 }
@@ -94,19 +116,19 @@
   width: 100vw;
 }
 
-.tabela1 .tituloDNA{
+.tabela1 .tituloDNA {
   font-size: 25px;
   color: white;
 }
 
-.duvida1 {
+.duvidaDNA_int {
   background-image: url("../../images/request\ \(1\).png");
   width: 0.85vw;
   height: 1.533vh;
   float: right;
   cursor: pointer;
-  margin-right: 0%;
-  margin-top: -60%;
+  margin-left: -3%;
+  margin-top: -66%;
 }
 
 .tabela1 table {
@@ -156,16 +178,15 @@
   background-color: blueviolet;
 }
 
-.duvida2 {
+.duvidaIkigai_int {
   background-image: url("../../images/request\ \(1\).png");
   width: 0.85vw;
   height: 1.533vh;
   float: right;
   cursor: pointer;
-  margin-right: 8%;
-  margin-top: 7%;
+  margin-right: 85%;
+  margin-top: -22.5%;
 }
-
 .parte2 {
   float: left;
   width: 90%;
@@ -176,9 +197,10 @@
   font-size: 25px;
 }
 
-.parte2 input {
+.parte2 textarea {
+  font-size: 18px;
   margin-right: 10%;
-  margin-top: -4%;
+  margin-top: -4.6%;
   background-color: #252525;
   border: 5px solid #6c0277;
   border-radius: 15px;
@@ -196,7 +218,7 @@
 .dateInt {
   height: 4vh;
   width: 8vw;
-  margin-top: -6%;
+  margin-top: -5%;
   margin-right: 0%;
   float: right;
   cursor: pointer;

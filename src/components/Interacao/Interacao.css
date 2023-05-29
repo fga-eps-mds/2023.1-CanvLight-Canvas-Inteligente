@@ -22,15 +22,41 @@
   border-radius: 30px;
 }
 
-.close_button {
-  cursor: pointer;
+.close_itr {
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
   width: 20px;
   height: 20px;
   background-color: red;
-  border-radius: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+}
+
+.dot2_itr {
   position: absolute;
-  border: none;
-  top: 2px;
+  top: 1.5%;
+  left: 4.2%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot3_itr {
+  position: absolute;
+  top: 1.5%;
+  left: 6.7%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .parte1_interacao {
