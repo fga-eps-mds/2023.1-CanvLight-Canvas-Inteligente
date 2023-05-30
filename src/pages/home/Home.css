@@ -12,25 +12,26 @@
   clear: both;
 }
 
-.navbar {
-  position: absolute;
+.navbar_home {
+  position: fixed;
   width: 100%;
+  z-index: 1000;
   display: flex;
   background: #ff9000;
-  height: 80px;
+  height: 8.5%;
   color: rgb(255, 239, 210);
   filter: drop-shadow(1px 1px 2px #252525);
 }
 
-.logo_navbar {
+.logo_navbar_home {
   position: absolute;
-  width: 3%;
+  width: 3.5%;
   height: 78%;
   left: 1%;
   top: 10%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.name_navbar {
+.name_navbar_home {
   position: absolute;
   width: fit-content;
   height: fit-content;
@@ -102,7 +103,11 @@
 }
 
 .sobre {
-  position: relative;
+  position: absolute;
+  top: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
   /* top: -160px; */
   background-color: #fcdbc1;
 }
@@ -172,25 +177,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1000;
   background-image: linear-gradient(#e95420, #77216f);
   width: 100%;
-  height: 1200px;
-}
-
-.logo-big {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  margin-top: -20%;
-  font-size: 40px;
-  /* background-image: logo; */
+  height: 1500px;
 }
 
 .sol-inv {
   position: absolute;
   display: inline-block;
-  z-index: -999;
   background-color: #fcdbc1;
   width: 100%;
   height: 100%;

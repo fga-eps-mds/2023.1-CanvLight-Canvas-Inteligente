@@ -1,23 +1,17 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./Home.css";
 import logo from "../../images/logo_canvlight.png";
+import Canvas from "../canvas/Canvas.js";
 
 function Home() {
- 
-
-  function formulario(){
-   
-  }
-
-
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar_home">
         <div className="logo">
-          <img src={logo} alt="Logo" className="logo_navbar" />
+          <img src={logo} alt="Logo" className="logo_navbar_home" />
         </div>
-        <p className="name_navbar">CanvLight</p>
+        <p className="name_navbar_home">CanvLight</p>
 
         <nav className="desktop">
           <ul>
@@ -29,15 +23,10 @@ function Home() {
       </div>
 
       <div className="sol-bg">
-        <button className="main-btn" /*onClick={tutorial()}*/>
-          Como usar?
-        </button>
-
-        <button className="main-btn1" onClick={formulario()}>
-          Gerar Canvas
-        </button>
-
         <div className="sol-inv"></div>
+        <button className="main-btn">Como usar?</button>
+
+        <button className="main-btn1">Gerar Canvas</button>
       </div>
 
       <div className="sobre">
