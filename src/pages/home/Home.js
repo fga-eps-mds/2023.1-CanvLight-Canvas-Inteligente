@@ -1,7 +1,16 @@
+import React from "react";
+import { useHistory } from "react-router-dom";
 import "./Home.css";
 import logo from "../../images/logo_canvlight.png";
 
 function Home() {
+ 
+
+  function formulario(){
+   
+  }
+
+
   return (
     <div>
       <div className="navbar">
@@ -24,7 +33,7 @@ function Home() {
           Como usar?
         </button>
 
-        <button className="main-btn1" /*onClick={formulario()}*/>
+        <button className="main-btn1" onClick={formulario()}>
           Gerar Canvas
         </button>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./Canvas.css";
 import logo from "../../images/logo_canvlight.png";
 import arrowIcon from "../../images/arrow.png";
@@ -10,8 +11,10 @@ import Interacao from "../../components/Interacao/Interacao.js";
 import checkIcon from "../../images/check.png";
 
 function Canvas() {
+  
+
   function handleArrowClick() {
-    alert("Seta clicada!");
+   
   }
 
   /*Chamadas para o form de Intuição*/
