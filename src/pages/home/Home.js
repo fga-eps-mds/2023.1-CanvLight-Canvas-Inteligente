@@ -16,7 +16,7 @@ function Home() {
           <ul>
             <li className="ativo">Home</li>
             <li>Tutorial</li>
-            <li>Gerar canvas</li>
+            <Link to="/canvas"><li>Gerar canvas</li></Link>
           </ul>
         </nav>
       </div>

@@ -94,10 +94,12 @@
   cursor: pointer;
   border-radius: 30px;
   background: #ff9000;
+  color: #fcdbc1;
+
 }
 
 .desktop ul li:hover,
-.desktop ul li.ativo {
+.desktop ul li .ativo {
   background: #fcdbc1;
   color: #ff9000;
 }
