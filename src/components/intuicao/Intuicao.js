@@ -121,7 +121,7 @@ function Intuicao() {
           </div>
 
           <div className="tabela22">
-            <h2>4P's do projeto</h2>
+            <h2>4P's do projeto:</h2>
             <table className="four_ps">
               <tr>
                 <td>
@@ -150,7 +150,7 @@ function Intuicao() {
           <div onClick={clicouNaDuvida} className="duvida3"></div>
 
           <div className="tabela3">
-            <h2>Síntese</h2>
+            <h2>Síntese:</h2>
             <table>
               <tr>
                 <th className="primeiro-canto">POTENCIALIDADES</th>
