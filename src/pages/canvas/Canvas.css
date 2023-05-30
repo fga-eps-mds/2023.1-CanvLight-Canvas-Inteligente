@@ -5,11 +5,15 @@ html {
   position: relative;
   min-height: 120vh;
   background: linear-gradient(180deg, #e95420 0%, #77216f 100%);
-  max-width: 100%;
+  width: 100%;
 }
 
 .clear {
   clear: both;
+}
+
+.logo{
+  margin-top: 1%;
 }
 
 .navbar {
@@ -61,7 +65,7 @@ html {
   width: fit-content;
   height: 4vh;
   left: 80%;
-  top: -10%;
+  margin-top: 1%;
   cursor: pointer;
 
   font-family: "Ubuntu";
@@ -165,7 +169,7 @@ html {
 .dot2 {
   position: absolute;
   top: -7%;
-  left: -0.3%;
+  left: 0.3%;
   width: 20px;
   height: 20px;
   background-color: rgb(248, 225, 14);
@@ -177,7 +181,7 @@ html {
 .dot3 {
   position: fixed;
   top: -7%;
-  left: 1.9%;
+  left: 3.1%;
   width: 20px;
   height: 20px;
   background-color: rgb(45, 202, 25);

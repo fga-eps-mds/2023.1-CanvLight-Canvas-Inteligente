@@ -38,6 +38,7 @@ function Intuicao() {
               <h2>Equipe:</h2>
               <input className="inputEquipe" type="text" />
             </form>
+            <div className="clear"></div>
           </div>
 
           <div className="tabela1">
@@ -94,8 +95,8 @@ function Intuicao() {
                 <td>
                   <input type="text" />
                 </td>
-                <td className="espacoA5">
-                  <input type="text" />
+                <td className="quarto-canto">
+                  <input className="quarto-canto" type="text" />
                 </td>
               </tr>
             </table>
@@ -120,7 +121,7 @@ function Intuicao() {
           </div>
 
           <div className="tabela22">
-            <h2>4P's do projeto</h2>
+            <h2>4P's do projeto:</h2>
             <table className="four_ps">
               <tr>
                 <td>
@@ -149,7 +150,7 @@ function Intuicao() {
           <div onClick={clicouNaDuvida} className="duvida3"></div>
 
           <div className="tabela3">
-            <h2>Síntese</h2>
+            <h2>Síntese:</h2>
             <table>
               <tr>
                 <th className="primeiro-canto">POTENCIALIDADES</th>

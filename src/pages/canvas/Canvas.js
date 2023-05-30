@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link} from "react-router-dom";
+=======
+// import { useHistory } from "react-router-dom";
+>>>>>>> 1ad8942111754a7ce78f2efd75240d1b4d3c3f80
 import "./Canvas.css";
 import logo from "../../images/logo_canvlight.png";
 import arrowIcon from "../../images/arrow.png";
