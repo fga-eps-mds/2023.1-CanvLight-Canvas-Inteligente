@@ -1,14 +1,7 @@
 import React from "react";
-<<<<<<< HEAD
 import "./Home.css";
 import logo from "../../images/logo_canvlight.png";
 import { Link} from "react-router-dom";
-=======
-// import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import "./Home.css";
-import logo from "../../images/logo_canvlight.png";
-// import Canvas from "../canvas/Canvas.js";
->>>>>>> 1ad8942111754a7ce78f2efd75240d1b4d3c3f80
 
 function Home() {
   return (
