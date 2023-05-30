@@ -8,7 +8,7 @@
 
 .centerInt {
   position: absolute;
-  height: 90vh;
+  height: 100vh;
   width: 80vw;
   display: block;
   justify-content: center;
@@ -63,7 +63,7 @@
 
 .parte1 {
   margin-top: -4%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .parte1 form {
@@ -77,9 +77,9 @@
   position: absolute;
   width: 23vw;
   height: 4vh;
-  left: 10%;
+  left: 13%;
   right: 52.43%;
-  top: 8%;
+  top: 6.5%;
   bottom: 88.61%;
   border: 2px solid #77216f;
   background-color: #252525;
@@ -100,10 +100,10 @@
   box-sizing: border-box;
   position: absolute;
   width: 29.7vw;
-  height: 12vh;
+  height: 10vh;
   left: 2%;
   right: 52.43%;
-  top: 20%;
+  top: 16%;
   bottom: 73.78%;
   border: 2px solid #77216f;
   background-color: #252525;
@@ -111,7 +111,7 @@
 }
 
 .tabela1 {
-  margin-top: 18%;
+  margin-top: 30%;
   float: left;
   width: 100vw;
 }
@@ -134,48 +134,53 @@
 .tabela1 table {
   text-align: center;
   background-color: #6c0277;
-  border: 5px solid #6c0277;
+  border: 1px solid #6c0277;
+  border-spacing: 0;
   border-radius: 15px;
-  border-width: 1px;
 }
 
 .tabela1 table td {
   height: 50%;
-  border-radius: 8px;
   border-bottom: 1px solid #6c0277;
   border-top: 1px solid #6c0277;
-}
-
-.tabela1 table input {
   width: 10vw;
   height: 5vh;
   background-color: #252525;
-  border: 1px solid black;
-  border-radius: 8px;
+}
+
+.tabela1 table input {
+  background-color: #252525;
+  border: none;
   color: white;
-  margin-left: 10%;
 }
 
-.tecnico {
+.tabela1 table td.tecnico {
   background-color: rgb(233, 31, 156);
-  height: 10vh;
-  width: 10vw;
 }
 
-.mercadologico {
+.tabela1 table td.mercadologico {
   background-color: greenyellow;
 }
 
-.emocional {
+.tabela1 table td.emocional {
   background-color: #0e78c9;
 }
 
-.resiliencia {
+.tabela1 table td.resiliencia {
   background-color: orangered;
 }
 
-.integrador {
+.tabela1 table td.integrador {
   background-color: blueviolet;
+  border-radius: 0 0 0 15px;
+}
+
+.form .centerInt .esquerda .tabela1 table td.quarto-canto{
+  border-radius: 0 0 15px 0;
+}
+
+.form .centerInt .esquerda .tabela1 table td input.quarto-canto{
+  border-radius: 0 0 15px 0;
 }
 
 .duvidaIkigai_int {

@@ -38,6 +38,7 @@ function Intuicao() {
               <h2>Equipe:</h2>
               <input className="inputEquipe" type="text" />
             </form>
+            <div className="clear"></div>
           </div>
 
           <div className="tabela1">
@@ -94,8 +95,8 @@ function Intuicao() {
                 <td>
                   <input type="text" />
                 </td>
-                <td className="espacoA5">
-                  <input type="text" />
+                <td className="quarto-canto">
+                  <input className="quarto-canto" type="text" />
                 </td>
               </tr>
             </table>
