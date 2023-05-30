@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "./Canvas.css";
 import logo from "../../images/logo_canvlight.png";
 import arrowIcon from "../../images/arrow.png";
@@ -11,11 +11,7 @@ import Interacao from "../../components/Interacao/Interacao.js";
 import checkIcon from "../../images/check.png";
 
 function Canvas() {
-  
 
-  function handleArrowClick() {
-   
-  }
 
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
@@ -68,7 +64,6 @@ function Canvas() {
             <button className="button3" onClick={(e) => abrirFormInteracao(e)}>
               Interação
             </button>
-            <div className="arrow" onClick={() => handleArrowClick()}></div>
           </div>
         </div>
       </div>
@@ -81,12 +76,13 @@ function Canvas() {
       <Observacao3 />
 
       <Interacao />
+      <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img
         src={arrowIcon}
         alt="Seta"
         className="arrow-button"
-        onClick={handleArrowClick}
       />
+      </Link>
       <div>
         <img src={checkIcon} alt="Confirma" className="confirma" />
       </div>

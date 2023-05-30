@@ -1,8 +1,7 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./Home.css";
 import logo from "../../images/logo_canvlight.png";
-import Canvas from "../canvas/Canvas.js";
+import { Link} from "react-router-dom";
 
 function Home() {
   return (
@@ -26,7 +25,7 @@ function Home() {
         <div className="sol-inv"></div>
         <button className="main-btn">Como usar?</button>
 
-        <button className="main-btn1">Gerar Canvas</button>
+        <Link to="/canvas"><button className="main-btn1">Gerar Canvas</button></Link>
       </div>
 
       <div className="sobre">
