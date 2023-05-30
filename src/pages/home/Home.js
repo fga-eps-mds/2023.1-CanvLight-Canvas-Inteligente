@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+// import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./Home.css";
 import logo from "../../images/logo_canvlight.png";
-import Canvas from "../canvas/Canvas.js";
+// import Canvas from "../canvas/Canvas.js";
 
 function Home() {
   return (
