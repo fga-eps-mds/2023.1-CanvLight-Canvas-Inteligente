@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link} from "react-router-dom";
 import "./Canvas.css";
 import logo from "../../images/logo_canvlight.png";
@@ -10,7 +10,13 @@ import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
 import checkIcon from "../../images/check.png";
 
+import { jsPDF } from "jspdf";
+import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
+
 function Canvas() {
+
+/*   const [projeto, setProjeto] = useState("");
+  const [equipe, setEquipe] = useState(""); */
 
 
   /*Chamadas para o form de Intuição*/
