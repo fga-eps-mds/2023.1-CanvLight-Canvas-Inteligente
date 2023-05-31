@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.4a93e419.css",
-    "main.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.65f014cd.js",
+    "main.css": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.41f0a14c.css",
+    "main.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.b981e2ab.js",
     "static/media/check.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/check.3834f5051fbbbe913509.png",
     "static/media/logo_canvlight.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/logo_canvlight.c3be732bfe6f18e92b9c.png",
     "static/media/Cabeceira.jpg": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Cabeceira.9abf80df00f7a21cd320.jpg",
@@ -16,17 +16,16 @@
     "static/media/happy.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/happy.e277f90e4c5c0efa77be.png",
     "static/media/sad.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/sad.f78dcd6ef6cf97f735b9.png",
     "static/media/zap.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/zap.cf74a156133161cb01bf.png",
-    "static/media/next-arrow.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/next-arrow.7280990b2e1cd4c54d44.png",
     "static/media/insta.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/insta.bd52a56d6e49f42b8d44.png",
     "static/media/normal.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/normal.d54ba5895403c57a4435.png",
     "static/media/face.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/face.3c51c6e55fc20de72ac4.png",
     "static/media/graph.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/graph.cd431a2682c93bb67010.png",
     "index.html": "/2023.1-CanvLight-Canvas-Inteligente/index.html",
-    "main.4a93e419.css.map": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.4a93e419.css.map",
-    "main.65f014cd.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.65f014cd.js.map"
+    "main.41f0a14c.css.map": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.41f0a14c.css.map",
+    "main.b981e2ab.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.b981e2ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a93e419.css",
-    "static/js/main.65f014cd.js"
+    "static/css/main.41f0a14c.css",
+    "static/js/main.b981e2ab.js"
   ]
 }
