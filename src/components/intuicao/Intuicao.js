@@ -35,15 +35,13 @@ function Intuicao() {
         <div className="dot3_int"></div>
         <div className="esquerda">
           <div className="parte1">
-            <form>
               <div>
-                <h2>Projeto:</h2>
+                <h2 className ="h2_project">Projeto:</h2>
                 <input className="inputProjeto" type="text" />
               </div>
 
-              <h2>Equipe:</h2>
+              <h2 className= "h2_equipe">Equipe:</h2>
               <input className="inputEquipe" type="text" />
-            </form>
             <div className="clear"></div>
           </div>
 
@@ -111,7 +109,7 @@ function Intuicao() {
           <div onClick={clicouNaDuvida} className="duvidaDNA_int"></div>
 
           <div className="parte2">
-            <h2>Ikigai:</h2>
+            <h2 className="h2_Ikigai">Ikigai:</h2>
             <br />
             <textarea type="text" />
           </div>

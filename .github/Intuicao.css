@@ -260,15 +260,14 @@
 
 .tabela22 h2 {
   color: white;
-  margin-left: 20%;
+  margin-left: 35%;
 }
 
 .tabela22 table tr {
-  width: 30%;
+  width: 10vw;
   height: 100%;
   text-align: left;
   padding: 10px;
-    
 }
 
 .tabela22 input {
@@ -295,8 +294,9 @@
 
 .tabela3 h2 {
   color: white;
-  margin-top: 20%;
-  margin-left: 20%;
+  margin-top: 30%;
+  margin-left: 30%;
+  float: right;
 }
 
 .tabela3 table {
@@ -306,7 +306,7 @@
   color: white;
   float: right;
   width: 50%;
-  margin-right: 30%;
+  margin-right: 10%;
   margin-top: 10%;
   padding: 0;
   border-spacing: 0;
