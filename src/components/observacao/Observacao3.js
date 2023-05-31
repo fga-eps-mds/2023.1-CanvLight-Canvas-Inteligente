@@ -17,6 +17,11 @@ function Observacao3() {
   function observacaoFinalizada(e) {
     e.preventDefault();
 
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
+
     let modal = document.querySelector(".Observacao3");
 
     modal.style.display = "none";

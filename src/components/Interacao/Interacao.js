@@ -16,6 +16,10 @@ function Interacao() {
 
   function fecharFormInteracao(e) {
     e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
     let modal = document.querySelector(".form_interacao");
     modal.style.display = "none";
     let modal2 = document.querySelector(".confirma");
@@ -24,6 +28,10 @@ function Interacao() {
 
   function fecharTela_3(e) {
     e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
     let modal = document.querySelector(".tela_3_form_interacao");
     modal.style.display = "none";
     let modal2 = document.querySelector(".confirma");
@@ -55,6 +63,10 @@ function Interacao() {
 
   function fecharFormInteracaoTela2(e) {
     e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
     let modal = document.querySelector(".tela_2_form_interacao");
     modal.style.display = "none";
     let modal2 = document.querySelector(".confirma");

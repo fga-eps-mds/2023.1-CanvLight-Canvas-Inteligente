@@ -17,6 +17,10 @@ function Observacao1(){
 
     function fecharFormIntuicao(e) {
         e.preventDefault();
+        let modalOverlay = document.querySelector(".modal-overlay");
+        if (modalOverlay) {
+          modalOverlay.parentNode.removeChild(modalOverlay);
+        }
     
         let modal = document.querySelector(".benchmarking");
     

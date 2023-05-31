@@ -15,9 +15,13 @@ function Canvas() {
   function abrirFormIntuicao(e) {
     e.preventDefault();
 
-    let modal = document.querySelector(".form");
+    let modalOverlay = document.createElement("div");
+    modalOverlay.classList.add("modal-overlay");
+    document.body.appendChild(modalOverlay);
 
+    let modal = document.querySelector(".form");
     modal.style.display = "block";
+
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "none";
   }

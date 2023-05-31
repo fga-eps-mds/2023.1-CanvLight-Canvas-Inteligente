@@ -8,6 +8,21 @@ html {
   width: 100%;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Define uma cor de fundo semitransparente */
+  z-index: 9998; /* Certifique-se de que a camada de fundo esteja acima de outros elementos */
+}
+
 .clear {
   clear: both;
 }
@@ -143,6 +158,7 @@ html {
 /*observacao*/
 
 .benchmarking {
+  z-index: 9999;
   display: none;
   position: absolute;
   text-align: center;
@@ -154,6 +170,7 @@ html {
 }
 
 .Observacao2 {
+  z-index: 9999;
   display: none;
   position: absolute;
   width: 100%;
@@ -164,6 +181,7 @@ html {
 }
 
 .Observacao3 {
+  z-index: 9999;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
