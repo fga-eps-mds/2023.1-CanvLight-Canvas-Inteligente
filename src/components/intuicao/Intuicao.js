@@ -16,6 +16,8 @@ function Intuicao() {
     let modal = document.querySelector(".form");
 
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
 
   return (

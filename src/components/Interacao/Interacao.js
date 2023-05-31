@@ -1,4 +1,4 @@
-import rightArrow from "../../images/next-arrow.png";
+import rightArrow from "../../images/seta-direita.png";
 import zap from "../../images/zap.png";
 import insta from "../../images/insta.png";
 import twitter from "../../images/twitter.png";
@@ -18,12 +18,16 @@ function Interacao() {
     e.preventDefault();
     let modal = document.querySelector(".form_interacao");
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
 
   function fecharTela_3(e) {
     e.preventDefault();
     let modal = document.querySelector(".tela_3_form_interacao");
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
 
   function nextpage1(e) {
@@ -53,6 +57,8 @@ function Interacao() {
     e.preventDefault();
     let modal = document.querySelector(".tela_2_form_interacao");
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
   function backpage1(e) {
     e.preventDefault();

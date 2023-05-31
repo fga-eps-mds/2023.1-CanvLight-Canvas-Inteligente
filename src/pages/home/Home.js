@@ -1,31 +1,36 @@
 import React from "react";
 import "./Home.css";
 import logo from "../../images/logo_canvlight.png";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div>
-      <div className="navbar_home">
+      <div className="navbar">
         <div className="logo">
-          <img src={logo} alt="Logo" className="logo_navbar_home" />
+          <Link to="/2023.1-CanvLight-Canvas-Inteligente">
+            <img src={logo} alt="Logo" className="logo_navbar" />
+          </Link>
         </div>
-        <p className="name_navbar_home">CanvLight</p>
+        <p className="name_navbar">CanvLight</p>
 
         <nav className="desktop">
           <ul>
             <li className="ativo">Home</li>
             <li>Tutorial</li>
-            <Link to="/canvas"><li>Gerar canvas</li></Link>
+            <Link to="/canvas">
+              <li>Gerar canvas</li>
+            </Link>
           </ul>
         </nav>
       </div>
-
       <div className="sol-bg">
         <div className="sol-inv"></div>
         <button className="main-btn">Como usar?</button>
 
-        <Link to="/canvas"><button className="main-btn1">Gerar Canvas</button></Link>
+        <Link to="/canvas">
+          <button className="main-btn1">Gerar Canvas</button>
+        </Link>
       </div>
 
       <div className="sobre">

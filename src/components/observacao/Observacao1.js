@@ -21,6 +21,8 @@ function Observacao1(){
         let modal = document.querySelector(".benchmarking");
     
         modal.style.display = "none";
+        let medel = document.querySelector(".tela_3_form_interacao");
+        medel.style.display = "none";
       }
 
 

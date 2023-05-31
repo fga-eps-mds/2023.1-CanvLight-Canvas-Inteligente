@@ -1,93 +1,132 @@
-import './Observacao3.css'
+import "./Observacao3.css";
 
-function Observacao3(){
+function Observacao3() {
+  function clicouNaDuvida() {
+    alert("duvida clicada!");
+  }
 
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
-    }
+  function irParaObservacao2(e) {
+    e.preventDefault();
 
-    function irParaObservacao2(e){
-        e.preventDefault();
-    
-        let modal = document.querySelector('.Observacao2');
-        let modal2 = document.querySelector('.Observacao3')
-        
-        modal.style.display = "block";
-        modal2.style.display = "none"
-    }
-    function observacaoFinalizada(e){
-        e.preventDefault();
+    let modal = document.querySelector(".Observacao2");
+    let modal2 = document.querySelector(".Observacao3");
 
-        let modal = document.querySelector('.Observacao3');
-        
-        modal.style.display = 'none'
-    }
+    modal.style.display = "block";
+    modal2.style.display = "none";
+  }
+  function observacaoFinalizada(e) {
+    e.preventDefault();
 
-    return(
-        <div className= "Observacao3">
-            <div className= 'centerObs3'>
-                <div className= 'Modelo'>
-                    <p>Modelo:</p>
-                    <div onClick={clicouNaDuvida} className='duvida5'></div>
-                    <table>
-                        <tr>
-                            <th className="primeiro-canto">Ferramentas/Procedimentos</th>
-                            <th>Indicado para</th>
-                            <th>Orientações de uso</th>
-                            <th className="segundo-canto">Resultado esperado</th>
-                        </tr>
+    let modal = document.querySelector(".Observacao3");
 
-                        <tr>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td> 
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                        </tr>
+    modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
+  }
 
-                        <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
-                        </tr>
-                    </table>
-                </div>
+  return (
+    <div className="Observacao3">
+      <div className="centerObs3">
+        <div className="Modelo">
+          <p>Modelo:</p>
+          <div onClick={clicouNaDuvida} className="duvida5"></div>
+          <table>
+            <tr>
+              <th className="primeiro-canto">Ferramentas/Procedimentos</th>
+              <th>Indicado para</th>
+              <th>Orientações de uso</th>
+              <th className="segundo-canto">Resultado esperado</th>
+            </tr>
 
-                <div className='clear'></div>
+            <tr>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
 
-                <div className= 'Prototipo'>
-                    <p>Protótipo:</p>
-                    <div onClick={clicouNaDuvida} className='duvida6'></div>
-                    <table>
-                        <tr>
-                            <th className="primeiro-canto">Ferramentas/Procedimentos</th>
-                            <th>Indicado para</th>
-                            <th>Orientações de uso</th>
-                            <th className="segundo-canto">Resultado esperado</th>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div onClick={(e) => irParaObservacao2(e)} className='seta-esquerda'></div>
-                <div className='Observacao-finalizada' onClick={(e) => observacaoFinalizada(e)}></div>
-
-                <div className='clear'></div>
-            </div>
+            <tr>
+              <td className="quarto-canto">
+                <input className="quarto-canto" type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td className="terceiro-canto">
+                <input className="terceiro-canto" type="text" />
+              </td>
+            </tr>
+          </table>
         </div>
-    )
+
+        <div className="clear"></div>
+
+        <div className="Prototipo">
+          <p>Protótipo:</p>
+          <div onClick={clicouNaDuvida} className="duvida6"></div>
+          <table>
+            <tr>
+              <th className="primeiro-canto">Ferramentas/Procedimentos</th>
+              <th>Indicado para</th>
+              <th>Orientações de uso</th>
+              <th className="segundo-canto">Resultado esperado</th>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td className="quarto-canto">
+                <input className="quarto-canto" type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td className="terceiro-canto">
+                <input className="terceiro-canto" type="text" />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div
+          onClick={(e) => irParaObservacao2(e)}
+          className="seta-esquerda"
+        ></div>
+        <div
+          className="Observacao-finalizada"
+          onClick={(e) => observacaoFinalizada(e)}
+        ></div>
+
+        <div className="clear"></div>
+      </div>
+    </div>
+  );
 }
-export default Observacao3
+export default Observacao3;
