@@ -6,6 +6,7 @@
     margin: auto;
     margin-top: 2%;
     padding: 4%;
+   
 }
 
 
@@ -16,7 +17,8 @@
     margin: auto;
 }
   
-.benchmarking table th{
+.benchmarking table th{ 
+    
     background-color: #fb8218;
     border: 1px solid #fb8218;
 }
@@ -38,11 +40,13 @@
 }
   
 .benchmarking table td{
+   
     background-color: #252525;
     border: 1px solid #fb8218;
 }
   
 .benchmarking table input{
+    
     background-color: #252525;
     border: none;
     width: auto;
@@ -56,6 +60,41 @@
 .benchmarking p{
     text-align: left;
 }
+
+.close_obs {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 6%;
+    top: 4%;
+  }
+  .dot2_obs {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(248, 225, 14);
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 8%;
+    top: 4%;
+  }
+  .dot3_obs {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(45, 202, 25);
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 10%;
+    top: 4%;
+  }
+
 
 .setas{
     background-image: url('../../images/seta-direita.png');

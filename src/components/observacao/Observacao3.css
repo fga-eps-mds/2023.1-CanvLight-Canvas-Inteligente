@@ -4,11 +4,13 @@
     height: 50%;
     border-radius: 30px;
     margin: auto;
+    margin-top: 2%;
     color: white;
 }
 
 .Observacao3 p{
     font-size: 30px;
+    margin-top: 2%;
 }
 
 .Observacao3 table{
@@ -16,12 +18,15 @@
     border-spacing: 0;
     color: white;
     margin: auto;
+    
+
 }
   
 .Observacao3 table th{
     background-color: #fb8218;
     border: 1px solid #fb8218;
     font-size: 20px;
+   
 }
   
 .Observacao3 .primeiro-canto{

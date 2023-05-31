@@ -26,11 +26,25 @@ function Observacao2(){
         modal2.style.display = 'block';
     }
 
+    function fecharFormIntuicao(e) {
+        e.preventDefault();
+    
+        let modal = document.querySelector(".Observacao2");
+    
+        modal.style.display = "none";
+      }
+
 	return(
 	    <div className="Observacao2">
             <div className='centerObs2'>
+             <button
+                className="close_obs"
+                onClick={(e) => fecharFormIntuicao(e)}
+            ></button>
+                <div className="dot2_obs"></div>
+                <div className="dot3_obs"></div>
                 <div className='psdoprojeto'>
-                    <h2>Revisão dos 4P's do projeto</h2>
+                    <h2>Revisão dos 4P's do projeto:</h2>
                     <div onClick={clicouNaDuvida} className='duvida'></div>
                     <table>
                     <tr>
@@ -48,19 +62,19 @@ function Observacao2(){
                 <div className='clear'></div>
 
                 <div className='Relacionamento'>
-                    <div className='Single'> 
-                        <span>Quais parceiros são mais alinhados ao meu negócio</span>
+                    <div className='Single1'> 
+                        <span>Quais parceiros são mais alinhados ao meu negócio?</span>
                         <input type='text'/>
 
                     </div>
 
-                    <div className='Single'> 
+                    <div className='Single2'> 
                         <span>De quais parceiros devemos nos aproximar?</span>
                         <input type='text'/>
                         
                     </div>
 
-                    <div className='Single'> 
+                    <div className='Single3'> 
                         <span>Conseguimos transformar algum concorrente em parceiro?</span>
                         <input type='text'/>
                         

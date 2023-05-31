@@ -3,18 +3,26 @@
     border-radius: 30px;
     width: 90%;
     height: 60%;
-    margin-top: 8%;
     margin: auto;
+    margin-top: 2%;
+    
     
 }
 
 .Observacao2 .psdoprojeto h2{
+    position: absolute;
+    top: 7%;
+    left: 7%;
     text-align: left;
+    margin: auto;
+    margin-bottom: 5%;
     
 }
 
 .Observacao2 .psdoprojeto table{
-  color: white;
+  position: absolute;
+  top: 11%;
+    color: white;
   background-color: #252525;
   border: 1px solid #fb8218;
   border-radius: 8px;
@@ -86,14 +94,51 @@
 }
 
 .conceito p{
+    position: relative;
+    margin-bottom: 1.5%;
     font-size: 30px;
+    text-align: center;
 }
+
+.close_obs {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 6%;
+    top: 4%;
+  }
+  .dot2_obs {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(248, 225, 14);
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 8%;
+    top: 4%;
+  }
+  .dot3_obs {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(45, 202, 25);
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 10%;
+    top: 4%;
+  }
 
 .Single span{
     font-size: 20px;
 }
 
-.Single input{
+.Single1 input{
     background-color: #252525;
     border: 1px solid #fb8218;
     width: 30%;
@@ -101,8 +146,35 @@
     margin-left: 2%;
 }
 
-.Single{
-    margin-top: 2%;
+.Single2 input{
+    background-color: #252525;
+    border: 1px solid #fb8218;
+    width: 30%;
+    border-radius: 15px;
+    margin-left: 2%;
+}
+
+.Single3 input{
+    background-color: #252525;
+    border: 1px solid #fb8218;
+    width: 30%;
+    border-radius: 15px;
+    margin-left: 2%;
+}
+
+.Single1{
+    margin-top: 23%;
+    margin-bottom: 1%;
+    width: 60%;
+}
+
+.Single2{
+    margin-bottom: 1%;
+    width: 60%;
+}
+
+.Single3{
+    margin-bottom: 4%;
     width: 60%;
 }
 
