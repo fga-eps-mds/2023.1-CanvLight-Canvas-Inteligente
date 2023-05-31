@@ -99,6 +99,7 @@ function Intuicao() {
                 <td>
                   <input type="text" />
                 </td>
+                
                 <td className="quarto-canto">
                   <input className="quarto-canto" type="text" />
                 </td>
@@ -118,7 +119,7 @@ function Intuicao() {
 
           <div className="clear"></div>
         </div>
-
+        
         <div className="direita">
           <div>
             <img src={dateIntuition} alt="DataIntuicao" className="dateInt" />
@@ -151,7 +152,7 @@ function Intuicao() {
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida3"></div>
+          <div onClick={clicouNaDuvida} className="duvida4ps"></div>
 
           <div className="tabela3">
             <h2>Síntese:</h2>
@@ -190,7 +191,7 @@ function Intuicao() {
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida4"></div>
+          <div onClick={clicouNaDuvida} className="duvidaSintese"></div>
 
           <div onClick={formIntuicaoTerminado} className="feito"></div>
 

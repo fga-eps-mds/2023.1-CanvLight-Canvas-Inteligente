@@ -95,6 +95,7 @@
   height: 4vh;
   right: 55%;
   top: 6%;
+  color: white; 
   border: 2px solid #77216f;
   background-color: #252525;
   border-radius: 20px;
@@ -117,6 +118,7 @@
   height: 4vh;
   right: 55%;
   top: 12%;
+  color: white;
   border: 2px solid #77216f;
   background-color: #252525;
   border-radius: 20px;
@@ -140,8 +142,8 @@
   height: 20px;
   float: right;
   cursor: pointer;
-  margin-left: -6%;
-  margin-top: -70%;
+  margin-right: 55%;
+  margin-top: -63%;
   background-repeat: no-repeat;
 }
 
@@ -206,9 +208,10 @@
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-right: 65%;
-  margin-top: -38%;
+  margin-right: 78%;
+  margin-top: -31%;
 }
+
 .parte2 {
   float: left;
   width: 90%;
@@ -253,27 +256,30 @@
   border: 5px solid #6c0277;
   border-radius: 8px;
   padding: 20px;
-  float: right;
+  float: left;
   width: 50%;
   margin-top: 2%;
+  margin-left: 20%;
 }
 
 .tabela22 h2 {
   color: white;
   margin-left: 20%;
+  float: left;
+  margin-top: 3%;
 }
 
 .tabela22 table tr {
   width: 30%;
   height: 100%;
   text-align: left;
-  padding: 10px;
-    
+  padding: 10px;    
 }
 
 .tabela22 input {
   width: 70%;
   height: 100%;
+  color: white;
   border-bottom: 1px solid white;
   background-color: #252525;
   border-right: none;
@@ -282,20 +288,20 @@
   padding: 10px;
 }
 
-.duvida3 {
+.duvida4ps {
   background-image: url("../../images/request\ \(1\).png");
   width: 20px;
   height: 20px;
-  float: right;
+  float: left;
   cursor: pointer;
-  margin-right: -25%;
-  margin-top: -4%;
+  margin-left: -23.5%;
+  margin-top: -2.5%;
   background-repeat: no-repeat;
 }
 
 .tabela3 h2 {
   color: white;
-  margin-top: 20%;
+  margin-top: 30%;
   margin-left: 20%;
 }
 
@@ -307,7 +313,7 @@
   float: right;
   width: 50%;
   margin-right: 30%;
-  margin-top: 10%;
+  margin-top: 2%;
   padding: 0;
   border-spacing: 0;
 }
@@ -339,14 +345,14 @@
   border-radius: 0 0 0 8px;
 }
 
-.duvida4 {
+.duvidaSintese {
   background-image: url("../../images/request\ \(1\).png");
   width: 20px;
   height: 20px;
-  float: right;
+  float: left;
   cursor: pointer;
-  margin-right: -22%;
-  margin-top: -4%;
+  margin-left: 34%;
+  margin-top: -21.2%;
   background-repeat: no-repeat;
 }
 
