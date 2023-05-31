@@ -225,9 +225,10 @@ function Intuicao() {
       <GeradorPDF
         projeto={projeto}
         equipe={equipe}
-        dnaNegocio={dnaNegocio} 
-  // Passe outros dados de input conforme forem adicionados
-/>
+        dnaNegocio={dnaNegocio}
+         
+        // Passe outros dados de input conforme forem adicionados
+      />
     </div>
   );
 }

@@ -9,7 +9,13 @@ import normal from "../../images/normal.png";
 import happy from "../../images/happy.png";
 import "./Interacao.css";
 
+import React, { useState } from "react";
+import GeradorPDF from "../GeradorPDF/GeradorPDF";
+
 function Interacao() {
+
+  const [descricao, setDescricao] = useState("teste1");
+
   function clicouNaDuvida() {
     alert("duvida clicada!");
   }
@@ -98,7 +104,7 @@ function Interacao() {
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" value={descricao} onChange={(e) => setDescricao(e.target.value)} />
                   </td>
                   <td>
                     <input type="text" />
@@ -602,6 +608,7 @@ function Interacao() {
           </div>
         </div>
       </div>
+      <GeradorPDF descricao={descricao}/>
     </div>
   );
 }
