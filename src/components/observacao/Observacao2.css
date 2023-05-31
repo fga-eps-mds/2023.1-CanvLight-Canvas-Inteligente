@@ -1,18 +1,20 @@
 .Observacao2 .centerObs2{
     background-color: #252525;
     border-radius: 30px;
+    position: absolute;
     width: 90%;
     height: 60%;
     margin: auto;
     margin-top: 2%;
+    left: 5%;
     
     
 }
 
 .Observacao2 .psdoprojeto h2{
     position: absolute;
-    top: 7%;
-    left: 7%;
+    top: 8%;
+    left: 2%;
     text-align: left;
     margin: auto;
     margin-bottom: 5%;
@@ -21,7 +23,7 @@
 
 .Observacao2 .psdoprojeto table{
   position: absolute;
-  top: 11%;
+  top: 14%;
     color: white;
   background-color: #252525;
   border: 1px solid #fb8218;
@@ -108,8 +110,8 @@
     border-radius: 10px;
     position: absolute;
     border: none;
-    left: 6%;
-    top: 4%;
+    left: 2%;
+    top: 2.6%;
   }
   .dot2_obs {
     cursor: pointer;
@@ -119,8 +121,8 @@
     border-radius: 10px;
     position: absolute;
     border: none;
-    left: 8%;
-    top: 4%;
+    left: 4%;
+    top: 2.6%;
   }
   .dot3_obs {
     cursor: pointer;
@@ -130,8 +132,8 @@
     border-radius: 10px;
     position: absolute;
     border: none;
-    left: 10%;
-    top: 4%;
+    left: 6%;
+    top: 2.6%;
   }
 
 .Single span{
@@ -204,11 +206,28 @@
 }
 
 
-.duvida{
+.duvida3{
     background-image: url('../../images/request\ \(1\).png');
     width: 16px;
     height: 16px;
-    float: right;
-    cursor: pointer;
-    bottom: 5%;
+    position: absolute;
+    margin: auto;
+    top: 7.9%;
+    left: 22%;
+    text-align: left; 
+
+}
+
+.duvida4{
+    background-image: url('../../images/request\ \(1\).png');
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin: auto;
+    top: 65.5%;
+    right: 44.7%;
+    text-align: center;
+
+    
+
 }

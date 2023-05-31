@@ -45,7 +45,7 @@ function Observacao2(){
                 <div className="dot3_obs"></div>
                 <div className='psdoprojeto'>
                     <h2>Revisão dos 4P's do projeto:</h2>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    <div onClick={clicouNaDuvida} className='duvida3'></div>
                     <table>
                     <tr>
                         <td>P1:<input type="text"/></td>
@@ -84,8 +84,8 @@ function Observacao2(){
                 <div className='clear'></div>
 
                 <div className="conceito">
-                    <p>Conceito</p>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    <p>Conceito:</p>
+                    <div onClick={clicouNaDuvida} className='duvida4'></div>
                     <table>
                         <tr>
                             <th className="primeiro-canto">Ferramentas</th>

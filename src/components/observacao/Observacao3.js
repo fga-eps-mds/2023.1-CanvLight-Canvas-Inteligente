@@ -27,8 +27,8 @@ function Observacao3(){
         <div className= "Observacao3">
             <div className= 'centerObs3'>
                 <div className= 'Modelo'>
-                    <p>Modelo</p>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    <p>Modelo:</p>
+                    <div onClick={clicouNaDuvida} className='duvida5'></div>
                     <table>
                         <tr>
                             <th className="primeiro-canto">Ferramentas/Procedimentos</th>
@@ -56,8 +56,8 @@ function Observacao3(){
                 <div className='clear'></div>
 
                 <div className= 'Prototipo'>
-                    <p>Protótipo</p>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    <p>Protótipo:</p>
+                    <div onClick={clicouNaDuvida} className='duvida6'></div>
                     <table>
                         <tr>
                             <th className="primeiro-canto">Ferramentas/Procedimentos</th>

@@ -1,11 +1,13 @@
 .benchmarking .centerObs1{
     background-color: #252525;
+    position: absolute;
     width: 90%;
     height: 75%;
     border-radius: 30px;
     margin: auto;
     margin-top: 2%;
     padding: 4%;
+    left: 5%;
    
 }
 
@@ -107,13 +109,26 @@
     cursor: pointer;
 }
 
-.duvida{
+.duvida1{
     background-image: url('../../images/request\ \(1\).png');
     width: 16px;
     height: 16px;
     float: right;
     cursor: pointer;
-    bottom: 5%;
+    position: absolute;
+    left: 15.5%;
+    top: 9%;
+}
+
+.duvida2{
+    background-image: url('../../images/request\ \(1\).png');
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    left: 19.9%;
+    top: 48%;
 }
 
 .perfil{
@@ -176,4 +191,3 @@
     height: 5%;
     bottom: 3%;
 }
-

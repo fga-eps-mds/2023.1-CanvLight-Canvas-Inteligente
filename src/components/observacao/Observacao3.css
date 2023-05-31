@@ -79,11 +79,24 @@
     cursor: pointer;
 }
 
-.duvida{
+.duvida5{
     background-image: url('../../images/request\ \(1\).png');
     width: 16px;
     height: 16px;
+    position: absolute;
     float: right;
     cursor: pointer;
-    bottom: 5%;
+    top: 4%;
+    left: 11.7%;
+}
+
+.duvida6{
+    background-image: url('../../images/request\ \(1\).png');
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top: 15.7%;
+    right: 86%;
 }

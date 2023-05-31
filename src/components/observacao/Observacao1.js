@@ -33,8 +33,8 @@ function Observacao1(){
             ></button>
                 <div className="dot2_obs"></div>
                 <div className="dot3_obs"></div>
-                <h2>Benchmarking</h2>
-                <div onClick={clicouNaDuvida} className='duvida'></div>
+                <h2>Benchmarking:</h2>
+                <div onClick={clicouNaDuvida} className='duvida1'></div>
                 <div className="concorrente">
                     <p>Concorrente</p>
                     <table>
@@ -135,11 +135,11 @@ function Observacao1(){
                 <div className='clear'></div>
             
                 <div className='perfil'>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    <div onClick={clicouNaDuvida} className='duvida2'></div>
 
                     <div className='clear'></div>
 
-                    <h2>Perfil dos clientes</h2>
+                    <h2>Perfil dos clientes:</h2>
 
                     <div className='dir'>
                         <div className='img-perfil'></div>
