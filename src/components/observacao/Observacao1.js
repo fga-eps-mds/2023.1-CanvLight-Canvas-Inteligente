@@ -1,6 +1,31 @@
 import './Observacao1.css'
+import React, { useState } from 'react';
 
-function Observacao1(){
+
+function Observacao1({ onEmpresaChange }){
+    const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
+    const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
+    const [terceiraLinhaEmpresa, setTerceiraLinhaEmpresa] = useState();
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'primeiraLinhaEmpresa') {
+          setPrimeiraLinhaEmpresa(value);
+        } else if (name === 'segundaLinhaEmpresa') {
+          setSegundaLinhaEmpresa(value);
+        } else if (name === 'terceiraLinhaEmpresa') {
+          setTerceiraLinhaEmpresa(value);
+        }
+    
+        const novosDados = {
+            primeiraLinhaEmpresa: name === 'primeiraLinhaEmpresa' ? value : primeiraLinhaEmpresa,
+            segundaLinhaEmpresa: name === 'segundaLinhaEmpresa' ? value : segundaLinhaEmpresa,
+            terceiraLinhaEmpresa: name === 'terceiraLinhaEmpresa' ? value : terceiraLinhaEmpresa,
+        };
+
+        onEmpresaChange(novosDados);
+    }
+
     function clicouNaDuvida(){
         alert('duvida clicada!')
     }
@@ -20,7 +45,7 @@ function Observacao1(){
         <div className="benchmarking">
             <div className='centerObs1'>
                 <h2>Benchmarking</h2>
-                <div onClick={clicouNaDuvida} className='duvida'></div>
+                <div onClick={clicouNaDuvida}  className='duvida'></div>
                 <div className="concorrente">
                     <p>Concorrente</p>
                     <table>
@@ -35,17 +60,7 @@ function Observacao1(){
                         </tr>
 
                         <tr>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaEmpresa' value={primeiraLinhaEmpresa} onChange={handleInputChange}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -55,7 +70,17 @@ function Observacao1(){
                         </tr>
 
                         <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text"/></td>
+                            <td><input type="text" name='segundaLinhaEmpresa' value={segundaLinhaEmpresa} onChange={handleInputChange} /></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaEmpresa' value={terceiraLinhaEmpresa} onChange={handleInputChange} /></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>

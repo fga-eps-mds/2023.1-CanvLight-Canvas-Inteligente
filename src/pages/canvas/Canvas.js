@@ -15,6 +15,12 @@ import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {
 
+  const [empresa, setEmpresa] = useState({});
+
+  const handleEmpresaChange = (novosDados) => {
+    setEmpresa(novosDados);
+  };
+
 /*   const [projeto, setProjeto] = useState("");
   const [equipe, setEquipe] = useState(""); */
 
@@ -75,13 +81,17 @@ function Canvas() {
       </div>
       <Intuicao />
 
-      <Observacao1 />
+      <Observacao1 onEmpresaChange={handleEmpresaChange}/>
 
       <Observacao2 />
 
       <Observacao3 />
 
       <Interacao />
+
+      <GeradorPDF
+        empresa={empresa}
+      />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img
         src={arrowIcon}
