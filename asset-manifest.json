@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.c19bdd97.css",
-    "main.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.cf6d0777.js",
+    "main.css": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.319334cc.css",
+    "main.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.ff6ffc03.js",
     "static/media/check.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/check.3834f5051fbbbe913509.png",
     "static/media/logo_canvlight.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/logo_canvlight.c3be732bfe6f18e92b9c.png",
     "static/media/Cabeceira.jpg": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Cabeceira.9abf80df00f7a21cd320.jpg",
@@ -21,11 +21,11 @@
     "static/media/face.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/face.3c51c6e55fc20de72ac4.png",
     "static/media/graph.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/graph.cd431a2682c93bb67010.png",
     "index.html": "/2023.1-CanvLight-Canvas-Inteligente/index.html",
-    "main.c19bdd97.css.map": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.c19bdd97.css.map",
-    "main.cf6d0777.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.cf6d0777.js.map"
+    "main.319334cc.css.map": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.319334cc.css.map",
+    "main.ff6ffc03.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.ff6ffc03.js.map"
   },
   "entrypoints": [
-    "static/css/main.c19bdd97.css",
-    "static/js/main.cf6d0777.js"
+    "static/css/main.319334cc.css",
+    "static/js/main.ff6ffc03.js"
   ]
 }
