@@ -231,9 +231,11 @@ function Interacao() {
       <div className="tela_2_form_interacao">
         <div className="center">
           <button
-            className="close_button"
+            className="close_itr2"
             onClick={(e) => fecharFormInteracaoTela2(e)}
           ></button>
+          <div className="dot2_itr2"></div>
+          <div className="dot3_itr2"></div>
           <div className="tela2">
             <div className="esquerda">
               <div className="parte3_interacao">
@@ -458,9 +460,11 @@ function Interacao() {
         <div className="center">
           <div className="esquerda">
             <button
-              className="close_button"
+              className="close_itr3"
               onClick={(e) => fecharTela_3(e)}
             ></button>
+             <div className="dot2_itr3"></div>
+             <div className="dot3_itr3"></div>
             <div className="digitalizacao">
               <p>
                 Digitalização do Negócio:

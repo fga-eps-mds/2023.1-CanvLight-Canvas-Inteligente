@@ -40,7 +40,31 @@
 .dot2_itr {
   position: absolute;
   top: 1.5%;
-  left: 4.2%;
+  left: 4.4%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot2_itr2 {
+  position: absolute;
+  top: 1.5%;
+  left: 4.5%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot2_itr3 {
+  position: absolute;
+  top: 1.5%;
+  left: 4.5%;
   width: 20px;
   height: 20px;
   background-color: rgb(248, 225, 14);
@@ -52,7 +76,7 @@
 .dot3_itr {
   position: absolute;
   top: 1.5%;
-  left: 6.7%;
+  left: 7.4%;
   width: 20px;
   height: 20px;
   background-color: rgb(45, 202, 25);
@@ -60,6 +84,31 @@
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.dot3_itr2 {
+  position: absolute;
+  top: 1.5%;
+  left: 7.5%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot3_itr3 {
+  position: absolute;
+  top: 1.5%;
+  left: 7.5%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 .parte1_interacao {
   float: left;
@@ -174,7 +223,7 @@
   font-family: "Ubuntu";
 }
 
-.close_button {
+.close_itr3 {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -182,7 +231,8 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  top: 2px;
+  top: 1.6%;
+  left: 1.6%;
 }
 
 /*botao de inserir tarefa*/
@@ -338,7 +388,7 @@
   border-radius: 30px;
 }
 
-.close_button {
+.close_itr2 {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -346,8 +396,8 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  top: 0.3%;
-  left: 3%;
+  top: 1.6%;
+  left: 1.6%;
 }
 
 .direita {
