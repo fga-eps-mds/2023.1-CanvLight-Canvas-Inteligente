@@ -25,7 +25,7 @@ node -v
 
 - Clone o repositório do GitHub para o seu computador. Você pode fazer isso digitando o seguinte comando no seu terminal:
 ```
-git clone https://github.com/seu-username/nome-do-repositorio.git
+git clone https://github.com/fga-eps-mds/2023.1-CanvLight-Canvas-Inteligente.git
 ```
 - Abra o terminal na pasta raiz do projeto e execute o seguinte comando para instalar as dependências do projeto:
 
