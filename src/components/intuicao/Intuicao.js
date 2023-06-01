@@ -1,13 +1,10 @@
 import "./Intuicao.css";
 import dateIntuition from "../../images/dateIntuition.png";
+import checkImg from "../../images/check.png";
 
 function Intuicao() {
   function clicouNaDuvida() {
     alert("duvida clicada!");
-  }
-
-  function formIntuicaoTerminado() {
-    alert("form feito");
   }
 
   function fecharFormIntuicao(e) {
@@ -35,13 +32,13 @@ function Intuicao() {
         <div className="dot3_int"></div>
         <div className="esquerda">
           <div className="parte1">
-              <div>
-                <h2 className ="h2_project">Projeto:</h2>
-                <input className="inputProjeto" type="text" />
-              </div>
+            <div>
+              <h2 className="h2_project">Projeto:</h2>
+              <input className="inputProjeto" type="text" />
+            </div>
 
-              <h2 className= "h2_equipe">Equipe:</h2>
-              <input className="inputEquipe" type="text" />
+            <h2 className="h2_equipe">Equipe:</h2>
+            <textarea className="inputEquipe" type="text" />
             <div className="clear"></div>
           </div>
 
@@ -130,28 +127,28 @@ function Intuicao() {
               <tr>
                 <td>
                   P1:
-                  <input type="text" />
+                  <textarea type="text" />
                 </td>
                 <td>
                   P2:
-                  <input type="text" />
+                  <textarea type="text" />
                 </td>
               </tr>
 
               <tr>
                 <td>
                   P3:
-                  <input type="text" />
+                  <textarea type="text" />
                 </td>
                 <td>
                   P4:
-                  <input type="text" />
+                  <textarea type="text" />
                 </td>
               </tr>
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida3"></div>
+          <div onClick={clicouNaDuvida} className="duvida_fourps_int"></div>
 
           <div className="tabela3">
             <h2>Síntese:</h2>
@@ -178,6 +175,14 @@ function Intuicao() {
                   <input type="text" />
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <input type="text" />
+                </td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
 
               <tr>
                 <td className="quarto-canto">
@@ -190,9 +195,11 @@ function Intuicao() {
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida4"></div>
+          <div onClick={clicouNaDuvida} className="duvida_sintese_int"></div>
 
-          <div onClick={formIntuicaoTerminado} className="feito"></div>
+          <div onClick={(e) => fecharFormIntuicao(e)} className="feito_int">
+            <img src={checkImg} className="feito_int" alt="confirma_int" />
+          </div>
 
           <div className="clear"></div>
         </div>

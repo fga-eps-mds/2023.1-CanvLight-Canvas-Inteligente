@@ -41,7 +41,7 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  left: 4%;
+  left: 3.5%;
   top: 2%;
 }
 .dot3_int {
@@ -52,7 +52,7 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  left: 6.5%;
+  left: 5.5%;
   top: 2%;
 }
 
@@ -62,17 +62,17 @@
   margin-top: 2%;
 }
 
-.h2_project{
+.h2_project {
   color: white;
   margin-top: 3%;
 }
 
-.h2_equipe{
+.h2_equipe {
   margin-top: 5%;
   color: white;
 }
 
-.h2_Ikigai{
+.h2_Ikigai {
   color: white;
   margin-bottom: 3%;
 }
@@ -113,17 +113,17 @@
 .inputEquipe {
   box-sizing: border-box;
   position: absolute;
-  width: 29.7vw;
-  height: 4vh;
+  width: 34.4vw;
+  height: 12vh;
   right: 55%;
-  top: 12%;
+  top: 15%;
   border: 2px solid #77216f;
   background-color: #252525;
   border-radius: 20px;
 }
 
 .tabela1 {
-  margin-top: 15%;
+  margin-top: 30%;
   float: center;
   width: 100vw;
 }
@@ -138,11 +138,11 @@
   background-image: url("../../images/request\ \(1\).png");
   width: 20px;
   height: 20px;
+  background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-left: -6%;
-  margin-top: -70%;
-  background-repeat: no-repeat;
+  margin-right: 50%;
+  margin-top: -65%;
 }
 
 .tabela1 table {
@@ -166,6 +166,7 @@
 .tabela1 table input {
   background-color: #252525;
   border: none;
+  height: 4vh;
   border-color: #6c0277;
   color: white;
 }
@@ -206,13 +207,14 @@
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-right: 65%;
-  margin-top: -38%;
+  margin-right: 75%;
+  margin-top: -43%;
 }
 .parte2 {
   float: left;
   width: 90%;
   color: white;
+  margin-top: 3%;
 }
 
 .parte2 form {
@@ -221,14 +223,14 @@
 
 .parte2 textarea {
   font-size: 18px;
-  margin-right: 10%;
+  margin-right: 15%;
   margin-top: -4.6%;
   background-color: #252525;
-  border: 5px solid #6c0277;
+  border: 2px solid #6c0277;
   border-radius: 15px;
   color: white;
   width: 35vw;
-  height: 14vh;
+  height: 20vh;
 }
 
 .direita {
@@ -250,11 +252,12 @@
 .four_ps {
   color: white;
   background-color: #252525;
-  border: 5px solid #6c0277;
+  border: 2px solid #6c0277;
   border-radius: 8px;
   padding: 20px;
   float: right;
-  width: 50%;
+  width: 70%;
+  margin-right: 5%;
   margin-top: 2%;
 }
 
@@ -265,13 +268,14 @@
 
 .tabela22 table tr {
   width: 30%;
-  height: 100%;
+  height: 10vh;
   text-align: left;
   padding: 10px;
-    
+  border: 2px solid #6c0277;
+  border-radius: 15px;
 }
 
-.tabela22 input {
+.tabela22 textarea {
   width: 70%;
   height: 100%;
   border-bottom: 1px solid white;
@@ -282,80 +286,87 @@
   padding: 10px;
 }
 
-.duvida3 {
+.duvida_fourps_int {
   background-image: url("../../images/request\ \(1\).png");
   width: 20px;
   height: 20px;
   float: right;
   cursor: pointer;
-  margin-right: -25%;
-  margin-top: -4%;
+  margin-right: -23%;
+  margin-top: -2.5%;
   background-repeat: no-repeat;
 }
 
 .tabela3 h2 {
   color: white;
-  margin-top: 20%;
+  margin-top: 40%;
   margin-left: 20%;
 }
 
 .tabela3 table {
   text-align: center;
-  border: 5px solid #6c0277;
+  border: 0px solid #6c0277;
   border-radius: 15px;
   color: white;
   float: right;
-  width: 50%;
-  margin-right: 30%;
-  margin-top: 10%;
+  width: 70%;
+  margin-right: 5%;
+  margin-top: 2%;
   padding: 0;
   border-spacing: 0;
 }
 
 .tabela3 table th {
   background-color: #6c0277;
+  width: 50%;
+  height: 5vh;
+}
+.primeiro-canto {
+  border-radius: 15px 0 0 0;
+}
+.segundo-canto {
+  border-radius: 0 15px 0 0;
 }
 
 .tabela3 table td {
-  width: 100%;
-  height: 30px;
-  border: 1px solid black;
+  border: 2px solid #6c0277;
 }
 
 .tabela3 table input {
-  width: 95%;
-  height: 95%;
+  height: 100%;
+  padding: 10px;
+  width: 100%;
   border: 0;
   background-color: #252525;
 
   color: white;
 }
 
-.tabela3 table td.terceiro-canto {
-  border-radius: 0 0 8px 0;
+.terceiro-canto {
+  border-radius: 0 0 15px 0;
 }
 
-.tabela3 table td.quarto-canto {
-  border-radius: 0 0 0 8px;
+.quarto-canto {
+  border-radius: 0 0 0 15px;
 }
 
-.duvida4 {
+.duvida_sintese_int {
   background-image: url("../../images/request\ \(1\).png");
   width: 20px;
   height: 20px;
+  background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-right: -22%;
-  margin-top: -4%;
-  background-repeat: no-repeat;
+  margin-right: 60%;
+  margin-top: -28%;
 }
 
-.feito {
+.feito_int {
+  background-image: url("../../images/check.png");
   height: 6vh;
   width: 3vw;
-  margin-top: 35%;
-  margin-right: 0%;
+  margin-top: 15%;
+  margin-right: 2%;
   float: right;
   cursor: pointer;
-  background-repeat: no-repeat;
 }
