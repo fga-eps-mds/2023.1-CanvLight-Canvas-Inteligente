@@ -87,7 +87,7 @@
 
   text-align: center;
   background-color: #2666e3;
-  border: 3px solid #2666e3;
+  border: 2px solid #2666e3;
   border-radius: 12px;
   color: white;
 }
@@ -134,7 +134,7 @@
 
   text-align: center;
   background-color: #2666e3;
-  border: 3px solid #2666e3;
+  border: 2px solid #2666e3;
   border-radius: 12px;
   color: white;
 }
@@ -186,11 +186,20 @@
 }
 
 /*botao de inserir tarefa*/
+#input-new-task {
+  border-radius: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border-color: #0e78c9;
+  padding: 3px;
+  margin-top: 5%;
+}
 .button_tarefa {
   cursor: pointer;
-  margin-left: 16.5%;
+  margin-left: 2%;
   position: absolute;
-  margin-top: -2%;
+  margin-top: 1%;
 }
 
 .parte3_interacao {
@@ -456,7 +465,7 @@
   float: center;
   text-align: center;
   background-color: #2666e3;
-  border: 3px solid #2666e3;
+  border: 2px solid #2666e3;
   border-radius: 12px;
   color: white;
   margin-top: 1%;
@@ -515,4 +524,12 @@
   border-left: none;
   padding: 10px;
   color: white;
+}
+.feito_itr {
+  height: 6vh;
+  width: 3vw;
+  margin-top: 3.5%;
+  margin-right: 2%;
+  float: right;
+  cursor: pointer;
 }

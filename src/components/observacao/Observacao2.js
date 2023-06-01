@@ -177,12 +177,12 @@ function Observacao2() {
 
         <div
           onClick={(e) => irParaObservacao1(e)}
-          className="seta-esquerda"
+          className="seta-esquerda_obs2"
         ></div>
 
         <div
           onClick={(e) => irParaObservacao3(e)}
-          className="seta-direita"
+          className="seta-direita_obs2"
         ></div>
 
         <div className="clear"></div>

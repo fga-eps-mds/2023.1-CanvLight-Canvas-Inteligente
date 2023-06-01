@@ -1,188 +1,190 @@
-.benchmarking .centerObs1{
-    background-color: #252525;
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    border-radius: 30px;
-    margin: auto;
-    margin-top: 2%;
-    padding: 4%;
-    left: 5%;
-    overflow: hidden;
+.benchmarking .centerObs1 {
+  background-color: #252525;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 5%;
+  padding: 4%;
+  left: 5%;
+  overflow: hidden;
 }
 
-.benchmarking table{
-    width: 0;
-    border-spacing: 0;
-    color: white;
-    margin: auto;
-}
-  
-.benchmarking table th{ 
-    
-    background-color: #fb8218;
-    border: 1px solid #fb8218;
-}
-  
-.benchmarking .primeiro-canto{
-    border-radius: 15px 0 0 0;
-}
-  
-.benchmarking .segundo-canto{
-    border-radius: 0 15px 0 0 ;
-}
-  
-.benchmarking .terceiro-canto{
-    border-radius: 0 0 15px 0 ;
-}
-  
-.benchmarking .quarto-canto{
-    border-radius: 0 0 0 15px;
-}
-  
-.benchmarking table td{
-   
-    background-color: #252525;
-    border: 1px solid #fb8218;
-}
-  
-.benchmarking table input{
-    background-color: #252525;
-    border: none;
-    width: auto;
-    height: auto;
+.benchmarking table {
+  width: 0;
+  border-spacing: 0;
+  color: white;
+  margin: auto;
 }
 
-.benchmarking h2{
-    text-align: left;
+.benchmarking table th {
+  background-color: #fb8218;
+  border: 1px solid #fb8218;
 }
 
-.benchmarking p{
-    text-align: left;
+.benchmarking .primeiro-canto {
+  border-radius: 15px 0 0 0;
+}
+
+.benchmarking .segundo-canto {
+  border-radius: 0 15px 0 0;
+}
+
+.benchmarking .terceiro-canto {
+  border-radius: 0 0 15px 0;
+}
+
+.benchmarking .quarto-canto {
+  border-radius: 0 0 0 15px;
+}
+
+.benchmarking table td {
+  background-color: #252525;
+  height: 5vh;
+  border: 1px solid #fb8218;
+}
+
+.benchmarking table input {
+  background-color: #252525;
+  border: none;
+  width: auto;
+}
+
+.benchmarking h2 {
+  text-align: left;
+}
+
+.benchmarking p {
+  margin: 0.5%;
+  text-align: left;
 }
 
 .close_obs {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 10px;
-    position: absolute;
-    border: none;
-    left: 6%;
-    top: 4%;
-  }
-  .dot2_obs {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(248, 225, 14);
-    border-radius: 10px;
-    position: absolute;
-    border: none;
-    left: 8%;
-    top: 4%;
-  }
-  .dot3_obs {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(45, 202, 25);
-    border-radius: 10px;
-    position: absolute;
-    border: none;
-    left: 10%;
-    top: 4%;
-  }
-
-
-.setas{
-    background-image: url('../../images/seta-direita.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10%;
-    height: 10%;
-    margin-top: 2%;
-    float: right;
-    cursor: pointer;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 6%;
+  top: 4%;
+}
+.dot2_obs {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 8%;
+  top: 4%;
+}
+.dot3_obs {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 10%;
+  top: 4%;
 }
 
-.duvida1{
-    background-image: url('../../images/request\ \(1\).png');
-    width: 16px;
-    height: 16px;
-    float: right;
-    cursor: pointer;
-    position: absolute;
-    left: 15.5%;
-    top: 9%;
+.setas {
+  background-image: url("../../images/seta-direita.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10%;
+  height: 10%;
+  margin-top: -2%;
+  margin-right: -5%;
+  float: right;
+  cursor: pointer;
 }
 
-.duvida2{
-    background-image: url('../../images/request\ \(1\).png');
-    width: 16px;
-    height: 16px;
-    float: right;
-    cursor: pointer;
-    position: absolute;
-    left: 19.9%;
-    top: 48%;
+.duvida1 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 16px;
+  height: 16px;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  left: 15%;
+  top: 9%;
 }
 
-.perfil{
-    margin-top: 3%;
+.duvida2 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 16px;
+  height: 16px;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  left: 20%;
+  top: 67%;
 }
 
-.perfil h2{
-    padding: 2%;
+.perfil {
+  margin-top: 5%;
 }
 
-.dir{
-    width: 50%;
-    float: right;
+.perfil h2 {
+  padding: 2%;
 }
 
-.esq{
-    width: 50%;
-    float: left;
+.dir {
+  width: 50%;
+  float: right;
 }
 
-.perfil input{
-    height: 5%;
-    background-color: #252525;
-    border: 1px solid #fb8218;
-    border-radius: 15px;
-    width: 50%;
-    margin: 1%;
-    padding: 2%;
+.esq {
+  width: 50%;
+  float: left;
 }
 
-.img-perfil{
-    background-image: url('../../images/profile\ \(1\).png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 5%;
-    height: 5%;
-    bottom: 13%;
+.perfil input {
+  height: 5%;
+  background-color: #252525;
+  border: 1px solid #fb8218;
+  border-radius: 15px;
+  width: 50%;
+  margin: 1%;
+  padding: 2%;
 }
 
-.crescendo{
-    background-image: url('../../images/stats.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 5%;
-    height: 5%;
-    bottom: 8%;
+.img-perfil {
+  background-image: url("../../images/profile\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  margin-top: 0%;
+  margin-left: 5%;
 }
 
-.decrescendo{
-    background-image: url('../../images/graph.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 5%;
-    height: 5%;
-    bottom: 3%;
+.crescendo {
+  background-image: url("../../images/stats.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  margin-top: 0%;
+  margin-left: 5%;
+}
+
+.decrescendo {
+  background-image: url("../../images/graph.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  margin-top: 0%;
+  margin-left: 5%;
 }

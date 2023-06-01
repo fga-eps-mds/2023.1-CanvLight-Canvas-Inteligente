@@ -30,6 +30,10 @@ function Canvas() {
   function abrirFormInteracao(e) {
     e.preventDefault();
 
+    let modalOverlay = document.createElement("div");
+    modalOverlay.classList.add("modal-overlay");
+    document.body.appendChild(modalOverlay);
+
     let modal = document.querySelector(".form_interacao");
     modal.style.display = "block";
     let modal2 = document.querySelector(".confirma");
@@ -38,6 +42,10 @@ function Canvas() {
 
   function abrirFromObservação(e) {
     e.preventDefault();
+
+    let modalOverlay = document.createElement("div");
+    modalOverlay.classList.add("modal-overlay");
+    document.body.appendChild(modalOverlay);
 
     let modal = document.querySelector(".benchmarking");
 

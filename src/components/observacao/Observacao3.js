@@ -33,7 +33,7 @@ function Observacao3() {
     <div className="Observacao3">
       <div className="centerObs3">
         <div className="Modelo">
-          <p>Modelo:</p>
+          <p className="Modelo_obs3">Modelo:</p>
           <div onClick={clicouNaDuvida} className="duvida5"></div>
           <table>
             <tr>
@@ -122,7 +122,7 @@ function Observacao3() {
 
         <div
           onClick={(e) => irParaObservacao2(e)}
-          className="seta-esquerda"
+          className="seta-esquerda_obs3"
         ></div>
         <div
           className="Observacao-finalizada"

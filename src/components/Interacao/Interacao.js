@@ -7,6 +7,7 @@ import linkedin from "../../images/linkedin.png";
 import sad from "../../images/sad.png";
 import normal from "../../images/normal.png";
 import happy from "../../images/happy.png";
+import checkImg from "../../images/check.png";
 import "./Interacao.css";
 
 function Interacao() {
@@ -617,6 +618,9 @@ function Interacao() {
                 </tr>
               </table>
             </div>
+          </div>
+          <div onClick={(e) => fecharTela_3(e)} className="feito_itr">
+            <img src={checkImg} className="feito_itr" alt="confirma_itr" />
           </div>
         </div>
       </div>
