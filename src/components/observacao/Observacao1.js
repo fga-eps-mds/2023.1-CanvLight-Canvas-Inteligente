@@ -2,13 +2,35 @@ import './Observacao1.css'
 import React, { useState } from 'react';
 
 
-function Observacao1({ onEmpresaChange, onDiferencaChange }){
+function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
     const [terceiraLinhaEmpresa, setTerceiraLinhaEmpresa] = useState();
     const [primeiraLinhaDiferenca, setPrimeiraLinhaDiferenca] = useState();
     const [segundaLinhaDiferenca, setSegundaLinhaDiferenca] = useState();
     const [terceiraLinhaDiferenca, setTerceiraLinhaDiferenca] = useState();
+    const [primeiraLinhaPorte, setPrimeiraLinhaPorte] = useState();
+    const [segundaLinhaPorte, setSegundaLinhaPorte] = useState();
+    const [terceiraLinhaPorte, setTerceiraLinhaPorte] = useState();
+
+    const handleInputChangePorte = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaPorte') {
+            setPrimeiraLinhaPorte(value);
+        } else if (name === 'segundaLinhaPorte') {
+            setSegundaLinhaPorte(value);
+        } else if (name === 'terceiraLinhaPorte') {
+            setTerceiraLinhaPorte(value);
+        }
+
+        const novosDadosPorte = {
+            primeiraLinhaPorte: name === 'primeiraLinhaPorte' ? value : primeiraLinhaPorte,
+            segundaLinhaPorte: name === 'segundaLinhaPorte' ? value : segundaLinhaPorte,
+            terceiraLinhaPorte: name === 'terceiraLinhaPorte' ? value : terceiraLinhaPorte,
+        };
+
+        onPorteChange(novosDadosPorte);
+    }
 
     const handleInputChangeDiferenca = (e)=>{
         const {name ,value} = e.target;
@@ -84,7 +106,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange }){
                         <tr>
                             <td><input type="text" name='primeiraLinhaEmpresa' value={primeiraLinhaEmpresa} onChange={handleInputChangeEmpresa}/></td>
                             <td><input type="text" name='primeiraLinhaDiferenca' value={primeiraLinhaDiferenca} onChange={handleInputChangeDiferenca}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaPorte' value={primeiraLinhaPorte} onChange={handleInputChangePorte}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -94,7 +116,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange }){
                         <tr>
                             <td><input type="text" name='segundaLinhaEmpresa' value={segundaLinhaEmpresa} onChange={handleInputChangeEmpresa} /></td>
                             <td><input type="text" name='segundaLinhaDiferenca' value={segundaLinhaDiferenca} onChange={handleInputChangeDiferenca}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaPorte' value={segundaLinhaPorte} onChange={handleInputChangePorte}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -104,7 +126,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange }){
                         <tr>
                             <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaEmpresa' value={terceiraLinhaEmpresa} onChange={handleInputChangeEmpresa} /></td>
                             <td><input type="text" name='terceiraLinhaDiferenca' value={terceiraLinhaDiferenca} onChange={handleInputChangeDiferenca}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='terceiraLinhaPorte' value={terceiraLinhaPorte} onChange={handleInputChangePorte}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>

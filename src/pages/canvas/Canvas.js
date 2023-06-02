@@ -17,6 +17,11 @@ function Canvas() {
 
   const [empresa, setEmpresa] = useState({});
   const [diferenca, setDiferenca] = useState({});
+  const [porte, setPorte] = useState({});
+
+  const handlePorteChange = (novosDadosPorte) =>{
+    setPorte(novosDadosPorte);
+  }
 
   const handleDiferencaChange = (novosDadosDiferenca)=>{
     setDiferenca(novosDadosDiferenca);
@@ -89,6 +94,7 @@ function Canvas() {
       <Observacao1 
         onEmpresaChange={handleEmpresaChange}
         onDiferencaChange={handleDiferencaChange}
+        onPorteChange={handlePorteChange}
       />
 
       <Observacao2 />
@@ -100,6 +106,7 @@ function Canvas() {
       <GeradorPDF
         empresa={empresa}
         diferenca={diferenca}
+        porte={porte}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img

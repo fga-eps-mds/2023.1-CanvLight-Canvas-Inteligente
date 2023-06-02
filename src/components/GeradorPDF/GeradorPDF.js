@@ -1,7 +1,7 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 
-function GeradorPDF({ empresa, diferenca,  projeto, equipe, dnaNegocio, descricao}) {
+function GeradorPDF({ empresa, diferenca, porte,  projeto, equipe, dnaNegocio, descricao}) {
   function gerarPDF() {
     const doc = new jsPDF();
 
@@ -25,6 +25,10 @@ function GeradorPDF({ empresa, diferenca,  projeto, equipe, dnaNegocio, descrica
     doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 10,40);
     doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 10,50);
     doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 10,60);
+
+    doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 10,70);
+    doc.text(`Porte: ${porte.segundaLinhaPorte}`, 10,80);
+    doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 10,90);
 
     doc.save("Canvas.pdf");
   }
