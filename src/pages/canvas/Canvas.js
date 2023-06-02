@@ -19,6 +19,11 @@ function Canvas() {
   const [diferenca, setDiferenca] = useState({});
   const [porte, setPorte] = useState({});
   const [concorrencia, setConcorrencia] = useState({});
+  const [localizacao, setLocalizacao] = useState({});
+
+  const handleLocalizacaoChange = (novosDadosLocalizacao) =>{
+    setLocalizacao(novosDadosLocalizacao);
+  }
 
   const handleConcorrenciaChange = (novosDadosConcorrencia) =>{
     setConcorrencia(novosDadosConcorrencia);
@@ -101,6 +106,7 @@ function Canvas() {
         onDiferencaChange={handleDiferencaChange}
         onPorteChange={handlePorteChange}
         onConcorrenciaChange={handleConcorrenciaChange}
+        onLocalizacaoChange={handleLocalizacaoChange}
       />
 
       <Observacao2 />
@@ -114,6 +120,7 @@ function Canvas() {
         diferenca={diferenca}
         porte={porte}
         concorrencia={concorrencia}
+        localizacao={localizacao}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img
