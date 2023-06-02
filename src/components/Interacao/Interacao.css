@@ -135,8 +135,8 @@
   top: 12.75%;
 
   text-align: center;
-  background-color: #2666e3;
-  border: 2px solid #2666e3;
+  background-color: #0e78c9;
+  border: 2px solid #0e78c9;
   border-radius: 12px;
   color: white;
 }
@@ -182,8 +182,8 @@
   top: 12.75%;
 
   text-align: center;
-  background-color: #2666e3;
-  border: 2px solid #2666e3;
+  background-color: #0e78c9;
+  border: 2px solid #0e78c9;
   border-radius: 12px;
   color: white;
 }
@@ -247,9 +247,9 @@
 }
 .button_tarefa {
   cursor: pointer;
-  margin-left: 2%;
+  margin-left: 31.5%;
   position: absolute;
-  margin-top: 1%;
+  margin-top: -2.5%;
 }
 
 .parte3_interacao {
@@ -288,8 +288,8 @@
   bottom: 50.04%;
 
   text-align: center;
-  background-color: #2666e3;
-  border: 1px solid #2666e3;
+  background-color: #0e78c9;
+  border: 1px solid #0e78c9;
   border-radius: 7px;
   color: white;
 }
@@ -329,8 +329,8 @@
 
 .tabela_formacao table {
   text-align: center;
-  background-color: #2666e3;
-  border: 1px solid #2666e3;
+  background-color: #0e78c9;
+  border: 1px solid #0e78c9;
   border-radius: 7px;
   color: white;
   float: left;
@@ -514,8 +514,8 @@
   box-sizing: border-box;
   float: center;
   text-align: center;
-  background-color: #2666e3;
-  border: 2px solid #2666e3;
+  background-color: #0e78c9;
+  border: 2px solid #0e78c9;
   border-radius: 12px;
   color: white;
   margin-top: 1%;
@@ -550,7 +550,7 @@
 .tabela2 table {
   color: white;
   background-color: #252525;
-  border: 1px solid #2666e3;
+  border: 1px solid #0e78c9;
   border-radius: 8px;
   padding: 20px;
   float: left;
