@@ -1,7 +1,8 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 
-function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado,  projeto, equipe, dnaNegocio, descricao}) {
+function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado, 
+  melhorar, projeto, equipe, dnaNegocio, descricao}) {
   function gerarPDF() {
     const doc = new jsPDF();
 
@@ -41,6 +42,10 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
     doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 10,160);
     doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 10,170);
     doc.text(`O que pode ser imitado: ${imitado.terceiraLinhaImitado}`, 10,180);
+
+    doc.text(`O que podemos fazer diferente/melhor: ${melhorar.primeiraLinhaMelhorar}`, 10,190);
+    doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 10,200);
+    doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 10,210);
 
     doc.save("Canvas.pdf");
   }

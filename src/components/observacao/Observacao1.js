@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
-    onLocalizacaoChange, onImitadoChange 
+    onLocalizacaoChange, onImitadoChange, onMelhorarChange
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -23,6 +23,28 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaImitado, setPrimeiraLinhaImitado] = useState();
     const [segundaLinhaImitado, setSegundaLinhaImitado] = useState();
     const [terceiraLinhaImitado, setTerceiraLinhaImitado] = useState();
+    const [primeiraLinhaMelhorar, setPrimeiraLinhaMelhorar] = useState();
+    const [segundaLinhaMelhorar, setSegundaLinhaMelhorar] = useState();
+    const [terceiraLinhaMelhorar, setTerceiraLinhaMelhorar] = useState();
+
+    const handleInputChangeMelhorar = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaMelhorar') {
+            setPrimeiraLinhaMelhorar(value);
+        } else if (name === 'segundaLinhaMelhorar') {
+            setSegundaLinhaMelhorar(value);
+        } else if (name === 'terceiraLinhaMelhorar') {
+            setTerceiraLinhaMelhorar(value);
+        }
+
+        const novosDadosMelhorar = {
+            primeiraLinhaMelhorar: name === 'primeiraMelhorar' ? value : primeiraLinhaMelhorar,
+            segundaLinhaMelhorar: name === 'segundaLinhaMelhorar' ? value : segundaLinhaMelhorar,
+            terceiraLinhaMelhorar: name === 'terceiraLinhaMelhorar' ? value : terceiraLinhaMelhorar,
+        };
+
+        onMelhorarChange(novosDadosMelhorar);
+    }
 
     const handleInputChangeImitado = (e)=>{
         const {name ,value} = e.target;
@@ -178,7 +200,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='primeiraLinhaConcorrencia' value={primeiraLinhaConcorrencia} onChange={handleInputChangeConcorrencia}/></td>
                             <td><input type="text" name='primeiraLinhaLocalizacao' value={primeiraLinhaLocalizacao} onChange={handleInputChangeLocalizacao}/></td>
                             <td><input type="text" name='primeiraLinhaImitado' value={primeiraLinhaImitado} onChange={handleInputChangeImitado}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaMelhorar' value={primeiraLinhaMelhorar} onChange={handleInputChangeMelhorar}/></td>
                         </tr>
 
                         <tr>
@@ -188,7 +210,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='segundaLinhaConcorrencia' value={segundaLinhaConcorrencia} onChange={handleInputChangeConcorrencia}/></td>
                             <td><input type="text" name='segundaLinhaLocalizacao' value={segundaLinhaLocalizacao} onChange={handleInputChangeLocalizacao}/></td>
                             <td><input type="text" name='segundaLinhaImitado' value={segundaLinhaImitado} onChange={handleInputChangeImitado}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaMelhorar' value={segundaLinhaMelhorar} onChange={handleInputChangeMelhorar}/></td>
                         </tr>
 
                         <tr>
@@ -198,7 +220,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='terceiraLinhaConcorrencia' value={terceiraLinhaConcorrencia} onChange={handleInputChangeConcorrencia}/></td>
                             <td><input type="text" name='terceiraLinhaLocalizacao' value={terceiraLinhaLocalizacao} onChange={handleInputChangeLocalizacao}/></td>
                             <td><input type="text" name='terceiraLinhaImitado' value={terceiraLinhaImitado} onChange={handleInputChangeImitado}/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
+                            <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='terceiraLinhaMelhorar' value={terceiraLinhaMelhorar} onChange={handleInputChangeMelhorar}/></td>
                         </tr>
                     </table>
 
