@@ -2,7 +2,7 @@ import './Observacao1.css'
 import React, { useState } from 'react';
 
 
-function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange }){
+function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
     const [terceiraLinhaEmpresa, setTerceiraLinhaEmpresa] = useState();
@@ -12,6 +12,28 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange }){
     const [primeiraLinhaPorte, setPrimeiraLinhaPorte] = useState();
     const [segundaLinhaPorte, setSegundaLinhaPorte] = useState();
     const [terceiraLinhaPorte, setTerceiraLinhaPorte] = useState();
+    const [primeiraLinhaConcorrencia, setPrimeiraLinhaConcorrencia] = useState();
+    const [segundaLinhaConcorrencia, setSegundaLinhaConcorrencia] = useState();
+    const [terceiraLinhaConcorrencia, setTerceiraLinhaConcorrencia] = useState();
+
+    const handleInputChangeConcorrencia = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaConcorrencia') {
+            setPrimeiraLinhaConcorrencia(value);
+        } else if (name === 'segundaLinhaConcorrencia') {
+            setSegundaLinhaConcorrencia(value);
+        } else if (name === 'terceiraLinhaConcorrencia') {
+            setTerceiraLinhaConcorrencia(value);
+        }
+
+        const novosDadosConcorrencia = {
+            primeiraLinhaConcorrencia: name === 'primeiraLinhaConcorrencia' ? value : primeiraLinhaConcorrencia,
+            segundaLinhaConcorrencia: name === 'segundaLinhaConcorrencia' ? value : segundaLinhaConcorrencia,
+            terceiraLinhaConcorrencia: name === 'terceiraLinhaConcorrencia' ? value : terceiraLinhaConcorrencia,
+        };
+
+        onConcorrenciaChange(novosDadosConcorrencia);
+    }
 
     const handleInputChangePorte = (e)=>{
         const {name ,value} = e.target;
@@ -107,7 +129,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange }){
                             <td><input type="text" name='primeiraLinhaEmpresa' value={primeiraLinhaEmpresa} onChange={handleInputChangeEmpresa}/></td>
                             <td><input type="text" name='primeiraLinhaDiferenca' value={primeiraLinhaDiferenca} onChange={handleInputChangeDiferenca}/></td>
                             <td><input type="text" name='primeiraLinhaPorte' value={primeiraLinhaPorte} onChange={handleInputChangePorte}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaConcorrencia' value={primeiraLinhaConcorrencia} onChange={handleInputChangeConcorrencia}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -117,7 +139,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange }){
                             <td><input type="text" name='segundaLinhaEmpresa' value={segundaLinhaEmpresa} onChange={handleInputChangeEmpresa} /></td>
                             <td><input type="text" name='segundaLinhaDiferenca' value={segundaLinhaDiferenca} onChange={handleInputChangeDiferenca}/></td>
                             <td><input type="text" name='segundaLinhaPorte' value={segundaLinhaPorte} onChange={handleInputChangePorte}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaConcorrencia' value={segundaLinhaConcorrencia} onChange={handleInputChangeConcorrencia}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -127,7 +149,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange }){
                             <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaEmpresa' value={terceiraLinhaEmpresa} onChange={handleInputChangeEmpresa} /></td>
                             <td><input type="text" name='terceiraLinhaDiferenca' value={terceiraLinhaDiferenca} onChange={handleInputChangeDiferenca}/></td>
                             <td><input type="text" name='terceiraLinhaPorte' value={terceiraLinhaPorte} onChange={handleInputChangePorte}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='terceiraLinhaConcorrencia' value={terceiraLinhaConcorrencia} onChange={handleInputChangeConcorrencia}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
