@@ -12,10 +12,32 @@ import "./Interacao.css";
 import React, { useState } from "react";
 import GeradorPDF from "../GeradorPDF/GeradorPDF";
 
-function Interacao() {
+function Interacao( onDescricaoChange) {
 
-  const [descricao, setDescricao] = useState("teste1");
+  const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("teste1");
+  const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("teste1");
+  const [terceiraLinhaDescricao, setTerceiraLinhaDescricao] = useState("teste1");
 
+  const handleInputChangeDescricao = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaDescricao') {
+      setPrimeiraLinhaDescricao(value);
+    } else if (name === 'segundaLinhaDescricao') {
+      setSegundaLinhaDescricao(value);
+    } else if (name === 'terceiraLinhaDescricao') {
+      setTerceiraLinhaDescricao(value);
+    }
+
+    const novosDadosDescricao = {
+      primeiraLinhaDescricao: name === 'primeiraLinhaDescricao' ? value : primeiraLinhaDescricao,
+        segundaLinhaDescricao: name === 'segundaLinhaDescricao' ? value : segundaLinhaDescricao,
+        terceiraLinhaDescricao: name === 'terceiraLinhaDescricao' ? value : terceiraLinhaDescricao,
+    };
+
+    onDescricaoChange(novosDadosDescricao);
+}
+
+//===============================================================================================
   function clicouNaDuvida() {
     alert("duvida clicada!");
   }
@@ -104,7 +126,7 @@ function Interacao() {
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" value={descricao} onChange={(e) => setDescricao(e.target.value)} />
+                    <input type="text" name='primeiraLinhaDescricao' value={primeiraLinhaDescricao} onChange={handleInputChangeDescricao} />
                   </td>
                   <td>
                     <input type="text" />
@@ -118,7 +140,7 @@ function Interacao() {
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name='segundaLinhaDescricao' value={segundaLinhaDescricao} onChange={handleInputChangeDescricao} />
                   </td>
                   <td>
                     <input type="text" />
@@ -132,7 +154,7 @@ function Interacao() {
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name='segundaLinhaDescricao' value={segundaLinhaDescricao} onChange={handleInputChangeDescricao} />
                   </td>
                   <td>
                     <input type="text" />
@@ -608,7 +630,6 @@ function Interacao() {
           </div>
         </div>
       </div>
-      <GeradorPDF descricao={descricao}/>
     </div>
   );
 }

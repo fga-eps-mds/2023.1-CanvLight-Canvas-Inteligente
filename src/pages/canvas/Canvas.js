@@ -22,6 +22,8 @@ function Canvas() {
   const [localizacao, setLocalizacao] = useState({});
   const [imitado, setImitado] =useState({});
   const [melhorar, setMelhorar] = useState({});
+  //interação
+  const [descricao, setDescricao] = useState({});
 
   const handleIMelhorarChange = (novosDadosMelhorar) =>{
     setMelhorar(novosDadosMelhorar);
@@ -50,11 +52,11 @@ function Canvas() {
   const handleEmpresaChange = (novosDadosEmpresa) => {
     setEmpresa(novosDadosEmpresa);
   };
-
-/*   const [projeto, setProjeto] = useState("");
-  const [equipe, setEquipe] = useState(""); */
-
-
+//========================================================================================
+  const handleDescricaoChange = (novosDadosDescricao) => {
+    setDescricao(novosDadosDescricao);
+  };
+  
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
     e.preventDefault();
@@ -125,7 +127,9 @@ function Canvas() {
 
       <Observacao3 />
 
-      <Interacao />
+      <Interacao 
+        onDescricaoChange={handleDescricaoChange}
+      />
 
       <GeradorPDF
         empresa={empresa}
@@ -135,6 +139,9 @@ function Canvas() {
         localizacao={localizacao}
         imitado={imitado}
         melhorar={melhorar}
+
+        //Interação
+        descricao={descricao}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img

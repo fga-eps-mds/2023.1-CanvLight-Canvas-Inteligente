@@ -47,6 +47,11 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
     doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 10,200);
     doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 10,210);
 
+    doc.text(`Descrição: ${descricao.primeiraLinhaDescricao}`, 10,220);
+    doc.text(`Descrição: ${descricao.segundaLinhaDescricao}`, 10,230);
+    doc.text(`Descrição: ${descricao.terceiraLinhaDescricao}`, 10,240);
+
+
     doc.save("Canvas.pdf");
   }
 
