@@ -10,7 +10,7 @@ import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
 import checkIcon from "../../images/check.png";
 
-import { jsPDF } from "jspdf";
+/* import { jsPDF } from "jspdf"; */
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {
@@ -22,7 +22,7 @@ function Canvas() {
   const [localizacao, setLocalizacao] = useState({});
   const [imitado, setImitado] =useState({});
   const [melhorar, setMelhorar] = useState({});
-  //interação
+//interação
   const [descricao, setDescricao] = useState({});
 
   const handleIMelhorarChange = (novosDadosMelhorar) =>{
@@ -52,7 +52,7 @@ function Canvas() {
   const handleEmpresaChange = (novosDadosEmpresa) => {
     setEmpresa(novosDadosEmpresa);
   };
-//========================================================================================
+//======================================================================================== Interação
   const handleDescricaoChange = (novosDadosDescricao) => {
     setDescricao(novosDadosDescricao);
   };

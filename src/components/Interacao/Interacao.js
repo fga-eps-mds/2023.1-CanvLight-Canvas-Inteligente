@@ -10,13 +10,13 @@ import happy from "../../images/happy.png";
 import "./Interacao.css";
 
 import React, { useState } from "react";
-import GeradorPDF from "../GeradorPDF/GeradorPDF";
+/* import GeradorPDF from "../GeradorPDF/GeradorPDF"; */
 
-function Interacao( onDescricaoChange) {
+function Interacao( {onDescricaoChange}) {
 
-  const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("teste1");
-  const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("teste1");
-  const [terceiraLinhaDescricao, setTerceiraLinhaDescricao] = useState("teste1");
+  const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("");
+  const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("");
+  const [terceiraLinhaDescricao, setTerceiraLinhaDescricao] = useState("");
 
   const handleInputChangeDescricao = (e) => {
     const { name, value } = e.target;
@@ -30,12 +30,12 @@ function Interacao( onDescricaoChange) {
 
     const novosDadosDescricao = {
       primeiraLinhaDescricao: name === 'primeiraLinhaDescricao' ? value : primeiraLinhaDescricao,
-        segundaLinhaDescricao: name === 'segundaLinhaDescricao' ? value : segundaLinhaDescricao,
-        terceiraLinhaDescricao: name === 'terceiraLinhaDescricao' ? value : terceiraLinhaDescricao,
+      segundaLinhaDescricao: name === 'segundaLinhaDescricao' ? value : segundaLinhaDescricao,
+      terceiraLinhaDescricao: name === 'terceiraLinhaDescricao' ? value : terceiraLinhaDescricao,
     };
 
     onDescricaoChange(novosDadosDescricao);
-}
+  }
 
 //===============================================================================================
   function clicouNaDuvida() {
