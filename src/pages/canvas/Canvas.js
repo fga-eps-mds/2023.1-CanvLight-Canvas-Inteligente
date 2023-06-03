@@ -24,6 +24,9 @@ function Canvas() {
   const [melhorar, setMelhorar] = useState({});
 //interação
   const [descricao, setDescricao] = useState({});
+  const [analisePreco, setAnalisePreco] = useState({});
+  const [analiseQuantidade, setAnaliseQuantidade] = useState({});
+  const [analiseCusto, setAnaliseCusto] = useState({});
 
   const handleIMelhorarChange = (novosDadosMelhorar) =>{
     setMelhorar(novosDadosMelhorar);
@@ -56,7 +59,17 @@ function Canvas() {
   const handleDescricaoChange = (novosDadosDescricao) => {
     setDescricao(novosDadosDescricao);
   };
+  const handleAnalisePrecoChange = (novosDadosAnalisePreco) => {
+    setAnalisePreco(novosDadosAnalisePreco);
+  };
+  const handleAnaliseQuantidadeChange = (novosDadosAnaliseQuantidade) => {
+    setAnaliseQuantidade(novosDadosAnaliseQuantidade);
+  };
+  const handleAnaliseCustoChange = (novosDadosAnaliseCusto) => {
+    setAnaliseCusto(novosDadosAnaliseCusto);
+  };
   
+
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
     e.preventDefault();
@@ -129,6 +142,9 @@ function Canvas() {
 
       <Interacao 
         onDescricaoChange={handleDescricaoChange}
+        onAnalisePrecoChange={handleAnalisePrecoChange}
+        onAnaliseQuantidadeChange={handleAnaliseQuantidadeChange}
+        onAnaliseCustoChange={handleAnaliseCustoChange}
       />
 
       <GeradorPDF
@@ -142,6 +158,9 @@ function Canvas() {
 
         //Interação
         descricao={descricao}
+        analisePreco={analisePreco}
+        analiseQuantidade={analiseQuantidade}
+        analiseCusto={analiseCusto}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img

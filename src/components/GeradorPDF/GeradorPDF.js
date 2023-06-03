@@ -2,7 +2,7 @@ import React from "react";
 import { jsPDF } from "jspdf";
 
 function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado, 
-  melhorar, projeto, equipe, dnaNegocio, descricao}) {
+  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto}) {
   function gerarPDF() {
     const doc = new jsPDF();
 
@@ -51,6 +51,17 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
     doc.text(`Descrição2: ${descricao.segundaLinhaDescricao}`, 10,230);
     doc.text(`Descrição3: ${descricao.terceiraLinhaDescricao}`, 10,240);
 
+    doc.text(`AnalisePreco1: ${analisePreco.primeiraLinhaAnalisePreco}`, 10,250);
+    doc.text(`AnalisePreco2: ${analisePreco.segundaLinhaAnalisePreco}`, 10,260);
+    doc.text(`AnalisePreco3: ${analisePreco.terceiraLinhaAnalisePreco}`, 10,270);
+
+    doc.text(`AnaliseQuantidade1: ${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`, 10,280);
+    doc.text(`AnaliseQuantidade2: ${analiseQuantidade.segundaLinhaAnaliseQuantidade}`, 10,290);
+    doc.text(`AnaliseQuantidade3: ${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`, 10,300);
+
+    doc.text(`AnaliseCusto1: ${analiseCusto.primeiraLinhaAnaliseCusto}`, 100,280);
+    doc.text(`AnaliseCusto2: ${analiseCusto.segundaLinhaAnaliseCusto}`, 100,290);
+    doc.text(`AnaliseCusto3: ${analiseCusto.terceiraLinhaAnaliseCusto}`, 100,300);
 
     doc.save("Canvas.pdf");
   }

@@ -12,7 +12,7 @@ import "./Interacao.css";
 import React, { useState } from "react";
 /* import GeradorPDF from "../GeradorPDF/GeradorPDF"; */
 
-function Interacao( {onDescricaoChange}) {
+function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidadeChange, onAnaliseCustoChange}) {
 
   const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("");
   const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("");
@@ -37,6 +37,74 @@ function Interacao( {onDescricaoChange}) {
     onDescricaoChange(novosDadosDescricao);
   }
 
+  const [primeiraLinhaAnalisePreco, setPrimeiraLinhaAnalisePreco] = useState("");
+  const [segundaLinhaAnalisePreco, setSegundaLinhaAnalisePreco] = useState("");
+  const [terceiraLinhaAnalisePreco, setTerceiraLinhaAnalisePreco] = useState("");
+
+  const handleInputChangeAnalisePreco = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaAnalisePreco') {
+      setPrimeiraLinhaAnalisePreco(value);
+    } else if (name === 'segundaLinhaAnalisePreco') {
+      setSegundaLinhaAnalisePreco(value);
+    } else if (name === 'terceiraLinhaAnalisePreco') {
+      setTerceiraLinhaAnalisePreco(value);
+    }
+
+    const novosDadosAnalisePreco = {
+      primeiraLinhaAnalisePreco: name === 'primeiraLinhaAnalisePreco' ? value : primeiraLinhaAnalisePreco,
+      segundaLinhaAnalisePreco: name === 'segundaLinhaAnalisePreco' ? value : segundaLinhaAnalisePreco,
+      terceiraLinhaAnalisePreco: name === 'terceiraLinhaAnalisePreco' ? value : terceiraLinhaAnalisePreco,
+    };
+
+    onAnalisePrecoChange(novosDadosAnalisePreco);
+  }
+
+  const [primeiraLinhaAnaliseQuantidade, setPrimeiraLinhaAnaliseQuantidade] = useState("");
+  const [segundaLinhaAnaliseQuantidade, setSegundaLinhaAnaliseQuantidade] = useState("");
+  const [terceiraLinhaAnaliseQuantidade, setTerceiraLinhaAnaliseQuantidade] = useState("");
+
+  const handleInputChangeAnaliseQuantidade = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaAnaliseQuantidade') {
+      setPrimeiraLinhaAnaliseQuantidade(value);
+    } else if (name === 'segundaLinhaAnaliseQuantidade') {
+      setSegundaLinhaAnaliseQuantidade(value);
+    } else if (name === 'terceiraLinhaAnaliseQuantidade') {
+      setTerceiraLinhaAnaliseQuantidade(value);
+    }
+
+    const novosDadosAnaliseQuantidade = {
+      primeiraLinhaAnaliseQuantidade: name === 'primeiraLinhaAnaliseQuantidade' ? value : primeiraLinhaAnaliseQuantidade,
+      segundaLinhaAnaliseQuantidade: name === 'segundaLinhaAnaliseQuantidade' ? value : segundaLinhaAnaliseQuantidade,
+      terceiraLinhaAnaliseQuantidade: name === 'terceiraLinhaAnaliseQuantidade' ? value : terceiraLinhaAnaliseQuantidade,
+    };
+
+    onAnaliseQuantidadeChange(novosDadosAnaliseQuantidade);
+  }
+
+  const [primeiraLinhaAnaliseCusto, setPrimeiraLinhaAnaliseCusto] = useState("");
+  const [segundaLinhaAnaliseCusto, setSegundaLinhaAnaliseCusto] = useState("");
+  const [terceiraLinhaAnaliseCusto, setTerceiraLinhaAnaliseCusto] = useState("");
+
+  const handleInputChangeAnaliseCusto = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaAnaliseCusto') {
+      setPrimeiraLinhaAnaliseCusto(value);
+    } else if (name === 'segundaLinhaAnaliseCusto') {
+      setSegundaLinhaAnaliseCusto(value);
+    } else if (name === 'terceiraLinhaAnaliseCusto') {
+      setTerceiraLinhaAnaliseCusto(value);
+    }
+
+    const novosDadosAnaliseCusto = {
+      primeiraLinhaAnaliseCusto: name === 'primeiraLinhaAnaliseCusto' ? value : primeiraLinhaAnaliseCusto,
+      segundaLinhaAnaliseCusto: name === 'segundaLinhaAnaliseCusto' ? value : segundaLinhaAnaliseCusto,
+      terceiraLinhaAnaliseCusto: name === 'terceiraLinhaAnaliseCusto' ? value : terceiraLinhaAnaliseCusto,
+    };
+
+    onAnaliseCustoChange(novosDadosAnaliseCusto);
+  }
 //===============================================================================================
   function clicouNaDuvida() {
     alert("duvida clicada!");
@@ -129,27 +197,13 @@ function Interacao( {onDescricaoChange}) {
                     <input type="text" name='primeiraLinhaDescricao' value={primeiraLinhaDescricao} onChange={handleInputChangeDescricao} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaAnalisePreco" value={primeiraLinhaAnalisePreco} onChange={handleInputChangeAnalisePreco}/>
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaAnaliseQuantidade" value={primeiraLinhaAnaliseQuantidade} onChange={handleInputChangeAnaliseQuantidade} />
                   </td>
                   <td>
-                    <input type="text" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="text" name='segundaLinhaDescricao' value={segundaLinhaDescricao} onChange={handleInputChangeDescricao} />
-                  </td>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaAnaliseCusto" value={primeiraLinhaAnaliseCusto} onChange={handleInputChangeAnaliseCusto} />
                   </td>
                 </tr>
                 <tr>
@@ -157,13 +211,27 @@ function Interacao( {onDescricaoChange}) {
                     <input type="text" name='segundaLinhaDescricao' value={segundaLinhaDescricao} onChange={handleInputChangeDescricao} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaAnalisePreco" value={segundaLinhaAnalisePreco} onChange={handleInputChangeAnalisePreco} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaAnaliseQuantidade" value={segundaLinhaAnaliseQuantidade} onChange={handleInputChangeAnaliseQuantidade} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaAnaliseCusto" value={segundaLinhaAnaliseCusto} onChange={handleInputChangeAnaliseCusto} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name='terceiraLinhaDescricao' value={terceiraLinhaDescricao} onChange={handleInputChangeDescricao} />
+                  </td>
+                  <td>
+                    <input type="text" name="terceiraLinhaAnalisePreco" value={terceiraLinhaAnalisePreco} onChange={handleInputChangeAnalisePreco}/>
+                  </td>
+                  <td>
+                    <input type="text" name="terceiraLinhaAnaliseQuantidade" value={terceiraLinhaAnaliseQuantidade} onChange={handleInputChangeAnaliseQuantidade} />
+                  </td>
+                  <td>
+                    <input type="text" name="terceiraLinhaAnaliseCusto" value={terceiraLinhaAnaliseCusto} onChange={handleInputChangeAnaliseCusto} />
                   </td>
                 </tr>
                 <tr>
