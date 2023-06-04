@@ -10,14 +10,15 @@ function Home() {
         <div className="logo">
           <Link to="/2023.1-CanvLight-Canvas-Inteligente">
             <img src={logo} alt="Logo" className="logo_navbar" />
+            <p className="name_navbar">CanvLight</p>
           </Link>
         </div>
-        <p className="name_navbar">CanvLight</p>
 
         <nav className="desktop">
           <ul>
-            <li className="ativo">Home</li>
-            <li>Tutorial</li>
+            <Link to="/tutorial">
+              <li>Como usar?</li>
+            </Link>
             <Link to="/canvas">
               <li>Gerar canvas</li>
             </Link>
@@ -26,8 +27,9 @@ function Home() {
       </div>
       <div className="sol-bg">
         <div className="sol-inv"></div>
-        <button className="main-btn">Como usar?</button>
-
+        <Link to="/tutorial">
+          <button className="main-btn">Como usar?</button>
+        </Link>
         <Link to="/canvas">
           <button className="main-btn1">Gerar Canvas</button>
         </Link>
