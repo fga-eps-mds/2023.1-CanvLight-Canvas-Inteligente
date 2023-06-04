@@ -37,6 +37,8 @@ function Observacao2() {
     modal.style.display = "none";
     let medel = document.querySelector(".tela_3_form_interacao");
     medel.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
 
   return (
