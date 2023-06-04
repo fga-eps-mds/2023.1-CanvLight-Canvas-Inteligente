@@ -12,7 +12,7 @@ import "./Interacao.css";
 import React, { useState } from "react";
 /* import GeradorPDF from "../GeradorPDF/GeradorPDF"; */
 
-function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidadeChange, onAnaliseCustoChange}) {
+function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidadeChange, onAnaliseCustoChange, onAnaliseDiferencialChange, onAnalisePreDifChange}) {
 
   const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("");
   const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("");
@@ -104,6 +104,66 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
     };
 
     onAnaliseCustoChange(novosDadosAnaliseCusto);
+  }
+
+  const [primeiraLinhaAnaliseDiferencial, setPrimeiraLinhaAnaliseDiferencial] = useState("");
+  const [segundaLinhaAnaliseDiferencial, setSegundaLinhaAnaliseDiferencial] = useState("");
+  const [terceiraLinhaAnaliseDiferencial, setTerceiraLinhaAnaliseDiferencial] = useState("");
+  const [quartaLinhaAnaliseDiferencial, setQuartaLinhaAnaliseDiferencial] = useState("");
+  const [quintaLinhaAnaliseDiferencial, setQuintaLinhaAnaliseDiferencial] = useState("");
+
+  const handleInputChangeAnaliseDiferencial = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaAnaliseDiferencial') {
+      setPrimeiraLinhaAnaliseDiferencial(value);
+    } else if (name === 'segundaLinhaAnaliseDiferencial') {
+      setSegundaLinhaAnaliseDiferencial(value);
+    } else if (name === 'terceiraLinhaAnaliseDiferencial') {
+      setTerceiraLinhaAnaliseDiferencial(value);
+    } else if (name === 'quartaLinhaAnaliseDiferencial') {
+      setQuartaLinhaAnaliseDiferencial(value);
+    } else if (name === 'quintaLinhaAnaliseDiferencial') {
+      setQuintaLinhaAnaliseDiferencial(value);
+    }
+
+    const novosDadosAnaliseDiferencial = {
+      primeiraLinhaAnaliseDiferencial: name === 'primeiraLinhaAnaliseDiferencial' ? value : primeiraLinhaAnaliseDiferencial,
+      segundaLinhaAnaliseDiferencial: name === 'segundaLinhaAnaliseDiferencial' ? value : segundaLinhaAnaliseDiferencial,
+      terceiraLinhaAnaliseDiferencial: name === 'terceiraLinhaAnaliseDiferencial' ? value : terceiraLinhaAnaliseDiferencial,
+      quartaLinhaAnaliseDiferencial: name === 'quartaLinhaAnaliseDiferencial' ? value : quartaLinhaAnaliseDiferencial,
+      quintaLinhaAnaliseDiferencial: name === 'quintaLinhaAnaliseDiferencial' ? value : quintaLinhaAnaliseDiferencial,
+    };
+    onAnaliseDiferencialChange(novosDadosAnaliseDiferencial);
+  }
+
+  const [primeiraLinhaAnalisePreDif, setPrimeiraLinhaAnalisePreDif] = useState("");
+  const [segundaLinhaAnalisePreDif, setSegundaLinhaAnalisePreDif] = useState("");
+  const [terceiraLinhaAnalisePreDif, setTerceiraLinhaAnalisePreDif] = useState("");
+  const [quartaLinhaAnalisePreDif, setQuartaLinhaAnalisePreDif] = useState("");
+  const [quintaLinhaAnalisePreDif, setQuintaLinhaAnalisePreDif] = useState("");
+
+  const handleInputChangeAnalisePreDif = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaAnalisePreDif') {
+      setPrimeiraLinhaAnalisePreDif(value);
+    } else if (name === 'segundaLinhaAnalisePreDif') {
+      setSegundaLinhaAnalisePreDif(value);
+    } else if (name === 'terceiraLinhaAnalisePreDif') {
+      setTerceiraLinhaAnalisePreDif(value);
+    } else if (name === 'quartaLinhaAnalisePreDif') {
+      setQuartaLinhaAnalisePreDif(value);
+    } else if (name === 'quintaLinhaAnalisePreDif') {
+      setQuintaLinhaAnalisePreDif(value);
+    }
+
+    const novosDadosAnalisePreDif = {
+      primeiraLinhaAnalisePreDif: name === 'primeiraLinhaAnalisePreDif' ? value : primeiraLinhaAnalisePreDif,
+      segundaLinhaAnalisePreDif: name === 'segundaLinhaAnalisePreDif' ? value : segundaLinhaAnalisePreDif,
+      terceiraLinhaAnalisePreDif: name === 'terceiraLinhaAnalisePreDif' ? value : terceiraLinhaAnalisePreDif,
+      quartaLinhaAnalisePreDif: name === 'quartaLinhaAnalisePreDif' ? value : quartaLinhaAnalisePreDif,
+      quintaLinhaAnalisePreDif: name === 'quintaLinhaAnalisePreDif' ? value : quintaLinhaAnalisePreDif,
+    };
+    onAnalisePreDifChange(novosDadosAnalisePreDif);
   }
 //===============================================================================================
   function clicouNaDuvida() {
@@ -259,37 +319,37 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
                 <tr>
                   <th>DIFERENCIAL</th>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaAnaliseDiferencial" value={primeiraLinhaAnaliseDiferencial} onChange={handleInputChangeAnaliseDiferencial} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaAnaliseDiferencial" value={segundaLinhaAnaliseDiferencial} onChange={handleInputChangeAnaliseDiferencial} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaAnaliseDiferencial" value={terceiraLinhaAnaliseDiferencial} onChange={handleInputChangeAnaliseDiferencial} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="quartaLinhaAnaliseDiferencial" value={quartaLinhaAnaliseDiferencial} onChange={handleInputChangeAnaliseDiferencial} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="quintaLinhaAnaliseDiferencial" value={quintaLinhaAnaliseDiferencial} onChange={handleInputChangeAnaliseDiferencial} />
                   </td>
                 </tr>
                 <tr>
                   <th>PREÇO</th>
                   <td>
-                    <input type="text" />
+                    <input type="text"  name="primeiraLinhaAnalisePreDif" value={primeiraLinhaAnalisePreDif} onChange={handleInputChangeAnalisePreDif} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaAnalisePreDif" value={segundaLinhaAnalisePreDif} onChange={handleInputChangeAnalisePreDif} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaAnalisePreDif" value={terceiraLinhaAnalisePreDif} onChange={handleInputChangeAnalisePreDif} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="quartaLinhaAnalisePreDif" value={quartaLinhaAnalisePreDif} onChange={handleInputChangeAnalisePreDif} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="quintaLinhaAnalisePreDif" value={quintaLinhaAnalisePreDif} onChange={handleInputChangeAnalisePreDif} />
                   </td>
                 </tr>
               </table>

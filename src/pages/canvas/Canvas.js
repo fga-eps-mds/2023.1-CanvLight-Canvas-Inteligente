@@ -27,6 +27,8 @@ function Canvas() {
   const [analisePreco, setAnalisePreco] = useState({});
   const [analiseQuantidade, setAnaliseQuantidade] = useState({});
   const [analiseCusto, setAnaliseCusto] = useState({});
+  const [analiseDiferencial, setAnaliseDiferencial] = useState({});
+  const [analisePreDif, setAnalisePreDif] = useState({});
 
   const handleIMelhorarChange = (novosDadosMelhorar) =>{
     setMelhorar(novosDadosMelhorar);
@@ -67,6 +69,12 @@ function Canvas() {
   };
   const handleAnaliseCustoChange = (novosDadosAnaliseCusto) => {
     setAnaliseCusto(novosDadosAnaliseCusto);
+  };
+  const handleAnaliseDiferencialChange = (novosDadosAnaliseDiferencial) => {
+    setAnaliseDiferencial(novosDadosAnaliseDiferencial);
+  };
+  const handleAnalisePreDifChange = (novosDadosAnalisePreDif) => {
+    setAnalisePreDif(novosDadosAnalisePreDif);
   };
   
 
@@ -145,6 +153,8 @@ function Canvas() {
         onAnalisePrecoChange={handleAnalisePrecoChange}
         onAnaliseQuantidadeChange={handleAnaliseQuantidadeChange}
         onAnaliseCustoChange={handleAnaliseCustoChange}
+        onAnaliseDiferencialChange={handleAnaliseDiferencialChange}
+        onAnalisePreDifChange={handleAnalisePreDifChange}
       />
 
       <GeradorPDF
@@ -161,6 +171,8 @@ function Canvas() {
         analisePreco={analisePreco}
         analiseQuantidade={analiseQuantidade}
         analiseCusto={analiseCusto}
+        analiseDiferencial={analiseDiferencial}
+        analisePreDif={analisePreDif}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img

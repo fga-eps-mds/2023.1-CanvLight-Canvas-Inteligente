@@ -2,7 +2,7 @@ import React from "react";
 import { jsPDF } from "jspdf";
 
 function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado, 
-  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto}) {
+  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, analisePreDif}) {
   function gerarPDF() {
     const doc = new jsPDF();
 
@@ -59,9 +59,21 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
     doc.text(`AnaliseQuantidade2: ${analiseQuantidade.segundaLinhaAnaliseQuantidade}`, 10,290);
     doc.text(`AnaliseQuantidade3: ${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`, 10,300);
 
-    doc.text(`AnaliseCusto1: ${analiseCusto.primeiraLinhaAnaliseCusto}`, 100,280);
-    doc.text(`AnaliseCusto2: ${analiseCusto.segundaLinhaAnaliseCusto}`, 100,290);
-    doc.text(`AnaliseCusto3: ${analiseCusto.terceiraLinhaAnaliseCusto}`, 100,300);
+    doc.text(`AnaliseCusto1: ${analiseCusto.primeiraLinhaAnaliseCusto}`, 100,10);
+    doc.text(`AnaliseCusto2: ${analiseCusto.segundaLinhaAnaliseCusto}`, 100,20);
+    doc.text(`AnaliseCusto3: ${analiseCusto.terceiraLinhaAnaliseCusto}`, 100,30);
+
+    doc.text(`AnaliseDiferencial1: ${analiseDiferencial.primeiraLinhaAnaliseDiferencial}`, 100,40);
+    doc.text(`AnaliseDiferencial2: ${analiseDiferencial.segundaLinhaAnaliseDiferencial}`, 100,50);
+    doc.text(`AnaliseDiferencial3: ${analiseDiferencial.terceiraLinhaAnaliseDiferencial}`, 100,60);
+    doc.text(`AnaliseDiferencial4: ${analiseDiferencial.quartaLinhaAnaliseDiferencial}`, 100,70);
+    doc.text(`AnaliseDiferencial5: ${analiseDiferencial.quintaLinhaAnaliseDiferencial}`, 100,80);
+
+    doc.text(`AnalisePreDif1: ${analisePreDif.primeiraLinhaAnalisePreDif}`, 100,90);
+    doc.text(`AnalisePreDif2: ${analisePreDif.segundaLinhaAnalisePreDif}`, 100,100);
+    doc.text(`AnalisePreDif3: ${analisePreDif.terceiraLinhaAnalisePreDif}`, 100,110);
+    doc.text(`AnalisePreDif4: ${analisePreDif.quartaLinhaAnalisePreDif}`, 100,120);
+    doc.text(`AnalisePreDif5: ${analisePreDif.quintaLinhaAnalisePreDif}`, 100,130);
 
     doc.save("Canvas.pdf");
   }
