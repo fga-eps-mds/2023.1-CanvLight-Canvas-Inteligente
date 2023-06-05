@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
     onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange, onInsumosChange,
-    onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange
+    onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange, onNotaChange
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -45,6 +45,28 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaVerticalizar, setPrimeiraLinhaVerticalizar] = useState();
     const [segundaLinhaVerticalizar, setSegundaLinhaVerticalizar] = useState();
     const [terceiraLinhaVerticalizar, setTerceiraLinhaVerticalizar] = useState();
+    const [primeiraLinhaNota, setPrimeiraLinhaNota] = useState();
+    const [segundaLinhaNota, setSegundaLinhaNota] = useState();
+    const [terceiraLinhaNota, setTerceiraLinhaNota] = useState();
+
+    const handleInputChangeNota = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaNota') {
+            setPrimeiraLinhaNota(value);
+        } else if (name === 'segundaLinhaNota') {
+            setSegundaLinhaNota(value);
+        } else if (name === 'terceiraLinhaNota') {
+            setTerceiraLinhaNota(value);
+        }
+
+        const novosDadosNota = {
+            primeiraLinhaNota: name === 'primeiraLinhaNota' ? value : primeiraLinhaNota,
+            segundaLinhaNota: name === 'segundaLinhaNota' ? value : segundaLinhaNota,
+            terceiraLinhaNota: name === 'terceiraLinhaNota' ? value : terceiraLinhaNota
+        };
+
+        onNotaChange(novosDadosNota);
+    }
     
     const handleInputChangeVerticalizar = (e)=>{
         const {name ,value} = e.target;
@@ -386,7 +408,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='primeiraLinhaFornecer' value={primeiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
                             <td><input type="text" name='primeiraLinhaRisco' value={primeiraLinhaRisco} onChange={handleInputChangeRisco}/></td>
                             <td><input type="text" name='primeiraLinhaVerticalizar' value={primeiraLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaNota' value={primeiraLinhaNota} onChange={handleInputChangeNota}/></td>
                         </tr>
 
                         <tr>
@@ -396,7 +418,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='segundaLinhaFornecer' value={segundaLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
                             <td><input type="text" name='segundaLinhaRisco' value={segundaLinhaRisco} onChange={handleInputChangeRisco}/></td>
                             <td><input type="text" name='segundaLinhaVerticalizar' value={segundaLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaNota' value={segundaLinhaNota} onChange={handleInputChangeNota}/></td>
                         </tr>
 
                         <tr>
@@ -406,7 +428,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='terceiraLinhaFornecer' value={terceiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
                             <td><input type="text" name='terceiraLinhaRisco' value={terceiraLinhaRisco} onChange={handleInputChangeRisco}/></td>
                             <td><input type="text" name='terceiraLinhaVerticalizar' value={terceiraLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
+                            <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='terceiraLinhaNota' value={terceiraLinhaNota} onChange={handleInputChangeNota}/></td>
                         </tr>
                     </table>
                 </div>
