@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
     onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange, onInsumosChange,
-    onBeneficiosChange
+    onBeneficiosChange, onFornecerChange
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -36,6 +36,28 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaBeneficios, setPrimeiraLinhaBeneficios] = useState();
     const [segundaLinhaBeneficios, setSegundaLinhaBeneficios] = useState();
     const [terceiraLinhaBeneficios, setTerceiraLinhaBeneficios] = useState();
+    const [primeiraLinhaFornecer, setPrimeiraLinhaFornecer] = useState();
+    const [segundaLinhaFornecer, setSegundaLinhaFornecer] = useState();
+    const [terceiraLinhaFornecer, setTerceiraLinhaFornecer] = useState();
+
+    const handleInputChangeFornecer = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaFornecer') {
+            setPrimeiraLinhaFornecer(value);
+        } else if (name === 'segundaLinhaFornecer') {
+            setSegundaLinhaFornecer(value);
+        } else if (name === 'terceiraLinhaFornecer') {
+            setTerceiraLinhaFornecer(value);
+        }
+
+        const novosDadosFornecer = {
+            primeiraLinhaFornecer: name === 'primeiraFornecer' ? value : primeiraLinhaFornecer,
+            segundaLinhaFornecer: name === 'segundaLinhaFornecer' ? value : segundaLinhaFornecer,
+            terceiraLinhaFornecer: name === 'terceiraLinhaFornecer' ? value : terceiraLinhaFornecer,
+        };
+
+        onFornecerChange(novosDadosFornecer);
+    }
 
     const handleInputChangeBeneficios = (e)=>{
         const {name ,value} = e.target;
@@ -317,7 +339,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='primeiraLinhaParceiro' value={primeiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
                             <td><input type="text" name='primeiraLinhaIsumos' value={primeiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text" name='primeiraLinhaBeneficios' value={primeiraLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaFornecer' value={primeiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -327,7 +349,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='segundaLinhaParceiro' value={segundaLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
                             <td><input type="text" name='segundaLinhaInsumos' value={segundaLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text" name='segundaLinhBeneficios' value={segundaLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhFornecer' value={segundaLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -337,7 +359,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaParceiro' value={terceiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
                             <td><input type="text" name='terceiraLinhaInsumos' value={terceiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text" name='terceiraLinhaBeneficios' value={terceiraLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='terceiraLinhaFornecer' value={terceiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
