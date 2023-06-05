@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
     onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange, onInsumosChange,
-    onBeneficiosChange, onFornecerChange
+    onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -39,6 +39,50 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaFornecer, setPrimeiraLinhaFornecer] = useState();
     const [segundaLinhaFornecer, setSegundaLinhaFornecer] = useState();
     const [terceiraLinhaFornecer, setTerceiraLinhaFornecer] = useState();
+    const [primeiraLinhaRisco, setPrimeiraLinhaRisco] = useState();
+    const [segundaLinhaRisco, setSegundaLinhaRisco] = useState();
+    const [terceiraLinhaRisco, setTerceiraLinhaRisco] = useState();
+    const [primeiraLinhaVerticalizar, setPrimeiraLinhaVerticalizar] = useState();
+    const [segundaLinhaVerticalizar, setSegundaLinhaVerticalizar] = useState();
+    const [terceiraLinhaVerticalizar, setTerceiraLinhaVerticalizar] = useState();
+    
+    const handleInputChangeVerticalizar = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaVerticalizar') {
+            setPrimeiraLinhaVerticalizar(value);
+        } else if (name === 'segundaLinhaVerticalizar') {
+            setSegundaLinhaVerticalizar(value);
+        } else if (name === 'terceiraLinhaVerticalizar') {
+            setTerceiraLinhaVerticalizar(value);
+        }
+
+        const novosDadosVerticalizar = {
+            primeiraLinhaVerticalizar: name === 'primeiraLinhaVerticalizar' ? value : primeiraLinhaVerticalizar,
+            segundaLinhaVerticalizar: name === 'segundaLinhaVerticalizar' ? value : segundaLinhaVerticalizar,
+            terceiraLinhaVerticalizar: name === 'terceiraLinhaVerticalizar' ? value : terceiraLinhaVerticalizar,
+        };
+
+        onVerticalizarChange(novosDadosVerticalizar);
+    }
+
+    const handleInputChangeRisco = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaRisco') {
+            setPrimeiraLinhaRisco(value);
+        } else if (name === 'segundaLinhaRisco') {
+            setSegundaLinhaRisco(value);
+        } else if (name === 'terceiraLinhaRisco') {
+            setTerceiraLinhaRisco(value);
+        }
+
+        const novosDadosRisco = {
+            primeiraLinhaRisco: name === 'primeiraLinhaRisco' ? value : primeiraLinhaRisco,
+            segundaLinhaRisco: name === 'segundaLinhaRisco' ? value : segundaLinhaRisco,
+            terceiraLinhaRisco: name === 'terceiraLinhaRisco' ? value : terceiraLinhaRisco,
+        };
+
+        onRiscoChange(novosDadosRisco);
+    }
 
     const handleInputChangeFornecer = (e)=>{
         const {name ,value} = e.target;
@@ -51,7 +95,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosFornecer = {
-            primeiraLinhaFornecer: name === 'primeiraFornecer' ? value : primeiraLinhaFornecer,
+            primeiraLinhaFornecer: name === 'primeiraLinhaFornecer' ? value : primeiraLinhaFornecer,
             segundaLinhaFornecer: name === 'segundaLinhaFornecer' ? value : segundaLinhaFornecer,
             terceiraLinhaFornecer: name === 'terceiraLinhaFornecer' ? value : terceiraLinhaFornecer,
         };
@@ -70,7 +114,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosBeneficios = {
-            primeiraLinhaBeneficios: name === 'primeiraBeneficios' ? value : primeiraLinhaBeneficios,
+            primeiraLinhaBeneficios: name === 'primeiraLinhaBeneficios' ? value : primeiraLinhaBeneficios,
             segundaLinhaBeneficios: name === 'segundaLinhaBeneficios' ? value : segundaLinhaBeneficios,
             terceiraLinhaBeneficios: name === 'terceiraLinhaBeneficios' ? value : terceiraLinhaBeneficios,
         };
@@ -89,7 +133,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosInsumos = {
-            primeiraLinhaInsumos: name === 'primeiraInsumos' ? value : primeiraLinhaInsumos,
+            primeiraLinhaInsumos: name === 'primeiraLinhaInsumos' ? value : primeiraLinhaInsumos,
             segundaLinhaInsumos: name === 'segundaLinhaInsumos' ? value : segundaLinhaInsumos,
             terceiraLinhaInsumos: name === 'terceiraLinhaInsumos' ? value : terceiraLinhaInsumos,
         };
@@ -109,7 +153,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosParceiro = {
-            primeiraLinhaParceiro: name === 'primeiraParceiro' ? value : primeiraLinhaParceiro,
+            primeiraLinhaParceiro: name === 'primeiraLinhaParceiro' ? value : primeiraLinhaParceiro,
             segundaLinhaParceiro: name === 'segundaLinhaParceiro' ? value : segundaLinhaParceiro,
             terceiraLinhaParceiro: name === 'terceiraLinhaParceiro' ? value : terceiraLinhaParceiro,
         };
@@ -128,7 +172,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosMelhorar = {
-            primeiraLinhaMelhorar: name === 'primeiraMelhorar' ? value : primeiraLinhaMelhorar,
+            primeiraLinhaMelhorar: name === 'primeiraLinhaMelhorar' ? value : primeiraLinhaMelhorar,
             segundaLinhaMelhorar: name === 'segundaLinhaMelhorar' ? value : segundaLinhaMelhorar,
             terceiraLinhaMelhorar: name === 'terceiraLinhaMelhorar' ? value : terceiraLinhaMelhorar,
         };
@@ -147,7 +191,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosImitado = {
-            primeiraLinhaImitado: name === 'primeiraImitado' ? value : primeiraLinhaImitado,
+            primeiraLinhaImitado: name === 'primeiraLinhaImitado' ? value : primeiraLinhaImitado,
             segundaLinhaImitado: name === 'segundaLinhaImitado' ? value : segundaLinhaImitado,
             terceiraLinhaImitado: name === 'terceiraLinhaImitado' ? value : terceiraLinhaImitado,
         };
@@ -340,18 +384,18 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='primeiraLinhaIsumos' value={primeiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text" name='primeiraLinhaBeneficios' value={primeiraLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
                             <td><input type="text" name='primeiraLinhaFornecer' value={primeiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaRisco' value={primeiraLinhaRisco} onChange={handleInputChangeRisco}/></td>
+                            <td><input type="text" name='primeiraLinhaVerticalizar' value={primeiraLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
                             <td><input type="text"/></td>
                         </tr>
 
                         <tr>
                             <td><input type="text" name='segundaLinhaParceiro' value={segundaLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
                             <td><input type="text" name='segundaLinhaInsumos' value={segundaLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
-                            <td><input type="text" name='segundaLinhBeneficios' value={segundaLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
-                            <td><input type="text" name='segundaLinhFornecer' value={segundaLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaBeneficios' value={segundaLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
+                            <td><input type="text" name='segundaLinhaFornecer' value={segundaLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
+                            <td><input type="text" name='segundaLinhaRisco' value={segundaLinhaRisco} onChange={handleInputChangeRisco}/></td>
+                            <td><input type="text" name='segundaLinhaVerticalizar' value={segundaLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
                             <td><input type="text"/></td>
                         </tr>
 
@@ -360,8 +404,8 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                             <td><input type="text" name='terceiraLinhaInsumos' value={terceiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text" name='terceiraLinhaBeneficios' value={terceiraLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
                             <td><input type="text" name='terceiraLinhaFornecer' value={terceiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='terceiraLinhaRisco' value={terceiraLinhaRisco} onChange={handleInputChangeRisco}/></td>
+                            <td><input type="text" name='terceiraLinhaVerticalizar' value={terceiraLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
                             <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
                         </tr>
                     </table>

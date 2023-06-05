@@ -27,6 +27,8 @@ function Canvas() {
   const [insumos, setInsumos] = useState({});
   const [beneficios, setBeneficios]  = useState({});
   const [fornecer, setFornecer] = useState ({});
+  const [risco, setRisco] = useState ({});
+  const [verticalizar, setVerticalizar] = useState ({});
 
 //interação
   const [descricao, setDescricao] = useState({});
@@ -38,6 +40,14 @@ function Canvas() {
 
 
 //observação
+  const handleVerticalizarChange =(novosDadosVerticalizar) => {
+    setVerticalizar(novosDadosVerticalizar);
+  }
+
+  const handleRiscoChange =(novosDadosRisco) => {
+    setRisco(novosDadosRisco);
+  }
+
   const handleFornecerChange =(novosDadosFornecer) => {
     setFornecer(novosDadosFornecer);
   }
@@ -170,6 +180,8 @@ function Canvas() {
         onIsumosChange={handleIsumosChange}
         onBeneficiosChange={handleBeneficiosChange}
         onFornecerChange={handleFornecerChange}
+        onRiscoChange={handleRiscoChange}
+        onVerticalizarChange={handleVerticalizarChange}
       />
 
       <Observacao2 />
