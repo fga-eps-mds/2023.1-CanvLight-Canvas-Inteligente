@@ -15,6 +15,7 @@ import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {
 
+//observação
   const [empresa, setEmpresa] = useState({});
   const [diferenca, setDiferenca] = useState({});
   const [porte, setPorte] = useState({});
@@ -22,6 +23,7 @@ function Canvas() {
   const [localizacao, setLocalizacao] = useState({});
   const [imitado, setImitado] =useState({});
   const [melhorar, setMelhorar] = useState({});
+  const [parceiro, setParceiro] = useState({});
 //interação
   const [descricao, setDescricao] = useState({});
   const [analisePreco, setAnalisePreco] = useState({});
@@ -29,6 +31,12 @@ function Canvas() {
   const [analiseCusto, setAnaliseCusto] = useState({});
   const [analiseDiferencial, setAnaliseDiferencial] = useState({});
   const [analisePreDif, setAnalisePreDif] = useState({});
+
+
+//observação
+  const handleParceiroChange =(novosDadosParceiro) => {
+    setParceiro(novosDadosParceiro);
+  }
 
   const handleIMelhorarChange = (novosDadosMelhorar) =>{
     setMelhorar(novosDadosMelhorar);
@@ -142,6 +150,7 @@ function Canvas() {
         onLocalizacaoChange={handleLocalizacaoChange}
         onImitadoChange={handleImitadoChange}
         onMelhorarChange={handleIMelhorarChange}
+        onParceiroChange={handleParceiroChange}
       />
 
       <Observacao2 />

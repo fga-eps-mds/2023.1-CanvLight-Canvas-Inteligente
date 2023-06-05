@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
-    onLocalizacaoChange, onImitadoChange, onMelhorarChange
+    onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -26,6 +26,28 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaMelhorar, setPrimeiraLinhaMelhorar] = useState();
     const [segundaLinhaMelhorar, setSegundaLinhaMelhorar] = useState();
     const [terceiraLinhaMelhorar, setTerceiraLinhaMelhorar] = useState();
+    const [primeiraLinhaParceiro, setPrimeiraLinhaParceiro] = useState();
+    const [segundaLinhaParceiro, setSegundaLinhaParceiro] = useState();
+    const [terceiraLinhaParceiro, setTerceiraLinhaParceiro] = useState();
+
+    const handleInputChangeParceiro = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaParceiro') {
+            setPrimeiraLinhaParceiro(value);
+        } else if (name === 'segundaLinhaParceiro') {
+            setSegundaLinhaParceiro(value);
+        } else if (name === 'terceiraLinhaParceiro') {
+            setTerceiraLinhaParceiro(value);
+        }
+
+        const novosDadosParceiro = {
+            primeiraLinhaParceiro: name === 'primeiraParceiro' ? value : primeiraLinhaParceiro,
+            segundaLinhaParceiro: name === 'segundaLinhaParceiro' ? value : segundaLinhaParceiro,
+            terceiraLinhaParceiro: name === 'terceiraLinhaParceiro' ? value : terceiraLinhaParceiro,
+        };
+
+        onParceiroChange(novosDadosParceiro);
+    }
 
     const handleInputChangeMelhorar = (e)=>{
         const {name ,value} = e.target;
@@ -246,17 +268,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                         </tr>
 
                         <tr>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaParceiro' value={primeiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -266,7 +278,17 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                         </tr>
 
                         <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text"/></td>
+                            <td><input type="text" name='segundaLinhaParceiro' value={segundaLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaParceiro' value={terceiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
