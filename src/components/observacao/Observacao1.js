@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
-    onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange
+    onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange, onInsumosChange
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -29,6 +29,29 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaParceiro, setPrimeiraLinhaParceiro] = useState();
     const [segundaLinhaParceiro, setSegundaLinhaParceiro] = useState();
     const [terceiraLinhaParceiro, setTerceiraLinhaParceiro] = useState();
+    const [primeiraLinhaInsumos, setPrimeiraLinhaInsumos] = useState();
+    const [segundaLinhaInsumos, setSegundaLinhaInsumos] = useState();
+    const [terceiraLinhaInsumos, setTerceiraLinhaInsumos] = useState();
+
+    const handleInputChangeInsumos = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaInsumos') {
+            setPrimeiraLinhaInsumos(value);
+        } else if (name === 'segundaLinhaInsumos') {
+            setSegundaLinhaInsumos(value);
+        } else if (name === 'terceiraLinhaInsumos') {
+            setTerceiraLinhaInsumos(value);
+        }
+
+        const novosDadosInsumos = {
+            primeiraLinhaInsumos: name === 'primeiraInsumos' ? value : primeiraLinhaInsumos,
+            segundaLinhaInsumos: name === 'segundaLinhaInsumos' ? value : segundaLinhaInsumos,
+            terceiraLinhaInsumos: name === 'terceiraLinhaInsumos' ? value : terceiraLinhaInsumos,
+        };
+
+        onInsumosChange(novosDadosInsumos);
+    }
+
 
     const handleInputChangeParceiro = (e)=>{
         const {name ,value} = e.target;
@@ -269,7 +292,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
 
                         <tr>
                             <td><input type="text" name='primeiraLinhaParceiro' value={primeiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaIsumos' value={primeiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -279,7 +302,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
 
                         <tr>
                             <td><input type="text" name='segundaLinhaParceiro' value={segundaLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaInsumos' value={segundaLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -289,7 +312,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
 
                         <tr>
                             <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaParceiro' value={terceiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='terceiraLinhaInsumos' value={terceiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>

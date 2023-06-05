@@ -24,6 +24,7 @@ function Canvas() {
   const [imitado, setImitado] =useState({});
   const [melhorar, setMelhorar] = useState({});
   const [parceiro, setParceiro] = useState({});
+  const [insumos, setInsumos] = useState({})
 //interação
   const [descricao, setDescricao] = useState({});
   const [analisePreco, setAnalisePreco] = useState({});
@@ -34,6 +35,10 @@ function Canvas() {
 
 
 //observação
+  const handleIsumosChange =(novosDadosInsumos) => {
+    setInsumos(novosDadosInsumos);
+  }
+
   const handleParceiroChange =(novosDadosParceiro) => {
     setParceiro(novosDadosParceiro);
   }
@@ -151,6 +156,7 @@ function Canvas() {
         onImitadoChange={handleImitadoChange}
         onMelhorarChange={handleIMelhorarChange}
         onParceiroChange={handleParceiroChange}
+        onIsumosChange={handleIsumosChange}
       />
 
       <Observacao2 />
