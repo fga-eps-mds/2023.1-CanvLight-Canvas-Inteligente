@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
     onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange, onInsumosChange,
-    onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange, onNotaChange
+    onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange, onNotaChange,
+    onPerfil1Change
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -48,6 +49,28 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaNota, setPrimeiraLinhaNota] = useState();
     const [segundaLinhaNota, setSegundaLinhaNota] = useState();
     const [terceiraLinhaNota, setTerceiraLinhaNota] = useState();
+    const [primeiraLinhaPerfil1, setPrimeiraLinhaPerfil1] = useState();
+    const [segundaLinhaPerfil1, setSegundaLinhaPerfil1] = useState();
+    const [terceiraLinhaPerfil1, setTerceiraLinhaPerfil1] = useState();
+
+    const handleInputChangePerfil1 = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaPerfil1') {
+            setPrimeiraLinhaPerfil1(value);
+        } else if (name === 'segundaLinhaPerfil1') {
+            setSegundaLinhaPerfil1(value);
+        } else if (name === 'terceiraLinhaPerfil1') {
+            setTerceiraLinhaPerfil1(value);
+        }
+
+        const novosDadosPerfil1 = {
+            primeiraLinhaPerfil1: name === 'primeiraLinhaPerfil1' ? value : primeiraLinhaPerfil1,
+            segundaLinhaPerfil1: name === 'segundaLinhaPerfil1' ? value : segundaLinhaPerfil1,
+            terceiraLinhaPerfil1: name === 'terceiraLinhaPerfil1' ? value : terceiraLinhaPerfil1,
+        };
+
+        onPerfil1Change(novosDadosPerfil1);
+    }
 
     const handleInputChangeNota = (e)=>{
         const {name ,value} = e.target;
@@ -444,13 +467,13 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
 
                     <div className='dir'>
                         <div className='img-perfil'></div>
-                        <input className='primeiro-input' type='text'/>
+                        <input className='primeiro-input' type='text' name='primeiraLinhaPerfil1' value={primeiraLinhaPerfil1} onChange={handleInputChangePerfil1}/>
 
                         <div className='crescendo'></div>
-                        <input className='segundo-input' type='text'/>
+                        <input className='segundo-input' type='text'  name='segundaLinhaPerfil1' value={segundaLinhaPerfil1} onChange={handleInputChangePerfil1}/>
 
                         <div className='decrescendo'></div>
-                        <input className='terceiro-input' type='text'/>
+                        <input className='terceiro-input' type='text'  name='terceiraLinhaPerfil1' value={terceiraLinhaPerfil1} onChange={handleInputChangePerfil1}/>
                     </div>
 
                     <div className='esq'>
