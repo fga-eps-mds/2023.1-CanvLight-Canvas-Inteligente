@@ -31,6 +31,7 @@ function Canvas() {
   const [verticalizar, setVerticalizar] = useState ({});
   const [nota , setNota] = useState ({});
   const [perfil1, setPerfil1] = useState({});
+  const [perfil2, setPerfil2] = useState({});
 
 //interação
   const [descricao, setDescricao] = useState({});
@@ -42,6 +43,10 @@ function Canvas() {
 
 
 //observação
+  const handlePerfil2Change =(novosDadosPerfil2) => {
+    setPerfil2(novosDadosPerfil2);
+  }
+
   const handlePerfil1Change =(novosDadosPerfil1) => {
     setPerfil1(novosDadosPerfil1);
   }
@@ -194,6 +199,7 @@ function Canvas() {
         onVerticalizarChange={handleVerticalizarChange}
         onNotaChange={handleNotaChange}
         onPerfil1Change={handlePerfil1Change}
+        onPerfil2Change={handlePerfil2Change}
       />
 
       <Observacao2 />

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
     onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange, onInsumosChange,
     onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange, onNotaChange,
-    onPerfil1Change
+    onPerfil1Change, onPerfil2Change
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -52,6 +52,28 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaPerfil1, setPrimeiraLinhaPerfil1] = useState();
     const [segundaLinhaPerfil1, setSegundaLinhaPerfil1] = useState();
     const [terceiraLinhaPerfil1, setTerceiraLinhaPerfil1] = useState();
+    const [primeiraLinhaPerfil2, setPrimeiraLinhaPerfil2] = useState();
+    const [segundaLinhaPerfil2, setSegundaLinhaPerfil2] = useState();
+    const [terceiraLinhaPerfil2, setTerceiraLinhaPerfil2] = useState();
+
+    const handleInputChangePerfil2 = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaPerfil2') {
+            setPrimeiraLinhaPerfil2(value);
+        } else if (name === 'segundaLinhaPerfil2') {
+            setSegundaLinhaPerfil2(value);
+        } else if (name === 'terceiraLinhaPerfil2') {
+            setTerceiraLinhaPerfil2(value);
+        }
+
+        const novosDadosPerfil2 = {
+            setPrimeiraLinhaPerfil2: name === 'primeiraLinhaPerfil2' ? value : primeiraLinhaPerfil2,
+            segundaLinhaPerfil2: name === 'segundaLinhaPerfil2' ? value : segundaLinhaPerfil2,
+            terceiraLinhaPerfil2: name === 'terceiraLinhaPerfil2' ? value : terceiraLinhaPerfil2,
+        };
+
+        onPerfil2Change(novosDadosPerfil2);
+    }
 
     const handleInputChangePerfil1 = (e)=>{
         const {name ,value} = e.target;
@@ -478,13 +500,13 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
 
                     <div className='esq'>
                     <div className='img-perfil'></div>
-                        <input type='text'/>
+                        <input type='text' name='primeiraLinhaPerfil2' value={primeiraLinhaPerfil2} onChange={handleInputChangePerfil2}/>
 
                         <div className='crescendo'></div>
-                        <input type='text'/>
+                        <input type='text' name='segundaLinhaPerfil2' value={segundaLinhaPerfil2} onChange={handleInputChangePerfil2}/>
 
                         <div className='decrescendo'></div>
-                        <input type='text'/>
+                        <input type='text' name='terceiraLinhaPerfil2' value={terceiraLinhaPerfil2} onChange={handleInputChangePerfil2}/>
                     </div>
                     <div className='clear'></div>
                 </div>
