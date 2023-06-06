@@ -182,7 +182,7 @@ function Canvas() {
         onImitadoChange={handleImitadoChange}
         onMelhorarChange={handleIMelhorarChange}
         onParceiroChange={handleParceiroChange}
-        onIsumosChange={handleIsumosChange}
+        onInsumosChange={handleIsumosChange}
         onBeneficiosChange={handleBeneficiosChange}
         onFornecerChange={handleFornecerChange}
         onRiscoChange={handleRiscoChange}
@@ -211,6 +211,13 @@ function Canvas() {
         localizacao={localizacao}
         imitado={imitado}
         melhorar={melhorar}
+        parceiro={parceiro}
+        insumos={insumos}
+        beneficios={beneficios}
+        fornecer={fornecer}
+        risco={risco}
+        verticalizar={verticalizar}
+        nota={nota}
 
         //Interação
         descricao={descricao}
