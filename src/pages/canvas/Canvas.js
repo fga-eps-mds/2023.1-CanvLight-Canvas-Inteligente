@@ -15,7 +15,10 @@ import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {
 
-//observação
+//observação2
+  const [psObser, setPsObser] = useState ({});
+
+//observação1
   const [empresa, setEmpresa] = useState({});
   const [diferenca, setDiferenca] = useState({});
   const [porte, setPorte] = useState({});
@@ -41,8 +44,12 @@ function Canvas() {
   const [analiseDiferencial, setAnaliseDiferencial] = useState({});
   const [analisePreDif, setAnalisePreDif] = useState({});
 
+//observação2
+  const handlePsObserChange =(novosDadosPsObser) => {
+    setPsObser(novosDadosPsObser);
+  }
 
-//observação
+//observação1
   const handlePerfil2Change =(novosDadosPerfil2) => {
     setPerfil2(novosDadosPerfil2);
   }
@@ -202,7 +209,9 @@ function Canvas() {
         onPerfil2Change={handlePerfil2Change}
       />
 
-      <Observacao2 />
+      <Observacao2 
+        onPsObserChange={handlePsObserChange}
+      />
 
       <Observacao3 />
 
