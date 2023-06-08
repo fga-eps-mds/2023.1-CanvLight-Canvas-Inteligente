@@ -2,7 +2,7 @@ import React from "react";
 import { jsPDF } from "jspdf";
 
 function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado, 
-  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, analisePreDif}) {
+  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, analisePreDif, mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado}) {
   function gerarPDF() {
     const doc = new jsPDF();
 
@@ -74,6 +74,26 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
     doc.text(`AnalisePreDif3: ${analisePreDif.terceiraLinhaAnalisePreDif}`, 100,110);
     doc.text(`AnalisePreDif4: ${analisePreDif.quartaLinhaAnalisePreDif}`, 100,120);
     doc.text(`AnalisePreDif5: ${analisePreDif.quintaLinhaAnalisePreDif}`, 100,130);
+
+    /* doc.text(`MvpProduto1: ${mvpProduto.primeiraLinhaMvpProduto}`, 100,140);
+    doc.text(`MvpProduto2: ${mvpProduto.segundaLinhaMvpProduto}`, 100,150);
+    doc.text(`MvpProduto3: ${mvpProduto.terceiraLinhaMvpProduto}`, 100,160);
+    doc.text(`MvpProduto4: ${mvpProduto.quartaLinhaMvpProduto}`, 100,170); */
+
+    /* doc.text(`MvpIndicado1: ${mvpIndicado.primeiraLinhaMvpIndicado}`, 100,140);
+    doc.text(`MvpIndicado2: ${mvpIndicado.segundaLinhaMvpIndicado}`, 100,150);
+    doc.text(`MvpIndicado3: ${mvpIndicado.terceiraLinhaMvpIndicado}`, 100,160);
+    doc.text(`MvpIndicado4: ${mvpIndicado.quartaLinhaMvpIndicado}`, 100,170); */
+    
+    /* doc.text(`MvpOrientacoes1: ${mvpOrientacoes.primeiraLinhaMvpOrientacoes}`, 100,140);
+    doc.text(`MvpOrientacoes2: ${mvpOrientacoes.segundaLinhaMvpOrientacoes}`, 100,150);
+    doc.text(`MvpOrientacoes3: ${mvpOrientacoes.terceiraLinhaMvpOrientacoes}`, 100,160);
+    doc.text(`MvpOrientacoes4: ${mvpOrientacoes.quartaLinhaMvpOrientacoes}`, 100,170); */
+
+    doc.text(`MvpResultado1: ${mvpResultado.primeiraLinhaMvpResultado}`, 100,140);
+    doc.text(`MvpResultado2: ${mvpResultado.segundaLinhaMvpResultado}`, 100,150);
+    doc.text(`MvpResultado3: ${mvpResultado.terceiraLinhaMvpResultado}`, 100,160);
+    doc.text(`MvpResultado4: ${mvpResultado.quartaLinhaMvpResultado}`, 100,170);
 
     doc.save("Canvas.pdf");
   }

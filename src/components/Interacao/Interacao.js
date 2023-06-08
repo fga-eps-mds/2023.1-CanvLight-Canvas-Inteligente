@@ -12,7 +12,8 @@ import "./Interacao.css";
 import React, { useState } from "react";
 /* import GeradorPDF from "../GeradorPDF/GeradorPDF"; */
 
-function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidadeChange, onAnaliseCustoChange, onAnaliseDiferencialChange, onAnalisePreDifChange}) {
+function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidadeChange, onAnaliseCustoChange, onAnaliseDiferencialChange, onAnalisePreDifChange, 
+  onMvpProdutoChange, onMvpIndicadoChange, onMvpOrientacoesChange, onMvpResultadoChange }) {
 
   const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("");
   const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("");
@@ -164,6 +165,110 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
       quintaLinhaAnalisePreDif: name === 'quintaLinhaAnalisePreDif' ? value : quintaLinhaAnalisePreDif,
     };
     onAnalisePreDifChange(novosDadosAnalisePreDif);
+  }
+
+  const [primeiraLinhaMvpProduto, setPrimeiraLinhaMvpProduto] = useState("");
+  const [segundaLinhaMvpProduto, setSegundaLinhaMvpProduto] = useState("");
+  const [terceiraLinhaMvpProduto, setTerceiraLinhaMvpProduto] = useState("");
+  const [quartaLinhaMvpProduto, setQuartaLinhaMvpProduto] = useState("");
+
+  const handleInputChangeMvpProduto = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaMvpProduto') {
+      setPrimeiraLinhaMvpProduto(value);
+    } else if (name === 'segundaLinhaMvpProduto') {
+      setSegundaLinhaMvpProduto(value);
+    } else if (name === 'terceiraLinhaMvpProduto') {
+      setTerceiraLinhaMvpProduto(value);
+    } else if (name === 'quartaLinhaMvpProduto') {
+      setQuartaLinhaMvpProduto(value);
+    } 
+
+    const novosDadosMvpProduto = {
+      primeiraLinhaMvpProduto: name === 'primeiraLinhaMvpProduto' ? value : primeiraLinhaMvpProduto,
+      segundaLinhaMvpProduto: name === 'segundaLinhaMvpProduto' ? value : segundaLinhaMvpProduto,
+      terceiraLinhaMvpProduto: name === 'terceiraLinhaMvpProduto' ? value : terceiraLinhaMvpProduto,
+      quartaLinhaMvpProduto: name === 'quartaLinhaMvpProduto' ? value : quartaLinhaMvpProduto,
+    };
+    onMvpProdutoChange(novosDadosMvpProduto);
+  }
+
+  const [primeiraLinhaMvpIndicado, setPrimeiraLinhaMvpIndicado] = useState("");
+  const [segundaLinhaMvpIndicado, setSegundaLinhaMvpIndicado] = useState("");
+  const [terceiraLinhaMvpIndicado, setTerceiraLinhaMvpIndicado] = useState("");
+  const [quartaLinhaMvpIndicado, setQuartaLinhaMvpIndicado] = useState("");
+
+  const handleInputChangeMvpIndicado = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaMvpIndicado') {
+      setPrimeiraLinhaMvpIndicado(value);
+    } else if (name === 'segundaLinhaMvpIndicado') {
+      setSegundaLinhaMvpIndicado(value);
+    } else if (name === 'terceiraLinhaMvpIndicado') {
+      setTerceiraLinhaMvpIndicado(value);
+    } else if (name === 'quartaLinhaMvpIndicado') {
+      setQuartaLinhaMvpIndicado(value);
+    } 
+
+    const novosDadosMvpIndicado = {
+      primeiraLinhaMvpIndicado: name === 'primeiraLinhaMvpIndicado' ? value : primeiraLinhaMvpIndicado,
+      segundaLinhaMvpIndicado: name === 'segundaLinhaMvpIndicado' ? value : segundaLinhaMvpIndicado,
+      terceiraLinhaMvpIndicado: name === 'terceiraLinhaMvpIndicado' ? value : terceiraLinhaMvpIndicado,
+      quartaLinhaMvpIndicado: name === 'quartaLinhaMvpIndicado' ? value : quartaLinhaMvpIndicado,
+    };
+    onMvpIndicadoChange(novosDadosMvpIndicado);
+  }
+
+  const [primeiraLinhaMvpOrientacoes, setPrimeiraLinhaMvpOrientacoes] = useState("");
+  const [segundaLinhaMvpOrientacoes, setSegundaLinhaMvpOrientacoes] = useState("");
+  const [terceiraLinhaMvpOrientacoes, setTerceiraLinhaMvpOrientacoes] = useState("");
+  const [quartaLinhaMvpOrientacoes, setQuartaLinhaMvpOrientacoes] = useState("");
+
+  const handleInputChangeMvpOrientacoes = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaMvpOrientacoes') {
+      setPrimeiraLinhaMvpOrientacoes(value);
+    } else if (name === 'segundaLinhaMvpOrientacoes') {
+      setSegundaLinhaMvpOrientacoes(value);
+    } else if (name === 'terceiraLinhaMvpOrientacoes') {
+      setTerceiraLinhaMvpOrientacoes(value);
+    } else if (name === 'quartaLinhaMvpOrientacoes') {
+      setQuartaLinhaMvpOrientacoes(value);
+    } 
+
+    const novosDadosMvpOrientacoes = {
+      primeiraLinhaMvpOrientacoes: name === 'primeiraLinhaMvpOrientacoes' ? value : primeiraLinhaMvpOrientacoes,
+      segundaLinhaMvpOrientacoes: name === 'segundaLinhaMvpOrientacoes' ? value : segundaLinhaMvpOrientacoes,
+      terceiraLinhaMvpOrientacoes: name === 'terceiraLinhaMvpOrientacoes' ? value : terceiraLinhaMvpOrientacoes,
+      quartaLinhaMvpOrientacoes: name === 'quartaLinhaMvpOrientacoes' ? value : quartaLinhaMvpOrientacoes,
+    };
+    onMvpOrientacoesChange(novosDadosMvpOrientacoes);
+  }
+
+  const [primeiraLinhaMvpResultado, setPrimeiraLinhaMvpResultado] = useState("");
+  const [segundaLinhaMvpResultado, setSegundaLinhaMvpResultado] = useState("");
+  const [terceiraLinhaMvpResultado, setTerceiraLinhaMvpResultado] = useState("");
+  const [quartaLinhaMvpResultado, setQuartaLinhaMvpResultado] = useState("");
+
+  const handleInputChangeMvpResultado = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaMvpResultado') {
+      setPrimeiraLinhaMvpResultado(value);
+    } else if (name === 'segundaLinhaMvpResultado') {
+      setSegundaLinhaMvpResultado(value);
+    } else if (name === 'terceiraLinhaMvpResultado') {
+      setTerceiraLinhaMvpResultado(value);
+    } else if (name === 'quartaLinhaMvpResultado') {
+      setQuartaLinhaMvpResultado(value);
+    } 
+
+    const novosDadosMvpResultado = {
+      primeiraLinhaMvpResultado: name === 'primeiraLinhaMvpResultado' ? value : primeiraLinhaMvpResultado,
+      segundaLinhaMvpResultado: name === 'segundaLinhaMvpResultado' ? value : segundaLinhaMvpResultado,
+      terceiraLinhaMvpResultado: name === 'terceiraLinhaMvpResultado' ? value : terceiraLinhaMvpResultado,
+      quartaLinhaMvpResultado: name === 'quartaLinhaMvpResultado' ? value : quartaLinhaMvpResultado,
+    };
+    onMvpResultadoChange(novosDadosMvpResultado);
   }
 //===============================================================================================
   function clicouNaDuvida() {
@@ -412,61 +517,61 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
                   <tr>
                     <th>PRODUTO</th>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="primeiraLinhaMvpProduto" value={primeiraLinhaMvpProduto} onChange={handleInputChangeMvpProduto} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="segundaLinhaMvpProduto" value={segundaLinhaMvpProduto} onChange={handleInputChangeMvpProduto} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="terceiraLinhaMvpProduto" value={terceiraLinhaMvpProduto} onChange={handleInputChangeMvpProduto} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="quartaLinhaMvpProduto" value={quartaLinhaMvpProduto} onChange={handleInputChangeMvpProduto}/>
                     </td>
                   </tr>
                   <tr>
                     <th>INDICADO PARA</th>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="primeiraLinhaMvpIndicado" value={primeiraLinhaMvpIndicado} onChange={handleInputChangeMvpIndicado} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="segundaLinhaMvpIndicado" value={segundaLinhaMvpIndicado} onChange={handleInputChangeMvpIndicado} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="terceiraLinhaMvpIndicado" value={terceiraLinhaMvpIndicado} onChange={handleInputChangeMvpIndicado} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="quartaLinhaMvpIndicado" value={quartaLinhaMvpIndicado} onChange={handleInputChangeMvpIndicado}/>
                     </td>
                   </tr>
                   <tr>
                     <th>ORIENTAÇÕES DE USO</th>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="primeiraLinhaMvpOrientacoes" value={primeiraLinhaMvpOrientacoes} onChange={handleInputChangeMvpOrientacoes} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="segundaLinhaMvpOrientacoes" value={segundaLinhaMvpOrientacoes} onChange={handleInputChangeMvpOrientacoes} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="terceiraLinhaMvpOrientacoes" value={terceiraLinhaMvpOrientacoes} onChange={handleInputChangeMvpOrientacoes} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="quartaLinhaMvpOrientacoes" value={quartaLinhaMvpOrientacoes} onChange={handleInputChangeMvpOrientacoes}/>
                     </td>
                   </tr>
                   <tr>
                     <th>RESULTADO</th>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="primeiraLinhaMvpResultado" value={primeiraLinhaMvpResultado} onChange={handleInputChangeMvpResultado} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="segundaLinhaMvpResultado" value={segundaLinhaMvpResultado} onChange={handleInputChangeMvpResultado} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="terceiraLinhaMvpResultado" value={terceiraLinhaMvpResultado} onChange={handleInputChangeMvpResultado} />
                     </td>
                     <td>
-                      <input type="text" />
+                      <input type="text" name="quartaLinhaMvpResultado" value={quartaLinhaMvpResultado} onChange={handleInputChangeMvpResultado}/>
                     </td>
                   </tr>
                 </table>

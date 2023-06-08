@@ -29,6 +29,10 @@ function Canvas() {
   const [analiseCusto, setAnaliseCusto] = useState({});
   const [analiseDiferencial, setAnaliseDiferencial] = useState({});
   const [analisePreDif, setAnalisePreDif] = useState({});
+  const [mvpProduto, setMvpProduto] = useState({});
+  const [mvpIndicado, setMvpIndicado] = useState({});
+  const [mvpOrientacoes, setMvpOrientacoes] = useState({});
+  const [mvpResultado, setMvpResultado] = useState({});
 
   const handleIMelhorarChange = (novosDadosMelhorar) =>{
     setMelhorar(novosDadosMelhorar);
@@ -75,6 +79,18 @@ function Canvas() {
   };
   const handleAnalisePreDifChange = (novosDadosAnalisePreDif) => {
     setAnalisePreDif(novosDadosAnalisePreDif);
+  };
+  const handleMvpProdutoChange = (novosDadosMvpProduto) => {
+    setMvpProduto(novosDadosMvpProduto);
+  };
+  const handleMvpIndicadoChange = (novosDadosMvpIndicado) => {
+    setMvpIndicado(novosDadosMvpIndicado);
+  };
+  const handleMvpOrientacoesChange = (novosDadosMvpOrientacoes) => {
+    setMvpOrientacoes(novosDadosMvpOrientacoes);
+  };
+  const handleMvpResultadoChange = (novosDadosMvpResultado) => {
+    setMvpResultado(novosDadosMvpResultado);
   };
   
 
@@ -155,6 +171,10 @@ function Canvas() {
         onAnaliseCustoChange={handleAnaliseCustoChange}
         onAnaliseDiferencialChange={handleAnaliseDiferencialChange}
         onAnalisePreDifChange={handleAnalisePreDifChange}
+        onMvpProdutoChange={handleMvpProdutoChange}
+        onMvpIndicadoChange={handleMvpIndicadoChange}
+        onMvpOrientacoesChange={handleMvpOrientacoesChange}
+        onMvpResultadoChange={handleMvpResultadoChange}
       />
 
       <GeradorPDF
@@ -173,6 +193,11 @@ function Canvas() {
         analiseCusto={analiseCusto}
         analiseDiferencial={analiseDiferencial}
         analisePreDif={analisePreDif}
+        mvpProduto={mvpProduto}
+        mvpIndicado={mvpIndicado}
+        mvpOrientacoes={mvpOrientacoes}
+        mvpResultado={mvpResultado}
+        
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
       <img
