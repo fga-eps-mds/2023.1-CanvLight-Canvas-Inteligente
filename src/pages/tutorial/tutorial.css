@@ -116,3 +116,60 @@
   font-size: 18px;
   text-align: justify;
 }
+
+.tut_perfis_cliente {
+  z-index: 1;
+  top: 105%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_perfis_cliente  
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_perfis_cliente  
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_proposta_valor {
+  z-index: 1;
+  top: 125%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_proposta_valor h
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_proposta_valor p
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_conceito {
+  z-index: 1;
+  top: 145%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_conceito h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_conceito p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
