@@ -147,166 +147,192 @@ function Tutorial() {
       <div className="tut_perfis_cliente">
         <h2>• Perfis dos Clientes</h2>
         <p>
-          Uma tabela de perfis dos clientes é uma ferramenta útil para entender melhor 
-          quem são seus clientes, seus interesses, necessidades e características. Vamos
-          seguir alguns passos para preencher essa tabela:<br />
+          Uma tabela de perfis dos clientes é uma ferramenta útil para entender
+          melhor quem são seus clientes, seus interesses, necessidades e
+          características. Vamos seguir alguns passos para preencher essa
+          tabela:
           <br />
-          Passo 1: Liste as categorias de informações relevantes sobre os clientes.
           <br />
-          Passo 2: Colete as informações dos clientes em cada categoria identificada.
+          Passo 1: Liste as categorias de informações relevantes sobre os
+          clientes.
           <br />
-          Passo 3: Identifique padrões e características comuns entre os clientes.
+          Passo 2: Colete as informações dos clientes em cada categoria
+          identificada.
           <br />
-          Passo 4: Analise e segmente os clientes com base nos perfis identificados.
+          Passo 3: Identifique padrões e características comuns entre os
+          clientes.
           <br />
-          Passo 5: Utilize os perfis dos clientes para direcionar suas ações de marketing.
+          Passo 4: Analise e segmente os clientes com base nos perfis
+          identificados.
           <br />
-          Passo 6: Atualize e revise a tabela periodicamente para acompanhar as mudanças
-          no público-alvo.
+          Passo 5: Utilize os perfis dos clientes para direcionar suas ações de
+          marketing.
+          <br />
+          Passo 6: Atualize e revise a tabela periodicamente para acompanhar as
+          mudanças no público-alvo.
         </p>
       </div>
       <div className="tut_proposta_valor">
         <h2>• Proposta de Valor</h2>
         <p>
-          Uma tabela de proposta de valor é uma ferramenta útil para definir e comunicar
-          os benefíciose valor que um produto ou serviço oferece aos clientes. Vamos seguir 
-          alguns passos para preencher essa tabela:<br />
+          Uma tabela de proposta de valor é uma ferramenta útil para definir e
+          comunicar os benefíciose valor que um produto ou serviço oferece aos
+          clientes. Vamos seguir alguns passos para preencher essa tabela:
+          <br />
           <br />
           Passo 1: Liste os elementos-chave da proposta de valor.
           <br />
-          Passo 2: Descreva cada elemento detalhadamente, destacando os benefícios para o cliente.
+          Passo 2: Descreva cada elemento detalhadamente, destacando os
+          benefícios para o cliente.
           <br />
-          Passo 3: Destaque os diferenciais competitivos que tornam sua oferta única.
+          Passo 3: Destaque os diferenciais competitivos que tornam sua oferta
+          única.
           <br />
-          Passo 4: Concentre-se nos benefícios tangíveis e intangíveis que os clientes obterão.
+          Passo 4: Concentre-se nos benefícios tangíveis e intangíveis que os
+          clientes obterão.
           <br />
-          Passo 5: Revise e refine a proposta de valor para garantir clareza e consistência.
+          Passo 5: Revise e refine a proposta de valor para garantir clareza e
+          consistência.
           <br />
-          Passo 6: Utilize a tabela para comunicar a proposta de valor aos stakeholders.
+          Passo 6: Utilize a tabela para comunicar a proposta de valor aos
+          stakeholders.
         </p>
       </div>
       <div className="tut_conceito">
         <h2>• Conceito</h2>
         <p>
-          Uma tabela de conceito é uma ferramenta útil para organizar e descrever as 
-          características e informações importantes sobre um determinado conceito, projeto 
-          ou ideia. Vamos seguir alguns passos para preencher essa tabela:<br />
+          Uma tabela de conceito é uma ferramenta útil para organizar e
+          descrever as características e informações importantes sobre um
+          determinado conceito, projeto ou ideia. Vamos seguir alguns passos
+          para preencher essa tabela:
           <br />
-          Passo 1: Identifique as colunas da tabela: ferramentas, requisitos, oportunidades, 
-          indicado para, orientações de uso e resultado esperado.
           <br />
-          Passo 2: Preencha a coluna "ferramentas" com as ferramentas ou recursos necessários.
+          Passo 1: Identifique as colunas da tabela: ferramentas, requisitos,
+          oportunidades, indicado para, orientações de uso e resultado esperado.
           <br />
-          Passo 3: Preencha a coluna "requisitos" com os requisitos técnicos, legais, 
-          financeiros ou de tempo.
+          Passo 2: Preencha a coluna "ferramentas" com as ferramentas ou
+          recursos necessários.
           <br />
-          Passo 4: Preencha a coluna "oportunidades" destacando as vantagens e oportunidades 
-          oferecidas pelo conceito.
+          Passo 3: Preencha a coluna "requisitos" com os requisitos técnicos,
+          legais, financeiros ou de tempo.
           <br />
-          Passo 5: Preencha a coluna "indicado para" identificando o público-alvo ou segmento
-          de mercado.
+          Passo 4: Preencha a coluna "oportunidades" destacando as vantagens e
+          oportunidades oferecidas pelo conceito.
           <br />
-          Passo 6: Preencha a coluna "orientações de uso" com instruções ou diretrizes para 
-          implementar o conceito.
+          Passo 5: Preencha a coluna "indicado para" identificando o
+          público-alvo ou segmento de mercado.
           <br />
-          Passo 7: reencha a coluna "resultado esperado" descrevendo os resultados ou benefícios 
-          esperados.
+          Passo 6: Preencha a coluna "orientações de uso" com instruções ou
+          diretrizes para implementar o conceito.
+          <br />
+          Passo 7: reencha a coluna "resultado esperado" descrevendo os
+          resultados ou benefícios esperados.
         </p>
       </div>
       <div className="tut_modelo">
         <h2>• Modelo</h2>
         <p>
-          Uma tabela de modelo é uma ferramenta útil para descrever e organizar informações 
-          sobre diferentes modelos, estruturas ou abordagens. Vamos seguir alguns passos para 
-          preencher essa tabela: <br />
+          Uma tabela de modelo é uma ferramenta útil para descrever e organizar
+          informações sobre diferentes modelos, estruturas ou abordagens. Vamos
+          seguir alguns passos para preencher essa tabela: <br />
           <br />
-          Passo 1: Identifique as colunas da tabela: ferramentas, indicado para, orientações 
-          de uso e resultado esperado.
+          Passo 1: Identifique as colunas da tabela: ferramentas, indicado para,
+          orientações de uso e resultado esperado.
           <br />
-          Passo 2: Preencha a coluna "ferramentas" com as ferramentas, recursos ou metodologias
-          necessárias para usar o modelo.
+          Passo 2: Preencha a coluna "ferramentas" com as ferramentas, recursos
+          ou metodologias necessárias para usar o modelo.
           <br />
-          Passo 3: Preencha a coluna "indicado para" identificando o contexto, setor 
-          ou objetivo no qual o modelo é mais adequado.
+          Passo 3: Preencha a coluna "indicado para" identificando o contexto,
+          setor ou objetivo no qual o modelo é mais adequado.
           <br />
-          Passo 4: Preencha a coluna "orientações de uso" com instruções ou diretrizes para 
-          utilizar o modelo de forma eficaz.
+          Passo 4: Preencha a coluna "orientações de uso" com instruções ou
+          diretrizes para utilizar o modelo de forma eficaz.
           <br />
-          Passo 5: Preencha a coluna "resultado esperado" descrevendo os resultados 
-          ou benefícios esperados ao utilizar o modelo.
+          Passo 5: Preencha a coluna "resultado esperado" descrevendo os
+          resultados ou benefícios esperados ao utilizar o modelo.
         </p>
       </div>
       <div className="tut_prototipo">
         <h2>• Protótipo</h2>
         <p>
-          Uma tabela de protótipo é uma ferramenta útil para descrever e organizar informações 
-          sobre diferentes protótipos ou versões iniciais de um produto ou projeto. Vamos seguir 
-          alguns passos para preencher essa tabela:<br />
+          Uma tabela de protótipo é uma ferramenta útil para descrever e
+          organizar informações sobre diferentes protótipos ou versões iniciais
+          de um produto ou projeto. Vamos seguir alguns passos para preencher
+          essa tabela:
           <br />
-          Passo 1: Identifique as colunas da tabela: ferramentas, indicado para, orientações 
-          de uso e resultado esperado.
           <br />
-          Passo 2: Preencha a coluna "ferramentas" com as ferramentas, recursos ou materiais 
-          necessários para construir o protótipo.
+          Passo 1: Identifique as colunas da tabela: ferramentas, indicado para,
+          orientações de uso e resultado esperado.
           <br />
-          Passo 3: Preencha a coluna "indicado para" identificando o propósito ou objetivo 
-          para o qual o protótipo é mais adequado.
+          Passo 2: Preencha a coluna "ferramentas" com as ferramentas, recursos
+          ou materiais necessários para construir o protótipo.
           <br />
-          Passo 4: Preencha a coluna "orientações de uso" com instruções ou diretrizes sobre 
-          como usar o protótipo de forma eficaz.
+          Passo 3: Preencha a coluna "indicado para" identificando o propósito
+          ou objetivo para o qual o protótipo é mais adequado.
           <br />
-          Passo 5: Preencha a coluna "resultado esperado" descrevendo o objetivo ou resultado 
-          esperado ao utilizar o protótipo.
+          Passo 4: Preencha a coluna "orientações de uso" com instruções ou
+          diretrizes sobre como usar o protótipo de forma eficaz.
+          <br />
+          Passo 5: Preencha a coluna "resultado esperado" descrevendo o objetivo
+          ou resultado esperado ao utilizar o protótipo.
         </p>
       </div>
       <div className="tut_analise_custo">
         <h2>• Análise de Custo</h2>
         <p>
-          Uma tabela de análise de custo é uma ferramenta útil para calcular e comparar os 
-          custos de diferentes itens ou componentes em um projeto, produto ou atividade. Vamos 
-          seguir alguns passos para preencher essa tabela: <br />
+          Uma tabela de análise de custo é uma ferramenta útil para calcular e
+          comparar os custos de diferentes itens ou componentes em um projeto,
+          produto ou atividade. Vamos seguir alguns passos para preencher essa
+          tabela: <br />
           <br />
-          Passo 1: Identifique as colunas da tabela: descrição, preço, quantidade e custo.
+          Passo 1: Identifique as colunas da tabela: descrição, preço,
+          quantidade e custo.
           <br />
-          Passo 2: CPreencha a coluna "descrição" com os itens ou componentes que serão 
-          analisados.
+          Passo 2: CPreencha a coluna "descrição" com os itens ou componentes
+          que serão analisados.
           <br />
           Passo 3: Preencha a coluna "preço" com o preço unitário de cada item.
           <br />
-          Passo 4: Preencha a coluna "quantidade" com a quantidade necessária de cada item.
+          Passo 4: Preencha a coluna "quantidade" com a quantidade necessária de
+          cada item.
           <br />
-          Passo 5: Calcule o custo de cada item multiplicando o preço unitário pela 
-          quantidade e preencha a coluna "custo" com esses valores.
+          Passo 5: Calcule o custo de cada item multiplicando o preço unitário
+          pela quantidade e preencha a coluna "custo" com esses valores.
           <br />
-          Passo 6: Some os valores da coluna "custo" para obter o custo total do 
+          Passo 6: Some os valores da coluna "custo" para obter o custo total do
           projeto, produto ou atividade.
         </p>
       </div>
       <div className="tut_analise_preco_diferenciais">
         <h2>• Análise de Preços e diferenciais</h2>
         <p>
-          Uma tabela de análise de preços e diferenciais é uma ferramenta útil para calcular e comparar 
-          os custos de diferentes itens ou componentes em um projeto, produto ou atividade. 
-          Vamos seguir alguns passos para preencher essa tabela:<br />
+          Uma tabela de análise de preços e diferenciais é uma ferramenta útil
+          para calcular e comparar os custos de diferentes itens ou componentes
+          em um projeto, produto ou atividade. Vamos seguir alguns passos para
+          preencher essa tabela:
+          <br />
           <br />
           Passo 1: Identifique as colunas da tabela: diferencial e preço.
           <br />
-          Passo 2: Preencha a coluna "diferencial" com as características exclusivas 
-          de cada produto ou serviço.
+          Passo 2: Preencha a coluna "diferencial" com as características
+          exclusivas de cada produto ou serviço.
           <br />
-          Passo 3: Preencha a coluna "preço" com o valor correspondente a cada item.
+          Passo 3: Preencha a coluna "preço" com o valor correspondente a cada
+          item.
           <br />
-          Passo 4: Compare os diferenciais e preços para avaliar qual item oferece os melhores 
-          benefícios em relação ao custo.
+          Passo 4: Compare os diferenciais e preços para avaliar qual item
+          oferece os melhores benefícios em relação ao custo.
           <br />
-          Passo 5: Tome uma decisão informada com base na análise dos diferenciais e preços, 
-          considerando suas necessidades e prioridades.
+          Passo 5: Tome uma decisão informada com base na análise dos
+          diferenciais e preços, considerando suas necessidades e prioridades.
         </p>
       </div>
       <div className="tut_melhorias">
         <h2>• Checklist de Melhorias</h2>
         <p>
-          Para preencher o checklist de melhorias para o negócio, siga estes passos:<br />
+          Para preencher o checklist de melhorias para o negócio, siga estes
+          passos:
+          <br />
           <br />
           Passo 1: Inserir as possíveis melhorias do negócio.
           <br />
@@ -316,64 +342,73 @@ function Tutorial() {
           <br />
           Passo 4: Preencher custo da melhoria.
         </p>
-      </div> 
+      </div>
       <div className="tut_mvp">
         <h2>• MVP</h2>
         <p>
-          Uma tabela de MVP é uma ferramenta útil para descrever e planejar um produto mínimo 
-          viável, que é uma versão simplificada do produto que pode ser lançada para validar uma 
-          ideia de negócio. Siga estes passos para preencher a tabela:<br />
+          Uma tabela de MVP é uma ferramenta útil para descrever e planejar um
+          produto mínimo viável, que é uma versão simplificada do produto que
+          pode ser lançada para validar uma ideia de negócio. Siga estes passos
+          para preencher a tabela:
           <br />
-          Passo 1: Identifique as colunas da tabela: produto, indicado para, orientações 
-          de uso e resultado.
           <br />
-          Passo 2: Preencha a coluna "produto" descrevendo o produto mínimo viável e o 
-          problema que ele pretende resolver.
+          Passo 1: Identifique as colunas da tabela: produto, indicado para,
+          orientações de uso e resultado.
           <br />
-          Passo 3: Na coluna "indicado para", liste o público-alvo ou segmento de mercado para 
-          o qual o produto é direcionado.
+          Passo 2: Preencha a coluna "produto" descrevendo o produto mínimo
+          viável e o problema que ele pretende resolver.
           <br />
-          Passo 4: Preencha a coluna "orientações de uso" fornecendo instruções sobre como 
-          utilizar o produto mínimo viável.
+          Passo 3: Na coluna "indicado para", liste o público-alvo ou segmento
+          de mercado para o qual o produto é direcionado.
           <br />
-          Passo 5: Na coluna "resultado", descreva o objetivo ou resultado esperado ao 
-          utilizar o produto mínimo viável.
+          Passo 4: Preencha a coluna "orientações de uso" fornecendo instruções
+          sobre como utilizar o produto mínimo viável.
+          <br />
+          Passo 5: Na coluna "resultado", descreva o objetivo ou resultado
+          esperado ao utilizar o produto mínimo viável.
         </p>
-      </div> 
+      </div>
       <div className="tut_formacao_preco">
         <h2>• Formação do Preço</h2>
         <p>
-        Uma tabela de formação do preço é uma ferramenta útil para calcular e estabelecer 
-        o preço de venda de um produto ou serviço. Siga estes passos para preencher a tabela:<br />
+          Uma tabela de formação do preço é uma ferramenta útil para calcular e
+          estabelecer o preço de venda de um produto ou serviço. Siga estes
+          passos para preencher a tabela:
           <br />
-          Passo 1: Identifique as colunas da tabela: descrição, custo, taxa administrativa, 
-          impostos, margem de lucro e preço.
           <br />
-          Passo 2: Preencha a coluna "descrição" com os itens ou componentes relacionados 
-          ao produto ou serviço.
+          Passo 1: Identifique as colunas da tabela: descrição, custo, taxa
+          administrativa, impostos, margem de lucro e preço.
           <br />
-          Passo 3: Na coluna "custo", insira o valor monetário correspondente ao custo de cada 
-          item listado na coluna "descrição" e calcule o custo total.
+          Passo 2: Preencha a coluna "descrição" com os itens ou componentes
+          relacionados ao produto ou serviço.
           <br />
-          Passo 4: Preencha a coluna "taxa administrativa" com uma porcentagem que represente 
-          as despesas administrativas e calcule o valor da taxa aplicada ao custo total.
+          Passo 3: Na coluna "custo", insira o valor monetário correspondente ao
+          custo de cada item listado na coluna "descrição" e calcule o custo
+          total.
           <br />
-          Passo 5: Na coluna "impostos", insira uma porcentagem que represente os impostos 
-          aplicáveis e calcule o valor dos impostos aplicados ao custo total.
+          Passo 4: Preencha a coluna "taxa administrativa" com uma porcentagem
+          que represente as despesas administrativas e calcule o valor da taxa
+          aplicada ao custo total.
           <br />
-          Passo 6: Preencha a coluna "margem de lucro" com uma porcentagem que represente o 
-          lucro desejado e calcule o valor da margem de lucro aplicada ao custo total.
+          Passo 5: Na coluna "impostos", insira uma porcentagem que represente
+          os impostos aplicáveis e calcule o valor dos impostos aplicados ao
+          custo total.
           <br />
-          Passo 7: Calcule o preço de venda somando o custo total, a taxa administrativa, os 
-          impostos e a margem de lucro na coluna "preço".
+          Passo 6: Preencha a coluna "margem de lucro" com uma porcentagem que
+          represente o lucro desejado e calcule o valor da margem de lucro
+          aplicada ao custo total.
+          <br />
+          Passo 7: Calcule o preço de venda somando o custo total, a taxa
+          administrativa, os impostos e a margem de lucro na coluna "preço".
         </p>
       </div>
       <div className="tut_digitalizacao">
         <h2>• Digitalização do negócio</h2>
         <p>
-        Um checklist de digitalização do negócio é uma ferramenta útil para acompanhar e registrar 
-        o progresso da digitalização de diferentes aspectos do seu negócio. Siga estes passos para 
-        preencher o checklist:<br />
+          Um checklist de digitalização do negócio é uma ferramenta útil para
+          acompanhar e registrar o progresso da digitalização de diferentes
+          aspectos do seu negócio. Siga estes passos para preencher o checklist:
+          <br />
           <br />
           Passo 1: Marque na tabela as redes em que seu negócio se faz presente.
           <br />
@@ -383,33 +418,38 @@ function Tutorial() {
       <div className="tut_canais_venda">
         <h2>• Canais de Vendas</h2>
         <p>
-        Os canais de venda são uma parte fundamental de um modelo de negócio e desempenham 
-        um papel crucial no processo de levar um produto ou serviço até os clientes. Eles 
-        representam os diferentes caminhos pelos quais uma empresa se conecta com seu 
-        mercado-alvo e entrega valor. Siga estes passos para preencher a tabela:<br />
+          Os canais de venda são uma parte fundamental de um modelo de negócio e
+          desempenham um papel crucial no processo de levar um produto ou
+          serviço até os clientes. Eles representam os diferentes caminhos pelos
+          quais uma empresa se conecta com seu mercado-alvo e entrega valor.
+          Siga estes passos para preencher a tabela:
+          <br />
           <br />
           Passo 1: Identifique as colunas da tabela: canal, objetivo e métrica.
           <br />
-          Passo 2: Preencha a coluna "canal" com os diferentes canais de venda que você está 
-          considerando, como loja física, loja online, marketplaces, vendas diretas, redes 
-          sociais, entre outros.
+          Passo 2: Preencha a coluna "canal" com os diferentes canais de venda
+          que você está considerando, como loja física, loja online,
+          marketplaces, vendas diretas, redes sociais, entre outros.
           <br />
-          Passo 3: Na coluna "objetivo", descreva o propósito ou objetivo de cada canal de 
-          venda, como aumentar a visibilidade da marca, alcançar novos clientes, aumentar as 
-          vendas, expandir para novos mercados, entre outros.
+          Passo 3: Na coluna "objetivo", descreva o propósito ou objetivo de
+          cada canal de venda, como aumentar a visibilidade da marca, alcançar
+          novos clientes, aumentar as vendas, expandir para novos mercados,
+          entre outros.
           <br />
-          Passo 4: Na coluna "métrica", defina a métrica ou indicador que você utilizará para 
-          avaliar o desempenho de cada canal de venda, como número de vendas, taxa de conversão, 
-          retorno sobre o investimento (ROI), número de visitantes, entre outros.
+          Passo 4: Na coluna "métrica", defina a métrica ou indicador que você
+          utilizará para avaliar o desempenho de cada canal de venda, como
+          número de vendas, taxa de conversão, retorno sobre o investimento
+          (ROI), número de visitantes, entre outros.
           <br />
-          Passo 5: Acompanhe e avalie os resultados com base nas métricas definidas, registrando 
-          o desempenho de cada canal de venda.
+          Passo 5: Acompanhe e avalie os resultados com base nas métricas
+          definidas, registrando o desempenho de cada canal de venda.
           <br />
-          Passo 6: aça ajustes conforme necessário, com base nos resultados e nas análises 
-          obtidas. Isso permitirá otimizar seus canais de venda e direcionar seus esforços para 
-          aqueles que trazem os melhores resultados.
+          Passo 6: aça ajustes conforme necessário, com base nos resultados e
+          nas análises obtidas. Isso permitirá otimizar seus canais de venda e
+          direcionar seus esforços para aqueles que trazem os melhores
+          resultados.
         </p>
-      </div>  
+      </div>
     </div>
   );
 }

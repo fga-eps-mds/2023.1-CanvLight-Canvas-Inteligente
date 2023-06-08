@@ -1,11 +1,10 @@
 .tut_body {
-  height: fit-content;
+  height: 570vh;
   background-image: linear-gradient(#e95420, #77216f);
-  background-repeat: no-repeat;
 }
 .sol-bg-tut {
   position: relative;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   background-color: #fcdbc1;
@@ -15,9 +14,8 @@
 }
 
 .sol-inv-tut {
-  z-index: -1;
+  z-index: 100;
   position: absolute;
-  display: inline-block;
   background-color: #fcdbc1;
   width: 100%;
   height: 100%;
@@ -46,7 +44,7 @@
 }
 .tut_ikigai {
   z-index: 1;
-  top: 26%;
+  top: 38%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -64,7 +62,7 @@
 }
 .tut_fourps {
   z-index: 1;
-  top: 45%;
+  top: 68%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -82,7 +80,7 @@
 }
 .tut_sintese {
   z-index: 1;
-  top: 65%;
+  top: 98%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -100,7 +98,7 @@
 }
 .tut_benchmaking {
   z-index: 1;
-  top: 85%;
+  top: 128%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -119,47 +117,47 @@
 
 .tut_perfis_cliente {
   z-index: 1;
-  top: 105%;
+  top: 156%;
   left: 10%;
   width: 80%;
   position: absolute;
 }
 
-.tut_perfis_cliente h2{
+.tut_perfis_cliente h2 {
   color: #ff9000;
   margin-bottom: 1%;
 }
 
-.tut_perfis_cliente p{
+.tut_perfis_cliente p {
   width: 90%;
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_proposta_valor {
   z-index: 1;
-  top: 125%;
+  top: 186%;
   left: 10%;
   width: 80%;
   position: absolute;
 }
-.tut_proposta_valor h2{
+.tut_proposta_valor h2 {
   color: #ff9000;
   margin-bottom: 1%;
 }
-.tut_proposta_valor p{
+.tut_proposta_valor p {
   width: 90%;
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_conceito {
   z-index: 1;
-  top: 145%;
+  top: 218%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -173,12 +171,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_modelo {
   z-index: 1;
-  top: 170%;
+  top: 253%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -192,12 +190,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_prototipo {
   z-index: 1;
-  top: 190%;
+  top: 286%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -211,12 +209,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_analise_custo {
   z-index: 1;
-  top: 210%;
+  top: 323%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -230,12 +228,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_analise_preco_diferenciais {
   z-index: 1;
-  top: 230%;
+  top: 360%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -249,12 +247,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_melhorias {
   z-index: 1;
-  top: 250%;
+  top: 395%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -268,12 +266,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_mvp {
   z-index: 1;
-  top: 265%;
+  top: 425%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -287,12 +285,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_formacao_preco {
   z-index: 1;
-  top: 285%;
+  top: 460%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -306,13 +304,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
-
 
 .tut_digitalizacao {
   z-index: 1;
-  top: 315%;
+  top: 500%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -326,12 +323,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_canais_venda {
   z-index: 1;
-  top: 330%;
+  top: 528%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -345,5 +342,5 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
