@@ -9,8 +9,6 @@ import Observacao2 from "../../components/observacao/Observacao2.js";
 import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
 import checkIcon from "../../images/check.png";
-
-/* import { jsPDF } from "jspdf"; */
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {

@@ -1,7 +1,8 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 
-function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado, 
+function GeradorPDF({ 
+  empresa, diferenca, porte, concorrencia, localizacao, imitado, 
   melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, 
   analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota,
   mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado, formacaoDescricao, formacaoCusto, formacaoTaxa, formacaoImpostos, formacaoMargem, formacaoPreco,
@@ -10,18 +11,7 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
     const doc = new jsPDF();
 
     //Intuicao
-    // doc.text(`Projeto: ${projeto}`, 10, 10);
-    // doc.text(`Equipe: ${equipe}`, 10, 20);
-
-    //tabela DNA do negócio
-    // doc.text(`Técnico: ${dnaNegocio.tecnico}`, 10, 30);
-    // doc.text(`Resiliente: ${dnaNegocio.resiliencia}`, 10, 40);
-    // doc.text(`Emocional: ${dnaNegocio.emocional}`, 10, 50);
-    // doc.text(`Mercadológico: ${dnaNegocio.mercadologico}`, 10, 60);
-    // doc.text(`Integrador: ${dnaNegocio.integrador}`, 10, 70);
-
-    //Interação
-    // doc.text(`descrição: ${descricao}`, 10, 80);
+    
 
     //observação
     // doc.text(`empresa: ${empresa.primeiraLinhaEmpresa}`, 10,10);
@@ -123,10 +113,15 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
     doc.text(`MvpOrientacoes3: ${mvpOrientacoes.terceiraLinhaMvpOrientacoes}`, 100,160);
     doc.text(`MvpOrientacoes4: ${mvpOrientacoes.quartaLinhaMvpOrientacoes}`, 100,170); */
 
-    doc.text(`MvpResultado1: ${mvpResultado.primeiraLinhaMvpResultado}`, 100,140);
+   /*  doc.text(`MvpResultado1: ${mvpResultado.primeiraLinhaMvpResultado}`, 100,140);
     doc.text(`MvpResultado2: ${mvpResultado.segundaLinhaMvpResultado}`, 100,150);
     doc.text(`MvpResultado3: ${mvpResultado.terceiraLinhaMvpResultado}`, 100,160);
-    doc.text(`MvpResultado4: ${mvpResultado.quartaLinhaMvpResultado}`, 100,170);
+    doc.text(`MvpResultado4: ${mvpResultado.quartaLinhaMvpResultado}`, 100,170); */
+
+    doc.text(`FormacaoDescricao1: ${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 100,140);
+    doc.text(`FormacaoDescricao2: ${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 100,150);
+    doc.text(`FormacaoDescricao3: ${formacaoDescricao.terceiraLinhaFormacaoDescricao}`, 100,160);
+    doc.text(`FormacaoDescricao4: ${formacaoDescricao.quartaLinhaFormacaoDescricao}`, 100,170);
 
     doc.save("Canvas.pdf");
   }
