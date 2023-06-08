@@ -47,6 +47,12 @@ function Canvas() {
   const [mvpIndicado, setMvpIndicado] = useState({});
   const [mvpOrientacoes, setMvpOrientacoes] = useState({});
   const [mvpResultado, setMvpResultado] = useState({});
+  const [formacaoDescricao, setFormacaoDescricao] = useState({});
+  const [formacaoCusto, setFormacaoCusto] = useState({});
+  const [formacaoTaxa, setFormacaoTaxa] = useState({});
+  const [formacaoImpostos, setFormacaoImpostos] = useState({});
+  const [formacaoMargem, setFormacaoMargem] = useState({});
+  const [formacaoPreco, setFormacaoPreco] = useState({});
 
 //observação2
   const handlePsObserChange =(novosDadosPsObser) => {
@@ -148,6 +154,24 @@ function Canvas() {
   const handleMvpResultadoChange = (novosDadosMvpResultado) => {
     setMvpResultado(novosDadosMvpResultado);
   };
+  const handleFormacaoDescricaoChange = (novosDadosFormacaoDescricao) => {
+    setFormacaoDescricao(novosDadosFormacaoDescricao);
+  };
+  const handleFormacaoCustoChange = (novosDadosFormacaoCusto) => {
+    setFormacaoCusto(novosDadosFormacaoCusto);
+  };
+  const handleFormacaoTaxaChange = (novosDadosFormacaoTaxa) => {
+    setFormacaoTaxa(novosDadosFormacaoTaxa);
+  };
+  const handleFormacaoImpostosChange = (novosDadosFormacaoImpostos) => {
+    setFormacaoImpostos(novosDadosFormacaoImpostos);
+  };
+  const handleFormacaoMargemChange = (novosDadosFormacaoMargem) => {
+    setFormacaoMargem(novosDadosFormacaoMargem);
+  };
+  const handleFormacaoPrecoChange = (novosDadosFormacaoPreco) => {
+    setFormacaoPreco(novosDadosFormacaoPreco);
+  };
   
 
   /*Chamadas para o form de Intuição*/
@@ -242,6 +266,12 @@ function Canvas() {
         onMvpIndicadoChange={handleMvpIndicadoChange}
         onMvpOrientacoesChange={handleMvpOrientacoesChange}
         onMvpResultadoChange={handleMvpResultadoChange}
+        onFormacaoDescricaoChange={handleFormacaoDescricaoChange}
+        onFormacaoCustoChange={handleFormacaoCustoChange}
+        onFormacaoTaxaChange={handleFormacaoTaxaChange}
+        onFormacaoImpostosChange={handleFormacaoImpostosChange}
+        onFormacaoMargemChange={handleFormacaoMargemChange}
+        onFormacaoPrecoChange={handleFormacaoPrecoChange}
       />
 
       <GeradorPDF
@@ -271,6 +301,12 @@ function Canvas() {
         mvpIndicado={mvpIndicado}
         mvpOrientacoes={mvpOrientacoes}
         mvpResultado={mvpResultado}
+        formacaoDescricao={formacaoDescricao}
+        formacaoCusto={formacaoCusto}
+        formacaoTaxa={formacaoTaxa}
+        formacaoImpostos={formacaoImpostos}
+        formacaoMargem={formacaoMargem}
+        formacaoPreco={formacaoPreco}
         
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">

@@ -13,7 +13,8 @@ import React, { useState } from "react";
 /* import GeradorPDF from "../GeradorPDF/GeradorPDF"; */
 
 function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidadeChange, onAnaliseCustoChange, onAnaliseDiferencialChange, onAnalisePreDifChange, 
-  onMvpProdutoChange, onMvpIndicadoChange, onMvpOrientacoesChange, onMvpResultadoChange }) {
+  onMvpProdutoChange, onMvpIndicadoChange, onMvpOrientacoesChange, onMvpResultadoChange, onFormacaoDescricaoChange, onFormacaoCustoChange, onFormacaoTaxaChange,
+  onFormacaoImpostosChange, onFormacaoMargemChange, onFormacaoPrecoChange }) {
 
   const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("");
   const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("");
@@ -270,6 +271,163 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
     };
     onMvpResultadoChange(novosDadosMvpResultado);
   }
+  
+  const [primeiraLinhaFormacaoDescricao, setPrimeiraLinhaFormacaoDescricao] = useState("");
+  const [segundaLinhaFormacaoDescricao, setSegundaLinhaFormacaoDescricao] = useState("");
+  const [terceiraLinhaFormacaoDescricao, setTerceiraLinhaFormacaoDescricao] = useState("");
+  const [quartaLinhaFormacaoDescricao, setQuartaLinhaFormacaoDescricao] = useState("");
+
+  const handleInputChangeFormacaoDescricao = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaFormacaoDescricao') {
+      setPrimeiraLinhaFormacaoDescricao(value);
+    } else if (name === 'segundaLinhaFormacaoDescricao') {
+      setSegundaLinhaFormacaoDescricao(value);
+    } else if (name === 'terceiraLinhaFormacaoDescricao') {
+      setTerceiraLinhaFormacaoDescricao(value);
+    } else if (name === 'quartaLinhaFormacaoDescricao') {
+      setQuartaLinhaFormacaoDescricao(value);
+    } 
+
+    const novosDadosFormacaoDescricao = {
+      primeiraLinhaFormacaoDescricao: name === 'primeiraLinhaFormacaoDescricao' ? value : primeiraLinhaFormacaoDescricao,
+      segundaLinhaFormacaoDescricao: name === 'segundaLinhaFormacaoDescricao' ? value : segundaLinhaFormacaoDescricao,
+      terceiraLinhaFormacaoDescricao: name === 'terceiraLinhaFormacaoDescricao' ? value : terceiraLinhaFormacaoDescricao,
+      quartaLinhaFormacaoDescricao: name === 'quartaLinhaFormacaoDescricao' ? value : quartaLinhaFormacaoDescricao,
+    };
+    onFormacaoDescricaoChange(novosDadosFormacaoDescricao);
+  }
+
+  const [primeiraLinhaFormacaoCusto, setPrimeiraLinhaFormacaoCusto] = useState("");
+  const [segundaLinhaFormacaoCusto, setSegundaLinhaFormacaoCusto] = useState("");
+  const [terceiraLinhaFormacaoCusto, setTerceiraLinhaFormacaoCusto] = useState("");
+  const [quartaLinhaFormacaoCusto, setQuartaLinhaFormacaoCusto] = useState("");
+
+  const handleInputChangeFormacaoCusto = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaFormacaoCusto') {
+      setPrimeiraLinhaFormacaoCusto(value);
+    } else if (name === 'segundaLinhaFormacaoCusto') {
+      setSegundaLinhaFormacaoCusto(value);
+    } else if (name === 'terceiraLinhaFormacaoCusto') {
+      setTerceiraLinhaFormacaoCusto(value);
+    } else if (name === 'quartaLinhaFormacaoCusto') {
+      setQuartaLinhaFormacaoCusto(value);
+    } 
+
+    const novosDadosFormacaoCusto = {
+      primeiraLinhaFormacaoCusto: name === 'primeiraLinhaFormacaoCusto' ? value : primeiraLinhaFormacaoCusto,
+      segundaLinhaFormacaoCusto: name === 'segundaLinhaFormacaoCusto' ? value : segundaLinhaFormacaoCusto,
+      terceiraLinhaFormacaoCusto: name === 'terceiraLinhaFormacaoCusto' ? value : terceiraLinhaFormacaoCusto,
+      quartaLinhaFormacaoCusto: name === 'quartaLinhaFormacaoCusto' ? value : quartaLinhaFormacaoCusto,
+    };
+    onFormacaoCustoChange(novosDadosFormacaoCusto);
+  }
+
+  const [primeiraLinhaFormacaoTaxa, setPrimeiraLinhaFormacaoTaxa] = useState("");
+  const [segundaLinhaFormacaoTaxa, setSegundaLinhaFormacaoTaxa] = useState("");
+  const [terceiraLinhaFormacaoTaxa, setTerceiraLinhaFormacaoTaxa] = useState("");
+  const [quartaLinhaFormacaoTaxa, setQuartaLinhaFormacaoTaxa] = useState("");
+
+  const handleInputChangeFormacaoTaxa = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaFormacaoTaxa') {
+      setPrimeiraLinhaFormacaoTaxa(value);
+    } else if (name === 'segundaLinhaFormacaoTaxa') {
+      setSegundaLinhaFormacaoTaxa(value);
+    } else if (name === 'terceiraLinhaFormacaoTaxa') {
+      setTerceiraLinhaFormacaoTaxa(value);
+    } else if (name === 'quartaLinhaFormacaoTaxa') {
+      setQuartaLinhaFormacaoTaxa(value);
+    } 
+
+    const novosDadosFormacaoTaxa = {
+      primeiraLinhaFormacaoTaxa: name === 'primeiraLinhaFormacaoTaxa' ? value : primeiraLinhaFormacaoTaxa,
+      segundaLinhaFormacaoTaxa: name === 'segundaLinhaFormacaoTaxa' ? value : segundaLinhaFormacaoTaxa,
+      terceiraLinhaFormacaoTaxa: name === 'terceiraLinhaFormacaoTaxa' ? value : terceiraLinhaFormacaoTaxa,
+      quartaLinhaFormacaoTaxa: name === 'quartaLinhaFormacaoTaxa' ? value : quartaLinhaFormacaoTaxa,
+    };
+    onFormacaoTaxaChange(novosDadosFormacaoTaxa);
+  }
+
+  const [primeiraLinhaFormacaoImpostos, setPrimeiraLinhaFormacaoImpostos] = useState("");
+  const [segundaLinhaFormacaoImpostos, setSegundaLinhaFormacaoImpostos] = useState("");
+  const [terceiraLinhaFormacaoImpostos, setTerceiraLinhaFormacaoImpostos] = useState("");
+  const [quartaLinhaFormacaoImpostos, setQuartaLinhaFormacaoImpostos] = useState("");
+
+  const handleInputChangeFormacaoImpostos = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaFormacaoImpostos') {
+      setPrimeiraLinhaFormacaoImpostos(value);
+    } else if (name === 'segundaLinhaFormacaoImpostos') {
+      setSegundaLinhaFormacaoImpostos(value);
+    } else if (name === 'terceiraLinhaFormacaoImpostos') {
+      setTerceiraLinhaFormacaoImpostos(value);
+    } else if (name === 'quartaLinhaFormacaoImpostos') {
+      setQuartaLinhaFormacaoImpostos(value);
+    } 
+
+    const novosDadosFormacaoImpostos = {
+      primeiraLinhaFormacaoImpostos: name === 'primeiraLinhaFormacaoImpostos' ? value : primeiraLinhaFormacaoImpostos,
+      segundaLinhaFormacaoImpostos: name === 'segundaLinhaFormacaoImpostos' ? value : segundaLinhaFormacaoImpostos,
+      terceiraLinhaFormacaoImpostos: name === 'terceiraLinhaFormacaoImpostos' ? value : terceiraLinhaFormacaoImpostos,
+      quartaLinhaFormacaoImpostos: name === 'quartaLinhaFormacaoImpostos' ? value : quartaLinhaFormacaoImpostos,
+    };
+    onFormacaoImpostosChange(novosDadosFormacaoImpostos);
+  }
+
+  const [primeiraLinhaFormacaoMargem, setPrimeiraLinhaFormacaoMargem] = useState("");
+  const [segundaLinhaFormacaoMargem, setSegundaLinhaFormacaoMargem] = useState("");
+  const [terceiraLinhaFormacaoMargem, setTerceiraLinhaFormacaoMargem] = useState("");
+  const [quartaLinhaFormacaoMargem, setQuartaLinhaFormacaoMargem] = useState("");
+
+  const handleInputChangeFormacaoMargem = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaFormacaoMargem') {
+      setPrimeiraLinhaFormacaoMargem(value);
+    } else if (name === 'segundaLinhaFormacaoMargem') {
+      setSegundaLinhaFormacaoMargem(value);
+    } else if (name === 'terceiraLinhaFormacaoMargem') {
+      setTerceiraLinhaFormacaoMargem(value);
+    } else if (name === 'quartaLinhaFormacaoMargem') {
+      setQuartaLinhaFormacaoMargem(value);
+    } 
+
+    const novosDadosFormacaoMargem = {
+      primeiraLinhaFormacaoMargem: name === 'primeiraLinhaFormacaoMargem' ? value : primeiraLinhaFormacaoMargem,
+      segundaLinhaFormacaoMargem: name === 'segundaLinhaFormacaoMargem' ? value : segundaLinhaFormacaoMargem,
+      terceiraLinhaFormacaoMargem: name === 'terceiraLinhaFormacaoMargem' ? value : terceiraLinhaFormacaoMargem,
+      quartaLinhaFormacaoMargem: name === 'quartaLinhaFormacaoMargem' ? value : quartaLinhaFormacaoMargem,
+    };
+    onFormacaoMargemChange(novosDadosFormacaoMargem);
+  }
+
+  const [primeiraLinhaFormacaoPreco, setPrimeiraLinhaFormacaoPreco] = useState("");
+  const [segundaLinhaFormacaoPreco, setSegundaLinhaFormacaoPreco] = useState("");
+  const [terceiraLinhaFormacaoPreco, setTerceiraLinhaFormacaoPreco] = useState("");
+  const [quartaLinhaFormacaoPreco, setQuartaLinhaFormacaoPreco] = useState("");
+
+  const handleInputChangeFormacaoPreco = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaFormacaoPreco') {
+      setPrimeiraLinhaFormacaoPreco(value);
+    } else if (name === 'segundaLinhaFormacaoPreco') {
+      setSegundaLinhaFormacaoPreco(value);
+    } else if (name === 'terceiraLinhaFormacaoPreco') {
+      setTerceiraLinhaFormacaoPreco(value);
+    } else if (name === 'quartaLinhaFormacaoPreco') {
+      setQuartaLinhaFormacaoPreco(value);
+    } 
+
+    const novosDadosFormacaoPreco = {
+      primeiraLinhaFormacaoPreco: name === 'primeiraLinhaFormacaoPreco' ? value : primeiraLinhaFormacaoPreco,
+      segundaLinhaFormacaoPreco: name === 'segundaLinhaFormacaoPreco' ? value : segundaLinhaFormacaoPreco,
+      terceiraLinhaFormacaoPreco: name === 'terceiraLinhaFormacaoPreco' ? value : terceiraLinhaFormacaoPreco,
+      quartaLinhaFormacaoPreco: name === 'quartaLinhaFormacaoPreco' ? value : quartaLinhaFormacaoPreco,
+    };
+    onFormacaoPrecoChange(novosDadosFormacaoPreco);
+  }
+  
 //===============================================================================================
   function clicouNaDuvida() {
     alert("duvida clicada!");
@@ -599,82 +757,82 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaFormacaoDescricao" value={primeiraLinhaFormacaoDescricao} onChange={handleInputChangeFormacaoDescricao}  />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaFormacaoCusto" value={primeiraLinhaFormacaoCusto} onChange={handleInputChangeFormacaoCusto} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaFormacaoTaxa" value={primeiraLinhaFormacaoTaxa} onChange={handleInputChangeFormacaoTaxa} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaFormacaoImpostos" value={primeiraLinhaFormacaoImpostos} onChange={handleInputChangeFormacaoImpostos} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaFormacaoMargem" value={primeiraLinhaFormacaoMargem} onChange={handleInputChangeFormacaoMargem} />
                   </td>
                   <td>
-                    <input type="text" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaFormacaoPreco" value={primeiraLinhaFormacaoPreco} onChange={handleInputChangeFormacaoPreco} />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaFormacaoDescricao" value={segundaLinhaFormacaoDescricao} onChange={handleInputChangeFormacaoDescricao} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaFormacaoCusto" value={segundaLinhaFormacaoCusto} onChange={handleInputChangeFormacaoCusto} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaFormacaoTaxa" value={segundaLinhaFormacaoTaxa} onChange={handleInputChangeFormacaoTaxa} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaFormacaoImpostos" value={segundaLinhaFormacaoImpostos} onChange={handleInputChangeFormacaoImpostos} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaFormacaoMargem" value={segundaLinhaFormacaoMargem} onChange={handleInputChangeFormacaoMargem} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaFormacaoPreco" value={segundaLinhaFormacaoPreco} onChange={handleInputChangeFormacaoPreco} />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaFormacaoDescricao" value={terceiraLinhaFormacaoDescricao} onChange={handleInputChangeFormacaoDescricao} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaFormacaoCusto" value={terceiraLinhaFormacaoCusto} onChange={handleInputChangeFormacaoCusto} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaFormacaoTaxa" value={terceiraLinhaFormacaoTaxa} onChange={handleInputChangeFormacaoTaxa} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaFormacaoImpostos" value={terceiraLinhaFormacaoImpostos} onChange={handleInputChangeFormacaoImpostos} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaFormacaoMargem" value={terceiraLinhaFormacaoMargem} onChange={handleInputChangeFormacaoMargem}  />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaFormacaoPreco" value={terceiraLinhaFormacaoPreco} onChange={handleInputChangeFormacaoPreco} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="quartaLinhaFormacaoDescricao" value={quartaLinhaFormacaoDescricao} onChange={handleInputChangeFormacaoDescricao} />
+                  </td>
+                  <td>
+                    <input type="text" name="quartaLinhaFormacaoCusto" value={quartaLinhaFormacaoCusto} onChange={handleInputChangeFormacaoCusto} />
+                  </td>
+                  <td>
+                    <input type="text" name="quartaLinhaFormacaoTaxa" value={quartaLinhaFormacaoTaxa} onChange={handleInputChangeFormacaoTaxa} />
+                  </td>
+                  <td>
+                    <input type="text" name="quartaLinhaFormacaoImpostos" value={quartaLinhaFormacaoImpostos} onChange={handleInputChangeFormacaoImpostos} />
+                  </td>
+                  <td>
+                    <input type="text" name="quartaLinhaFormacaoMargem" value={quartaLinhaFormacaoMargem} onChange={handleInputChangeFormacaoMargem} />
+                  </td>
+                  <td>
+                    <input type="text" name="quartaLinhaFormacaoPreco" value={quartaLinhaFormacaoPreco} onChange={handleInputChangeFormacaoPreco} />
                   </td>
                 </tr>
               </table>
