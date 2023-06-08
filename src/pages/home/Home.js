@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
+    <div className="body_home">
       <div className="navbar">
         <div className="logo">
           <Link to="/2023.1-CanvLight-Canvas-Inteligente">
