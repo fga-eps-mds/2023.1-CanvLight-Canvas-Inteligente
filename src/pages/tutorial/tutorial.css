@@ -124,11 +124,13 @@
   width: 80%;
   position: absolute;
 }
-.tut_perfis_cliente  
+
+.tut_perfis_cliente h2{
   color: #ff9000;
   margin-bottom: 1%;
 }
-.tut_perfis_cliente  
+
+.tut_perfis_cliente p{
   width: 90%;
   margin-left: 4%;
   color: #252525;
@@ -143,11 +145,11 @@
   width: 80%;
   position: absolute;
 }
-.tut_proposta_valor h
+.tut_proposta_valor h2{
   color: #ff9000;
   margin-bottom: 1%;
 }
-.tut_proposta_valor p
+.tut_proposta_valor p{
   width: 90%;
   margin-left: 4%;
   color: #252525;
