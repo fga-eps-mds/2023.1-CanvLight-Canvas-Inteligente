@@ -1,0 +1,118 @@
+.tut_body {
+  height: fit-content;
+  background-image: linear-gradient(#e95420, #77216f);
+  background-repeat: no-repeat;
+}
+.sol-bg-tut {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcdbc1;
+  z-index: 0;
+  width: 100%;
+  height: 1500px;
+}
+
+.sol-inv-tut {
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  background-color: #fcdbc1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tut_dna {
+  z-index: 1;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_dna h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_dna p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
+.tut_ikigai {
+  z-index: 1;
+  top: 26%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_ikigai h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_ikigai p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
+.tut_fourps {
+  z-index: 1;
+  top: 45%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_fourps h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_fourps p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
+.tut_sintese {
+  z-index: 1;
+  top: 65%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_sintese h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_sintese p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
+.tut_benchmaking {
+  z-index: 1;
+  top: 85%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_benchmaking h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_benchmaking p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
