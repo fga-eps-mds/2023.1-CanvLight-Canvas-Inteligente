@@ -2,7 +2,9 @@ import React from "react";
 import { jsPDF } from "jspdf";
 
 function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado, 
-  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, analisePreDif, mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado}) {
+  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, 
+  analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota
+, mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado}) {
   function gerarPDF() {
     const doc = new jsPDF();
 
@@ -19,33 +21,63 @@ function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imit
 
     //Interação
     // doc.text(`descrição: ${descricao}`, 10, 80);
-    doc.text(`empresa: ${empresa.primeiraLinhaEmpresa}`, 10,10);
-    doc.text(`empresa: ${empresa.segundaLinhaEmpresa}`, 10,20);
-    doc.text(`empresa: ${empresa.terceiraLinhaEmpresa}`, 10,30);
 
-    doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 10,40);
-    doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 10,50);
-    doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 10,60);
+    //observação
+    // doc.text(`empresa: ${empresa.primeiraLinhaEmpresa}`, 10,10);
+    // doc.text(`empresa: ${empresa.segundaLinhaEmpresa}`, 10,20);
+    // doc.text(`empresa: ${empresa.terceiraLinhaEmpresa}`, 10,30);
 
-    doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 10,70);
-    doc.text(`Porte: ${porte.segundaLinhaPorte}`, 10,80);
-    doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 10,90);
+    doc.text(`parceiro: ${parceiro.primeiraLinhaParceiro}`, 10,10);
+    doc.text(`parceiro: ${parceiro.segundaLinhaParceiro}`, 10,20);
+    doc.text(`parceiro: ${parceiro.terceiraLinhaParceiro}`, 10,30);
 
-    doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.primeiraLinhaConcorrencia}`, 10,100);
-    doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.segundaLinhaConcorrencia}`, 10,110);
-    doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.terceiraLinhaConcorrencia}`, 10,120);
+    // doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 10,40);
+    // doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 10,50);
+    // doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 10,60);
 
-    doc.text(`Localização: ${localizacao.primeiraLinhaLocalizacao}`, 10,130);
-    doc.text(`Localização: ${localizacao.segundaLinhaLocalizacao}`, 10,140);
-    doc.text(`Localização: ${localizacao.terceiraLinhaLocalizacao}`, 10,150);
+    doc.text(`beneficios: ${beneficios.primeiraLinhaBeneficios}`, 10,40);
+    doc.text(`beneficios: ${beneficios.segundaLinhaBeneficios}`, 10,50);
+    doc.text(`beneficios: ${beneficios.terceiraLinhaBeneficios}`, 10,60);
 
-    doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 10,160);
-    doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 10,170);
-    doc.text(`O que pode ser imitado: ${imitado.terceiraLinhaImitado}`, 10,180);
+    // doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 10,70);
+    // doc.text(`Porte: ${porte.segundaLinhaPorte}`, 10,80);
+    // doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 10,90);
 
-    doc.text(`O que podemos fazer diferente/melhor: ${melhorar.primeiraLinhaMelhorar}`, 10,190);
-    doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 10,200);
-    doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 10,210);
+    doc.text(`insumos: ${insumos.primeiraLinhaInsumos}`, 10,70);
+    doc.text(`insumos: ${insumos.segundaLinhaInsumos}`, 10,80);
+    doc.text(`insumos: ${insumos.terceiraLinhaInsumos}`, 10,90);
+
+    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.primeiraLinhaConcorrencia}`, 10,100);
+    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.segundaLinhaConcorrencia}`, 10,110);
+    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.terceiraLinhaConcorrencia}`, 10,120);
+
+    doc.text(`fornecer: ${fornecer.primeiraLinhaFornecer}`, 10,100);
+    doc.text(`fornecer: ${fornecer.segundaLinhaFornecer}`, 10,110);
+    doc.text(`fornecer: ${fornecer.terceiraLinhaFornecer}`, 10,120);
+
+    // doc.text(`Localização: ${localizacao.primeiraLinhaLocalizacao}`, 10,130);
+    // doc.text(`Localização: ${localizacao.segundaLinhaLocalizacao}`, 10,140);
+    // doc.text(`Localização: ${localizacao.terceiraLinhaLocalizacao}`, 10,150);
+
+    doc.text(`risco: ${risco.primeiraLinhaRisco}`, 10,130);
+    doc.text(`risco: ${risco.segundaLinhaRisco}`, 10,140);
+    doc.text(`risco: ${risco.terceiraLinhaRisco}`, 10,150);
+
+    // doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 10,160);
+    // doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 10,170);
+    // doc.text(`O que pode ser imitado: ${imitado.terceiraLinhaImitado}`, 10,180);
+
+    doc.text(`verticalizar: ${verticalizar.primeiraLinhaVerticalizar}`, 10,160);
+    doc.text(`verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 10,170);
+    doc.text(`verticalizar: ${verticalizar.terceiraLinhaVerticalizar}`, 10,180);
+
+    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.primeiraLinhaMelhorar}`, 10,190);
+    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 10,200);
+    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 10,210);
+
+    doc.text(`nota: ${nota.primeiraLinhaNota}`, 10,190);
+    doc.text(`nota: ${nota.segundaLinhaNota}`, 10,200);
+    doc.text(`nota: ${nota.terceiraLinhaNota}`, 10,210);
 
     doc.text(`Descrição1: ${descricao.primeiraLinhaDescricao}`, 10,220);
     doc.text(`Descrição2: ${descricao.segundaLinhaDescricao}`, 10,230);

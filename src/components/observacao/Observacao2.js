@@ -1,6 +1,34 @@
 import './Observacao2.css'
+import React, { useState } from 'react';
 
-function Observacao2(){
+function Observacao2(onPsObserChange){
+    const [primeiroP, setPrimeiroP] = useState();
+    const [segundoP, setSegundoP] = useState ();
+    const [terceiroP, setTerceiroP] = useState ();
+    const [quartoP, setQuartoP] = useState ();
+
+    const handleInputChangePsObser = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiroP') {
+            setPrimeiroP(value);
+        } else if (name === 'segundoP') {
+            setSegundoP(value);
+        } else if (name === 'terceiroP') {
+            setTerceiroP(value);
+        } else if(name === 'quartoP'){
+            setQuartoP(value)
+        }
+
+        const novosDadosPsObser = {
+            setPrimeiroP: name === 'primeiroP' ? value : primeiroP,
+            segundoP: name === 'segundoP' ? value : segundoP,
+            terceiroP: name === 'terceiroP' ? value : terceiroP,
+            quartoP: name === 'quartoP' ? value : terceiroP,
+        };
+
+        onPsObserChange(novosDadosPsObser);
+    }
+
 
     function clicouNaDuvida(){
         alert('duvida clicada!')
@@ -34,13 +62,13 @@ function Observacao2(){
                     <div onClick={clicouNaDuvida} className='duvida'></div>
                     <table>
                     <tr>
-                        <td>P1:<input type="text"/></td>
-                        <td>P2:<input type="text"/></td>
+                        <td>P1:<input type="text" name='primeiroP' value={primeiroP} onChange={handleInputChangePsObser}/></td>
+                        <td>P2:<input type="text" name='segundoP' value={segundoP} onChange={handleInputChangePsObser}/></td>
                     </tr>
 
                     <tr>
-                        <td>P3:<input type="text"/></td>
-                        <td>P4:<input type="text"/></td>
+                        <td>P3:<input type="text" name='terceiroP' value={terceiroP} onChange={handleInputChangePsObser}/></td>
+                        <td>P4:<input type="text" name='quartoP' value={quartoP} onChange={handleInputChangePsObser}/></td>
                     </tr>
                     </table>
                 </div> 

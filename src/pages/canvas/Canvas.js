@@ -15,6 +15,10 @@ import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {
 
+//observação2
+  const [psObser, setPsObser] = useState ({});
+
+//observação1
   const [empresa, setEmpresa] = useState({});
   const [diferenca, setDiferenca] = useState({});
   const [porte, setPorte] = useState({});
@@ -22,6 +26,16 @@ function Canvas() {
   const [localizacao, setLocalizacao] = useState({});
   const [imitado, setImitado] =useState({});
   const [melhorar, setMelhorar] = useState({});
+  const [parceiro, setParceiro] = useState({});
+  const [insumos, setInsumos] = useState({});
+  const [beneficios, setBeneficios]  = useState({});
+  const [fornecer, setFornecer] = useState ({});
+  const [risco, setRisco] = useState ({});
+  const [verticalizar, setVerticalizar] = useState ({});
+  const [nota , setNota] = useState ({});
+  const [perfil1, setPerfil1] = useState({});
+  const [perfil2, setPerfil2] = useState({});
+
 //interação
   const [descricao, setDescricao] = useState({});
   const [analisePreco, setAnalisePreco] = useState({});
@@ -33,6 +47,48 @@ function Canvas() {
   const [mvpIndicado, setMvpIndicado] = useState({});
   const [mvpOrientacoes, setMvpOrientacoes] = useState({});
   const [mvpResultado, setMvpResultado] = useState({});
+
+//observação2
+  const handlePsObserChange =(novosDadosPsObser) => {
+    setPsObser(novosDadosPsObser);
+  }
+
+//observação1
+  const handlePerfil2Change =(novosDadosPerfil2) => {
+    setPerfil2(novosDadosPerfil2);
+  }
+
+  const handlePerfil1Change =(novosDadosPerfil1) => {
+    setPerfil1(novosDadosPerfil1);
+  }
+
+  const handleNotaChange =(novosDadosNota) => {
+    setNota(novosDadosNota);
+  }
+
+  const handleVerticalizarChange =(novosDadosVerticalizar) => {
+    setVerticalizar(novosDadosVerticalizar);
+  }
+
+  const handleRiscoChange =(novosDadosRisco) => {
+    setRisco(novosDadosRisco);
+  }
+
+  const handleFornecerChange =(novosDadosFornecer) => {
+    setFornecer(novosDadosFornecer);
+  }
+
+  const handleBeneficiosChange =(novosDadosBeneficios) => {
+    setBeneficios(novosDadosBeneficios);
+  }
+
+  const handleIsumosChange =(novosDadosInsumos) => {
+    setInsumos(novosDadosInsumos);
+  }
+
+  const handleParceiroChange =(novosDadosParceiro) => {
+    setParceiro(novosDadosParceiro);
+  }
 
   const handleIMelhorarChange = (novosDadosMelhorar) =>{
     setMelhorar(novosDadosMelhorar);
@@ -158,9 +214,20 @@ function Canvas() {
         onLocalizacaoChange={handleLocalizacaoChange}
         onImitadoChange={handleImitadoChange}
         onMelhorarChange={handleIMelhorarChange}
+        onParceiroChange={handleParceiroChange}
+        onInsumosChange={handleIsumosChange}
+        onBeneficiosChange={handleBeneficiosChange}
+        onFornecerChange={handleFornecerChange}
+        onRiscoChange={handleRiscoChange}
+        onVerticalizarChange={handleVerticalizarChange}
+        onNotaChange={handleNotaChange}
+        onPerfil1Change={handlePerfil1Change}
+        onPerfil2Change={handlePerfil2Change}
       />
 
-      <Observacao2 />
+      <Observacao2 
+        onPsObserChange={handlePsObserChange}
+      />
 
       <Observacao3 />
 
@@ -185,6 +252,13 @@ function Canvas() {
         localizacao={localizacao}
         imitado={imitado}
         melhorar={melhorar}
+        parceiro={parceiro}
+        insumos={insumos}
+        beneficios={beneficios}
+        fornecer={fornecer}
+        risco={risco}
+        verticalizar={verticalizar}
+        nota={nota}
 
         //Interação
         descricao={descricao}

@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 
 
 function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConcorrenciaChange, 
-    onLocalizacaoChange, onImitadoChange, onMelhorarChange
+    onLocalizacaoChange, onImitadoChange, onMelhorarChange, onParceiroChange, onInsumosChange,
+    onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange, onNotaChange,
+    onPerfil1Change, onPerfil2Change
 }){
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
@@ -26,6 +28,205 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     const [primeiraLinhaMelhorar, setPrimeiraLinhaMelhorar] = useState();
     const [segundaLinhaMelhorar, setSegundaLinhaMelhorar] = useState();
     const [terceiraLinhaMelhorar, setTerceiraLinhaMelhorar] = useState();
+    const [primeiraLinhaParceiro, setPrimeiraLinhaParceiro] = useState();
+    const [segundaLinhaParceiro, setSegundaLinhaParceiro] = useState();
+    const [terceiraLinhaParceiro, setTerceiraLinhaParceiro] = useState();
+    const [primeiraLinhaInsumos, setPrimeiraLinhaInsumos] = useState();
+    const [segundaLinhaInsumos, setSegundaLinhaInsumos] = useState();
+    const [terceiraLinhaInsumos, setTerceiraLinhaInsumos] = useState();
+    const [primeiraLinhaBeneficios, setPrimeiraLinhaBeneficios] = useState();
+    const [segundaLinhaBeneficios, setSegundaLinhaBeneficios] = useState();
+    const [terceiraLinhaBeneficios, setTerceiraLinhaBeneficios] = useState();
+    const [primeiraLinhaFornecer, setPrimeiraLinhaFornecer] = useState();
+    const [segundaLinhaFornecer, setSegundaLinhaFornecer] = useState();
+    const [terceiraLinhaFornecer, setTerceiraLinhaFornecer] = useState();
+    const [primeiraLinhaRisco, setPrimeiraLinhaRisco] = useState();
+    const [segundaLinhaRisco, setSegundaLinhaRisco] = useState();
+    const [terceiraLinhaRisco, setTerceiraLinhaRisco] = useState();
+    const [primeiraLinhaVerticalizar, setPrimeiraLinhaVerticalizar] = useState();
+    const [segundaLinhaVerticalizar, setSegundaLinhaVerticalizar] = useState();
+    const [terceiraLinhaVerticalizar, setTerceiraLinhaVerticalizar] = useState();
+    const [primeiraLinhaNota, setPrimeiraLinhaNota] = useState();
+    const [segundaLinhaNota, setSegundaLinhaNota] = useState();
+    const [terceiraLinhaNota, setTerceiraLinhaNota] = useState();
+    const [primeiraLinhaPerfil1, setPrimeiraLinhaPerfil1] = useState();
+    const [segundaLinhaPerfil1, setSegundaLinhaPerfil1] = useState();
+    const [terceiraLinhaPerfil1, setTerceiraLinhaPerfil1] = useState();
+    const [primeiraLinhaPerfil2, setPrimeiraLinhaPerfil2] = useState();
+    const [segundaLinhaPerfil2, setSegundaLinhaPerfil2] = useState();
+    const [terceiraLinhaPerfil2, setTerceiraLinhaPerfil2] = useState();
+
+    const handleInputChangePerfil2 = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaPerfil2') {
+            setPrimeiraLinhaPerfil2(value);
+        } else if (name === 'segundaLinhaPerfil2') {
+            setSegundaLinhaPerfil2(value);
+        } else if (name === 'terceiraLinhaPerfil2') {
+            setTerceiraLinhaPerfil2(value);
+        }
+
+        const novosDadosPerfil2 = {
+            setPrimeiraLinhaPerfil2: name === 'primeiraLinhaPerfil2' ? value : primeiraLinhaPerfil2,
+            segundaLinhaPerfil2: name === 'segundaLinhaPerfil2' ? value : segundaLinhaPerfil2,
+            terceiraLinhaPerfil2: name === 'terceiraLinhaPerfil2' ? value : terceiraLinhaPerfil2,
+        };
+
+        onPerfil2Change(novosDadosPerfil2);
+    }
+
+    const handleInputChangePerfil1 = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaPerfil1') {
+            setPrimeiraLinhaPerfil1(value);
+        } else if (name === 'segundaLinhaPerfil1') {
+            setSegundaLinhaPerfil1(value);
+        } else if (name === 'terceiraLinhaPerfil1') {
+            setTerceiraLinhaPerfil1(value);
+        }
+
+        const novosDadosPerfil1 = {
+            primeiraLinhaPerfil1: name === 'primeiraLinhaPerfil1' ? value : primeiraLinhaPerfil1,
+            segundaLinhaPerfil1: name === 'segundaLinhaPerfil1' ? value : segundaLinhaPerfil1,
+            terceiraLinhaPerfil1: name === 'terceiraLinhaPerfil1' ? value : terceiraLinhaPerfil1,
+        };
+
+        onPerfil1Change(novosDadosPerfil1);
+    }
+
+    const handleInputChangeNota = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaNota') {
+            setPrimeiraLinhaNota(value);
+        } else if (name === 'segundaLinhaNota') {
+            setSegundaLinhaNota(value);
+        } else if (name === 'terceiraLinhaNota') {
+            setTerceiraLinhaNota(value);
+        }
+
+        const novosDadosNota = {
+            primeiraLinhaNota: name === 'primeiraLinhaNota' ? value : primeiraLinhaNota,
+            segundaLinhaNota: name === 'segundaLinhaNota' ? value : segundaLinhaNota,
+            terceiraLinhaNota: name === 'terceiraLinhaNota' ? value : terceiraLinhaNota
+        };
+
+        onNotaChange(novosDadosNota);
+    }
+    
+    const handleInputChangeVerticalizar = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaVerticalizar') {
+            setPrimeiraLinhaVerticalizar(value);
+        } else if (name === 'segundaLinhaVerticalizar') {
+            setSegundaLinhaVerticalizar(value);
+        } else if (name === 'terceiraLinhaVerticalizar') {
+            setTerceiraLinhaVerticalizar(value);
+        }
+
+        const novosDadosVerticalizar = {
+            primeiraLinhaVerticalizar: name === 'primeiraLinhaVerticalizar' ? value : primeiraLinhaVerticalizar,
+            segundaLinhaVerticalizar: name === 'segundaLinhaVerticalizar' ? value : segundaLinhaVerticalizar,
+            terceiraLinhaVerticalizar: name === 'terceiraLinhaVerticalizar' ? value : terceiraLinhaVerticalizar,
+        };
+
+        onVerticalizarChange(novosDadosVerticalizar);
+    }
+
+    const handleInputChangeRisco = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaRisco') {
+            setPrimeiraLinhaRisco(value);
+        } else if (name === 'segundaLinhaRisco') {
+            setSegundaLinhaRisco(value);
+        } else if (name === 'terceiraLinhaRisco') {
+            setTerceiraLinhaRisco(value);
+        }
+
+        const novosDadosRisco = {
+            primeiraLinhaRisco: name === 'primeiraLinhaRisco' ? value : primeiraLinhaRisco,
+            segundaLinhaRisco: name === 'segundaLinhaRisco' ? value : segundaLinhaRisco,
+            terceiraLinhaRisco: name === 'terceiraLinhaRisco' ? value : terceiraLinhaRisco,
+        };
+
+        onRiscoChange(novosDadosRisco);
+    }
+
+    const handleInputChangeFornecer = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaFornecer') {
+            setPrimeiraLinhaFornecer(value);
+        } else if (name === 'segundaLinhaFornecer') {
+            setSegundaLinhaFornecer(value);
+        } else if (name === 'terceiraLinhaFornecer') {
+            setTerceiraLinhaFornecer(value);
+        }
+
+        const novosDadosFornecer = {
+            primeiraLinhaFornecer: name === 'primeiraLinhaFornecer' ? value : primeiraLinhaFornecer,
+            segundaLinhaFornecer: name === 'segundaLinhaFornecer' ? value : segundaLinhaFornecer,
+            terceiraLinhaFornecer: name === 'terceiraLinhaFornecer' ? value : terceiraLinhaFornecer,
+        };
+
+        onFornecerChange(novosDadosFornecer);
+    }
+
+    const handleInputChangeBeneficios = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaBeneficios') {
+            setPrimeiraLinhaBeneficios(value);
+        } else if (name === 'segundaLinhaBeneficios') {
+            setSegundaLinhaBeneficios(value);
+        } else if (name === 'terceiraLinhaBeneficios') {
+            setTerceiraLinhaBeneficios(value);
+        }
+
+        const novosDadosBeneficios = {
+            primeiraLinhaBeneficios: name === 'primeiraLinhaBeneficios' ? value : primeiraLinhaBeneficios,
+            segundaLinhaBeneficios: name === 'segundaLinhaBeneficios' ? value : segundaLinhaBeneficios,
+            terceiraLinhaBeneficios: name === 'terceiraLinhaBeneficios' ? value : terceiraLinhaBeneficios,
+        };
+
+        onBeneficiosChange(novosDadosBeneficios);
+    }
+
+    const handleInputChangeInsumos = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaInsumos') {
+            setPrimeiraLinhaInsumos(value);
+        } else if (name === 'segundaLinhaInsumos') {
+            setSegundaLinhaInsumos(value);
+        } else if (name === 'terceiraLinhaInsumos') {
+            setTerceiraLinhaInsumos(value);
+        }
+
+        const novosDadosInsumos = {
+            primeiraLinhaInsumos: name === 'primeiraLinhaInsumos' ? value : primeiraLinhaInsumos,
+            segundaLinhaInsumos: name === 'segundaLinhaInsumos' ? value : segundaLinhaInsumos,
+            terceiraLinhaInsumos: name === 'terceiraLinhaInsumos' ? value : terceiraLinhaInsumos,
+        };
+
+        onInsumosChange(novosDadosInsumos);
+    }
+
+
+    const handleInputChangeParceiro = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaParceiro') {
+            setPrimeiraLinhaParceiro(value);
+        } else if (name === 'segundaLinhaParceiro') {
+            setSegundaLinhaParceiro(value);
+        } else if (name === 'terceiraLinhaParceiro') {
+            setTerceiraLinhaParceiro(value);
+        }
+
+        const novosDadosParceiro = {
+            primeiraLinhaParceiro: name === 'primeiraLinhaParceiro' ? value : primeiraLinhaParceiro,
+            segundaLinhaParceiro: name === 'segundaLinhaParceiro' ? value : segundaLinhaParceiro,
+            terceiraLinhaParceiro: name === 'terceiraLinhaParceiro' ? value : terceiraLinhaParceiro,
+        };
+
+        onParceiroChange(novosDadosParceiro);
+    }
 
     const handleInputChangeMelhorar = (e)=>{
         const {name ,value} = e.target;
@@ -38,7 +239,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosMelhorar = {
-            primeiraLinhaMelhorar: name === 'primeiraMelhorar' ? value : primeiraLinhaMelhorar,
+            primeiraLinhaMelhorar: name === 'primeiraLinhaMelhorar' ? value : primeiraLinhaMelhorar,
             segundaLinhaMelhorar: name === 'segundaLinhaMelhorar' ? value : segundaLinhaMelhorar,
             terceiraLinhaMelhorar: name === 'terceiraLinhaMelhorar' ? value : terceiraLinhaMelhorar,
         };
@@ -57,7 +258,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosImitado = {
-            primeiraLinhaImitado: name === 'primeiraImitado' ? value : primeiraLinhaImitado,
+            primeiraLinhaImitado: name === 'primeiraLinhaImitado' ? value : primeiraLinhaImitado,
             segundaLinhaImitado: name === 'segundaLinhaImitado' ? value : segundaLinhaImitado,
             terceiraLinhaImitado: name === 'terceiraLinhaImitado' ? value : terceiraLinhaImitado,
         };
@@ -246,33 +447,33 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                         </tr>
 
                         <tr>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaParceiro' value={primeiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
+                            <td><input type="text" name='primeiraLinhaIsumos' value={primeiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
+                            <td><input type="text" name='primeiraLinhaBeneficios' value={primeiraLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
+                            <td><input type="text" name='primeiraLinhaFornecer' value={primeiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
+                            <td><input type="text" name='primeiraLinhaRisco' value={primeiraLinhaRisco} onChange={handleInputChangeRisco}/></td>
+                            <td><input type="text" name='primeiraLinhaVerticalizar' value={primeiraLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
+                            <td><input type="text" name='primeiraLinhaNota' value={primeiraLinhaNota} onChange={handleInputChangeNota}/></td>
                         </tr>
 
                         <tr>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaParceiro' value={segundaLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
+                            <td><input type="text" name='segundaLinhaInsumos' value={segundaLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
+                            <td><input type="text" name='segundaLinhaBeneficios' value={segundaLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
+                            <td><input type="text" name='segundaLinhaFornecer' value={segundaLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
+                            <td><input type="text" name='segundaLinhaRisco' value={segundaLinhaRisco} onChange={handleInputChangeRisco}/></td>
+                            <td><input type="text" name='segundaLinhaVerticalizar' value={segundaLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
+                            <td><input type="text" name='segundaLinhaNota' value={segundaLinhaNota} onChange={handleInputChangeNota}/></td>
                         </tr>
 
                         <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
+                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaParceiro' value={terceiraLinhaParceiro} onChange={handleInputChangeParceiro}/></td>
+                            <td><input type="text" name='terceiraLinhaInsumos' value={terceiraLinhaInsumos} onChange={handleInputChangeInsumos}/></td>
+                            <td><input type="text" name='terceiraLinhaBeneficios' value={terceiraLinhaBeneficios} onChange={handleInputChangeBeneficios}/></td>
+                            <td><input type="text" name='terceiraLinhaFornecer' value={terceiraLinhaFornecer} onChange={handleInputChangeFornecer}/></td>
+                            <td><input type="text" name='terceiraLinhaRisco' value={terceiraLinhaRisco} onChange={handleInputChangeRisco}/></td>
+                            <td><input type="text" name='terceiraLinhaVerticalizar' value={terceiraLinhaVerticalizar} onChange={handleInputChangeVerticalizar}/></td>
+                            <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='terceiraLinhaNota' value={terceiraLinhaNota} onChange={handleInputChangeNota}/></td>
                         </tr>
                     </table>
                 </div>
@@ -288,24 +489,24 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
 
                     <div className='dir'>
                         <div className='img-perfil'></div>
-                        <input className='primeiro-input' type='text'/>
+                        <input className='primeiro-input' type='text' name='primeiraLinhaPerfil1' value={primeiraLinhaPerfil1} onChange={handleInputChangePerfil1}/>
 
                         <div className='crescendo'></div>
-                        <input className='segundo-input' type='text'/>
+                        <input className='segundo-input' type='text'  name='segundaLinhaPerfil1' value={segundaLinhaPerfil1} onChange={handleInputChangePerfil1}/>
 
                         <div className='decrescendo'></div>
-                        <input className='terceiro-input' type='text'/>
+                        <input className='terceiro-input' type='text'  name='terceiraLinhaPerfil1' value={terceiraLinhaPerfil1} onChange={handleInputChangePerfil1}/>
                     </div>
 
                     <div className='esq'>
                     <div className='img-perfil'></div>
-                        <input type='text'/>
+                        <input type='text' name='primeiraLinhaPerfil2' value={primeiraLinhaPerfil2} onChange={handleInputChangePerfil2}/>
 
                         <div className='crescendo'></div>
-                        <input type='text'/>
+                        <input type='text' name='segundaLinhaPerfil2' value={segundaLinhaPerfil2} onChange={handleInputChangePerfil2}/>
 
                         <div className='decrescendo'></div>
-                        <input type='text'/>
+                        <input type='text' name='terceiraLinhaPerfil2' value={terceiraLinhaPerfil2} onChange={handleInputChangePerfil2}/>
                     </div>
                     <div className='clear'></div>
                 </div>
