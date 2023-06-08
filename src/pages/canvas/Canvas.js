@@ -68,10 +68,9 @@ function Canvas() {
 
         <nav className="desktop">
           <ul>
-            <Link to="/2023.1-CanvLight-Canvas-Inteligente">
-              <li className="ativo">Home</li>
+            <Link to="/tutorial">
+              <li>Como usar?</li>
             </Link>
-            <li>Tutorial</li>
             <Link to="/canvas">
               <li>Gerar canvas</li>
             </Link>
