@@ -5,9 +5,9 @@
   font-family: "Ubuntu";
 }
 
-/* body{
-    background-color: #fcdbc1;
-} */
+.body_home {
+  background-image: linear-gradient(#e95420, #77216f);
+}
 .clear {
   clear: both;
 }
@@ -106,7 +106,7 @@
 
 .sobre {
   position: absolute;
-  top: 100%;
+  top: 180%;
   height: 50%;
   left: 0;
   bottom: 0;
@@ -167,8 +167,8 @@
 .membros ul a li {
   display: inline-block;
   background-size: cover;
-  padding: 50px;
-  border-radius: 50px;
+  padding: 75px;
+  border-radius: 50%;
   margin: 20px;
   list-style-type: none;
   cursor: pointer;
@@ -179,9 +179,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#e95420, #77216f);
+  background-color: #fcdbc1;
   width: 100%;
-  height: 1500px;
+  height: 1300px;
+  top: 140vh;
 }
 
 .sol-inv {
@@ -193,42 +194,42 @@
   border-radius: 50%;
   bottom: -50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-100%);
 }
 
 .main-btn {
-  position: absolute;
+  position: relative;
   padding: 1%;
-  width: fit-content;
-  height: fit-content;
-  margin-left: -35%;
-  margin-top: 35%;
+  width: 14vw;
+  height: 8vh;
+  top: -110vh;
+  left: -10vw;
   border-radius: 6px;
   cursor: pointer;
 
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2vw;
   line-height: 34px;
   text-align: center;
   color: #fff;
   background-color: #dd4814;
 }
 .main-btn1 {
-  position: absolute;
+  position: relative;
   padding: 1%;
-  width: fit-content;
-  height: fit-content;
-  margin-left: 10%;
-  margin-top: 15.5%;
+  width: 14vw;
+  height: 8vh;
+  top: -110vh;
+  left: 10vw;
   border-radius: 6px;
   cursor: pointer;
 
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2vw;
   line-height: 34px;
   text-align: center;
   color: #fff;
