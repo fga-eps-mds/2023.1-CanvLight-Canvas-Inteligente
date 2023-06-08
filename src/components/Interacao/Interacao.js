@@ -14,7 +14,7 @@ import React, { useState } from "react";
 
 function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidadeChange, onAnaliseCustoChange, onAnaliseDiferencialChange, onAnalisePreDifChange, 
   onMvpProdutoChange, onMvpIndicadoChange, onMvpOrientacoesChange, onMvpResultadoChange, onFormacaoDescricaoChange, onFormacaoCustoChange, onFormacaoTaxaChange,
-  onFormacaoImpostosChange, onFormacaoMargemChange, onFormacaoPrecoChange }) {
+  onFormacaoImpostosChange, onFormacaoMargemChange, onFormacaoPrecoChange, onCanaisCanalChange, onCanaisObjetivoChange, onCanaisMetricaChange, onInteQuatroPChange }) {
 
   const [primeiraLinhaDescricao, setPrimeiraLinhaDescricao] = useState("");
   const [segundaLinhaDescricao, setSegundaLinhaDescricao] = useState("");
@@ -426,6 +426,110 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
       quartaLinhaFormacaoPreco: name === 'quartaLinhaFormacaoPreco' ? value : quartaLinhaFormacaoPreco,
     };
     onFormacaoPrecoChange(novosDadosFormacaoPreco);
+  }
+
+  const [primeiraLinhaCanaisCanal, setPrimeiraLinhaCanaisCanal] = useState("");
+  const [segundaLinhaCanaisCanal, setSegundaLinhaCanaisCanal] = useState("");
+  const [terceiraLinhaCanaisCanal, setTerceiraLinhaCanaisCanal] = useState("");
+  const [quartaLinhaCanaisCanal, setQuartaLinhaCanaisCanal] = useState("");
+
+  const handleInputChangeCanaisCanal = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaCanaisCanal') {
+      setPrimeiraLinhaCanaisCanal(value);
+    } else if (name === 'segundaLinhaCanaisCanal') {
+      setSegundaLinhaCanaisCanal(value);
+    } else if (name === 'terceiraLinhaCanaisCanal') {
+      setTerceiraLinhaCanaisCanal(value);
+    } else if (name === 'quartaLinhaCanaisCanal') {
+      setQuartaLinhaCanaisCanal(value);
+    } 
+
+    const novosDadosCanaisCanal = {
+      primeiraLinhaCanaisCanal: name === 'primeiraLinhaCanaisCanal' ? value : primeiraLinhaCanaisCanal,
+      segundaLinhaCanaisCanal: name === 'segundaLinhaCanaisCanal' ? value : segundaLinhaCanaisCanal,
+      terceiraLinhaCanaisCanal: name === 'terceiraLinhaCanaisCanal' ? value : terceiraLinhaCanaisCanal,
+      quartaLinhaCanaisCanal: name === 'quartaLinhaCanaisCanal' ? value : quartaLinhaCanaisCanal,
+    };
+    onCanaisCanalChange(novosDadosCanaisCanal);
+  }
+
+  const [primeiraLinhaCanaisObjetivo, setPrimeiraLinhaCanaisObjetivo] = useState("");
+  const [segundaLinhaCanaisObjetivo, setSegundaLinhaCanaisObjetivo] = useState("");
+  const [terceiraLinhaCanaisObjetivo, setTerceiraLinhaCanaisObjetivo] = useState("");
+  const [quartaLinhaCanaisObjetivo, setQuartaLinhaCanaisObjetivo] = useState("");
+
+  const handleInputChangeCanaisObjetivo = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaCanaisObjetivo') {
+      setPrimeiraLinhaCanaisObjetivo(value);
+    } else if (name === 'segundaLinhaCanaisObjetivo') {
+      setSegundaLinhaCanaisObjetivo(value);
+    } else if (name === 'terceiraLinhaCanaisObjetivo') {
+      setTerceiraLinhaCanaisObjetivo(value);
+    } else if (name === 'quartaLinhaCanaisObjetivo') {
+      setQuartaLinhaCanaisObjetivo(value);
+    } 
+
+    const novosDadosCanaisObjetivo = {
+      primeiraLinhaCanaisObjetivo: name === 'primeiraLinhaCanaisObjetivo' ? value : primeiraLinhaCanaisObjetivo,
+      segundaLinhaCanaisObjetivo: name === 'segundaLinhaCanaisObjetivo' ? value : segundaLinhaCanaisObjetivo,
+      terceiraLinhaCanaisObjetivo: name === 'terceiraLinhaCanaisObjetivo' ? value : terceiraLinhaCanaisObjetivo,
+      quartaLinhaCanaisObjetivo: name === 'quartaLinhaCanaisObjetivo' ? value : quartaLinhaCanaisObjetivo,
+    };
+    onCanaisObjetivoChange(novosDadosCanaisObjetivo);
+  }
+
+  const [primeiraLinhaCanaisMetrica, setPrimeiraLinhaCanaisMetrica] = useState("");
+  const [segundaLinhaCanaisMetrica, setSegundaLinhaCanaisMetrica] = useState("");
+  const [terceiraLinhaCanaisMetrica, setTerceiraLinhaCanaisMetrica] = useState("");
+  const [quartaLinhaCanaisMetrica, setQuartaLinhaCanaisMetrica] = useState("");
+
+  const handleInputChangeCanaisMetrica = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaCanaisMetrica') {
+      setPrimeiraLinhaCanaisMetrica(value);
+    } else if (name === 'segundaLinhaCanaisMetrica') {
+      setSegundaLinhaCanaisMetrica(value);
+    } else if (name === 'terceiraLinhaCanaisMetrica') {
+      setTerceiraLinhaCanaisMetrica(value);
+    } else if (name === 'quartaLinhaCanaisMetrica') {
+      setQuartaLinhaCanaisMetrica(value);
+    } 
+
+    const novosDadosCanaisMetrica = {
+      primeiraLinhaCanaisMetrica: name === 'primeiraLinhaCanaisMetrica' ? value : primeiraLinhaCanaisMetrica,
+      segundaLinhaCanaisMetrica: name === 'segundaLinhaCanaisMetrica' ? value : segundaLinhaCanaisMetrica,
+      terceiraLinhaCanaisMetrica: name === 'terceiraLinhaCanaisMetrica' ? value : terceiraLinhaCanaisMetrica,
+      quartaLinhaCanaisMetrica: name === 'quartaLinhaCanaisMetrica' ? value : quartaLinhaCanaisMetrica,
+    };
+    onCanaisMetricaChange(novosDadosCanaisMetrica);
+  }
+
+  const [primeiraLinhaInteQuatroP, setPrimeiraLinhaInteQuatroP] = useState("");
+  const [segundaLinhaInteQuatroP, setSegundaLinhaInteQuatroP] = useState("");
+  const [terceiraLinhaInteQuatroP, setTerceiraLinhaInteQuatroP] = useState("");
+  const [quartaLinhaInteQuatroP, setQuartaLinhaInteQuatroP] = useState("");
+
+  const handleInputChangeInteQuatroP = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaInteQuatroP') {
+      setPrimeiraLinhaInteQuatroP(value);
+    } else if (name === 'segundaLinhaInteQuatroP') {
+      setSegundaLinhaInteQuatroP(value);
+    } else if (name === 'terceiraLinhaInteQuatroP') {
+      setTerceiraLinhaInteQuatroP(value);
+    } else if (name === 'quartaLinhaInteQuatroP') {
+      setQuartaLinhaInteQuatroP(value);
+    } 
+
+    const novosDadosInteQuatroP = {
+      primeiraLinhaInteQuatroP: name === 'primeiraLinhaInteQuatroP' ? value : primeiraLinhaInteQuatroP,
+      segundaLinhaInteQuatroP: name === 'segundaLinhaInteQuatroP' ? value : segundaLinhaInteQuatroP,
+      terceiraLinhaInteQuatroP: name === 'terceiraLinhaInteQuatroP' ? value : terceiraLinhaInteQuatroP,
+      quartaLinhaInteQuatroP: name === 'quartaLinhaInteQuatroP' ? value : quartaLinhaInteQuatroP,
+    };
+    onInteQuatroPChange(novosDadosInteQuatroP);
   }
   
 //===============================================================================================
@@ -943,46 +1047,46 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaCanaisCanal" value={primeiraLinhaCanaisCanal} onChange={handleInputChangeCanaisCanal} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaCanaisObjetivo" value={primeiraLinhaCanaisObjetivo} onChange={handleInputChangeCanaisObjetivo} />
                   </td>
                   <td>
-                    <input type="text" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
-                  </td>
-                  <td>
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaCanaisMetrica" value={primeiraLinhaCanaisMetrica} onChange={handleInputChangeCanaisMetrica} />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaCanaisCanal" value={segundaLinhaCanaisCanal} onChange={handleInputChangeCanaisCanal} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaCanaisObjetivo" value={segundaLinhaCanaisObjetivo} onChange={handleInputChangeCanaisObjetivo} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaCanaisMetrica" value={segundaLinhaCanaisMetrica} onChange={handleInputChangeCanaisMetrica} />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaCanaisCanal" value={terceiraLinhaCanaisCanal} onChange={handleInputChangeCanaisCanal} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaCanaisObjetivo" value={terceiraLinhaCanaisObjetivo} onChange={handleInputChangeCanaisObjetivo} />
                   </td>
                   <td>
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaCanaisMetrica" value={terceiraLinhaCanaisMetrica} onChange={handleInputChangeCanaisMetrica} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="quartaLinhaCanaisCanal" value={quartaLinhaCanaisCanal} onChange={handleInputChangeCanaisCanal} />
+                  </td>
+                  <td>
+                    <input type="text" name="quartaLinhaCanaisObjetivo" value={quartaLinhaCanaisObjetivo} onChange={handleInputChangeCanaisObjetivo} />
+                  </td>
+                  <td>
+                    <input type="text" name="quartaLinhaCanaisMetrica" value={quartaLinhaCanaisMetrica} onChange={handleInputChangeCanaisMetrica} />
                   </td>
                 </tr>
               </table>
@@ -998,22 +1102,22 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
                 <tr>
                   <td>
                     P1:
-                    <input type="text" />
+                    <input type="text" name="primeiraLinhaInteQuatroP" value={primeiraLinhaInteQuatroP} onChange={handleInputChangeInteQuatroP}/>
                   </td>
                   <td>
                     P2:
-                    <input type="text" />
+                    <input type="text" name="segundaLinhaInteQuatroP" value={segundaLinhaInteQuatroP} onChange={handleInputChangeInteQuatroP} />
                   </td>
                 </tr>
 
                 <tr>
                   <td>
                     P3:
-                    <input type="text" />
+                    <input type="text" name="terceiraLinhaInteQuatroP" value={terceiraLinhaInteQuatroP} onChange={handleInputChangeInteQuatroP} />
                   </td>
                   <td>
                     P4:
-                    <input type="text" />
+                    <input type="text" name="quartaLinhaInteQuatroP" value={quartaLinhaInteQuatroP} onChange={handleInputChangeInteQuatroP} />
                   </td>
                 </tr>
               </table>

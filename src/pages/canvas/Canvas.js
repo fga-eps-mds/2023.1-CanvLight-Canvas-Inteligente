@@ -53,6 +53,10 @@ function Canvas() {
   const [formacaoImpostos, setFormacaoImpostos] = useState({});
   const [formacaoMargem, setFormacaoMargem] = useState({});
   const [formacaoPreco, setFormacaoPreco] = useState({});
+  const [canaisCanal, setCanaisCanal] = useState({});
+  const [canaisObjetivo, setCanaisObjetivo] = useState({});
+  const [canaisMetrica, setCanaisMetrica] = useState({});
+  const [inteQuatroP, setInteQuatroP] = useState({});
 
 //observação2
   const handlePsObserChange =(novosDadosPsObser) => {
@@ -123,7 +127,7 @@ function Canvas() {
   const handleEmpresaChange = (novosDadosEmpresa) => {
     setEmpresa(novosDadosEmpresa);
   };
-//======================================================================================== Interação
+//Interação
   const handleDescricaoChange = (novosDadosDescricao) => {
     setDescricao(novosDadosDescricao);
   };
@@ -172,7 +176,18 @@ function Canvas() {
   const handleFormacaoPrecoChange = (novosDadosFormacaoPreco) => {
     setFormacaoPreco(novosDadosFormacaoPreco);
   };
-  
+  const handleCanaisCanalChange = (novosDadosCanaisCanal) => {
+    setCanaisCanal(novosDadosCanaisCanal);
+  };
+  const handleCanaisObjetivoChange = (novosDadosCanaisObjetivo) => {
+    setCanaisObjetivo(novosDadosCanaisObjetivo);
+  };
+  const handleCanaisMetricaChange = (novosDadosCanaisMetrica) => {
+    setCanaisMetrica(novosDadosCanaisMetrica);
+  };
+  const handleInteQuatroPChange = (novosDadosInteQuatroP) => {
+    setInteQuatroP(novosDadosInteQuatroP);
+  };
 
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
@@ -272,6 +287,10 @@ function Canvas() {
         onFormacaoImpostosChange={handleFormacaoImpostosChange}
         onFormacaoMargemChange={handleFormacaoMargemChange}
         onFormacaoPrecoChange={handleFormacaoPrecoChange}
+        onCanaisCanalChange={handleCanaisCanalChange}
+        onCanaisObjetivoChange={handleCanaisObjetivoChange}
+        onCanaisMetricaChange={handleCanaisMetricaChange}
+        onInteQuatroPChange={handleInteQuatroPChange}
       />
 
       <GeradorPDF
@@ -307,6 +326,10 @@ function Canvas() {
         formacaoImpostos={formacaoImpostos}
         formacaoMargem={formacaoMargem}
         formacaoPreco={formacaoPreco}
+        canaisCanal={canaisCanal}
+        canaisObjetivo={canaisObjetivo}
+        canaisMetrica={canaisMetrica}
+        inteQuatroP={inteQuatroP}
         
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">

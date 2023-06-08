@@ -3,8 +3,9 @@ import { jsPDF } from "jspdf";
 
 function GeradorPDF({ empresa, diferenca, porte, concorrencia, localizacao, imitado, 
   melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, 
-  analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota
-, mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado, formacaoDescricao, formacaoCusto, formacaoTaxa, formacaoImpostos, formacaoMargem, formacaoPreco,}) {
+  analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota,
+  mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado, formacaoDescricao, formacaoCusto, formacaoTaxa, formacaoImpostos, formacaoMargem, formacaoPreco,
+  canaisCanal, canaisObjetivo, canaisMetrica, inteQuatroP }) {
   function gerarPDF() {
     const doc = new jsPDF();
 
