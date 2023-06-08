@@ -144,6 +144,67 @@ function Tutorial() {
           Passo 5: Monitore e atualize regularmente a tabela com novos dados.
         </p>
       </div>
+      <div className="tut_perfis_cliente">
+        <h2>• Perfis dos Clientes</h2>
+        <p>
+        Uma tabela de perfis dos clientes é uma ferramenta útil para entender melhor 
+        quem são seus clientes, seus interesses, necessidades e características. Vamos
+        seguir alguns passos para preencher essa tabela:<br />
+        <br />
+        Passo 1: Liste as categorias de informações relevantes sobre os clientes.
+        <br />
+        Passo 2: Colete as informações dos clientes em cada categoria identificada.
+        <br />
+        Passo 3: Identifique padrões e características comuns entre os clientes.
+        <br />
+        Passo 4: Analise e segmente os clientes com base nos perfis identificados.
+        <br />
+        Passo 5: Utilize os perfis dos clientes para direcionar suas ações de marketing.
+        <br />
+        Passo 6: Atualize e revise a tabela periodicamente para acompanhar as mudanças
+        no público-alvo.
+        </p>
+      </div>
+      <div className="tut_proposta_valor">
+        <h2>• Proposta de Valor</h2>
+        <p>
+        Uma tabela de proposta de valor é uma ferramenta útil para definir e comunicar
+        os benefíciose valor que um produto ou serviço oferece aos clientes. Vamos seguir 
+        alguns passos para preencher essa tabela:<br />
+        <br />
+        Passo 1: Liste os elementos-chave da proposta de valor.
+        <br />
+        Passo 2: Descreva cada elemento detalhadamente, destacando os benefícios para o cliente.
+        <br />
+        Passo 3: Destaque os diferenciais competitivos que tornam sua oferta única.
+        <br />
+        Passo 4: Concentre-se nos benefícios tangíveis e intangíveis que os clientes obterão.
+        <br />
+        Passo 5: Revise e refine a proposta de valor para garantir clareza e consistência.
+        <br />
+        Passo 6: Utilize a tabela para comunicar a proposta de valor aos stakeholders.
+        </p>
+      </div>
+      <div className="tut_conceito">
+        <h2>• Conceito</h2>
+        <p>
+        Uma tabela de proposta de valor é uma ferramenta útil para definir e comunicar
+        os benefíciose valor que um produto ou serviço oferece aos clientes. Vamos seguir 
+        alguns passos para preencher essa tabela:<br />
+        <br />
+        Passo 1: Liste os elementos-chave da proposta de valor.
+        <br />
+        Passo 2: Descreva cada elemento detalhadamente, destacando os benefícios para o cliente.
+        <br />
+        Passo 3: Destaque os diferenciais competitivos que tornam sua oferta única.
+        <br />
+        Passo 4: Concentre-se nos benefícios tangíveis e intangíveis que os clientes obterão.
+        <br />
+        Passo 5: Revise e refine a proposta de valor para garantir clareza e consistência.
+        <br />
+        Passo 6: Utilize a tabela para comunicar a proposta de valor aos stakeholders.
+        </p>
+      </div>
     </div>
   );
 }
