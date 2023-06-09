@@ -1,7 +1,7 @@
 import './Observacao2.css'
 import React, { useState } from 'react';
 
-function Observacao2(onPsObserChange){
+function Observacao2({onPsObserChange}){
     const [primeiroP, setPrimeiroP] = useState();
     const [segundoP, setSegundoP] = useState ();
     const [terceiroP, setTerceiroP] = useState ();
