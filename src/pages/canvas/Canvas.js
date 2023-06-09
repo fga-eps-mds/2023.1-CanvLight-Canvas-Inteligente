@@ -20,6 +20,7 @@ function Canvas() {
   const [psObser, setPsObser] = useState ({});
   const [aproximados, setAproximados] = useState ({});
   const [ferramentas, setFerramentas] = useState ({});
+  const [requisitos, setRequisitos] = useState ({});
 
 //observação1
   const [empresa, setEmpresa] = useState({});
@@ -71,6 +72,10 @@ function Canvas() {
   }
 
 //observação2
+  const handleRequisitosChange =(novosDadosRequisitos) => {
+    setRequisitos(novosDadosRequisitos);
+  }
+
   const handleFerramentasChange =(novosDadosFerramentas) => {
     setFerramentas(novosDadosFerramentas);
   }
@@ -291,6 +296,7 @@ function Canvas() {
         onPsObserChange={handlePsObserChange}
         onAproximadosChange={handleAproximadosChange}
         onFerramentasChange={handleFerramentasChange}
+        onRequisitosChange={handleRequisitosChange}
       />
 
       <Observacao3 />

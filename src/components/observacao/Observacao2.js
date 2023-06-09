@@ -1,7 +1,7 @@
 import './Observacao2.css'
 import React, { useState } from 'react';
 
-function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange}){
+function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange, onRequisitosChange}){
     const [primeiroP, setPrimeiroP] = useState();
     const [segundoP, setSegundoP] = useState ();
     const [terceiroP, setTerceiroP] = useState ();
@@ -12,6 +12,28 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange}
     const [primeiraLinhaFerramentas, setPrimeiraLinhaFerramentas] = useState();
     const [segundaLinhaFerramentas, setSegundaLinhaFerramentas] = useState();
     const [terceiraLinhaFerramentas, setTerceiraLinhaFerramentas] = useState();
+    const [primeiraLinhaRequisitos, setPrimeiraLinhaRequisitos] = useState();
+    const [segundaLinhaRequisitos, setSegundaLinhaRequisitos] = useState();
+    const [terceiraLinhaRequisitos, setTerceiraLinhaRequisitos] = useState();
+
+    const handleInputChangeRequisitos = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaRequisitos') {
+            setPrimeiraLinhaRequisitos(value);
+        } else if (name === 'segundaLinhaRequisitos') {
+            setSegundaLinhaRequisitos(value);
+        } else if (name === 'terceiraLinhaRequisitos') {
+            setTerceiraLinhaRequisitos(value);
+        }
+
+        const novosDadosRequisitos = {
+            primeiraLinhaRequisitos: name === 'primeiraLinhaRequisitos' ? value : primeiraLinhaRequisitos,
+            segundaLinhaRequisitos: name === 'segundaLinhaRequisitos' ? value : segundaLinhaRequisitos,
+            terceiraLinhaRequisitos: name === 'terceiraLinhaRequisitos' ? value : terceiraLinhaRequisitos,
+        };
+
+        onRequisitosChange(novosDadosRequisitos);
+    }
 
     const handleInputChangeFerramentas = (e)=>{
         const {name ,value} = e.target;
@@ -156,7 +178,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange}
 
                         <tr>
                             <td><input type="text" name='primeiraLinhaFerramentas' value={primeiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaRequisitos' value={primeiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -165,7 +187,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange}
 
                         <tr>
                             <td><input type="text" name='segundaLinhaFerramentas' value={segundaLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaRequisitos' value={segundaLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -174,7 +196,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange}
 
                         <tr>
                             <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaFerramentas' value={terceiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='terceiraLinhaRequisitos' value={terceiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
