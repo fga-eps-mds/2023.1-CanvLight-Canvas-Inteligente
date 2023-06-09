@@ -2,7 +2,7 @@ import './Observacao2.css'
 import React, { useState } from 'react';
 
 function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange, onRequisitosChange,
-    onOportunidadesChange
+    onOportunidadesChange, onIndicadoChange
 }){
     const [primeiroP, setPrimeiroP] = useState();
     const [segundoP, setSegundoP] = useState ();
@@ -20,6 +20,28 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
     const [primeiraLinhaOportunidades, setPrimeiraLinhaOportunidades] = useState();
     const [segundaLinhaOportunidades, setSegundaLinhaOportunidades] = useState();
     const [terceiraLinhaOportunidades, setTerceiraLinhaOportunidades] = useState();
+    const [primeiraLinhaIndicado, setPrimeiraLinhaIndicado] = useState();
+    const [segundaLinhaIndicado, setSegundaLinhaIndicado] = useState();
+    const [terceiraLinhaIndicado, setTerceiraLinhaIndicado] = useState();
+
+    const handleInputChangeIndicado = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaIndicado') {
+            setPrimeiraLinhaIndicado(value);
+        } else if (name === 'segundaLinhaIndicado') {
+            setSegundaLinhaIndicado(value);
+        } else if (name === 'terceiraLinhaIndicado') {
+            setTerceiraLinhaIndicado(value);
+        }
+
+        const novosDadosIndicado = {
+            primeiraLinhaIndicado: name === 'primeiraLinhaIndicado' ? value : primeiraLinhaIndicado,
+            segundaLinhaIndicado: name === 'segundaLinhaIndicado' ? value : segundaLinhaIndicado,
+            terceiraLinhaIndicado: name === 'terceiraLinhaIndicado' ? value : terceiraLinhaIndicado,
+        };
+
+        onIndicadoChange(novosDadosIndicado);
+    }
 
     const handleInputChangeOportunidades = (e)=>{
         const {name ,value} = e.target;
@@ -204,7 +226,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
                             <td><input type="text" name='primeiraLinhaFerramentas' value={primeiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
                             <td><input type="text" name='primeiraLinhaRequisitos' value={primeiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
                             <td><input type="text" name='primeiraLinhaOportunidades' value={primeiraLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaindicado' value={primeiraLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                         </tr>
@@ -213,7 +235,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
                             <td><input type="text" name='segundaLinhaFerramentas' value={segundaLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
                             <td><input type="text" name='segundaLinhaRequisitos' value={segundaLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
                             <td><input type="text" name='segundaLinhaOportunidades' value={segundaLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaindicado' value={segundaLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                         </tr>
@@ -222,7 +244,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
                             <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaFerramentas' value={terceiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
                             <td><input type="text" name='terceiraLinhaRequisitos' value={terceiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
                             <td><input type="text" name='terceiraLinhaOportunidades' value={terceiraLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaindicado' value={segundaLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
                             <td><input type="text"/></td>
                             <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
                         </tr>

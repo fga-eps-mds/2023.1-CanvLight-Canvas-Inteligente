@@ -22,6 +22,7 @@ function Canvas() {
   const [ferramentas, setFerramentas] = useState ({});
   const [requisitos, setRequisitos] = useState ({});
   const [opotunidades, setOportunidades] =useState ({});
+  const [indicado, setIndicado] = useState ({});
 
 //observação1
   const [empresa, setEmpresa] = useState({});
@@ -73,6 +74,10 @@ function Canvas() {
   }
 
 //observação2
+  const handleIndicadoChange =(novosDadosIndicado) => {
+    setIndicado(novosDadosIndicado);
+  }
+
   const handleOportunidadesChange =(novosDadosOportunidades) => {
     setOportunidades(novosDadosOportunidades);
   }
@@ -303,6 +308,7 @@ function Canvas() {
         onFerramentasChange={handleFerramentasChange}
         onRequisitosChange={handleRequisitosChange}
         onOportunidadesChange={handleOportunidadesChange}
+        onIndicadoChange={handleIndicadoChange}
       />
 
       <Observacao3 />
