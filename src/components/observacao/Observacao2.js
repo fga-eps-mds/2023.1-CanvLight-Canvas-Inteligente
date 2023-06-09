@@ -1,7 +1,7 @@
 import './Observacao2.css'
 import React, { useState } from 'react';
 
-function Observacao2({onPsObserChange, onAproximadosChange}){
+function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange}){
     const [primeiroP, setPrimeiroP] = useState();
     const [segundoP, setSegundoP] = useState ();
     const [terceiroP, setTerceiroP] = useState ();
@@ -9,6 +9,28 @@ function Observacao2({onPsObserChange, onAproximadosChange}){
     const [alinhadosObser2, setAlinhadosObser2] = useState ();
     const [proximos, setProximos] = useState ();
     const [concorrenteObser2, setConcorrenteOser2] = useState ();
+    const [primeiraLinhaFerramentas, setPrimeiraLinhaFerramentas] = useState();
+    const [segundaLinhaFerramentas, setSegundaLinhaFerramentas] = useState();
+    const [terceiraLinhaFerramentas, setTerceiraLinhaFerramentas] = useState();
+
+    const handleInputChangeFerramentas = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaFerramentas') {
+            setPrimeiraLinhaFerramentas(value);
+        } else if (name === 'segundaLinhaFerramentas') {
+            setSegundaLinhaFerramentas(value);
+        } else if (name === 'terceiraLinhaFerramentas') {
+            setTerceiraLinhaFerramentas(value);
+        }
+
+        const novosDadosFerramentas = {
+            primeiraLinhaFerramentas: name === 'primeiraLinhaFerramentas' ? value : primeiraLinhaFerramentas,
+            segundaLinhaFerramentas: name === 'segundaLinhaFerramentas' ? value : segundaLinhaFerramentas,
+            terceiraLinhaFerramentas: name === 'terceiraLinhaFerramentas' ? value : terceiraLinhaFerramentas,
+        };
+
+        onFerramentasChange(novosDadosFerramentas);
+    }
 
     const handleInputChangeAproximados = (e)=>{
         const {name ,value} = e.target;
@@ -133,16 +155,7 @@ function Observacao2({onPsObserChange, onAproximadosChange}){
                         </tr>
 
                         <tr>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                            <td><input type="text"/></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaFerramentas' value={primeiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
@@ -151,7 +164,16 @@ function Observacao2({onPsObserChange, onAproximadosChange}){
                         </tr>
 
                         <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text"/></td>
+                            <td><input type="text" name='segundaLinhaFerramentas' value={segundaLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </tr>
+
+                        <tr>
+                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaFerramentas' value={terceiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>

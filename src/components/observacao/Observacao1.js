@@ -67,7 +67,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         }
 
         const novosDadosPerfil2 = {
-            setPrimeiraLinhaPerfil2: name === 'primeiraLinhaPerfil2' ? value : primeiraLinhaPerfil2,
+            primeiraLinhaPerfil2: name === 'primeiraLinhaPerfil2' ? value : primeiraLinhaPerfil2,
             segundaLinhaPerfil2: name === 'segundaLinhaPerfil2' ? value : segundaLinhaPerfil2,
             terceiraLinhaPerfil2: name === 'terceiraLinhaPerfil2' ? value : terceiraLinhaPerfil2,
         };
