@@ -1,11 +1,33 @@
 import './Observacao2.css'
 import React, { useState } from 'react';
 
-function Observacao2({onPsObserChange}){
+function Observacao2({onPsObserChange, onAproximadosChange}){
     const [primeiroP, setPrimeiroP] = useState();
     const [segundoP, setSegundoP] = useState ();
     const [terceiroP, setTerceiroP] = useState ();
     const [quartoP, setQuartoP] = useState ();
+    const [alinhadosObser2, setAlinhadosObser2] = useState ();
+    const [proximos, setProximos] = useState ();
+    const [concorrenteObser2, setConcorrenteOser2] = useState ();
+
+    const handleInputChangeAproximados = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'alinhadosObser2') {
+            setAlinhadosObser2(value);
+        } else if (name === 'proximos') {
+            setProximos(value);
+        } else if (name === 'concorrenteObser2') {
+            setConcorrenteOser2(value);
+        } 
+
+        const novosDadosAproximados = {
+            setAlinhadosObser2: name === 'alinhadosObser2' ? value : alinhadosObser2,
+            setProximos: name === 'proximos' ? value : proximos,
+            setConcorrenteOser2: name === 'concorrenteObser2' ? value : concorrenteObser2,
+        };
+
+        onAproximadosChange(novosDadosAproximados);
+    }
 
     const handleInputChangePsObser = (e)=>{
         const {name ,value} = e.target;
@@ -78,19 +100,19 @@ function Observacao2({onPsObserChange}){
                 <div className='Relacionamento'>
                     <div className='Single'> 
                         <span>Quais parceiros são mais alinhados ao meu negócio</span>
-                        <input type='text'/>
+                        <input type='text' name='alinhadosObser2' value={alinhadosObser2} onChange={handleInputChangeAproximados}/>
 
                     </div>
 
                     <div className='Single'> 
                         <span>De quais parceiros devemos nos aproximar?</span>
-                        <input type='text'/>
+                        <input type='text' name='proximos' value={proximos} onChange={handleInputChangeAproximados}/>
                         
                     </div>
 
                     <div className='Single'> 
                         <span>Conseguimos transformar algum concorrente em parceiro?</span>
-                        <input type='text'/>
+                        <input type='text'name='concorrenteObser2' value={concorrenteObser2} onChange={handleInputChangeAproximados}/>
                         
                     </div>
                 </div>
