@@ -24,6 +24,7 @@ function Canvas() {
   const [opotunidades, setOportunidades] =useState ({});
   const [indicado, setIndicado] = useState ({});
   const [orientacao, setOrientacao] = useState ({});
+  const [resultado, setResultado] = useState ({});
  
 //observação1
   const [empresa, setEmpresa] = useState({});
@@ -75,6 +76,10 @@ function Canvas() {
   }
 
 //observação2
+  const handleResultadoChange =(novosDadosResultado) => {
+    setResultado(novosDadosResultado);
+  }
+
   const handleOrientacaoChange =(novosDadosOrientacao) => {
     setOrientacao(novosDadosOrientacao);
   }
@@ -315,6 +320,7 @@ function Canvas() {
         onOportunidadesChange={handleOportunidadesChange}
         onIndicadoChange={handleIndicadoChange}
         onOrientacaoChange={handleOrientacaoChange}
+        onResultadoChange={handleResultadoChange}
       />
 
       <Observacao3 />
