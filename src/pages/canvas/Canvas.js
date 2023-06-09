@@ -16,6 +16,7 @@ function Canvas() {
 //intuição
   const [sintesePotencialidades, setSintesePotencialidades] = useState({});
   const [sinteseResultados, setSinteseResultados] = useState({});
+  const [intuQuatroP, setIntuQuatroP] = useState({});
 //observação2
   const [psObser, setPsObser] = useState ({});
   const [aproximados, setAproximados] = useState ({});
@@ -74,6 +75,10 @@ function Canvas() {
   const handleSinteseResultadosChange = (novosDadosSinteseResultados) => {
     setSinteseResultados(novosDadosSinteseResultados);
   }
+
+  const handleIntuQuatroPChange = (novosDadosIntuQuatroP) => {
+    setIntuQuatroP(novosDadosIntuQuatroP);
+  };
 
 //observação2
   const handleResultadoChange =(novosDadosResultado) => {
@@ -291,6 +296,7 @@ function Canvas() {
       <Intuicao 
         onSintesePotencialidadesChange={handleSintesePotencialidadesChange}
         onSinteseResultadosChange={handleSinteseResultadosChange}
+        onIntuQuatroPChange={handleIntuQuatroPChange}
       />
 
       <Observacao1 
@@ -352,6 +358,7 @@ function Canvas() {
         //intuição
         sintesePotencialidades={sintesePotencialidades}
         sinteseResultados={sinteseResultados}
+        intuQuatroP={intuQuatroP}
 
         //
         empresa={empresa}

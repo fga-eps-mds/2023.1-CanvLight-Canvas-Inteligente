@@ -4,7 +4,7 @@ import dateIntuition from "../../images/dateIntuition.png";
 import React, { useState } from "react";
 import GeradorPDF from "../GeradorPDF/GeradorPDF";
 
-function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange }) {
+function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, onIntuQuatroPChange }) {
 
     const [projeto, setProjeto] = useState("");
     const [equipe, setEquipe] = useState("");
@@ -75,7 +75,31 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange })
       onSinteseResultadosChange(novosDadosSinteseResultados);
   }
 
-  
+  const [primeiraLinhaIntuQuatroP, setPrimeiraLinhaIntuQuatroP] = useState("");
+  const [segundaLinhaIntuQuatroP, setSegundaLinhaIntuQuatroP] = useState("");
+  const [terceiraLinhaIntuQuatroP, setTerceiraLinhaIntuQuatroP] = useState("");
+  const [quartaLinhaIntuQuatroP, setQuartaLinhaIntuQuatroP] = useState("");
+
+  const handleInputChangeIntuQuatroP = (e) => {
+    const { name, value } = e.target;
+    if (name === 'primeiraLinhaIntuQuatroP') {
+      setPrimeiraLinhaIntuQuatroP(value);
+    } else if (name === 'segundaLinhaIntuQuatroP') {
+      setSegundaLinhaIntuQuatroP(value);
+    } else if (name === 'terceiraLinhaIntuQuatroP') {
+      setTerceiraLinhaIntuQuatroP(value);
+    } else if (name === 'quartaLinhaIntuQuatroP') {
+      setQuartaLinhaIntuQuatroP(value);
+    } 
+
+    const novosDadosIntuQuatroP = {
+      primeiraLinhaIntuQuatroP: name === 'primeiraLinhaIntuQuatroP' ? value : primeiraLinhaIntuQuatroP,
+      segundaLinhaIntuQuatroP: name === 'segundaLinhaIntuQuatroP' ? value : segundaLinhaIntuQuatroP,
+      terceiraLinhaIntuQuatroP: name === 'terceiraLinhaIntuQuatroP' ? value : terceiraLinhaIntuQuatroP,
+      quartaLinhaIntuQuatroP: name === 'quartaLinhaIntuQuatroP' ? value : quartaLinhaIntuQuatroP,
+    };
+    onIntuQuatroPChange(novosDadosIntuQuatroP);
+  }
 
   //===============================================================================================
   function clicouNaDuvida() {
@@ -202,22 +226,22 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange })
               <tr>
                 <td>
                   P1:
-                  <input type="text" />
+                  <input type="text" name="primeiraLinhaIntuQuatroP" value={primeiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
                 <td>
                   P2:
-                  <input type="text" />
+                  <input type="text" name="segundaLinhaIntuQuatroP" value={segundaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
               </tr>
 
               <tr>
                 <td>
                   P3:
-                  <input type="text" />
+                  <input type="text" name="terceiraLinhaIntuQuatroP" value={terceiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
                 <td>
                   P4:
-                  <input type="text" />
+                  <input type="text" name="quartaLinhaIntuQuatroP" value={quartaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
               </tr>
             </table>
@@ -274,8 +298,6 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange })
         projeto={projeto}
         equipe={equipe}
         dnaNegocio={dnaNegocio}
-         
-        // Passe outros dados de input conforme forem adicionados
       />
     </div>
   );
