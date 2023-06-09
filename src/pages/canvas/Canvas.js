@@ -21,6 +21,7 @@ function Canvas() {
   const [aproximados, setAproximados] = useState ({});
   const [ferramentas, setFerramentas] = useState ({});
   const [requisitos, setRequisitos] = useState ({});
+  const [opotunidades, setOportunidades] =useState ({});
 
 //observação1
   const [empresa, setEmpresa] = useState({});
@@ -72,6 +73,10 @@ function Canvas() {
   }
 
 //observação2
+  const handleOportunidadesChange =(novosDadosOportunidades) => {
+    setOportunidades(novosDadosOportunidades);
+  }
+
   const handleRequisitosChange =(novosDadosRequisitos) => {
     setRequisitos(novosDadosRequisitos);
   }
@@ -297,6 +302,7 @@ function Canvas() {
         onAproximadosChange={handleAproximadosChange}
         onFerramentasChange={handleFerramentasChange}
         onRequisitosChange={handleRequisitosChange}
+        onOportunidadesChange={handleOportunidadesChange}
       />
 
       <Observacao3 />
