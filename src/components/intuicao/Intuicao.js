@@ -4,7 +4,7 @@ import dateIntuition from "../../images/dateIntuition.png";
 import React, { useState } from "react";
 import GeradorPDF from "../GeradorPDF/GeradorPDF";
 
-function Intuicao() {
+function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange }) {
 
     const [projeto, setProjeto] = useState("");
     const [equipe, setEquipe] = useState("");
@@ -28,6 +28,54 @@ function Intuicao() {
       terceiroCanto: "",
       quartoCanto: "",
     });
+
+  const [primeiraLinhaSintesePotencialidades, setPrimeiraLinhaSintesePotencialidades] = useState("");
+  const [segundaLinhaSintesePotencialidades, setSegundaLinhaSintesePotencialidades] = useState("");
+  const [terceiraLinhaSintesePotencialidades, setTerceiraLinhaSintesePotencialidades] = useState("");
+
+  const handleInputChangeSintesePotencialidades = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaSintesePotencialidades') {
+        setPrimeiraLinhaSintesePotencialidades(value);
+      } else if (name === 'segundaLinhaSintesePotencialidades') {
+        setSegundaLinhaSintesePotencialidades(value);
+      } else if (name === 'terceiraLinhaSintesePotencialidades') {
+        setTerceiraLinhaSintesePotencialidades(value);
+      }
+  
+    const novosDadosSintesePotencialidades = {
+        primeiraLinhaSintesePotencialidades: name === 'primeiraLinhaSintesePotencialidades' ? value : primeiraLinhaSintesePotencialidades,
+        segundaLinhaSintesePotencialidades: name === 'segundaLinhaSintesePotencialidades' ? value : segundaLinhaSintesePotencialidades,
+        terceiraLinhaSintesePotencialidades: name === 'terceiraLinhaSintesePotencialidades' ? value : terceiraLinhaSintesePotencialidades,
+      };
+  
+      onSintesePotencialidadesChange(novosDadosSintesePotencialidades);
+  }
+
+  const [primeiraLinhaSinteseResultados, setPrimeiraLinhaSinteseResultados] = useState("");
+  const [segundaLinhaSinteseResultados, setSegundaLinhaSinteseResultados] = useState("");
+  const [terceiraLinhaSinteseResultados, setTerceiraLinhaSinteseResultados] = useState("");
+
+  const handleInputChangeSinteseResultados = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaSinteseResultados') {
+        setPrimeiraLinhaSinteseResultados(value);
+      } else if (name === 'segundaLinhaSinteseResultados') {
+        setSegundaLinhaSinteseResultados(value);
+      } else if (name === 'terceiraLinhaSinteseResultados') {
+        setTerceiraLinhaSinteseResultados(value);
+      }
+  
+    const novosDadosSinteseResultados = {
+        primeiraLinhaSinteseResultados: name === 'primeiraLinhaSinteseResultados' ? value : primeiraLinhaSinteseResultados,
+        segundaLinhaSinteseResultados: name === 'segundaLinhaSinteseResultados' ? value : segundaLinhaSinteseResultados,
+        terceiraLinhaSinteseResultados: name === 'terceiraLinhaSinteseResultados' ? value : terceiraLinhaSinteseResultados,
+      };
+  
+      onSinteseResultadosChange(novosDadosSinteseResultados);
+  }
+
+  
 
   //===============================================================================================
   function clicouNaDuvida() {
@@ -187,28 +235,28 @@ function Intuicao() {
 
               <tr>
                 <td>
-                  <input type="text" />
+                  <input type="text" name='primeiraLinhaSintesePotencialidades' value={primeiraLinhaSintesePotencialidades} onChange={handleInputChangeSintesePotencialidades} />
                 </td>
                 <td>
-                  <input type="text" />
+                  <input type="text" name='primeiraLinhaSinteseResultados' value={primeiraLinhaSinteseResultados} onChange={handleInputChangeSinteseResultados} />
                 </td>
               </tr>
 
               <tr>
                 <td>
-                  <input type="text" />
+                  <input type="text" name='segundaLinhaSintesePotencialidades' value={segundaLinhaSintesePotencialidades} onChange={handleInputChangeSintesePotencialidades}  />
                 </td>
                 <td>
-                  <input type="text" />
+                  <input type="text" name='segundaLinhaSinteseResultados' value={segundaLinhaSinteseResultados} onChange={handleInputChangeSinteseResultados} />
                 </td>
               </tr>
 
               <tr>
                 <td className="quarto-canto">
-                  <input className="quarto-canto" type="text" />
+                  <input className="quarto-canto" type="text" name='terceiraLinhaSintesePotencialidades' value={terceiraLinhaSintesePotencialidades} onChange={handleInputChangeSintesePotencialidades} />
                 </td>
                 <td className="terceiro-canto">
-                  <input className="teceiro-canto" type="text" />
+                  <input className="teceiro-canto" type="text" name='terceiraLinhaSinteseResultados' value={terceiraLinhaSinteseResultados} onChange={handleInputChangeSinteseResultados} />
                 </td>
               </tr>
             </table>

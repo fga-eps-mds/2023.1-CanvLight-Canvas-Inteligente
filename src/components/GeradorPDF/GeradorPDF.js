@@ -1,7 +1,7 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 
-function GeradorPDF({ 
+function GeradorPDF({ sintesePotencialidades, sinteseResultados,
   empresa, diferenca, porte, concorrencia, localizacao, imitado, 
   melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, 
   analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota,
@@ -11,7 +11,13 @@ function GeradorPDF({
     const doc = new jsPDF();
 
     //Intuicao
-    
+    doc.text(`SintesePotencialidades1: ${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 100,140);
+    doc.text(`SintesePotencialidades2: ${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 100,150);
+    doc.text(`SintesePotencialidades3: ${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 100,160);
+
+    doc.text(`SinteseResultados1: ${sinteseResultados.primeiraLinhaSinteseResultados}`, 100,140);
+    doc.text(`SinteseResultados2: ${sinteseResultados.segundaLinhaSinteseResultados}`, 100,150);
+    doc.text(`SinteseResultados3: ${sinteseResultados.terceiraLinhaSinteseResultados}`, 100,160);
 
     //observação
     // doc.text(`empresa: ${empresa.primeiraLinhaEmpresa}`, 10,10);
@@ -118,10 +124,10 @@ function GeradorPDF({
     doc.text(`MvpResultado3: ${mvpResultado.terceiraLinhaMvpResultado}`, 100,160);
     doc.text(`MvpResultado4: ${mvpResultado.quartaLinhaMvpResultado}`, 100,170); */
 
-    doc.text(`FormacaoDescricao1: ${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 100,140);
+    /* doc.text(`FormacaoDescricao1: ${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 100,140);
     doc.text(`FormacaoDescricao2: ${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 100,150);
     doc.text(`FormacaoDescricao3: ${formacaoDescricao.terceiraLinhaFormacaoDescricao}`, 100,160);
-    doc.text(`FormacaoDescricao4: ${formacaoDescricao.quartaLinhaFormacaoDescricao}`, 100,170);
+    doc.text(`FormacaoDescricao4: ${formacaoDescricao.quartaLinhaFormacaoDescricao}`, 100,170); */
 
     doc.save("Canvas.pdf");
   }

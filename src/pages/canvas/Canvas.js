@@ -13,6 +13,9 @@ import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {
 
+//intuição
+  const [sintesePotencialidades, setSintesePotencialidades] = useState({});
+  const [sinteseResultados, setSinteseResultados] = useState({});
 //observação2
   const [psObser, setPsObser] = useState ({});
 
@@ -55,6 +58,15 @@ function Canvas() {
   const [canaisObjetivo, setCanaisObjetivo] = useState({});
   const [canaisMetrica, setCanaisMetrica] = useState({});
   const [inteQuatroP, setInteQuatroP] = useState({});
+
+//intuição
+  const handleSintesePotencialidadesChange = (novosDadosSintesePotencialidades) => {
+    setSintesePotencialidades(novosDadosSintesePotencialidades);
+  }
+
+  const handleSinteseResultadosChange = (novosDadosSinteseResultados) => {
+    setSinteseResultados(novosDadosSinteseResultados);
+  }
 
 //observação2
   const handlePsObserChange =(novosDadosPsObser) => {
@@ -241,7 +253,10 @@ function Canvas() {
           </div>
         </div>
       </div>
-      <Intuicao />
+      <Intuicao 
+        onSintesePotencialidadesChange={handleSintesePotencialidadesChange}
+        onSinteseResultadosChange={handleSinteseResultadosChange}
+      />
 
       <Observacao1 
         onEmpresaChange={handleEmpresaChange}
@@ -292,6 +307,11 @@ function Canvas() {
       />
 
       <GeradorPDF
+        //intuição
+        sintesePotencialidades={sintesePotencialidades}
+        sinteseResultados={sinteseResultados}
+
+        //
         empresa={empresa}
         diferenca={diferenca}
         porte={porte}
