@@ -344,3 +344,175 @@
   font-size: 18px;
   text-align: justify;
 }
+
+.tut_modelo {
+  z-index: 1;
+  top: 170%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_modelo h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_modelo p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_prototipo {
+  z-index: 1;
+  top: 190%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_prototipo h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_prototipo p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_analise_custo {
+  z-index: 1;
+  top: 210%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_analise_custo h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_analise_custo p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_analise_preco_diferenciais {
+  z-index: 1;
+  top: 230%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_analise_preco_diferenciais h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_analise_preco_diferenciais p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_melhorias {
+  z-index: 1;
+  top: 250%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_melhorias h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_melhorias p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_mvp {
+  z-index: 1;
+  top: 265%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_mvp h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_mvp p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_formacao_preco {
+  z-index: 1;
+  top: 285%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_formacao_preco h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_formacao_preco p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+
+.tut_digitalizacao {
+  z-index: 1;
+  top: 315%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_digitalizacao h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_digitalizacao p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
+
+.tut_canais_venda {
+  z-index: 1;
+  top: 330%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tut_canais_venda h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_canais_venda p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify
+}
