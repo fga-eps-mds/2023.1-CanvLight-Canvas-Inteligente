@@ -1,5 +1,5 @@
 .tut_body {
-  height: 570vh;
+  height: 830vh;
   background-image: linear-gradient(#e95420, #77216f);
 }
 .sol-bg-tut {
@@ -24,9 +24,29 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.tut_dna {
+
+.introducao {
   z-index: 1;
   top: 10%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.introducao h2 {
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.introducao p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.tut_dna {
+  z-index: 1;
+  top: 120%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -44,7 +64,7 @@
 }
 .tut_ikigai {
   z-index: 1;
-  top: 38%;
+  top: 160%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -62,7 +82,7 @@
 }
 .tut_fourps {
   z-index: 1;
-  top: 68%;
+  top: 205%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -80,7 +100,7 @@
 }
 .tut_sintese {
   z-index: 1;
-  top: 98%;
+  top: 250%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -98,7 +118,7 @@
 }
 .tut_benchmaking {
   z-index: 1;
-  top: 128%;
+  top: 290%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -117,7 +137,7 @@
 
 .tut_perfis_cliente {
   z-index: 1;
-  top: 156%;
+  top: 330%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -138,7 +158,7 @@
 
 .tut_proposta_valor {
   z-index: 1;
-  top: 186%;
+  top: 370%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -157,7 +177,7 @@
 
 .tut_conceito {
   z-index: 1;
-  top: 218%;
+  top: 410%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -176,7 +196,7 @@
 
 .tut_modelo {
   z-index: 1;
-  top: 253%;
+  top: 457%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -195,7 +215,7 @@
 
 .tut_prototipo {
   z-index: 1;
-  top: 286%;
+  top: 495%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -214,7 +234,7 @@
 
 .tut_analise_custo {
   z-index: 1;
-  top: 323%;
+  top: 532%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -233,7 +253,7 @@
 
 .tut_analise_preco_diferenciais {
   z-index: 1;
-  top: 360%;
+  top: 575%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -252,7 +272,7 @@
 
 .tut_melhorias {
   z-index: 1;
-  top: 395%;
+  top: 615%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -271,7 +291,7 @@
 
 .tut_mvp {
   z-index: 1;
-  top: 425%;
+  top: 645%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -290,7 +310,7 @@
 
 .tut_formacao_preco {
   z-index: 1;
-  top: 460%;
+  top: 685%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -309,7 +329,7 @@
 
 .tut_digitalizacao {
   z-index: 1;
-  top: 500%;
+  top: 745%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -328,7 +348,7 @@
 
 .tut_canais_venda {
   z-index: 1;
-  top: 528%;
+  top: 773%;
   left: 10%;
   width: 80%;
   position: absolute;

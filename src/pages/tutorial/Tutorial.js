@@ -28,6 +28,57 @@ function Tutorial() {
       <div className="sol-bg-tut">
         <div className="sol-inv-tut"></div>
       </div>
+      <div className="introducao">
+        <h2>• Gerador de Canvas de Negócio: Crie, Visualize e Baixe seu Canvas com Facilidade!</h2>
+        <p>
+        Bem-vindo ao nosso tutorial sobre o Gerador de Canvas de Negócio! Com esta ferramenta, 
+        você poderá criar o seu próprio Canvas de forma fácil e eficiente. Para começar, é 
+        necessário responder a cada módulo individualmente.<br />
+        Na página inicial, você encontrará um botão chamado "Gerar Canvas". Ao clicar neste 
+        botão, você será redirecionado para uma nova aba, onde poderá preencher as informações 
+        necessárias. Nessa página, você encontrará quatro botões: Intuição, Observação, 
+        Interação e Confirmar.<br />
+        <br />
+        • Módulo de Intuição: Neste módulo, concentre-se em suas ideias iniciais, insights e 
+        intuições sobre o seu negócio. Pense nos seus valores, propósito, missão e no problema 
+        que seu produto ou serviço resolve. Explore suas ideias com criatividade e não tenha 
+        medo de pensar fora da caixa.<br />
+
+        • Módulo de Observação: Aqui, é importante analisar o mercado, os concorrentes e os 
+        clientes. Observe o que está acontecendo no seu segmento, identifique tendências e 
+        analise o comportamento dos consumidores. Isso ajudará você a entender melhor o contexto 
+        em que o seu negócio está inserido e a identificar oportunidades.<br />
+
+        • Módulo de Interação: Neste módulo, pense nas principais interações que ocorrem no 
+        seu negócio. Considere como você se relaciona com os clientes, parceiros e fornecedores. 
+        Analise os canais de comunicação, as estratégias de marketing e as formas de entrega do seu 
+        produto ou serviço. <br />
+
+        • Módulo de Confirmar: No último módulo, é hora de revisar todas as informações fornecidas 
+        anteriormente e confirmar a consistência e coerência do seu Canvas. Verifique se as seções 
+        estão alinhadas e se você abordou todos os aspectos importantes do seu negócio. 
+        Certifique-se de que sua proposta de valor esteja clara e de que os diferentes módulos se 
+        complementem.<br />
+        <br />
+        Ao clicar no botão "Intuição", você terá acesso a um formulário para preenchimento. Após 
+        responder todas as perguntas, você poderá finalizar clicando no ícone de verificação 
+        localizado no canto inferior direito da página. Em seguida, você passará para a próxima 
+        parte do Canvas. Repita o mesmo processo para os módulos de Observação e Interação, 
+        preenchendo os formulários e clicando no ícone de verificação.<br />
+        Após preencher os três módulos, clique novamente no ícone de verificação na página que 
+        exibe os quatro botões. Isso permitirá que você acesse a pré-visualização do seu Canvas. 
+        A pré-visualização mostrará uma representação visual do seu Canvas de Negócio completo, 
+        com todos os módulos preenchidos.<br />
+        Por fim, você poderá baixar o seu Canvas de Negócio, Assim, você terá em mãos uma 
+        poderosa ferramenta para planejar e visualizar a estrutura e os elementos-chave do seu 
+        negócio.<br />
+        Não hesite em explorar todas as funcionalidades do nosso Gerador de Canvas de Negócio 
+        para obter insights valiosos e organizar suas ideias de maneira eficaz. Boa sorte na 
+        criação do seu Canvas!<br />
+        Para ajudar você a preencher cada campo do questionário, abaixo seguem algumas dicas 
+        úteis:<br />
+        </p>
+      </div>
       <div className="tut_dna">
         <h2>• DNA do Negócio</h2>
         <p>
