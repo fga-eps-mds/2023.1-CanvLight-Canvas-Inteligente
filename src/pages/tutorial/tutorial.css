@@ -347,7 +347,7 @@
 
 .tut_modelo {
   z-index: 1;
-  top: 170%;
+  top: 253%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -361,12 +361,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_prototipo {
   z-index: 1;
-  top: 190%;
+  top: 286%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -380,12 +380,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_analise_custo {
   z-index: 1;
-  top: 210%;
+  top: 323%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -399,12 +399,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_analise_preco_diferenciais {
   z-index: 1;
-  top: 230%;
+  top: 360%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -418,12 +418,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_melhorias {
   z-index: 1;
-  top: 250%;
+  top: 395%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -437,12 +437,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_mvp {
   z-index: 1;
-  top: 265%;
+  top: 425%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -456,12 +456,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_formacao_preco {
   z-index: 1;
-  top: 285%;
+  top: 460%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -475,13 +475,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
-
 
 .tut_digitalizacao {
   z-index: 1;
-  top: 315%;
+  top: 500%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -495,12 +494,12 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
 
 .tut_canais_venda {
   z-index: 1;
-  top: 330%;
+  top: 528%;
   left: 10%;
   width: 80%;
   position: absolute;
@@ -514,5 +513,5 @@
   margin-left: 4%;
   color: #252525;
   font-size: 18px;
-  text-align: justify
+  text-align: justify;
 }
