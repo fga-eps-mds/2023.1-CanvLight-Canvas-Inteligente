@@ -20,6 +20,7 @@ function Canvas() {
 
 //observação3
   const [ferramentasObser3, setFerramentasObser3] = useState ({});
+  const [indicadoPara, setIndicadoPara] = useState ({});
 
 //observação2
   const [psObser, setPsObser] = useState ({});
@@ -87,6 +88,10 @@ function Canvas() {
 //observação3
   const handleFerramentasObser3Change =(novosDadosFerramentasObser3) => {
     setFerramentasObser3(novosDadosFerramentasObser3);
+  }
+
+  const handleIndicadoParaChange =(novosDadosIndicadoPara) => {
+    setIndicadoPara(novosDadosIndicadoPara);
   }
 
 //observação2
@@ -340,6 +345,7 @@ function Canvas() {
 
       <Observacao3 
         onFerramentasObser3Change={handleFerramentasObser3Change}
+        onIndicadoParaChange={handleIndicadoParaChange}
       />
 
       <Interacao 
