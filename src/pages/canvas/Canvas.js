@@ -23,6 +23,10 @@ function Canvas() {
   const [indicadoPara, setIndicadoPara] = useState ({});
   const [orientacaoUso, setOrientacaoUso] = useState ({});
   const [resultadoEsperado, setResultadoEsparado] = useState ({});
+  const [ferramentasObser3P, setFerramentasObser3P] = useState ({});
+  const [indicadoParaP, setIndicadoParaP] = useState ({});
+  const [orientacaoUsoP, setOrientacaoUsoP] = useState ({});
+  const [resultadoEsperadoP, setResultadoEsparadoP] = useState ({});
  
 //observação2
   const [psObser, setPsObser] = useState ({});
@@ -88,6 +92,22 @@ function Canvas() {
   };
 
 //observação3
+  const handleResultadoEsparadoPChange =(novosDadosResultadoEsparadoP) => {
+    setResultadoEsparadoP(novosDadosResultadoEsparadoP);
+  }
+
+  const handleOrientacaoUsoPChange =(novosDadosOrientacaoUsoP) => {
+    setOrientacaoUsoP(novosDadosOrientacaoUsoP);
+  }
+
+  const handleFerramentasObser3PChange =(novosDadosFerramentasObser3P) => {
+    setFerramentasObser3P(novosDadosFerramentasObser3P);
+  }
+
+  const handleIndicadoParaPChange =(novosDadosIndicadoParaP) => {
+    setIndicadoParaP(novosDadosIndicadoParaP);
+  }
+
   const handleResultadoEsparadoChange =(novosDadosResultadoEsparado) => {
     setResultadoEsparado(novosDadosResultadoEsparado);
   }
@@ -358,6 +378,10 @@ function Canvas() {
         onIndicadoParaChange={handleIndicadoParaChange}
         onOrientacaoUsoChange={handleOrientacaoUsoChange}
         onResultadoEsparadoChange={handleResultadoEsparadoChange}
+        onFerramentasObser3PChange={handleFerramentasObser3PChange}
+        onIndicadoParaPChange={handleIndicadoParaPChange}
+        onOrientacaoUsoPChange={handleOrientacaoUsoPChange}
+        onResultadoEsparadoPChange={handleResultadoEsparadoPChange}
       />
 
       <Interacao 
