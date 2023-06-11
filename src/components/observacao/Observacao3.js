@@ -1,12 +1,30 @@
 import './Observacao3.css'
 import React, { useState } from 'react';
 
-function Observacao3({onFerramentasObser3Change, onIndicadoParaChange}){
+function Observacao3({onFerramentasObser3Change, onIndicadoParaChange, onOrientacaoUsoChange}){
 
     const [primeiraLinhaFerramentaObser3, setPrimeiraLinhaFerramentaObser3] = useState();
     const [segundaLinhaFerramentaObser3, setSegundaLinhaFerramentaObser3] = useState ();
     const [primeiraLinhaIndicadoPara, setPrimeiraLinhaIndicadoPara] = useState();
     const [segundaLinhaIndicadoPara, setSegundaLinhaIndicadoPara] = useState ();
+    const [primeiraLinhaOrientacaoUso, setPrimeiraLinhaOrientacaoUso] = useState();
+    const [segundaLinhaOrientacaoUso, setSegundaLinhaOrientacaoUso] = useState ();
+
+    const handleInputChangeOrientacaoUso = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaOrientacaoUso') {
+            setPrimeiraLinhaOrientacaoUso(value);
+        } else if (name === 'segundaLinhaOrientacaoUso') {
+            setSegundaLinhaOrientacaoUso(value);
+        }
+
+        const novosDadosOrientacaoUso = {
+            primeiraLinhaOrientacaoUso: name === 'primeiraLinhaOrientacaoUso' ? value : primeiraLinhaOrientacaoUso,
+            segundaLinhaOrientacaoUso: name === 'segundaLinhaOrientacaoUso' ? value : segundaLinhaOrientacaoUso,
+        };
+
+        onOrientacaoUsoChange(novosDadosOrientacaoUso);
+    }
 
     const handleInputChangeIndicadoPara = (e)=>{
         const {name ,value} = e.target;
@@ -78,14 +96,14 @@ function Observacao3({onFerramentasObser3Change, onIndicadoParaChange}){
                         <tr>
                             <td><input type="text" name='primeiraLinhaFerramentaObser3' value={primeiraLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
                             <td><input type="text" name='primeiraLinhaIndicadoPara' value={primeiraLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td> 
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaOrientacaoUso' value={primeiraLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
                             <td><input type="text"/></td>
                         </tr>
 
                         <tr>
                             <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3' value={segundaLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
                             <td><input type="text" name='segundaLinhaIndicadoPara' value={segundaLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='segundaLinhaOrientacaoUso' value={segundaLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
                             <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
                         </tr>
                     </table>

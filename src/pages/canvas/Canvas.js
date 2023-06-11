@@ -21,7 +21,8 @@ function Canvas() {
 //observação3
   const [ferramentasObser3, setFerramentasObser3] = useState ({});
   const [indicadoPara, setIndicadoPara] = useState ({});
-
+  const [orientacaoUso, setOrientacaoUso] = useState ({});
+ 
 //observação2
   const [psObser, setPsObser] = useState ({});
   const [aproximados, setAproximados] = useState ({});
@@ -86,6 +87,10 @@ function Canvas() {
   };
 
 //observação3
+  const handleOrientacaoUsoChange =(novosDadosOrientacaoUso) => {
+    setOrientacaoUso(novosDadosOrientacaoUso);
+  }
+
   const handleFerramentasObser3Change =(novosDadosFerramentasObser3) => {
     setFerramentasObser3(novosDadosFerramentasObser3);
   }
@@ -346,6 +351,7 @@ function Canvas() {
       <Observacao3 
         onFerramentasObser3Change={handleFerramentasObser3Change}
         onIndicadoParaChange={handleIndicadoParaChange}
+        onOrientacaoUsoChange={handleOrientacaoUsoChange}
       />
 
       <Interacao 
