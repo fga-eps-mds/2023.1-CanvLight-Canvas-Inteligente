@@ -17,6 +17,10 @@ function Canvas() {
   const [sintesePotencialidades, setSintesePotencialidades] = useState({});
   const [sinteseResultados, setSinteseResultados] = useState({});
   const [intuQuatroP, setIntuQuatroP] = useState({});
+
+//observação3
+  const [ferramentasObser3, setFerramentasObser3] = useState ({});
+
 //observação2
   const [psObser, setPsObser] = useState ({});
   const [aproximados, setAproximados] = useState ({});
@@ -79,6 +83,11 @@ function Canvas() {
   const handleIntuQuatroPChange = (novosDadosIntuQuatroP) => {
     setIntuQuatroP(novosDadosIntuQuatroP);
   };
+
+//observação3
+  const handleFerramentasObser3Change =(novosDadosFerramentasObser3) => {
+    setFerramentasObser3(novosDadosFerramentasObser3);
+  }
 
 //observação2
   const handleResultadoChange =(novosDadosResultado) => {
@@ -329,7 +338,9 @@ function Canvas() {
         onResultadoChange={handleResultadoChange}
       />
 
-      <Observacao3 />
+      <Observacao3 
+        onFerramentasObser3Change={handleFerramentasObser3Change}
+      />
 
       <Interacao 
         onDescricaoChange={handleDescricaoChange}

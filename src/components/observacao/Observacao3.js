@@ -1,6 +1,26 @@
 import './Observacao3.css'
+import React, { useState } from 'react';
 
-function Observacao3(){
+function Observacao3({onFerramentasObser3Change}){
+
+    const [primeiraLinhaFerramentaObser3, setPrimeiraLinhaFerramentaObser3] = useState();
+    const [segundaLinhaFerramentaObser3, setSegundaLinhaFerramentaObser3] = useState ();
+
+    const handleInputChangeFerramentaObser3 = (e)=>{
+        const {name ,value} = e.target;
+        if (name === 'primeiraLinhaFerramentaObser3') {
+            setPrimeiraLinhaFerramentaObser3(value);
+        } else if (name === 'segundaLinhaFerramentaObser3') {
+            setSegundaLinhaFerramentaObser3(value);
+        }
+
+        const novosDadosFerramentaObser3 = {
+            primeiraLinhaFerramentaObser3: name === 'primeiraLinhaFerramentaObser3' ? value : primeiraLinhaFerramentaObser3,
+            segundaLinhaFerramentaObser3: name === 'segundaLinhaFerramentaObser3' ? value : segundaLinhaFerramentaObser3,
+        };
+
+        onFerramentasObser3Change(novosDadosFerramentaObser3);
+    }
 
     function clicouNaDuvida(){
         alert('duvida clicada!')
@@ -38,14 +58,14 @@ function Observacao3(){
                         </tr>
 
                         <tr>
-                            <td><input type="text"/></td>
+                            <td><input type="text" name='primeiraLinhaFerramentaObser3' value={primeiraLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
                             <td><input type="text"/></td> 
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                         </tr>
 
                         <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text"/></td>
+                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3' value={segundaLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
                             <td><input type="text"/></td>
                             <td><input type="text"/></td>
                             <td className="terceiro-canto"><input className="terceiro-canto" type="text"/></td>
