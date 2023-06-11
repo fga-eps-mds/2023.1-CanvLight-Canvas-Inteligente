@@ -1,6 +1,7 @@
 .tut_body {
   height: 640vh;
-  background-image: linear-gradient(#e95420, #77216f);
+  /* background-image: linear-gradient(#e95420, #77216f); */
+  background-color: #fcdbc1;
 }
 .sol-bg-tut {
   position: relative;

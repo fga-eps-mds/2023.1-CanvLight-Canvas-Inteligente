@@ -25,9 +25,6 @@ function Tutorial() {
           </ul>
         </nav>
       </div>
-      <div className="sol-bg-tut">
-        <div className="sol-inv-tut"></div>
-      </div>
       <div className="introducao">
         <h2>
           • Gerador de Canvas de Negócio: Crie, Visualize e Baixe seu Canvas com
