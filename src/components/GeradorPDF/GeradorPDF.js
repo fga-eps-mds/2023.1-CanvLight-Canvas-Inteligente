@@ -1,7 +1,8 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 
-function GeradorPDF({ sintesePotencialidades, sinteseResultados, intuQuatroP,
+function GeradorPDF({ sintesePotencialidades, sinteseResultados, intuQuatroP, intuTecnico, intuResiliente, intuEmocional, intuMercadologico, intuIntegrador, 
+  intuTextos,
   empresa, diferenca, porte, concorrencia, localizacao, imitado, 
   melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, 
   analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota,
@@ -15,9 +16,13 @@ function GeradorPDF({ sintesePotencialidades, sinteseResultados, intuQuatroP,
     doc.text(`SintesePotencialidades2: ${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 100,150);
     doc.text(`SintesePotencialidades3: ${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 100,160); */
 
-    doc.text(`SinteseResultados1: ${sinteseResultados.primeiraLinhaSinteseResultados}`, 100,140);
+    doc.text(`IntuTextos1: ${intuTextos.primeiraLinhaIntuTextos}`, 100,140);
+    doc.text(`IntuTextos2: ${intuTextos.segundaLinhaIntuTextos}`, 100,150);
+    doc.text(`IntuTextos3: ${intuTextos.terceiraLinhaIntuTextos}`, 100,160);
+
+    /* doc.text(`SinteseResultados1: ${sinteseResultados.primeiraLinhaSinteseResultados}`, 100,140);
     doc.text(`SinteseResultados2: ${sinteseResultados.segundaLinhaSinteseResultados}`, 100,150);
-    doc.text(`SinteseResultados3: ${sinteseResultados.terceiraLinhaSinteseResultados}`, 100,160);
+    doc.text(`SinteseResultados3: ${sinteseResultados.terceiraLinhaSinteseResultados}`, 100,160); */
 
     /* doc.text(`IntuQuatroP1: ${intuQuatroP.primeiraLinhaIntuQuatroP}`, 100,140);
     doc.text(`IntuQuatroP2: ${intuQuatroP.segundaLinhaIntuQuatroP}`, 100,150);

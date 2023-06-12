@@ -2,32 +2,127 @@ import "./Intuicao.css";
 import dateIntuition from "../../images/dateIntuition.png";
 
 import React, { useState } from "react";
-import GeradorPDF from "../GeradorPDF/GeradorPDF";
 
-function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, onIntuQuatroPChange }) {
+function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, onIntuQuatroPChange, onIntuTecnicoChange, onIntuResilienteChange, onIntuEmocionalChange,
+  onIntuMercadologicoChange, onIntuIntegradorChange, onIntuTextosChange }) {
 
-    const [projeto, setProjeto] = useState("");
-    const [equipe, setEquipe] = useState("");
-    const [dnaNegocio, setDnaNegocio] = useState({
-      tecnico: "",
-      resiliencia: "",
-      emocional: "",
-      mercadologico: "",
-      integrador: "",
-    });
-    const [ikigai, setIkigai] = useState("");
-    const [fourPs, setFourPs] = useState({
-      p1: "",
-      p2: "",
-      p3: "",
-      p4: "",
-    });
-    const [sintese, setSintese] = useState({
-      potencialidades: "",
-      resultadosEsperados: "",
-      terceiroCanto: "",
-      quartoCanto: "",
-    });
+  const [primeiraLinhaIntuTextos, setPrimeiraLinhaIntuTextos] = useState("");
+  const [segundaLinhaIntuTextos, setSegundaLinhaIntuTextos] = useState("");
+  const [terceiraLinhaIntuTextos, setTerceiraLinhaIntuTextos] = useState("");
+
+  const handleInputChangeIntuTextos = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaIntuTextos') {
+        setPrimeiraLinhaIntuTextos(value);
+      } else if (name === 'segundaLinhaIntuTextos') {
+        setSegundaLinhaIntuTextos(value);
+      } else if (name === 'terceiraLinhaIntuTextos') {
+        setTerceiraLinhaIntuTextos(value);
+      }
+  
+    const novosDadosIntuTextos = {
+        primeiraLinhaIntuTextos: name === 'primeiraLinhaIntuTextos' ? value : primeiraLinhaIntuTextos,
+        segundaLinhaIntuTextos: name === 'segundaLinhaIntuTextos' ? value : segundaLinhaIntuTextos,
+        terceiraLinhaIntuTextos: name === 'terceiraLinhaIntuTextos' ? value : terceiraLinhaIntuTextos,
+      };
+  
+      onIntuTextosChange(novosDadosIntuTextos);
+  }
+
+  const [primeiraLinhaIntuIntegrador, setPrimeiraLinhaIntuIntegrador] = useState("");
+  const [segundaLinhaIntuIntegrador, setSegundaLinhaIntuIntegrador] = useState("");
+
+  const handleInputChangeIntuIntegrador = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaIntuIntegrador') {
+        setPrimeiraLinhaIntuIntegrador(value);
+      } else if (name === 'segundaLinhaIntuIntegrador') {
+        setSegundaLinhaIntuIntegrador(value);
+      } 
+  
+    const novosDadosIntuIntegrador = {
+        primeiraLinhaIntuIntegrador: name === 'primeiraLinhaIntuIntegrador' ? value : primeiraLinhaIntuIntegrador,
+        segundaLinhaIntuIntegrador: name === 'segundaLinhaIntuIntegrador' ? value : segundaLinhaIntuIntegrador,
+      };
+  
+      onIntuIntegradorChange(novosDadosIntuIntegrador);
+  }
+  
+  const [primeiraLinhaIntuMercadologico, setPrimeiraLinhaIntuMercadologico] = useState("");
+  const [segundaLinhaIntuMercadologico, setSegundaLinhaIntuMercadologico] = useState("");
+
+  const handleInputChangeIntuMercadologico = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaIntuMercadologico') {
+        setPrimeiraLinhaIntuMercadologico(value);
+      } else if (name === 'segundaLinhaIntuMercadologico') {
+        setSegundaLinhaIntuMercadologico(value);
+      } 
+  
+    const novosDadosIntuMercadologico = {
+        primeiraLinhaIntuMercadologico: name === 'primeiraLinhaIntuMercadologico' ? value : primeiraLinhaIntuMercadologico,
+        segundaLinhaIntuMercadologico: name === 'segundaLinhaIntuMercadologico' ? value : segundaLinhaIntuMercadologico,
+      };
+  
+      onIntuMercadologicoChange(novosDadosIntuMercadologico);
+  }
+
+  const [primeiraLinhaIntuEmocional, setPrimeiraLinhaIntuEmocional] = useState("");
+  const [segundaLinhaIntuEmocional, setSegundaLinhaIntuEmocional] = useState("");
+
+  const handleInputChangeIntuEmocional = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaIntuEmocional') {
+        setPrimeiraLinhaIntuEmocional(value);
+      } else if (name === 'segundaLinhaIntuEmocional') {
+        setSegundaLinhaIntuEmocional(value);
+      } 
+  
+    const novosDadosIntuEmocional = {
+        primeiraLinhaIntuEmocional: name === 'primeiraLinhaIntuEmocional' ? value : primeiraLinhaIntuEmocional,
+        segundaLinhaIntuEmocional: name === 'segundaLinhaIntuEmocional' ? value : segundaLinhaIntuEmocional,
+      };
+  
+      onIntuEmocionalChange(novosDadosIntuEmocional);
+  }
+
+  const [primeiraLinhaIntuResiliente, setPrimeiraLinhaIntuResiliente] = useState("");
+  const [segundaLinhaIntuResiliente, setSegundaLinhaIntuResiliente] = useState("");
+
+  const handleInputChangeIntuResiliente = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaIntuResiliente') {
+        setPrimeiraLinhaIntuResiliente(value);
+      } else if (name === 'segundaLinhaIntuResiliente') {
+        setSegundaLinhaIntuResiliente(value);
+      } 
+  
+    const novosDadosIntuResiliente = {
+        primeiraLinhaIntuResiliente: name === 'primeiraLinhaIntuResiliente' ? value : primeiraLinhaIntuResiliente,
+        segundaLinhaIntuResiliente: name === 'segundaLinhaIntuResiliente' ? value : segundaLinhaIntuResiliente,
+      };
+  
+      onIntuResilienteChange(novosDadosIntuResiliente);
+  }
+
+  const [primeiraLinhaIntuTecnico, setPrimeiraLinhaIntuTecnico] = useState("");
+  const [segundaLinhaIntuTecnico, setSegundaLinhaIntuTecnico] = useState("");
+
+  const handleInputChangeIntuTecnico = (e) => {
+    const { name, value } = e.target;
+      if (name === 'primeiraLinhaIntuTecnico') {
+        setPrimeiraLinhaIntuTecnico(value);
+      } else if (name === 'segundaLinhaIntuTecnico') {
+        setSegundaLinhaIntuTecnico(value);
+      } 
+  
+    const novosDadosIntuTecnico = {
+        primeiraLinhaIntuTecnico: name === 'primeiraLinhaIntuTecnico' ? value : primeiraLinhaIntuTecnico,
+        segundaLinhaIntuTecnico: name === 'segundaLinhaIntuTecnico' ? value : segundaLinhaIntuTecnico,
+      };
+  
+      onIntuTecnicoChange(novosDadosIntuTecnico);
+  }
 
   const [primeiraLinhaSintesePotencialidades, setPrimeiraLinhaSintesePotencialidades] = useState("");
   const [segundaLinhaSintesePotencialidades, setSegundaLinhaSintesePotencialidades] = useState("");
@@ -132,11 +227,11 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
             <form>
               <div>
                 <h2>Projeto:</h2>
-                <input className="inputProjeto" type="text" value={projeto} onChange={(e) => setProjeto(e.target.value)}/>
+                <input className="inputProjeto" name='primeiraLinhaIntuTextos' value={primeiraLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
               </div>
 
               <h2>Equipe:</h2>
-              <input className="inputEquipe" type="text" value={equipe} onChange={(e) => setEquipe(e.target.value)}/>
+              <input className="inputEquipe" name='segundaLinhaIntuTextos' value={segundaLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
             </form>
             <div className="clear"></div>
           </div>
@@ -153,50 +248,50 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
               <tr>
                 <td className="tecnico">TÉCNICO</td>
                 <td>
-                  <input type="text" value={dnaNegocio.tecnico} onChange={(e) =>setDnaNegocio({ ...dnaNegocio, tecnico: e.target.value })}/>
+                  <input type="text" name='primeiraLinhaIntuTecnico' value={primeiraLinhaIntuTecnico} onChange={handleInputChangeIntuTecnico} />
                 </td>
                 <td className="espacoA1">
-                  <input type="text"  value={dnaNegocio.espacoA1} onChange={(e) =>setDnaNegocio({ ...dnaNegocio, espacoA1: e.target.value })} />
+                  <input type="text" name='segundaLinhaIntuTecnico' value={segundaLinhaIntuTecnico} onChange={handleInputChangeIntuTecnico} />
                 </td>
               </tr>
 
               <tr>
                 <td className="resiliencia">RESILIENTE</td>
                 <td>
-                  <input type="text" value={dnaNegocio.resiliencia} onChange={(e) =>setDnaNegocio({ ...dnaNegocio, resiliencia: e.target.value })}/>
+                  <input type="text" name='primeiraLinhaIntuResiliente' value={primeiraLinhaIntuResiliente} onChange={handleInputChangeIntuResiliente} />
                 </td>
                 <td className="espacoA2">
-                  <input type="text" />
+                  <input type="text" name='segundaLinhaIntuResiliente' value={segundaLinhaIntuResiliente} onChange={handleInputChangeIntuResiliente} />
                 </td>
               </tr>
 
               <tr>
                 <td className="emocional">EMOCIONAL</td>
                 <td>
-                  <input type="text" value={dnaNegocio.emocional} onChange={(e) =>setDnaNegocio({ ...dnaNegocio, emocional: e.target.value })}/>
+                  <input type="text" name='primeiraLinhaIntuEmocional' value={primeiraLinhaIntuEmocional} onChange={handleInputChangeIntuEmocional} />
                 </td>
                 <td className="espacoA3">
-                  <input type="text" />
+                  <input type="text" name='segundaLinhaIntuEmocional' value={segundaLinhaIntuEmocional} onChange={handleInputChangeIntuEmocional} />
                 </td>
               </tr>
 
               <tr>
                 <td className="mercadologico">MERCADOLÓGICO</td>
                 <td>
-                  <input type="text" value={dnaNegocio.mercadologico} onChange={(e) =>setDnaNegocio({ ...dnaNegocio, mercadologico: e.target.value })} />
+                  <input type="text" name='primeiraLinhaIntuMercadologico' value={primeiraLinhaIntuMercadologico} onChange={handleInputChangeIntuMercadologico} />
                 </td>
                 <td className="espacoA4">
-                  <input type="text" />
+                  <input type="text" name='segundaLinhaIntuMercadologico' value={segundaLinhaIntuMercadologico} onChange={handleInputChangeIntuMercadologico} />
                 </td>
               </tr>
 
               <tr>
                 <td className="integrador">INTEGRADOR</td>
                 <td>
-                  <input type="text" value={dnaNegocio.integrador} onChange={(e) =>setDnaNegocio({ ...dnaNegocio, integrador: e.target.value })} />
+                  <input type="text" name='primeiraLinhaIntuIntegrador' value={primeiraLinhaIntuIntegrador} onChange={handleInputChangeIntuIntegrador} />
                 </td>
                 <td className="quarto-canto">
-                  <input className="quarto-canto" type="text" />
+                  <input className="quarto-canto" type="text" name='segundaLinhaIntuIntegrador' value={segundaLinhaIntuIntegrador} onChange={handleInputChangeIntuIntegrador} />
                 </td>
               </tr>
             </table>
@@ -207,7 +302,7 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
           <div className="parte2">
             <h2>Ikigai:</h2>
             <br />
-            <textarea type="text" />
+            <textarea type="text" name='terceiraLinhaIntuTextos' value={terceiraLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
           </div>
 
           <div onClick={clicouNaDuvida} className="duvidaIkigai_int"></div>
@@ -294,11 +389,7 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
         </div>
       </div>
 
-      <GeradorPDF
-        projeto={projeto}
-        equipe={equipe}
-        dnaNegocio={dnaNegocio}
-      />
+      
     </div>
   );
 }

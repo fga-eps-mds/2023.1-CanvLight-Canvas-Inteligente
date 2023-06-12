@@ -14,6 +14,12 @@ import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 function Canvas() {
 
 //intuição
+  const [intuTextos, setIntuTextos] = useState({});
+  const [intuIntegrador, setIntuIntegrador] = useState({});
+  const [intuMercadologico, setIntuMercadologico] = useState({});
+  const [intuEmocional, setIntuEmocional] = useState({});
+  const [intuResiliente, setIntuResiliente] = useState({});
+  const [intuTecnico, setIntuTecnico] = useState({});
   const [sintesePotencialidades, setSintesePotencialidades] = useState({});
   const [sinteseResultados, setSinteseResultados] = useState({});
   const [intuQuatroP, setIntuQuatroP] = useState({});
@@ -79,6 +85,30 @@ function Canvas() {
   const [inteQuatroP, setInteQuatroP] = useState({});
 
 //intuição
+  const handleIntuTextosChange = (novosDadosIntuTextos) => {
+    setIntuTextos(novosDadosIntuTextos);
+  }
+
+  const handleIntuIntegradorChange = (novosDadosIntuIntegrador) => {
+    setIntuIntegrador(novosDadosIntuIntegrador);
+  }
+
+  const handleIntuMercadologicoChange = (novosDadosIntuMercadologico) => {
+    setIntuMercadologico(novosDadosIntuMercadologico);
+  }
+
+  const handleIntuEmocionalChange = (novosDadosIntuEmocional) => {
+    setIntuEmocional(novosDadosIntuEmocional);
+  }
+
+  const handleIntuResilienteChange = (novosDadosIntuResiliente) => {
+    setIntuResiliente(novosDadosIntuResiliente);
+  }
+
+  const handleIntuTecnicoChange = (novosDadosIntuTecnico) => {
+    setIntuTecnico(novosDadosIntuTecnico);
+  }
+
   const handleSintesePotencialidadesChange = (novosDadosSintesePotencialidades) => {
     setSintesePotencialidades(novosDadosSintesePotencialidades);
   }
@@ -337,7 +367,13 @@ function Canvas() {
           </div>
         </div>
       </div>
-      <Intuicao 
+      <Intuicao
+        onIntuTextosChange={handleIntuTextosChange}
+        onIntuIntegradorChange={handleIntuIntegradorChange}
+        onIntuMercadologicoChange={handleIntuMercadologicoChange}
+        onIntuEmocionalChange={handleIntuEmocionalChange}
+        onIntuResilienteChange={handleIntuResilienteChange}
+        onIntuTecnicoChange={handleIntuTecnicoChange}
         onSintesePotencialidadesChange={handleSintesePotencialidadesChange}
         onSinteseResultadosChange={handleSinteseResultadosChange}
         onIntuQuatroPChange={handleIntuQuatroPChange}
@@ -409,6 +445,12 @@ function Canvas() {
 
       <GeradorPDF
         //intuição
+        intuTextos={intuTextos}
+        intuIntegrador={intuIntegrador}
+        intuMercadologico={intuMercadologico}
+        intuEmocional={intuEmocional}
+        intuResiliente={intuResiliente}
+        intuTecnico={intuTecnico}
         sintesePotencialidades={sintesePotencialidades}
         sinteseResultados={sinteseResultados}
         intuQuatroP={intuQuatroP}
