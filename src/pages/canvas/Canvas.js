@@ -483,7 +483,7 @@ function Canvas() {
         sinteseResultados={sinteseResultados}
         intuQuatroP={intuQuatroP}
 
-        //
+        //observação1
         empresa={empresa}
         diferenca={diferenca}
         porte={porte}
@@ -498,6 +498,8 @@ function Canvas() {
         risco={risco}
         verticalizar={verticalizar}
         nota={nota}
+        perfil1={perfil1}
+        perfil2={perfil2}
 
         //Interação
         descricao={descricao}
