@@ -1,5 +1,6 @@
 import "./Intuicao.css";
 import dateIntuition from "../../images/dateIntuition.png";
+import checkImg from "../../images/check.png";
 
 import React, { useState } from "react";
 
@@ -201,16 +202,18 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
     alert("duvida clicada!");
   }
 
-  function formIntuicaoTerminado() {
-    alert("form feito");
-  }
-
   function fecharFormIntuicao(e) {
     e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
 
     let modal = document.querySelector(".form");
 
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
 
   return (
@@ -224,9 +227,9 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
         <div className="dot3_int"></div>
         <div className="esquerda">
           <div className="parte1">
-            <form>
+            <form> 
               <div>
-                <h2>Projeto:</h2>
+                <h2 className="h2_project">Projeto:</h2>
                 <input className="inputProjeto" name='primeiraLinhaIntuTextos' value={primeiraLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
               </div>
 
@@ -290,6 +293,7 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
                 <td>
                   <input type="text" name='primeiraLinhaIntuIntegrador' value={primeiraLinhaIntuIntegrador} onChange={handleInputChangeIntuIntegrador} />
                 </td>
+                
                 <td className="quarto-canto">
                   <input className="quarto-canto" type="text" name='segundaLinhaIntuIntegrador' value={segundaLinhaIntuIntegrador} onChange={handleInputChangeIntuIntegrador} />
                 </td>
@@ -300,7 +304,7 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
           <div onClick={clicouNaDuvida} className="duvidaDNA_int"></div>
 
           <div className="parte2">
-            <h2>Ikigai:</h2>
+            <h2 className="h2_Ikigai">Ikigai:</h2>
             <br />
             <textarea type="text" name='terceiraLinhaIntuTextos' value={terceiraLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
           </div>
@@ -309,7 +313,7 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
 
           <div className="clear"></div>
         </div>
-
+        
         <div className="direita">
           <div>
             <img src={dateIntuition} alt="DataIntuicao" className="dateInt" />
@@ -321,28 +325,28 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
               <tr>
                 <td>
                   P1:
-                  <input type="text" name="primeiraLinhaIntuQuatroP" value={primeiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea  type="text" name="primeiraLinhaIntuQuatroP" value={primeiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
                 <td>
                   P2:
-                  <input type="text" name="segundaLinhaIntuQuatroP" value={segundaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea  type="text" name="segundaLinhaIntuQuatroP" value={segundaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
               </tr>
 
               <tr>
                 <td>
                   P3:
-                  <input type="text" name="terceiraLinhaIntuQuatroP" value={terceiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea type="text" name="terceiraLinhaIntuQuatroP" value={terceiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
                 <td>
                   P4:
-                  <input type="text" name="quartaLinhaIntuQuatroP" value={quartaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea type="text" name="quartaLinhaIntuQuatroP" value={quartaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
                 </td>
               </tr>
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida3"></div>
+          <div onClick={clicouNaDuvida} className="duvida_fourps_int"></div>
 
           <div className="tabela3">
             <h2>Síntese:</h2>
@@ -369,6 +373,14 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
                   <input type="text" name='segundaLinhaSinteseResultados' value={segundaLinhaSinteseResultados} onChange={handleInputChangeSinteseResultados} />
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <input type="text" />
+                </td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
 
               <tr>
                 <td className="quarto-canto">
@@ -381,9 +393,11 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida4"></div>
+          <div onClick={clicouNaDuvida} className="duvida_sintese_int"></div>
 
-          <div onClick={formIntuicaoTerminado} className="feito"></div>
+          <div onClick={(e) => fecharFormIntuicao(e)} className="feito_int">
+            <img src={checkImg} className="feito_int" alt="confirma_int" />
+          </div>
 
           <div className="clear"></div>
         </div>

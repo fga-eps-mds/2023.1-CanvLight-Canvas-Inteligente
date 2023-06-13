@@ -1,8 +1,10 @@
 /*Interação*/
 
 .form_interacao {
+  z-index: 9999;
   display: none;
-  position: absolute;
+  position: relative;
+  left: 15%;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -38,7 +40,31 @@
 .dot2_itr {
   position: absolute;
   top: 1.5%;
-  left: 4.2%;
+  left: 4.4%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot2_itr2 {
+  position: absolute;
+  top: 1.5%;
+  left: 4.5%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot2_itr3 {
+  position: absolute;
+  top: 1.5%;
+  left: 4.5%;
   width: 20px;
   height: 20px;
   background-color: rgb(248, 225, 14);
@@ -50,7 +76,7 @@
 .dot3_itr {
   position: absolute;
   top: 1.5%;
-  left: 6.7%;
+  left: 7.4%;
   width: 20px;
   height: 20px;
   background-color: rgb(45, 202, 25);
@@ -58,6 +84,31 @@
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.dot3_itr2 {
+  position: absolute;
+  top: 1.5%;
+  left: 7.5%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot3_itr3 {
+  position: absolute;
+  top: 1.5%;
+  left: 7.5%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 .parte1_interacao {
   float: left;
@@ -84,8 +135,8 @@
   top: 12.75%;
 
   text-align: center;
-  background-color: #2666e3;
-  border: 3px solid #2666e3;
+  background-color: #0e78c9;
+  border: 2px solid #0e78c9;
   border-radius: 12px;
   color: white;
 }
@@ -131,8 +182,8 @@
   top: 12.75%;
 
   text-align: center;
-  background-color: #2666e3;
-  border: 3px solid #2666e3;
+  background-color: #0e78c9;
+  border: 2px solid #0e78c9;
   border-radius: 12px;
   color: white;
 }
@@ -162,15 +213,17 @@
 /* config tela 2 */
 
 .tela_2_form_interacao {
+  z-index: 9999;
   display: none;
-  position: absolute;
+  position: relative;
+  left: 15%;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: "Ubuntu";
 }
 
-.close_button {
+.close_itr3 {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -178,15 +231,25 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  top: 2px;
+  top: 1.6%;
+  left: 1.6%;
 }
 
 /*botao de inserir tarefa*/
+#input-new-task {
+  border-radius: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border-color: #0e78c9;
+  padding: 3px;
+  margin-top: 5%;
+}
 .button_tarefa {
   cursor: pointer;
-  margin-left: 16.5%;
+  margin-left: 31.5%;
   position: absolute;
-  margin-top: -2%;
+  margin-top: -2.5%;
 }
 
 .parte3_interacao {
@@ -225,8 +288,8 @@
   bottom: 50.04%;
 
   text-align: center;
-  background-color: #2666e3;
-  border: 1px solid #2666e3;
+  background-color: #0e78c9;
+  border: 1px solid #0e78c9;
   border-radius: 7px;
   color: white;
 }
@@ -266,8 +329,8 @@
 
 .tabela_formacao table {
   text-align: center;
-  background-color: #2666e3;
-  border: 1px solid #2666e3;
+  background-color: #0e78c9;
+  border: 1px solid #0e78c9;
   border-radius: 7px;
   color: white;
   float: left;
@@ -301,8 +364,11 @@
 /*Tela 3 Interação*/
 
 .tela_3_form_interacao {
+  z-index: 9999;
   display: none;
-  position: absolute;
+  position: relative;
+  left: 15%;
+  top: 50%;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -322,7 +388,7 @@
   border-radius: 30px;
 }
 
-.close_button {
+.close_itr2 {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -330,8 +396,8 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  top: 0.3%;
-  left: 3%;
+  top: 1.6%;
+  left: 1.6%;
 }
 
 .direita {
@@ -448,8 +514,8 @@
   box-sizing: border-box;
   float: center;
   text-align: center;
-  background-color: #2666e3;
-  border: 3px solid #2666e3;
+  background-color: #0e78c9;
+  border: 2px solid #0e78c9;
   border-radius: 12px;
   color: white;
   margin-top: 1%;
@@ -481,11 +547,10 @@
 }
 
 /*css tabela dos 4 ps*/
-
 .tabela2 table {
   color: white;
   background-color: #252525;
-  border: 1px solid #2666e3;
+  border: 1px solid #0e78c9;
   border-radius: 8px;
   padding: 20px;
   float: left;
@@ -509,4 +574,12 @@
   border-left: none;
   padding: 10px;
   color: white;
+}
+.feito_itr {
+  height: 6vh;
+  width: 3vw;
+  margin-top: 3.5%;
+  margin-right: 2%;
+  float: right;
+  cursor: pointer;
 }

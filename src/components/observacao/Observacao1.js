@@ -7,6 +7,32 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
     onBeneficiosChange, onFornecerChange,  onRiscoChange, onVerticalizarChange, onNotaChange,
     onPerfil1Change, onPerfil2Change
 }){
+  function irParaObservacao2(e) {
+    e.preventDefault();
+
+    let modal = document.querySelector(".benchmarking");
+    let modal2 = document.querySelector(".Observacao2");
+
+    modal.style.display = "none";
+    modal2.style.display = "block";
+  }
+
+  function fecharFormIntuicao(e) {
+    e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
+
+    let modal = document.querySelector(".benchmarking");
+
+    modal.style.display = "none";
+    let medel = document.querySelector(".tela_3_form_interacao");
+    medel.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
+  }
+
     const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
     const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
     const [terceiraLinhaEmpresa, setTerceiraLinhaEmpresa] = useState();
@@ -365,20 +391,12 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
         alert('duvida clicada!')
     }
 
-    function irParaObservacao2(e){
-        e.preventDefault();
-    
-        let modal = document.querySelector('.benchmarking');
-        let modal2 = document.querySelector('.Observacao2')
-        
-        modal.style.display = "none";
-        modal2.style.display = "block"
-    }
-
-
     return(
         <div className="benchmarking">
             <div className='centerObs1'>
+              <button className="close_obs" onClick={(e) => fecharFormIntuicao(e)}></button>
+                <div className="dot2_obs"></div>
+                <div className="dot3_obs"></div>
                 <h2>Benchmarking</h2>
                 <div onClick={clicouNaDuvida}  className='duvida'></div>
                 <div className="concorrente">
@@ -514,8 +532,13 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                 <div onClick={(e) => irParaObservacao2(e)} className='setas'></div>
                 
             </div>
-        </div>
-    )
+
+        
+
+ 
+      </div>
+    
+  );
 }
 
-export default Observacao1
+export default Observacao1;

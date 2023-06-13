@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 function Observacao3({onFerramentasObser3Change, onIndicadoParaChange, onOrientacaoUsoChange, onResultadoEsparadoChange,
     onFerramentasObser3PChange, onIndicadoParaPChange, onOrientacaoUsoPChange, onResultadoEsparadoPChange
 }){
+    function clicouNaDuvida() {
+      alert("duvida clicada!");
+    }
 
     const [primeiraLinhaFerramentaObser3, setPrimeiraLinhaFerramentaObser3] = useState();
     const [segundaLinhaFerramentaObser3, setSegundaLinhaFerramentaObser3] = useState ();
@@ -154,92 +157,100 @@ function Observacao3({onFerramentasObser3Change, onIndicadoParaChange, onOrienta
         onFerramentasObser3Change(novosDadosFerramentaObser3);
     }
 
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
+  function irParaObservacao2(e) {
+    e.preventDefault();
+
+    let modal = document.querySelector(".Observacao2");
+    let modal2 = document.querySelector(".Observacao3");
+
+    modal.style.display = "block";
+    modal2.style.display = "none";
+  }
+  function observacaoFinalizada(e) {
+    e.preventDefault();
+
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
     }
 
-    function irParaObservacao2(e){
-        e.preventDefault();
-    
-        let modal = document.querySelector('.Observacao2');
-        let modal2 = document.querySelector('.Observacao3')
-        
-        modal.style.display = "block";
-        modal2.style.display = "none"
-    }
-    function observacaoFinalizada(e){
-        e.preventDefault();
+    let modal = document.querySelector(".Observacao3");
 
-        let modal = document.querySelector('.Observacao3');
-        
-        modal.style.display = 'none'
-    }
+    modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
+  }
 
-    return(
-        <div className= "Observacao3">
-            <div className= 'centerObs3'>
-                <div className= 'Modelo'>
-                    <p>Modelo</p>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
-                    <table>
-                        <tr>
-                            <th className="primeiro-canto">Ferramentas/Procedimentos</th>
-                            <th>Indicado para</th>
-                            <th>Orientações de uso</th>
-                            <th className="segundo-canto">Resultado esperado</th>
-                        </tr>
+  return (
+    <div className="Observacao3">
+      <div className="centerObs3">
+        <div className="Modelo">
+          <p className="Modelo_obs3">Modelo:</p>
+          <div onClick={clicouNaDuvida} className="duvida5"></div>
+          <table>
+            <tr>
+              <th className="primeiro-canto">Ferramentas/Procedimentos</th>
+              <th>Indicado para</th>
+              <th>Orientações de uso</th>
+              <th className="segundo-canto">Resultado esperado</th>
+            </tr>
+            <tr>
+              <td><input type="text" name='primeiraLinhaFerramentaObser3' value={primeiraLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
+              <td><input type="text" name='primeiraLinhaIndicadoPara' value={primeiraLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td> 
+              <td><input type="text" name='primeiraLinhaOrientacaoUso' value={primeiraLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
+              <td><input type="text" name='primeiraLinhaResultadoEsparado' value={primeiraLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado}/></td>
+            </tr>
 
-                        <tr>
-                            <td><input type="text" name='primeiraLinhaFerramentaObser3' value={primeiraLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
-                            <td><input type="text" name='primeiraLinhaIndicadoPara' value={primeiraLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td> 
-                            <td><input type="text" name='primeiraLinhaOrientacaoUso' value={primeiraLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
-                            <td><input type="text" name='primeiraLinhaResultadoEsparado' value={primeiraLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado}/></td>
-                        </tr>
-
-                        <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3' value={segundaLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
-                            <td><input type="text" name='segundaLinhaIndicadoPara' value={segundaLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td>
-                            <td><input type="text" name='segundaLinhaOrientacaoUso' value={segundaLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparado' value={segundaLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado}/></td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div className='clear'></div>
-
-                <div className= 'Prototipo'>
-                    <p>Protótipo</p>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
-                    <table>
-                        <tr>
-                            <th className="primeiro-canto">Ferramentas/Procedimentos</th>
-                            <th>Indicado para</th>
-                            <th>Orientações de uso</th>
-                            <th className="segundo-canto">Resultado esperado</th>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text" name='primeiraLinhaFerramentaObser3P' value={primeiraLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}/></td>
-                            <td><input type="text" name='primeiraLinhaIndicadoParaP' value={primeiraLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP}/></td> 
-                            <td><input type="text" name='primeiraLinhaOrientacaoUsoP' value={primeiraLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP}/></td>
-                            <td><input type="text" name='primeiraLinhaResultadoEsparadoP' value={primeiraLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP}/></td>
-                        </tr>
-
-                        <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3P' value={segundaLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}/></td>
-                            <td><input type="text" name='segundaLinhaIndicadoParaP' value={segundaLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP}/></td>
-                            <td><input type="text" name='segundaLinhaOrientacaoUsoP' value={segundaLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP}/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparadoP' value={segundaLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP}/></td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div onClick={(e) => irParaObservacao2(e)} className='seta-esquerda'></div>
-                <div className='Observacao-finalizada' onClick={(e) => observacaoFinalizada(e)}></div>
-
-                <div className='clear'></div>
-            </div>
+            <tr>
+              <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3' value={segundaLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
+              <td><input type="text" name='segundaLinhaIndicadoPara' value={segundaLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td>
+              <td><input type="text" name='segundaLinhaOrientacaoUso' value={segundaLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
+              <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparado' value={segundaLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado}/></td>
+            </tr>
+          </table>
         </div>
-    )
+
+        <div className='clear'></div>
+
+        <div className= 'Prototipo'>
+              <p>Protótipo</p>
+              <div onClick={clicouNaDuvida} className='duvida'></div>
+              <table>
+                <tr>
+                  <th className="primeiro-canto">Ferramentas/Procedimentos</th>
+                  <th>Indicado para</th>
+                  <th>Orientações de uso</th>
+                  <th className="segundo-canto">Resultado esperado</th>
+                </tr>
+
+                <tr>
+                  <td><input type="text" name='primeiraLinhaFerramentaObser3P' value={primeiraLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}/></td>
+                  <td><input type="text" name='primeiraLinhaIndicadoParaP' value={primeiraLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP}/></td> 
+                  <td><input type="text" name='primeiraLinhaOrientacaoUsoP' value={primeiraLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP}/></td>
+                  <td><input type="text" name='primeiraLinhaResultadoEsparadoP' value={primeiraLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP}/></td>
+                </tr>
+
+                <tr>
+                  <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3P' value={segundaLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}/></td>
+                  <td><input type="text" name='segundaLinhaIndicadoParaP' value={segundaLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP}/></td>
+                  <td><input type="text" name='segundaLinhaOrientacaoUsoP' value={segundaLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP}/></td>
+                  <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparadoP' value={segundaLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP}/></td>
+                </tr>
+              </table>
+        </div>
+
+        <div
+          onClick={(e) => irParaObservacao2(e)}
+          className="seta-esquerda_obs3"
+        ></div>
+        <div
+          className="Observacao-finalizada"
+          onClick={(e) => observacaoFinalizada(e)}
+        ></div>
+
+        <div className='clear'></div>
+      </div>
+    </div>
+  );
 }
-export default Observacao3
+export default Observacao3;

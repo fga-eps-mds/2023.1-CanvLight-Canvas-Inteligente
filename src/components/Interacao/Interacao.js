@@ -1,4 +1,4 @@
-import rightArrow from "../../images/next-arrow.png";
+import rightArrow from "../../images/seta-direita.png";
 import zap from "../../images/zap.png";
 import insta from "../../images/insta.png";
 import twitter from "../../images/twitter.png";
@@ -7,6 +7,7 @@ import linkedin from "../../images/linkedin.png";
 import sad from "../../images/sad.png";
 import normal from "../../images/normal.png";
 import happy from "../../images/happy.png";
+import checkImg from "../../images/check.png";
 import "./Interacao.css";
 
 import React, { useState } from "react";
@@ -532,21 +533,33 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
     onInteQuatroPChange(novosDadosInteQuatroP);
   }
   
-//===============================================================================================
+ //===============================================================================================
   function clicouNaDuvida() {
     alert("duvida clicada!");
   }
 
   function fecharFormInteracao(e) {
     e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
     let modal = document.querySelector(".form_interacao");
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
 
   function fecharTela_3(e) {
     e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
     let modal = document.querySelector(".tela_3_form_interacao");
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
 
   function nextpage1(e) {
@@ -574,8 +587,14 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
 
   function fecharFormInteracaoTela2(e) {
     e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
     let modal = document.querySelector(".tela_2_form_interacao");
     modal.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
   function backpage1(e) {
     e.preventDefault();
@@ -735,9 +754,11 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
       <div className="tela_2_form_interacao">
         <div className="center">
           <button
-            className="close_button"
+            className="close_itr2"
             onClick={(e) => fecharFormInteracaoTela2(e)}
           ></button>
+          <div className="dot2_itr2"></div>
+          <div className="dot3_itr2"></div>
           <div className="tela2">
             <div className="esquerda">
               <div className="parte3_interacao">
@@ -962,9 +983,11 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
         <div className="center">
           <div className="esquerda">
             <button
-              className="close_button"
+              className="close_itr3"
               onClick={(e) => fecharTela_3(e)}
             ></button>
+             <div className="dot2_itr3"></div>
+             <div className="dot3_itr3"></div>
             <div className="digitalizacao">
               <p>
                 Digitalização do Negócio:
@@ -1122,6 +1145,9 @@ function Interacao( {onDescricaoChange, onAnalisePrecoChange, onAnaliseQuantidad
                 </tr>
               </table>
             </div>
+          </div>
+          <div onClick={(e) => fecharTela_3(e)} className="feito_itr">
+            <img src={checkImg} className="feito_itr" alt="confirma_itr" />
           </div>
         </div>
       </div>

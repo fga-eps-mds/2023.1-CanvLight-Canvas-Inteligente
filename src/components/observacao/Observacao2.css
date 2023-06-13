@@ -1,142 +1,225 @@
-.Observacao2 .centerObs2{
-    background-color: #252525;
-    border-radius: 30px;
-    width: 90%;
-    height: 60%;
-    margin-top: 8%;
-    margin: auto;
-    
+.Observacao2 .centerObs2 {
+  background-color: #252525;
+  border-radius: 30px;
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  margin: auto;
+  margin-top: 5%;
+  left: 5%;
 }
 
-.Observacao2 .psdoprojeto h2{
-    text-align: left;
-    
+.Observacao2 .psdoprojeto h2 {
+  position: absolute;
+  top: 8%;
+  left: 2%;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 5%;
 }
 
-.Observacao2 .psdoprojeto table{
+.Observacao2 .psdoprojeto table {
+  position: absolute;
+  top: 14%;
   color: white;
   background-color: #252525;
   border: 1px solid #fb8218;
   border-radius: 8px;
   padding: 2%;
-  width: 30%; 
-  float: left; 
+  width: 30%;
+  float: left;
   margin-left: 4%;
 }
 
-.psdoprojeto table tr{
-    width: 30%;
-    height: 100%;
-    text-align: left;
-}
-  
-.psdoprojeto table td{
-    padding: 5%;
-}
-    
-.psdoprojeto input{
-    width: 70%;
-    height: 100%;
-    border-bottom: 1px solid white;
-    background-color: #252525;
-    border-right: none;
-    border-top: none;
-    border-left: none;
-    padding: 2%;
+.psdoprojeto table tr {
+  width: 30%;
+  height: 100%;
+  text-align: left;
 }
 
-.conceito table{
-    width: 90%;
-    margin: auto;
-    border-spacing: 0;
-    color: white;
-}
-  
-.conceito table th{
-    background-color: #fb8218;
-    border: 1px solid #fb8218;
-}
-  
-.conceito .primeiro-canto{
-    border-radius: 15px 0 0 0;
-}
-  
-.conceito .segundo-canto{
-    border-radius: 0 15px 0 0 ;
-}
-  
-.conceito .terceiro-canto{
-    border-radius: 0 0 15px 0 ;
-}
-  
-.conceito .quarto-canto{
-    border-radius: 0 0 0 15px;
-}
-  
-.conceito table td{
-    background-color: #252525;
-    border: 1px solid #fb8218;
-}
-  
-.conceito table input{
-    background-color: #252525;
-    border: none;
-    width: auto;
-    height: auto;
+.psdoprojeto table td {
+  padding: 5%;
 }
 
-.conceito p{
-    font-size: 30px;
+.psdoprojeto input {
+  width: 70%;
+  height: 100%;
+  border-bottom: 1px solid white;
+  background-color: #252525;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  padding: 2%;
 }
 
-.Single span{
-    font-size: 20px;
+.conceito table {
+  width: 90%;
+  margin: auto;
+  border-spacing: 0;
+  color: white;
 }
 
-.Single input{
-    background-color: #252525;
-    border: 1px solid #fb8218;
-    width: 30%;
-    border-radius: 15px;
-    margin-left: 2%;
+.conceito table th {
+  background-color: #fb8218;
+  border: 1px solid #fb8218;
 }
 
-.Single{
-    margin-top: 2%;
-    width: 60%;
+.conceito .primeiro-canto {
+  border-radius: 15px 0 0 0;
 }
 
-.seta-esquerda{
-    background-image: url('../../images/seta-esquerda.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10%;
-    height: 10%;
-    margin-top: 2%;
-    float: left;
-    cursor: pointer;
-    margin-left: 10%;
+.conceito .segundo-canto {
+  border-radius: 0 15px 0 0;
 }
 
-  
-.seta-direita{
-    background-image: url('../../images/seta-direita.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10%;
-    height: 10%;
-    margin-top: 2%;
-    float: right;
-    cursor: pointer;
-    margin-right: 7%;
+.conceito .terceiro-canto {
+  border-radius: 0 0 15px 0;
 }
 
+.conceito .quarto-canto {
+  border-radius: 0 0 0 15px;
+}
 
-.duvida{
-    background-image: url('../../images/request\ \(1\).png');
-    width: 16px;
-    height: 16px;
-    float: right;
-    cursor: pointer;
-    bottom: 5%;
+.conceito table td {
+  background-color: #252525;
+  border: 1px solid #fb8218;
+}
+
+.conceito table input {
+  background-color: #252525;
+  border: none;
+  width: auto;
+  height: auto;
+}
+
+.conceito p {
+  position: relative;
+  margin-bottom: 1.5%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.close_obs {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 2%;
+  top: 2.6%;
+}
+.dot2_obs {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 225, 14);
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 4%;
+  top: 2.6%;
+}
+.dot3_obs {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(45, 202, 25);
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  left: 6%;
+  top: 2.6%;
+}
+
+.Single span {
+  font-size: 20px;
+}
+
+.Single1 input {
+  background-color: #252525;
+  border: 1px solid #fb8218;
+  width: 30%;
+  border-radius: 15px;
+  margin-left: 2%;
+}
+
+.Single2 input {
+  background-color: #252525;
+  border: 1px solid #fb8218;
+  width: 30%;
+  border-radius: 15px;
+  margin-left: 2%;
+}
+
+.Single3 input {
+  background-color: #252525;
+  border: 1px solid #fb8218;
+  width: 30%;
+  border-radius: 15px;
+  margin-left: 2%;
+}
+
+.Single1 {
+  margin-top: 23%;
+  margin-bottom: 1%;
+  width: 60%;
+}
+
+.Single2 {
+  margin-bottom: 1%;
+  width: 60%;
+}
+
+.Single3 {
+  margin-bottom: 4%;
+  width: 60%;
+}
+
+.seta-esquerda_obs2 {
+  background-image: url("../../images/seta-esquerda.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10%;
+  height: 10%;
+  top: 83%;
+  float: left;
+  cursor: pointer;
+  margin-left: 6%;
+}
+
+.seta-direita_obs2 {
+  background-image: url("../../images/seta-direita.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10%;
+  height: 10%;
+  margin-top: 2%;
+  float: right;
+  cursor: pointer;
+  margin-right: -1%;
+}
+
+.duvida3 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin: auto;
+  top: 8.9%;
+  left: 22%;
+  text-align: left;
+}
+
+.duvida4 {
+  background-image: url("../../images/request\ \(1\).png");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin: auto;
+  top: 64%;
+  right: 44.7%;
+  text-align: center;
 }

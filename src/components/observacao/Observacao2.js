@@ -4,6 +4,10 @@ import React, { useState } from 'react';
 function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange, onRequisitosChange,
     onOportunidadesChange, onIndicadoChange, onOrientacaoChange,onResultadoChange
 }){
+    function clicouNaDuvida() {
+      alert("duvida clicada!");
+    }
+
     const [primeiroP, setPrimeiroP] = useState();
     const [segundoP, setSegundoP] = useState ();
     const [terceiroP, setTerceiroP] = useState ();
@@ -186,36 +190,55 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
     }
 
 
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
+  function irParaObservacao1(e) {
+    e.preventDefault();
+
+    let modal = document.querySelector(".benchmarking");
+    let modal2 = document.querySelector(".Observacao2");
+
+    modal.style.display = "block";
+    modal2.style.display = "none";
+  }
+
+  function irParaObservacao3(e) {
+    e.preventDefault();
+
+    let modal = document.querySelector(".Observacao2");
+    let modal2 = document.querySelector(".Observacao3");
+
+    modal.style.display = "none";
+    modal2.style.display = "block";
+  }
+
+  function fecharFormIntuicao(e) {
+    e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
     }
 
-    function irParaObservacao1(e){
-        e.preventDefault();
-    
-        let modal = document.querySelector('.benchmarking');
-        let modal2 = document.querySelector('.Observacao2')
-        
-        modal.style.display = "block";
-        modal2.style.display = "none"
-    }
+    let modal = document.querySelector(".Observacao2");
 
-    function irParaObservacao3(e){
-        e.preventDefault();
-    
-        let modal = document.querySelector('.Observacao2')
-        let modal2 = document.querySelector('.Observacao3')
-        
-        modal.style.display = "none";
-        modal2.style.display = 'block';
-    }
+    modal.style.display = "none";
+    let medel = document.querySelector(".tela_3_form_interacao");
+    medel.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
+  }
 
 	return(
 	    <div className="Observacao2">
             <div className='centerObs2'>
+                <button
+                className="close_obs"
+                onClick={(e) => fecharFormIntuicao(e)}
+                ></button>
+                <div className="dot2_obs"></div>
+                <div className="dot3_obs"></div>
+                <div className="psdoprojeto"></div>
                 <div className='psdoprojeto'>
                     <h2>Revisão dos 4P's do projeto</h2>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    <div onClick={clicouNaDuvida} className="duvida3"></div>
                     <table>
                     <tr>
                         <td>P1:<input type="text" name='primeiroP' value={primeiroP} onChange={handleInputChangePsObser}/></td>
@@ -229,80 +252,78 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
                     </table>
                 </div> 
 
-                <div className='clear'></div>
+        <div className="clear"></div>
 
-                <div className='Relacionamento'>
-                    <div className='Single'> 
-                        <span>Quais parceiros são mais alinhados ao meu negócio</span>
-                        <input type='text' name='alinhadosObser2' value={alinhadosObser2} onChange={handleInputChangeAproximados}/>
+        <div className='Relacionamento'>
+            <div className='Single1'> 
+            <span>Quais parceiros são mais alinhados ao meu negócio</span>
+            <input type='text' name='alinhadosObser2' value={alinhadosObser2} onChange={handleInputChangeAproximados}/> </div>
 
-                    </div>
+            <div className='Single2'> 
+            <span>De quais parceiros devemos nos aproximar?</span>
+            <input type='text' name='proximos' value={proximos} onChange={handleInputChangeAproximados}/> </div>
 
-                    <div className='Single'> 
-                        <span>De quais parceiros devemos nos aproximar?</span>
-                        <input type='text' name='proximos' value={proximos} onChange={handleInputChangeAproximados}/>
-                        
-                    </div>
+            <div className='Single3'> 
+            <span>Conseguimos transformar algum concorrente em parceiro?</span>
+            <input type='text'name='concorrenteObser2' value={concorrenteObser2} onChange={handleInputChangeAproximados}/></div>
+        </div>
 
-                    <div className='Single'> 
-                        <span>Conseguimos transformar algum concorrente em parceiro?</span>
-                        <input type='text'name='concorrenteObser2' value={concorrenteObser2} onChange={handleInputChangeAproximados}/>
-                        
-                    </div>
-                </div>
+        <div className="conceito">
+          <p>Conceito:</p>
+          <div onClick={clicouNaDuvida} className="duvida4"></div>
+          <table>
+            <tr>
+              <th className="primeiro-canto">Ferramentas</th>
+              <th>Requisitos</th>
+              <th>Oportunidades</th>
+              <th>Indicado para</th>
+              <th>Orientações de uso</th>
+              <th className="segundo-canto">Resultado esperado</th>
+            </tr>
 
-                <div className='clear'></div>
+            <tr>
+                <td><input type="text" name='primeiraLinhaFerramentas' value={primeiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
+                <td><input type="text" name='primeiraLinhaRequisitos' value={primeiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
+                <td><input type="text" name='primeiraLinhaOportunidades' value={primeiraLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
+                <td><input type="text" name='primeiraLinhaIndicado' value={primeiraLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
+                <td><input type="text" name='primeiraLinhaOrientacao' value={primeiraLinhaOrientacao} onChange={handleInputChangeOrientacao}/></td>
+                <td><input type="text" name='primeiraLinhaResultado' value={primeiraLinhaResultado} onChange={handleInputChangeResultado}/></td>
+            </tr>
 
-                <div className="conceito">
-                    <p>Conceito</p>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
-                    <table>
-                        <tr>
-                            <th className="primeiro-canto">Ferramentas</th>
-                            <th>Requisitos</th>
-                            <th>Oportunidades</th>
-                            <th>Indicado para</th>
-                            <th>Orientações de uso</th>
-                            <th className="segundo-canto">Resultado esperado</th>
-                        </tr>
+            <tr>
+                <td><input type="text" name='segundaLinhaFerramentas' value={segundaLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
+                <td><input type="text" name='segundaLinhaRequisitos' value={segundaLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
+                <td><input type="text" name='segundaLinhaOportunidades' value={segundaLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
+                <td><input type="text" name='segundaLinhaindicado' value={segundaLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
+                <td><input type="text" name='segundaLinhaOrientacao' value={segundaLinhaOrientacao} onChange={handleInputChangeOrientacao}/></td>
+                <td><input type="text" name='segundaLinhaResultado' value={segundaLinhaResultado} onChange={handleInputChangeResultado}/></td>
+            </tr>
 
-                        <tr>
-                            <td><input type="text" name='primeiraLinhaFerramentas' value={primeiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
-                            <td><input type="text" name='primeiraLinhaRequisitos' value={primeiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
-                            <td><input type="text" name='primeiraLinhaOportunidades' value={primeiraLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
-                            <td><input type="text" name='primeiraLinhaIndicado' value={primeiraLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
-                            <td><input type="text" name='primeiraLinhaOrientacao' value={primeiraLinhaOrientacao} onChange={handleInputChangeOrientacao}/></td>
-                            <td><input type="text" name='primeiraLinhaResultado' value={primeiraLinhaResultado} onChange={handleInputChangeResultado}/></td>
-                        </tr>
+            <tr>
+                <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaFerramentas' value={terceiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
+                <td><input type="text" name='terceiraLinhaRequisitos' value={terceiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
+                <td><input type="text" name='terceiraLinhaOportunidades' value={terceiraLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
+                <td><input type="text" name='terceiraLinhaindicado' value={terceiraLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
+                <td><input type="text" name='terceiraLinhaOrientacao' value={terceiraLinhaOrientacao} onChange={handleInputChangeOrientacao}/></td>
+                <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='terceiraLinhaResultado' value={terceiraLinhaResultado} onChange={handleInputChangeResultado}/></td>
+            </tr>
+          </table>
+        </div>
 
-                        <tr>
-                            <td><input type="text" name='segundaLinhaFerramentas' value={segundaLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
-                            <td><input type="text" name='segundaLinhaRequisitos' value={segundaLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
-                            <td><input type="text" name='segundaLinhaOportunidades' value={segundaLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
-                            <td><input type="text" name='segundaLinhaindicado' value={segundaLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
-                            <td><input type="text" name='segundaLinhaOrientacao' value={segundaLinhaOrientacao} onChange={handleInputChangeOrientacao}/></td>
-                            <td><input type="text" name='segundaLinhaResultado' value={segundaLinhaResultado} onChange={handleInputChangeResultado}/></td>
-                        </tr>
+        <div
+          onClick={(e) => irParaObservacao1(e)}
+          className="seta-esquerda_obs2"
+        ></div>
 
-                        <tr>
-                            <td className="quarto-canto"><input className="quarto-canto" type="text" name='terceiraLinhaFerramentas' value={terceiraLinhaFerramentas} onChange={handleInputChangeFerramentas}/></td>
-                            <td><input type="text" name='terceiraLinhaRequisitos' value={terceiraLinhaRequisitos} onChange={handleInputChangeRequisitos}/></td>
-                            <td><input type="text" name='terceiraLinhaOportunidades' value={terceiraLinhaOportunidades} onChange={handleInputChangeOportunidades}/></td>
-                            <td><input type="text" name='terceiraLinhaindicado' value={terceiraLinhaIndicado} onChange={handleInputChangeIndicado}/></td>
-                            <td><input type="text" name='terceiraLinhaOrientacao' value={terceiraLinhaOrientacao} onChange={handleInputChangeOrientacao}/></td>
-                            <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='terceiraLinhaResultado' value={terceiraLinhaResultado} onChange={handleInputChangeResultado}/></td>
-                        </tr>
-                    </table>
-                </div>
+        <div
+          onClick={(e) => irParaObservacao3(e)}
+          className="seta-direita_obs2"
+        ></div>
 
-                <div onClick={(e) => irParaObservacao1(e)} className='seta-esquerda'></div>
-
-                <div onClick={(e) => irParaObservacao3(e)} className='seta-direita'></div>
-
-                <div className='clear'></div>
-            </div>
-        </div>  
-    )   
+        <div className="clear"></div>
+      </div>
+    </div>
+  );
 }
 
-export default Observacao2
+export default Observacao2;
