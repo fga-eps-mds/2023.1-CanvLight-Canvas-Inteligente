@@ -1,12 +1,21 @@
 import React from "react";
 import { jsPDF } from "jspdf";
-
+/*
+        ferramentasObser3, setFerramentasObser3] = useState ({});
+  const [indicadoPara, setIndicadoPara] = useState ({});
+  const [orientacaoUso, setOrientacaoUso] = useState ({});
+  const [resultadoEsperado, setResultadoEsparado] = useState ({});
+  const [ferramentasObser3P, setFerramentasObser3P] = useState ({});
+  const [indicadoParaP, setIndicadoParaP] = useState ({});
+  const [orientacaoUsoP, setOrientacaoUsoP] = useState ({});
+  const [resultadoEsperadoP
+        */
 
 function GeradorPDF({ sintesePotencialidades, sinteseResultados, intuQuatroP, intuTecnico, intuResiliente, intuEmocional, intuMercadologico, intuIntegrador, 
-  intuTextos, perfil1, prefil2, resultado, orientacao, indicado, oportunidades,requisitos, aproximados,
-  empresa, diferenca, porte, concorrencia, localizacao, imitado, ferramentas,  psObser,
-  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, 
-  analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota,
+  intuTextos, perfil1, prefil2, resultado, orientacao, indicado, oportunidades,requisitos, aproximados, indicadoPara, indicadoParaP,
+  empresa, diferenca, porte, concorrencia, localizacao, imitado, ferramentas,  psObser,ferramentasObser3, ferramentasObser3P,
+  melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, orientacaoUso, orientacaoUsoP, 
+  analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota,resultadoEsperado, resultadoEsperadoP,
   mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado, formacaoDescricao, formacaoCusto, formacaoTaxa, formacaoImpostos, formacaoMargem, formacaoPreco,
   canaisCanal, canaisObjetivo, canaisMetrica, inteQuatroP }) {
   function gerarPDF() {

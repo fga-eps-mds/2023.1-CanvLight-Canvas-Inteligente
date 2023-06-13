@@ -510,6 +510,16 @@ function Canvas() {
         indicado={indicado}
         orientacao={orientacao}
         resultado={resultado}
+
+        //observação3
+        ferramentasObser3={ferramentasObser3}
+        indicadoPara={indicadoPara}
+        orientacaoUso={orientacaoUso}
+        resultadoEsperado={resultadoEsperado}
+        ferramentasObser3P={ferramentasObser3P}
+        indicadoParaP={indicadoParaP}
+        orientacaoUsoP={orientacaoUsoP}
+        resultadoEsperadoP={resultadoEsperadoP}
         
         //Interação
         descricao={descricao}
