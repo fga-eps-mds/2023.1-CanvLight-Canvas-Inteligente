@@ -501,6 +501,16 @@ function Canvas() {
         perfil1={perfil1}
         perfil2={perfil2}
 
+        //observação2
+        psObser={psObser}
+        aproximados={aproximados}
+        ferramentas={ferramentas}
+        requisitos={requisitos}
+        opotunidades={opotunidades}
+        indicado={indicado}
+        orientacao={orientacao}
+        resultado={resultado}
+        
         //Interação
         descricao={descricao}
         analisePreco={analisePreco}

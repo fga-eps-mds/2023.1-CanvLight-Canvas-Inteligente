@@ -1,9 +1,10 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 
+
 function GeradorPDF({ sintesePotencialidades, sinteseResultados, intuQuatroP, intuTecnico, intuResiliente, intuEmocional, intuMercadologico, intuIntegrador, 
-  intuTextos, perfil1, prefil2,
-  empresa, diferenca, porte, concorrencia, localizacao, imitado, 
+  intuTextos, perfil1, prefil2, resultado, orientacao, indicado, oportunidades,requisitos, aproximados,
+  empresa, diferenca, porte, concorrencia, localizacao, imitado, ferramentas,  psObser,
   melhorar, descricao, analisePreco, analiseQuantidade, analiseCusto, analiseDiferencial, 
   analisePreDif, parceiro, beneficios, insumos, fornecer, risco, verticalizar, nota,
   mvpProduto, mvpIndicado, mvpOrientacoes, mvpResultado, formacaoDescricao, formacaoCusto, formacaoTaxa, formacaoImpostos, formacaoMargem, formacaoPreco,
