@@ -398,7 +398,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                 <div className="dot2_obs"></div>
                 <div className="dot3_obs"></div>
                 <h2>Benchmarking</h2>
-                <div onClick={clicouNaDuvida}  className='duvida'></div>
+                <div onClick={clicouNaDuvida}  className='duvida1'></div>
                 <div className="concorrente">
                     <p>Concorrente</p>
                     <table>
@@ -447,8 +447,6 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                 </div>
 
                 <div className="parceiro">
-
-                    {/* <div onClick={clicouNaDuvida} className='duvida'></div> */}
 
                     <div className='clear'></div>
 
@@ -499,7 +497,7 @@ function Observacao1({ onEmpresaChange, onDiferencaChange, onPorteChange, onConc
                 <div className='clear'></div>
             
                 <div className='perfil'>
-                    <div onClick={clicouNaDuvida} className='duvida'></div>
+                    <div onClick={clicouNaDuvida} className='duvida2'></div>
 
                     <div className='clear'></div>
 
