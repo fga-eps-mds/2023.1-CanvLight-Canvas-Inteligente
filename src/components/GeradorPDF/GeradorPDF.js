@@ -1,15 +1,5 @@
 import React from "react";
 import { jsPDF } from "jspdf";
-/*
-        ferramentasObser3, setFerramentasObser3] = useState ({});
-  const [indicadoPara, setIndicadoPara] = useState ({});
-  const [orientacaoUso, setOrientacaoUso] = useState ({});
-  const [resultadoEsperado, setResultadoEsparado] = useState ({});
-  const [ferramentasObser3P, setFerramentasObser3P] = useState ({});
-  const [indicadoParaP, setIndicadoParaP] = useState ({});
-  const [orientacaoUsoP, setOrientacaoUsoP] = useState ({});
-  const [resultadoEsperadoP
-        */
 
 function GeradorPDF({ sintesePotencialidades, sinteseResultados, intuQuatroP, intuTecnico, intuResiliente, intuEmocional, intuMercadologico, intuIntegrador, 
   intuTextos, perfil1, prefil2, resultado, orientacao, indicado, oportunidades,requisitos, aproximados, indicadoPara, indicadoParaP,
