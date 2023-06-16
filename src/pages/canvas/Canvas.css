@@ -46,27 +46,6 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    width: 65vw;
-    height: 60vh;
-    margin-top: 25%;
-    transform: translate(-50%, -50%);
-    border-width: 30px;
-    border-radius: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 65vw;
-    height: 60vh;
-    margin-top: 25%;
-    transform: translate(-50%, -50%);
-    border-width: 20px;
-    border-radius: 10px;
-  }
-}
 
 .button1 {
   width: 20%;
@@ -123,8 +102,8 @@
   position: absolute;
   top: -7%;
   left: -2.5%;
-  width: 20px;
-  height: 20px;
+  width: 1vw;
+  height: 2.3vh;
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
@@ -135,8 +114,8 @@
   position: absolute;
   top: -7%;
   left: 0.3%;
-  width: 20px;
-  height: 20px;
+  width: 1vw;
+  height: 2.3vh;
   background-color: rgb(248, 225, 14);
   border-radius: 50%;
   cursor: pointer;
@@ -147,8 +126,8 @@
   position: fixed;
   top: -7%;
   left: 3.1%;
-  width: 20px;
-  height: 20px;
+  width: 1vw;
+  height: 2.3vh;
   background-color: rgb(45, 202, 25);
   border-radius: 50%;
   cursor: pointer;
@@ -226,4 +205,77 @@
   margin-left: 92%;
   background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 65vw;
+    height: 60vh;
+    margin-top: 25%;
+    transform: translate(-50%, -50%);
+    border-width: 30px;
+    border-radius: 20px;
+  }
+  .button1,
+  .button2,
+  .button3 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name_navbar,
+  .cnvgen_navbar,
+  .desktop ul li {
+    padding: 1px;
+    top: -80%;
+    font-size: 7px;
+  }
+  .desktop ul {
+    margin-top: -0.5%;
+    margin-right: 1%;
+  }
+  .dot,
+  .dot2,
+  .dot3 {
+    margin-left: -3%;
+    width: 1.5vw;
+    height: 3.5vh;
+  }
+  .dot2 {
+    left: 1vw;
+  }
+  .dot3 {
+    left: 3.3vw;
+  }
+  .container {
+    width: 65vw;
+    height: 130vh;
+    margin-top: 35%;
+    transform: translate(-50%, -50%);
+    border-width: 20px;
+    border-radius: 10px;
+  }
+  .rectangle {
+    flex-direction: row;
+  }
+  .button1 {
+    left: 111%;
+    height: 20%;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .button2 {
+    top: 22%;
+    left: 15%;
+    height: 40%;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .button3 {
+    top: 68%;
+    left: -52%;
+    width: 100%;
+    height: 30%;
+    border-radius: 8px;
+  }
 }

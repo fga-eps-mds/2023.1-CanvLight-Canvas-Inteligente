@@ -10,6 +10,7 @@ import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
 import checkIcon from "../../images/check.png";
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
+import gerarPDF from "../../components/GeradorPDF/GeradorPDF";
 
 function Canvas() {
   //intuição
@@ -544,7 +545,12 @@ function Canvas() {
         <img src={arrowIcon} alt="Seta" className="arrow-button" />
       </Link>
       <div>
-        <img src={checkIcon} alt="Confirma" className="confirma" />
+        <img
+          src={checkIcon}
+          alt="Confirma"
+          className="confirma"
+          onClick={gerarPDF}
+        />
       </div>
     </div>
   );
