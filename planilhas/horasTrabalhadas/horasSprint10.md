@@ -1,4 +1,4 @@
-| Controle de Horas Trabalhadas - Sprint 10 |  |  |  |  |  |  |  |  |  |  |
+| Controle de Horas Trabalhadas-Sprint 10 |  |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Feriado? | Data | Nome (Colaborador) | Entrada | Saída intervalo | Retorno intervalo | Saída | Total horas |  | Nome (Colaborador) | Total horas do sprint |
 |  | 09/06/2023 | Pedro | 11:00 |  |  | 12:00 | 1:00:00 |  | BrenoA | 07:26 |
