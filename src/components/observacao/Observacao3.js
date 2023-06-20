@@ -214,7 +214,7 @@ function Observacao3({onFerramentasObser3Change, onIndicadoParaChange, onOrienta
 
         <div className= 'Prototipo'>
               <p>Protótipo</p>
-              <div onClick={clicouNaDuvida} className='duvida'></div>
+              <div onClick={clicouNaDuvida} className='duvida6'></div>
               <table>
                 <tr>
                   <th className="primeiro-canto">Ferramentas/Procedimentos</th>

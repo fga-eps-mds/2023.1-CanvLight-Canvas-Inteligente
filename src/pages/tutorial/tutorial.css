@@ -3,35 +3,13 @@
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
 }
-.sol-bg-tut {
-  position: relative;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background-color: #fcdbc1;
-  z-index: 0;
-  width: 100%;
-  height: 1500px;
-}
-
-.sol-inv-tut {
-  z-index: 100;
-  position: absolute;
-  background-color: #fcdbc1;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  bottom: -50%;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .introducao {
   z-index: 1;
-  top: 15%;
+  top: 2%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .introducao h2 {
   color: #ff9000;
@@ -47,10 +25,10 @@
 
 .tut_dna {
   z-index: 1;
-  top: 90%;
+  top: 3%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_dna h2 {
   color: #ff9000;
@@ -65,10 +43,10 @@
 }
 .tut_ikigai {
   z-index: 1;
-  top: 120%;
+  top: 4%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_ikigai h2 {
   color: #ff9000;
@@ -83,10 +61,10 @@
 }
 .tut_fourps {
   z-index: 1;
-  top: 155%;
+  top: 5%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_fourps h2 {
   color: #ff9000;
@@ -101,10 +79,10 @@
 }
 .tut_sintese {
   z-index: 1;
-  top: 190%;
+  top: 6%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_sintese h2 {
   color: #ff9000;
@@ -119,10 +97,10 @@
 }
 .tut_benchmaking {
   z-index: 1;
-  top: 225%;
+  top: 7%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_benchmaking h2 {
   color: #ff9000;
@@ -138,10 +116,10 @@
 
 .tut_perfis_cliente {
   z-index: 1;
-  top: 255%;
+  top: 8%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 
 .tut_perfis_cliente h2 {
@@ -159,10 +137,10 @@
 
 .tut_proposta_valor {
   z-index: 1;
-  top: 287%;
+  top: 9%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_proposta_valor h2 {
   color: #ff9000;
@@ -178,10 +156,10 @@
 
 .tut_conceito {
   z-index: 1;
-  top: 320%;
+  top: 10%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_conceito h2 {
   color: #ff9000;
@@ -197,10 +175,10 @@
 
 .tut_modelo {
   z-index: 1;
-  top: 355%;
+  top: 11%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_modelo h2 {
   color: #ff9000;
@@ -216,10 +194,10 @@
 
 .tut_prototipo {
   z-index: 1;
-  top: 385%;
+  top: 12%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_prototipo h2 {
   color: #ff9000;
@@ -235,10 +213,10 @@
 
 .tut_analise_custo {
   z-index: 1;
-  top: 415%;
+  top: 13%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_analise_custo h2 {
   color: #ff9000;
@@ -254,10 +232,10 @@
 
 .tut_analise_preco_diferenciais {
   z-index: 1;
-  top: 450%;
+  top: 14%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_analise_preco_diferenciais h2 {
   color: #ff9000;
@@ -273,10 +251,10 @@
 
 .tut_melhorias {
   z-index: 1;
-  top: 480%;
+  top: 15%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_melhorias h2 {
   color: #ff9000;
@@ -292,10 +270,10 @@
 
 .tut_mvp {
   z-index: 1;
-  top: 505%;
+  top: 16%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_mvp h2 {
   color: #ff9000;
@@ -311,10 +289,10 @@
 
 .tut_formacao_preco {
   z-index: 1;
-  top: 535%;
+  top: 17%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_formacao_preco h2 {
   color: #ff9000;
@@ -330,10 +308,10 @@
 
 .tut_digitalizacao {
   z-index: 1;
-  top: 570%;
+  top: 18%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_digitalizacao h2 {
   color: #ff9000;
@@ -349,10 +327,10 @@
 
 .tut_canais_venda {
   z-index: 1;
-  top: 595%;
+  top: 19%;
   left: 10%;
   width: 80%;
-  position: absolute;
+  position: relative;
 }
 .tut_canais_venda h2 {
   color: #ff9000;

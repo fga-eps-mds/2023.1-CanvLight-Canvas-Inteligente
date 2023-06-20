@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Canvas.css";
 import logo from "../../images/logo_canvlight.png";
 import arrowIcon from "../../images/arrow.png";
@@ -12,8 +12,7 @@ import checkIcon from "../../images/check.png";
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 
 function Canvas() {
-
-//intuição
+  //intuição
   const [intuTextos, setIntuTextos] = useState({});
   const [intuIntegrador, setIntuIntegrador] = useState({});
   const [intuMercadologico, setIntuMercadologico] = useState({});
@@ -24,45 +23,45 @@ function Canvas() {
   const [sinteseResultados, setSinteseResultados] = useState({});
   const [intuQuatroP, setIntuQuatroP] = useState({});
 
-//observação3
-  const [ferramentasObser3, setFerramentasObser3] = useState ({});
-  const [indicadoPara, setIndicadoPara] = useState ({});
-  const [orientacaoUso, setOrientacaoUso] = useState ({});
-  const [resultadoEsperado, setResultadoEsparado] = useState ({});
-  const [ferramentasObser3P, setFerramentasObser3P] = useState ({});
-  const [indicadoParaP, setIndicadoParaP] = useState ({});
-  const [orientacaoUsoP, setOrientacaoUsoP] = useState ({});
-  const [resultadoEsperadoP, setResultadoEsparadoP] = useState ({});
- 
-//observação2
-  const [psObser, setPsObser] = useState ({});
-  const [aproximados, setAproximados] = useState ({});
-  const [ferramentas, setFerramentas] = useState ({});
-  const [requisitos, setRequisitos] = useState ({});
-  const [opotunidades, setOportunidades] =useState ({});
-  const [indicado, setIndicado] = useState ({});
-  const [orientacao, setOrientacao] = useState ({});
-  const [resultado, setResultado] = useState ({});
- 
-//observação1
+  //observação3
+  const [ferramentasObser3, setFerramentasObser3] = useState({});
+  const [indicadoPara, setIndicadoPara] = useState({});
+  const [orientacaoUso, setOrientacaoUso] = useState({});
+  const [resultadoEsperado, setResultadoEsparado] = useState({});
+  const [ferramentasObser3P, setFerramentasObser3P] = useState({});
+  const [indicadoParaP, setIndicadoParaP] = useState({});
+  const [orientacaoUsoP, setOrientacaoUsoP] = useState({});
+  const [resultadoEsperadoP, setResultadoEsparadoP] = useState({});
+
+  //observação2
+  const [psObser, setPsObser] = useState({});
+  const [aproximados, setAproximados] = useState({});
+  const [ferramentas, setFerramentas] = useState({});
+  const [requisitos, setRequisitos] = useState({});
+  const [opotunidades, setOportunidades] = useState({});
+  const [indicado, setIndicado] = useState({});
+  const [orientacao, setOrientacao] = useState({});
+  const [resultado, setResultado] = useState({});
+
+  //observação1
   const [empresa, setEmpresa] = useState({});
   const [diferenca, setDiferenca] = useState({});
   const [porte, setPorte] = useState({});
   const [concorrencia, setConcorrencia] = useState({});
   const [localizacao, setLocalizacao] = useState({});
-  const [imitado, setImitado] =useState({});
+  const [imitado, setImitado] = useState({});
   const [melhorar, setMelhorar] = useState({});
   const [parceiro, setParceiro] = useState({});
   const [insumos, setInsumos] = useState({});
-  const [beneficios, setBeneficios]  = useState({});
-  const [fornecer, setFornecer] = useState ({});
-  const [risco, setRisco] = useState ({});
-  const [verticalizar, setVerticalizar] = useState ({});
-  const [nota , setNota] = useState ({});
+  const [beneficios, setBeneficios] = useState({});
+  const [fornecer, setFornecer] = useState({});
+  const [risco, setRisco] = useState({});
+  const [verticalizar, setVerticalizar] = useState({});
+  const [nota, setNota] = useState({});
   const [perfil1, setPerfil1] = useState({});
   const [perfil2, setPerfil2] = useState({});
 
-//interação
+  //interação
   const [descricao, setDescricao] = useState({});
   const [analisePreco, setAnalisePreco] = useState({});
   const [analiseQuantidade, setAnaliseQuantidade] = useState({});
@@ -84,174 +83,176 @@ function Canvas() {
   const [canaisMetrica, setCanaisMetrica] = useState({});
   const [inteQuatroP, setInteQuatroP] = useState({});
 
-//intuição
+  //intuição
   const handleIntuTextosChange = (novosDadosIntuTextos) => {
     setIntuTextos(novosDadosIntuTextos);
-  }
+  };
 
   const handleIntuIntegradorChange = (novosDadosIntuIntegrador) => {
     setIntuIntegrador(novosDadosIntuIntegrador);
-  }
+  };
 
   const handleIntuMercadologicoChange = (novosDadosIntuMercadologico) => {
     setIntuMercadologico(novosDadosIntuMercadologico);
-  }
+  };
 
   const handleIntuEmocionalChange = (novosDadosIntuEmocional) => {
     setIntuEmocional(novosDadosIntuEmocional);
-  }
+  };
 
   const handleIntuResilienteChange = (novosDadosIntuResiliente) => {
     setIntuResiliente(novosDadosIntuResiliente);
-  }
+  };
 
   const handleIntuTecnicoChange = (novosDadosIntuTecnico) => {
     setIntuTecnico(novosDadosIntuTecnico);
-  }
+  };
 
-  const handleSintesePotencialidadesChange = (novosDadosSintesePotencialidades) => {
+  const handleSintesePotencialidadesChange = (
+    novosDadosSintesePotencialidades
+  ) => {
     setSintesePotencialidades(novosDadosSintesePotencialidades);
-  }
+  };
 
   const handleSinteseResultadosChange = (novosDadosSinteseResultados) => {
     setSinteseResultados(novosDadosSinteseResultados);
-  }
+  };
 
   const handleIntuQuatroPChange = (novosDadosIntuQuatroP) => {
     setIntuQuatroP(novosDadosIntuQuatroP);
   };
 
-//observação3
-  const handleResultadoEsparadoPChange =(novosDadosResultadoEsparadoP) => {
+  //observação3
+  const handleResultadoEsparadoPChange = (novosDadosResultadoEsparadoP) => {
     setResultadoEsparadoP(novosDadosResultadoEsparadoP);
-  }
+  };
 
-  const handleOrientacaoUsoPChange =(novosDadosOrientacaoUsoP) => {
+  const handleOrientacaoUsoPChange = (novosDadosOrientacaoUsoP) => {
     setOrientacaoUsoP(novosDadosOrientacaoUsoP);
-  }
+  };
 
-  const handleFerramentasObser3PChange =(novosDadosFerramentasObser3P) => {
+  const handleFerramentasObser3PChange = (novosDadosFerramentasObser3P) => {
     setFerramentasObser3P(novosDadosFerramentasObser3P);
-  }
+  };
 
-  const handleIndicadoParaPChange =(novosDadosIndicadoParaP) => {
+  const handleIndicadoParaPChange = (novosDadosIndicadoParaP) => {
     setIndicadoParaP(novosDadosIndicadoParaP);
-  }
+  };
 
-  const handleResultadoEsparadoChange =(novosDadosResultadoEsparado) => {
+  const handleResultadoEsparadoChange = (novosDadosResultadoEsparado) => {
     setResultadoEsparado(novosDadosResultadoEsparado);
-  }
+  };
 
-  const handleOrientacaoUsoChange =(novosDadosOrientacaoUso) => {
+  const handleOrientacaoUsoChange = (novosDadosOrientacaoUso) => {
     setOrientacaoUso(novosDadosOrientacaoUso);
-  }
+  };
 
-  const handleFerramentasObser3Change =(novosDadosFerramentasObser3) => {
+  const handleFerramentasObser3Change = (novosDadosFerramentasObser3) => {
     setFerramentasObser3(novosDadosFerramentasObser3);
-  }
+  };
 
-  const handleIndicadoParaChange =(novosDadosIndicadoPara) => {
+  const handleIndicadoParaChange = (novosDadosIndicadoPara) => {
     setIndicadoPara(novosDadosIndicadoPara);
-  }
+  };
 
-//observação2
-  const handleResultadoChange =(novosDadosResultado) => {
+  //observação2
+  const handleResultadoChange = (novosDadosResultado) => {
     setResultado(novosDadosResultado);
-  }
+  };
 
-  const handleOrientacaoChange =(novosDadosOrientacao) => {
+  const handleOrientacaoChange = (novosDadosOrientacao) => {
     setOrientacao(novosDadosOrientacao);
-  }
+  };
 
-  const handleIndicadoChange =(novosDadosIndicado) => {
+  const handleIndicadoChange = (novosDadosIndicado) => {
     setIndicado(novosDadosIndicado);
-  }
+  };
 
-  const handleOportunidadesChange =(novosDadosOportunidades) => {
+  const handleOportunidadesChange = (novosDadosOportunidades) => {
     setOportunidades(novosDadosOportunidades);
-  }
+  };
 
-  const handleRequisitosChange =(novosDadosRequisitos) => {
+  const handleRequisitosChange = (novosDadosRequisitos) => {
     setRequisitos(novosDadosRequisitos);
-  }
+  };
 
-  const handleFerramentasChange =(novosDadosFerramentas) => {
+  const handleFerramentasChange = (novosDadosFerramentas) => {
     setFerramentas(novosDadosFerramentas);
-  }
+  };
 
-  const handleAproximadosChange =(novosDadosAproximados) => {
+  const handleAproximadosChange = (novosDadosAproximados) => {
     setAproximados(novosDadosAproximados);
-  }
+  };
 
-  const handlePsObserChange =(novosDadosPsObser) => {
+  const handlePsObserChange = (novosDadosPsObser) => {
     setPsObser(novosDadosPsObser);
-  }
+  };
 
-//observação1
-  const handlePerfil2Change =(novosDadosPerfil2) => {
+  //observação1
+  const handlePerfil2Change = (novosDadosPerfil2) => {
     setPerfil2(novosDadosPerfil2);
-  }
+  };
 
-  const handlePerfil1Change =(novosDadosPerfil1) => {
+  const handlePerfil1Change = (novosDadosPerfil1) => {
     setPerfil1(novosDadosPerfil1);
-  }
+  };
 
-  const handleNotaChange =(novosDadosNota) => {
+  const handleNotaChange = (novosDadosNota) => {
     setNota(novosDadosNota);
-  }
+  };
 
-  const handleVerticalizarChange =(novosDadosVerticalizar) => {
+  const handleVerticalizarChange = (novosDadosVerticalizar) => {
     setVerticalizar(novosDadosVerticalizar);
-  }
+  };
 
-  const handleRiscoChange =(novosDadosRisco) => {
+  const handleRiscoChange = (novosDadosRisco) => {
     setRisco(novosDadosRisco);
-  }
+  };
 
-  const handleFornecerChange =(novosDadosFornecer) => {
+  const handleFornecerChange = (novosDadosFornecer) => {
     setFornecer(novosDadosFornecer);
-  }
+  };
 
-  const handleBeneficiosChange =(novosDadosBeneficios) => {
+  const handleBeneficiosChange = (novosDadosBeneficios) => {
     setBeneficios(novosDadosBeneficios);
-  }
+  };
 
-  const handleIsumosChange =(novosDadosInsumos) => {
+  const handleIsumosChange = (novosDadosInsumos) => {
     setInsumos(novosDadosInsumos);
-  }
+  };
 
-  const handleParceiroChange =(novosDadosParceiro) => {
+  const handleParceiroChange = (novosDadosParceiro) => {
     setParceiro(novosDadosParceiro);
-  }
+  };
 
-  const handleIMelhorarChange = (novosDadosMelhorar) =>{
+  const handleIMelhorarChange = (novosDadosMelhorar) => {
     setMelhorar(novosDadosMelhorar);
-  }
+  };
 
-  const handleImitadoChange = (novosDadosImitado) =>{
+  const handleImitadoChange = (novosDadosImitado) => {
     setImitado(novosDadosImitado);
-  }
+  };
 
-  const handleLocalizacaoChange = (novosDadosLocalizacao) =>{
+  const handleLocalizacaoChange = (novosDadosLocalizacao) => {
     setLocalizacao(novosDadosLocalizacao);
-  }
+  };
 
-  const handleConcorrenciaChange = (novosDadosConcorrencia) =>{
+  const handleConcorrenciaChange = (novosDadosConcorrencia) => {
     setConcorrencia(novosDadosConcorrencia);
-  }
+  };
 
-  const handlePorteChange = (novosDadosPorte) =>{
+  const handlePorteChange = (novosDadosPorte) => {
     setPorte(novosDadosPorte);
-  }
+  };
 
-  const handleDiferencaChange = (novosDadosDiferenca)=>{
+  const handleDiferencaChange = (novosDadosDiferenca) => {
     setDiferenca(novosDadosDiferenca);
-  }
+  };
 
   const handleEmpresaChange = (novosDadosEmpresa) => {
     setEmpresa(novosDadosEmpresa);
   };
-//Interação
+  //Interação
   const handleDescricaoChange = (novosDadosDescricao) => {
     setDescricao(novosDadosDescricao);
   };
@@ -407,7 +408,7 @@ function Canvas() {
         onIntuQuatroPChange={handleIntuQuatroPChange}
       />
 
-      <Observacao1 
+      <Observacao1
         onEmpresaChange={handleEmpresaChange}
         onDiferencaChange={handleDiferencaChange}
         onPorteChange={handlePorteChange}
@@ -426,7 +427,7 @@ function Canvas() {
         onPerfil2Change={handlePerfil2Change}
       />
 
-      <Observacao2 
+      <Observacao2
         onPsObserChange={handlePsObserChange}
         onAproximadosChange={handleAproximadosChange}
         onFerramentasChange={handleFerramentasChange}
@@ -437,7 +438,7 @@ function Canvas() {
         onResultadoChange={handleResultadoChange}
       />
 
-      <Observacao3 
+      <Observacao3
         onFerramentasObser3Change={handleFerramentasObser3Change}
         onIndicadoParaChange={handleIndicadoParaChange}
         onOrientacaoUsoChange={handleOrientacaoUsoChange}
@@ -448,7 +449,7 @@ function Canvas() {
         onResultadoEsparadoPChange={handleResultadoEsparadoPChange}
       />
 
-      <Interacao 
+      <Interacao
         onDescricaoChange={handleDescricaoChange}
         onAnalisePrecoChange={handleAnalisePrecoChange}
         onAnaliseQuantidadeChange={handleAnaliseQuantidadeChange}
@@ -482,7 +483,6 @@ function Canvas() {
         sintesePotencialidades={sintesePotencialidades}
         sinteseResultados={sinteseResultados}
         intuQuatroP={intuQuatroP}
-
         //observação1
         empresa={empresa}
         diferenca={diferenca}
@@ -500,7 +500,6 @@ function Canvas() {
         nota={nota}
         perfil1={perfil1}
         perfil2={perfil2}
-
         //observação2
         psObser={psObser}
         aproximados={aproximados}
@@ -510,7 +509,6 @@ function Canvas() {
         indicado={indicado}
         orientacao={orientacao}
         resultado={resultado}
-
         //observação3
         ferramentasObser3={ferramentasObser3}
         indicadoPara={indicadoPara}
@@ -520,7 +518,6 @@ function Canvas() {
         indicadoParaP={indicadoParaP}
         orientacaoUsoP={orientacaoUsoP}
         resultadoEsperadoP={resultadoEsperadoP}
-        
         //Interação
         descricao={descricao}
         analisePreco={analisePreco}
@@ -542,7 +539,6 @@ function Canvas() {
         canaisObjetivo={canaisObjetivo}
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
-        
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />
