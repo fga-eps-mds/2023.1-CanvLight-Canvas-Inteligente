@@ -92,26 +92,90 @@ function GeradorPDF({
     doc.rect(324+MargemX, MargemY, 83, 210 ) // Retangulo Segmentos de Clientes *OBS 2mm a mais devido ao erro de calculo
     doc.rect(203+MargemX, 210+MargemY, 204, 76 ) // Retangulo Fontes de Receita  *OBS 1mm a mais devido ao erro de calculo
 
+    //Parceiros Principais
+    doc.text(
+      `Principais Parceiros`,
+      15,
+      18
+    );
+
+    //Atividades-cahves
+    doc.text(
+      `Atividades-chaves`,
+      96,
+      18
+    );
+
+    //Recursos Principais
+    doc.text(
+      `Recursos Principais`,
+      96,
+      123
+    );
+
+    //Estrutura de Custo
+    doc.text(
+      `Estrutura de custo`,
+      15,
+      228
+    );
+
+    //Proposta de Valor
+    doc.text(
+      `Proposta de Valor`,
+      177,
+      18
+    );
+
+    //Relacionamento com Clientes
+    doc.text(
+      `Relacionamento com Clientes`,
+      258,
+      18
+    );
+
+    //Canais
+    doc.text(
+      `Canais`,
+      258,
+      123
+    );
+
+    //Segmentos de Clientes
+    doc.text(
+      `Segmentos de Clientes`,
+      339,
+      18
+    );
+
+      //Fontes de Receita
+      doc.text(
+        `Fontes de Receita`,
+        218,
+        228
+      );
+
+
     //Intuicao
     /* doc.text(`SintesePotencialidades1: ${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 100,140);
     doc.text(`SintesePotencialidades2: ${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 100,150);
     doc.text(`SintesePotencialidades3: ${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 100,160); */
 
-    doc.text(
-      `IntuTextos1: ${intuTextos.primeiraLinhaIntuTextos}`, 
-      100, 
-      140
-    );
-    doc.text(
-      `IntuTextos2: ${intuTextos.segundaLinhaIntuTextos}`, 
-      100, 
-      150
-    );
-    doc.text(
-      `IntuTextos3: ${intuTextos.terceiraLinhaIntuTextos}`, 
-      100, 
-      160
-    );
+    // doc.text(
+    //   `IntuTextos1: ${intuTextos.primeiraLinhaIntuTextos}`, 
+    //   100, 
+    //   140
+    // );
+    // doc.text(
+    //   `IntuTextos2: ${intuTextos.segundaLinhaIntuTextos}`, 
+    //   100, 
+    //   150
+    // );
+    // doc.text(
+    //   `IntuTextos3: ${intuTextos.terceiraLinhaIntuTextos}`, 
+    //   100, 
+    //   160
+    // );
 
     /* doc.text(`SinteseResultados1: ${sinteseResultados.primeiraLinhaSinteseResultados}`, 100,140);
     doc.text(`SinteseResultados2: ${sinteseResultados.segundaLinhaSinteseResultados}`, 100,150);
@@ -127,257 +191,257 @@ function GeradorPDF({
     // doc.text(`empresa: ${empresa.segundaLinhaEmpresa}`, 12,20);
     // doc.text(`empresa: ${empresa.terceiraLinhaEmpresa}`, 12,30);
 
-    doc.text(
-      `parceiro: ${parceiro.primeiraLinhaParceiro}`, 
-      12, 
-      10
-    );
-    doc.text(
-      `parceiro: ${parceiro.segundaLinhaParceiro}`, 
-      12, 
-      20
-    );
-    doc.text(
-      `parceiro: ${parceiro.terceiraLinhaParceiro}`, 
-      12,
-      30
-    );
+    // doc.text(
+    //   `parceiro: ${parceiro.primeiraLinhaParceiro}`, 
+    //   12, 
+    //   10
+    // );
+    // doc.text(
+    //   `parceiro: ${parceiro.segundaLinhaParceiro}`, 
+    //   12, 
+    //   20
+    // );
+    // doc.text(
+    //   `parceiro: ${parceiro.terceiraLinhaParceiro}`, 
+    //   12,
+    //   30
+    // );
 
     // doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 12,40);
     // doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 12,50);
     // doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 12,60);
 
-    doc.text(
-      `beneficios: ${beneficios.primeiraLinhaBeneficios}`, 
-      12, 
-      40
-    );
-    doc.text(
-      `beneficios: ${beneficios.segundaLinhaBeneficios}`, 
-      12, 
-      50
-    );
-    doc.text(
-      `beneficios: ${beneficios.terceiraLinhaBeneficios}`, 
-      12, 
-      60
-    );
+    // doc.text(
+    //   `beneficios: ${beneficios.primeiraLinhaBeneficios}`, 
+    //   12, 
+    //   40
+    // );
+    // doc.text(
+    //   `beneficios: ${beneficios.segundaLinhaBeneficios}`, 
+    //   12, 
+    //   50
+    // );
+    // doc.text(
+    //   `beneficios: ${beneficios.terceiraLinhaBeneficios}`, 
+    //   12, 
+    //   60
+    // );
 
     // doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 12,70);
     // doc.text(`Porte: ${porte.segundaLinhaPorte}`, 12,80);
     // doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 12,90);
 
-    doc.text(
-      `insumos: ${insumos.primeiraLinhaInsumos}`, 
-      12, 
-      70
-    );
-    doc.text(
-      `insumos: ${insumos.segundaLinhaInsumos}`, 
-      12, 
-      80
-    );
-    doc.text(
-      `insumos: ${insumos.terceiraLinhaInsumos}`, 
-      12, 
-      90
-    );
+    // doc.text(
+    //   `insumos: ${insumos.primeiraLinhaInsumos}`, 
+    //   12, 
+    //   70
+    // );
+    // doc.text(
+    //   `insumos: ${insumos.segundaLinhaInsumos}`, 
+    //   12, 
+    //   80
+    // );
+    // doc.text(
+    //   `insumos: ${insumos.terceiraLinhaInsumos}`, 
+    //   12, 
+    //   90
+    // );
 
     // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.primeiraLinhaConcorrencia}`, 12,100);
     // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.segundaLinhaConcorrencia}`, 12,110);
     // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.terceiraLinhaConcorrencia}`, 12,120);
 
-    doc.text(`
-      fornecer: ${fornecer.primeiraLinhaFornecer}`, 
-      12, 
-      100
-    );
-    doc.text(
-      `fornecer: ${fornecer.segundaLinhaFornecer}`,
-      12, 
-      110
-    );
-    doc.text(
-      `fornecer: ${fornecer.terceiraLinhaFornecer}`, 
-      12, 
-      120
-    );
+    // doc.text(`
+    //   fornecer: ${fornecer.primeiraLinhaFornecer}`, 
+    //   12, 
+    //   100
+    // );
+    // doc.text(
+    //   `fornecer: ${fornecer.segundaLinhaFornecer}`,
+    //   12, 
+    //   110
+    // );
+    // doc.text(
+    //   `fornecer: ${fornecer.terceiraLinhaFornecer}`, 
+    //   12, 
+    //   120
+    // );
 
     // doc.text(`Localização: ${localizacao.primeiraLinhaLocalizacao}`, 12,130);
     // doc.text(`Localização: ${localizacao.segundaLinhaLocalizacao}`, 12,140);
     // doc.text(`Localização: ${localizacao.terceiraLinhaLocalizacao}`, 12,150);
 
-    doc.text(
-      `risco: ${risco.primeiraLinhaRisco}`, 
-      12, 
-      130
-    );
-    doc.text(
-      `risco: ${risco.segundaLinhaRisco}`, 
-      12, 
-      140
-    );
-    doc.text(
-      `risco: ${risco.terceiraLinhaRisco}`, 
-      12, 
-      150
-    );
+    // doc.text(
+    //   `risco: ${risco.primeiraLinhaRisco}`, 
+    //   12, 
+    //   130
+    // );
+    // doc.text(
+    //   `risco: ${risco.segundaLinhaRisco}`, 
+    //   12, 
+    //   140
+    // );
+    // doc.text(
+    //   `risco: ${risco.terceiraLinhaRisco}`, 
+    //   12, 
+    //   150
+    // );
 
     // doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 12,160);
     // doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 12,170);
     // doc.text(`O que pode ser imitado: ${imitado.terceiraLinhaImitado}`, 12,180);
 
-    doc.text(
-      `verticalizar: ${verticalizar.primeiraLinhaVerticalizar}`,
-      12,
-      160
-    );
-    doc.text(
-      `verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 
-      12, 
-      170
-    );
-    doc.text(
-      `verticalizar: ${verticalizar.terceiraLinhaVerticalizar}`,
-      12,
-      180
-    );
+    // doc.text(
+    //   `verticalizar: ${verticalizar.primeiraLinhaVerticalizar}`,
+    //   12,
+    //   160
+    // );
+    // doc.text(
+    //   `verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 
+    //   12, 
+    //   170
+    // );
+    // doc.text(
+    //   `verticalizar: ${verticalizar.terceiraLinhaVerticalizar}`,
+    //   12,
+    //   180
+    // );
 
     // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.primeiraLinhaMelhorar}`, 12,190);
     // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 12,200);
     // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 12,210);
 
-    doc.text(
-      `nota: ${nota.primeiraLinhaNota}`, 
-      12, 
-      190
-    );
-    doc.text(
-      `nota: ${nota.segundaLinhaNota}`,
-      12,
-      200
-    );
-    doc.text(
-      `nota: ${nota.terceiraLinhaNota}`, 
-      12, 
-      210
-    );
+    // doc.text(
+    //   `nota: ${nota.primeiraLinhaNota}`, 
+    //   12, 
+    //   190
+    // );
+    // doc.text(
+    //   `nota: ${nota.segundaLinhaNota}`,
+    //   12,
+    //   200
+    // );
+    // doc.text(
+    //   `nota: ${nota.terceiraLinhaNota}`, 
+    //   12, 
+    //   210
+    // );
 
-    doc.text(
-      `Descrição1: ${descricao.primeiraLinhaDescricao}`, 
-      12, 
-      220
-    );
-    doc.text(
-      `Descrição2: ${descricao.segundaLinhaDescricao}`, 
-      12, 
-      230
-    );
-    doc.text(
-      `Descrição3: ${descricao.terceiraLinhaDescricao}`, 
-      12, 
-      240
-    );
+    // doc.text(
+    //   `Descrição1: ${descricao.primeiraLinhaDescricao}`, 
+    //   12, 
+    //   220
+    // );
+    // doc.text(
+    //   `Descrição2: ${descricao.segundaLinhaDescricao}`, 
+    //   12, 
+    //   230
+    // );
+    // doc.text(
+    //   `Descrição3: ${descricao.terceiraLinhaDescricao}`, 
+    //   12, 
+    //   240
+    // );
 
-    doc.text(
-      `AnalisePreco1: ${analisePreco.primeiraLinhaAnalisePreco}`,
-      12,
-      250
-    );
-    doc.text(
-      `AnalisePreco2: ${analisePreco.segundaLinhaAnalisePreco}`,
-      12,
-      260
-    );
-    doc.text(
-      `AnalisePreco3: ${analisePreco.terceiraLinhaAnalisePreco}`,
-      12,
-      270
-    );
+    // doc.text(
+    //   `AnalisePreco1: ${analisePreco.primeiraLinhaAnalisePreco}`,
+    //   12,
+    //   250
+    // );
+    // doc.text(
+    //   `AnalisePreco2: ${analisePreco.segundaLinhaAnalisePreco}`,
+    //   12,
+    //   260
+    // );
+    // doc.text(
+    //   `AnalisePreco3: ${analisePreco.terceiraLinhaAnalisePreco}`,
+    //   12,
+    //   270
+    // );
 
-    doc.text(
-      `AnaliseQuantidade1: ${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`,
-      12,
-      280
-    );
-    doc.text(
-      `AnaliseQuantidade2: ${analiseQuantidade.segundaLinhaAnaliseQuantidade}`,
-      12,
-      290
-    );
-    doc.text(
-      `AnaliseQuantidade3: ${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`,
-      12,
-      300
-    );
+    // doc.text(
+    //   `AnaliseQuantidade1: ${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`,
+    //   12,
+    //   280
+    // );
+    // doc.text(
+    //   `AnaliseQuantidade2: ${analiseQuantidade.segundaLinhaAnaliseQuantidade}`,
+    //   12,
+    //   290
+    // );
+    // doc.text(
+    //   `AnaliseQuantidade3: ${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`,
+    //   12,
+    //   300
+    // );
 
-    doc.text(
-      `AnaliseCusto1: ${analiseCusto.primeiraLinhaAnaliseCusto}`,
-      100,
-      12
-    );
-    doc.text(
-      `AnaliseCusto2: ${analiseCusto.segundaLinhaAnaliseCusto}`,
-      100,
-      20
-    );
-    doc.text(
-      `AnaliseCusto3: ${analiseCusto.terceiraLinhaAnaliseCusto}`,
-      100,
-      30
-    );
+    // doc.text(
+    //   `AnaliseCusto1: ${analiseCusto.primeiraLinhaAnaliseCusto}`,
+    //   100,
+    //   12
+    // );
+    // doc.text(
+    //   `AnaliseCusto2: ${analiseCusto.segundaLinhaAnaliseCusto}`,
+    //   100,
+    //   20
+    // );
+    // doc.text(
+    //   `AnaliseCusto3: ${analiseCusto.terceiraLinhaAnaliseCusto}`,
+    //   100,
+    //   30
+    // );
 
-    doc.text(
-      `AnaliseDiferencial1: ${analiseDiferencial.primeiraLinhaAnaliseDiferencial}`,
-      100,
-      40
-    );
-    doc.text(
-      `AnaliseDiferencial2: ${analiseDiferencial.segundaLinhaAnaliseDiferencial}`,
-      100,
-      50
-    );
-    doc.text(
-      `AnaliseDiferencial3: ${analiseDiferencial.terceiraLinhaAnaliseDiferencial}`,
-      100,
-      60
-    );
-    doc.text(
-      `AnaliseDiferencial4: ${analiseDiferencial.quartaLinhaAnaliseDiferencial}`,
-      100,
-      70
-    );
-    doc.text(
-      `AnaliseDiferencial5: ${analiseDiferencial.quintaLinhaAnaliseDiferencial}`,
-      100,
-      80
-    );
+    // doc.text(
+    //   `AnaliseDiferencial1: ${analiseDiferencial.primeiraLinhaAnaliseDiferencial}`,
+    //   100,
+    //   40
+    // );
+    // doc.text(
+    //   `AnaliseDiferencial2: ${analiseDiferencial.segundaLinhaAnaliseDiferencial}`,
+    //   100,
+    //   50
+    // );
+    // doc.text(
+    //   `AnaliseDiferencial3: ${analiseDiferencial.terceiraLinhaAnaliseDiferencial}`,
+    //   100,
+    //   60
+    // );
+    // doc.text(
+    //   `AnaliseDiferencial4: ${analiseDiferencial.quartaLinhaAnaliseDiferencial}`,
+    //   100,
+    //   70
+    // );
+    // doc.text(
+    //   `AnaliseDiferencial5: ${analiseDiferencial.quintaLinhaAnaliseDiferencial}`,
+    //   100,
+    //   80
+    // );
 
-    doc.text(
-      `AnalisePreDif1: ${analisePreDif.primeiraLinhaAnalisePreDif}`,
-      100,
-      90
-    );
-    doc.text(
-      `AnalisePreDif2: ${analisePreDif.segundaLinhaAnalisePreDif}`,
-      100,
-      100
-    );
-    doc.text(
-      `AnalisePreDif3: ${analisePreDif.terceiraLinhaAnalisePreDif}`,
-      100,
-      110
-    );
-    doc.text(
-      `AnalisePreDif4: ${analisePreDif.quartaLinhaAnalisePreDif}`,
-      100,
-      120
-    );
-    doc.text(
-      `AnalisePreDif5: ${analisePreDif.quintaLinhaAnalisePreDif}`,
-      100,
-      130
-    );
+    // doc.text(
+    //   `AnalisePreDif1: ${analisePreDif.primeiraLinhaAnalisePreDif}`,
+    //   100,
+    //   90
+    // );
+    // doc.text(
+    //   `AnalisePreDif2: ${analisePreDif.segundaLinhaAnalisePreDif}`,
+    //   100,
+    //   100
+    // );
+    // doc.text(
+    //   `AnalisePreDif3: ${analisePreDif.terceiraLinhaAnalisePreDif}`,
+    //   100,
+    //   110
+    // );
+    // doc.text(
+    //   `AnalisePreDif4: ${analisePreDif.quartaLinhaAnalisePreDif}`,
+    //   100,
+    //   120
+    // );
+    // doc.text(
+    //   `AnalisePreDif5: ${analisePreDif.quintaLinhaAnalisePreDif}`,
+    //   100,
+    //   130
+    // );
 
     /* doc.text(`MvpProduto1: ${mvpProduto.primeiraLinhaMvpProduto}`, 100,140);
     doc.text(`MvpProduto2: ${mvpProduto.segundaLinhaMvpProduto}`, 100,150);
