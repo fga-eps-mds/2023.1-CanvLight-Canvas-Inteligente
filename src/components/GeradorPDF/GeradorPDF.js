@@ -1,5 +1,6 @@
 import React from "react";
 import { jsPDF } from "jspdf";
+import logo from "../../images/logo_canvlight.png";
 
 function GeradorPDF({
   sintesePotencialidades,
@@ -65,7 +66,25 @@ function GeradorPDF({
   inteQuatroP,
 }) {
   function gerarPDF() {
-    const doc = new jsPDF();
+    const doc = new jsPDF({
+      orientation: "landscape", // W = 420 e H = 297
+      format: 'a3',
+      unit: 'mm'
+    });
+    
+    doc.addImage(logo, 'PNG', 1, 1, 10, 10); // Adiciona a logo no canto do PDF
+
+    doc.setFillColor(0, 0, 0, 0.22); // Seleciona a cor do Fundo
+    doc.rect(12, 10, 407, 286, 'F'); // Adiciona o Retângulo maior
+
+    doc.setFontSize(16) // Tamanho da Fonte
+
+    doc.rect(12, 10, 81, 210 ) // Retangulo Parcerias principais
+    doc.rect(93, 10, 81, 105 ) // Retangulo Atividades-chave
+    doc.rect(93, 115, 81, 105 ) // Retangulo Recursos Principais
+    doc.rect(12, 220, 203, 76 ) // Retangulo Estrutura de Custo
+    doc.rect(174, 10, 81, 210 ) // Retangulo Proposta de Valor
+    
 
     //Intuicao
     /* doc.text(`SintesePotencialidades1: ${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 100,140);
@@ -86,110 +105,110 @@ function GeradorPDF({
     doc.text(`IntuQuatroP4: ${intuQuatroP.quartaLinhaIntuQuatroP}`, 100,170); */
 
     //observação
-    // doc.text(`empresa: ${empresa.primeiraLinhaEmpresa}`, 10,10);
-    // doc.text(`empresa: ${empresa.segundaLinhaEmpresa}`, 10,20);
-    // doc.text(`empresa: ${empresa.terceiraLinhaEmpresa}`, 10,30);
+    // doc.text(`empresa: ${empresa.primeiraLinhaEmpresa}`, 12,10);
+    // doc.text(`empresa: ${empresa.segundaLinhaEmpresa}`, 12,20);
+    // doc.text(`empresa: ${empresa.terceiraLinhaEmpresa}`, 12,30);
 
-    doc.text(`parceiro: ${parceiro.primeiraLinhaParceiro}`, 10, 10);
-    doc.text(`parceiro: ${parceiro.segundaLinhaParceiro}`, 10, 20);
-    doc.text(`parceiro: ${parceiro.terceiraLinhaParceiro}`, 10, 30);
+    doc.text(`parceiro: ${parceiro.primeiraLinhaParceiro}`, 12, 10);
+    doc.text(`parceiro: ${parceiro.segundaLinhaParceiro}`, 12, 20);
+    doc.text(`parceiro: ${parceiro.terceiraLinhaParceiro}`, 12, 30);
 
-    // doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 10,40);
-    // doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 10,50);
-    // doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 10,60);
+    // doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 12,40);
+    // doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 12,50);
+    // doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 12,60);
 
-    doc.text(`beneficios: ${beneficios.primeiraLinhaBeneficios}`, 10, 40);
-    doc.text(`beneficios: ${beneficios.segundaLinhaBeneficios}`, 10, 50);
-    doc.text(`beneficios: ${beneficios.terceiraLinhaBeneficios}`, 10, 60);
+    doc.text(`beneficios: ${beneficios.primeiraLinhaBeneficios}`, 12, 40);
+    doc.text(`beneficios: ${beneficios.segundaLinhaBeneficios}`, 12, 50);
+    doc.text(`beneficios: ${beneficios.terceiraLinhaBeneficios}`, 12, 60);
 
-    // doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 10,70);
-    // doc.text(`Porte: ${porte.segundaLinhaPorte}`, 10,80);
-    // doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 10,90);
+    // doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 12,70);
+    // doc.text(`Porte: ${porte.segundaLinhaPorte}`, 12,80);
+    // doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 12,90);
 
-    doc.text(`insumos: ${insumos.primeiraLinhaInsumos}`, 10, 70);
-    doc.text(`insumos: ${insumos.segundaLinhaInsumos}`, 10, 80);
-    doc.text(`insumos: ${insumos.terceiraLinhaInsumos}`, 10, 90);
+    doc.text(`insumos: ${insumos.primeiraLinhaInsumos}`, 12, 70);
+    doc.text(`insumos: ${insumos.segundaLinhaInsumos}`, 12, 80);
+    doc.text(`insumos: ${insumos.terceiraLinhaInsumos}`, 12, 90);
 
-    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.primeiraLinhaConcorrencia}`, 10,100);
-    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.segundaLinhaConcorrencia}`, 10,110);
-    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.terceiraLinhaConcorrencia}`, 10,120);
+    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.primeiraLinhaConcorrencia}`, 12,100);
+    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.segundaLinhaConcorrencia}`, 12,110);
+    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.terceiraLinhaConcorrencia}`, 12,120);
 
-    doc.text(`fornecer: ${fornecer.primeiraLinhaFornecer}`, 10, 100);
-    doc.text(`fornecer: ${fornecer.segundaLinhaFornecer}`, 10, 110);
-    doc.text(`fornecer: ${fornecer.terceiraLinhaFornecer}`, 10, 120);
+    doc.text(`fornecer: ${fornecer.primeiraLinhaFornecer}`, 12, 100);
+    doc.text(`fornecer: ${fornecer.segundaLinhaFornecer}`, 12, 110);
+    doc.text(`fornecer: ${fornecer.terceiraLinhaFornecer}`, 12, 120);
 
-    // doc.text(`Localização: ${localizacao.primeiraLinhaLocalizacao}`, 10,130);
-    // doc.text(`Localização: ${localizacao.segundaLinhaLocalizacao}`, 10,140);
-    // doc.text(`Localização: ${localizacao.terceiraLinhaLocalizacao}`, 10,150);
+    // doc.text(`Localização: ${localizacao.primeiraLinhaLocalizacao}`, 12,130);
+    // doc.text(`Localização: ${localizacao.segundaLinhaLocalizacao}`, 12,140);
+    // doc.text(`Localização: ${localizacao.terceiraLinhaLocalizacao}`, 12,150);
 
-    doc.text(`risco: ${risco.primeiraLinhaRisco}`, 10, 130);
-    doc.text(`risco: ${risco.segundaLinhaRisco}`, 10, 140);
-    doc.text(`risco: ${risco.terceiraLinhaRisco}`, 10, 150);
+    doc.text(`risco: ${risco.primeiraLinhaRisco}`, 12, 130);
+    doc.text(`risco: ${risco.segundaLinhaRisco}`, 12, 140);
+    doc.text(`risco: ${risco.terceiraLinhaRisco}`, 12, 150);
 
-    // doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 10,160);
-    // doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 10,170);
-    // doc.text(`O que pode ser imitado: ${imitado.terceiraLinhaImitado}`, 10,180);
+    // doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 12,160);
+    // doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 12,170);
+    // doc.text(`O que pode ser imitado: ${imitado.terceiraLinhaImitado}`, 12,180);
 
     doc.text(
       `verticalizar: ${verticalizar.primeiraLinhaVerticalizar}`,
-      10,
+      12,
       160
     );
-    doc.text(`verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 10, 170);
+    doc.text(`verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 12, 170);
     doc.text(
       `verticalizar: ${verticalizar.terceiraLinhaVerticalizar}`,
-      10,
+      12,
       180
     );
 
-    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.primeiraLinhaMelhorar}`, 10,190);
-    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 10,200);
-    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 10,210);
+    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.primeiraLinhaMelhorar}`, 12,190);
+    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 12,200);
+    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 12,210);
 
-    doc.text(`nota: ${nota.primeiraLinhaNota}`, 10, 190);
-    doc.text(`nota: ${nota.segundaLinhaNota}`, 10, 200);
-    doc.text(`nota: ${nota.terceiraLinhaNota}`, 10, 210);
+    doc.text(`nota: ${nota.primeiraLinhaNota}`, 12, 190);
+    doc.text(`nota: ${nota.segundaLinhaNota}`, 12, 200);
+    doc.text(`nota: ${nota.terceiraLinhaNota}`, 12, 210);
 
-    doc.text(`Descrição1: ${descricao.primeiraLinhaDescricao}`, 10, 220);
-    doc.text(`Descrição2: ${descricao.segundaLinhaDescricao}`, 10, 230);
-    doc.text(`Descrição3: ${descricao.terceiraLinhaDescricao}`, 10, 240);
+    doc.text(`Descrição1: ${descricao.primeiraLinhaDescricao}`, 12, 220);
+    doc.text(`Descrição2: ${descricao.segundaLinhaDescricao}`, 12, 230);
+    doc.text(`Descrição3: ${descricao.terceiraLinhaDescricao}`, 12, 240);
 
     doc.text(
       `AnalisePreco1: ${analisePreco.primeiraLinhaAnalisePreco}`,
-      10,
+      12,
       250
     );
     doc.text(
       `AnalisePreco2: ${analisePreco.segundaLinhaAnalisePreco}`,
-      10,
+      12,
       260
     );
     doc.text(
       `AnalisePreco3: ${analisePreco.terceiraLinhaAnalisePreco}`,
-      10,
+      12,
       270
     );
 
     doc.text(
       `AnaliseQuantidade1: ${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`,
-      10,
+      12,
       280
     );
     doc.text(
       `AnaliseQuantidade2: ${analiseQuantidade.segundaLinhaAnaliseQuantidade}`,
-      10,
+      12,
       290
     );
     doc.text(
       `AnaliseQuantidade3: ${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`,
-      10,
+      12,
       300
     );
 
     doc.text(
       `AnaliseCusto1: ${analiseCusto.primeiraLinhaAnaliseCusto}`,
       100,
-      10
+      12
     );
     doc.text(
       `AnaliseCusto2: ${analiseCusto.segundaLinhaAnaliseCusto}`,
