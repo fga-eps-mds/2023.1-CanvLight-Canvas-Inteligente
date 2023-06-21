@@ -97,9 +97,21 @@ function GeradorPDF({
     doc.text(`SintesePotencialidades2: ${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 100,150);
     doc.text(`SintesePotencialidades3: ${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 100,160); */
 
-    doc.text(`IntuTextos1: ${intuTextos.primeiraLinhaIntuTextos}`, 100, 140);
-    doc.text(`IntuTextos2: ${intuTextos.segundaLinhaIntuTextos}`, 100, 150);
-    doc.text(`IntuTextos3: ${intuTextos.terceiraLinhaIntuTextos}`, 100, 160);
+    doc.text(
+      `IntuTextos1: ${intuTextos.primeiraLinhaIntuTextos}`, 
+      100, 
+      140
+    );
+    doc.text(
+      `IntuTextos2: ${intuTextos.segundaLinhaIntuTextos}`, 
+      100, 
+      150
+    );
+    doc.text(
+      `IntuTextos3: ${intuTextos.terceiraLinhaIntuTextos}`, 
+      100, 
+      160
+    );
 
     /* doc.text(`SinteseResultados1: ${sinteseResultados.primeiraLinhaSinteseResultados}`, 100,140);
     doc.text(`SinteseResultados2: ${sinteseResultados.segundaLinhaSinteseResultados}`, 100,150);
@@ -115,41 +127,101 @@ function GeradorPDF({
     // doc.text(`empresa: ${empresa.segundaLinhaEmpresa}`, 12,20);
     // doc.text(`empresa: ${empresa.terceiraLinhaEmpresa}`, 12,30);
 
-    doc.text(`parceiro: ${parceiro.primeiraLinhaParceiro}`, 12, 10);
-    doc.text(`parceiro: ${parceiro.segundaLinhaParceiro}`, 12, 20);
-    doc.text(`parceiro: ${parceiro.terceiraLinhaParceiro}`, 12, 30);
+    doc.text(
+      `parceiro: ${parceiro.primeiraLinhaParceiro}`, 
+      12, 
+      10
+    );
+    doc.text(
+      `parceiro: ${parceiro.segundaLinhaParceiro}`, 
+      12, 
+      20
+    );
+    doc.text(
+      `parceiro: ${parceiro.terceiraLinhaParceiro}`, 
+      12,
+      30
+    );
 
     // doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 12,40);
     // doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 12,50);
     // doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 12,60);
 
-    doc.text(`beneficios: ${beneficios.primeiraLinhaBeneficios}`, 12, 40);
-    doc.text(`beneficios: ${beneficios.segundaLinhaBeneficios}`, 12, 50);
-    doc.text(`beneficios: ${beneficios.terceiraLinhaBeneficios}`, 12, 60);
+    doc.text(
+      `beneficios: ${beneficios.primeiraLinhaBeneficios}`, 
+      12, 
+      40
+    );
+    doc.text(
+      `beneficios: ${beneficios.segundaLinhaBeneficios}`, 
+      12, 
+      50
+    );
+    doc.text(
+      `beneficios: ${beneficios.terceiraLinhaBeneficios}`, 
+      12, 
+      60
+    );
 
     // doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 12,70);
     // doc.text(`Porte: ${porte.segundaLinhaPorte}`, 12,80);
     // doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 12,90);
 
-    doc.text(`insumos: ${insumos.primeiraLinhaInsumos}`, 12, 70);
-    doc.text(`insumos: ${insumos.segundaLinhaInsumos}`, 12, 80);
-    doc.text(`insumos: ${insumos.terceiraLinhaInsumos}`, 12, 90);
+    doc.text(
+      `insumos: ${insumos.primeiraLinhaInsumos}`, 
+      12, 
+      70
+    );
+    doc.text(
+      `insumos: ${insumos.segundaLinhaInsumos}`, 
+      12, 
+      80
+    );
+    doc.text(
+      `insumos: ${insumos.terceiraLinhaInsumos}`, 
+      12, 
+      90
+    );
 
     // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.primeiraLinhaConcorrencia}`, 12,100);
     // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.segundaLinhaConcorrencia}`, 12,110);
     // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.terceiraLinhaConcorrencia}`, 12,120);
 
-    doc.text(`fornecer: ${fornecer.primeiraLinhaFornecer}`, 12, 100);
-    doc.text(`fornecer: ${fornecer.segundaLinhaFornecer}`, 12, 110);
-    doc.text(`fornecer: ${fornecer.terceiraLinhaFornecer}`, 12, 120);
+    doc.text(`
+      fornecer: ${fornecer.primeiraLinhaFornecer}`, 
+      12, 
+      100
+    );
+    doc.text(
+      `fornecer: ${fornecer.segundaLinhaFornecer}`,
+      12, 
+      110
+    );
+    doc.text(
+      `fornecer: ${fornecer.terceiraLinhaFornecer}`, 
+      12, 
+      120
+    );
 
     // doc.text(`Localização: ${localizacao.primeiraLinhaLocalizacao}`, 12,130);
     // doc.text(`Localização: ${localizacao.segundaLinhaLocalizacao}`, 12,140);
     // doc.text(`Localização: ${localizacao.terceiraLinhaLocalizacao}`, 12,150);
 
-    doc.text(`risco: ${risco.primeiraLinhaRisco}`, 12, 130);
-    doc.text(`risco: ${risco.segundaLinhaRisco}`, 12, 140);
-    doc.text(`risco: ${risco.terceiraLinhaRisco}`, 12, 150);
+    doc.text(
+      `risco: ${risco.primeiraLinhaRisco}`, 
+      12, 
+      130
+    );
+    doc.text(
+      `risco: ${risco.segundaLinhaRisco}`, 
+      12, 
+      140
+    );
+    doc.text(
+      `risco: ${risco.terceiraLinhaRisco}`, 
+      12, 
+      150
+    );
 
     // doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 12,160);
     // doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 12,170);
@@ -160,7 +232,11 @@ function GeradorPDF({
       12,
       160
     );
-    doc.text(`verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 12, 170);
+    doc.text(
+      `verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 
+      12, 
+      170
+    );
     doc.text(
       `verticalizar: ${verticalizar.terceiraLinhaVerticalizar}`,
       12,
@@ -171,13 +247,37 @@ function GeradorPDF({
     // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 12,200);
     // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 12,210);
 
-    doc.text(`nota: ${nota.primeiraLinhaNota}`, 12, 190);
-    doc.text(`nota: ${nota.segundaLinhaNota}`, 12, 200);
-    doc.text(`nota: ${nota.terceiraLinhaNota}`, 12, 210);
+    doc.text(
+      `nota: ${nota.primeiraLinhaNota}`, 
+      12, 
+      190
+    );
+    doc.text(
+      `nota: ${nota.segundaLinhaNota}`,
+      12,
+      200
+    );
+    doc.text(
+      `nota: ${nota.terceiraLinhaNota}`, 
+      12, 
+      210
+    );
 
-    doc.text(`Descrição1: ${descricao.primeiraLinhaDescricao}`, 12, 220);
-    doc.text(`Descrição2: ${descricao.segundaLinhaDescricao}`, 12, 230);
-    doc.text(`Descrição3: ${descricao.terceiraLinhaDescricao}`, 12, 240);
+    doc.text(
+      `Descrição1: ${descricao.primeiraLinhaDescricao}`, 
+      12, 
+      220
+    );
+    doc.text(
+      `Descrição2: ${descricao.segundaLinhaDescricao}`, 
+      12, 
+      230
+    );
+    doc.text(
+      `Descrição3: ${descricao.terceiraLinhaDescricao}`, 
+      12, 
+      240
+    );
 
     doc.text(
       `AnalisePreco1: ${analisePreco.primeiraLinhaAnalisePreco}`,
