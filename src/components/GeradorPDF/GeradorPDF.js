@@ -71,20 +71,26 @@ function GeradorPDF({
       format: 'a3',
       unit: 'mm'
     });
+
+    var MargemX = 12; // Variavel para a margem horizontal
+    var MargemY = 10; // Variavel para a margem vertical
     
     doc.addImage(logo, 'PNG', 1, 1, 10, 10); // Adiciona a logo no canto do PDF
 
     doc.setFillColor(0, 0, 0, 0.22); // Seleciona a cor do Fundo
-    doc.rect(12, 10, 407, 286, 'F'); // Adiciona o Retângulo maior
+    doc.rect(MargemX, MargemY, 407, 286, 'F'); // Adiciona o Retângulo maior
 
     doc.setFontSize(16) // Tamanho da Fonte
 
-    doc.rect(12, 10, 81, 210 ) // Retangulo Parcerias principais
-    doc.rect(93, 10, 81, 105 ) // Retangulo Atividades-chave
-    doc.rect(93, 115, 81, 105 ) // Retangulo Recursos Principais
-    doc.rect(12, 220, 203, 76 ) // Retangulo Estrutura de Custo
-    doc.rect(174, 10, 81, 210 ) // Retangulo Proposta de Valor
-    
+    doc.rect(MargemX, MargemY, 81, 210 ) // Retangulo Parcerias principais
+    doc.rect(81+MargemX, MargemY, 81, 105 ) // Retangulo Atividades-chave
+    doc.rect(81+MargemX, 105+MargemY, 81, 105 ) // Retangulo Recursos Principais
+    doc.rect(MargemX, 210+MargemY, 203, 76 ) // Retangulo Estrutura de Custo
+    doc.rect(162+MargemX, MargemY, 81, 210 ) // Retangulo Proposta de Valor
+    doc.rect(243+MargemX, MargemY, 81, 105 ) // Retangulo Relacionamento com Clientes
+    doc.rect(243+MargemX, 105+MargemY, 81, 105 ) // Retangulo Canais
+    doc.rect(324+MargemX, MargemY, 83, 210 ) // Retangulo Segmentos de Clientes *OBS 2mm a mais devido ao erro de calculo
+    doc.rect(203+MargemX, 210+MargemY, 204, 76 ) // Retangulo Fontes de Receita  *OBS 1mm a mais devido ao erro de calculo
 
     //Intuicao
     /* doc.text(`SintesePotencialidades1: ${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 100,140);
