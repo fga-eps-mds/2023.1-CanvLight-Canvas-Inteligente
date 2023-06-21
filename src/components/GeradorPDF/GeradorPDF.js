@@ -99,6 +99,24 @@ function GeradorPDF({
       18
     );
 
+    doc.text(
+      `${parceiro.primeiraLinhaParceiro}`,
+      15,
+      28
+    );
+
+    doc.text(
+      `${parceiro.segundaLinhaParceiro}`,
+      15,
+      48
+    );
+
+    doc.text(
+      `${parceiro.terceiraLinhaParceiro}`,
+      15,
+      68
+    );
+
     //Atividades-cahves
     doc.text(
       `Atividades-chaves`,
@@ -119,6 +137,8 @@ function GeradorPDF({
       15,
       228
     );
+
+    
 
     //Proposta de Valor
     doc.text(
