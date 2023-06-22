@@ -3,6 +3,7 @@ import dateIntuition from "../../images/dateIntuition.png";
 import checkImg from "../../images/check.png";
 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, onIntuQuatroPChange, onIntuTecnicoChange, onIntuResilienteChange, onIntuEmocionalChange,
   onIntuMercadologicoChange, onIntuIntegradorChange, onIntuTextosChange }) {
@@ -393,7 +394,10 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida_sintese_int"></div>
+          <div onClick={() => {
+            window.open("tutorial#tut_fourps", "_blank");
+          }}className="duvida_sintese_int"></div>
+
 
           <div onClick={(e) => fecharFormIntuicao(e)} className="feito_int">
             <img src={checkImg} className="feito_int" alt="confirma_int" />

@@ -2,8 +2,13 @@ import React from "react";
 import "./tutorial.css";
 import logo from "../../images/logo_canvlight.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Tutorial() {
+  useEffect ( () => { const hash = window.location.hash; 
+    if (hash) { const element = document.getElementById (hash.slice (1)); 
+      if (element) { element.scrollIntoView (); } } }, []);
+
   return (
     <div className="tut_body">
       <div className="navbar">
@@ -25,7 +30,7 @@ function Tutorial() {
           </ul>
         </nav>
       </div>
-      <div className="introducao">
+      <div id="tut_introducao" className="introducao">
         <h2>
           • Gerador de Canvas de Negócio: Crie, Visualize e Baixe seu Canvas com
           Facilidade!
@@ -94,7 +99,7 @@ function Tutorial() {
           <br />
         </p>
       </div>
-      <div className="tut_dna">
+      <div id="tut_dna" className="tut_dna">
         <h2>• DNA do Negócio</h2>
         <p>
           Passo 1: Identifique as áreas-chave do seu negócio. Pense nas
@@ -114,7 +119,7 @@ function Tutorial() {
           coluna da tabela com essas avaliações.
         </p>
       </div>
-      <div className="tut_ikigai">
+      <div id="tut_ikigai" className="tut_ikigai">
         <h2>• Ikigai</h2>
         <p>
           O "ikigai" é um conceito japonês que se refere ao propósito ou razão
@@ -136,7 +141,7 @@ function Tutorial() {
           Passo 6: Refine o "ikigai" e garanta o alinhamento de toda a equipe.
         </p>
       </div>
-      <div className="tut_fourps">
+      <div id="tut_fourps" className="tut_fourps">
         <h2>• 4 Ps do Negócio</h2>
         <p>
           A tabela dos 4 P's do negócio é uma ferramenta de marketing usada para
@@ -162,7 +167,7 @@ function Tutorial() {
           fazendo alterações conforme necessário.
         </p>
       </div>
-      <div className="tut_sintese">
+      <div id="tut_sintese" className="tut_sintese">
         <h2>• Síntese</h2>
         <p>
           Uma síntese de valor é uma ferramenta usada para identificar as
@@ -188,7 +193,7 @@ function Tutorial() {
           atualizada e alinhada com os objetivos em curso.
         </p>
       </div>
-      <div className="tut_benchmaking">
+      <div id="tut_benchmaking" className="tut_benchmaking">
         <h2>• Benchmarking</h2>
         <p>
           Uma tabela de benchmark é uma ferramenta usada para comparar o
@@ -210,7 +215,7 @@ function Tutorial() {
           Passo 5: Monitore e atualize regularmente a tabela com novos dados.
         </p>
       </div>
-      <div className="tut_perfis_cliente">
+      <div id="tut_perfis_cliente" className="tut_perfis_cliente">
         <h2>• Perfis dos Clientes</h2>
         <p>
           Uma tabela de perfis dos clientes é uma ferramenta útil para entender
@@ -238,7 +243,7 @@ function Tutorial() {
           mudanças no público-alvo.
         </p>
       </div>
-      <div className="tut_proposta_valor">
+      <div id="tut_proposta_valor" className="tut_proposta_valor">
         <h2>• Proposta de Valor</h2>
         <p>
           Uma tabela de proposta de valor é uma ferramenta útil para definir e
@@ -264,7 +269,7 @@ function Tutorial() {
           stakeholders.
         </p>
       </div>
-      <div className="tut_conceito">
+      <div id="tut_conceito" className="tut_conceito">
         <h2>• Conceito</h2>
         <p>
           Uma tabela de conceito é uma ferramenta útil para organizar e
@@ -295,7 +300,7 @@ function Tutorial() {
           resultados ou benefícios esperados.
         </p>
       </div>
-      <div className="tut_modelo">
+      <div id="tut_modelo" className="tut_modelo">
         <h2>• Modelo</h2>
         <p>
           Uma tabela de modelo é uma ferramenta útil para descrever e organizar
@@ -318,7 +323,7 @@ function Tutorial() {
           resultados ou benefícios esperados ao utilizar o modelo.
         </p>
       </div>
-      <div className="tut_prototipo">
+      <div id="tut_prototipo" className="tut_prototipo">
         <h2>• Protótipo</h2>
         <p>
           Uma tabela de protótipo é uma ferramenta útil para descrever e
@@ -343,7 +348,7 @@ function Tutorial() {
           ou resultado esperado ao utilizar o protótipo.
         </p>
       </div>
-      <div className="tut_analise_custo">
+      <div id="tut_analise_custo" className="tut_analise_custo">
         <h2>• Análise de Custo</h2>
         <p>
           Uma tabela de análise de custo é uma ferramenta útil para calcular e
@@ -369,7 +374,7 @@ function Tutorial() {
           projeto, produto ou atividade.
         </p>
       </div>
-      <div className="tut_analise_preco_diferenciais">
+      <div id="tut_analise_preco_diferenciais" className="tut_analise_preco_diferenciais">
         <h2>• Análise de Preços e diferenciais</h2>
         <p>
           Uma tabela de análise de preços e diferenciais é uma ferramenta útil
@@ -393,7 +398,7 @@ function Tutorial() {
           diferenciais e preços, considerando suas necessidades e prioridades.
         </p>
       </div>
-      <div className="tut_melhorias">
+      <div id="tut_melhorias" className="tut_melhorias">
         <h2>• Checklist de Melhorias</h2>
         <p>
           Para preencher o checklist de melhorias para o negócio, siga estes
@@ -409,7 +414,7 @@ function Tutorial() {
           Passo 4: Preencher custo da melhoria.
         </p>
       </div>
-      <div className="tut_mvp">
+      <div id="tut_mvp" className="tut_mvp">
         <h2>• MVP</h2>
         <p>
           Uma tabela de MVP é uma ferramenta útil para descrever e planejar um
@@ -434,7 +439,7 @@ function Tutorial() {
           esperado ao utilizar o produto mínimo viável.
         </p>
       </div>
-      <div className="tut_formacao_preco">
+      <div id="tut_fomacao_preco" className="tut_formacao_preco">
         <h2>• Formação do Preço</h2>
         <p>
           Uma tabela de formação do preço é uma ferramenta útil para calcular e
@@ -468,7 +473,7 @@ function Tutorial() {
           administrativa, os impostos e a margem de lucro na coluna "preço".
         </p>
       </div>
-      <div className="tut_digitalizacao">
+      <div id="tut_digitalizacao" className="tut_digitalizacao">
         <h2>• Digitalização do negócio</h2>
         <p>
           Um checklist de digitalização do negócio é uma ferramenta útil para
@@ -481,7 +486,7 @@ function Tutorial() {
           Passo 2: Avalie essa presença em cada rede.
         </p>
       </div>
-      <div className="tut_canais_venda">
+      <div id="tut_canais_venda" className="tut_canais_venda">
         <h2>• Canais de Vendas</h2>
         <p>
           Os canais de venda são uma parte fundamental de um modelo de negócio e
