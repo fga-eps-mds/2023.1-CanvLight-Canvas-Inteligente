@@ -1,5 +1,5 @@
 .tut_body {
-  height: 880vh;
+  height: 620vh;
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
 }
@@ -342,4 +342,14 @@
   color: #252525;
   font-size: 18px;
   text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+  .tut_body h2,
+  .tut_body p {
+    font-size: 6px;
+  }
+  .tut_body {
+    height: 1280vh;
+  }
 }
