@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  min-height: 120vh;
+  height: 110vh;
   background: linear-gradient(180deg, #e95420 0%, #77216f 100%);
   background-repeat: no-repeat;
   width: 100%;
@@ -206,54 +206,70 @@
   background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
   .container {
     width: 65vw;
     height: 60vh;
-    margin-top: 25%;
+    margin-top: 55%;
     transform: translate(-50%, -50%);
     border-width: 30px;
     border-radius: 20px;
   }
+  .logo_navbar {
+    height: 4vh;
+    width: 6vw;
+  }
+  .navbar {
+    height: 5vh;
+  }
   .button1,
   .button2,
   .button3 {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
   .body {
-    min-height: 150vh;
+    height: 100vh;
   }
   .name_navbar,
   .cnvgen_navbar,
   .desktop ul li {
     padding: 1px;
     top: -80%;
-    font-size: 7px;
+    font-size: 15px;
+  }
+  .name_navbar {
+    top: 1%;
+    left: 9%;
+    font-size: 20px;
+  }
+  .logo_navbar {
+    width: 8vw;
   }
   .desktop ul {
-    margin-top: -0.5%;
+    margin-top: 0.5%;
     margin-right: 1%;
   }
   .dot,
   .dot2,
   .dot3 {
-    margin-left: -3%;
-    width: 1.5vw;
-    height: 3.5vh;
+    top: -1.5%;
+    margin-left: -1%;
+    width: 3.5vw;
+    height: 2vh;
   }
   .dot2 {
-    left: 1vw;
+    left: 3vw;
   }
   .dot3 {
-    left: 3.3vw;
+    left: 7.8vw;
   }
   .container {
-    width: 65vw;
-    height: 130vh;
-    margin-top: 35%;
+    width: 85vw;
+    height: 80vh;
+    margin-top: 105%;
     transform: translate(-50%, -50%);
     border-width: 20px;
     border-radius: 10px;
@@ -261,30 +277,35 @@
   .rectangle {
     flex-direction: row;
   }
+  .button1,
+  .button2,
+  .button3 {
+    font-size: 30px;
+  }
   .button1 {
-    top: -6.5%;
+    top: 1%;
     left: 111%;
-    height: 24%;
+    height: 15vh;
     width: 100%;
     border-radius: 8px;
   }
   .button2 {
-    top: 22%;
+    top: 23%;
     left: 15%;
-    height: 40%;
+    height: 35vh;
     width: 100%;
     border-radius: 8px;
   }
   .button3 {
-    top: 68%;
+    top: 71.5%;
     left: -52%;
     width: 100%;
-    height: 30%;
+    height: 20vh;
     border-radius: 8px;
   }
   .confirma {
-    height: 10vh;
-    width: 5vw;
-    margin-top: 60%;
+    height: 7vh;
+    width: 15vw;
+    margin-top: 90vh;
   }
 }
