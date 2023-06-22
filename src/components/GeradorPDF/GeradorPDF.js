@@ -1,4 +1,5 @@
 import React from "react";
+import checkIcon from "../../images/check.png";
 import { jsPDF } from "jspdf";
 /*
         ferramentasObser3, setFerramentasObser3] = useState ({});
@@ -294,9 +295,12 @@ function GeradorPDF({
 
   return (
     <div>
-      <button className="btn-gerarpdf" onClick={gerarPDF}>
-        Gerar PDF
-      </button>
+      <img
+        src={checkIcon}
+        alt="Confirma"
+        className="confirma"
+        onClick={gerarPDF}
+      />
     </div>
   );
 }
