@@ -204,6 +204,7 @@
   top: -110vh;
   left: -10vw;
   border-radius: 6px;
+  border-inline: none;
   cursor: pointer;
 
   font-family: "Ubuntu";
@@ -264,4 +265,37 @@
 }
 */
 
-/**/
+@media screen and (max-width: 568px) {
+  .sol-inv {
+    position: absolute;
+    height: 40%;
+    top: 20%;
+  }
+  .sol-bg {
+    top: 50vh;
+  }
+  .main-btn,
+  .main-btn1 {
+    top: -80vh;
+    font-size: 20px;
+    width: 30vw;
+    height: 6vh;
+    border-radius: 12px;
+    border-inline: none;
+  }
+  .sobre {
+    top: 70%;
+  }
+  .sobre h2 {
+    font-size: 30px;
+  }
+  .sobre p {
+    font-size: 20px;
+  }
+  .membros {
+    padding: 10px;
+  }
+  .membros ul a li {
+    padding: 48px;
+  }
+}

@@ -5,9 +5,19 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 function Tutorial() {
-  useEffect ( () => { const hash = window.location.hash; 
-    if (hash) { const element = document.getElementById (hash.slice (1)); 
-      if (element) { element.scrollIntoView (); } } }, []);
+  useEffect ( () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.getElementById (hash.slice (1));
+      if (element) {
+        const elementRect = element.getBoundingClientRect ();
+        const absoluteElementTop = elementRect.top + window.pageYOffset;
+        const middle = absoluteElementTop - (window.innerHeight / 2);
+        window.scrollTo (0, middle);
+      }
+    }
+  }, []);
+  
 
   return (
     <div className="tut_body">
@@ -439,7 +449,7 @@ function Tutorial() {
           esperado ao utilizar o produto mínimo viável.
         </p>
       </div>
-      <div id="tut_fomacao_preco" className="tut_formacao_preco">
+      <div id="tut_fomacao" className="tut_formacao_preco">
         <h2>• Formação do Preço</h2>
         <p>
           Uma tabela de formação do preço é uma ferramenta útil para calcular e

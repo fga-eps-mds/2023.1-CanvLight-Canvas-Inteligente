@@ -8,9 +8,7 @@ import Observacao1 from "../../components/observacao/Observacao1.js";
 import Observacao2 from "../../components/observacao/Observacao2.js";
 import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
-import checkIcon from "../../images/check.png";
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
-import gerarPDF from "../../components/GeradorPDF/GeradorPDF";
 
 function Canvas() {
   //intuição
@@ -544,14 +542,6 @@ function Canvas() {
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />
       </Link>
-      <div>
-        <img
-          src={checkIcon}
-          alt="Confirma"
-          className="confirma"
-          onClick={gerarPDF}
-        />
-      </div>
     </div>
   );
 }

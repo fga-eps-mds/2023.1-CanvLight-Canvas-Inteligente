@@ -1,7 +1,15 @@
 .tut_body {
-  height: 880vh;
+  height: 620vh;
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
+  position: absolute;
+}
+.tutoriais {
+  width: 100vw;
+  height: 620vh;
+  /* background-image: linear-gradient(#e95420, #77216f); */
+  background-color: #fcdbc1;
+  position: absolute;
 }
 
 .introducao {
@@ -342,4 +350,28 @@
   color: #252525;
   font-size: 18px;
   text-align: justify;
+}
+
+@media screen and (max-width: 568px) {
+  .tut_body h2,
+  .tut_body p {
+    font-size: 20px;
+  }
+  .name_navbar {
+    font-size: 20px;
+    top: 1%;
+  }
+  .tut_body {
+    height: 1670vh;
+  }
+  .tutoriais {
+    top: 0%;
+    height: 1670vh;
+  }
+  .tutoriais h2 {
+    margin-top: -30%;
+  }
+  .introducao {
+    margin-top: -55%;
+  }
 }
