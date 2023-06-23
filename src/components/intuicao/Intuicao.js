@@ -454,7 +454,9 @@ function Intuicao({
             />
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvidaIkigai_int"></div>
+          <div onClick={() => {
+            window.open("tutorial#tut_dna", "_blank");
+          }}className="duvida_sintese_int"></div>
 
           <div className="clear"></div>
         </div>
