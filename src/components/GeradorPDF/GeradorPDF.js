@@ -1,6 +1,5 @@
 import React from "react";
 import { jsPDF } from "jspdf";
-import { autoTable } from "jspdf-autotable";
 import logo from "../../images/logo_canvlight.png";
 
 function GeradorPDF({
@@ -92,21 +91,6 @@ function GeradorPDF({
     doc.rect(243+MargemX, 105+MargemY, 81, 105 ) // Retangulo Canais
     doc.rect(324+MargemX, MargemY, 83, 210 ) // Retangulo Segmentos de Clientes *OBS 2mm a mais devido ao erro de calculo
     doc.rect(203+MargemX, 210+MargemY, 204, 76 ) // Retangulo Fontes de Receita  *OBS 1mm a mais devido ao erro de calculo
-
-
-    //teste de tabela
-    doc.autoTable({
-      head: [['Canal', 'Objetivo', 'Métrica']],
-      body: [
-        [canaisCanal.primeiraLinhaCanaisCanal, canaisObjetivo.primeiraLinhaCanaisObjetivo, canaisMetrica.primeiraLinhaCanaisMetrica],
-        [canaisCanal.segundaLinhaCanaisCanal, canaisObjetivo.segundaLinhaCanaisObjetivo, canaisMetrica.segundaLinhaCanaisMetrica],
-        [canaisCanal.terceiraLinhaCanaisCanal, canaisObjetivo.terceiraLinhaCanaisObjetivo, canaisMetrica.terceiraLinhaCanaisMetrica],
-        [canaisCanal.quartaLinhaCanaisCanal, canaisObjetivo.quartaLinhaCanaisObjetivo, canaisMetrica.quartaLinhaCanaisMetrica],
-      ],
-      startX: 258,
-      startY: 125,
-      tableWidth: 75,
-    })
 
     //Parceiros Principais
     doc.text(
