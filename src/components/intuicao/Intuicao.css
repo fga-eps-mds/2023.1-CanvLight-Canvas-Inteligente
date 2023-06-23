@@ -95,7 +95,7 @@
   height: 4vh;
   right: 55%;
   top: 6%;
-  color: white; 
+  color: white;
   border: 2px solid #77216f;
   background-color: #252525;
   border-radius: 20px;
@@ -375,4 +375,7 @@
   margin-right: 2%;
   float: right;
   cursor: pointer;
+}
+
+@media screen and (max-width: 568px) {
 }
