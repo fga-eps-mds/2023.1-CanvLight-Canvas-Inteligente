@@ -11,8 +11,6 @@ import checkImg from "../../images/check.png";
 import "./Interacao.css";
 
 import React, { useState } from "react";
-
-import { useNavigate } from "react-router-dom";
 /* import GeradorPDF from "../GeradorPDF/GeradorPDF"; */
 
 function Interacao({
@@ -775,11 +773,6 @@ function Interacao({
     onInteQuatroPChange(novosDadosInteQuatroP);
   };
 
-  //===============================================================================================
-  function clicouNaDuvida() {
-    alert("duvida clicada!");
-  }
-
   function fecharFormInteracao(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -884,9 +877,13 @@ function Interacao({
               <form>
                 <div>
                   <p>
-                    Análise de Custos:{" "} <div onClick={() => {
-                      window.open("tutorial#tut_prototipo", "_blank");
-                    }}className="duvida"></div>{" "}  
+                    Análise de Custos:{" "}
+                    <div
+                      onClick={() => {
+                        window.open("tutorial#tut_prototipo", "_blank");
+                      }}
+                      className="duvida"
+                    ></div>{" "}
                   </p>
                 </div>
               </form>
@@ -1015,9 +1012,13 @@ function Interacao({
               <form>
                 <div>
                   <p>
-                    Análise de Preços e Diferenciais:{" "} <div onClick={() => {
-                      window.open("tutorial#tut_prototipo", "_blank");
-                    }}className="duvida"></div>{" "}
+                    Análise de Preços e Diferenciais:{" "}
+                    <div
+                      onClick={() => {
+                        window.open("tutorial#tut_prototipo", "_blank");
+                      }}
+                      className="duvida"
+                    ></div>{" "}
                   </p>
                 </div>
               </form>
@@ -1136,11 +1137,16 @@ function Interacao({
               <div className="parte3_interacao">
                 <div>
                   <p>
-                    Checklist:{" "} 
-                    <div onClick={() => {
-                      window.open("tutorial#tut_analise_preco_diferenciais", "_blank");
-                    }}className="duvida"></div>{" "}
-                    
+                    Checklist:{" "}
+                    <div
+                      onClick={() => {
+                        window.open(
+                          "tutorial#tut_analise_preco_diferenciais",
+                          "_blank"
+                        );
+                      }}
+                      className="duvida"
+                    ></div>{" "}
                   </p>
                 </div>
                 <div className="Inserir_tarefa">
@@ -1167,10 +1173,13 @@ function Interacao({
             <div className="direita">
               <div className="parte4_interacao">
                 <p>
-                  MVP: 
-                  <div onClick={() => {
+                  MVP:
+                  <div
+                    onClick={() => {
                       window.open("tutorial#tut_melhorias", "_blank");
-                  }}className="duvida"></div>{" "}
+                    }}
+                    className="duvida"
+                  ></div>{" "}
                 </p>
               </div>
               <div className="tabela_MVP">
@@ -1323,9 +1332,12 @@ function Interacao({
                 <div>
                   <p>
                     Formação do Preço:{" "}
-                    <div onClick={() => {
-                      window.open("tutorial#tut_mvp", "_blank");
-                    }}className="duvida"></div>{" "}
+                    <div
+                      onClick={() => {
+                        window.open("tutorial#tut_mvp", "_blank");
+                      }}
+                      className="duvida"
+                    ></div>{" "}
                   </p>
                 </div>
               </form>
@@ -1571,9 +1583,12 @@ function Interacao({
             <div className="digitalizacao">
               <p>
                 Digitalização do Negócio:
-                <div onClick={() => {
-                      window.open("tutorial#tut_digitalizacao", "_blank");
-                }}className="duvida"></div>{" "}
+                <div
+                  onClick={() => {
+                    window.open("tutorial#tut_digitalizacao", "_blank");
+                  }}
+                  className="duvida"
+                ></div>{" "}
               </p>
             </div>
             <div className="emoticons">
@@ -1640,9 +1655,12 @@ function Interacao({
             <div className="canais_venda">
               <p>
                 Canais de venda:
-                <div onClick={() => {
-                      window.open("tutorial#tut_canais_venda", "_blank");
-                }}className="duvida"></div>{" "}
+                <div
+                  onClick={() => {
+                    window.open("tutorial#tut_canais_venda", "_blank");
+                  }}
+                  className="duvida"
+                ></div>{" "}
               </p>
             </div>
             <div className="table-wrapper">
@@ -1761,9 +1779,12 @@ function Interacao({
             <div className="canais_venda">
               <p>
                 4 P's do Projeto:
-                <div onClick={() => {
-                      window.open("tutorial#tut_ikigai", "_blank");
-                }}className="duvida"></div>{" "}
+                <div
+                  onClick={() => {
+                    window.open("tutorial#tut_ikigai", "_blank");
+                  }}
+                  className="duvida"
+                ></div>{" "}
               </p>
             </div>
             <div className="tabela2">
