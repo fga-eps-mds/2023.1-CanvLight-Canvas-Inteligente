@@ -1,6 +1,7 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 import logo from "../../images/logo_canvlight.png";
+import Intuicao from "../../images/Intuicao.png";
 
 function GeradorPDF({
   sintesePotencialidades,
@@ -71,6 +72,16 @@ function GeradorPDF({
       format: 'a3',
       unit: 'mm'
     });
+
+    doc.addImage(Intuicao, "PNG", 0, 0, 420, 297);
+
+    doc.text(
+      `${canaisCanal.primeiraLinhaCanaisCanal}`,
+      5,
+      30
+    );
+  
+    doc.addPage();
 
     var MargemX = 12; // Variavel para a margem horizontal
     var MargemY = 10; // Variavel para a margem vertical
@@ -168,12 +179,12 @@ function GeradorPDF({
       18
     );
 
-      //Fontes de Receita
-      doc.text(
-        `Fontes de Receita`,
-        218,
-        228
-      );
+    //Fontes de Receita
+    doc.text(
+      `Fontes de Receita`,
+      218,
+      228
+    );
 
 
     //Intuicao
