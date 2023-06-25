@@ -2,6 +2,7 @@ import React from "react";
 import { jsPDF } from "jspdf";
 import logo from "../../images/logo_canvlight.png";
 import Intuicao from "../../images/Intuicao.png";
+import Interacao1 from "../../images/Interacao1.png";
 
 function GeradorPDF({
   sintesePotencialidades,
@@ -80,8 +81,80 @@ function GeradorPDF({
       5,
       30
     );
+
+    doc.addPage(); // Página Interação1
+
+    doc.addImage(Interacao1, "PNG", 0, 0, 420, 297);
+
+    doc.setFontSize(13) // Tamanho da Fonte
+    
+    doc.setTextColor(255);
+
+    doc.text( // Analise Custos Descricao
+      `${descricao.primeiraLinhaDescricao}`, 
+      33, 
+      57
+    );
+    doc.text(
+      `${descricao.segundaLinhaDescricao}`, 
+      33, 
+      75
+    );
+    doc.text(
+      `${descricao.terceiraLinhaDescricao}`, 
+      33, 
+      93
+    );
+
+    doc.text( // Analise Custos Preco
+      `${analisePreco.primeiraLinhaAnalisePreco}`,
+      87,
+      57
+    );
+    doc.text(
+      `${analisePreco.segundaLinhaAnalisePreco}`,
+      87,
+      75
+    );
+    doc.text(
+      `${analisePreco.terceiraLinhaAnalisePreco}`,
+      87,
+      93
+    );
+
+    doc.text( // Analise Custos Quantidade
+      `${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`,
+      141,
+      57
+    );
+    doc.text(
+      `${analiseQuantidade.segundaLinhaAnaliseQuantidade}`,
+      141,
+      75
+    );
+    doc.text(
+      `${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`,
+      141,
+      93
+    );
+    
+    doc.text( // Analise Custos Custo
+      `${analiseCusto.primeiraLinhaAnaliseCusto}`,
+      195,
+      57
+    );
+    doc.text(
+      `${analiseCusto.segundaLinhaAnaliseCusto}`,
+      195,
+      75
+    );
+    doc.text(
+      `${analiseCusto.terceiraLinhaAnaliseCusto}`,
+      195,
+      93
+    );
   
-    doc.addPage();
+    doc.addPage(); // Página Intuição
 
     var MargemX = 12; // Variavel para a margem horizontal
     var MargemY = 10; // Variavel para a margem vertical
@@ -356,70 +429,6 @@ function GeradorPDF({
     //   `nota: ${nota.terceiraLinhaNota}`, 
     //   12, 
     //   210
-    // );
-
-    // doc.text(
-    //   `Descrição1: ${descricao.primeiraLinhaDescricao}`, 
-    //   12, 
-    //   220
-    // );
-    // doc.text(
-    //   `Descrição2: ${descricao.segundaLinhaDescricao}`, 
-    //   12, 
-    //   230
-    // );
-    // doc.text(
-    //   `Descrição3: ${descricao.terceiraLinhaDescricao}`, 
-    //   12, 
-    //   240
-    // );
-
-    // doc.text(
-    //   `AnalisePreco1: ${analisePreco.primeiraLinhaAnalisePreco}`,
-    //   12,
-    //   250
-    // );
-    // doc.text(
-    //   `AnalisePreco2: ${analisePreco.segundaLinhaAnalisePreco}`,
-    //   12,
-    //   260
-    // );
-    // doc.text(
-    //   `AnalisePreco3: ${analisePreco.terceiraLinhaAnalisePreco}`,
-    //   12,
-    //   270
-    // );
-
-    // doc.text(
-    //   `AnaliseQuantidade1: ${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`,
-    //   12,
-    //   280
-    // );
-    // doc.text(
-    //   `AnaliseQuantidade2: ${analiseQuantidade.segundaLinhaAnaliseQuantidade}`,
-    //   12,
-    //   290
-    // );
-    // doc.text(
-    //   `AnaliseQuantidade3: ${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`,
-    //   12,
-    //   300
-    // );
-
-    // doc.text(
-    //   `AnaliseCusto1: ${analiseCusto.primeiraLinhaAnaliseCusto}`,
-    //   100,
-    //   12
-    // );
-    // doc.text(
-    //   `AnaliseCusto2: ${analiseCusto.segundaLinhaAnaliseCusto}`,
-    //   100,
-    //   20
-    // );
-    // doc.text(
-    //   `AnaliseCusto3: ${analiseCusto.terceiraLinhaAnaliseCusto}`,
-    //   100,
-    //   30
     // );
 
     // doc.text(
