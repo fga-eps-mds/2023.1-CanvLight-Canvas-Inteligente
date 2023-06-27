@@ -153,8 +153,60 @@ function GeradorPDF({
       195,
       93
     );
+
+    doc.text( // Analise de Preços e Diferenciais Diferencial
+      `${analiseDiferencial.primeiraLinhaAnaliseDiferencial}`,
+      87,
+      191
+    );
+    doc.text(
+      `${analiseDiferencial.segundaLinhaAnaliseDiferencial}`,
+      141,
+      191
+    );
+    doc.text(
+      `${analiseDiferencial.terceiraLinhaAnaliseDiferencial}`,
+      195,
+      191
+    );
+    doc.text(
+      `${analiseDiferencial.quartaLinhaAnaliseDiferencial}`,
+      249,
+      191
+    );
+    doc.text(
+      `${analiseDiferencial.quintaLinhaAnaliseDiferencial}`,
+      303,
+      191
+    );
+
+    doc.text( // Analise de Precos e Diferenciais Precos
+      `${analisePreDif.primeiraLinhaAnalisePreDif}`,
+      87,
+      227
+    );
+    doc.text(
+      `${analisePreDif.segundaLinhaAnalisePreDif}`,
+      141,
+      227
+    );
+    doc.text(
+      `${analisePreDif.terceiraLinhaAnalisePreDif}`,
+      195,
+      227
+    );
+    doc.text(
+      `${analisePreDif.quartaLinhaAnalisePreDif}`,
+      249,
+      227
+    );
+    doc.text(
+      `${analisePreDif.quintaLinhaAnalisePreDif}`,
+      303,
+      227
+    );
   
-    doc.addPage(); // Página Intuição
+    doc.addPage(); // Página Canvas
 
     var MargemX = 12; // Variavel para a margem horizontal
     var MargemY = 10; // Variavel para a margem vertical
@@ -429,58 +481,6 @@ function GeradorPDF({
     //   `nota: ${nota.terceiraLinhaNota}`, 
     //   12, 
     //   210
-    // );
-
-    // doc.text(
-    //   `AnaliseDiferencial1: ${analiseDiferencial.primeiraLinhaAnaliseDiferencial}`,
-    //   100,
-    //   40
-    // );
-    // doc.text(
-    //   `AnaliseDiferencial2: ${analiseDiferencial.segundaLinhaAnaliseDiferencial}`,
-    //   100,
-    //   50
-    // );
-    // doc.text(
-    //   `AnaliseDiferencial3: ${analiseDiferencial.terceiraLinhaAnaliseDiferencial}`,
-    //   100,
-    //   60
-    // );
-    // doc.text(
-    //   `AnaliseDiferencial4: ${analiseDiferencial.quartaLinhaAnaliseDiferencial}`,
-    //   100,
-    //   70
-    // );
-    // doc.text(
-    //   `AnaliseDiferencial5: ${analiseDiferencial.quintaLinhaAnaliseDiferencial}`,
-    //   100,
-    //   80
-    // );
-
-    // doc.text(
-    //   `AnalisePreDif1: ${analisePreDif.primeiraLinhaAnalisePreDif}`,
-    //   100,
-    //   90
-    // );
-    // doc.text(
-    //   `AnalisePreDif2: ${analisePreDif.segundaLinhaAnalisePreDif}`,
-    //   100,
-    //   100
-    // );
-    // doc.text(
-    //   `AnalisePreDif3: ${analisePreDif.terceiraLinhaAnalisePreDif}`,
-    //   100,
-    //   110
-    // );
-    // doc.text(
-    //   `AnalisePreDif4: ${analisePreDif.quartaLinhaAnalisePreDif}`,
-    //   100,
-    //   120
-    // );
-    // doc.text(
-    //   `AnalisePreDif5: ${analisePreDif.quintaLinhaAnalisePreDif}`,
-    //   100,
-    //   130
     // );
 
     /* doc.text(`MvpProduto1: ${mvpProduto.primeiraLinhaMvpProduto}`, 100,140);
