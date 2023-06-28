@@ -1,5 +1,15 @@
+:root {
+  --back_color: #fcdbc1;
+  --font_color: black;
+}
+
+.dark-mode:root {
+  --back_color: #252525;
+  --font_color: white;
+}
+
 .benchmarking .centerObs1 {
-  background-color: #252525;
+  background-color: var(--back_color);
   position: absolute;
   width: 90%;
   height: 90%;
@@ -14,13 +24,14 @@
 .benchmarking table {
   width: 0;
   border-spacing: 0;
-  color: white;
+  color: var(--font_color);
   margin: auto;
 }
 
 .benchmarking table th {
   background-color: #fb8218;
   border: 1px solid #fb8218;
+  color: var(--font_color);
 }
 
 .benchmarking .primeiro-canto {
@@ -40,22 +51,25 @@
 }
 
 .benchmarking table td {
-  background-color: #252525;
+  background-color: var(--back_color);
   height: 5vh;
   border: 1px solid #fb8218;
 }
 
 .benchmarking table input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: none;
   width: auto;
 }
 
 .benchmarking h2 {
   text-align: left;
+  color: var(--font_color);
 }
 
 .benchmarking p {
+  color: var(--font_color);
   margin: 0.5%;
   text-align: left;
 }
@@ -133,6 +147,7 @@
 }
 
 .perfil h2 {
+  color: var(--font_color);
   padding: 2%;
 }
 
@@ -148,7 +163,8 @@
 
 .perfil input {
   height: 5%;
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
   border-radius: 15px;
   width: 50%;
