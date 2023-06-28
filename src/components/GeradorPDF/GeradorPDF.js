@@ -7,6 +7,7 @@ import Observacao2 from "../../images/observacao2.png"
 import Observacao3 from "../../images/obvervacao3.png"
 import Interacao1 from "../../images/Interacao1.png";
 import Interacao2 from "../../images/Interacao2.png";
+import Interacao3 from "../../images/Interacao3.png";
 
 function GeradorPDF({
   sintesePotencialidades,
@@ -303,6 +304,10 @@ function GeradorPDF({
     doc.text(`${formacaoPreco.segundaLinhaFormacaoPreco}`, 301,212);
     doc.text(`${formacaoPreco.terceiraLinhaFormacaoPreco}`, 301,230);
     doc.text(`${formacaoPreco.quartaLinhaFormacaoPreco}`, 301,248);
+
+    doc.addPage(); // Página Interação3
+
+    doc.addImage(Interacao3, "PNG", 0, 0, 420, 297);
   
     doc.addPage(); // Página Canvas
 
