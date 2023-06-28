@@ -381,21 +381,17 @@ function Canvas() {
         <Link to="/2023.1-CanvLight-Canvas-Inteligente">
           <p className="name_navbar">CanvLight</p>
         </Link>
-        <div className="dark_select">
-          <label for="switch">
-            <input type="checkbox" id="switch" /> Modo Escuro
-          </label>
-        </div>
-
         <nav className="desktop">
           <ul>
             <Link to="/tutorial">
               <li>Como usar?</li>
-            </Link>
-            <Link to="/canvas">
-              <li>Gerar canvas</li>
-            </Link>
+            </Link>  
           </ul> 
+          <div className="dark_select">
+              <label for="switch">
+                <input type="checkbox" id="switch" /> Modo Escuro
+              </label>
+            </div>
         </nav>  
       </div>
       <div className="container">
