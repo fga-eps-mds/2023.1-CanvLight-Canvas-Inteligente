@@ -3,6 +3,7 @@ import { jsPDF } from "jspdf";
 import logo from "../../images/logo_canvlight.png";
 import Intuicao from "../../images/Intuicao.png";
 import Interacao1 from "../../images/Interacao1.png";
+import Interacao2 from "../../images/Interacao2.png";
 
 function GeradorPDF({
   sintesePotencialidades,
@@ -205,6 +206,60 @@ function GeradorPDF({
       303,
       227
     );
+
+    doc.addPage(); // Página Interação2
+
+    doc.addImage(Interacao2, "PNG", 0, 0, 420, 297);
+
+    doc.text(`${mvpProduto.primeiraLinhaMvpProduto}`, 207, 38); //MVP Produto
+    doc.text(`${mvpProduto.segundaLinhaMvpProduto}`, 251, 38);
+    doc.text(`${mvpProduto.terceiraLinhaMvpProduto}`, 295, 38);
+    doc.text(`${mvpProduto.quartaLinhaMvpProduto}`, 339, 38);
+
+    doc.text(`${mvpIndicado.primeiraLinhaMvpIndicado}`, 207,60); //MVP Indicado Para
+    doc.text(`${mvpIndicado.segundaLinhaMvpIndicado}`, 251, 60);
+    doc.text(`${mvpIndicado.terceiraLinhaMvpIndicado}`, 295, 60);
+    doc.text(`${mvpIndicado.quartaLinhaMvpIndicado}`, 339, 60);
+
+    doc.text(`${mvpOrientacoes.primeiraLinhaMvpOrientacoes}`, 207,88); // MVP Orientacoes
+    doc.text(`${mvpOrientacoes.segundaLinhaMvpOrientacoes}`, 251,88);
+    doc.text(`${mvpOrientacoes.terceiraLinhaMvpOrientacoes}`, 295,88);
+    doc.text(`${mvpOrientacoes.quartaLinhaMvpOrientacoes}`, 339,88);
+
+    doc.text(`${mvpResultado.primeiraLinhaMvpResultado}`, 207,116); // MVP Resultado
+    doc.text(`${mvpResultado.segundaLinhaMvpResultado}`, 251,117);
+    doc.text(`${mvpResultado.terceiraLinhaMvpResultado}`, 295,117);
+    doc.text(`${mvpResultado.quartaLinhaMvpResultado}`, 339,116);
+
+    doc.text(`${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 32,194); // Formacao do Preco Descricao
+    doc.text(`${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 32,212);
+    doc.text(`${formacaoDescricao.terceiraLinhaFormacaoDescricao}`, 32,230);
+    doc.text(`${formacaoDescricao.quartaLinhaFormacaoDescricao}`, 32,248);
+
+    doc.text(`${formacaoCusto.primeiraLinhaFormacaoCusto}`, 85,194); // Formacao do Preco Custo
+    doc.text(`${formacaoCusto.segundaLinhaFormacaoCusto}`, 85,212);
+    doc.text(`${formacaoCusto.terceiraLinhaFormacaoCusto}`, 85,230);
+    doc.text(`${formacaoCusto.quartaLinhaFormacaoCusto}`, 85,248);
+
+    doc.text(`${formacaoTaxa.primeiraLinhaFormacaoTaxa}`, 139,194); // Formacao do Preco Taxa Administrativa
+    doc.text(`${formacaoTaxa.segundaLinhaFormacaoTaxa}`, 139,212);
+    doc.text(`${formacaoTaxa.terceiraLinhaFormacaoTaxa}`, 139,230);
+    doc.text(`${formacaoTaxa.quartaLinhaFormacaoTaxa}`, 139,248);
+  
+    doc.text(`${formacaoImpostos.primeiraLinhaFormacaoImpostos}`, 193,194); // Formacao do Preco Impostos
+    doc.text(`${formacaoImpostos.segundaLinhaFormacaoImpostos}`, 193,212);
+    doc.text(`${formacaoImpostos.terceiraLinhaFormacaoImpostos}`, 193,230);
+    doc.text(`${formacaoImpostos.quartaLinhaFormacaoImpostos}`, 193,248);
+
+    doc.text(`${formacaoMargem.primeiraLinhaFormacaoMargem}`, 247,194); // Formacao do Preco Margem de Lucro
+    doc.text(`${formacaoMargem.segundaLinhaFormacaoMargem}`, 247,212);
+    doc.text(`${formacaoMargem.terceiraLinhaFormacaoMargem}`, 247,230);
+    doc.text(`${formacaoMargem.quartaLinhaFormacaoMargem}`, 247,248);
+
+    doc.text(`${formacaoPreco.primeiraLinhaFormacaoPreco}`, 301,194); // Formacao do Preco Margem de Lucro
+    doc.text(`${formacaoPreco.segundaLinhaFormacaoPreco}`, 301,212);
+    doc.text(`${formacaoPreco.terceiraLinhaFormacaoPreco}`, 301,230);
+    doc.text(`${formacaoPreco.quartaLinhaFormacaoPreco}`, 301,248);
   
     doc.addPage(); // Página Canvas
 
@@ -482,31 +537,6 @@ function GeradorPDF({
     //   12, 
     //   210
     // );
-
-    /* doc.text(`MvpProduto1: ${mvpProduto.primeiraLinhaMvpProduto}`, 100,140);
-    doc.text(`MvpProduto2: ${mvpProduto.segundaLinhaMvpProduto}`, 100,150);
-    doc.text(`MvpProduto3: ${mvpProduto.terceiraLinhaMvpProduto}`, 100,160);
-    doc.text(`MvpProduto4: ${mvpProduto.quartaLinhaMvpProduto}`, 100,170); */
-
-    /* doc.text(`MvpIndicado1: ${mvpIndicado.primeiraLinhaMvpIndicado}`, 100,140);
-    doc.text(`MvpIndicado2: ${mvpIndicado.segundaLinhaMvpIndicado}`, 100,150);
-    doc.text(`MvpIndicado3: ${mvpIndicado.terceiraLinhaMvpIndicado}`, 100,160);
-    doc.text(`MvpIndicado4: ${mvpIndicado.quartaLinhaMvpIndicado}`, 100,170); */
-
-    /* doc.text(`MvpOrientacoes1: ${mvpOrientacoes.primeiraLinhaMvpOrientacoes}`, 100,140);
-    doc.text(`MvpOrientacoes2: ${mvpOrientacoes.segundaLinhaMvpOrientacoes}`, 100,150);
-    doc.text(`MvpOrientacoes3: ${mvpOrientacoes.terceiraLinhaMvpOrientacoes}`, 100,160);
-    doc.text(`MvpOrientacoes4: ${mvpOrientacoes.quartaLinhaMvpOrientacoes}`, 100,170); */
-
-    /*  doc.text(`MvpResultado1: ${mvpResultado.primeiraLinhaMvpResultado}`, 100,140);
-    doc.text(`MvpResultado2: ${mvpResultado.segundaLinhaMvpResultado}`, 100,150);
-    doc.text(`MvpResultado3: ${mvpResultado.terceiraLinhaMvpResultado}`, 100,160);
-    doc.text(`MvpResultado4: ${mvpResultado.quartaLinhaMvpResultado}`, 100,170); */
-
-    /* doc.text(`FormacaoDescricao1: ${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 100,140);
-    doc.text(`FormacaoDescricao2: ${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 100,150);
-    doc.text(`FormacaoDescricao3: ${formacaoDescricao.terceiraLinhaFormacaoDescricao}`, 100,160);
-    doc.text(`FormacaoDescricao4: ${formacaoDescricao.quartaLinhaFormacaoDescricao}`, 100,170); */
 
     doc.save("Canvas.pdf");
   }
