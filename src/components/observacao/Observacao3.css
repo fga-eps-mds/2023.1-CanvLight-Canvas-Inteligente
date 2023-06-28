@@ -1,10 +1,20 @@
+:root {
+  --back_color: #fcdbc1;
+  --font_color: black;
+}
+
+.dark-mode:root {
+  --back_color: #252525;
+  --font_color: white;
+}
+
 .Observacao3 .centerObs3 {
   width: 90%;
-  background-color: #252525;
+  background-color: var(--back_color);
   height: 80%;
   border-radius: 30px;
   margin: auto;
-  color: white;
+  color: var(--font_color);
 }
 
 .Observacao3 p {
@@ -16,7 +26,7 @@
 .Observacao3 table {
   width: 80%;
   border-spacing: 0;
-  color: white;
+  color: var(--font_color);
   margin: auto;
   margin-top: 2%;
   height: 20vh;
@@ -45,12 +55,13 @@
 }
 
 .Observacao3 table td {
-  background-color: #252525;
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
 }
 
 .Observacao3 table input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color)25;
   border: none;
   width: 18vw;
   height: 4vh;

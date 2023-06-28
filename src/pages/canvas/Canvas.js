@@ -356,6 +356,20 @@ function Canvas() {
     modal2.style.display = "none";
   }
 
+  //Funcao para alterar para dark mode
+  document.addEventListener('DOMContentLoaded', function() {
+    const $checkbox = document.querySelector('#switch');
+    const $html = document.querySelector('html');
+    
+    $checkbox.addEventListener('change', function() {
+      if ($checkbox.checked) {
+        $html.classList.add('dark-mode');
+      } else {
+        $html.classList.remove('dark-mode');
+      }
+    });
+  });
+
   return (
     <div className="body">
       <div className="navbar">
@@ -367,6 +381,11 @@ function Canvas() {
         <Link to="/2023.1-CanvLight-Canvas-Inteligente">
           <p className="name_navbar">CanvLight</p>
         </Link>
+        <div className="dark_select">
+          <label for="switch">
+            <input type="checkbox" id="switch" /> Modo Escuro
+          </label>
+        </div>
 
         <nav className="desktop">
           <ul>
@@ -376,8 +395,8 @@ function Canvas() {
             <Link to="/canvas">
               <li>Gerar canvas</li>
             </Link>
-          </ul>
-        </nav>
+          </ul> 
+        </nav>  
       </div>
       <div className="container">
         <div className="rectangle">
