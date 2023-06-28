@@ -1,5 +1,15 @@
+:root {
+  --back_color: #fcdbc1;
+  --font_color: black;
+}
+
+.dark-mode:root {
+  --back_color: #252525;
+  --font_color: white;
+}
+
 .Observacao2 .centerObs2 {
-  background-color: #252525;
+  background-color: var(--back_color);
   border-radius: 30px;
   position: absolute;
   width: 90%;
@@ -10,6 +20,7 @@
 }
 
 .Observacao2 .psdoprojeto h2 {
+  color: var(--font_color);
   position: absolute;
   top: 8%;
   left: 2%;
@@ -21,8 +32,8 @@
 .Observacao2 .psdoprojeto table {
   position: absolute;
   top: 14%;
-  color: white;
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
   border-radius: 8px;
   padding: 2%;
@@ -44,8 +55,8 @@
 .psdoprojeto input {
   width: 70%;
   height: 100%;
-  border-bottom: 1px solid white;
-  background-color: #252525;
+  border-bottom: 1px solid var(--font_color);
+  background-color: var(--back_color);
   border-right: none;
   border-top: none;
   border-left: none;
@@ -56,7 +67,7 @@
   width: 90%;
   margin: auto;
   border-spacing: 0;
-  color: white;
+  color: var(--font_color);
 }
 
 .conceito table th {
@@ -81,18 +92,20 @@
 }
 
 .conceito table td {
-  background-color: #252525;
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
 }
 
 .conceito table input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: none;
   width: auto;
   height: auto;
 }
 
 .conceito p {
+  color: var(--font_color);
   position: relative;
   margin-bottom: 1.5%;
   font-size: 30px;
@@ -134,11 +147,13 @@
 }
 
 .Single span {
+  color: var(--font_color);
   font-size: 20px;
 }
 
 .Single1 input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
   width: 30%;
   border-radius: 15px;
@@ -146,7 +161,8 @@
 }
 
 .Single2 input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
   width: 30%;
   border-radius: 15px;
@@ -154,7 +170,8 @@
 }
 
 .Single3 input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
   width: 30%;
   border-radius: 15px;
@@ -162,17 +179,20 @@
 }
 
 .Single1 {
+  color: var(--font_color);
   margin-top: 23%;
   margin-bottom: 1%;
   width: 60%;
 }
 
 .Single2 {
+  color: var(--font_color);
   margin-bottom: 1%;
   width: 60%;
 }
 
 .Single3 {
+  color: var(--font_color);
   margin-bottom: 4%;
   width: 60%;
 }

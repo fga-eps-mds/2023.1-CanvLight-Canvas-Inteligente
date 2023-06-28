@@ -1,7 +1,11 @@
 :root {
-  --back_colorB: #252525;
-  --back_colorW: #fcdbc1;
+  --back_color: #fcdbc1;
 }
+
+.dark-mode:root {
+  --back_color: #252525;
+}
+
 .body {
   margin: 0;
   padding: 0;
@@ -11,6 +15,50 @@
   background-repeat: no-repeat;
   width: 100%;
 }
+
+.dark_select input[type="checkbox"] {
+  appearance: none;
+  width: 140px;
+  height: 80px;
+  background-color: #707070;
+  border-radius: 50px;
+  position: absolute;
+  cursor: pointer;
+  transition: .3s;
+}
+.dark_select  input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #d5d5d5;
+  border-radius: 50%;
+  left: 10px;
+  top: 10px;
+  transition: .3s;
+}
+.dark_select  input[type="checkbox"]::after {
+  content: "OFF";
+  position: absolute;
+  color: #34384b;
+  font-size: 20px;
+  left: 20px;
+  top: 29px;
+  transition: .3s;
+}
+.dark_select input[type="checkbox"]:checked {
+  background: linear-gradient(91deg, #ff01a5d4, #4b00ffd4);
+}
+.dark_select input[type="checkbox"]:checked:before {
+  background: #000;
+  left: 70px;
+}
+.dark_select input[type="checkbox"]:checked::after {
+  content: "ON";
+  color: #FFF;
+  left: 85px;
+}
+
 
 .modal-overlay {
   position: fixed;
@@ -33,14 +81,14 @@
   margin-top: 25%;
   left: 50%;
   transform: translate(-50%, -45%);
-  border: 50px solid var(--back_colorB, #252525);
+  border: 50px solid var(--back_color, #252525);
   border-radius: 30px;
 }
 
 .rectangle {
   width: 100%;
   height: 100%;
-  background-color: var(--back_colorB, #252525);
+  background-color: var(--back_color, #252525);
   display: flex;
   flex-direction: column;
   justify-content: center;
