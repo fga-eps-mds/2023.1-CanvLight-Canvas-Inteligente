@@ -115,6 +115,115 @@ function GeradorPDF({
       120
     );
 
+    doc.text( //resiliente
+      `${intuResiliente.primeiraLinhaIntuResiliente}`, 
+      85, 
+      137
+    );
+
+    doc.text( //resiliente
+      `${intuResiliente.segundaLinhaIntuResiliente}`, 
+      155, 
+      137
+    );
+
+    doc.text( //emocional
+      `${intuEmocional.primeiraLinhaIntuEmocional}`, 
+      85, 
+      154
+    );
+
+    doc.text( //emocional
+      `${intuEmocional.segundaLinhaIntuEmocional}`, 
+      155, 
+      154
+    );
+
+    doc.text( //mercadologia
+      `${intuMercadologico.primeiraLinhaIntuMercadologico}`, 
+      85, 
+      171
+    );
+
+    doc.text( //mercadologia
+      `${intuMercadologico.segundaLinhaIntuMercadologico}`, 
+      155, 
+      171
+    );
+
+    doc.text( //integrador
+      `${intuIntegrador.primeiraLinhaIntuIntegrador}`, 
+      85, 
+      188
+    );
+
+    doc.text( //integrador
+      `${intuIntegrador.segundaLinhaIntuIntegrador}`, 
+      155, 
+      188
+    );
+
+    doc.text( //p1
+      `${intuQuatroP.primeiraLinhaIntuQuatroP}`, 
+      270, 
+      60
+    );
+
+    doc.text( //p2
+      `${intuQuatroP.segundaLinhaIntuQuatroP}`, 
+      340, 
+      60
+    );
+
+    doc.text( //p3
+      `${intuQuatroP.terceiraLinhaIntuQuatroP}`, 
+      270, 
+      93
+    );
+
+    doc.text( //p4
+      `${intuQuatroP.quartaLinhaIntuQuatroP}`, 
+      340, 
+      93
+    );
+
+    doc.text( //potencialidade
+      `${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 
+      270, 
+      170
+    );
+
+    doc.text( //potencialidade
+      `${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 
+      270, 
+      186
+    );
+
+    doc.text( //potencialidade
+      `${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 
+      270, 
+      202
+    );
+
+    doc.text( //resultados
+      `${sinteseResultados.primeiraLinhaSinteseResultados}`, 
+      340, 
+      170
+    );
+
+    doc.text( //resultados
+      `${sinteseResultados.segundaLinhaSinteseResultados}`, 
+      340, 
+      186
+    );
+
+    doc.text( //resultados
+      `${sinteseResultados.terceiraLinhaSinteseResultados}`, 
+      340, 
+      202
+    );
+
+
     doc.addPage(); //Obervação1
     
     doc.addImage(Observacao1, "PNG", 0, 0, 420, 297);
