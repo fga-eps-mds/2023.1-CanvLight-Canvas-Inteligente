@@ -317,7 +317,7 @@ function Intuicao({
                 />
               </div>
 
-              <h2>Equipe:</h2>
+              <h2 className="h2_equipe">Equipe:</h2>
               <input
                 className="inputEquipe"
                 name="segundaLinhaIntuTextos"
@@ -454,9 +454,12 @@ function Intuicao({
             />
           </div>
 
-          <div onClick={() => {
-            window.open("tutorial#tut_dna", "_blank");
-          }}className="duvida_sintese_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_dna", "_blank");
+            }}
+            className="duvida_sintese_int"
+          ></div>
 
           <div className="clear"></div>
         </div>
@@ -466,7 +469,7 @@ function Intuicao({
             <img src={dateIntuition} alt="DataIntuicao" className="dateInt" />
           </div>
 
-          <div className="tabela22">
+          <div className="tabela_4ps">
             <h2>4P's do projeto:</h2>
             <table className="four_ps">
               <tr>

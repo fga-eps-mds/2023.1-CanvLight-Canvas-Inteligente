@@ -8,7 +8,6 @@
   --font_color: white;
 }
 
-
 .form {
   z-index: 9999;
   display: none;
@@ -275,14 +274,14 @@
   margin-left: 20%;
 }
 
-.tabela22 h2 {
+.tabela_4ps h2 {
   color: var(--font_color);
   margin-left: 20%;
   float: left;
   margin-top: 3%;
 }
 
-.tabela22 table tr {
+.tabela_4ps table tr {
   width: 30%;
   height: 10vh;
   text-align: left;
@@ -291,7 +290,7 @@
   border-radius: 15px;
 }
 
-.tabela22 textarea {
+.tabela_4ps textarea {
   width: 70%;
   height: 100%;
   color: var(--font_color);
@@ -389,4 +388,77 @@
 }
 
 @media screen and (max-width: 568px) {
+  h2 {
+    font-size: 18px;
+  }
+  .close_int {
+    left: 3vw;
+  }
+  .dot2_int {
+    left: 9vw;
+  }
+  .dot3_int {
+    left: 15vw;
+  }
+  .close_int,
+  .dot2_int,
+  .dot3_int {
+    height: 2vh;
+    width: 4vw;
+    top: 1.5vh;
+    margin-left: 1vw;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  }
+  .h2_project {
+    margin-top: 3vh;
+  }
+  .inputProjeto {
+    align-self: left;
+    margin-top: 3vh;
+    left: 5vw;
+    height: 4vh;
+    width: 70vw;
+  }
+  .h2_equipe {
+    margin-top: 5vh;
+  }
+  .inputEquipe {
+    align-self: left;
+    margin-top: 1.5vh;
+    left: 5vw;
+    width: 70vw;
+  }
+  .dateInt {
+    width: 20vw;
+    height: 3vh;
+  }
+  .tabela1 {
+    margin-top: 15vh;
+  }
+  .tabela1 .tituloDNA {
+    font-size: 18px;
+  }
+  .tabela1 table {
+    width: 50vh;
+    font-size: 12px;
+  }
+  .tabela1 table th {
+    width: fit-content;
+    height: 3vh;
+  }
+  .tabela1 table td {
+    height: 1vh;
+  }
+  .tabela1 table input {
+    height: 3vh;
+    width: fit-content;
+    font-size: 12px;
+  }
+
+  .tabela_4ps {
+    margin-top: 500vh;
+  }
+  .parte2 {
+    margin-top: 500vh;
+  }
 }
