@@ -79,6 +79,40 @@ function GeradorPDF({
 
     doc.addImage(Intuicao, "PNG", 0, 0, 420, 297);
 
+    doc.setFontSize(13) // Tamanho da Fonte
+    
+    doc.setTextColor(255);
+
+    doc.text( //Projeto
+      `${intuTextos.primeiraLinhaIntuTextos}`, 
+      65, 
+      30
+    );
+
+    doc.text( //equipe
+      `${intuTextos.segundaLinhaIntuTextos}`, 
+      33, 
+      57
+    );
+
+    doc.text( //ikigai
+      `${intuTextos.terceiraLinhaIntuTextos}`, 
+      33, 
+      233
+    );
+
+    doc.text( //tecnico
+      `${intuTecnico.primeiraLinhaIntuTecnico}`, 
+      85, 
+      120
+    );
+
+    doc.text( //tecnico
+      `${intuTecnico.segundaLinhaIntuTecnico}`, 
+      155, 
+      120
+    );
+
     doc.addPage(); //Obervação1
     
     doc.addImage(Observacao1, "PNG", 0, 0, 420, 297);
