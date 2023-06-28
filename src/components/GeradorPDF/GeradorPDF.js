@@ -2,6 +2,9 @@ import React from "react";
 import { jsPDF } from "jspdf";
 import logo from "../../images/logo_canvlight.png";
 import Intuicao from "../../images/Intuicao.png";
+import Observacao1 from "../../images/observacao1.png"
+import Observacao2 from "../../images/observacao2.png"
+import Observacao3 from "../../images/obvervacao3.png"
 import Interacao1 from "../../images/Interacao1.png";
 import Interacao2 from "../../images/Interacao2.png";
 
@@ -77,11 +80,51 @@ function GeradorPDF({
 
     doc.addImage(Intuicao, "PNG", 0, 0, 420, 297);
 
-    doc.text(
-      `${canaisCanal.primeiraLinhaCanaisCanal}`,
-      5,
+    doc.setFontSize(13) // Tamanho da Fonte
+    
+    doc.setTextColor(255);
+
+    doc.text( //Projeto
+      `${intuTextos.primeiraLinhaIntuTextos}`, 
+      65, 
       30
     );
+
+    doc.text( //equipe
+      `${intuTextos.segundaLinhaIntuTextos}`, 
+      33, 
+      57
+    );
+
+    doc.text( //ikigai
+      `${intuTextos.terceiraLinhaIntuTextos}`, 
+      33, 
+      233
+    );
+
+    doc.text( //tecnico
+      `${intuTecnico.primeiraLinhaIntuTecnico}`, 
+      85, 
+      120
+    );
+
+    doc.text( //tecnico
+      `${intuTecnico.segundaLinhaIntuTecnico}`, 
+      155, 
+      120
+    );
+
+    doc.addPage(); //Obervação1
+    
+    doc.addImage(Observacao1, "PNG", 0, 0, 420, 297);
+
+    doc.addPage(); //Obervação2
+    
+    doc.addImage(Observacao2, "PNG", 0, 0, 420, 297);
+
+    doc.addPage(); //Obervação3
+    
+    doc.addImage(Observacao3, "PNG", 0, 0, 420, 297);
 
     doc.addPage(); // Página Interação1
 
