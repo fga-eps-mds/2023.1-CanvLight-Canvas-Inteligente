@@ -387,7 +387,7 @@ function Canvas() {
               <li>Como usar?</li>
             </Link>  
           </ul> 
-            <div className="dark_select">
+          <div className="dark_select">
             <label for="switch">
               <input  type="checkbox" id="switch" /> 
             </label>

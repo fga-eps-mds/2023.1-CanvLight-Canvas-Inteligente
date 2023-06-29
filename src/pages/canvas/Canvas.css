@@ -43,22 +43,21 @@
 
 }
 .dark_select  input[type="checkbox"]::before {
-  content: "";
+  content: " ";
   position: center;
   background-color: #fcdbc1;
   border-radius: 50%;
   font-size: 15px;
-  transition: .3s;
+  transition: .5s;
   
 }
 .dark_select  input[type="checkbox"]::after {
-  content: "<i class="em em-black_heart" aria-role="presentation" aria-label="BLACK HEART"></i>";
+  content: "🌚";
   position: relative;
   color: #34384b;
-  font-size: 15px;
-  left: 1px;
-  top: 5px;
-  transition: .3s;
+  font-size: 3.5vh;
+  left: 0.3vh;
+  transition: .5s;
 }
 .dark_select input[type="checkbox"]:checked {
   background: linear-gradient(91deg, #e95420,  #77216f );
@@ -68,9 +67,10 @@
   left: 70px;
 }
 .dark_select input[type="checkbox"]:checked::after {
-  content: "<i class="em em-black_heart" aria-role="presentation" aria-label="BLACK HEART"></i>";
+  content: "🌞";
+  font-size: 3.5vh;
   color: #FFF;
-  left: 30px;
+  left: 4.5vh;
 }
 
 
