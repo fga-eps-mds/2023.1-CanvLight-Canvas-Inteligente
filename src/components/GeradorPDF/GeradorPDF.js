@@ -227,7 +227,7 @@ function GeradorPDF({
     doc.addPage(); //Obervação1
     
     doc.addImage(Observacao1, "PNG", 0, 0, 420, 297);
-
+    //tabela1
     doc.text( //empresa
       `${empresa.primeiraLinhaEmpresa}`, 
       38, 
@@ -352,6 +352,134 @@ function GeradorPDF({
       `${melhorar.terceiraLinhaMelhorar}`, 
       340, 
       85
+    );
+
+    // tabela dois
+
+    doc.text( //Parceiro
+      `${empresa.primeiraLinhaEmpresa}`, 
+      38, 
+      135
+    );
+
+    doc.text( //Parceiro
+      `${empresa.segundaLinhaEmpresa}`, 
+      38, 
+      150
+    );
+
+    doc.text( //Parceiro
+      `${empresa.terceiraLinhaEmpresa}`, 
+      38, 
+      165
+    );
+
+    doc.text( //insumos
+      `${insumos.primeiraLinhaInsumos}`, 
+      88, 
+      135
+    );
+
+    doc.text( //insumos
+      `${insumos.segundaLinhaInsumos}`, 
+      88, 
+      150
+    );
+
+    doc.text( //insumos
+      `${insumos.terceiraLinhaInsumos}`, 
+      88, 
+      165
+    );
+
+    doc.text( //beneficios
+      `${beneficios.primeiraLinhaBeneficios}`, 
+      137, 
+      135
+    );
+
+    doc.text( //beneficios
+      `${beneficios.segundaLinhaBeneficios}`, 
+      137, 
+      150
+    );
+
+    doc.text( //beneficios
+      `${beneficios.terceiraLinhaBeneficios}`, 
+      137, 
+      165
+    );
+
+    doc.text( //fornecer
+      `${fornecer.primeiraLinhaFornecer}`, 
+      187, 
+      135
+    );
+
+    doc.text( //fornecer
+      `${fornecer.segundaLinhaFornecer}`, 
+      187, 
+      150
+    );
+
+    doc.text( //fornecer
+      `${fornecer.terceiraLinhaFornecer}`, 
+      187, 
+      165
+    );
+
+    doc.text( //risco
+      `${risco.primeiraLinhaRisco}`, 
+      238, 
+      135
+    );
+
+    doc.text( //risco
+      `${risco.segundaLinhaRisco}`, 
+      238, 
+      150
+    );
+
+    doc.text( //risco
+      `${risco.terceiraLinhaRisco}`, 
+      238, 
+      165
+    );
+
+    doc.text( //verticalizar
+      `${verticalizar.primeiraLinhVerticalizar}`, 
+      289, 
+      135
+    );
+
+    doc.text( //verticalizar
+      `${verticalizar.segundaLinhaVerticalizar}`, 
+      289, 
+      150
+    );
+
+    doc.text( //verticalizar
+      `${verticalizar.terceiraVerticalizar}`, 
+      289, 
+      165
+    );
+
+    doc.text( //nota
+      `${nota.primeiraLinhaNota}`, 
+      340, 
+      135
+    );
+
+    doc.text( //nota
+      `${nota.segundaLinhaNota}`, 
+      340, 
+      150
+    );
+
+    doc.text( //nota
+      `${nota.terceiraLinhaNota}`, 
+      340, 
+      165
     );
 
     doc.addPage(); //Obervação2
