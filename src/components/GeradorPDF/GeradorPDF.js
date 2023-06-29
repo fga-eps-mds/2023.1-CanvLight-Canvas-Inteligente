@@ -228,6 +228,132 @@ function GeradorPDF({
     
     doc.addImage(Observacao1, "PNG", 0, 0, 420, 297);
 
+    doc.text( //empresa
+      `${empresa.primeiraLinhaEmpresa}`, 
+      38, 
+      55
+    );
+
+    doc.text( //empresa
+      `${empresa.segundaLinhaEmpresa}`, 
+      38, 
+      70
+    );
+
+    doc.text( //empresa
+      `${empresa.terceiraLinhaEmpresa}`, 
+      38, 
+      85
+    );
+
+    doc.text( //diferenca
+      `${diferenca.primeiraLinhaDiferenca}`, 
+      88, 
+      55
+    );
+
+    doc.text( //diferenca
+      `${diferenca.segundaLinhaDiferenca}`, 
+      88, 
+      70
+    );
+
+    doc.text( //diferenca
+      `${diferenca.terceiraLinhaDiferenca}`, 
+      88, 
+      85
+    );
+
+    doc.text( //porte
+      `${porte.primeiraLinhaPorte}`, 
+      137, 
+      55
+    );
+
+    doc.text( //porte
+      `${porte.segundaLinhaPorte}`, 
+      137, 
+      70
+    );
+
+    doc.text( //porte
+      `${porte.terceiraLinhaPorte}`, 
+      137, 
+      85
+    );
+
+    doc.text( //concorrencia
+      `${concorrencia.primeiraLinhaConcorrencia}`, 
+      187, 
+      55
+    );
+
+    doc.text( //concorrencia
+      `${concorrencia.segundaLinhaConcorrencia}`, 
+      187, 
+      70
+    );
+
+    doc.text( //concorrencia
+      `${concorrencia.terceiraLinhaConcorrencia}`, 
+      187, 
+      85
+    );
+
+    doc.text( //localizacao
+      `${localizacao.primeiraLinhaLocalizacao}`, 
+      238, 
+      55
+    );
+
+    doc.text( //localizacao
+      `${localizacao.segundaLinhaLocalizacao}`, 
+      238, 
+      70
+    );
+
+    doc.text( //localizacao
+      `${localizacao.terceiraLinhaLocalizacao}`, 
+      238, 
+      85
+    );
+
+    doc.text( //imitado
+      `${imitado.primeiraLinhaImitado}`, 
+      289, 
+      55
+    );
+
+    doc.text( //imitado
+      `${imitado.segundaLinhaImitado}`, 
+      289, 
+      70
+    );
+
+    doc.text( //imitado
+      `${imitado.terceiraLinhaImitado}`, 
+      289, 
+      85
+    );
+
+    doc.text( //melhorado
+      `${melhorar.primeiraLinhaMelhorar}`, 
+      340, 
+      55
+    );
+
+    doc.text( //melhorar
+      `${melhorar.segundaLinhaMelhorar}`, 
+      340, 
+      70
+    );
+
+    doc.text( //melhorar
+      `${melhorar.terceiraLinhaMelhorar}`, 
+      340, 
+      85
+    );
+
     doc.addPage(); //Obervação2
     
     doc.addImage(Observacao2, "PNG", 0, 0, 420, 297);
