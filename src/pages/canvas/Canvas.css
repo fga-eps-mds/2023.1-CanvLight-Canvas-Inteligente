@@ -1,9 +1,11 @@
 :root {
   --back_color: #fcdbc1;
+  --font_color: #252525;
 }
 
 .dark-mode:root {
   --back_color: #252525;
+  --font_color: white; 
 }
 
 .body {
@@ -16,50 +18,61 @@
   width: 100%;
 }
 
-/*
+.dark_select {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  float: right;
+  margin-top: 1%;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
 .dark_select input[type="checkbox"] {
   appearance: none;
-  width: 140px;
-  height: 80px;
-  background-color: #707070;
+  width: 4vw;
+  height: 4vh;
+  background-color: #fcdbc1;
   border-radius: 50px;
-  position: relative;
+  position: center;
   cursor: pointer;
   transition: .3s;
+  margin-top: 1%;
+
 }
 .dark_select  input[type="checkbox"]::before {
   content: "";
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background-color: #d5d5d5;
+  position: center;
+  background-color: #fcdbc1;
   border-radius: 50%;
-  left: 10px;
-  top: 10px;
+  font-size: 15px;
   transition: .3s;
+  
 }
 .dark_select  input[type="checkbox"]::after {
-  content: "OFF";
+  content: "<i class="em em-black_heart" aria-role="presentation" aria-label="BLACK HEART"></i>";
   position: relative;
   color: #34384b;
-  font-size: 20px;
-  left: 20px;
-  top: 29px;
+  font-size: 15px;
+  left: 1px;
+  top: 5px;
   transition: .3s;
 }
 .dark_select input[type="checkbox"]:checked {
-  background: linear-gradient(91deg, #ff01a5d4, #4b00ffd4);
+  background: linear-gradient(91deg, #e95420,  #77216f );
 }
 .dark_select input[type="checkbox"]:checked:before {
   background: #000;
   left: 70px;
 }
 .dark_select input[type="checkbox"]:checked::after {
-  content: "ON";
+  content: "<i class="em em-black_heart" aria-role="presentation" aria-label="BLACK HEART"></i>";
   color: #FFF;
-  left: 85px;
+  left: 30px;
 }
-*/
+
 
 .modal-overlay {
   position: fixed;
@@ -82,14 +95,14 @@
   margin-top: 25%;
   left: 50%;
   transform: translate(-50%, -45%);
-  border: 50px solid var(--back_color, #252525);
+  border: 50px solid var(--back_color);
   border-radius: 30px;
 }
 
 .rectangle {
   width: 100%;
   height: 100%;
-  background-color: var(--back_color, #252525);
+  background-color: var(--back_color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +114,7 @@
   height: 107%;
   margin: 10px;
   background-color: #72097e;
-  color: white;
+  color: var(--font_color);
   border: none;
   border-radius: 20px;
   position: absolute;
@@ -118,7 +131,7 @@
   height: 107%;
   margin: 10px;
   background-color: #fb8218;
-  color: white;
+  color: var(--font_color);
   border: none;
   border-radius: 20px;
   position: absolute;
@@ -135,7 +148,7 @@
   height: 107%;
   margin: 10px;
   background-color: #0e78c9;
-  color: white;
+  color: var(--font_color);
   border: none;
   border-radius: 20px;
   position: absolute;
@@ -213,7 +226,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  color: white;
+  color: var(--font_color);
   margin: auto;
 }
 
@@ -224,7 +237,7 @@
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--font_color);
   height: 120%;
 }
 
