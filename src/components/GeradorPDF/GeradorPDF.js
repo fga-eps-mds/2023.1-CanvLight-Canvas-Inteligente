@@ -24,7 +24,7 @@ function GeradorPDF({
   resultado,
   orientacao,
   indicado,
-  oportunidades,
+  opotunidades,
   requisitos,
   aproximados,
   indicadoPara,
@@ -563,6 +563,114 @@ function GeradorPDF({
       `${aproximados.concorrenteObser2}`, 
       115, 
       163
+    );
+
+    doc.text( //ferramentas
+      `${ferramentas.primeiraLinhaFerramentas}`, 
+      55, 
+      220
+    );
+
+    doc.text( //ferramentas
+      `${ferramentas.segundaLinhaFerramentas}`, 
+      55, 
+      237
+    );
+
+    doc.text( //ferramentas
+      `${ferramentas.terceiraLinhaFerramentas}`, 
+      55, 
+      254
+    );
+
+    doc.text( //requisitos
+      `${requisitos.primeiraLinhaRequisitos}`, 
+      110, 
+      220
+    );
+
+    doc.text( //requisitos
+      `${requisitos.segundaLinhaRequisitos}`, 
+      110, 
+      237
+    );
+
+    doc.text( //requisitos
+      `${requisitos.terceiraLinhaRequisitos}`, 
+      110, 
+      254
+    );
+
+    doc.text( //Oportunidades
+      `${opotunidades.primeiraLinhaOportunidades}`, 
+      165, 
+      220
+    );
+
+    doc.text( //oportunidades
+      `${opotunidades.segundaLinhaOportunidades}`, 
+      165, 
+      237
+    );
+
+    doc.text( //oportunidades
+      `${opotunidades.terceiraLinhaOportunidades}`, 
+      165, 
+      254
+    );
+
+    doc.text( //indicado
+      `${indicado.primeiraLinhaIndicado}`, 
+      220, 
+      220
+    );
+
+    doc.text( //indicado
+      `${indicado.segundaLinhaIndicado}`, 
+      220, 
+      237
+    );
+
+    doc.text( //indicado
+      `${indicado.terceiraLinhaIndicado}`, 
+      220, 
+      254
+    );
+
+    doc.text( //orientacao
+      `${orientacao.primeiraLinhaOrientacao}`, 
+      275, 
+      220
+    );
+
+    doc.text( //orientacao
+      `${orientacao.segundaLinhaOrientacao}`, 
+      275, 
+      237
+    );
+
+    doc.text( //orientacao
+      `${orientacao.terceiraLinhaOrientacao}`, 
+      275, 
+      254
+    );
+
+    doc.text( //resultado
+      `${resultado.primeiraLinhaResultado}`, 
+      330, 
+      220
+    );
+
+    doc.text( //resultado
+      `${resultado.segundaLinhaResultado}`, 
+      330, 
+      237
+    );
+
+    doc.text( //orientacao
+      `${resultado.terceiraLinhaResultado}`, 
+      330, 
+      254
     );
 
     doc.addPage(); //Obervação3
