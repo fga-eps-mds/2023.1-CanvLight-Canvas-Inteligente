@@ -180,7 +180,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
         }
 
         const novosDadosPsObser = {
-            setPrimeiroP: name === 'primeiroP' ? value : primeiroP,
+            primeiroP: name === 'primeiroP' ? value : primeiroP,
             segundoP: name === 'segundoP' ? value : segundoP,
             terceiroP: name === 'terceiroP' ? value : terceiroP,
             quartoP: name === 'quartoP' ? value : terceiroP,

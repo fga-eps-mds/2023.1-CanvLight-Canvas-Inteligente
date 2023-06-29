@@ -523,6 +523,48 @@ function GeradorPDF({
     
     doc.addImage(Observacao2, "PNG", 0, 0, 420, 297);
 
+    doc.text( //ps
+      `${psObser.primeiroP}`, 
+      30, 
+      35
+    );
+
+    doc.text( //ps
+      `${psObser.segundoP}`, 
+      100, 
+      35
+    );
+
+    doc.text( //ps
+      `${psObser.terceiroP}`, 
+      30, 
+      68
+    );
+
+    doc.text( //ps
+      `${psObser.quartoP}`, 
+      105, 
+      68
+    );
+
+    doc.text( //alinhamentos
+      `${aproximados.alinhadosObser2}`, 
+      130, 
+      147
+    );
+
+    doc.text( //proximos
+      `${aproximados.proximos}`, 
+      340, 
+      147
+    );
+
+    doc.text( //concorete
+      `${aproximados.concorrenteObser2}`, 
+      115, 
+      163
+    );
+
     doc.addPage(); //Obervação3
     
     doc.addImage(Observacao3, "PNG", 0, 0, 420, 297);
