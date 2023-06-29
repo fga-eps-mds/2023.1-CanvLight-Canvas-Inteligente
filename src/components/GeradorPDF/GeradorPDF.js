@@ -671,6 +671,26 @@ function GeradorPDF({
     doc.addPage(); // Página Interação3
 
     doc.addImage(Interacao3, "PNG", 0, 0, 420, 297);
+
+    doc.text(`${canaisCanal.primeiraLinhaCanaisCanal}`, 185, 63); // Canais de Venda Canais
+    doc.text(`${canaisCanal.segundaLinhaCanaisCanal}`, 185, 90);
+    doc.text(`${canaisCanal.terceiraLinhaCanaisCanal}`, 185, 126);
+    doc.text(`${canaisCanal.quartaLinhaCanaisCanal}`, 185, 162);
+
+    doc.text(`${canaisObjetivo.primeiraLinhaCanaisObjetivo}`, 248, 63); // Canais de Venda Objetivo
+    doc.text(`${canaisObjetivo.segundaLinhaCanaisObjetivo}`, 248, 90);
+    doc.text(`${canaisObjetivo.terceiraLinhaCanaisObjetivo}`, 248, 126);
+    doc.text(`${canaisObjetivo.quartaLinhaCanaisObjetivo}`, 248, 162);
+
+    doc.text(`${canaisMetrica.primeiraLinhaCanaisMetrica}`, 318, 63); // Canais de Venda Metrica
+    doc.text(`${canaisMetrica.segundaLinhaCanaisMetrica}`, 318, 90);
+    doc.text(`${canaisMetrica.terceiraLinhaCanaisMetrica}`, 318, 126);
+    doc.text(`${canaisMetrica.quartaLinhaCanaisMetrica}`, 317, 162);
+
+    doc.text(`${inteQuatroP.primeiraLinhaInteQuatroP}`, 152, 222); // Canais de Venda Metrica
+    doc.text(`${inteQuatroP.segundaLinhaInteQuatroP}`, 224, 222);
+    doc.text(`${inteQuatroP.terceiraLinhaInteQuatroP}`, 152, 257);
+    doc.text(`${inteQuatroP.quartaLinhaInteQuatroP}`, 224, 257);
   
     doc.addPage(); // Página Canvas
 
