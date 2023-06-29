@@ -677,6 +677,103 @@ function GeradorPDF({
     
     doc.addImage(Observacao3, "PNG", 0, 0, 420, 297);
 
+    doc.text( //Ferramentas
+      `${ferramentasObser3.primeiraLinhaFerramentaObser3}`, 
+      50, 
+      70
+    );
+
+    doc.text( //Ferramentas
+      `${ferramentasObser3.segundaLinhaFerramentaObser3}`, 
+      50, 
+      95
+    );
+
+    doc.text( //indicado para
+      `${indicadoPara.primeiraLinhaIndicadoPara}`, 
+      120, 
+      70
+    );
+
+    doc.text( //indicado para
+      `${indicadoPara.segundaLinhaIndicadoPara}`, 
+      120, 
+      95
+    );
+
+    doc.text( //orientação uso
+      `${orientacaoUso.primeiraLinhaOrientacaoUso}`, 
+      190, 
+      70
+    );
+
+    doc.text( //orientação uso
+      `${orientacaoUso.segundaLinhaOrientacaoUso}`, 
+      190, 
+      95
+    );
+
+    doc.text( //resultado esperado
+      `${resultadoEsperado.primeiraLinhaResultadoEsparado}`, 
+      260, 
+      70
+    );
+
+    doc.text( //resutado esperado
+      `${resultadoEsperado.segundaLinhaResultadoEsparado}`, 
+      260, 
+      95
+    );
+
+    doc.text( //Ferramentas
+      `${ferramentasObser3P.primeiraLinhaFerramentaObser3P}`, 
+      105, 
+      195
+    );
+
+    doc.text( //Ferramentas
+      `${ferramentasObser3P.segundaLinhaFerramentaObser3P}`, 
+      105, 
+      220
+    );
+
+    doc.text( //indicado para
+      `${indicadoParaP.primeiraLinhaIndicadoParaP}`, 
+      175, 
+      195
+    );
+
+    doc.text( //indicado para
+      `${indicadoParaP.segundaLinhaIndicadoParaP}`, 
+      175, 
+      220
+    );
+
+    doc.text( //orientação uso
+      `${orientacaoUsoP.primeiraLinhaOrientacaoUsoP}`, 
+      245, 
+      195
+    );
+
+    doc.text( //orientação uso
+      `${orientacaoUsoP.segundaLinhaOrientacaoUsoP}`, 
+      245, 
+      220
+    );
+
+    doc.text( //resultado esperado
+      `${resultadoEsperadoP.primeiraLinhaResultadoEsparadoP}`, 
+      315, 
+      195
+    );
+
+    doc.text( //resutado esperado
+      `${resultadoEsperadoP.segundaLinhaResultadoEsparadoP}`, 
+      315, 
+      220
+    );
+
+
     doc.addPage(); // Página Interação1
 
     doc.addImage(Interacao1, "PNG", 0, 0, 420, 297);
