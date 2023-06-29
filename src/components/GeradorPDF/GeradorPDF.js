@@ -20,7 +20,7 @@ function GeradorPDF({
   intuIntegrador,
   intuTextos,
   perfil1,
-  prefil2,
+  perfil2,
   resultado,
   orientacao,
   indicado,
@@ -481,6 +481,43 @@ function GeradorPDF({
       340, 
       165
     );
+
+    doc.text( //peefil1
+      `${perfil1.primeiraLinhaPerfil1}`, 
+      95, 
+      230
+    );
+
+    doc.text( //perfil1
+      `${perfil1.segundaLinhaPerfil1}`, 
+      95, 
+      246
+    );
+
+    doc.text( //perfil1
+      `${perfil1.terceiraLinhaPerfil1}`, 
+      95, 
+      262
+    );
+
+    doc.text( //peefil2
+      `${perfil2.primeiraLinhaPerfil2}`, 
+      268, 
+      230
+    );
+
+    doc.text( //perfil2
+      `${perfil2.segundaLinhaPerfil2}`, 
+      268, 
+      246
+    );
+
+    doc.text( //perfil2
+      `${perfil2.terceiraLinhaPerfil2}`, 
+      268, 
+      262
+    );
+
 
     doc.addPage(); //Obervação2
     
