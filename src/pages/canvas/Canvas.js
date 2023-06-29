@@ -360,7 +360,7 @@ function Canvas() {
   document.addEventListener('DOMContentLoaded', function() {
     const $checkbox = document.querySelector('#switch');
     const $html = document.querySelector('html');
-    
+
     $checkbox.addEventListener('change', function() {
       if ($checkbox.checked) {
         $html.classList.add('dark-mode');
@@ -387,11 +387,11 @@ function Canvas() {
               <li>Como usar?</li>
             </Link>  
           </ul> 
-          <div className="dark_select">
-              <label for="switch">
-                <input type="checkbox" id="switch" /> Modo Escuro
-              </label>
-            </div>
+            <div className="dark_select">
+            <label for="switch">
+              <input  type="checkbox" id="switch" /> 
+            </label>
+          </div>
         </nav>  
       </div>
       <div className="container">
