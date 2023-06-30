@@ -48,7 +48,7 @@
 }
 
 .button1 {
-  width: 25%;
+  width: 20%;
   height: 107%;
   margin: 10px;
   background-color: #72097e;
@@ -57,7 +57,7 @@
   border-radius: 20px;
   position: absolute;
   top: -3.5%;
-  margin-left: -53.5%;
+  margin-left: -61%;
   transform: translateX(-50%);
   cursor: pointer;
   font-size: 40px;
@@ -65,7 +65,7 @@
 }
 
 .button2 {
-  width: 26%;
+  width: 45%;
   height: 107%;
   margin: 10px;
   background-color: #fb8218;
@@ -74,7 +74,7 @@
   border-radius: 20px;
   position: absolute;
   top: -3.5%;
-  margin-left: 0.5%;
+  margin-left: 35%;
   transform: translateX(-50%);
   cursor: pointer;
   font-size: 40px;
@@ -82,7 +82,7 @@
 }
 
 .button3 {
-  width: 26%;
+  width: 30%;
   height: 107%;
   margin: 10px;
   background-color: #0e78c9;
@@ -91,29 +91,13 @@
   border-radius: 20px;
   position: absolute;
   top: -3.5%;
-  margin-left: 54%;
+  margin-left: 102%;
   transform: translateX(-50%);
   cursor: pointer;
   font-size: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button4 {
-  width: 25%;
-  height: 107%;
-  margin: 10px;
-  background-color: rgb(255, 94, 0);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  position: absolute;
-  top: -3.5%;
-  margin-left: 105.5%;
-  transform: translateX(-50%);
-  cursor: pointer;
-  font-size: 40px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 .dot {
   position: absolute;
   top: -7%;
