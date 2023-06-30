@@ -356,6 +356,22 @@ function Canvas() {
     modal2.style.display = "none";
   }
 
+  /*Chamadas para o form de Maturidade*/
+  function abrirFormMaturidade(e) {
+    e.preventDefault();
+
+    let modalOverlay = document.createElement("div");
+    modalOverlay.classList.add("modal-overlay");
+    document.body.appendChild(modalOverlay);
+
+    let modal = document.querySelector(".area_adm");
+    modal.style.display = "block";
+
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "none";
+  }
+
+
   return (
     <div className="body">
       <div className="navbar">
@@ -384,6 +400,7 @@ function Canvas() {
           <div className="dot"></div>
           <div className="dot2"></div>
           <div className="dot3"></div>
+
           <button className="button1" onClick={(e) => abrirFormIntuicao(e)}>
             Intuição
           </button>
@@ -392,6 +409,9 @@ function Canvas() {
           </button>
           <button className="button3" onClick={(e) => abrirFormInteracao(e)}>
             Interação
+          </button>
+          <button className="button4" onClick={(e) => abrirFormMaturidade(e)}>
+            Maturidade
           </button>
         </div>
       </div>
