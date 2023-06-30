@@ -5,7 +5,7 @@
 
 .dark-mode:root {
   --back_color: #252525;
-  --font_color: white; 
+  --font_color: white;
 }
 
 .body {
@@ -38,29 +38,27 @@
   border-radius: 50px;
   position: center;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   margin-top: 1%;
-
 }
-.dark_select  input[type="checkbox"]::before {
+.dark_select input[type="checkbox"]::before {
   content: " ";
   position: center;
   background-color: #fcdbc1;
   border-radius: 50%;
   font-size: 15px;
-  transition: .5s;
-  
+  transition: 0.5s;
 }
-.dark_select  input[type="checkbox"]::after {
+.dark_select input[type="checkbox"]::after {
   content: "🌚";
   position: relative;
   color: #34384b;
   font-size: 3.5vh;
   left: 0.3vh;
-  transition: .5s;
+  transition: 0.5s;
 }
 .dark_select input[type="checkbox"]:checked {
-  background: linear-gradient(91deg, #e95420,  #77216f );
+  background: linear-gradient(91deg, #e95420, #77216f);
 }
 .dark_select input[type="checkbox"]:checked:before {
   background: #000;
@@ -69,10 +67,9 @@
 .dark_select input[type="checkbox"]:checked::after {
   content: "🌞";
   font-size: 3.5vh;
-  color: #FFF;
+  color: #fff;
   left: 4.5vh;
 }
-
 
 .modal-overlay {
   position: fixed;
@@ -292,6 +289,9 @@
 }
 
 @media screen and (max-width: 568px) {
+  body {
+    background-color: #77216f;
+  }
   .body {
     height: 100vh;
   }
@@ -300,7 +300,7 @@
   .desktop ul li {
     padding: 1px;
     top: -80%;
-    font-size: 15px;
+    font-size: 18px;
   }
   .name_navbar {
     top: 1%;
@@ -311,7 +311,7 @@
     width: 8vw;
   }
   .desktop ul {
-    margin-top: 0.5%;
+    margin-top: 1%;
     margin-right: 1%;
   }
   .dot,
@@ -327,6 +327,10 @@
   }
   .dot3 {
     left: 8vw;
+  }
+  .dark_select input[type="checkbox"] {
+    width: 18vw;
+    height: 4vh;
   }
   .container {
     width: 85vw;

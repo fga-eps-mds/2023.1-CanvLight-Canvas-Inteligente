@@ -318,7 +318,7 @@ function Intuicao({
               </div>
 
               <h2 className="h2_equipe">Equipe:</h2>
-              <input
+              <textarea
                 className="inputEquipe"
                 name="segundaLinhaIntuTextos"
                 value={segundaLinhaIntuTextos}
@@ -465,10 +465,6 @@ function Intuicao({
         </div>
 
         <div className="direita">
-          <div>
-            <img src={dateIntuition} alt="DataIntuicao" className="dateInt" />
-          </div>
-
           <div className="tabela_4ps">
             <h2>4P's do projeto:</h2>
             <table className="four_ps">
