@@ -38,7 +38,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
         const {name ,value} = e.target;
         if (name === 'primeiraLinhaResultado') {
             setPrimeiraLinhaResultado(value);
-        } else if (name === 'segundaLinhResultado') {
+        } else if (name === 'segundaLinhaResultado') {
             setSegundaLinhaResultado(value);
         } else if (name === 'terceiraLinhaResultado') {
             setTerceiraLinhaResultado(value);
@@ -180,7 +180,7 @@ function Observacao2({onPsObserChange, onAproximadosChange, onFerramentasChange,
         }
 
         const novosDadosPsObser = {
-            setPrimeiroP: name === 'primeiroP' ? value : primeiroP,
+            primeiroP: name === 'primeiroP' ? value : primeiroP,
             segundoP: name === 'segundoP' ? value : segundoP,
             terceiroP: name === 'terceiroP' ? value : terceiroP,
             quartoP: name === 'quartoP' ? value : terceiroP,
