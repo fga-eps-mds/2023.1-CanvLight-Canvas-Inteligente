@@ -328,7 +328,7 @@ function Canvas() {
     modal2.style.display = "none";
   }
 
-  /*Chamadas para o form de Interção*/
+  /*Chamadas para o form de Interação*/
   function abrirFormInteracao(e) {
     e.preventDefault();
 
@@ -364,7 +364,7 @@ function Canvas() {
     modalOverlay.classList.add("modal-overlay");
     document.body.appendChild(modalOverlay);
 
-    let modal = document.querySelector(".area_adm");
+    let modal = document.querySelector(".maturidade1");
     modal.style.display = "block";
 
     let modal2 = document.querySelector(".confirma");
