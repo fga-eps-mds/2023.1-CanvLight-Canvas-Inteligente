@@ -276,9 +276,6 @@ function Intuicao({
   };
 
   //===============================================================================================
-  function clicouNaDuvida() {
-    alert("duvida clicada!");
-  }
 
   function fecharFormIntuicao(e) {
     e.preventDefault();
@@ -440,7 +437,12 @@ function Intuicao({
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvidaDNA_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#breakpoint_introducao", "_blank");
+            }}
+            className="duvidaDNA_int"
+          ></div>
 
           <div className="parte2">
             <h2 className="h2_Ikigai">Ikigai:</h2>
@@ -457,7 +459,7 @@ function Intuicao({
             onClick={() => {
               window.open("tutorial#tut_dna", "_blank");
             }}
-            className="duvida_sintese_int"
+            className="duvidaIkigai_int"
           ></div>
 
           <div className="clear"></div>
@@ -511,7 +513,12 @@ function Intuicao({
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida_fourps_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_ikigai", "_blank");
+            }}
+            className="duvida_fourps_int"
+          ></div>
 
           <div className="tabela3">
             <h2>Síntese:</h2>
