@@ -360,6 +360,7 @@ function Canvas() {
   document.addEventListener("DOMContentLoaded", function () {
     const $checkbox = document.querySelector("#switch");
     const $html = document.querySelector("html");
+
     $checkbox.addEventListener("change", function () {
       if ($checkbox.checked) {
         $html.classList.add("dark-mode");
