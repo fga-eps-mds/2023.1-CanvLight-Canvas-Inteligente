@@ -357,14 +357,14 @@ function Canvas() {
   }
 
   //Funcao para alterar para dark mode
-  document.addEventListener('DOMContentLoaded', function() {
-    const $checkbox = document.querySelector('#switch');
-    const $html = document.querySelector('html');
-    $checkbox.addEventListener('change', function() {
+  document.addEventListener("DOMContentLoaded", function () {
+    const $checkbox = document.querySelector("#switch");
+    const $html = document.querySelector("html");
+    $checkbox.addEventListener("change", function () {
       if ($checkbox.checked) {
-        $html.classList.add('dark-mode');
+        $html.classList.add("dark-mode");
       } else {
-        $html.classList.remove('dark-mode');
+        $html.classList.remove("dark-mode");
       }
     });
   });
@@ -384,14 +384,14 @@ function Canvas() {
           <ul>
             <Link to="/tutorial">
               <li>Como usar?</li>
-            </Link>  
-          </ul> 
+            </Link>
+          </ul>
           <div className="dark_select">
             <label for="switch">
-              <input  type="checkbox" id="switch" /> 
+              <input type="checkbox" id="switch" />
             </label>
           </div>
-        </nav>  
+        </nav>
       </div>
       <div className="container">
         <div className="rectangle">
