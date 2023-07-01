@@ -153,7 +153,7 @@
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  right: 14vw;
+  right: -3vw;
   top: -36.3vh;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -219,8 +219,8 @@
   background-repeat: no-repeat;
   float: left;
   cursor: pointer;
-  margin-left: -19.8vw;
-  margin-top: 2.5vh;
+  margin-left: 33vw;
+  margin-top: -24vh;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -301,7 +301,7 @@
   height: 20px;
   float: left;
   cursor: pointer;
-  margin-left: 20vw;
+  margin-left: 42vw;
   margin-top: -30vh;
   background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -367,7 +367,7 @@
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  right: -5vw;
+  right: -32vw;
   top: -2.5vh;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -384,9 +384,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  * {
-    margin: 0;
-  }
   h2 {
     font-size: 18px;
   }
@@ -395,7 +392,6 @@
   }
   .form {
     height: 180vh;
-    margin: 0;
   }
   .centerInt {
     height: 160vh;
@@ -512,7 +508,7 @@
   }
   .duvida_sintese_int {
     margin-top: -22.8vh;
-    margin-right: 42vw;
+    margin-right: 70vw;
   }
   .feito_int {
     margin-top: 3vh;
