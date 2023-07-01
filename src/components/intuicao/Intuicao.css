@@ -25,8 +25,8 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  margin-left: 8%;
-  margin-top: 6%;
+  left: 8%;
+  top: 6%;
   background-color: var(--back_color);
   border-radius: 30px;
 }
@@ -102,8 +102,8 @@
   position: absolute;
   width: 29.7vw;
   height: 4vh;
-  right: 55%;
-  top: 6%;
+  left: 6.5vw;
+  top: 5.3vh;
   color: var(--font_color);
   border: 2px solid #77216f;
   background-color: var(--back_color);
@@ -126,15 +126,15 @@
   position: absolute;
   width: 34.4vw;
   height: 12vh;
-  right: 55%;
-  top: 15%;
+  left: 1.5vw;
+  top: 16.5vh;
   border: 2px solid #77216f;
   background-color: var(--back_color);
   border-radius: 20px;
 }
 
 .tabela1 {
-  margin-top: 30%;
+  margin-top: 17vh;
   float: center;
   width: 100vw;
 }
@@ -147,13 +147,14 @@
 
 .duvidaDNA_int {
   background-image: url("../../images/request\ \(1\).png");
+  position: relative;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-right: 50%;
-  margin-top: -65%;
+  right: 14vw;
+  top: -36.3vh;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -216,10 +217,10 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  float: right;
+  float: left;
   cursor: pointer;
-  margin-right: 75%;
-  margin-top: -43%;
+  margin-left: -19.8vw;
+  margin-top: 2.5vh;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -295,13 +296,15 @@
 
 .duvida_fourps_int {
   background-image: url("../../images/request\ \(1\).png");
+  position: relative;
   width: 20px;
   height: 20px;
   float: left;
   cursor: pointer;
-  margin-right: -23%;
-  margin-top: -2.5%;
+  margin-left: 20vw;
+  margin-top: -30vh;
   background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .tabela3 h2 {
@@ -358,32 +361,41 @@
 
 .duvida_sintese_int {
   background-image: url("../../images/request\ \(1\).png");
+  position: relative;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-right: 60%;
-  margin-top: -28%;
+  right: -5vw;
+  top: -2.5vh;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .feito_int {
   background-image: url("../../images/check.png");
   height: 6vh;
   width: 3vw;
-  margin-top: 15%;
-  margin-right: 2%;
+  margin-top: 20vh;
+  margin-right: -17vw;
   float: right;
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 @media screen and (max-width: 568px) {
+  * {
+    margin: 0;
+  }
   h2 {
     font-size: 18px;
   }
+  .navbar {
+    width: 100vw;
+  }
   .form {
-    height: 170vh;
+    height: 180vh;
+    margin: 0;
   }
   .centerInt {
     height: 160vh;
@@ -411,7 +423,7 @@
   }
   .inputProjeto {
     align-self: left;
-    margin-top: 0vh;
+    margin-top: 4vh;
     left: 5vw;
     height: 4vh;
     width: 70vw;
@@ -421,7 +433,7 @@
   }
   .inputEquipe {
     align-self: left;
-    margin-top: -7vh;
+    margin-top: 0vh;
     left: 5vw;
     width: 70vw;
   }
@@ -451,18 +463,20 @@
     font-size: 12px;
   }
   .duvidaDNA_int {
-    margin-top: -24.2vh;
-    margin-right: -20vw;
+    margin-top: 12.4vh;
+    left: 18vw;
   }
 
   .parte2 {
-    margin-top: 3vh;
+    margin-top: -12vh;
   }
   .parte2 textarea {
+    margin-top: -1.5vh;
     width: 67vw;
   }
   .duvidaIkigai_int {
-    margin-top: 0vh;
+    margin-top: -22.9vh;
+    margin-left: 18vw;
   }
   .direita {
     float: left;
@@ -471,7 +485,7 @@
   }
   .tabela_4ps {
     margin-left: 0vw;
-    margin-top: 83vh;
+    margin-top: 80vh;
   }
   .tabela_4ps h2 {
     float: left;
@@ -485,7 +499,6 @@
   .duvida_fourps_int {
     margin-top: -28.5vh;
     margin-left: 10vw;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   .tabela3 table {
     float: left;
@@ -498,11 +511,12 @@
     margin-left: -24vw;
   }
   .duvida_sintese_int {
-    margin-top: -25.3vh;
-    margin-right: 40vw;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: -22.8vh;
+    margin-right: 42vw;
   }
   .feito_int {
+    margin-top: 3vh;
+    margin-right: 0vw;
     width: 15vw;
   }
 }
