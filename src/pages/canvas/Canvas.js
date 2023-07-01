@@ -9,6 +9,7 @@ import Observacao2 from "../../components/observacao/Observacao2.js";
 import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
+import Maturidade1 from "../../components/Maturidade/Maturidade1.js";
 
 function Canvas() {
   //intuição
@@ -251,6 +252,7 @@ function Canvas() {
   const handleEmpresaChange = (novosDadosEmpresa) => {
     setEmpresa(novosDadosEmpresa);
   };
+
   //Interação
   const handleDescricaoChange = (novosDadosDescricao) => {
     setDescricao(novosDadosDescricao);
@@ -356,15 +358,15 @@ function Canvas() {
     modal2.style.display = "none";
   }
 
-  /*Chamadas para o form de Maturidade*/
-  function abrirFormMaturidade(e) {
+  /*Chamadas para o form de Maturidade1*/
+  function abrirFormMaturidade1(e) {
     e.preventDefault();
 
     let modalOverlay = document.createElement("div");
     modalOverlay.classList.add("modal-overlay");
     document.body.appendChild(modalOverlay);
 
-    let modal = document.querySelector(".maturidade1");
+    let modal = document.querySelector(".Maturidade1");
     modal.style.display = "block";
 
     let modal2 = document.querySelector(".confirma");
@@ -409,7 +411,7 @@ function Canvas() {
           <button className="button3" onClick={(e) => abrirFormInteracao(e)}>
             Interação
           </button>
-          <button className="button4" onClick={(e) => abrirFormMaturidade(e)}>
+          <button className="button4" onClick={(e) => abrirFormMaturidade1(e)}>
             Maturidade
           </button>
         </div>
