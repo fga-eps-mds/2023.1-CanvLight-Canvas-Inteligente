@@ -70,7 +70,7 @@
   color: #fff;
   left: 4.5vh;
 }
-*/ .modal-overlay {
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -288,6 +288,9 @@
 }
 
 @media screen and (max-width: 568px) {
+  body {
+    background-color: #77216f;
+  }
   .body {
     height: 100vh;
   }
@@ -296,7 +299,7 @@
   .desktop ul li {
     padding: 1px;
     top: -80%;
-    font-size: 15px;
+    font-size: 18px;
   }
   .name_navbar {
     top: 1%;
@@ -307,7 +310,7 @@
     width: 8vw;
   }
   .desktop ul {
-    margin-top: 0.5%;
+    margin-top: 1%;
     margin-right: 1%;
   }
   .dot,
@@ -323,6 +326,10 @@
   }
   .dot3 {
     left: 8vw;
+  }
+  .dark_select input[type="checkbox"] {
+    width: 18vw;
+    height: 4vh;
   }
   .container {
     width: 85vw;

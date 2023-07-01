@@ -122,6 +122,7 @@
 }
 
 .inputEquipe {
+  padding: 8px;
   box-sizing: border-box;
   position: absolute;
   width: 34.4vw;
@@ -154,6 +155,7 @@
   cursor: pointer;
   margin-right: 50%;
   margin-top: -65%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .tabela1 table {
@@ -166,7 +168,6 @@
 }
 
 .tabela1 table td {
-  height: 50%;
   border-bottom: 1px solid #6c0277;
   border-top: 1px solid #6c0277;
   width: 10vw;
@@ -220,6 +221,7 @@
   cursor: pointer;
   margin-right: 75%;
   margin-top: -43%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .parte2 {
@@ -249,16 +251,6 @@
   float: right;
   width: 40%;
   margin-top: 2%;
-}
-
-.dateInt {
-  height: 4vh;
-  width: 8vw;
-  margin-top: -5%;
-  margin-right: 0%;
-  float: right;
-  cursor: pointer;
-  background-repeat: no-repeat;
 }
 
 .four_ps {
@@ -354,7 +346,6 @@
   width: 100%;
   border: 0;
   background-color: var(--back_color);
-
   color: var(--font_color);
 }
 
@@ -385,11 +376,18 @@
   margin-right: 2%;
   float: right;
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 @media screen and (max-width: 568px) {
   h2 {
     font-size: 18px;
+  }
+  .form {
+    height: 170vh;
+  }
+  .centerInt {
+    height: 160vh;
   }
   .close_int {
     left: 3vw;
@@ -414,7 +412,7 @@
   }
   .inputProjeto {
     align-self: left;
-    margin-top: 3vh;
+    margin-top: 0vh;
     left: 5vw;
     height: 4vh;
     width: 70vw;
@@ -424,13 +422,9 @@
   }
   .inputEquipe {
     align-self: left;
-    margin-top: 1.5vh;
+    margin-top: -7vh;
     left: 5vw;
     width: 70vw;
-  }
-  .dateInt {
-    width: 20vw;
-    height: 3vh;
   }
   .tabela1 {
     margin-top: 15vh;
@@ -439,26 +433,77 @@
     font-size: 18px;
   }
   .tabela1 table {
-    width: 50vh;
+    width: fit-content;
     font-size: 12px;
   }
   .tabela1 table th {
-    width: fit-content;
+    width: 21.5vw;
     height: 3vh;
   }
   .tabela1 table td {
+    width: 21.5vw;
     height: 1vh;
   }
   .tabela1 table input {
+    cursor: pointer;
+    float: left;
     height: 3vh;
-    width: fit-content;
+    width: 21.5vw;
     font-size: 12px;
   }
-
-  .tabela_4ps {
-    margin-top: 500vh;
+  .duvidaDNA_int {
+    margin-top: -24.2vh;
+    margin-right: -20vw;
   }
+
   .parte2 {
-    margin-top: 500vh;
+    margin-top: 3vh;
+  }
+  .parte2 textarea {
+    width: 67vw;
+  }
+  .duvidaIkigai_int {
+    margin-top: 0vh;
+  }
+  .direita {
+    float: left;
+    width: 100%;
+    margin-left: 0vw;
+  }
+  .tabela_4ps {
+    margin-left: 0vw;
+    margin-top: 83vh;
+  }
+  .tabela_4ps h2 {
+    float: left;
+    margin-left: -25vw;
+  }
+  .four_ps {
+    margin-top: 1vh;
+    margin-right: -1vw;
+    width: 67vw;
+  }
+  .duvida_fourps_int {
+    margin-top: -28.5vh;
+    margin-left: 10vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .tabela3 table {
+    float: left;
+    width: 67vw;
+    margin-top: 1vh;
+    margin-left: -26vw;
+  }
+  .tabela3 h2 {
+    margin-top: 115vh;
+    margin-left: -24vw;
+  }
+  .duvida_sintese_int {
+    margin-top: -25.3vh;
+    margin-right: 40vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .feito_int {
+    width: 15vw;
   }
 }
