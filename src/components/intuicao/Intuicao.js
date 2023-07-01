@@ -1,5 +1,4 @@
 import "./Intuicao.css";
-import dateIntuition from "../../images/dateIntuition.png";
 import checkImg from "../../images/check.png";
 
 import React, { useState } from "react";
