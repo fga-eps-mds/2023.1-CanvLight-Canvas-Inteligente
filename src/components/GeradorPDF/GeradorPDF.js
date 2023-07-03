@@ -976,282 +976,112 @@ function GeradorPDF({
     doc.text(`${inteQuatroP.terceiraLinhaInteQuatroP}`, 152, 257);
     doc.text(`${inteQuatroP.quartaLinhaInteQuatroP}`, 224, 257);
   
-    doc.addPage(); // Página Canvas
+    // doc.addPage(); // Página Canvas
 
-    var MargemX = 12; // Variavel para a margem horizontal
-    var MargemY = 10; // Variavel para a margem vertical
+    // var MargemX = 12; // Variavel para a margem horizontal
+    // var MargemY = 10; // Variavel para a margem vertical
     
-    doc.addImage(logo, 'PNG', 1, 1, 10, 10); // Adiciona a logo no canto do PDF
+    // doc.addImage(logo, 'PNG', 1, 1, 10, 10); // Adiciona a logo no canto do PDF
 
-    doc.setFillColor(0, 0, 0, 0.22); // Seleciona a cor do Fundo
-    doc.rect(MargemX, MargemY, 407, 286, 'F'); // Adiciona o Retângulo maior
+    // doc.setFillColor(0, 0, 0, 0.22); // Seleciona a cor do Fundo
+    // doc.rect(MargemX, MargemY, 407, 286, 'F'); // Adiciona o Retângulo maior
 
-    doc.setFontSize(16) // Tamanho da Fonte
+    // doc.setFontSize(16) // Tamanho da Fonte
 
-    doc.rect(MargemX, MargemY, 81, 210 ) // Retangulo Parcerias principais
-    doc.rect(81+MargemX, MargemY, 81, 105 ) // Retangulo Atividades-chave
-    doc.rect(81+MargemX, 105+MargemY, 81, 105 ) // Retangulo Recursos Principais
-    doc.rect(MargemX, 210+MargemY, 203, 76 ) // Retangulo Estrutura de Custo
-    doc.rect(162+MargemX, MargemY, 81, 210 ) // Retangulo Proposta de Valor
-    doc.rect(243+MargemX, MargemY, 81, 105 ) // Retangulo Relacionamento com Clientes
-    doc.rect(243+MargemX, 105+MargemY, 81, 105 ) // Retangulo Canais
-    doc.rect(324+MargemX, MargemY, 83, 210 ) // Retangulo Segmentos de Clientes *OBS 2mm a mais devido ao erro de calculo
-    doc.rect(203+MargemX, 210+MargemY, 204, 76 ) // Retangulo Fontes de Receita  *OBS 1mm a mais devido ao erro de calculo
+    // doc.rect(MargemX, MargemY, 81, 210 ) // Retangulo Parcerias principais
+    // doc.rect(81+MargemX, MargemY, 81, 105 ) // Retangulo Atividades-chave
+    // doc.rect(81+MargemX, 105+MargemY, 81, 105 ) // Retangulo Recursos Principais
+    // doc.rect(MargemX, 210+MargemY, 203, 76 ) // Retangulo Estrutura de Custo
+    // doc.rect(162+MargemX, MargemY, 81, 210 ) // Retangulo Proposta de Valor
+    // doc.rect(243+MargemX, MargemY, 81, 105 ) // Retangulo Relacionamento com Clientes
+    // doc.rect(243+MargemX, 105+MargemY, 81, 105 ) // Retangulo Canais
+    // doc.rect(324+MargemX, MargemY, 83, 210 ) // Retangulo Segmentos de Clientes *OBS 2mm a mais devido ao erro de calculo
+    // doc.rect(203+MargemX, 210+MargemY, 204, 76 ) // Retangulo Fontes de Receita  *OBS 1mm a mais devido ao erro de calculo
 
-    //Parceiros Principais
-    doc.text(
-      `Principais Parceiros`,
-      15,
-      18
-    );
+    // //Parceiros Principais
+    // doc.text(
+    //   `Principais Parceiros`,
+    //   15,
+    //   18
+    // );
 
-    doc.text(
-      `${parceiro.primeiraLinhaParceiro}`,
-      15,
-      28
-    );
+    // doc.text(
+    //   `${parceiro.primeiraLinhaParceiro}`,
+    //   15,
+    //   28
+    // );
 
-    doc.text(
-      `${parceiro.segundaLinhaParceiro}`,
-      15,
-      48
-    );
+    // doc.text(
+    //   `${parceiro.segundaLinhaParceiro}`,
+    //   15,
+    //   48
+    // );
 
-    doc.text(
-      `${parceiro.terceiraLinhaParceiro}`,
-      15,
-      68
-    );
+    // doc.text(
+    //   `${parceiro.terceiraLinhaParceiro}`,
+    //   15,
+    //   68
+    // );
 
-    //Atividades-cahves
-    doc.text(
-      `Atividades-chaves`,
-      96,
-      18
-    );
+    // //Atividades-cahves
+    // doc.text(
+    //   `Atividades-chaves`,
+    //   96,
+    //   18
+    // );
 
-    //Recursos Principais
-    doc.text(
-      `Recursos Principais`,
-      96,
-      123
-    );
+    // //Recursos Principais
+    // doc.text(
+    //   `Recursos Principais`,
+    //   96,
+    //   123
+    // );
 
-    //Estrutura de Custo
-    doc.text(
-      `Estrutura de custo`,
-      15,
-      228
-    );
+    // //Estrutura de Custo
+    // doc.text(
+    //   `Estrutura de custo`,
+    //   15,
+    //   228
+    // );
 
     
 
-    //Proposta de Valor
-    doc.text(
-      `Proposta de Valor`,
-      177,
-      18
-    );
-
-    //Relacionamento com Clientes
-    doc.text(
-      `Relacionamento com Clientes`,
-      258,
-      18
-    );
-
-    //Canais
-    doc.text(
-      `Canais`,
-      258,
-      123
-    );
-
-    //Segmentos de Clientes
-    doc.text(
-      `Segmentos de Clientes`,
-      339,
-      18
-    );
-
-    //Fontes de Receita
-    doc.text(
-      `Fontes de Receita`,
-      218,
-      228
-    );
-
-
-    //Intuicao
-    /* doc.text(`SintesePotencialidades1: ${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 100,140);
-    doc.text(`SintesePotencialidades2: ${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 100,150);
-    doc.text(`SintesePotencialidades3: ${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 100,160); */
-
+    // //Proposta de Valor
     // doc.text(
-    //   `IntuTextos1: ${intuTextos.primeiraLinhaIntuTextos}`, 
-    //   100, 
-    //   140
-    // );
-    // doc.text(
-    //   `IntuTextos2: ${intuTextos.segundaLinhaIntuTextos}`, 
-    //   100, 
-    //   150
-    // );
-    // doc.text(
-    //   `IntuTextos3: ${intuTextos.terceiraLinhaIntuTextos}`, 
-    //   100, 
-    //   160
+    //   `Proposta de Valor`,
+    //   177,
+    //   18
     // );
 
-    /* doc.text(`SinteseResultados1: ${sinteseResultados.primeiraLinhaSinteseResultados}`, 100,140);
-    doc.text(`SinteseResultados2: ${sinteseResultados.segundaLinhaSinteseResultados}`, 100,150);
-    doc.text(`SinteseResultados3: ${sinteseResultados.terceiraLinhaSinteseResultados}`, 100,160); */
-
-    /* doc.text(`IntuQuatroP1: ${intuQuatroP.primeiraLinhaIntuQuatroP}`, 100,140);
-    doc.text(`IntuQuatroP2: ${intuQuatroP.segundaLinhaIntuQuatroP}`, 100,150);
-    doc.text(`IntuQuatroP3: ${intuQuatroP.terceiraLinhaIntuQuatroP}`, 100,160);
-    doc.text(`IntuQuatroP4: ${intuQuatroP.quartaLinhaIntuQuatroP}`, 100,170); */
-
-    //observação
-    // doc.text(`empresa: ${empresa.primeiraLinhaEmpresa}`, 12,10);
-    // doc.text(`empresa: ${empresa.segundaLinhaEmpresa}`, 12,20);
-    // doc.text(`empresa: ${empresa.terceiraLinhaEmpresa}`, 12,30);
-
+    // //Relacionamento com Clientes
     // doc.text(
-    //   `parceiro: ${parceiro.primeiraLinhaParceiro}`, 
-    //   12, 
-    //   10
-    // );
-    // doc.text(
-    //   `parceiro: ${parceiro.segundaLinhaParceiro}`, 
-    //   12, 
-    //   20
-    // );
-    // doc.text(
-    //   `parceiro: ${parceiro.terceiraLinhaParceiro}`, 
-    //   12,
-    //   30
+    //   `Relacionamento com Clientes`,
+    //   258,
+    //   18
     // );
 
-    // doc.text(`Diferenca: ${diferenca.primeiraLinhaDiferenca}`, 12,40);
-    // doc.text(`Diferenca: ${diferenca.segundaLinhaDiferenca}`, 12,50);
-    // doc.text(`Diferenca: ${diferenca.terceiraLinhaDiferenca}`, 12,60);
-
+    // //Canais
     // doc.text(
-    //   `beneficios: ${beneficios.primeiraLinhaBeneficios}`, 
-    //   12, 
-    //   40
-    // );
-    // doc.text(
-    //   `beneficios: ${beneficios.segundaLinhaBeneficios}`, 
-    //   12, 
-    //   50
-    // );
-    // doc.text(
-    //   `beneficios: ${beneficios.terceiraLinhaBeneficios}`, 
-    //   12, 
-    //   60
+    //   `Canais`,
+    //   258,
+    //   123
     // );
 
-    // doc.text(`Porte: ${porte.primeiraLinhaPorte}`, 12,70);
-    // doc.text(`Porte: ${porte.segundaLinhaPorte}`, 12,80);
-    // doc.text(`Porte: ${porte.terceiraLinhaPorte}`, 12,90);
-
+    // //Segmentos de Clientes
     // doc.text(
-    //   `insumos: ${insumos.primeiraLinhaInsumos}`, 
-    //   12, 
-    //   70
-    // );
-    // doc.text(
-    //   `insumos: ${insumos.segundaLinhaInsumos}`, 
-    //   12, 
-    //   80
-    // );
-    // doc.text(
-    //   `insumos: ${insumos.terceiraLinhaInsumos}`, 
-    //   12, 
-    //   90
+    //   `Segmentos de Clientes`,
+    //   339,
+    //   18
     // );
 
-    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.primeiraLinhaConcorrencia}`, 12,100);
-    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.segundaLinhaConcorrencia}`, 12,110);
-    // doc.text(`O que o concorrente não faz ou faz mal: ${concorrencia.terceiraLinhaConcorrencia}`, 12,120);
-
-    // doc.text(`
-    //   fornecer: ${fornecer.primeiraLinhaFornecer}`, 
-    //   12, 
-    //   100
-    // );
+    // //Fontes de Receita
     // doc.text(
-    //   `fornecer: ${fornecer.segundaLinhaFornecer}`,
-    //   12, 
-    //   110
-    // );
-    // doc.text(
-    //   `fornecer: ${fornecer.terceiraLinhaFornecer}`, 
-    //   12, 
-    //   120
+    //   `Fontes de Receita`,
+    //   218,
+    //   228
     // );
 
-    // doc.text(`Localização: ${localizacao.primeiraLinhaLocalizacao}`, 12,130);
-    // doc.text(`Localização: ${localizacao.segundaLinhaLocalizacao}`, 12,140);
-    // doc.text(`Localização: ${localizacao.terceiraLinhaLocalizacao}`, 12,150);
 
-    // doc.text(
-    //   `risco: ${risco.primeiraLinhaRisco}`, 
-    //   12, 
-    //   130
-    // );
-    // doc.text(
-    //   `risco: ${risco.segundaLinhaRisco}`, 
-    //   12, 
-    //   140
-    // );
-    // doc.text(
-    //   `risco: ${risco.terceiraLinhaRisco}`, 
-    //   12, 
-    //   150
-    // );
-
-    // doc.text(`O que pode ser imitado: ${imitado.primeiraLinhaImitado}`, 12,160);
-    // doc.text(`O que pode ser imitado: ${imitado.segundaLinhaImitado}`, 12,170);
-    // doc.text(`O que pode ser imitado: ${imitado.terceiraLinhaImitado}`, 12,180);
-
-    // doc.text(
-    //   `verticalizar: ${verticalizar.primeiraLinhaVerticalizar}`,
-    //   12,
-    //   160
-    // );
-    // doc.text(
-    //   `verticalizar: ${verticalizar.segundaLinhaVerticalizar}`, 
-    //   12, 
-    //   170
-    // );
-    // doc.text(
-    //   `verticalizar: ${verticalizar.terceiraLinhaVerticalizar}`,
-    //   12,
-    //   180
-    // );
-
-    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.primeiraLinhaMelhorar}`, 12,190);
-    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.segundaLinhaMelhorar}`, 12,200);
-    // doc.text(`O que podemos fazer diferente/melhor: ${melhorar.terceiraLinhaMelhorar}`, 12,210);
-
-    // doc.text(
-    //   `nota: ${nota.primeiraLinhaNota}`, 
-    //   12, 
-    //   190
-    // );
-    // doc.text(
-    //   `nota: ${nota.segundaLinhaNota}`,
-    //   12,
-    //   200
-    // );
-    // doc.text(
-    //   `nota: ${nota.terceiraLinhaNota}`, 
-    //   12, 
-    //   210
-    // );
 
     doc.save("Canvas.pdf");
   }
