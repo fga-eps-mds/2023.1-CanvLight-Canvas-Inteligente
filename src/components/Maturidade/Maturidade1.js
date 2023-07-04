@@ -248,7 +248,7 @@ function Maturidade1(){
                             </td>
                         </tr>
                     </table>
-                <div onClick={(e) => irParaMaturidade2(e)} className='setaDireita'></div>
+                <div onClick={(e) => irParaAreaRh(e)} className='setaDireita'></div>
             </div>
         </div>
         

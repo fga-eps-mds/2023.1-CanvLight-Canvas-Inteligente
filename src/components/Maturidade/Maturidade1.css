@@ -22,6 +22,30 @@
     font-family: "Ubuntu";
 }
 
+.formAdm table {
+    width: 0;
+  border-spacing: 0;
+  color: white;
+  margin: auto;
+}
+
+.formAdm table th {
+    background-color: #fb8218;
+    border: 1px solid #fb8218;
+  }
+
+.formAdm table td {
+    background-color: #252525;
+    height: 5vh;
+    border: 1px solid #fb8218;
+  }
+  
+.formAdm table input {
+    background-color: #252525;
+    border: none;
+    width: auto;
+  }
+
 .close_area1 {
     cursor: pointer;
     width: 20px;
