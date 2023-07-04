@@ -16,11 +16,7 @@ function Maturidade1(){
         modal2.style.display = "block";
       }
     
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
-    }
-    
-    function irParaObservacao2(e) {
+    function irParaAreaRh(e) {
         e.preventDefault();
     
         let modal = document.querySelector(".areaAdm");
