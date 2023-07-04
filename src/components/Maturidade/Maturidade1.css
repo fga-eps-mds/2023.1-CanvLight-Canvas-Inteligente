@@ -23,28 +23,92 @@
 }
 
 .formAdm table {
-    width: 0;
+  width: 50;
   border-spacing: 0;
   color: white;
   margin: auto;
 }
 
 .formAdm table th {
-    background-color: #fb8218;
-    border: 1px solid #fb8218;
-  }
+  background-color: rgb(255, 94, 0);
+  border: 1px solid rgb(255, 94, 0);
+}
 
 .formAdm table td {
     background-color: #252525;
-    height: 5vh;
+    height: 6.5vh;
     border: 1px solid #fb8218;
-  }
+}
   
 .formAdm table input {
     background-color: #252525;
     border: none;
     width: auto;
-  }
+}
+
+.close_area1 {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 1.5%;
+    top: 2%;
+}
+.dot2_area1 {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(248, 225, 14);
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 3.5%;
+    top: 2%;
+}
+.dot3_area1 {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(45, 202, 25);
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 5.5%;
+    top: 2%;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3vi;
+    color: white;
+}
+
+.duvidaAdm {
+    background-image: url("../../images/request\ \(1\).png");
+    width: 0.85vw;
+    height: 1.8vh;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    left: 68%;
+    top: 9%;
+}
+
+.setaDireita {
+    background-image: url("../../images/seta-direita.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-top: 42%;
+    margin-right: -5%;
+    float: right;
+    cursor: pointer;
+}
 
 .close_area1 {
     cursor: pointer;
