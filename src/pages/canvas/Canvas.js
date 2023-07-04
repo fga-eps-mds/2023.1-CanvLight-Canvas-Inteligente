@@ -366,7 +366,7 @@ function Canvas() {
     modalOverlay.classList.add("modal-overlay");
     document.body.appendChild(modalOverlay);
 
-    let modal = document.querySelector(".Maturidade1");
+    let modal = document.querySelector(".areaAdm");
     modal.style.display = "block";
 
     let modal2 = document.querySelector(".confirma");
@@ -491,6 +491,8 @@ function Canvas() {
         onCanaisMetricaChange={handleCanaisMetricaChange}
         onInteQuatroPChange={handleInteQuatroPChange}
       />
+
+      <Maturidade1/>
 
       <GeradorPDF
         //intuição
