@@ -51,12 +51,12 @@ function Maturidade1(){
                         <tr>
                             <td className="pergunta1">1. Qual é a estrutura organizacional da empresa? Ela é adequada para suportar as atividades e fluxos de trabalho?</td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="primeiraLinhaResposta1"
-                                value={primeiraLinhaResposta1}
-                                onChange={handleInputChangeResposta1}*/
-                            />
+                                <select className="opcao-select">
+                                    <option value="opcao1">Nível 1: A estrutura organizacional da empresa é pouco definida e não é adequada para suportar as atividades e fluxos de trabalho. Há falta de clareza nas responsabilidades e comunicação ineficiente entre os membros da equipe.</option>
+                                    <option value="opcao2">Nível 2: A estrutura organizacional da empresa está sendo desenvolvida, mas ainda apresenta algumas deficiências. Existem departamentos definidos, mas a coordenação entre eles pode ser aprimorada para melhorar a eficiência das atividades e fluxos de trabalho.</option>
+                                    <option value="opcao3">Nível 3: A estrutura organizacional da empresa é bem definida e adequada para suportar as atividades e fluxos de trabalho. Os departamentos estão claramente estabelecidos, a comunicação é eficiente e as responsabilidades são bem distribuídas.</option>
+                                    <option value="opcao3">Nível 4:A estrutura organizacional da empresa é altamente desenvolvida e otimizada para suportar as atividades e fluxos de trabalho. Os processos são eficientes, os departamentos estão interligados de forma integrada e a comunicação é transparente em todos os níveis da organização.</option>
+                                </select>
                             </td>
                             <td>
                             <input
@@ -250,7 +250,7 @@ function Maturidade1(){
                     </table>
 
                 <div onClick={(e) => irParaAreaRh(e)} className='setaDireita'></div>
-                
+
             </div>
         </div>
         

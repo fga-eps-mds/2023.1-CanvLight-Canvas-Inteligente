@@ -46,6 +46,18 @@
     width: auto;
 }
 
+.opcao-select {
+  width: 800px;
+  padding: 25px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+.opcao-select option {
+  padding: 5px;
+}
+
 .close_area1 {
     cursor: pointer;
     width: 20px;
