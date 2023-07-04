@@ -1,10 +1,10 @@
 import React from "react";
 import { jsPDF } from "jspdf";
-import logo from "../../images/logo_canvlight.png";
+//import logo from "../../images/logo_canvlight.png";
 import Intuicao from "../../images/Intuicao.png";
-import Observacao1 from "../../images/observacao1.png"
-import Observacao2 from "../../images/observacao2.png"
-import Observacao3 from "../../images/obvervacao3.png"
+import Observacao1 from "../../images/Observacao1.png"
+import Observacao2 from "../../images/Observacao2.png"
+import Observacao3 from "../../images/Observacao3.png"
 import Interacao1 from "../../images/Interacao1.png";
 import Interacao2 from "../../images/Interacao2.png";
 import Interacao3 from "../../images/Interacao3.png";
@@ -83,7 +83,7 @@ function GeradorPDF({
 
     doc.setFontSize(13) // Tamanho da Fonte
     
-    doc.setTextColor(255);
+    doc.setTextColor(0);
 
     doc.text( //Projeto
       `${intuTextos.primeiraLinhaIntuTextos}`, 
@@ -779,22 +779,20 @@ function GeradorPDF({
     doc.addImage(Interacao1, "PNG", 0, 0, 420, 297);
 
     doc.setFontSize(13) // Tamanho da Fonte
-    
-    doc.setTextColor(255);
 
     doc.text( // Analise Custos Descricao
       `${descricao.primeiraLinhaDescricao}`, 
-      33, 
+      34, 
       57
     );
     doc.text(
       `${descricao.segundaLinhaDescricao}`, 
-      33, 
+      34, 
       75
     );
     doc.text(
       `${descricao.terceiraLinhaDescricao}`, 
-      33, 
+      34, 
       93
     );
 
@@ -922,20 +920,20 @@ function GeradorPDF({
     doc.text(`${mvpResultado.terceiraLinhaMvpResultado}`, 295,117);
     doc.text(`${mvpResultado.quartaLinhaMvpResultado}`, 339,116);
 
-    doc.text(`${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 32,194); // Formacao do Preco Descricao
-    doc.text(`${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 32,212);
-    doc.text(`${formacaoDescricao.terceiraLinhaFormacaoDescricao}`, 32,230);
-    doc.text(`${formacaoDescricao.quartaLinhaFormacaoDescricao}`, 32,248);
+    doc.text(`${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 33,194); // Formacao do Preco Descricao
+    doc.text(`${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 33,212);
+    doc.text(`${formacaoDescricao.terceiraLinhaFormacaoDescricao}`, 33,230);
+    doc.text(`${formacaoDescricao.quartaLinhaFormacaoDescricao}`, 33,248);
 
-    doc.text(`${formacaoCusto.primeiraLinhaFormacaoCusto}`, 85,194); // Formacao do Preco Custo
-    doc.text(`${formacaoCusto.segundaLinhaFormacaoCusto}`, 85,212);
-    doc.text(`${formacaoCusto.terceiraLinhaFormacaoCusto}`, 85,230);
-    doc.text(`${formacaoCusto.quartaLinhaFormacaoCusto}`, 85,248);
+    doc.text(`${formacaoCusto.primeiraLinhaFormacaoCusto}`, 86,194); // Formacao do Preco Custo
+    doc.text(`${formacaoCusto.segundaLinhaFormacaoCusto}`, 86,212);
+    doc.text(`${formacaoCusto.terceiraLinhaFormacaoCusto}`, 86,230);
+    doc.text(`${formacaoCusto.quartaLinhaFormacaoCusto}`, 86,248);
 
-    doc.text(`${formacaoTaxa.primeiraLinhaFormacaoTaxa}`, 139,194); // Formacao do Preco Taxa Administrativa
-    doc.text(`${formacaoTaxa.segundaLinhaFormacaoTaxa}`, 139,212);
-    doc.text(`${formacaoTaxa.terceiraLinhaFormacaoTaxa}`, 139,230);
-    doc.text(`${formacaoTaxa.quartaLinhaFormacaoTaxa}`, 139,248);
+    doc.text(`${formacaoTaxa.primeiraLinhaFormacaoTaxa}`, 140,194); // Formacao do Preco Taxa Administrativa
+    doc.text(`${formacaoTaxa.segundaLinhaFormacaoTaxa}`, 140,212);
+    doc.text(`${formacaoTaxa.terceiraLinhaFormacaoTaxa}`, 140,230);
+    doc.text(`${formacaoTaxa.quartaLinhaFormacaoTaxa}`, 140,248);
   
     doc.text(`${formacaoImpostos.primeiraLinhaFormacaoImpostos}`, 193,194); // Formacao do Preco Impostos
     doc.text(`${formacaoImpostos.segundaLinhaFormacaoImpostos}`, 193,212);
