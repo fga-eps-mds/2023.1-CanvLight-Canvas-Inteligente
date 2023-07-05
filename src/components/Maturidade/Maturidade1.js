@@ -153,7 +153,7 @@ function Maturidade1({onImportancia1Change}){
                                     <option value="opcao3">Nível 3: A estrutura organizacional da empresa é bem definida e adequada 
                                     para suportar as atividades e fluxos de trabalho. Os departamentos estão claramente estabelecidos, 
                                     a comunicação é eficiente e as responsabilidades são bem distribuídas.</option>
-                                    <option value="opcao3">Nível 4:A estrutura organizacional da empresa é altamente desenvolvida 
+                                    <option value="opcao4">Nível 4:A estrutura organizacional da empresa é altamente desenvolvida 
                                     e otimizada para suportar as atividades e fluxos de trabalho. Os processos são eficientes, 
                                     os departamentos estão interligados de forma integrada e a comunicação é transparente 
                                     em todos os níveis da organização.</option>
@@ -180,7 +180,7 @@ function Maturidade1({onImportancia1Change}){
                                     abrangência e clareza nas metas, comprometendo a efetividade.</option>
                                     <option value="opcao3">Nível 3: Planejamento estratégico estabelecido, porém, implementação e 
                                     acompanhamento podem ser aprimorados para alcançar metas consistentemente.</option>
-                                    <option value="opcao3">Nível 4: Planejamento estratégico bem definido, com metas claras e um
+                                    <option value="opcao4">Nível 4: Planejamento estratégico bem definido, com metas claras e um
                                      sistema robusto de acompanhamento e revisão para manter alinhamento e ajustes necessários.</option>
                                 </select>
                             </td>
@@ -205,7 +205,7 @@ function Maturidade1({onImportancia1Change}){
                                     mas padronização não é completa, causando variações e impactando consistência e eficiência.</option>
                                     <option value="opcao3">Nível 3: Maioria dos processos administrativos documentados e 
                                     padronizados, esforço para consistência e eficiência nas tarefas.</option>
-                                    <option value="opcao3">Nível 4: Todos os processos administrativos claramente 
+                                    <option value="opcao4">Nível 4: Todos os processos administrativos claramente 
                                     documentados e padronizados, com foco na eficiência, 
                                     melhoria contínua e monitoramento regular.</option>
                                 </select>
@@ -232,7 +232,7 @@ function Maturidade1({onImportancia1Change}){
                                     inconsistente de metodologias e ferramentas, limitando a eficácia.</option>
                                     <option value="opcao3">Nível 3: Abordagem estruturada para gestão de projetos, com metodologias e 
                                     ferramentas estabelecidas, planejamento adequado e monitoramento efetivo.</option>
-                                    <option value="opcao3">Nível 4: Gestão de projetos altamente desenvolvida e eficiente, com uso de 
+                                    <option value="opcao4">Nível 4: Gestão de projetos altamente desenvolvida e eficiente, com uso de 
                                     metodologias avançadas (PMBOK, Agile, Scrum), capacitação 
                                     constante dos profissionais envolvidos.</option>
                                 </select>
@@ -258,7 +258,7 @@ function Maturidade1({onImportancia1Change}){
                                     necessário aprimorar processos e ferramentas para eficácia.</option>
                                     <option value="opcao3">Nível 3: Controle efetivo do orçamento, fluxo de caixa e contas a pagar/receber, 
                                     utilizando ferramentas e práticas adequadas de gestão financeira.</option>
-                                    <option value="opcao3">Nível 4: Gestão financeira altamente desenvolvida e eficiente, com controle 
+                                    <option value="opcao4">Nível 4: Gestão financeira altamente desenvolvida e eficiente, com controle 
                                     preciso e atualizado, uso de ferramentas avançadas e análises para 
                                     decisões estratégicas embasadas.</option>
                                 </select>
@@ -287,7 +287,7 @@ function Maturidade1({onImportancia1Change}){
                                     <option value="opcao3">Nível 3: Adequado nível de qualidade em produtos/serviços. Uso de indicadores 
                                     estabelecidos, monitoramento e ações corretivas. Processos de melhoria contínua em vigor para 
                                     aprimoramento constante.</option>
-                                    <option value="opcao3">Nível 4: Alto nível de qualidade em produtos/serviços. Indicadores sofisticados,
+                                    <option value="opcao4">Nível 4: Alto nível de qualidade em produtos/serviços. Indicadores sofisticados,
                                      cultura de melhoria contínua enraizada em todos os níveis. Incentivo à inovação e aprimoramento 
                                      constante.</option>
                                 </select>
@@ -313,7 +313,7 @@ function Maturidade1({onImportancia1Change}){
                                     práticas de organização e armazenamento parciais ou pouco eficientes.</option>
                                     <option value="opcao3">Nível 3: Práticas adequadas de gestão de documentos e arquivos, com sistemas e
                                      procedimentos estabelecidos para organização e recuperação eficiente das informações.</option>
-                                    <option value="opcao3">Nível 4: Gestão de documentos e arquivos altamente desenvolvida e eficiente, 
+                                    <option value="opcao4">Nível 4: Gestão de documentos e arquivos altamente desenvolvida e eficiente, 
                                     com uso de práticas avançadas, tecnologias como GED e sistemas digitais, garantindo organização e 
                                     acesso rápido às informações.</option>
                                 </select>
@@ -341,7 +341,7 @@ function Maturidade1({onImportancia1Change}){
                                     <option value="opcao3">Nível 3: Gestão de riscos adequada, com análises regulares e abrangentes, 
                                     identificação e avaliação dos principais riscos. Planos de contingência estabelecidos para resposta 
                                     efetiva. </option>
-                                    <option value="opcao3">Nível 4: Gestão de riscos altamente desenvolvida, com análises avançadas, 
+                                    <option value="opcao4">Nível 4: Gestão de riscos altamente desenvolvida, com análises avançadas, 
                                     metodologias como análise quantitativa e planos de contingência sólidos. Cultura de conscientização e 
                                     monitoramento contínuo dos riscos.</option>
                                 </select>
@@ -367,7 +367,7 @@ function Maturidade1({onImportancia1Change}){
                                     práticas de monitoramento, porém não abrangentes. Incentivo à eficiência inconsistente.</option>
                                     <option value="opcao3">Nível 3: Práticas adequadas de gestão do tempo e produtividade. Uso de ferramentas
                                      de monitoramento e metas claras. Incentivo à eficiência com reconhecimento e recompensas. </option>
-                                    <option value="opcao3">Nível 4: Gestão do tempo e produtividade altamente eficiente. Uso de ferramentas 
+                                    <option value="opcao4">Nível 4: Gestão do tempo e produtividade altamente eficiente. Uso de ferramentas 
                                     avançadas e metodologias como gerenciamento de fluxo de trabalho. Cultura de eficiência e incentivos para
                                     alto desempenho.</option>
                                 </select>
@@ -395,7 +395,7 @@ function Maturidade1({onImportancia1Change}){
                                     administrativas.</option>
                                     <option value="opcao3">Nível 3: A empresa tem canal de comunicação interno adequado, com boletins, 
                                     reuniões e intranet, mantendo colaboradores informados e engajados, com espaço para feedback.</option>
-                                    <option value="opcao3">Nível 4: A empresa usa canais internos efetivos, incluindo tecnologias avançadas, 
+                                    <option value="opcao4">Nível 4: A empresa usa canais internos efetivos, incluindo tecnologias avançadas, 
                                     para garantir comunicação eficiente. Colaboradores se sentem envolvidos, informados e incentivados a 
                                     participar ativamente da tomada de decisão. Cultura de transparência e abertura é promovida.</option>
                                 </select>
