@@ -383,7 +383,7 @@ function Canvas() {
         <nav className="desktop">
           <ul>
             <Link to="/tutorial">
-              <li>Como usar?</li>
+              <li className="btn_comousar">Como usar?</li>
             </Link>
           </ul>
           <div className="dark_select">
