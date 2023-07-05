@@ -50,8 +50,7 @@ function Maturidade1(){
 
                         <tr>
                             <td className="pergunta1">1. Qual é a estratégia de marketing atual da empresa? Quais são 
-                            os principais objetivos de marketing estabelecidos pela empresa?
-</td>
+                            os principais objetivos de marketing estabelecidos pela empresa? </td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1: Estratégia de marketing pouco definida ou 
@@ -71,19 +70,17 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                            <   select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
                         <tr>
                             <td className="pergunta2">2. Como a empresa define e segmenta seu público-alvo? 
-                            Quais canais de marketing são utilizados para alcançar o público-alvo?
-</td>
+                            Quais canais de marketing são utilizados para alcançar o público-alvo?</td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Pouca definição e segmentação do público-alvo, 
@@ -103,12 +100,11 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -137,19 +133,17 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
                         <tr>
                             <td className="pergunta4">4. Quais estratégias de preço são adotadas e como são 
-                            determinados os preços dos produtos ou serviços?
-</td>
+                            determinados os preços dos produtos ou serviços?</td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1: Ausência de estratégias de preço claras, resultando
@@ -172,19 +166,17 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
                         <tr>
                             <td className="pergunta5">5. Quais estratégias de promoção são utilizadas para divulgar os
-                             produtos ou serviços?
-</td>
+                             produtos ou serviços?</td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1: Ausência de estratégias de promoção definidas ou 
@@ -203,18 +195,17 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
                         <tr>
-                            <td className="pergunta6">6.   Qual é o tamanho e a dinâmica do mercado em que a empresa atua? Quais são as principais tendências do mercado que podem afetar a empresa?
-</td>
+                            <td className="pergunta6">6.   Qual é o tamanho e a dinâmica do mercado em que a empresa atua? 
+                            Quais são as principais tendências do mercado que podem afetar a empresa?</td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1: Pouca compreensão do tamanho e dinâmica do mercado, 
@@ -232,19 +223,17 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                            <   select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
                         <tr>
                             <td className="pergunta7">7. Quais são os principais concorrentes da empresa e como ela
-                             se posiciona em relação a eles?
-</td>
+                             se posiciona em relação a eles?</td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1:  Falta de análise dos principais concorrentes e 
@@ -260,19 +249,17 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
                         <tr>
                             <td className="pergunta8">8. Como a empresa realiza pesquisas de mercado e coleta 
-                            dados sobre o comportamento dos consumidores?
-</td>
+                            dados sobre o comportamento dos consumidores?</td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1: Ausência de pesquisas de mercado e coleta de 
@@ -288,12 +275,11 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
                         
@@ -318,19 +304,17 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
                         <tr>
                             <td className="pergunta10">10. Existe um sistema de gestão do 
-                            relacionamento com o cliente implementado pela empresa?
-</td>
+                            relacionamento com o cliente implementado pela empresa?</td>
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1: Ausência de sistema de gestão do
@@ -345,12 +329,11 @@ function Maturidade1(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
                     </table>
@@ -363,4 +346,4 @@ function Maturidade1(){
     );
 }
 
-export default Maturidade1;
+export default Maturidade4;
