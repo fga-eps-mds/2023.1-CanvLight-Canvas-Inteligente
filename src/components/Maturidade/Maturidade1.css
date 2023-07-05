@@ -116,71 +116,7 @@
     background-size: contain;
     width: 10%;
     height: 10%;
-    margin-top: 42%;
-    margin-right: -5%;
-    float: right;
-    cursor: pointer;
-}
-
-.close_area1 {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 10px;
-    position: absolute;
-    border: none;
-    left: 1.5%;
-    top: 2%;
-}
-.dot2_area1 {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(248, 225, 14);
-    border-radius: 10px;
-    position: absolute;
-    border: none;
-    left: 3.5%;
-    top: 2%;
-}
-.dot3_area1 {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(45, 202, 25);
-    border-radius: 10px;
-    position: absolute;
-    border: none;
-    left: 5.5%;
-    top: 2%;
-}
-
-.titulo {
-    text-align: center;
-    margin-top: 3%;
-    font-size: 3vi;
-    color: white;
-}
-
-.duvidaAdm {
-    background-image: url("../../images/request\ \(1\).png");
-    width: 0.85vw;
-    height: 1.8vh;
-    float: right;
-    cursor: pointer;
-    position: absolute;
-    left: 68%;
-    top: 9%;
-}
-
-.setaDireita {
-    background-image: url("../../images/seta-direita.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10%;
-    height: 10%;
-    margin-top: 42%;
+    margin-top: -2%;
     margin-right: -5%;
     float: right;
     cursor: pointer;

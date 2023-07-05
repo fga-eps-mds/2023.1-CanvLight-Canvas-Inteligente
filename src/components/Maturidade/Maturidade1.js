@@ -2,6 +2,19 @@ import "./Maturidade1.css";
 import React, { useState } from "react";
 
 function Maturidade1({onImportancia1Change}){
+   
+    function irParaAreaRh(e) {
+        e.preventDefault();
+    
+        let modal = document.querySelector(".areaAdm");
+        let modal2 = document.querySelector(".areaRh");
+      
+        modal.style.display = "none";
+        modal2.style.display = "block";
+    }
+   
+   
+   
     function fecharFormMaturidade1(e) {
         e.preventDefault();
         let modalOverlay = document.querySelector(".modal-overlay");
@@ -10,21 +23,15 @@ function Maturidade1({onImportancia1Change}){
         }
     
         let modal = document.querySelector(".areaAdm");
+        
         modal.style.display = "none";
-
+        let medel = document.querySelector(".tela_3_form_interacao");
+        medel.style.display = "none";
         let modal2 = document.querySelector(".confirma");
         modal2.style.display = "block";
       }
     
-    function irParaAreaRh(e) {
-        e.preventDefault();
-    
-        let modal = document.querySelector(".areaAdm");
-        modal.style.display = "none";
-
-        let modal2 = document.querySelector(".areaRh");
-        modal2.style.display = "block";
-    }
+   
 
     function clicouNaDuvida(){
         alert('duvida clicada!')

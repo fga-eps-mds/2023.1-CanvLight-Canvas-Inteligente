@@ -61,7 +61,7 @@ function Maturidade3(){
                                     <option value="opcao3">Nível 3: A empresa possui processos financeiros bem definidos e documentados, 
                                     incluindo controles internos. As transações financeiras são registradas por meio de um sistema informatizado, 
                                     permitindo um acompanhamento mais eficiente e preciso.</option>
-                                    <option value="opcao3">Nível 4:A empresa possui processos financeiros altamente eficientes e padronizados, 
+                                    <option value="opcao4">Nível 4:A empresa possui processos financeiros altamente eficientes e padronizados, 
                                     com procedimentos documentados e bem estabelecidos. As transações financeiras são registradas automaticamente 
                                     por meio de um sistema integrado e são monitoradas regularmente por meio de relatórios e análises detalhadas.</option>
                                 </select>
@@ -89,7 +89,7 @@ function Maturidade3(){
                                     <option value="opcao3">Nível 3: A empresa utiliza indicadores financeiros essenciais, como o retorno sobre 
                                     o investimento (ROI), o índice de liquidez, a margem de lucro bruto e o capital de giro. Há um acompanhamento 
                                     regular desses indicadores e eles são utilizados para avaliar a saúde financeira da empresa.</option>
-                                    <option value="opcao3">Nível 4: A empresa possui um conjunto abrangente de indicadores financeiros que abrange 
+                                    <option value="opcao4">Nível 4: A empresa possui um conjunto abrangente de indicadores financeiros que abrange 
                                     diferentes aspectos da saúde financeira. Além dos indicadores mencionados anteriormente, a empresa monitora indicadores 
                                     de rentabilidade, como o retorno sobre o patrimônio líquido (ROE) e o retorno sobre ativos (ROA). A análise financeira é 
                                     realizada de forma regular e os resultados são utilizados para tomada de decisões estratégicas.</option>
@@ -115,7 +115,7 @@ function Maturidade3(){
                                     horizonte de longo prazo. O orçamento financeiro é elaborado de forma simplificada, sem análises detalhadas.</option>
                                     <option value="opcao3">Nível 3: A empresa possui um planejamento financeiro anual que considera um horizonte de médio prazo. 
                                     O orçamento financeiro é elaborado com base em projeções e análises detalhadas, levando em conta diversos aspectos financeiros.</option>
-                                    <option value="opcao3">Nível 4: A empresa possui um planejamento financeiro abrangente, que contempla tanto o curto quanto o longo prazo. 
+                                    <option value="opcao4">Nível 4: A empresa possui um planejamento financeiro abrangente, que contempla tanto o curto quanto o longo prazo. 
                                     O orçamento financeiro é elaborado de forma estruturada, com base em análises aprofundadas, cenários e metas financeiras claras.</option>
                                 </select>
                             </td>
@@ -140,7 +140,7 @@ function Maturidade3(){
                                     <option value="opcao3">Nível 3: A empresa estabelece objetivos financeiros específicos e quantificáveis, alinhados com a 
                                     estratégia geral da empresa. A alocação de recursos financeiros é baseada em critérios básicos, como histórico de desempenho 
                                     e prioridades estratégicas, mas pode haver espaço para aprimoramentos.</option>
-                                    <option value="opcao3">Nível 4: A empresa estabelece objetivos financeiros claros, mensuráveis ​e alinhados com a estratégia 
+                                    <option value="opcao4">Nível 4: A empresa estabelece objetivos financeiros claros, mensuráveis ​e alinhados com a estratégia 
                                     de longo prazo. A alocação de recursos financeiros é baseada em critérios sólidos, como análise de retorno sobre investimento 
                                     (ROI), avaliação de riscos e oportunidades, e consideração das necessidades e prioridades de cada área da empresa.</option>
                                 </select>
@@ -166,7 +166,7 @@ function Maturidade3(){
                                     <option value="opcao3">Nível 3: A empresa possui um controle de custos eficiente, utilizando sistemas e 
                                     ferramentas para monitorar os gastos. Adota algumas estratégias para redução de custos, como negociação de contratos 
                                     e busca por fornecedores mais competitivos.</option>
-                                    <option value="opcao3">Nível 4: A empresa realiza um controle detalhado de custos, utilizando métodos avançados 
+                                    <option value="opcao4">Nível 4: A empresa realiza um controle detalhado de custos, utilizando métodos avançados 
                                     de análise financeira. Possui uma abordagem proativa para redução de despesas, implementando estratégias como 
                                     otimização de processos, renegociação de contratos, avaliação de alternativas mais econômicas e busca por eficiência 
                                     operacional em todas as áreas da empresa.</option>
@@ -193,7 +193,7 @@ function Maturidade3(){
                                     <option value="opcao3">Nível 3: A empresa utiliza métodos adequados para atribuição de custos aos produtos ou serviços, 
                                     considerando diferentes elementos e variáveis. Também realiza análise regular das variações de custos em relação ao 
                                     orçamento planejado, identificando possíveis desvios.</option>
-                                    <option value="opcao3">Nível 4: A empresa utiliza métodos avançados e precisos para atribuição de custos aos produtos 
+                                    <option value="opcao4">Nível 4: A empresa utiliza métodos avançados e precisos para atribuição de custos aos produtos 
                                     ou serviços, levando em consideração múltiplos critérios e variáveis relevantes. Além disso, realiza análises detalhadas 
                                     e frequentes das variações de custos em relação ao orçamento planejado, identificando causas, ajustando planos de ação e 
                                     buscando otimizações constantes.</option>
@@ -222,7 +222,7 @@ function Maturidade3(){
                                     São realizadas avaliações de risco abrangentes para identificar os principais riscos financeiros, como risco de crédito, risco cambial, 
                                     risco de liquidez e risco de mercado. Existe uma análise periódica desses riscos e são implementadas medidas de mitigação para reduzir 
                                     a exposição aos riscos identificados.</option>
-                                    <option value="opcao3">Nível 4: A empresa adota uma abordagem avançada na identificação e no monitoramento de riscos financeiros. 
+                                    <option value="opcao4">Nível 4: A empresa adota uma abordagem avançada na identificação e no monitoramento de riscos financeiros. 
                                     Além dos riscos mencionados anteriormente, são considerados outros riscos específicos do setor e da empresa. Existe um sistema robusto para identificar, 
                                     avaliar e monitorar os riscos financeiros de forma contínua. São implementadas estratégias de gestão de riscos financeiros, como o uso de instrumentos 
                                     financeiros derivativos, a diversificação de investimentos e a adoção de políticas de gerenciamento de riscos.</option>

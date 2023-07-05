@@ -58,7 +58,7 @@
     padding: 5px;
 }
 
-.import-select {
+ .import-select {
     width: 800px;
     padding: 25px;
     font-size: 15px;
@@ -68,7 +68,7 @@
 
 .import-select option {
     padding: 5px;
-}
+}  
 
 .close_area2 {
     cursor: pointer;
@@ -128,7 +128,7 @@
     background-size: contain;
     width: 10%;
     height: 10%;
-    margin-top: 42%;
+    margin-top: -2%;
     margin-right: -5%;
     float: right;
     cursor: pointer;

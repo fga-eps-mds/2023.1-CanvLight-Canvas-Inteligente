@@ -10,8 +10,10 @@ function Maturidade2(){
         }
     
         let modal = document.querySelector(".areaRh");
+        
         modal.style.display = "none";
-
+        let medel = document.querySelector(".tela_3_form_interacao");
+        medel.style.display = "none";
         let modal2 = document.querySelector(".confirma");
         modal2.style.display = "block";
       }
@@ -39,7 +41,7 @@ function Maturidade2(){
                 <h2 className="titulo">Área de Recursos Humanos</h2>
                 <div onClick={clicouNaDuvida}  className='duvidaFin'></div>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
-                }}className="duvidaRh"></div>
+                }}className="duvidaFin"></div>
 
                     <table>
                         <tr>
@@ -317,4 +319,4 @@ function Maturidade2(){
 
 }
 
-export default Maturidade2
+export default Maturidade2;
