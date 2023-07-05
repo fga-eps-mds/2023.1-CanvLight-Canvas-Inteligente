@@ -1,7 +1,7 @@
 import "./Maturidade1.css";
 import React, { useState } from "react";
 
-function Maturidade1(){
+function Maturidade1({onImportancia1Change}){
     function fecharFormMaturidade1(e) {
         e.preventDefault();
         let modalOverlay = document.querySelector(".modal-overlay");
@@ -29,6 +29,96 @@ function Maturidade1(){
     function clicouNaDuvida(){
         alert('duvida clicada!')
     }
+    const [primeiraLinhaImportancia1, setPrimeiraLinhaImportancia1] =
+    useState("");
+    const [segundaLinhaImportancia1, setSegundaLinhaImportancia1] =
+    useState("");
+    const [terceiraLinhaImportancia1, setTerceiraLinhaImportancia1] =
+    useState("");
+    const [quartaLinhaImportancia1, setQuartaLinhaImportancia1] =
+    useState("");
+    const [quintaLinhaImportancia1, setQuintaLinhaImportancia1] =
+    useState("");
+    const [sextaLinhaImportancia1, setSextaLinhaImportancia1] =
+    useState("");
+    const [setimaLinhaImportancia1, setSetimaLinhaImportancia1] =
+    useState("");
+    const [oitavaLinhaImportancia1, setOitavaLinhaImportancia1] =
+    useState("");
+    const [nonaLinhaImportancia1, setNonaLinhaImportancia1] =
+    useState("");
+    const [decimaLinhaImportancia1, setDecimaLinhaImportancia1] =
+    useState("");
+
+    const handleInputChangeImportancia1 = (e) => {
+        const { name, value } = e.target;
+        if (name === "primeiraLinhaImportancia1") {
+            setPrimeiraLinhaImportancia1(value);
+        } else if (name === "segundaLinhaImportancia1") {
+            setSegundaLinhaImportancia1(value);
+        } else if (name === "terceiraLinhaImportancia1") {
+            setTerceiraLinhaImportancia1(value);
+        } else if (name === "quartaLinhaImportancia1") {
+            setQuartaLinhaImportancia1(value);
+        } else if (name === "quintaLinhaImportancia1") {
+            setQuintaLinhaImportancia1(value);
+        } else if (name === "sextaLinhaImportancia1") {
+            setSextaLinhaImportancia1(value);
+        } else if (name === "setimaLinhaImportancia1") {
+            setSetimaLinhaImportancia1(value);
+        } else if (name === "oitavaLinhaImportancia1") {
+            setOitavaLinhaImportancia1(value);
+        } else if (name === "nonaLinhaImportancia1") {
+            setNonaLinhaImportancia1(value);
+        } else if (name === "decimaLinhaImportancia1") {
+            setDecimaLinhaImportancia1(value);
+        }
+
+        const novosDadosImportancia1 = {
+            primeiraLinhaImportancia1:
+                name === "primeiraLinhaImportancia1"
+                    ? value
+                    : primeiraLinhaImportancia1,
+            segundaLinhaImportancia1:
+                name === "segundaLinhaImportancia1"
+                    ? value
+                    : segundaLinhaImportancia1,
+            terceiraLinhaImportancia1:
+                name === "terceiraLinhaImportancia1"
+                    ? value
+                    : terceiraLinhaImportancia1,
+            quartaLinhaImportancia1:
+                name === "quartaLinhaImportancia1"
+                    ? value
+                    : quartaLinhaImportancia1,
+            quintaLinhaImportancia1:
+                name === "quintaLinhaImportancia1"
+                    ? value
+                    : quintaLinhaImportancia1,
+            sextaLinhaImportancia1:
+                name === "sextaLinhaImportancia1"
+                    ? value
+                    : sextaLinhaImportancia1,
+            setimaLinhaImportancia1:
+                name === "setimaLinhaImportancia1"
+                    ? value
+                    : setimaLinhaImportancia1,
+            oitavaLinhaImportancia1:
+                name === "oitavaLinhaImportancia1"
+                    ? value
+                    : oitavaLinhaImportancia1,
+            nonaLinhaImportancia1:
+                name === "nonaLinhaImportancia1"
+                    ? value
+                    : nonaLinhaImportancia1,
+            decimaLinhaImportancia1:
+                name === "decimaLinhaImportancia1"
+                    ? value
+                    : decimaLinhaImportancia1,
+        };
+        onImportancia1Change(novosDadosImportancia1);
+    };
+
 
     return(
         <div className="areaAdm">
@@ -71,10 +161,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="primeiraLinhaImportancia1"
+                                value={primeiraLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -96,10 +186,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
+                                type="text"
                                 name="segundaLinhaImportancia1"
                                 value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -122,10 +212,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="terceiraLinhaImportancia1"
+                                value={terceiraLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -149,10 +239,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="quartaLinhaImportancia1"
+                                value={quartaLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -175,10 +265,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="quintaLinhaImportancia1"
+                                value={quintaLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -204,10 +294,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="sextaLinhaImportancia1"
+                                value={sextaLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -230,10 +320,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="setimaLinhaImportancia1"
+                                value={setimaLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -258,10 +348,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="oitavaLinhaImportancia1"
+                                value={oitavaLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -284,10 +374,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="nonaLinhaImportancia1"
+                                value={nonaLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>
@@ -312,10 +402,10 @@ function Maturidade1(){
                             </td>
                             <td>
                             <input
-                                /*type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}*/
+                                type="text"
+                                name="decimaLinhaImportancia1"
+                                value={decimaLinhaImportancia1}
+                                onChange={handleInputChangeImportancia1}
                             />
                             </td>
                         </tr>

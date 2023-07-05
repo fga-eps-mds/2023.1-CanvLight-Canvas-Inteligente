@@ -72,6 +72,7 @@ function GeradorPDF({
   canaisObjetivo,
   canaisMetrica,
   inteQuatroP,
+  importancia1,
 }) {
   function gerarPDF() {
     const doc = new jsPDF({

@@ -83,6 +83,9 @@ function Canvas() {
   const [canaisMetrica, setCanaisMetrica] = useState({});
   const [inteQuatroP, setInteQuatroP] = useState({});
 
+  //maturidade
+  const [importancia1, setImportancia1] = useState({});
+
   //intuição
   const handleIntuTextosChange = (novosDadosIntuTextos) => {
     setIntuTextos(novosDadosIntuTextos);
@@ -314,6 +317,10 @@ function Canvas() {
   const handleInteQuatroPChange = (novosDadosInteQuatroP) => {
     setInteQuatroP(novosDadosInteQuatroP);
   };
+  //Maturidade
+  const handleImportancia1Change = (novosDadosImportancia1) => {
+    setImportancia1(novosDadosImportancia1);
+  };
 
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
@@ -492,7 +499,8 @@ function Canvas() {
         onInteQuatroPChange={handleInteQuatroPChange}
       />
 
-      <Maturidade1/>
+      <Maturidade1
+        onImportancia1Change={handleImportancia1Change}/>
 
       <GeradorPDF
         //intuição
@@ -561,6 +569,8 @@ function Canvas() {
         canaisObjetivo={canaisObjetivo}
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
+        //Maturidade
+        importancia1={importancia1}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />
