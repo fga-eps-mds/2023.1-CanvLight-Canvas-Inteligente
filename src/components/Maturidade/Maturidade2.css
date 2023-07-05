@@ -1,4 +1,4 @@
-.areaFin {
+.areaRh {
     z-index: 9999;
     display: none;
     position: absolute;
@@ -7,7 +7,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-.formFin {
+.formRh {
     position: absolute;
     height: 100vh;
     width: 80vw;
@@ -22,25 +22,25 @@
     font-family: "Ubuntu";
 }
 
-.formFin table {
+.formRh table {
     width: 50;
     border-spacing: 0;
     color: white;
     margin: auto;
 }
   
-.formFin table th {
+.formRh table th {
     background-color: rgb(255, 94, 0);
     border: 1px solid rgb(255, 94, 0);
 }
   
-.formFin table td {
+.formRh table td {
     background-color: #252525;
     height: 6.5vh;
     border: 1px solid #fb8218;
 }
     
-.formFin table input {
+.formRh table input {
     background-color: #252525;
     border: none;
     width: auto;
@@ -111,7 +111,7 @@
     color: white;
 }
 
-.duvidaFin {
+.duvidaRh {
     background-image: url("../../images/request\ \(1\).png");
     width: 0.85vw;
     height: 1.8vh;

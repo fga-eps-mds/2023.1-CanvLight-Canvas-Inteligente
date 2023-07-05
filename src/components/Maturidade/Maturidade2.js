@@ -39,7 +39,7 @@ function Maturidade2(){
                 <h2 className="titulo">Área de Recursos Humanos</h2>
                 <div onClick={clicouNaDuvida}  className='duvidaFin'></div>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
-                }}className="duvidaFin"></div>
+                }}className="duvidaRh"></div>
 
                     <table>
                         <tr>
