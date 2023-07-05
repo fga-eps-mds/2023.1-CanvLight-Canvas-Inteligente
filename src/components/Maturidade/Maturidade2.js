@@ -61,7 +61,7 @@ function Maturidade2(){
                                     <option value="opcao3">Nível 3: A área de Recursos Humanos possui uma visão e missão alinhadas com a 
                                     estratégia da empresa, mas ainda precisa comunicá-las de forma mais efetiva aos colaboradores. 
                                     Há políticas e diretrizes estabelecidas, porém algumas áreas ainda não as seguem de maneira consistente.</option>
-                                    <option value="opcao3">Nível 4:A área de Recursos Humanos tem uma visão e missão bem definidas e 
+                                    <option value="opcao4">Nível 4:A área de Recursos Humanos tem uma visão e missão bem definidas e 
                                     amplamente comunicadas, alinhadas com os objetivos estratégicos da empresa. Existem políticas e 
                                     diretrizes abrangentes que são seguidas de forma consistente em todas as áreas, promovendo a igualdade, 
                                     o desenvolvimento dos colaboradores e a excelência no ambiente de trabalho.</option>
@@ -81,8 +81,9 @@ function Maturidade2(){
                             <td>
                                 <select className="opcao-select">
                                     <option value="opcao1">Nível 1: A estratégia de RH não está claramente alinhada com os objetivos 
-                                    organizacionais. As iniciativas de RH são desenvolvidas de forma isolada, sem uma conexão direta 
-                                    com as metas e prioridades da empresa. A falta de alinhamento resulta em uma abordagem reativa e 
+                                    organizacionais. As iniciativas de RH são desenvolvidas 
+                                    de forma isolada, sem uma conexão direta com as metas e prioridades da empresa. 
+                                    A falta de alinhamento resulta em uma abordagem reativa e 
                                     limita o potencial de contribuição estratégica da área de RH.</option>
                                     <option value="opcao2">Nível 2: Existe uma consciência de que a estratégia de RH deve estar alinhada 
                                     com os objetivos organizacionais, mas o alinhamento ainda é parcial. Algumas iniciativas de RH podem 
@@ -94,7 +95,7 @@ function Maturidade2(){
                                     feitos para conectar as iniciativas de RH aos objetivos e metas da empresa. A colaboração entre a 
                                     área de RH e as demais áreas da organização está se fortalecendo, resultando em uma maior sinergia 
                                     e impacto estratégico.</option>
-                                    <option value="opcao3">Nível 4: A estratégia de RH está plenamente alinhada com os objetivos organizacionais. 
+                                    <option value="opcao4">Nível 4: A estratégia de RH está plenamente alinhada com os objetivos organizacionais. 
                                     Existe uma integração estratégica total entre a área de RH e a alta direção da empresa. 
                                     As iniciativas de RH são desenvolvidas em estreita colaboração com as demais áreas, garantindo que 
                                     as ações de RH impulsionem diretamente os resultados e metas organizacionais. O alinhamento 
@@ -129,7 +130,7 @@ function Maturidade2(){
                                     de carreira e fornecer oportunidades de desenvolvimento específicas para a preparação de futuros líderes. 
                                     O plano é comunicado e implementado de forma consistente, garantindo uma pipeline de liderança sólida 
                                     para a organização.</option>
-                                    <option value="opcao3">Nível 4: A empresa possui um planejamento de sucessão e desenvolvimento de lideranças 
+                                    <option value="opcao4">Nível 4: A empresa possui um planejamento de sucessão e desenvolvimento de lideranças 
                                     avançado e integrado à estratégia de negócios. Há uma cultura de desenvolvimento de talentos em todos os 
                                     níveis hierárquicos, com programas de mentoria, rotação de cargos e investimento em programas de desenvolvimento 
                                     de liderança. O desenvolvimento de líderes é uma prioridade e está alinhado às necessidades futuras da empresa.</option>
@@ -156,7 +157,7 @@ function Maturidade2(){
                                     <option value="opcao3">Nível 3: A empresa possui um processo de recrutamento e seleção bem definido, 
                                     seguindo critérios claros e estabelecendo etapas específicas. Existe um programa de integração para 
                                     os novos colaboradores, mas ainda pode ser aprimorado em termos de abrangência e suporte oferecido.</option>
-                                    <option value="opcao3">Nível 4: A empresa possui um processo de recrutamento e seleção altamente estruturado, 
+                                    <option value="opcao4">Nível 4: A empresa possui um processo de recrutamento e seleção altamente estruturado, 
                                     com etapas bem definidas e critérios rigorosos. Além disso, há um programa de integração abrangente e eficaz 
                                     para os novos colaboradores, oferecendo suporte e facilitando sua adaptação ao ambiente de trabalho.</option>
                                 </select>
@@ -183,7 +184,7 @@ function Maturidade2(){
                                     <option value="opcao3">Nível 3: A empresa utiliza critérios sólidos para avaliar e selecionar candidatos, 
                                     considerando aspectos como competências técnicas e comportamentais. Existe um acompanhamento básico do sucesso 
                                     dos processos de recrutamento e seleção, mas pode ser aprimorado.</option>
-                                    <option value="opcao3">Nível 4: A empresa utiliza critérios específicos e bem definidos para avaliar e selecionar 
+                                    <option value="opcao4">Nível 4: A empresa utiliza critérios específicos e bem definidos para avaliar e selecionar 
                                     candidatos, levando em consideração competências técnicas, comportamentais e sociais. Há uma medição clara e sistemática 
                                     do sucesso dos processos de recrutamento e seleção, por meio de indicadores de desempenho, taxa de retenção e satisfação 
                                     dos contratados.</option>
@@ -210,7 +211,7 @@ function Maturidade2(){
                                     <option value="opcao3">Nível 3: A empresa oferece programas de treinamento e desenvolvimento relevantes para os 
                                     colaboradores, com base em análises periódicas de necessidades de treinamento. No entanto, há margem para aprimorar 
                                     a personalização dos treinamentos de acordo com as necessidades individuais.</option>
-                                    <option value="opcao3">Nível 4: A empresa possui uma ampla variedade de programas de treinamento e desenvolvimento, 
+                                    <option value="opcao4">Nível 4: A empresa possui uma ampla variedade de programas de treinamento e desenvolvimento, 
                                     adaptados às necessidades individuais e coletivas dos colaboradores. A identificação das necessidades de treinamento 
                                     é realizada de forma sistemática, utilizando avaliações de desempenho, feedback dos gestores e levantamentos de competências.</option>
                                 </select>
@@ -237,7 +238,7 @@ function Maturidade2(){
                                     <option value="opcao3">Nível 3: A empresa possui um plano de carreira definido, com oportunidades de crescimento 
                                     profissional identificadas. O desempenho dos colaboradores é avaliado regularmente, porém o processo de avaliação 
                                     ainda pode ser aprimorado.</option>
-                                    <option value="opcao3">Nível 4: A empresa possui um plano de carreira estruturado, com amplas oportunidades de 
+                                    <option value="opcao4">Nível 4: A empresa possui um plano de carreira estruturado, com amplas oportunidades de 
                                     crescimento profissional. O desempenho dos colaboradores é avaliado de forma sistemática e regular, com critérios 
                                     claros e feedback construtivo, permitindo o desenvolvimento individual e reconhecimento do mérito.</option>
                                 </select>
@@ -266,7 +267,7 @@ function Maturidade2(){
                                     pontos de insatisfação e áreas de melhoria. A gestão de conflitos é realizada de forma adequada, mas ainda há espaço
                                     para aprimorar a resolução proativa de conflitos. A empresa promove ações pontuais para incentivar um ambiente de 
                                     trabalho saudável, mas ainda não possui uma abordagem abrangente. </option>
-                                    <option value="opcao3">Nível 4: A empresa realiza avaliações frequentes e abrangentes do clima organizacional, 
+                                    <option value="opcao4">Nível 4: A empresa realiza avaliações frequentes e abrangentes do clima organizacional, 
                                     utilizando diversas ferramentas e métricas. A gestão de conflitos é proativa e eficiente, com estratégias para 
                                     prevenção e resolução de conflitos de forma saudável. A empresa promove um ambiente de trabalho saudável por meio 
                                     de programas de bem-estar, reconhecimento e desenvolvimento profissional, criando uma cultura de colaboração e 
@@ -295,7 +296,7 @@ function Maturidade2(){
                                     <option value="opcao3">Nível 3: A empresa possui práticas de gestão de pessoas para motivar e engajar os 
                                     colaboradores, com ações pontuais de reconhecimento e desenvolvimento. O sistema de remuneração e benefícios 
                                     é equitativo, porém não é competitivo em relação ao mercado. </option>
-                                    <option value="opcao3">Nível 4: GA empresa adota práticas avançadas de gestão de pessoas, focadas na motivação 
+                                    <option value="opcao4">Nível 4: GA empresa adota práticas avançadas de gestão de pessoas, focadas na motivação 
                                     e engajamento dos colaboradores, como programas de reconhecimento, desenvolvimento de carreira e feedback regular. 
                                     O sistema de remuneração e benefícios é competitivo e equitativo, alinhado com as melhores práticas do mercado.</option>
                                 </select>
