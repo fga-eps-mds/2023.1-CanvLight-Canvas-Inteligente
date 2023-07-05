@@ -70,9 +70,6 @@
   color: #fff;
   left: 4.5vh;
 }
-.btn_comousar {
-  transform: translateY(20%);
-}
 
 .modal-overlay {
   position: fixed;
