@@ -1,45 +1,45 @@
 import "./Maturidade4.css";
 import React, { useState } from "react";
 
-function Maturidade1(){
-    function fecharFormMaturidade1(e) {
+function Maturidade4(){
+    function fecharFormMaturidade4(e) {
         e.preventDefault();
         let modalOverlay = document.querySelector(".modal-overlay");
         if (modalOverlay) {
           modalOverlay.parentNode.removeChild(modalOverlay);
         }
     
-        let modal = document.querySelector(".areaAdm");
+        let modal = document.querySelector(".areaMkt");
         modal.style.display = "none";
 
         let modal2 = document.querySelector(".confirma");
         modal2.style.display = "block";
-      }
+    }
     
-    function irParaAreaRh(e) {
+    function irParaAreaFin(e) {
         e.preventDefault();
     
-        let modal = document.querySelector(".areaAdm");
-        modal.style.display = "none";
-
-        let modal2 = document.querySelector(".areaRh");
-        modal2.style.display = "block";
+        let modal = document.querySelector(".areaFin");
+        let modal2 = document.querySelector(".areaMkt");
+    
+        modal.style.display = "block";
+        modal2.style.display = "none";
     }
-
+      
     function clicouNaDuvida(){
         alert('duvida clicada!')
     }
 
     return(
-        <div className="areaAdm">
-            <div className="formAdm">
-                <button className="close_area1" onClick={(e) => fecharFormMaturidade1(e)}></button>
-                <div className="dot2_area1"></div>
-                <div className="dot3_area1"></div>
+        <div className="areaMkt">
+            <div className="formMkt">
+                <button className="close_area4" onClick={(e) => fecharFormMaturidade1(e)}></button>
+                <div className="dot2_area4"></div>
+                <div className="dot3_area4"></div>
                 <h2 className="titulo">Marketing</h2>
-                <div onClick={clicouNaDuvida}  className='duvidaAdm'></div>
+                <div onClick={clicouNaDuvida}  className='duvidaMkt'></div>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
-                }}className="duvidaAdm"></div>
+                }}className="duvidaMkt"></div>
 
                     <table>
                         <tr>
@@ -338,7 +338,7 @@ function Maturidade1(){
                         </tr>
                     </table>
 
-                <div onClick={(e) => irParaAreaRh(e)} className='setaDireita'></div>
+                <div onClick={(e) => irParaAreaFin(e)} className='setaDireita'></div>
 
             </div>
         </div>
