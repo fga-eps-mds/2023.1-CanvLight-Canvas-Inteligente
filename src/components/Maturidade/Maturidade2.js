@@ -68,12 +68,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="primeiraLinhaImportancia1"
-                                value={primeiraLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -103,12 +102,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -138,12 +136,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="terceiraLinhaImportancia1"
-                                value={terceiraLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -165,12 +162,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="quartaLinhaImportancia1"
-                                value={quartaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                            <   select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -194,12 +190,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="quintaLinhaImportancia1"
-                                value={quintaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -221,12 +216,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="sextaLinhaImportancia1"
-                                value={sextaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                            <   select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -249,12 +243,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="setimaLinhaImportancia1"
-                                value={setimaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -281,12 +274,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="oitavaLinhaImportancia1"
-                                value={oitavaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                            <   select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
                         
@@ -309,12 +301,11 @@ function Maturidade2(){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="nonaLinhaImportancia1"
-                                value={nonaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select">
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
                     </table>

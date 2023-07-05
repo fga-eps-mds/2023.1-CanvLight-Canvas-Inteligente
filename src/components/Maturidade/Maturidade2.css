@@ -58,6 +58,18 @@
     padding: 5px;
 }
 
+.import-select {
+    width: 800px;
+    padding: 25px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+.import-select option {
+    padding: 5px;
+}
+
 .close_area2 {
     cursor: pointer;
     width: 20px;
