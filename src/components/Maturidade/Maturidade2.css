@@ -22,6 +22,42 @@
     font-family: "Ubuntu";
 }
 
+.formFin table {
+    width: 50;
+    border-spacing: 0;
+    color: white;
+    margin: auto;
+}
+  
+.formFin table th {
+    background-color: rgb(255, 94, 0);
+    border: 1px solid rgb(255, 94, 0);
+}
+  
+.formFin table td {
+    background-color: #252525;
+    height: 6.5vh;
+    border: 1px solid #fb8218;
+}
+    
+.formFin table input {
+    background-color: #252525;
+    border: none;
+    width: auto;
+}
+  
+.opcao-select {
+    width: 800px;
+    padding: 25px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+  
+.opcao-select option {
+    padding: 5px;
+}
+
 .close_area2 {
     cursor: pointer;
     width: 20px;
