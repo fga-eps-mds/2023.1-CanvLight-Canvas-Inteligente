@@ -2,40 +2,7 @@ import "./Maturidade1.css";
 import React, { useState } from "react";
 
 function Maturidade1({onImportancia1Change}){
-   
-    function irParaAreaRh(e) {
-        e.preventDefault();
     
-        let modal = document.querySelector(".areaAdm");
-        let modal2 = document.querySelector(".areaRh");
-      
-        modal.style.display = "none";
-        modal2.style.display = "block";
-    }
-   
-   
-   
-    function fecharFormMaturidade1(e) {
-        e.preventDefault();
-        let modalOverlay = document.querySelector(".modal-overlay");
-        if (modalOverlay) {
-          modalOverlay.parentNode.removeChild(modalOverlay);
-        }
-    
-        let modal = document.querySelector(".areaAdm");
-        
-        modal.style.display = "none";
-        let medel = document.querySelector(".tela_3_form_interacao");
-        medel.style.display = "none";
-        let modal2 = document.querySelector(".confirma");
-        modal2.style.display = "block";
-      }
-    
-   
-
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
-    }
     const [primeiraLinhaImportancia1, setPrimeiraLinhaImportancia1] =
     useState("");
     const [segundaLinhaImportancia1, setSegundaLinhaImportancia1] =
@@ -125,7 +92,30 @@ function Maturidade1({onImportancia1Change}){
         };
         onImportancia1Change(novosDadosImportancia1);
     };
+   
+    function fecharFormMaturidade1(e) {
+        e.preventDefault();
+        let modalOverlay = document.querySelector(".modal-overlay");
+        if (modalOverlay) {
+          modalOverlay.parentNode.removeChild(modalOverlay);
+        }
+    
+        let modal = document.querySelector(".areaAdm");
+        modal.style.display = "none";
 
+        let modal2 = document.querySelector(".confirma");
+        modal2.style.display = "block";
+      }
+
+      function irParaFormMaturidade2(e) {
+        e.preventDefault();
+    
+        let modal = document.querySelector(".areaAdm");
+        modal.style.display = "none";
+
+        let modal2 = document.querySelector(".areaRh");
+        modal2.style.display = "block";
+    }
 
     return(
         <div className="areaAdm">
@@ -134,7 +124,6 @@ function Maturidade1({onImportancia1Change}){
                 <div className="dot2_area1"></div>
                 <div className="dot3_area1"></div>
                 <h2 className="titulo">Área Administrativa</h2>
-                <div onClick={clicouNaDuvida}  className='duvidaAdm'></div>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaAdm"></div>
 
@@ -146,7 +135,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta1">1. Qual é a estrutura organizacional da empresa? Ela é adequada 
+                            <td className="pergunta">1. Qual é a estrutura organizacional da empresa? Ela é adequada 
                             para suportar as atividades e fluxos de trabalho?</td>
                             <td>
                                 <select className="opcao-select">
@@ -177,7 +166,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta2">2. Como é realizado o planejamento estratégico da empresa? 
+                            <td className="pergunta">2. Como é realizado o planejamento estratégico da empresa? 
                             Existe uma definição clara de metas e objetivos?</td>
                             <td>
                                 <select className="opcao-select">
@@ -202,7 +191,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta3">3. Quais são os principais processos administrativos da empresa?
+                            <td className="pergunta">3. Quais são os principais processos administrativos da empresa?
                              Eles estão documentados e padronizados?</td>
                             <td>
                                 <select className="opcao-select">
@@ -228,7 +217,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta4">4. Como é feita a gestão de projetos na empresa? Existem metodologias e 
+                            <td className="pergunta">4. Como é feita a gestão de projetos na empresa? Existem metodologias e 
                             ferramentas utilizadas?</td>
                             <td>
                                 <select className="opcao-select">
@@ -255,7 +244,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta5">5. Como é feita a gestão financeira da empresa? Existe controle efetivo 
+                            <td className="pergunta">5. Como é feita a gestão financeira da empresa? Existe controle efetivo 
                             sobre orçamento, fluxo de caixa e contas a pagar/receber?</td>
                             <td>
                                 <select className="opcao-select">
@@ -281,7 +270,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta6">6. Qual é o nível de qualidade dos produtos ou serviços oferecidos pela 
+                            <td className="pergunta">6. Qual é o nível de qualidade dos produtos ou serviços oferecidos pela 
                             empresa? Existem indicadores e processos de melhoria contínua?</td>
                             <td>
                                 <select className="opcao-select">
@@ -310,7 +299,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta7">7. Como é realizada a gestão de documentos e arquivos na empresa? Existem 
+                            <td className="pergunta">7. Como é realizada a gestão de documentos e arquivos na empresa? Existem 
                             práticas de organização e armazenamento eficientes?</td>
                             <td>
                                 <select className="opcao-select">
@@ -336,7 +325,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta8">8. Como é feita a gestão de riscos na empresa? Existem análises de risco e 
+                            <td className="pergunta">8. Como é feita a gestão de riscos na empresa? Existem análises de risco e 
                             planos de contingência estabelecidos?</td>
                             <td>
                                 <select className="opcao-select">
@@ -364,7 +353,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
                         
                         <tr>
-                            <td className="pergunta9">9. Como é feita a gestão do tempo e produtividade dos colaboradores? Existem 
+                            <td className="pergunta">9. Como é feita a gestão do tempo e produtividade dos colaboradores? Existem 
                             práticas de monitoramento e incentivo à eficiência?</td>
                             <td>
                                 <select className="opcao-select">
@@ -390,7 +379,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
 
                         <tr>
-                            <td className="pergunta10">10. Existe um canal efetivo de comunicação interna na empresa? Os colaboradores se 
+                            <td className="pergunta">10. Existe um canal efetivo de comunicação interna na empresa? Os colaboradores se 
                             sentem envolvidos e informados sobre as decisões administrativas?</td>
                             <td>
                                 <select className="opcao-select">
@@ -418,7 +407,7 @@ function Maturidade1({onImportancia1Change}){
                         </tr>
                     </table>
 
-                <div onClick={(e) => irParaAreaRh(e)} className='setaDireita'></div>
+                <div onClick={(e) => irParaFormMaturidade2(e)} className='setaDireita'></div>
 
             </div>
         </div>

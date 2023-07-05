@@ -16,28 +16,23 @@ function Maturidade4(){
         modal2.style.display = "block";
     }
     
-    function irParaAreaFin(e) {
+    function irParaFormMaturidade5(e) {
         e.preventDefault();
     
-        let modal = document.querySelector(".areaFin");
-        let modal2 = document.querySelector(".areaMkt");
-    
-        modal.style.display = "block";
-        modal2.style.display = "none";
-    }
-      
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
+        let modal = document.querySelector(".areaMkt");
+        modal.style.display = "none";
+
+        let modal2 = document.querySelector(".areaResult");
+        modal2.style.display = "block";
     }
 
     return(
         <div className="areaMkt">
             <div className="formMkt">
-                <button className="close_area4" onClick={(e) => fecharFormMaturidade1(e)}></button>
+                <button className="close_area4" onClick={(e) => fecharFormMaturidade4(e)}></button>
                 <div className="dot2_area4"></div>
                 <div className="dot3_area4"></div>
                 <h2 className="titulo">Marketing</h2>
-                <div onClick={clicouNaDuvida}  className='duvidaMkt'></div>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaMkt"></div>
 
@@ -338,7 +333,7 @@ function Maturidade4(){
                         </tr>
                     </table>
 
-                <div onClick={(e) => irParaAreaFin(e)} className='setaDireita'></div>
+                <div onClick={(e) => irParaFormMaturidade5(e)} className='setaDireita'></div>
 
             </div>
         </div>

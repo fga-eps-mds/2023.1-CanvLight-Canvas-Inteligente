@@ -16,7 +16,7 @@ function Maturidade3(){
         modal2.style.display = "block";
       }
     
-    function irParaAreaMkt(e) {
+    function irParaFormMaturidade4(e) {
         e.preventDefault();
     
         let modal = document.querySelector(".areaFin");
@@ -26,10 +26,6 @@ function Maturidade3(){
         modal2.style.display = "block";
     }
 
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
-    }
-
     return(
         <div className="areaFin">
             <div className="formFin">
@@ -37,7 +33,6 @@ function Maturidade3(){
                 <div className="dot2_area3"></div>
                 <div className="dot3_area3"></div>
                 <h2 className="titulo">Área Financeira</h2>
-                <div onClick={clicouNaDuvida}  className='duvidaFin'></div>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaFin"></div>
 
@@ -237,11 +232,11 @@ function Maturidade3(){
                             </td>
                         </tr>
                     </table>
-                 <div onClick={(e) => irParaAreaMkt(e)} className='setaDireita'></div>
+                 <div onClick={(e) => irParaFormMaturidade4(e)} className='setaDireita'></div>
             </div> 
         </div>      
     );            
 
 }
 
-export default Maturidade3
+export default Maturidade3;

@@ -10,15 +10,13 @@ function Maturidade2(){
         }
     
         let modal = document.querySelector(".areaRh");
-        
         modal.style.display = "none";
-        let medel = document.querySelector(".tela_3_form_interacao");
-        medel.style.display = "none";
+
         let modal2 = document.querySelector(".confirma");
         modal2.style.display = "block";
       }
     
-    function irParaAreaFin(e) {
+    function irParaFormMaturidade3(e) {
         e.preventDefault();
     
         let modal = document.querySelector(".areaRh");
@@ -28,10 +26,6 @@ function Maturidade2(){
         modal2.style.display = "block";
     }
 
-    function clicouNaDuvida(){
-        alert('duvida clicada!')
-    }
-
     return(
         <div className="areaRh">
             <div className="formRh">
@@ -39,7 +33,6 @@ function Maturidade2(){
                 <div className="dot2_area2"></div>
                 <div className="dot3_area2"></div>
                 <h2 className="titulo">Área de Recursos Humanos</h2>
-                <div onClick={clicouNaDuvida}  className='duvidaFin'></div>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaFin"></div>
 
@@ -312,7 +305,7 @@ function Maturidade2(){
                             </td>
                         </tr>
                     </table>
-                 <div onClick={(e) => irParaAreaFin(e)} className='setaDireita'></div>
+                 <div onClick={(e) => irParaFormMaturidade3(e)} className='setaDireita'></div>
             </div> 
         </div>      
     );            
