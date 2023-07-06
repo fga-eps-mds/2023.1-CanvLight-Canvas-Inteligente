@@ -362,16 +362,28 @@
     top: 1%;
   }
   .tut_body {
-    height: 1670vh;
-  }
-  .tutoriais {
-    top: 0%;
-    height: 1670vh;
-  }
-  .tutoriais h2 {
-    margin-top: -30%;
+    height: 1700vh;
   }
   .introducao {
-    margin-top: -55%;
+    margin-top: -60%;
+  }
+  .tut_dna,
+  .tut_analise_custo,
+  .tut_analise_preco_diferenciais,
+  .tut_benchmaking,
+  .tut_canais_venda,
+  .tut_conceito,
+  .tut_digitalizacao,
+  .tut_formacao_preco,
+  .tut_melhorias,
+  .tut_modelo,
+  .tut_mvp,
+  .tut_prototipo,
+  .tut_ikigai,
+  .tut_fourps,
+  .tut_sintese,
+  .tut_perfis_cliente,
+  .tut_proposta_valor {
+    margin-top: -20%;
   }
 }

@@ -1,5 +1,4 @@
 import "./Intuicao.css";
-import dateIntuition from "../../images/dateIntuition.png";
 import checkImg from "../../images/check.png";
 
 import React, { useState } from "react";
@@ -277,9 +276,6 @@ function Intuicao({
   };
 
   //===============================================================================================
-  function clicouNaDuvida() {
-    alert("duvida clicada!");
-  }
 
   function fecharFormIntuicao(e) {
     e.preventDefault();
@@ -317,8 +313,8 @@ function Intuicao({
                 />
               </div>
 
-              <h2>Equipe:</h2>
-              <input
+              <h2 className="h2_equipe">Equipe:</h2>
+              <textarea
                 className="inputEquipe"
                 name="segundaLinhaIntuTextos"
                 value={segundaLinhaIntuTextos}
@@ -441,7 +437,12 @@ function Intuicao({
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvidaDNA_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#breakpoint_introducao", "_blank");
+            }}
+            className="duvidaDNA_int"
+          ></div>
 
           <div className="parte2">
             <h2 className="h2_Ikigai">Ikigai:</h2>
@@ -454,19 +455,18 @@ function Intuicao({
             />
           </div>
 
-          <div onClick={() => {
-            window.open("tutorial#tut_dna", "_blank");
-          }}className="duvida_sintese_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_dna", "_blank");
+            }}
+            className="duvidaIkigai_int"
+          ></div>
 
           <div className="clear"></div>
         </div>
 
         <div className="direita">
-          <div>
-            <img src={dateIntuition} alt="DataIntuicao" className="dateInt" />
-          </div>
-
-          <div className="tabela22">
+          <div className="tabela_4ps">
             <h2>4P's do projeto:</h2>
             <table className="four_ps">
               <tr>
@@ -513,7 +513,12 @@ function Intuicao({
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida_fourps_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_ikigai", "_blank");
+            }}
+            className="duvida_fourps_int"
+          ></div>
 
           <div className="tabela3">
             <h2>Síntese:</h2>

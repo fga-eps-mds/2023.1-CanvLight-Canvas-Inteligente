@@ -1,5 +1,15 @@
+:root {
+  --back_color: #fcdbc1;
+  --font_color: black;
+}
+
+.dark-mode:root {
+  --back_color: #252525;
+  --font_color: white;
+}
+
 .benchmarking .centerObs1 {
-  background-color: #252525;
+  background-color: var(--back_color);
   position: absolute;
   width: 90%;
   height: 90%;
@@ -14,13 +24,14 @@
 .benchmarking table {
   width: 0;
   border-spacing: 0;
-  color: white;
+  color: var(--font_color);
   margin: auto;
 }
 
 .benchmarking table th {
   background-color: #fb8218;
   border: 1px solid #fb8218;
+  color: var(--font_color);
 }
 
 .benchmarking .primeiro-canto {
@@ -40,22 +51,25 @@
 }
 
 .benchmarking table td {
-  background-color: #252525;
+  background-color: var(--back_color);
   height: 5vh;
   border: 1px solid #fb8218;
 }
 
 .benchmarking table input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: none;
   width: auto;
 }
 
 .benchmarking h2 {
   text-align: left;
+  color: var(--font_color);
 }
 
 .benchmarking p {
+  color: var(--font_color);
   margin: 0.5%;
   text-align: left;
 }
@@ -68,19 +82,21 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  left: 6%;
-  top: 4%;
+  left: 2%;
+  top: 2%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .dot2_obs {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  background-color: rgb(248, 225, 14);
+  background-color: #ffc300;
   border-radius: 10px;
   position: absolute;
   border: none;
-  left: 8%;
-  top: 4%;
+  left: 4%;
+  top: 2%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .dot3_obs {
   cursor: pointer;
@@ -90,8 +106,9 @@
   border-radius: 10px;
   position: absolute;
   border: none;
-  left: 10%;
-  top: 4%;
+  left: 6%;
+  top: 2%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .setas {
@@ -104,9 +121,10 @@
   margin-right: -5%;
   float: right;
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.duvida1 {
+.duvida_benchmarking {
   background-image: url("../../images/request\ \(1\).png");
   width: 16px;
   height: 16px;
@@ -115,9 +133,10 @@
   position: absolute;
   left: 15%;
   top: 9%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.duvida2 {
+.duvida_perfis {
   background-image: url("../../images/request\ \(1\).png");
   width: 16px;
   height: 16px;
@@ -125,14 +144,16 @@
   cursor: pointer;
   position: absolute;
   left: 20%;
-  top: 67%;
+  top: 63.8%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .perfil {
-  margin-top: 5%;
+  margin-top: 0%;
 }
 
 .perfil h2 {
+  color: var(--font_color);
   padding: 2%;
 }
 
@@ -148,14 +169,21 @@
 
 .perfil input {
   height: 5%;
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
   border-radius: 15px;
   width: 50%;
   margin: 1%;
+  margin-top: -0.2vh;
   padding: 2%;
 }
-
+.txt-perfil {
+  margin-left: -24vw;
+  margin-top: -2vh;
+  margin-bottom: 0.5vh;
+  font-size: 18px;
+}
 .img-perfil {
   background-image: url("../../images/profile\ \(1\).png");
   background-repeat: no-repeat;
@@ -164,7 +192,7 @@
   width: 5%;
   height: 5%;
   margin-top: 0%;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 .crescendo {
@@ -175,16 +203,97 @@
   width: 5%;
   height: 5%;
   margin-top: 0%;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
-.decrescendo {
-  background-image: url("../../images/graph.png");
+.dores {
+  background-image: url("../../images/remedio.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   width: 5%;
   height: 5%;
   margin-top: 0%;
-  margin-left: 5%;
+  margin-left: 8%;
+}
+
+@media screen and (max-width: 568px) {
+  .benchmarking {
+    height: 105vh;
+  }
+  .benchmarking .centerObs1 {
+    width: 90vw;
+  }
+  .close_obs,
+  .dot2_obs,
+  .dot3_obs {
+    margin-top: -1vh;
+  }
+  .close_obs {
+    margin-left: 2vw;
+  }
+  .dot2_obs {
+    margin-left: 6.5vw;
+  }
+  .dot3_obs {
+    margin-left: 11vw;
+  }
+  .benchmarking h2 {
+    margin-top: 5vh;
+  }
+  .benchmarking p {
+    margin-top: 2vh;
+  }
+  .concorrente table {
+    margin-left: -3.5vw;
+    width: 80vw;
+  }
+  .benchmarking table th {
+    padding: 5px;
+    font-size: 10px;
+    padding: 0;
+  }
+  .benchmarking table td {
+    width: 1vw;
+  }
+  .benchmarking table input {
+    width: 100%;
+    height: 100%;
+  }
+  .parceiro table {
+    margin-left: -1vw;
+    width: 80vw;
+  }
+  .parceiro table th {
+    font-size: 12px;
+  }
+  .duvida_benchmarking {
+    margin-left: 22vw;
+    margin-top: -1.5vh;
+  }
+  .txt-perfil {
+    margin-top: 1vh;
+    font-size: 12px;
+  }
+  .img-perfil,
+  .dores,
+  .crescendo {
+    width: 8%;
+    margin-left: 2%;
+  }
+  .perfil input {
+    margin: 3%;
+    margin-left: 12%;
+    margin-top: 2%;
+    width: 25vw;
+  }
+  .duvida_perfis {
+    margin-left: 28vw;
+    margin-top: 2.2vh;
+  }
+  .setas {
+    width: 13%;
+    margin-top: 10%;
+    margin-right: 0%;
+  }
 }
