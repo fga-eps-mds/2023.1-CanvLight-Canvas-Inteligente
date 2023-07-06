@@ -10,6 +10,10 @@ import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
 import Maturidade1 from "../../components/Maturidade/Maturidade1.js";
+import Maturidade2 from "../../components/Maturidade/Maturidade2.js";
+import Maturidade3 from "../../components/Maturidade/Maturidade3.js";
+import Maturidade4 from "../../components/Maturidade/Maturidade4.js";
+import Maturidade5 from "../../components/Maturidade/Maturidade5.js";
 
 function Canvas() {
   //intuição
@@ -501,6 +505,14 @@ function Canvas() {
 
       <Maturidade1
         onImportancia1Change={handleImportancia1Change}/>
+      
+      <Maturidade2/>
+
+      <Maturidade3/>
+
+      <Maturidade4/>
+
+      <Maturidade5/>
 
       <GeradorPDF
         //intuição

@@ -48,6 +48,7 @@
 
 .opcao-select {
     width: 800px;
+    height: 8vh;
     padding: 25px;
     font-size: 15px;
     border-radius: 3px;
@@ -119,6 +120,18 @@
     position: absolute;
     left: 68%;
     top: 9%;
+}
+
+.setaEsquerda {
+    background-image: url("../../images/seta-esquerda.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-bottom: -20%;
+    margin-left: 10%;
+    float: left;
+    cursor: pointer;
 }
 
 .setaDireita {

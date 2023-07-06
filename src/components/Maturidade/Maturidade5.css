@@ -1,4 +1,4 @@
-.areaFin {
+.areaResult {
     z-index: 9999;
     display: none;
     position: absolute;
@@ -7,7 +7,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-.formFin {
+.formResult {
     position: absolute;
     height: 100vh;
     width: 80vw;
@@ -22,55 +22,7 @@
     font-family: "Ubuntu";
 }
 
-.formFin table {
-    width: 50;
-    border-spacing: 0;
-    color: white;
-    margin: auto;
-}
-  
-.formFin table th {
-    background-color: rgb(255, 94, 0);
-    border: 1px solid rgb(255, 94, 0);
-}
-  
-.formFin table td {
-    background-color: #252525;
-    height: 6.5vh;
-    border: 1px solid #fb8218;
-}
-    
-.formFin table input {
-    background-color: #252525;
-    border: none;
-    width: auto;
-}
-  
-.opcao-select {
-    width: 800px;
-    padding: 25px;
-    font-size: 15px;
-    border-radius: 3px;
-    border: 1px solid white;
-}
-  
-.opcao-select option {
-    padding: 5px;
-}
-
-.import-select {
-    width: 800px;
-    padding: 25px;
-    font-size: 15px;
-    border-radius: 3px;
-    border: 1px solid white;
-}
-
-.import-select option {
-    padding: 5px;
-}
-
-.close_area3 {
+.close_area4 {
     cursor: pointer;
     width: 20px;
     height: 20px;
@@ -81,7 +33,7 @@
     left: 1.5%;
     top: 2%;
 }
-.dot2_area3 {
+.dot2_area4 {
     cursor: pointer;
     width: 20px;
     height: 20px;
@@ -92,7 +44,7 @@
     left: 3.5%;
     top: 2%;
 }
-.dot3_area3 {
+.dot3_area4 {
     cursor: pointer;
     width: 20px;
     height: 20px;
@@ -111,37 +63,25 @@
     color: white;
 }
 
-.duvidaFin {
-    background-image: url("../../images/request\ \(1\).png");
-    width: 0.85vw;
-    height: 1.8vh;
-    float: right;
-    cursor: pointer;
-    position: absolute;
-    left: 68%;
-    top: 9%;
-}
-
 .setaEsquerda {
     background-image: url("../../images/seta-esquerda.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 10%;
     height: 10%;
-    margin-bottom: -20%;
-    margin-left: 10%;
+    margin-top: 40%;
+    margin-left: 4%;
     float: left;
     cursor: pointer;
 }
 
-.setaDireita {
-    background-image: url("../../images/seta-direita.png");
+.feitoMaturidade {
+    background-image: url("../../images/check.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 10%;
     height: 10%;
-    margin-top: -2%;
-    margin-right: -5%;
+    margin-top: 40%;
     float: right;
     cursor: pointer;
 }

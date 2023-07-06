@@ -111,9 +111,9 @@ function Maturidade1({onImportancia1Change}){
         e.preventDefault();
     
         let modal = document.querySelector(".areaAdm");
-        let modal2 = document.querySelector(".areaRh");
-    
         modal.style.display = "none";
+
+        let modal2 = document.querySelector(".areaRh");
         modal2.style.display = "block";
       }
 

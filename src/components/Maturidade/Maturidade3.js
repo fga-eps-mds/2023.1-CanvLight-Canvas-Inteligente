@@ -16,6 +16,16 @@ function Maturidade3(){
         modal2.style.display = "block";
       }
     
+    function irParaFormMaturidade2(e) {
+        e.preventDefault();
+    
+        let modal = document.querySelector(".areaRh");
+        modal.style.display = "block";
+
+        let modal2 = document.querySelector(".areaFin");
+        modal2.style.display = "none";
+    }
+    
     function irParaFormMaturidade4(e) {
         e.preventDefault();
     
@@ -232,7 +242,8 @@ function Maturidade3(){
                             </td>
                         </tr>
                     </table>
-                 <div onClick={(e) => irParaFormMaturidade4(e)} className='setaDireita'></div>
+                <div onClick={(e) => irParaFormMaturidade2(e)} className='setaEsquerda'></div>
+                <div onClick={(e) => irParaFormMaturidade4(e)} className='setaDireita'></div>
             </div> 
         </div>      
     );            

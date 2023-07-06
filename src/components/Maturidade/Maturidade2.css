@@ -122,6 +122,18 @@
     top: 9%;
 }
 
+.setaEsquerda {
+    background-image: url("../../images/seta-esquerda.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 10%;
+    margin-bottom: -20%;
+    margin-left: 10%;
+    float: left;
+    cursor: pointer;
+}
+
 .setaDireita {
     background-image: url("../../images/seta-direita.png");
     background-repeat: no-repeat;
