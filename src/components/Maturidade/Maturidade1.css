@@ -9,7 +9,7 @@
 
 .formAdm {
     position: absolute;
-    height: 100vh;
+    height: 105vh;
     width: 80vw;
     display: block;
     justify-content: center;
@@ -114,6 +114,15 @@
 
 .opcao-select option{
   padding-top: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10%;
+  height: 6%;
+  margin-top: 1%;
+  margin-right: -5%;
+  float: right;
+  cursor: pointer;
+
 }
 
 .setaDireita {

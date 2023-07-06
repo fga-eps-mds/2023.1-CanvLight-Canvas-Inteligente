@@ -9,7 +9,7 @@
 
 .formRh {
     position: absolute;
-    height: 100vh;
+    height: 105vh;
     width: 80vw;
     display: block;
     justify-content: center;
@@ -23,10 +23,11 @@
 }
 
 .formRh table {
-    width: 50;
+    width: 78vw;
     border-spacing: 0;
     color: white;
-    margin: auto;
+    margin-left: -1%;
+    margin-top: 1vw;
 }
   
 .formRh table th {
@@ -47,7 +48,7 @@
 }
   
 .opcao-select {
-    width: 800px;
+    width: 100%;
     padding: 25px;
     font-size: 15px;
     border-radius: 3px;
@@ -59,7 +60,7 @@
 }
 
  .import-select {
-    width: 800px;
+    width: 100%;
     padding: 25px;
     font-size: 15px;
     border-radius: 3px;
