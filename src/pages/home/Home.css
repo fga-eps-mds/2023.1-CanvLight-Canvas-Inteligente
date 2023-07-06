@@ -207,7 +207,6 @@
   border-inline: none;
   cursor: pointer;
 
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -226,7 +225,6 @@
   border-radius: 6px;
   cursor: pointer;
 
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -266,6 +264,9 @@
 */
 
 @media screen and (max-width: 568px) {
+  .desktop ul li {
+    margin-top: 3%;
+  }
   .sol-inv {
     position: absolute;
     height: 40%;

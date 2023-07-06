@@ -5,19 +5,18 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 function Tutorial() {
-  useEffect ( () => {
+  useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
-      const element = document.getElementById (hash.slice (1));
+      const element = document.getElementById(hash.slice(1));
       if (element) {
-        const elementRect = element.getBoundingClientRect ();
+        const elementRect = element.getBoundingClientRect();
         const absoluteElementTop = elementRect.top + window.pageYOffset;
-        const middle = absoluteElementTop - (window.innerHeight / 2);
-        window.scrollTo (0, middle);
+        const middle = absoluteElementTop - window.innerHeight / 2;
+        window.scrollTo(0, middle);
       }
     }
   }, []);
-  
 
   return (
     <div className="tut_body">
@@ -81,7 +80,7 @@ function Tutorial() {
           Certifique-se de que sua proposta de valor esteja clara e de que os
           diferentes módulos se complementem.
           <br />
-          <br />
+          <br id="breakpoint_introducao" />
           Ao clicar no botão "Intuição", você terá acesso a um formulário para
           preenchimento. Após responder todas as perguntas, você poderá
           finalizar clicando no ícone de verificação localizado no canto
@@ -384,7 +383,10 @@ function Tutorial() {
           projeto, produto ou atividade.
         </p>
       </div>
-      <div id="tut_analise_preco_diferenciais" className="tut_analise_preco_diferenciais">
+      <div
+        id="tut_analise_preco_diferenciais"
+        className="tut_analise_preco_diferenciais"
+      >
         <h2>• Análise de Preços e diferenciais</h2>
         <p>
           Uma tabela de análise de preços e diferenciais é uma ferramenta útil
