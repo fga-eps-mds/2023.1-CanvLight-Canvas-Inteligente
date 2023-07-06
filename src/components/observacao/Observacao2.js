@@ -254,7 +254,7 @@ function Observacao2({
     medel.style.display = "none";
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
-  }}
+  }
 
   return (
     <div className="Observacao2">
