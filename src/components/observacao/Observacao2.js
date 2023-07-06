@@ -10,10 +10,7 @@ function Observacao2({
   onIndicadoChange,
   onOrientacaoChange,
   onResultadoChange,
-}) {
-  function clicouNaDuvida() {
-    alert("duvida clicada!");
-  }
+})
 
   const [primeiroP, setPrimeiroP] = useState();
   const [segundoP, setSegundoP] = useState();
