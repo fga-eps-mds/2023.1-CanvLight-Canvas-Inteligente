@@ -27,5 +27,4 @@ A análise postmortem será conduzida por meio de um questionário estruturado, 
 - O aprendizado sobre a construção de um Canvas de Negócio e sua aplicação prática.
 - A necessidade de aprofundamento da pesquisa e análise de mercado para embasar as decisões estratégicas.
 
-## Conclusão
-A análise postmortem do projeto de Canvas de Negócio permitiu identificar os sucessos alcançados, as áreas de melhoria e as lições aprendidas durante a sua execução. Esses insights serão valiosos para futuros projetos, tanto no âmbito acadêmico quanto profissional, contribuindo para o aprimoramento das habilidades individuais e do trabalho em equipe. Recomenda-se a utilização dessas informações como base para projetos futuros, visando a melhoria contínua e o sucesso das iniciativas.
+## Conclusões Individuais
