@@ -9,6 +9,11 @@ import Observacao2 from "../../components/observacao/Observacao2.js";
 import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
+import Maturidade1 from "../../components/Maturidade/Maturidade1.js";
+import Maturidade2 from "../../components/Maturidade/Maturidade2.js";
+import Maturidade3 from "../../components/Maturidade/Maturidade3.js";
+import Maturidade4 from "../../components/Maturidade/Maturidade4.js";
+import Maturidade5 from "../../components/Maturidade/Maturidade5.js";
 
 function Canvas() {
   //intuição
@@ -81,6 +86,9 @@ function Canvas() {
   const [canaisObjetivo, setCanaisObjetivo] = useState({});
   const [canaisMetrica, setCanaisMetrica] = useState({});
   const [inteQuatroP, setInteQuatroP] = useState({});
+
+  //maturidade
+  const [importancia1, setImportancia1] = useState({});
 
   //intuição
   const handleIntuTextosChange = (novosDadosIntuTextos) => {
@@ -251,6 +259,7 @@ function Canvas() {
   const handleEmpresaChange = (novosDadosEmpresa) => {
     setEmpresa(novosDadosEmpresa);
   };
+
   //Interação
   const handleDescricaoChange = (novosDadosDescricao) => {
     setDescricao(novosDadosDescricao);
@@ -312,6 +321,10 @@ function Canvas() {
   const handleInteQuatroPChange = (novosDadosInteQuatroP) => {
     setInteQuatroP(novosDadosInteQuatroP);
   };
+  //Maturidade
+  const handleImportancia1Change = (novosDadosImportancia1) => {
+    setImportancia1(novosDadosImportancia1);
+  };
 
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
@@ -328,7 +341,7 @@ function Canvas() {
     modal2.style.display = "none";
   }
 
-  /*Chamadas para o form de Interção*/
+  /*Chamadas para o form de Interação*/
   function abrirFormInteracao(e) {
     e.preventDefault();
 
@@ -352,6 +365,21 @@ function Canvas() {
     let modal = document.querySelector(".benchmarking");
 
     modal.style.display = "block";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "none";
+  }
+
+  /*Chamadas para o form de Maturidade1*/
+  function abrirFormMaturidade1(e) {
+    e.preventDefault();
+
+    let modalOverlay = document.createElement("div");
+    modalOverlay.classList.add("modal-overlay");
+    document.body.appendChild(modalOverlay);
+
+    let modal = document.querySelector(".areaAdm");
+    modal.style.display = "block";
+
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "none";
   }
@@ -407,6 +435,9 @@ function Canvas() {
           </button>
           <button className="button3" onClick={(e) => abrirFormInteracao(e)}>
             Interação
+          </button>
+          <button className="button4" onClick={(e) => abrirFormMaturidade1(e)}>
+            Maturidade
           </button>
         </div>
       </div>
@@ -486,6 +517,17 @@ function Canvas() {
         onInteQuatroPChange={handleInteQuatroPChange}
       />
 
+      <Maturidade1
+        onImportancia1Change={handleImportancia1Change}/>
+      
+      <Maturidade2/>
+
+      <Maturidade3/>
+
+      <Maturidade4/>
+
+      <Maturidade5/>
+
       <GeradorPDF
         //intuição
         intuTextos={intuTextos}
@@ -553,6 +595,8 @@ function Canvas() {
         canaisObjetivo={canaisObjetivo}
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
+        //Maturidade
+        importancia1={importancia1}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />
