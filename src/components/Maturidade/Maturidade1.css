@@ -125,6 +125,18 @@
 
 }
 
+.import-select {
+  width: 100%;
+  padding: 25px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+.import-select option {
+  padding: 5px;
+}  
+
 .setaDireita {
     background-image: url("../../images/seta-direita.png");
     background-repeat: no-repeat;
