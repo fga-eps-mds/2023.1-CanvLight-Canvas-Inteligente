@@ -3,95 +3,20 @@ import React, { useState } from "react";
 
 function Maturidade1({onImportancia1Change}){
     
-    /*const [primeiraLinhaImportancia1, setPrimeiraLinhaImportancia1] =
-    useState("");
-    const [segundaLinhaImportancia1, setSegundaLinhaImportancia1] =
-    useState("");
-    const [terceiraLinhaImportancia1, setTerceiraLinhaImportancia1] =
-    useState("");
-    const [quartaLinhaImportancia1, setQuartaLinhaImportancia1] =
-    useState("");
-    const [quintaLinhaImportancia1, setQuintaLinhaImportancia1] =
-    useState("");
-    const [sextaLinhaImportancia1, setSextaLinhaImportancia1] =
-    useState("");
-    const [setimaLinhaImportancia1, setSetimaLinhaImportancia1] =
-    useState("");
-    const [oitavaLinhaImportancia1, setOitavaLinhaImportancia1] =
-    useState("");
-    const [nonaLinhaImportancia1, setNonaLinhaImportancia1] =
-    useState("");
-    const [decimaLinhaImportancia1, setDecimaLinhaImportancia1] =
-    useState("");
+    const [selectedOption, setSelectedOption] = useState('');
+    // Essa funcao passa o valor escolhido da importancia 
+    const handleOption1Change = (event) => {
+        setSelectedOption(event.target.value);
+    };
 
-    const handleInputChangeImportancia1 = (e) => {
-        const { name, value } = e.target;
-        if (name === "primeiraLinhaImportancia1") {
-            setPrimeiraLinhaImportancia1(value);
-        } else if (name === "segundaLinhaImportancia1") {
-            setSegundaLinhaImportancia1(value);
-        } else if (name === "terceiraLinhaImportancia1") {
-            setTerceiraLinhaImportancia1(value);
-        } else if (name === "quartaLinhaImportancia1") {
-            setQuartaLinhaImportancia1(value);
-        } else if (name === "quintaLinhaImportancia1") {
-            setQuintaLinhaImportancia1(value);
-        } else if (name === "sextaLinhaImportancia1") {
-            setSextaLinhaImportancia1(value);
-        } else if (name === "setimaLinhaImportancia1") {
-            setSetimaLinhaImportancia1(value);
-        } else if (name === "oitavaLinhaImportancia1") {
-            setOitavaLinhaImportancia1(value);
-        } else if (name === "nonaLinhaImportancia1") {
-            setNonaLinhaImportancia1(value);
-        } else if (name === "decimaLinhaImportancia1") {
-            setDecimaLinhaImportancia1(value);
-        }
-
-        const novosDadosImportancia1 = {
-            primeiraLinhaImportancia1:
-                name === "primeiraLinhaImportancia1"
-                    ? value
-                    : primeiraLinhaImportancia1,
-            segundaLinhaImportancia1:
-                name === "segundaLinhaImportancia1"
-                    ? value
-                    : segundaLinhaImportancia1,
-            terceiraLinhaImportancia1:
-                name === "terceiraLinhaImportancia1"
-                    ? value
-                    : terceiraLinhaImportancia1,
-            quartaLinhaImportancia1:
-                name === "quartaLinhaImportancia1"
-                    ? value
-                    : quartaLinhaImportancia1,
-            quintaLinhaImportancia1:
-                name === "quintaLinhaImportancia1"
-                    ? value
-                    : quintaLinhaImportancia1,
-            sextaLinhaImportancia1:
-                name === "sextaLinhaImportancia1"
-                    ? value
-                    : sextaLinhaImportancia1,
-            setimaLinhaImportancia1:
-                name === "setimaLinhaImportancia1"
-                    ? value
-                    : setimaLinhaImportancia1,
-            oitavaLinhaImportancia1:
-                name === "oitavaLinhaImportancia1"
-                    ? value
-                    : oitavaLinhaImportancia1,
-            nonaLinhaImportancia1:
-                name === "nonaLinhaImportancia1"
-                    ? value
-                    : nonaLinhaImportancia1,
-            decimaLinhaImportancia1:
-                name === "decimaLinhaImportancia1"
-                    ? value
-                    : decimaLinhaImportancia1,
-        };
-        onImportancia1Change(novosDadosImportancia1);
-    };*/
+    let importancia;
+    if (selectedOption === 'opcao1') {
+        importancia = 'Pouco importante';
+    } else if (selectedOption === 'opcao2') {
+        importancia = 'Importante';
+    } else if (selectedOption === 'opcao3') {
+        importancia = 'Muito importante';
+    }  
    
     function fecharFormMaturidade1(e) {
         e.preventDefault();
@@ -156,7 +81,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={handleOption1Change}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
