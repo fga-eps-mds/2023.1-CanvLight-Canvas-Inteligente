@@ -3,21 +3,55 @@ import React, { useState } from "react";
 
 function Maturidade1({onImportancia1Change}){
     
-    const [selectedOption, setSelectedOption] = useState('');
-    // Essa funcao passa o valor escolhido da importancia 
-    const handleOption1Change = (event) => {
-        setSelectedOption(event.target.value);
+    const handleOptionChange = (event, selectedOptionSetter, importanciaSetter) => {
+        const selectedOption = event.target.value;
+      
+        let importancia;
+        if (selectedOption === 'opcao1') {
+          importancia = 'Pouco importante';
+        } else if (selectedOption === 'opcao2') {
+          importancia = 'Importante';
+        } else if (selectedOption === 'opcao3') {
+          importancia = 'Muito importante';
+        }
+      
+        selectedOptionSetter(selectedOption);
+        importanciaSetter(importancia);
     };
+    // Primeiro trecho de select
+    const [selectedOption1, setSelectedOption1] = useState('');
+    const [importancia1, setImportancia1] = useState(''); 
+    // Segundo trecho de select
+    const [selectedOption2, setSelectedOption2] = useState('');
+    const [importancia2, setImportancia2] = useState('');
+    // Terceiro trecho de select
+    const [selectedOption3, setSelectedOption3] = useState('');
+    const [importancia3, setImportancia3] = useState('');
+    // Quarto trecho de select
+    const [selectedOption4, setSelectedOption4] = useState('');
+    const [importancia4, setImportancia4] = useState('');
+    // Quinto trecho de select
+    const [selectedOption5, setSelectedOption5] = useState('');
+    const [importancia5, setImportancia5] = useState('');
+    // Sexto trecho de select
+    const [selectedOption6, setSelectedOption6] = useState('');
+    const [importancia6, setImportancia6] = useState('');
+    // Setimo trecho de select
+    const [selectedOption7, setSelectedOption7] = useState('');
+    const [importancia7, setImportancia7] = useState('');
+    // Oitavo trecho de select
+    const [selectedOption8, setSelectedOption8] = useState('');
+    const [importancia8, setImportancia8] = useState('');
+    // Nono trecho de select
+    const [selectedOption9, setSelectedOption9] = useState('');
+    const [importancia9, setImportancia9] = useState('');
+    // Decimo trecho de select
+    const [selectedOption10, setSelectedOption10] = useState('');
+    const [importancia10, setImportancia10] = useState('');
 
-    let importancia;
-    if (selectedOption === 'opcao1') {
-        importancia = 'Pouco importante';
-    } else if (selectedOption === 'opcao2') {
-        importancia = 'Importante';
-    } else if (selectedOption === 'opcao3') {
-        importancia = 'Muito importante';
-    }  
-   
+
+    
+    
     function fecharFormMaturidade1(e) {
         e.preventDefault();
         let modalOverlay = document.querySelector(".modal-overlay");
@@ -81,7 +115,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select" onChange={handleOption1Change}>
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption1, setImportancia1)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -105,7 +139,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption2, setImportancia2)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -130,7 +164,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption3, setImportancia3)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -156,7 +190,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption4, setImportancia4)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -181,7 +215,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption5, setImportancia5)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -209,7 +243,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption6, setImportancia6)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -234,7 +268,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption7, setImportancia7)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -261,7 +295,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption8, setImportancia8)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -286,7 +320,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption9, setImportancia9)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -313,7 +347,7 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <select className="import-select">
+                            <select className="import-select" onChange={(event) => handleOptionChange(event, setSelectedOption10, setImportancia10)}>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
