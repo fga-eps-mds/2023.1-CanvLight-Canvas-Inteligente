@@ -110,7 +110,7 @@
 }
 
 .button1 {
-  width: 25%;
+  width: 22%;
   height: 107%;
   margin: 10px;
   background-color: #72097e;
@@ -119,7 +119,7 @@
   border-radius: 20px;
   position: absolute;
   top: -3.5%;
-  margin-left: -53.5%;
+  margin-left: -58.5%;
   transform: translateX(-50%);
   cursor: pointer;
   font-size: 40px;
@@ -127,7 +127,7 @@
 }
 
 .button2 {
-  width: 26%;
+  width: 28%;
   height: 107%;
   margin: 10px;
   background-color: #fb8218;
@@ -136,7 +136,7 @@
   border-radius: 20px;
   position: absolute;
   top: -3.5%;
-  margin-left: 0.5%;
+  margin-left: 0.2%;
   transform: translateX(-50%);
   cursor: pointer;
   font-size: 40px;
