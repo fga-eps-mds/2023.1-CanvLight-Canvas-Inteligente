@@ -4,11 +4,11 @@ import Situacao2 from "../../images/situacao2.png";
 import Situacao3 from "../../images/situacao3.png";
 import Situacao4 from "../../images/situacao4.png";
 import Situacao5 from "../../images/situacao5.png";
-import Descricao1 from "./descricao1.json";
-import Descricao2 from "./descricao2.json";
-import Descricao3 from "./descricao3.json";
-import Descricao4 from "./descricao4.json";
-import Descricao5 from "./descricao5.json";
+import Descricao1 from "./Maturidade5Descricoes/descricao1.json";
+import Descricao2 from "./Maturidade5Descricoes/descricao2.json";
+import Descricao3 from "./Maturidade5Descricoes/descricao3.json";
+import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
+import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
 import React /*useState*/ from "react";
 
 function Maturidade5() {
