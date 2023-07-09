@@ -784,117 +784,122 @@ function GeradorPDF({
     doc.text( // Analise Custos Descricao
       `${descricao.primeiraLinhaDescricao}`, 
       34, 
-      57
+      58
     );
     doc.text(
       `${descricao.segundaLinhaDescricao}`, 
       34, 
-      75
+      76
     );
     doc.text(
       `${descricao.terceiraLinhaDescricao}`, 
       34, 
-      93
+      94
     );
 
     doc.text( // Analise Custos Preco
       `${analisePreco.primeiraLinhaAnalisePreco}`,
       87,
-      57
+      58
     );
     doc.text(
       `${analisePreco.segundaLinhaAnalisePreco}`,
       87,
-      75
+      76
     );
     doc.text(
       `${analisePreco.terceiraLinhaAnalisePreco}`,
       87,
-      93
+      94
     );
 
     doc.text( // Analise Custos Quantidade
       `${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`,
       141,
-      57
+      58
     );
     doc.text(
       `${analiseQuantidade.segundaLinhaAnaliseQuantidade}`,
       141,
-      75
+      76
     );
     doc.text(
       `${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`,
       141,
-      93
+      94
     );
     
     doc.text( // Analise Custos Custo
       `${analiseCusto.primeiraLinhaAnaliseCusto}`,
       195,
-      57
+      58
     );
     doc.text(
       `${analiseCusto.segundaLinhaAnaliseCusto}`,
       195,
-      75
+      76
     );
     doc.text(
       `${analiseCusto.terceiraLinhaAnaliseCusto}`,
       195,
-      93
+      94
+    );
+    doc.text(
+      `${analiseCusto.quartaLinhaAnaliseCusto}`,
+      195,
+      112
     );
 
     doc.text( // Analise de Preços e Diferenciais Diferencial
       `${analiseDiferencial.primeiraLinhaAnaliseDiferencial}`,
       87,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.segundaLinhaAnaliseDiferencial}`,
       141,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.terceiraLinhaAnaliseDiferencial}`,
       195,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.quartaLinhaAnaliseDiferencial}`,
       249,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.quintaLinhaAnaliseDiferencial}`,
       303,
-      191
+      192
     );
 
     doc.text( // Analise de Precos e Diferenciais Precos
       `${analisePreDif.primeiraLinhaAnalisePreDif}`,
       87,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.segundaLinhaAnalisePreDif}`,
       141,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.terceiraLinhaAnalisePreDif}`,
       195,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.quartaLinhaAnalisePreDif}`,
       249,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.quintaLinhaAnalisePreDif}`,
       303,
-      227
+      228
     );
 
     doc.addPage(); // Página Interação2
@@ -916,10 +921,10 @@ function GeradorPDF({
     doc.text(`${mvpOrientacoes.terceiraLinhaMvpOrientacoes}`, 295,88);
     doc.text(`${mvpOrientacoes.quartaLinhaMvpOrientacoes}`, 339,88);
 
-    doc.text(`${mvpResultado.primeiraLinhaMvpResultado}`, 207,116); // MVP Resultado
+    doc.text(`${mvpResultado.primeiraLinhaMvpResultado}`, 207,117); // MVP Resultado
     doc.text(`${mvpResultado.segundaLinhaMvpResultado}`, 251,117);
     doc.text(`${mvpResultado.terceiraLinhaMvpResultado}`, 295,117);
-    doc.text(`${mvpResultado.quartaLinhaMvpResultado}`, 339,116);
+    doc.text(`${mvpResultado.quartaLinhaMvpResultado}`, 339,117);
 
     doc.text(`${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 33,194); // Formacao do Preco Descricao
     doc.text(`${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 33,212);
