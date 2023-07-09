@@ -310,6 +310,7 @@ function Intuicao({
                   name="primeiraLinhaIntuTextos"
                   value={primeiraLinhaIntuTextos}
                   onChange={handleInputChangeIntuTextos}
+                  maxlength="53"
                 />
               </div>
 
@@ -319,6 +320,7 @@ function Intuicao({
                 name="segundaLinhaIntuTextos"
                 value={segundaLinhaIntuTextos}
                 onChange={handleInputChangeIntuTextos}
+                maxlength="66"
               />
             </form>
             <div className="clear"></div>
@@ -341,6 +343,7 @@ function Intuicao({
                     name="primeiraLinhaIntuTecnico"
                     value={primeiraLinhaIntuTecnico}
                     onChange={handleInputChangeIntuTecnico}
+                    maxlength="26"
                   />
                 </td>
                 <td className="espacoA1">
@@ -349,6 +352,7 @@ function Intuicao({
                     name="segundaLinhaIntuTecnico"
                     value={segundaLinhaIntuTecnico}
                     onChange={handleInputChangeIntuTecnico}
+                    maxlength="31"
                   />
                 </td>
               </tr>
@@ -361,6 +365,7 @@ function Intuicao({
                     name="primeiraLinhaIntuResiliente"
                     value={primeiraLinhaIntuResiliente}
                     onChange={handleInputChangeIntuResiliente}
+                    maxlength="26"
                   />
                 </td>
                 <td className="espacoA2">
@@ -369,6 +374,7 @@ function Intuicao({
                     name="segundaLinhaIntuResiliente"
                     value={segundaLinhaIntuResiliente}
                     onChange={handleInputChangeIntuResiliente}
+                    maxlength="31"
                   />
                 </td>
               </tr>
@@ -381,6 +387,7 @@ function Intuicao({
                     name="primeiraLinhaIntuEmocional"
                     value={primeiraLinhaIntuEmocional}
                     onChange={handleInputChangeIntuEmocional}
+                    maxlength="26"
                   />
                 </td>
                 <td className="espacoA3">
@@ -389,6 +396,7 @@ function Intuicao({
                     name="segundaLinhaIntuEmocional"
                     value={segundaLinhaIntuEmocional}
                     onChange={handleInputChangeIntuEmocional}
+                    maxlength="31"
                   />
                 </td>
               </tr>
@@ -401,6 +409,7 @@ function Intuicao({
                     name="primeiraLinhaIntuMercadologico"
                     value={primeiraLinhaIntuMercadologico}
                     onChange={handleInputChangeIntuMercadologico}
+                    maxlength="26"
                   />
                 </td>
                 <td className="espacoA4">
@@ -409,6 +418,7 @@ function Intuicao({
                     name="segundaLinhaIntuMercadologico"
                     value={segundaLinhaIntuMercadologico}
                     onChange={handleInputChangeIntuMercadologico}
+                    maxlength="31"
                   />
                 </td>
               </tr>
@@ -421,6 +431,7 @@ function Intuicao({
                     name="primeiraLinhaIntuIntegrador"
                     value={primeiraLinhaIntuIntegrador}
                     onChange={handleInputChangeIntuIntegrador}
+                    maxlength="26"
                   />
                 </td>
 
@@ -431,6 +442,7 @@ function Intuicao({
                     name="segundaLinhaIntuIntegrador"
                     value={segundaLinhaIntuIntegrador}
                     onChange={handleInputChangeIntuIntegrador}
+                    maxlength="31"
                   />
                 </td>
               </tr>
@@ -452,6 +464,7 @@ function Intuicao({
               name="terceiraLinhaIntuTextos"
               value={terceiraLinhaIntuTextos}
               onChange={handleInputChangeIntuTextos}
+              maxlength="79"
             />
           </div>
 
@@ -477,6 +490,7 @@ function Intuicao({
                     name="primeiraLinhaIntuQuatroP"
                     value={primeiraLinhaIntuQuatroP}
                     onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
                   />
                 </td>
                 <td>
@@ -486,6 +500,7 @@ function Intuicao({
                     name="segundaLinhaIntuQuatroP"
                     value={segundaLinhaIntuQuatroP}
                     onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
                   />
                 </td>
               </tr>
@@ -498,6 +513,7 @@ function Intuicao({
                     name="terceiraLinhaIntuQuatroP"
                     value={terceiraLinhaIntuQuatroP}
                     onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
                   />
                 </td>
                 <td>
@@ -507,6 +523,7 @@ function Intuicao({
                     name="quartaLinhaIntuQuatroP"
                     value={quartaLinhaIntuQuatroP}
                     onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
                   />
                 </td>
               </tr>
@@ -535,6 +552,7 @@ function Intuicao({
                     name="primeiraLinhaSintesePotencialidades"
                     value={primeiraLinhaSintesePotencialidades}
                     onChange={handleInputChangeSintesePotencialidades}
+                    maxlength="25"
                   />
                 </td>
                 <td>
@@ -543,6 +561,7 @@ function Intuicao({
                     name="primeiraLinhaSinteseResultados"
                     value={primeiraLinhaSinteseResultados}
                     onChange={handleInputChangeSinteseResultados}
+                    maxlength="25"
                   />
                 </td>
               </tr>
@@ -554,6 +573,7 @@ function Intuicao({
                     name="segundaLinhaSintesePotencialidades"
                     value={segundaLinhaSintesePotencialidades}
                     onChange={handleInputChangeSintesePotencialidades}
+                    maxlength="25"
                   />
                 </td>
                 <td>
@@ -562,6 +582,7 @@ function Intuicao({
                     name="segundaLinhaSinteseResultados"
                     value={segundaLinhaSinteseResultados}
                     onChange={handleInputChangeSinteseResultados}
+                    maxlength="25"
                   />
                 </td>
               </tr>
@@ -582,6 +603,7 @@ function Intuicao({
                     name="terceiraLinhaSintesePotencialidades"
                     value={terceiraLinhaSintesePotencialidades}
                     onChange={handleInputChangeSintesePotencialidades}
+                    maxlength="25"
                   />
                 </td>
                 <td className="terceiro-canto">
@@ -591,6 +613,7 @@ function Intuicao({
                     name="terceiraLinhaSinteseResultados"
                     value={terceiraLinhaSinteseResultados}
                     onChange={handleInputChangeSinteseResultados}
+                    maxlength="25"
                   />
                 </td>
               </tr>

@@ -72,7 +72,6 @@ function GeradorPDF({
   canaisObjetivo,
   canaisMetrica,
   inteQuatroP,
-  importancia1,
 }) {
   function gerarPDF() {
     const doc = new jsPDF({
@@ -89,92 +88,92 @@ function GeradorPDF({
 
     doc.text( //Projeto
       `${intuTextos.primeiraLinhaIntuTextos}`, 
-      65, 
-      30
+      60, 
+      29
     );
 
     doc.text( //equipe
       `${intuTextos.segundaLinhaIntuTextos}`, 
-      33, 
+      27, 
       57
     );
 
     doc.text( //ikigai
       `${intuTextos.terceiraLinhaIntuTextos}`, 
-      33, 
+      27, 
       233
     );
 
     doc.text( //tecnico
       `${intuTecnico.primeiraLinhaIntuTecnico}`, 
-      85, 
+      81, 
       120
     );
 
     doc.text( //tecnico
       `${intuTecnico.segundaLinhaIntuTecnico}`, 
-      155, 
+      151, 
       120
     );
 
     doc.text( //resiliente
       `${intuResiliente.primeiraLinhaIntuResiliente}`, 
-      85, 
+      81, 
       137
     );
 
     doc.text( //resiliente
       `${intuResiliente.segundaLinhaIntuResiliente}`, 
-      155, 
+      153, 
       137
     );
 
     doc.text( //emocional
       `${intuEmocional.primeiraLinhaIntuEmocional}`, 
-      85, 
-      154
+      81, 
+      153
     );
 
     doc.text( //emocional
       `${intuEmocional.segundaLinhaIntuEmocional}`, 
-      155, 
+      153, 
       154
     );
 
     doc.text( //mercadologia
       `${intuMercadologico.primeiraLinhaIntuMercadologico}`, 
-      85, 
+      81, 
       171
     );
 
     doc.text( //mercadologia
       `${intuMercadologico.segundaLinhaIntuMercadologico}`, 
-      155, 
+      153, 
       171
     );
 
     doc.text( //integrador
       `${intuIntegrador.primeiraLinhaIntuIntegrador}`, 
-      85, 
+      81, 
       188
     );
 
     doc.text( //integrador
       `${intuIntegrador.segundaLinhaIntuIntegrador}`, 
-      155, 
+      153, 
       188
     );
 
     doc.text( //p1
       `${intuQuatroP.primeiraLinhaIntuQuatroP}`, 
       270, 
-      60
+      58
     );
 
     doc.text( //p2
       `${intuQuatroP.segundaLinhaIntuQuatroP}`, 
-      340, 
-      60
+      341, 
+      58
     );
 
     doc.text( //p3
@@ -185,44 +184,44 @@ function GeradorPDF({
 
     doc.text( //p4
       `${intuQuatroP.quartaLinhaIntuQuatroP}`, 
-      340, 
+      341, 
       93
     );
 
     doc.text( //potencialidade
       `${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 
-      270, 
-      170
+      259, 
+      168
     );
 
     doc.text( //potencialidade
       `${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 
-      270, 
-      186
+      259, 
+      184
     );
 
     doc.text( //potencialidade
       `${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 
-      270, 
-      202
+      259, 
+      200
     );
 
     doc.text( //resultados
       `${sinteseResultados.primeiraLinhaSinteseResultados}`, 
-      340, 
-      170
+      328, 
+      168
     );
 
     doc.text( //resultados
       `${sinteseResultados.segundaLinhaSinteseResultados}`, 
-      340, 
-      186
+      328, 
+      184
     );
 
     doc.text( //resultados
       `${sinteseResultados.terceiraLinhaSinteseResultados}`, 
-      340, 
-      202
+      328, 
+      200
     );
 
 
@@ -359,19 +358,19 @@ function GeradorPDF({
     // tabela dois
 
     doc.text( //Parceiro
-      `${empresa.primeiraLinhaEmpresa}`, 
+      `${parceiro.primeiraLinhaParceiro}`, 
       38, 
       135
     );
 
     doc.text( //Parceiro
-      `${empresa.segundaLinhaEmpresa}`, 
+      `${parceiro.segundaLinhaParceiro}`, 
       38, 
       150
     );
 
     doc.text( //Parceiro
-      `${empresa.terceiraLinhaEmpresa}`, 
+      `${parceiro.terceiraLinhaParceiro}`, 
       38, 
       165
     );
