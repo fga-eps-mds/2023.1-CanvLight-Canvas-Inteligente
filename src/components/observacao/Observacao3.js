@@ -195,17 +195,17 @@ function Observacao3({onFerramentasObser3Change, onIndicadoParaChange, onOrienta
               <th className="segundo-canto">Resultado esperado</th>
             </tr>
             <tr>
-              <td><input type="text" name='primeiraLinhaFerramentaObser3' value={primeiraLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
-              <td><input type="text" name='primeiraLinhaIndicadoPara' value={primeiraLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td> 
-              <td><input type="text" name='primeiraLinhaOrientacaoUso' value={primeiraLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
-              <td><input type="text" name='primeiraLinhaResultadoEsparado' value={primeiraLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado}/></td>
+              <td><input type="text" name='primeiraLinhaFerramentaObser3' value={primeiraLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3} maxLength={26}/></td>
+              <td><input type="text" name='primeiraLinhaIndicadoPara' value={primeiraLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara} maxLength={26}/></td> 
+              <td><input type="text" name='primeiraLinhaOrientacaoUso' value={primeiraLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso} maxLength={26}/></td>
+              <td><input type="text" name='primeiraLinhaResultadoEsparado' value={primeiraLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado} maxLength={26}/></td>
             </tr>
 
             <tr>
-              <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3' value={segundaLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3}/></td>
-              <td><input type="text" name='segundaLinhaIndicadoPara' value={segundaLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara}/></td>
-              <td><input type="text" name='segundaLinhaOrientacaoUso' value={segundaLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso}/></td>
-              <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparado' value={segundaLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado}/></td>
+              <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3' value={segundaLinhaFerramentaObser3} onChange={handleInputChangeFerramentaObser3} maxLength={26}/></td>
+              <td><input type="text" name='segundaLinhaIndicadoPara' value={segundaLinhaIndicadoPara} onChange={handleInputChangeIndicadoPara} maxLength={26}/></td>
+              <td><input type="text" name='segundaLinhaOrientacaoUso' value={segundaLinhaOrientacaoUso} onChange={handleInputChangeOrientacaoUso} maxLength={26}/></td>
+              <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparado' value={segundaLinhaResultadoEsparado} onChange={handleInputChangeResultadoEsparado} maxLength={26}/></td>
             </tr>
           </table>
         </div>
@@ -224,17 +224,17 @@ function Observacao3({onFerramentasObser3Change, onIndicadoParaChange, onOrienta
                 </tr>
 
                 <tr>
-                  <td><input type="text" name='primeiraLinhaFerramentaObser3P' value={primeiraLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}/></td>
-                  <td><input type="text" name='primeiraLinhaIndicadoParaP' value={primeiraLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP}/></td> 
-                  <td><input type="text" name='primeiraLinhaOrientacaoUsoP' value={primeiraLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP}/></td>
-                  <td><input type="text" name='primeiraLinhaResultadoEsparadoP' value={primeiraLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP}/></td>
+                  <td><input type="text" name='primeiraLinhaFerramentaObser3P' value={primeiraLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}maxLength={26}/></td>
+                  <td><input type="text" name='primeiraLinhaIndicadoParaP' value={primeiraLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP}maxLength={26}/></td> 
+                  <td><input type="text" name='primeiraLinhaOrientacaoUsoP' value={primeiraLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP}maxLength={26}/></td>
+                  <td><input type="text" name='primeiraLinhaResultadoEsparadoP' value={primeiraLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP}maxLength={26}/></td>
                 </tr>
 
                 <tr>
-                  <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3P' value={segundaLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}/></td>
-                  <td><input type="text" name='segundaLinhaIndicadoParaP' value={segundaLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP}/></td>
-                  <td><input type="text" name='segundaLinhaOrientacaoUsoP' value={segundaLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP}/></td>
-                  <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparadoP' value={segundaLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP}/></td>
+                  <td className="quarto-canto"><input className="quarto-canto" type="text" name='segundaLinhaFerramentaObser3P' value={segundaLinhaFerramentaObser3P} onChange={handleInputChangeFerramentaObser3P}maxLength={26}/></td>
+                  <td><input type="text" name='segundaLinhaIndicadoParaP' value={segundaLinhaIndicadoParaP} onChange={handleInputChangeIndicadoParaP} maxLength={26}/></td>
+                  <td><input type="text" name='segundaLinhaOrientacaoUsoP' value={segundaLinhaOrientacaoUsoP} onChange={handleInputChangeOrientacaoUsoP} maxLength={26}/></td>
+                  <td className="terceiro-canto"><input className="terceiro-canto" type="text" name='segundaLinhaResultadoEsparadoP' value={segundaLinhaResultadoEsparadoP} onChange={handleInputChangeResultadoEsparadoP} maxLength={26}/></td>
                 </tr>
               </table>
         </div>

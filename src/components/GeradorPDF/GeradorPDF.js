@@ -680,98 +680,98 @@ function GeradorPDF({
 
     doc.text( //Ferramentas
       `${ferramentasObser3.primeiraLinhaFerramentaObser3}`, 
-      50, 
-      70
+      40, 
+      65
     );
 
     doc.text( //Ferramentas
       `${ferramentasObser3.segundaLinhaFerramentaObser3}`, 
-      50, 
-      95
+      40, 
+      87
     );
 
     doc.text( //indicado para
       `${indicadoPara.primeiraLinhaIndicadoPara}`, 
-      120, 
-      70
+      112, 
+      65
     );
 
     doc.text( //indicado para
       `${indicadoPara.segundaLinhaIndicadoPara}`, 
-      120, 
-      95
+      112, 
+      87
     );
 
     doc.text( //orientação uso
       `${orientacaoUso.primeiraLinhaOrientacaoUso}`, 
-      190, 
-      70
+      184, 
+      65
     );
 
     doc.text( //orientação uso
       `${orientacaoUso.segundaLinhaOrientacaoUso}`, 
-      190, 
-      95
+      184, 
+      87
     );
 
     doc.text( //resultado esperado
       `${resultadoEsperado.primeiraLinhaResultadoEsparado}`, 
-      260, 
-      70
+      257, 
+      65
     );
 
     doc.text( //resutado esperado
       `${resultadoEsperado.segundaLinhaResultadoEsparado}`, 
-      260, 
-      95
+      257, 
+      87
     );
 
     doc.text( //Ferramentas
       `${ferramentasObser3P.primeiraLinhaFerramentaObser3P}`, 
-      105, 
-      195
+      100, 
+      191
     );
 
     doc.text( //Ferramentas
       `${ferramentasObser3P.segundaLinhaFerramentaObser3P}`, 
-      105, 
-      220
+      100, 
+      215
     );
 
     doc.text( //indicado para
       `${indicadoParaP.primeiraLinhaIndicadoParaP}`, 
-      175, 
-      195
+      173, 
+      191
     );
 
     doc.text( //indicado para
       `${indicadoParaP.segundaLinhaIndicadoParaP}`, 
-      175, 
-      220
+      172, 
+      215
     );
 
     doc.text( //orientação uso
       `${orientacaoUsoP.primeiraLinhaOrientacaoUsoP}`, 
       245, 
-      195
+      191
     );
 
     doc.text( //orientação uso
       `${orientacaoUsoP.segundaLinhaOrientacaoUsoP}`, 
       245, 
-      220
+      215
     );
 
     doc.text( //resultado esperado
       `${resultadoEsperadoP.primeiraLinhaResultadoEsparadoP}`, 
-      315, 
-      195
+      316, 
+      191
     );
 
     doc.text( //resutado esperado
       `${resultadoEsperadoP.segundaLinhaResultadoEsparadoP}`, 
-      315, 
-      220
+      316, 
+      215
     );
 
 
