@@ -527,41 +527,41 @@ function GeradorPDF({
     doc.text( //ps
       `${psObser.primeiroP}`, 
       30, 
-      35
+      31
     );
 
     doc.text( //ps
       `${psObser.segundoP}`, 
-      100, 
-      35
+      102, 
+      31
     );
 
     doc.text( //ps
       `${psObser.terceiroP}`, 
       30, 
-      68
+      66
     );
 
     doc.text( //ps
       `${psObser.quartoP}`, 
-      105, 
-      68
+      102, 
+      66
     );
 
     doc.text( //alinhamentos
       `${aproximados.alinhadosObser2}`, 
-      130, 
-      147
+      129, 
+      148
     );
 
     doc.text( //proximos
-      `${aproximados.proximos}`, 
-      340, 
-      147
+      `${aproximados.concorrenteObser2}`, 
+      341, 
+      148
     );
 
     doc.text( //concorete
-      `${aproximados.concorrenteObser2}`, 
+      `${aproximados.proximos}`, 
       115, 
       163
     );
@@ -581,7 +581,7 @@ function GeradorPDF({
     doc.text( //ferramentas
       `${ferramentas.terceiraLinhaFerramentas}`, 
       55, 
-      254
+      256
     );
 
     doc.text( //requisitos
@@ -599,7 +599,7 @@ function GeradorPDF({
     doc.text( //requisitos
       `${requisitos.terceiraLinhaRequisitos}`, 
       110, 
-      254
+      256
     );
 
     doc.text( //Oportunidades
@@ -617,7 +617,7 @@ function GeradorPDF({
     doc.text( //oportunidades
       `${opotunidades.terceiraLinhaOportunidades}`, 
       165, 
-      254
+      256
     );
 
     doc.text( //indicado
@@ -635,7 +635,7 @@ function GeradorPDF({
     doc.text( //indicado
       `${indicado.terceiraLinhaIndicado}`, 
       220, 
-      254
+      256
     );
 
     doc.text( //orientacao
@@ -653,7 +653,7 @@ function GeradorPDF({
     doc.text( //orientacao
       `${orientacao.terceiraLinhaOrientacao}`, 
       275, 
-      254
+      256
     );
 
     doc.text( //resultado
@@ -671,7 +671,7 @@ function GeradorPDF({
     doc.text( //orientacao
       `${resultado.terceiraLinhaResultado}`, 
       330, 
-      254
+      256
     );
 
     doc.addPage(); //Obervação3

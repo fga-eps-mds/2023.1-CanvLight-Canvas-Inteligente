@@ -189,9 +189,9 @@ function Observacao2({
     }
 
     const novosDadosAproximados = {
-      setAlinhadosObser2: name === "alinhadosObser2" ? value : alinhadosObser2,
-      setProximos: name === "proximos" ? value : proximos,
-      setConcorrenteOser2:
+      alinhadosObser2: name === "alinhadosObser2" ? value : alinhadosObser2,
+      proximos: name === "proximos" ? value : proximos,
+      concorrenteObser2:
         name === "concorrenteObser2" ? value : concorrenteObser2,
     };
 
@@ -283,6 +283,7 @@ function Observacao2({
                   name="primeiroP"
                   value={primeiroP}
                   onChange={handleInputChangePsObser}
+                  maxLength={13}
                 />
               </td>
               <td>
@@ -292,6 +293,7 @@ function Observacao2({
                   name="segundoP"
                   value={segundoP}
                   onChange={handleInputChangePsObser}
+                  maxLength={13}
                 />
               </td>
             </tr>
@@ -304,6 +306,7 @@ function Observacao2({
                   name="terceiroP"
                   value={terceiroP}
                   onChange={handleInputChangePsObser}
+                  maxLength={13}
                 />
               </td>
               <td>
@@ -313,6 +316,7 @@ function Observacao2({
                   name="quartoP"
                   value={quartoP}
                   onChange={handleInputChangePsObser}
+                  maxLength={13}
                 />
               </td>
             </tr>
@@ -330,6 +334,7 @@ function Observacao2({
               name="alinhadosObser2"
               value={alinhadosObser2}
               onChange={handleInputChangeAproximados}
+              maxLength={31}
             />{" "}
           </div>
 
@@ -340,6 +345,7 @@ function Observacao2({
               name="proximos"
               value={proximos}
               onChange={handleInputChangeAproximados}
+              maxLength={31}
             />{" "}
           </div>
 
@@ -350,6 +356,7 @@ function Observacao2({
               name="concorrenteObser2"
               value={concorrenteObser2}
               onChange={handleInputChangeAproximados}
+              maxLength={25}
             />
           </div>
         </div>
@@ -379,6 +386,7 @@ function Observacao2({
                   name="primeiraLinhaFerramentas"
                   value={primeiraLinhaFerramentas}
                   onChange={handleInputChangeFerramentas}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -387,6 +395,7 @@ function Observacao2({
                   name="primeiraLinhaRequisitos"
                   value={primeiraLinhaRequisitos}
                   onChange={handleInputChangeRequisitos}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -395,6 +404,7 @@ function Observacao2({
                   name="primeiraLinhaOportunidades"
                   value={primeiraLinhaOportunidades}
                   onChange={handleInputChangeOportunidades}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -403,6 +413,7 @@ function Observacao2({
                   name="primeiraLinhaIndicado"
                   value={primeiraLinhaIndicado}
                   onChange={handleInputChangeIndicado}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -411,6 +422,7 @@ function Observacao2({
                   name="primeiraLinhaOrientacao"
                   value={primeiraLinhaOrientacao}
                   onChange={handleInputChangeOrientacao}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -419,6 +431,7 @@ function Observacao2({
                   name="primeiraLinhaResultado"
                   value={primeiraLinhaResultado}
                   onChange={handleInputChangeResultado}
+                  maxLength={19}
                 />
               </td>
             </tr>
@@ -430,6 +443,7 @@ function Observacao2({
                   name="segundaLinhaFerramentas"
                   value={segundaLinhaFerramentas}
                   onChange={handleInputChangeFerramentas}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -438,6 +452,7 @@ function Observacao2({
                   name="segundaLinhaRequisitos"
                   value={segundaLinhaRequisitos}
                   onChange={handleInputChangeRequisitos}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -446,14 +461,16 @@ function Observacao2({
                   name="segundaLinhaOportunidades"
                   value={segundaLinhaOportunidades}
                   onChange={handleInputChangeOportunidades}
+                  maxLength={19}
                 />
               </td>
               <td>
                 <input
                   type="text"
-                  name="segundaLinhaindicado"
+                  name="segundaLinhaIndicado"
                   value={segundaLinhaIndicado}
                   onChange={handleInputChangeIndicado}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -462,6 +479,7 @@ function Observacao2({
                   name="segundaLinhaOrientacao"
                   value={segundaLinhaOrientacao}
                   onChange={handleInputChangeOrientacao}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -470,6 +488,7 @@ function Observacao2({
                   name="segundaLinhaResultado"
                   value={segundaLinhaResultado}
                   onChange={handleInputChangeResultado}
+                  maxLength={19}
                 />
               </td>
             </tr>
@@ -482,6 +501,7 @@ function Observacao2({
                   name="terceiraLinhaFerramentas"
                   value={terceiraLinhaFerramentas}
                   onChange={handleInputChangeFerramentas}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -490,6 +510,7 @@ function Observacao2({
                   name="terceiraLinhaRequisitos"
                   value={terceiraLinhaRequisitos}
                   onChange={handleInputChangeRequisitos}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -498,14 +519,16 @@ function Observacao2({
                   name="terceiraLinhaOportunidades"
                   value={terceiraLinhaOportunidades}
                   onChange={handleInputChangeOportunidades}
+                  maxLength={19}
                 />
               </td>
               <td>
                 <input
                   type="text"
-                  name="terceiraLinhaindicado"
+                  name="terceiraLinhaIndicado"
                   value={terceiraLinhaIndicado}
                   onChange={handleInputChangeIndicado}
+                  maxLength={19}
                 />
               </td>
               <td>
@@ -514,6 +537,7 @@ function Observacao2({
                   name="terceiraLinhaOrientacao"
                   value={terceiraLinhaOrientacao}
                   onChange={handleInputChangeOrientacao}
+                  maxLength={19}
                 />
               </td>
               <td className="terceiro-canto">
@@ -523,6 +547,7 @@ function Observacao2({
                   name="terceiraLinhaResultado"
                   value={terceiraLinhaResultado}
                   onChange={handleInputChangeResultado}
+                  maxLength={19}
                 />
               </td>
             </tr>
