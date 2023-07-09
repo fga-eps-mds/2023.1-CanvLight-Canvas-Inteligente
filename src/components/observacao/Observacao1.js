@@ -491,6 +491,7 @@ function Observacao1({
                   name="primeiraLinhaEmpresa"
                   value={primeiraLinhaEmpresa}
                   onChange={handleInputChangeEmpresa}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -499,6 +500,7 @@ function Observacao1({
                   name="primeiraLinhaDiferenca"
                   value={primeiraLinhaDiferenca}
                   onChange={handleInputChangeDiferenca}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -507,6 +509,7 @@ function Observacao1({
                   name="primeiraLinhaPorte"
                   value={primeiraLinhaPorte}
                   onChange={handleInputChangePorte}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -515,6 +518,7 @@ function Observacao1({
                   name="primeiraLinhaConcorrencia"
                   value={primeiraLinhaConcorrencia}
                   onChange={handleInputChangeConcorrencia}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -523,6 +527,7 @@ function Observacao1({
                   name="primeiraLinhaLocalizacao"
                   value={primeiraLinhaLocalizacao}
                   onChange={handleInputChangeLocalizacao}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -531,6 +536,7 @@ function Observacao1({
                   name="primeiraLinhaImitado"
                   value={primeiraLinhaImitado}
                   onChange={handleInputChangeImitado}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -539,6 +545,7 @@ function Observacao1({
                   name="primeiraLinhaMelhorar"
                   value={primeiraLinhaMelhorar}
                   onChange={handleInputChangeMelhorar}
+                  maxLength={16}
                 />
               </td>
             </tr>
@@ -550,6 +557,7 @@ function Observacao1({
                   name="segundaLinhaEmpresa"
                   value={segundaLinhaEmpresa}
                   onChange={handleInputChangeEmpresa}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -558,6 +566,7 @@ function Observacao1({
                   name="segundaLinhaDiferenca"
                   value={segundaLinhaDiferenca}
                   onChange={handleInputChangeDiferenca}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -566,6 +575,7 @@ function Observacao1({
                   name="segundaLinhaPorte"
                   value={segundaLinhaPorte}
                   onChange={handleInputChangePorte}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -574,6 +584,7 @@ function Observacao1({
                   name="segundaLinhaConcorrencia"
                   value={segundaLinhaConcorrencia}
                   onChange={handleInputChangeConcorrencia}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -582,6 +593,7 @@ function Observacao1({
                   name="segundaLinhaLocalizacao"
                   value={segundaLinhaLocalizacao}
                   onChange={handleInputChangeLocalizacao}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -590,14 +602,16 @@ function Observacao1({
                   name="segundaLinhaImitado"
                   value={segundaLinhaImitado}
                   onChange={handleInputChangeImitado}
+                  maxLength={16}
                 />
               </td>
               <td>
                 <input
                   type="text"
-                  name="primeiraLinhaMelhorar"
+                  name="segundaLinhaMelhorar"
                   value={segundaLinhaMelhorar}
                   onChange={handleInputChangeMelhorar}
+                  maxLength={16}
                 />
               </td>
             </tr>
@@ -610,6 +624,7 @@ function Observacao1({
                   name="terceiraLinhaEmpresa"
                   value={terceiraLinhaEmpresa}
                   onChange={handleInputChangeEmpresa}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -618,6 +633,7 @@ function Observacao1({
                   name="terceiraLinhaDiferenca"
                   value={terceiraLinhaDiferenca}
                   onChange={handleInputChangeDiferenca}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -626,6 +642,7 @@ function Observacao1({
                   name="terceiraLinhaPorte"
                   value={terceiraLinhaPorte}
                   onChange={handleInputChangePorte}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -634,6 +651,7 @@ function Observacao1({
                   name="terceiraLinhaConcorrencia"
                   value={terceiraLinhaConcorrencia}
                   onChange={handleInputChangeConcorrencia}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -642,6 +660,7 @@ function Observacao1({
                   name="terceiraLinhaLocalizacao"
                   value={terceiraLinhaLocalizacao}
                   onChange={handleInputChangeLocalizacao}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -650,6 +669,7 @@ function Observacao1({
                   name="terceiraLinhaImitado"
                   value={terceiraLinhaImitado}
                   onChange={handleInputChangeImitado}
+                  maxLength={16}
                 />
               </td>
               <td className="terceiro-canto">
@@ -659,6 +679,7 @@ function Observacao1({
                   name="terceiraLinhaMelhorar"
                   value={terceiraLinhaMelhorar}
                   onChange={handleInputChangeMelhorar}
+                  maxLength={16}
                 />
               </td>
             </tr>
@@ -689,14 +710,16 @@ function Observacao1({
                   name="primeiraLinhaParceiro"
                   value={primeiraLinhaParceiro}
                   onChange={handleInputChangeParceiro}
+                  maxLength={16}
                 />
               </td>
               <td>
                 <input
                   type="text"
-                  name="primeiraLinhaIsumos"
+                  name="primeiraLinhaInsumos"
                   value={primeiraLinhaInsumos}
                   onChange={handleInputChangeInsumos}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -705,6 +728,7 @@ function Observacao1({
                   name="primeiraLinhaBeneficios"
                   value={primeiraLinhaBeneficios}
                   onChange={handleInputChangeBeneficios}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -713,6 +737,7 @@ function Observacao1({
                   name="primeiraLinhaFornecer"
                   value={primeiraLinhaFornecer}
                   onChange={handleInputChangeFornecer}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -721,6 +746,7 @@ function Observacao1({
                   name="primeiraLinhaRisco"
                   value={primeiraLinhaRisco}
                   onChange={handleInputChangeRisco}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -729,6 +755,7 @@ function Observacao1({
                   name="primeiraLinhaVerticalizar"
                   value={primeiraLinhaVerticalizar}
                   onChange={handleInputChangeVerticalizar}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -737,6 +764,7 @@ function Observacao1({
                   name="primeiraLinhaNota"
                   value={primeiraLinhaNota}
                   onChange={handleInputChangeNota}
+                  maxLength={16}
                 />
               </td>
             </tr>
@@ -748,6 +776,7 @@ function Observacao1({
                   name="segundaLinhaParceiro"
                   value={segundaLinhaParceiro}
                   onChange={handleInputChangeParceiro}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -756,6 +785,7 @@ function Observacao1({
                   name="segundaLinhaInsumos"
                   value={segundaLinhaInsumos}
                   onChange={handleInputChangeInsumos}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -764,6 +794,7 @@ function Observacao1({
                   name="segundaLinhaBeneficios"
                   value={segundaLinhaBeneficios}
                   onChange={handleInputChangeBeneficios}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -772,6 +803,7 @@ function Observacao1({
                   name="segundaLinhaFornecer"
                   value={segundaLinhaFornecer}
                   onChange={handleInputChangeFornecer}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -780,6 +812,7 @@ function Observacao1({
                   name="segundaLinhaRisco"
                   value={segundaLinhaRisco}
                   onChange={handleInputChangeRisco}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -788,6 +821,7 @@ function Observacao1({
                   name="segundaLinhaVerticalizar"
                   value={segundaLinhaVerticalizar}
                   onChange={handleInputChangeVerticalizar}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -796,6 +830,7 @@ function Observacao1({
                   name="segundaLinhaNota"
                   value={segundaLinhaNota}
                   onChange={handleInputChangeNota}
+                  maxLength={16}
                 />
               </td>
             </tr>
@@ -808,6 +843,7 @@ function Observacao1({
                   name="terceiraLinhaParceiro"
                   value={terceiraLinhaParceiro}
                   onChange={handleInputChangeParceiro}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -816,6 +852,7 @@ function Observacao1({
                   name="terceiraLinhaInsumos"
                   value={terceiraLinhaInsumos}
                   onChange={handleInputChangeInsumos}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -824,6 +861,7 @@ function Observacao1({
                   name="terceiraLinhaBeneficios"
                   value={terceiraLinhaBeneficios}
                   onChange={handleInputChangeBeneficios}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -832,6 +870,7 @@ function Observacao1({
                   name="terceiraLinhaFornecer"
                   value={terceiraLinhaFornecer}
                   onChange={handleInputChangeFornecer}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -840,6 +879,7 @@ function Observacao1({
                   name="terceiraLinhaRisco"
                   value={terceiraLinhaRisco}
                   onChange={handleInputChangeRisco}
+                  maxLength={16}
                 />
               </td>
               <td>
@@ -848,6 +888,7 @@ function Observacao1({
                   name="terceiraLinhaVerticalizar"
                   value={terceiraLinhaVerticalizar}
                   onChange={handleInputChangeVerticalizar}
+                  maxLength={16}
                 />
               </td>
               <td className="terceiro-canto">
@@ -857,6 +898,7 @@ function Observacao1({
                   name="terceiraLinhaNota"
                   value={terceiraLinhaNota}
                   onChange={handleInputChangeNota}
+                  maxLength={16}
                 />
               </td>
             </tr>
@@ -889,6 +931,7 @@ function Observacao1({
               name="primeiraLinhaPerfil2"
               value={primeiraLinhaPerfil2}
               onChange={handleInputChangePerfil2}
+              maxLength={36}
             />
 
             <div
@@ -901,6 +944,7 @@ function Observacao1({
               name="segundaLinhaPerfil2"
               value={segundaLinhaPerfil2}
               onChange={handleInputChangePerfil2}
+              maxLength={36}
             />
 
             <div
@@ -913,6 +957,7 @@ function Observacao1({
               name="terceiraLinhaPerfil2"
               value={terceiraLinhaPerfil2}
               onChange={handleInputChangePerfil2}
+              maxLength={36}
             />
           </div>
 
@@ -927,6 +972,7 @@ function Observacao1({
               name="primeiraLinhaPerfil1"
               value={primeiraLinhaPerfil1}
               onChange={handleInputChangePerfil1}
+              maxLength={36}
             />
 
             <div
@@ -938,6 +984,7 @@ function Observacao1({
               name="segundaLinhaPerfil1"
               value={segundaLinhaPerfil1}
               onChange={handleInputChangePerfil1}
+              maxLength={36}
             />
 
             <div
@@ -949,6 +996,7 @@ function Observacao1({
               name="terceiraLinhaPerfil1"
               value={terceiraLinhaPerfil1}
               onChange={handleInputChangePerfil1}
+              maxLength={36}
             />
           </div>
           <div className="clear"></div>

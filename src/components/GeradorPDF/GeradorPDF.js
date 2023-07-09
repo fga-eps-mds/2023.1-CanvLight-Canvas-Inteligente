@@ -231,26 +231,26 @@ function GeradorPDF({
     //tabela1
     doc.text( //empresa
       `${empresa.primeiraLinhaEmpresa}`, 
-      38, 
-      55
+      37, 
+      53
     );
 
     doc.text( //empresa
       `${empresa.segundaLinhaEmpresa}`, 
-      38, 
+      37, 
       70
     );
 
     doc.text( //empresa
       `${empresa.terceiraLinhaEmpresa}`, 
-      38, 
+      37, 
       85
     );
 
     doc.text( //diferenca
       `${diferenca.primeiraLinhaDiferenca}`, 
       88, 
-      55
+      53
     );
 
     doc.text( //diferenca
@@ -268,7 +268,7 @@ function GeradorPDF({
     doc.text( //porte
       `${porte.primeiraLinhaPorte}`, 
       137, 
-      55
+      53
     );
 
     doc.text( //porte
@@ -286,7 +286,7 @@ function GeradorPDF({
     doc.text( //concorrencia
       `${concorrencia.primeiraLinhaConcorrencia}`, 
       187, 
-      55
+      53
     );
 
     doc.text( //concorrencia
@@ -304,7 +304,7 @@ function GeradorPDF({
     doc.text( //localizacao
       `${localizacao.primeiraLinhaLocalizacao}`, 
       238, 
-      55
+      53
     );
 
     doc.text( //localizacao
@@ -322,7 +322,7 @@ function GeradorPDF({
     doc.text( //imitado
       `${imitado.primeiraLinhaImitado}`, 
       289, 
-      55
+      53
     );
 
     doc.text( //imitado
@@ -340,7 +340,7 @@ function GeradorPDF({
     doc.text( //melhorado
       `${melhorar.primeiraLinhaMelhorar}`, 
       340, 
-      55
+      53
     );
 
     doc.text( //melhorar
@@ -359,19 +359,19 @@ function GeradorPDF({
 
     doc.text( //Parceiro
       `${parceiro.primeiraLinhaParceiro}`, 
-      38, 
+      37, 
       135
     );
 
     doc.text( //Parceiro
       `${parceiro.segundaLinhaParceiro}`, 
-      38, 
+      37, 
       150
     );
 
     doc.text( //Parceiro
       `${parceiro.terceiraLinhaParceiro}`, 
-      38, 
+      37, 
       165
     );
 
@@ -448,7 +448,7 @@ function GeradorPDF({
     );
 
     doc.text( //verticalizar
-      `${verticalizar.primeiraLinhVerticalizar}`, 
+      `${verticalizar.primeiraLinhaVerticalizar}`, 
       289, 
       135
     );
@@ -460,7 +460,7 @@ function GeradorPDF({
     );
 
     doc.text( //verticalizar
-      `${verticalizar.terceiraVerticalizar}`, 
+      `${verticalizar.terceiraLinhaVerticalizar}`, 
       289, 
       165
     );
@@ -485,23 +485,23 @@ function GeradorPDF({
 
     doc.text( //peefil1
       `${perfil1.primeiraLinhaPerfil1}`, 
-      95, 
+      92, 
       230
     );
 
     doc.text( //perfil1
       `${perfil1.segundaLinhaPerfil1}`, 
-      95, 
+      92, 
       246
     );
 
     doc.text( //perfil1
       `${perfil1.terceiraLinhaPerfil1}`, 
-      95, 
+      92, 
       262
     );
 
-    doc.text( //peefil2
+    doc.text( //perfil2
       `${perfil2.primeiraLinhaPerfil2}`, 
       268, 
       230
