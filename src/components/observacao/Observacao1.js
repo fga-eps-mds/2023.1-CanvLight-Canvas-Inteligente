@@ -27,6 +27,7 @@ function Observacao1({
 
     modal.style.display = "none";
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
 
   function fecharFormIntuicao(e) {
@@ -43,6 +44,7 @@ function Observacao1({
     medel.style.display = "none";
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
 
   const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
