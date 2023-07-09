@@ -219,6 +219,9 @@
 }
 
 @media screen and (max-width: 568px) {
+  body {
+    overflow: hidden;
+  }
   .benchmarking {
     height: 105vh;
   }
@@ -246,13 +249,12 @@
     margin-top: 2vh;
   }
   .concorrente table {
-    margin-left: -3.5vw;
+    margin-left: -4vw;
     width: 80vw;
   }
   .benchmarking table th {
-    padding: 5px;
-    font-size: 10px;
-    padding: 0;
+    padding: 2px;
+    font-size: 9px;
   }
   .benchmarking table td {
     width: 1vw;
@@ -262,11 +264,12 @@
     height: 100%;
   }
   .parceiro table {
-    margin-left: -1vw;
-    width: 80vw;
+    margin-left: -4vw;
+    width: 90vw;
   }
   .parceiro table th {
-    font-size: 12px;
+    font-size: 10px;
+    padding: 5px;
   }
   .duvida_benchmarking {
     margin-left: 22vw;
@@ -276,6 +279,10 @@
     margin-top: 1vh;
     font-size: 12px;
   }
+  input[data-placeholder]::placeholder {
+    color: #fcdbc1;
+  }
+
   .img-perfil,
   .dores,
   .crescendo {
@@ -290,7 +297,7 @@
   }
   .duvida_perfis {
     margin-left: 28vw;
-    margin-top: 2.2vh;
+    margin-top: 5.5vh;
   }
   .setas {
     width: 13%;
