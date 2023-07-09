@@ -397,18 +397,16 @@ function Canvas() {
   }
 
   //Funcao para alterar para dark mode
-  document.addEventListener("DOMContentLoaded", function () {
-    const $checkbox = document.querySelector("#switch");
-    const $html = document.querySelector("html");
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-    $checkbox.addEventListener("change", function () {
-      if ($checkbox.checked) {
-        $html.classList.add("dark-mode");
-      } else {
-        $html.classList.remove("dark-mode");
-      }
-    });
-  });
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    if (!isDarkMode) {
+      document.documentElement.classList.add("dark-mode");
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+    }
+  };
 
   return (
     <div className="body">
@@ -429,7 +427,12 @@ function Canvas() {
           </ul>
           <div className="dark_select">
             <label for="switch">
-              <input type="checkbox" id="switch" />
+              <input
+                type="checkbox"
+                id="switch"
+                checked={isDarkMode}
+                onChange={toggleDarkMode}
+              />
             </label>
           </div>
         </nav>
@@ -532,16 +535,15 @@ function Canvas() {
         onInteQuatroPChange={handleInteQuatroPChange}
       />
 
-      <Maturidade1
-        onImportancia1Change={handleImportancia1Change}/>
-      
-      <Maturidade2/>
+      <Maturidade1 onImportancia1Change={handleImportancia1Change} />
 
-      <Maturidade3/>
+      <Maturidade2 />
 
-      <Maturidade4/>
+      <Maturidade3 />
 
-      <Maturidade5/>
+      <Maturidade4 />
+
+      <Maturidade5 />
 
       <GeradorPDF
         //intuição
