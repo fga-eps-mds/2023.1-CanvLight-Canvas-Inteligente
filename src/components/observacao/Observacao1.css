@@ -219,9 +219,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  body {
-    overflow: auto;
-  }
   .benchmarking {
     height: 130vh;
   }
@@ -271,7 +268,7 @@
   }
   .parceiro table th {
     font-size: 10px;
-    padding: 5px;
+    padding: 0px;
   }
   .duvida_benchmarking {
     margin-left: 25vw;
