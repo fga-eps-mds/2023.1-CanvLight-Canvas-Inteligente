@@ -362,10 +362,10 @@
     top: 1%;
   }
   .tut_body {
-    height: 1700vh;
+    height: fit-content;
   }
   .introducao {
-    margin-top: -60%;
+    margin-top: 20%;
   }
   .tut_dna,
   .tut_analise_custo,
@@ -384,6 +384,6 @@
   .tut_sintese,
   .tut_perfis_cliente,
   .tut_proposta_valor {
-    margin-top: -20%;
+    margin-top: 20%;
   }
 }
