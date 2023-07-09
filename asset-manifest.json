@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.2050e4c7.css",
-    "main.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.64016d48.js",
+    "main.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.80661359.js",
     "static/js/498.56bb0709.chunk.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/498.56bb0709.chunk.js",
     "static/js/703.66dab487.chunk.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/703.66dab487.chunk.js",
     "static/js/598.0d4c1884.chunk.js": "/2023.1-CanvLight-Canvas-Inteligente/static/js/598.0d4c1884.chunk.js",
@@ -13,16 +13,16 @@
     "static/media/raquel.jpeg": "/2023.1-CanvLight-Canvas-Inteligente/static/media/raquel.c599c4f49cdfb629c26b.jpeg",
     "static/media/henrique.jpeg": "/2023.1-CanvLight-Canvas-Inteligente/static/media/henrique.84205c01727f5cd203bb.jpeg",
     "static/media/felipe.jpeg": "/2023.1-CanvLight-Canvas-Inteligente/static/media/felipe.f309d065fe07bac8dd5c.jpeg",
+    "static/media/Observacao1.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Observacao1.ee4b43c895ee9805c01f.png",
     "static/media/bruno2.jpg": "/2023.1-CanvLight-Canvas-Inteligente/static/media/bruno2.47e396dfca04fb1fde4f.jpg",
-    "static/media/Observacao1.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Observacao1.469023d86247f3e1168b.png",
+    "static/media/Observacao2.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Observacao2.080292e52a40b820dd73.png",
     "static/media/linkedin.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/linkedin.56422a172b1b2f44e808.png",
     "static/media/Intuicao.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Intuicao.76b284364bca16a7bdb5.png",
-    "static/media/Observacao2.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Observacao2.2bbc93d04078224c3dce.png",
     "static/media/twitter.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/twitter.1241ff2efb0e126d5103.png",
     "static/media/happy.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/happy.e277f90e4c5c0efa77be.png",
     "static/media/sad.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/sad.f78dcd6ef6cf97f735b9.png",
     "static/media/Interacao2.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Interacao2.73b10d9e2b0f6c1f916e.png",
-    "static/media/Observacao3.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Observacao3.45e6049440164c75ea19.png",
+    "static/media/Observacao3.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Observacao3.77ee906ba724d937d17a.png",
     "static/media/zap.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/zap.cf74a156133161cb01bf.png",
     "static/media/Interacao3.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Interacao3.1ee12e62128c232ba58d.png",
     "static/media/Interacao1.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/Interacao1.a4fdfd8b527b6c5233cf.png",
@@ -36,13 +36,13 @@
     "static/media/face.png": "/2023.1-CanvLight-Canvas-Inteligente/static/media/face.3c51c6e55fc20de72ac4.png",
     "index.html": "/2023.1-CanvLight-Canvas-Inteligente/index.html",
     "main.2050e4c7.css.map": "/2023.1-CanvLight-Canvas-Inteligente/static/css/main.2050e4c7.css.map",
-    "main.64016d48.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.64016d48.js.map",
+    "main.80661359.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/main.80661359.js.map",
     "498.56bb0709.chunk.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/498.56bb0709.chunk.js.map",
     "703.66dab487.chunk.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/703.66dab487.chunk.js.map",
     "598.0d4c1884.chunk.js.map": "/2023.1-CanvLight-Canvas-Inteligente/static/js/598.0d4c1884.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2050e4c7.css",
-    "static/js/main.64016d48.js"
+    "static/js/main.80661359.js"
   ]
 }
