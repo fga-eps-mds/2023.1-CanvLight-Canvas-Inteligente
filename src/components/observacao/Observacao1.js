@@ -451,20 +451,6 @@ function Observacao1({
     };
 
     onEmpresaChange(novosDadosEmpresa);
-
-    function verificarTamanhoTela() {
-      var inputElement = document.getElementsByClassName("primeiro-input");
-      var placeholder = inputElement.getAttribute("data-placeholder");
-
-      if (window.innerWidth <= 600) {
-        // Defina aqui o tamanho de tela que você considera pequeno
-        inputElement.setAttribute("placeholder", placeholder);
-      } else {
-        inputElement.removeAttribute("placeholder");
-      }
-    }
-    window.addEventListener("DOMContentLoaded", verificarTamanhoTela);
-    window.addEventListener("resize", verificarTamanhoTela);
   };
 
   return (
@@ -898,10 +884,10 @@ function Observacao1({
               title="Perfil e persona do Cliente 2"
             ></div>
             <input
+              placeholder="Perfil e persona"
               className="primeiro-input"
               type="text"
               name="primeiraLinhaPerfil2"
-              data-placeholder="Perfil e persona do Cliente 2"
               value={primeiraLinhaPerfil2}
               onChange={handleInputChangePerfil2}
             />
@@ -911,6 +897,7 @@ function Observacao1({
               title="Como a proposta potencializa os ganhos do Cliente 2?"
             ></div>
             <input
+              placeholder="Ganhos"
               className="segundo-input"
               type="text"
               name="segundaLinhaPerfil2"
@@ -923,6 +910,7 @@ function Observacao1({
               title="Como a proposta de valor minimiza as dores do Cliente 2?"
             ></div>
             <input
+              placeholder="Dores minimizadas"
               className="terceiro-input"
               type="text"
               name="terceiraLinhaPerfil2"
@@ -938,6 +926,7 @@ function Observacao1({
               title="Perfil e persona do Cliente 1"
             ></div>
             <input
+              placeholder="Perfil e persona"
               type="text"
               name="primeiraLinhaPerfil1"
               value={primeiraLinhaPerfil1}
@@ -949,6 +938,7 @@ function Observacao1({
               title="Como a proposta potencializa os ganhos do Cliente 1?"
             ></div>
             <input
+              placeholder="Ganhos"
               type="text"
               name="segundaLinhaPerfil1"
               value={segundaLinhaPerfil1}
@@ -960,6 +950,7 @@ function Observacao1({
               title="Como a proposta de valor minimiza as dores do Cliente 1?"
             ></div>
             <input
+              placeholder="Dores minimizadas"
               type="text"
               name="terceiraLinhaPerfil1"
               value={terceiraLinhaPerfil1}
