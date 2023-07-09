@@ -227,6 +227,7 @@ function Observacao2({
 
     modal.style.display = "block";
     modal2.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
   function irParaObservacao3(e) {
@@ -237,6 +238,7 @@ function Observacao2({
 
     modal.style.display = "none";
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
 
   function fecharFormIntuicao(e) {
@@ -253,6 +255,12 @@ function Observacao2({
     medel.style.display = "none";
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        fecharFormIntuicao(e);
+      }
+    });
+    window.scrollTo(0, 0);
   }
 
   return (
