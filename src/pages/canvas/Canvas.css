@@ -165,7 +165,7 @@
   height: 107%;
   margin: 10px;
   background-color: rgb(255, 94, 0);
-  color: white;
+  color: var(--font_color);
   border: none;
   border-radius: 20px;
   position: absolute;
