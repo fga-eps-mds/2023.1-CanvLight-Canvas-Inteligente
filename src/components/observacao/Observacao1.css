@@ -8,7 +8,7 @@
   --font_color: white;
 }
 
-.benchmarking .centerObs1 {
+.centerObs1 {
   background-color: var(--back_color);
   position: absolute;
   width: 90%;
@@ -34,19 +34,19 @@
   color: var(--font_color);
 }
 
-.benchmarking .primeiro-canto {
+.primeiro-canto {
   border-radius: 15px 0 0 0;
 }
 
-.benchmarking .segundo-canto {
+.segundo-canto {
   border-radius: 0 15px 0 0;
 }
 
-.benchmarking .terceiro-canto {
+.terceiro-canto {
   border-radius: 0 0 15px 0;
 }
 
-.benchmarking .quarto-canto {
+.quarto-canto {
   border-radius: 0 0 0 15px;
 }
 
@@ -219,14 +219,13 @@
 }
 
 @media screen and (max-width: 568px) {
-  body {
-    overflow: auto;
-  }
   .benchmarking {
-    height: 105vh;
+    height: 130vh;
   }
-  .benchmarking .centerObs1 {
+  .centerObs1 {
+    top: 3%;
     width: 90vw;
+    height: 100vh;
   }
   .close_obs,
   .dot2_obs,
@@ -269,11 +268,11 @@
   }
   .parceiro table th {
     font-size: 10px;
-    padding: 5px;
+    padding: 0px;
   }
   .duvida_benchmarking {
-    margin-left: 22vw;
-    margin-top: -1.5vh;
+    margin-left: 25vw;
+    margin-top: -2vh;
   }
   .txt-perfil {
     margin-top: 1vh;
@@ -293,12 +292,13 @@
     width: 30vw;
   }
   .duvida_perfis {
-    margin-left: 28vw;
-    margin-top: 5vh;
+    margin-left: 30vw;
+    margin-top: 2.2vh;
   }
   .setas {
-    width: 13%;
-    margin-top: 10%;
-    margin-right: 0%;
+    width: 20%;
+    height: 7%;
+    margin-top: 20%;
+    margin-right: -4%;
   }
 }
