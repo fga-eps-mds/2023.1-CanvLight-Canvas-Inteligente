@@ -1,4 +1,5 @@
 import "./Maturidade5.css";
+import "./Maturidade1.js";
 import Situacao1 from "../../images/situacao1.png";
 import Situacao2 from "../../images/situacao2.png";
 import Situacao3 from "../../images/situacao3.png";
@@ -11,7 +12,7 @@ import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
 import React /*useState*/ from "react";
 
-function Maturidade5() {
+function Maturidade5(props) {
   function fecharFormMaturidade5(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -65,6 +66,7 @@ function Maturidade5() {
         ></button>
         <div className="dot2_area4"></div>
         <div className="dot3_area4"></div>
+        <p>{props.value}</p>
         <h2 className="titulo">Maturidade Nível</h2>
         <h2 className="tituloNivel">{nivel}</h2>
         <img className="situacao" alt="situacao" src={imgSituacao} />
