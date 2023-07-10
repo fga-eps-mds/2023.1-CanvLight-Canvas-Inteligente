@@ -8,19 +8,25 @@
   --font_color: white;
 }
 
-.Observacao3 .centerObs3 {
-  width: 90%;
-  background-color: var(--back_color);
-  height: 80%;
-  border-radius: 30px;
-  margin: auto;
-  color: var(--font_color);
+.Observacao3 {
+  height: 110vh;
 }
 
-.Observacao3 p {
+.centerObs3 {
+  position: absolute;
+  width: 90%;
+  height: 85%;
+  background-color: var(--back_color);
+  border-radius: 30px;
+  color: var(--font_color);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.Modelo_obs3,
+.Prototipo_obs3 {
   font-size: 30px;
-  margin-top: 3%;
-  margin-left: 3%;
+  margin-top: 4%;
+  margin-left: 5%;
 }
 
 .Observacao3 table {
@@ -38,19 +44,19 @@
   font-size: 20px;
 }
 
-.Observacao3 .primeiro-canto {
+.primeiro-canto {
   border-radius: 15px 0 0 0;
 }
 
-.Observacao3 .segundo-canto {
+.segundo-canto {
   border-radius: 0 15px 0 0;
 }
 
-.Observacao3 .terceiro-canto {
+.terceiro-canto {
   border-radius: 0 0 15px 0;
 }
 
-.Observacao3 .quarto-canto {
+.quarto-canto {
   border-radius: 0 0 0 15px;
 }
 
@@ -61,10 +67,10 @@
 
 .Observacao3 table input {
   color: var(--font_color);
-  background-color: var(--back_color)25;
+  background-color: var(--back_color) 25;
   border: none;
   width: 18vw;
-  height: 4vh;
+  height: 7vh;
 }
 
 .seta-esquerda_obs3 {
@@ -73,7 +79,7 @@
   background-size: contain;
   width: 10%;
   height: 10%;
-  margin-top: 10%;
+  margin-top: 4%;
   margin-left: 4%;
   float: left;
   cursor: pointer;
@@ -85,29 +91,76 @@
   background-size: contain;
   width: 10%;
   height: 10%;
-  margin-top: 10%;
+  margin-top: 4%;
   float: right;
   cursor: pointer;
 }
 
-.duvida5 {
+.duvida_modelo {
   background-image: url("../../images/request\ \(1\).png");
   width: 16px;
   height: 16px;
-  position: absolute;
-  float: right;
+  position: relative;
+  float: left;
   cursor: pointer;
-  top: 6%;
-  left: 14.7%;
+  margin-top: -1.5%;
+  left: 13%;
 }
 
-.duvida6 {
+.duvida_prototipo {
   background-image: url("../../images/request\ \(1\).png");
   width: 16px;
   height: 16px;
-  position: absolute;
-  float: right;
+  position: relative;
+  float: left;
   cursor: pointer;
-  top: 34%;
-  right: 83%;
+  margin-top: -1.5%;
+  left: 15%;
+}
+
+@media screen and (max-width: 568px) {
+  .Modelo_obs3,
+  .Prototipo_obs3 {
+    margin-top: 15%;
+    font-size: 20px;
+  }
+  .Observacao3 {
+    height: 100%;
+  }
+  .centerObs3 {
+    margin-top: 15%;
+    height: 80vh;
+  }
+  .Observacao3 table {
+    margin-top: 5%;
+  }
+  .Observacao3 table input {
+    width: 100%;
+    font-size: 12px;
+  }
+  .Observacao3 tr th {
+    font-size: 12px;
+  }
+  .duvida_modelo {
+    margin-top: -6%;
+    left: 30%;
+  }
+  .duvida_prototipo {
+    margin-top: -6%;
+    left: 35%;
+  }
+  .seta-esquerda_obs3 {
+    width: 15%;
+    height: 15%;
+    margin-top: 20%;
+    margin-left: 4%;
+    cursor: pointer;
+  }
+  .Observacao-finalizada {
+    width: 15%;
+    height: 15%;
+    margin-top: 20%;
+    margin-right: 4%;
+    cursor: pointer;
+  }
 }
