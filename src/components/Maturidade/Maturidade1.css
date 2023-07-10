@@ -1,3 +1,14 @@
+:root {
+  --back_color: #fcdbc1;
+  --font_color: black;
+}
+
+.dark-mode:root {
+  --back_color: #252525;
+  --font_color: white;
+}
+
+
 .areaAdm {
     z-index: 9999;
     display: none;
@@ -5,9 +16,11 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    max-width: 1300px;
+    max-height: 2000px;
   }
 
-.formAdm {
+/*.formAdm {
     position: absolute;
     height: 105vh;
     width: 80vw;
@@ -17,9 +30,22 @@
     padding: 30px;
     margin-left: 8%;
     margin-top: 6%;
-    background-color: #252525;
+    background-color: var(--back_color);
     border-radius: 30px;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu";  
+}*/
+.formAdm {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-left: 8%;
+  margin-top: 6%;
+  background-color: var(--back_color);
+  border-radius: 30px;
+  font-family: "Ubuntu";  
+  
 }
 
 .close_area1 {
@@ -56,12 +82,13 @@
   top: 2%;
 }
 
-.titulo {
+.titulo_area_adm{
   text-align: center;
   margin-top: 0%;
-  font-size: 3vi;
-  color: white;
+  font-size: 2.3vi;
+  color: var(--font_color);
 }
+
 
 .duvidaAdm {
   background-image: url("../../images/request\ \(1\).png");
@@ -75,9 +102,9 @@
 }
 
 .formAdm table {
-  width: 78vw;
+  width: 100%;
   border-spacing: 0;
-  color: white;
+  color: var(--font_color);
   margin-left: -1%;
   margin-top: 1vw;
 }
@@ -88,12 +115,12 @@
 }
 
 .formAdm table td {
-    background-color: #252525;
+    background-color: var(--back_color);
     border: 1px solid #ff5e00;
   }
   
 .formAdm table input {
-    background-color: #252525;
+    background-color: var(--back_color);
     border: none;
 }
 
@@ -109,7 +136,7 @@
   padding: 25px;
   font-size: 80%;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1px solid var(--font_color);
 }
 
 .opcao-select option{
@@ -130,7 +157,7 @@
   padding: 25px;
   font-size: 15px;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1px solid var(--font_color);
 }
 
 .import-select option {
