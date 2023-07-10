@@ -128,11 +128,10 @@ function Interacao({
     onAnaliseQuantidadeChange(novosDadosAnaliseQuantidade);
   };
 
-  const [primeiraLinhaAnaliseCusto, setPrimeiraLinhaAnaliseCusto] =
-    useState("");
+  const [primeiraLinhaAnaliseCusto, setPrimeiraLinhaAnaliseCusto] = useState("");
   const [segundaLinhaAnaliseCusto, setSegundaLinhaAnaliseCusto] = useState("");
-  const [terceiraLinhaAnaliseCusto, setTerceiraLinhaAnaliseCusto] =
-    useState("");
+  const [terceiraLinhaAnaliseCusto, setTerceiraLinhaAnaliseCusto] = useState("");
+  const [quartaLinhaAnaliseCusto, setQuartaLinhaAnaliseCusto] = useState("");
 
   const handleInputChangeAnaliseCusto = (e) => {
     const { name, value } = e.target;
@@ -142,6 +141,8 @@ function Interacao({
       setSegundaLinhaAnaliseCusto(value);
     } else if (name === "terceiraLinhaAnaliseCusto") {
       setTerceiraLinhaAnaliseCusto(value);
+    } else if (name === "quartaLinhaAnaliseCusto") {
+      setQuartaLinhaAnaliseCusto(value);
     }
 
     const novosDadosAnaliseCusto = {
@@ -155,6 +156,7 @@ function Interacao({
         name === "terceiraLinhaAnaliseCusto"
           ? value
           : terceiraLinhaAnaliseCusto,
+      quartaLinhaAnaliseCusto: name === "quartaLinhaAnaliseCusto" ? value : quartaLinhaAnaliseCusto,
     };
 
     onAnaliseCustoChange(novosDadosAnaliseCusto);
@@ -903,6 +905,7 @@ function Interacao({
                       name="primeiraLinhaDescricao"
                       value={primeiraLinhaDescricao}
                       onChange={handleInputChangeDescricao}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -911,6 +914,7 @@ function Interacao({
                       name="primeiraLinhaAnalisePreco"
                       value={primeiraLinhaAnalisePreco}
                       onChange={handleInputChangeAnalisePreco}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -919,6 +923,7 @@ function Interacao({
                       name="primeiraLinhaAnaliseQuantidade"
                       value={primeiraLinhaAnaliseQuantidade}
                       onChange={handleInputChangeAnaliseQuantidade}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -927,6 +932,7 @@ function Interacao({
                       name="primeiraLinhaAnaliseCusto"
                       value={primeiraLinhaAnaliseCusto}
                       onChange={handleInputChangeAnaliseCusto}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -937,6 +943,7 @@ function Interacao({
                       name="segundaLinhaDescricao"
                       value={segundaLinhaDescricao}
                       onChange={handleInputChangeDescricao}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -945,6 +952,7 @@ function Interacao({
                       name="segundaLinhaAnalisePreco"
                       value={segundaLinhaAnalisePreco}
                       onChange={handleInputChangeAnalisePreco}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -953,6 +961,7 @@ function Interacao({
                       name="segundaLinhaAnaliseQuantidade"
                       value={segundaLinhaAnaliseQuantidade}
                       onChange={handleInputChangeAnaliseQuantidade}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -961,6 +970,7 @@ function Interacao({
                       name="segundaLinhaAnaliseCusto"
                       value={segundaLinhaAnaliseCusto}
                       onChange={handleInputChangeAnaliseCusto}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -971,6 +981,7 @@ function Interacao({
                       name="terceiraLinhaDescricao"
                       value={terceiraLinhaDescricao}
                       onChange={handleInputChangeDescricao}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -979,6 +990,7 @@ function Interacao({
                       name="terceiraLinhaAnalisePreco"
                       value={terceiraLinhaAnalisePreco}
                       onChange={handleInputChangeAnalisePreco}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -987,6 +999,7 @@ function Interacao({
                       name="terceiraLinhaAnaliseQuantidade"
                       value={terceiraLinhaAnaliseQuantidade}
                       onChange={handleInputChangeAnaliseQuantidade}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -995,6 +1008,7 @@ function Interacao({
                       name="terceiraLinhaAnaliseCusto"
                       value={terceiraLinhaAnaliseCusto}
                       onChange={handleInputChangeAnaliseCusto}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -1003,7 +1017,11 @@ function Interacao({
                   <td className="nada"></td>
                   <td className="total">TOTAL</td>
                   <td>
-                    <input type="text" />
+                    <input type="text"
+                    name="quartaLinhaAnaliseCusto"
+                    value={quartaLinhaAnaliseCusto}
+                    onChange={handleInputChangeAnaliseCusto}
+                    maxLength={20} />
                   </td>
                 </tr>
               </table>
@@ -1033,6 +1051,7 @@ function Interacao({
                       name="primeiraLinhaAnaliseDiferencial"
                       value={primeiraLinhaAnaliseDiferencial}
                       onChange={handleInputChangeAnaliseDiferencial}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1041,6 +1060,7 @@ function Interacao({
                       name="segundaLinhaAnaliseDiferencial"
                       value={segundaLinhaAnaliseDiferencial}
                       onChange={handleInputChangeAnaliseDiferencial}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1049,6 +1069,7 @@ function Interacao({
                       name="terceiraLinhaAnaliseDiferencial"
                       value={terceiraLinhaAnaliseDiferencial}
                       onChange={handleInputChangeAnaliseDiferencial}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1057,6 +1078,7 @@ function Interacao({
                       name="quartaLinhaAnaliseDiferencial"
                       value={quartaLinhaAnaliseDiferencial}
                       onChange={handleInputChangeAnaliseDiferencial}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1065,6 +1087,7 @@ function Interacao({
                       name="quintaLinhaAnaliseDiferencial"
                       value={quintaLinhaAnaliseDiferencial}
                       onChange={handleInputChangeAnaliseDiferencial}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -1076,6 +1099,7 @@ function Interacao({
                       name="primeiraLinhaAnalisePreDif"
                       value={primeiraLinhaAnalisePreDif}
                       onChange={handleInputChangeAnalisePreDif}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1084,6 +1108,7 @@ function Interacao({
                       name="segundaLinhaAnalisePreDif"
                       value={segundaLinhaAnalisePreDif}
                       onChange={handleInputChangeAnalisePreDif}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1092,6 +1117,7 @@ function Interacao({
                       name="terceiraLinhaAnalisePreDif"
                       value={terceiraLinhaAnalisePreDif}
                       onChange={handleInputChangeAnalisePreDif}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1100,6 +1126,7 @@ function Interacao({
                       name="quartaLinhaAnalisePreDif"
                       value={quartaLinhaAnalisePreDif}
                       onChange={handleInputChangeAnalisePreDif}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1108,6 +1135,7 @@ function Interacao({
                       name="quintaLinhaAnalisePreDif"
                       value={quintaLinhaAnalisePreDif}
                       onChange={handleInputChangeAnalisePreDif}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -1192,6 +1220,7 @@ function Interacao({
                         name="primeiraLinhaMvpProduto"
                         value={primeiraLinhaMvpProduto}
                         onChange={handleInputChangeMvpProduto}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1200,6 +1229,7 @@ function Interacao({
                         name="segundaLinhaMvpProduto"
                         value={segundaLinhaMvpProduto}
                         onChange={handleInputChangeMvpProduto}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1208,6 +1238,7 @@ function Interacao({
                         name="terceiraLinhaMvpProduto"
                         value={terceiraLinhaMvpProduto}
                         onChange={handleInputChangeMvpProduto}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1216,6 +1247,7 @@ function Interacao({
                         name="quartaLinhaMvpProduto"
                         value={quartaLinhaMvpProduto}
                         onChange={handleInputChangeMvpProduto}
+                        maxLength={16}
                       />
                     </td>
                   </tr>
@@ -1227,6 +1259,7 @@ function Interacao({
                         name="primeiraLinhaMvpIndicado"
                         value={primeiraLinhaMvpIndicado}
                         onChange={handleInputChangeMvpIndicado}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1235,6 +1268,7 @@ function Interacao({
                         name="segundaLinhaMvpIndicado"
                         value={segundaLinhaMvpIndicado}
                         onChange={handleInputChangeMvpIndicado}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1243,6 +1277,7 @@ function Interacao({
                         name="terceiraLinhaMvpIndicado"
                         value={terceiraLinhaMvpIndicado}
                         onChange={handleInputChangeMvpIndicado}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1251,6 +1286,7 @@ function Interacao({
                         name="quartaLinhaMvpIndicado"
                         value={quartaLinhaMvpIndicado}
                         onChange={handleInputChangeMvpIndicado}
+                        maxLength={16}
                       />
                     </td>
                   </tr>
@@ -1262,6 +1298,7 @@ function Interacao({
                         name="primeiraLinhaMvpOrientacoes"
                         value={primeiraLinhaMvpOrientacoes}
                         onChange={handleInputChangeMvpOrientacoes}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1270,6 +1307,7 @@ function Interacao({
                         name="segundaLinhaMvpOrientacoes"
                         value={segundaLinhaMvpOrientacoes}
                         onChange={handleInputChangeMvpOrientacoes}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1278,6 +1316,7 @@ function Interacao({
                         name="terceiraLinhaMvpOrientacoes"
                         value={terceiraLinhaMvpOrientacoes}
                         onChange={handleInputChangeMvpOrientacoes}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1286,6 +1325,7 @@ function Interacao({
                         name="quartaLinhaMvpOrientacoes"
                         value={quartaLinhaMvpOrientacoes}
                         onChange={handleInputChangeMvpOrientacoes}
+                        maxLength={16}
                       />
                     </td>
                   </tr>
@@ -1297,6 +1337,7 @@ function Interacao({
                         name="primeiraLinhaMvpResultado"
                         value={primeiraLinhaMvpResultado}
                         onChange={handleInputChangeMvpResultado}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1305,6 +1346,7 @@ function Interacao({
                         name="segundaLinhaMvpResultado"
                         value={segundaLinhaMvpResultado}
                         onChange={handleInputChangeMvpResultado}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1313,6 +1355,7 @@ function Interacao({
                         name="terceiraLinhaMvpResultado"
                         value={terceiraLinhaMvpResultado}
                         onChange={handleInputChangeMvpResultado}
+                        maxLength={16}
                       />
                     </td>
                     <td>
@@ -1321,6 +1364,7 @@ function Interacao({
                         name="quartaLinhaMvpResultado"
                         value={quartaLinhaMvpResultado}
                         onChange={handleInputChangeMvpResultado}
+                        maxLength={16}
                       />
                     </td>
                   </tr>
@@ -1359,6 +1403,7 @@ function Interacao({
                       name="primeiraLinhaFormacaoDescricao"
                       value={primeiraLinhaFormacaoDescricao}
                       onChange={handleInputChangeFormacaoDescricao}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1367,6 +1412,7 @@ function Interacao({
                       name="primeiraLinhaFormacaoCusto"
                       value={primeiraLinhaFormacaoCusto}
                       onChange={handleInputChangeFormacaoCusto}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1375,6 +1421,7 @@ function Interacao({
                       name="primeiraLinhaFormacaoTaxa"
                       value={primeiraLinhaFormacaoTaxa}
                       onChange={handleInputChangeFormacaoTaxa}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1383,6 +1430,7 @@ function Interacao({
                       name="primeiraLinhaFormacaoImpostos"
                       value={primeiraLinhaFormacaoImpostos}
                       onChange={handleInputChangeFormacaoImpostos}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1391,6 +1439,7 @@ function Interacao({
                       name="primeiraLinhaFormacaoMargem"
                       value={primeiraLinhaFormacaoMargem}
                       onChange={handleInputChangeFormacaoMargem}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1399,6 +1448,7 @@ function Interacao({
                       name="primeiraLinhaFormacaoPreco"
                       value={primeiraLinhaFormacaoPreco}
                       onChange={handleInputChangeFormacaoPreco}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -1409,6 +1459,7 @@ function Interacao({
                       name="segundaLinhaFormacaoDescricao"
                       value={segundaLinhaFormacaoDescricao}
                       onChange={handleInputChangeFormacaoDescricao}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1417,6 +1468,7 @@ function Interacao({
                       name="segundaLinhaFormacaoCusto"
                       value={segundaLinhaFormacaoCusto}
                       onChange={handleInputChangeFormacaoCusto}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1425,6 +1477,7 @@ function Interacao({
                       name="segundaLinhaFormacaoTaxa"
                       value={segundaLinhaFormacaoTaxa}
                       onChange={handleInputChangeFormacaoTaxa}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1433,6 +1486,7 @@ function Interacao({
                       name="segundaLinhaFormacaoImpostos"
                       value={segundaLinhaFormacaoImpostos}
                       onChange={handleInputChangeFormacaoImpostos}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1441,6 +1495,7 @@ function Interacao({
                       name="segundaLinhaFormacaoMargem"
                       value={segundaLinhaFormacaoMargem}
                       onChange={handleInputChangeFormacaoMargem}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1449,6 +1504,7 @@ function Interacao({
                       name="segundaLinhaFormacaoPreco"
                       value={segundaLinhaFormacaoPreco}
                       onChange={handleInputChangeFormacaoPreco}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -1459,6 +1515,7 @@ function Interacao({
                       name="terceiraLinhaFormacaoDescricao"
                       value={terceiraLinhaFormacaoDescricao}
                       onChange={handleInputChangeFormacaoDescricao}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1467,6 +1524,7 @@ function Interacao({
                       name="terceiraLinhaFormacaoCusto"
                       value={terceiraLinhaFormacaoCusto}
                       onChange={handleInputChangeFormacaoCusto}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1475,6 +1533,7 @@ function Interacao({
                       name="terceiraLinhaFormacaoTaxa"
                       value={terceiraLinhaFormacaoTaxa}
                       onChange={handleInputChangeFormacaoTaxa}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1483,6 +1542,7 @@ function Interacao({
                       name="terceiraLinhaFormacaoImpostos"
                       value={terceiraLinhaFormacaoImpostos}
                       onChange={handleInputChangeFormacaoImpostos}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1491,6 +1551,7 @@ function Interacao({
                       name="terceiraLinhaFormacaoMargem"
                       value={terceiraLinhaFormacaoMargem}
                       onChange={handleInputChangeFormacaoMargem}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1499,6 +1560,7 @@ function Interacao({
                       name="terceiraLinhaFormacaoPreco"
                       value={terceiraLinhaFormacaoPreco}
                       onChange={handleInputChangeFormacaoPreco}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -1509,6 +1571,7 @@ function Interacao({
                       name="quartaLinhaFormacaoDescricao"
                       value={quartaLinhaFormacaoDescricao}
                       onChange={handleInputChangeFormacaoDescricao}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1517,6 +1580,7 @@ function Interacao({
                       name="quartaLinhaFormacaoCusto"
                       value={quartaLinhaFormacaoCusto}
                       onChange={handleInputChangeFormacaoCusto}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1525,6 +1589,7 @@ function Interacao({
                       name="quartaLinhaFormacaoTaxa"
                       value={quartaLinhaFormacaoTaxa}
                       onChange={handleInputChangeFormacaoTaxa}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1533,6 +1598,7 @@ function Interacao({
                       name="quartaLinhaFormacaoImpostos"
                       value={quartaLinhaFormacaoImpostos}
                       onChange={handleInputChangeFormacaoImpostos}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1541,6 +1607,7 @@ function Interacao({
                       name="quartaLinhaFormacaoMargem"
                       value={quartaLinhaFormacaoMargem}
                       onChange={handleInputChangeFormacaoMargem}
+                      maxLength={20}
                     />
                   </td>
                   <td>
@@ -1549,6 +1616,7 @@ function Interacao({
                       name="quartaLinhaFormacaoPreco"
                       value={quartaLinhaFormacaoPreco}
                       onChange={handleInputChangeFormacaoPreco}
+                      maxLength={20}
                     />
                   </td>
                 </tr>
@@ -1677,6 +1745,7 @@ function Interacao({
                       name="primeiraLinhaCanaisCanal"
                       value={primeiraLinhaCanaisCanal}
                       onChange={handleInputChangeCanaisCanal}
+                      maxLength={23}
                     />
                   </td>
                   <td>
@@ -1685,6 +1754,7 @@ function Interacao({
                       name="primeiraLinhaCanaisObjetivo"
                       value={primeiraLinhaCanaisObjetivo}
                       onChange={handleInputChangeCanaisObjetivo}
+                      maxLength={25}
                     />
                   </td>
                   <td>
@@ -1693,6 +1763,7 @@ function Interacao({
                       name="primeiraLinhaCanaisMetrica"
                       value={primeiraLinhaCanaisMetrica}
                       onChange={handleInputChangeCanaisMetrica}
+                      maxLength={27}
                     />
                   </td>
                 </tr>
@@ -1703,6 +1774,7 @@ function Interacao({
                       name="segundaLinhaCanaisCanal"
                       value={segundaLinhaCanaisCanal}
                       onChange={handleInputChangeCanaisCanal}
+                      maxLength={23}
                     />
                   </td>
                   <td>
@@ -1711,6 +1783,7 @@ function Interacao({
                       name="segundaLinhaCanaisObjetivo"
                       value={segundaLinhaCanaisObjetivo}
                       onChange={handleInputChangeCanaisObjetivo}
+                      maxLength={25}
                     />
                   </td>
                   <td>
@@ -1719,6 +1792,7 @@ function Interacao({
                       name="segundaLinhaCanaisMetrica"
                       value={segundaLinhaCanaisMetrica}
                       onChange={handleInputChangeCanaisMetrica}
+                      maxLength={27}
                     />
                   </td>
                 </tr>
@@ -1729,6 +1803,7 @@ function Interacao({
                       name="terceiraLinhaCanaisCanal"
                       value={terceiraLinhaCanaisCanal}
                       onChange={handleInputChangeCanaisCanal}
+                      maxLength={23}
                     />
                   </td>
                   <td>
@@ -1737,6 +1812,7 @@ function Interacao({
                       name="terceiraLinhaCanaisObjetivo"
                       value={terceiraLinhaCanaisObjetivo}
                       onChange={handleInputChangeCanaisObjetivo}
+                      maxLength={25}
                     />
                   </td>
                   <td>
@@ -1745,6 +1821,7 @@ function Interacao({
                       name="terceiraLinhaCanaisMetrica"
                       value={terceiraLinhaCanaisMetrica}
                       onChange={handleInputChangeCanaisMetrica}
+                      maxLength={27}
                     />
                   </td>
                 </tr>
@@ -1755,6 +1832,7 @@ function Interacao({
                       name="quartaLinhaCanaisCanal"
                       value={quartaLinhaCanaisCanal}
                       onChange={handleInputChangeCanaisCanal}
+                      maxLength={23}
                     />
                   </td>
                   <td>
@@ -1763,6 +1841,7 @@ function Interacao({
                       name="quartaLinhaCanaisObjetivo"
                       value={quartaLinhaCanaisObjetivo}
                       onChange={handleInputChangeCanaisObjetivo}
+                      maxLength={25}
                     />
                   </td>
                   <td>
@@ -1771,6 +1850,7 @@ function Interacao({
                       name="quartaLinhaCanaisMetrica"
                       value={quartaLinhaCanaisMetrica}
                       onChange={handleInputChangeCanaisMetrica}
+                      maxLength={27}
                     />
                   </td>
                 </tr>
@@ -1797,6 +1877,7 @@ function Interacao({
                       name="primeiraLinhaInteQuatroP"
                       value={primeiraLinhaInteQuatroP}
                       onChange={handleInputChangeInteQuatroP}
+                      maxLength={17}
                     />
                   </td>
                   <td>
@@ -1806,6 +1887,7 @@ function Interacao({
                       name="segundaLinhaInteQuatroP"
                       value={segundaLinhaInteQuatroP}
                       onChange={handleInputChangeInteQuatroP}
+                      maxLength={17}
                     />
                   </td>
                 </tr>
@@ -1818,6 +1900,7 @@ function Interacao({
                       name="terceiraLinhaInteQuatroP"
                       value={terceiraLinhaInteQuatroP}
                       onChange={handleInputChangeInteQuatroP}
+                      maxLength={17}
                     />
                   </td>
                   <td>
@@ -1827,6 +1910,7 @@ function Interacao({
                       name="quartaLinhaInteQuatroP"
                       value={quartaLinhaInteQuatroP}
                       onChange={handleInputChangeInteQuatroP}
+                      maxLength={17}
                     />
                   </td>
                 </tr>

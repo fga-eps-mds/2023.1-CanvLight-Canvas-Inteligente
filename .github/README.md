@@ -37,10 +37,6 @@ git clone https://github.com/fga-eps-mds/2023.1-CanvLight-Canvas-Inteligente.git
 ```
 npm install
 ```
-```
-npm install jspdf
-```
-
 - Agora que as dependências estão instaladas, execute o seguinte comando na raiz do repositório para iniciar o projeto:
 ```
 npm start
