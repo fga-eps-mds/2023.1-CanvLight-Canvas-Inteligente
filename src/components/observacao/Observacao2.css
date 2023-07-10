@@ -28,11 +28,9 @@ body {
 .psdoprojeto h2 {
   color: var(--font_color);
   position: absolute;
-  top: 8%;
+  margin-top: 4%;
   left: 4%;
   text-align: left;
-  margin: auto;
-  bottom: 5%;
   font-size: 25px;
 }
 
