@@ -278,7 +278,12 @@ function Observacao3({
         <div className="psdoprojeto"></div>
         <div className="Modelo">
           <p className="Modelo_obs3">Modelo:</p>
-          <div onClick={clicouNaDuvida} className="duvida5"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_conceito", "_blank");
+            }}
+            className="duvida_modelo"
+          ></div>
           <table>
             <tr>
               <th className="primeiro-canto">Ferramentas/Procedimentos</th>
@@ -363,8 +368,13 @@ function Observacao3({
         <div className="clear"></div>
 
         <div className="Prototipo">
-          <p>Protótipo</p>
-          <div onClick={clicouNaDuvida} className="duvida6"></div>
+          <p className="Prototipo_obs3">Protótipo:</p>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_modelo", "_blank");
+            }}
+            className="duvida_prototipo"
+          ></div>
           <table>
             <tr>
               <th className="primeiro-canto">Ferramentas/Procedimentos</th>
