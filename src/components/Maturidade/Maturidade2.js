@@ -1,7 +1,105 @@
 import "./Maturidade2.css";
-import React /*useState*/ from "react";
+import React, { useState } from "react";
 
-function Maturidade2() {
+function Maturidade2({state}) {
+
+  // Primeiro trecho de selectResposta
+  var [resposta1, setResposta1] = useState('');
+  // Segundo trecho de selectResposta
+  var [resposta2, setResposta2] = useState('');
+  // Terceiro trecho de selectResposta
+  var [resposta3, setResposta3] = useState('');
+  // Quarto trecho de selectResposta
+  var [resposta4, setResposta4] = useState('');
+  // Quinto trecho de selectResposta
+  var [resposta5, setResposta5] = useState('');
+  // Sexto trecho de selectResposta
+  var [resposta6, setResposta6] = useState('');
+  // Sétimo trecho de selectResposta
+  var [resposta7, setResposta7] = useState('');
+  // Oitavo trecho de selectResposta
+  var [resposta8, setResposta8] = useState('');
+  // Nono trecho de selectResposta
+  var [resposta9, setResposta9] = useState('');
+
+  // Primeiro trecho de selectImportancia
+  var [importancia1, setImportancia1] = useState('');
+  // Segundo trecho de selectImportancia
+  var [importancia2, setImportancia2] = useState('');
+  // Terceiro trecho de selectImportancia
+  var [importancia3, setImportancia3] = useState('');
+  // Quarto trecho de selectImportancia
+  var [importancia4, setImportancia4] = useState('');
+  // Quinto trecho de selectImportancia
+  var [importancia5, setImportancia5] = useState('');
+  // Sexto trecho de selectImportancia
+  var [importancia6, setImportancia6] = useState('');
+  // Setimo trecho de selectImportancia
+  var [importancia7, setImportancia7] = useState('');
+  // Oitavo trecho de selectImportancia
+  var [importancia8, setImportancia8] = useState('');
+  // Nono trecho de selectImportancia
+  var [importancia9, setImportancia9] = useState('');
+
+
+
+  // Pega o valor da resposta e transforma em numero
+  const handleOptionRespostaChange = (event, respostaSetter) => {
+      const selectedOption = event.target.value;
+
+      let resposta;
+      if (selectedOption === 'opcao1') {
+          resposta = 1;
+      } else if (selectedOption === 'opcao2') {
+          resposta = 2;
+      } else if (selectedOption === 'opcao3') {
+          resposta = 3;
+      } else if (selectedOption === 'opcao4') {
+          resposta = 4;
+      }
+    
+      respostaSetter(resposta);
+  };
+
+  // Pega o valor da importância e transforma em peso
+  const handleOptionImportanciaChange = (event, importanciaSetter) => {
+      const selectedOption = event.target.value;
+      
+      let importancia;
+      if (selectedOption === 'opcao1') {
+          importancia = 1;
+      } else if (selectedOption === 'opcao2') {
+          importancia = 2;
+      } else if (selectedOption === 'opcao3') {
+          importancia = 3;
+      }
+    
+      importanciaSetter(importancia);
+  };
+
+  
+
+  function calculaRh(){
+      var multiplicacao = null;
+
+      multiplicacao += resposta1*importancia1;
+      multiplicacao += resposta2*importancia2;
+      multiplicacao += resposta3*importancia3;
+      multiplicacao += resposta4*importancia4;
+      multiplicacao += resposta5*importancia5;
+      multiplicacao += resposta6*importancia6;
+      multiplicacao += resposta7*importancia7;
+      multiplicacao += resposta8*importancia8;
+      multiplicacao += resposta9*importancia9;
+
+      var resultado = multiplicacao/120;
+      resultado = resultado*100;
+
+      return resultado;
+  }
+
+  porcentagemRh = calculaRh();
+
   function fecharFormMaturidade2(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -67,7 +165,9 @@ function Maturidade2() {
               empresa?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta1)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A área de Recursos Humanos não possui uma visão e
                   missão claras e não há políticas ou diretrizes estabelecidas.
@@ -96,7 +196,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia1)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -110,7 +212,9 @@ function Maturidade2() {
               organizacionais?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta2)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A estratégia de RH não está claramente alinhada com
                   os objetivos organizacionais. As iniciativas de RH são
@@ -150,7 +254,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia2)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -164,7 +270,9 @@ function Maturidade2() {
               lideranças?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta3)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui um planejamento de sucessão e
                   desenvolvimento de lideranças formalizado. A promoção e
@@ -204,7 +312,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia3)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -218,7 +328,9 @@ function Maturidade2() {
               Existe um programa de integração para os novos colaboradores?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta4)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: O processo de recrutamento e seleção na empresa é
                   pouco estruturado e não segue um padrão definido. Não há um
@@ -246,7 +358,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia4)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -261,7 +375,9 @@ function Maturidade2() {
               e seleção?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta5)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui critérios claros para avaliar e
                   selecionar candidatos, e não há medidas estabelecidas para
@@ -292,7 +408,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia5)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -307,7 +425,9 @@ function Maturidade2() {
               necessidades de treinamento individual e coletivo?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta6)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui programas de treinamento e
                   desenvolvimento formalizados e não realiza a identificação das
@@ -337,7 +457,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia6)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -352,7 +474,9 @@ function Maturidade2() {
               colaboradores?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta7)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui um plano de carreira ou
                   oportunidades claras de crescimento profissional. O desempenho
@@ -382,7 +506,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia7)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -397,7 +523,9 @@ function Maturidade2() {
               saudável?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta8)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui um processo formal de avaliação
                   do clima organizacional. A gestão de conflitos e a promoção de
@@ -434,7 +562,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia8)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -449,7 +579,9 @@ function Maturidade2() {
               remuneração e benefícios competitivo e equitativo?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta9)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui práticas de gestão de pessoas
                   para motivar e engajar os colaboradores. O sistema de
@@ -480,7 +612,9 @@ function Maturidade2() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia9)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -500,5 +634,7 @@ function Maturidade2() {
     </div>
   );
 }
+
+export let porcentagemRh = null;
 
 export default Maturidade2;

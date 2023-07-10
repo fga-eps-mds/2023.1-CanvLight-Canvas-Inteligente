@@ -84,20 +84,20 @@ function Maturidade1({state}){
 
 
     function calculaAdm(){
-        var maturidadeAdm = null;
+        var multiplicacao = null;
 
-        maturidadeAdm += resposta1*importancia1;
-        maturidadeAdm += resposta2*importancia2;
-        maturidadeAdm += resposta3*importancia3;
-        maturidadeAdm += resposta4*importancia4;
-        maturidadeAdm += resposta5*importancia5;
-        maturidadeAdm += resposta6*importancia6;
-        maturidadeAdm += resposta7*importancia7;
-        maturidadeAdm += resposta8*importancia8;
-        maturidadeAdm += resposta9*importancia9;
-        maturidadeAdm += resposta10*importancia10;
+        multiplicacao += resposta1*importancia1;
+        multiplicacao += resposta2*importancia2;
+        multiplicacao += resposta3*importancia3;
+        multiplicacao += resposta4*importancia4;
+        multiplicacao += resposta5*importancia5;
+        multiplicacao += resposta6*importancia6;
+        multiplicacao += resposta7*importancia7;
+        multiplicacao += resposta8*importancia8;
+        multiplicacao += resposta9*importancia9;
+        multiplicacao += resposta10*importancia10;
 
-        var resultado = maturidadeAdm/120;
+        var resultado = multiplicacao/120;
         resultado = resultado*100;
 
         return resultado;
@@ -135,7 +135,7 @@ function Maturidade1({state}){
                 <button className="close_area1" onClick={(e) => fecharFormMaturidade1(e)}></button>
                 <div className="dot2_area1"></div>
                 <div className="dot3_area1"></div>
-                <h2 className="titulo">Área Administrativa{calculaAdm()}</h2>
+                <h2 className="titulo">Área Administrativa</h2>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaAdm"></div>
 
