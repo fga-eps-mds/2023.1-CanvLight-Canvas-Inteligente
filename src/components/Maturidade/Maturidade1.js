@@ -4,71 +4,51 @@ import React, { useState } from "react";
 function Maturidade1({state}){
     
     // Primeiro trecho de selectResposta
-    const [setSelectedRespostaOption1] = useState('');
     var [resposta1, setResposta1] = useState('');
     // Segundo trecho de selectResposta
-    const [setSelectedRespostaOption2] = useState('');
     var [resposta2, setResposta2] = useState('');
     // Terceiro trecho de selectResposta
-    const [setSelectedRespostaOption3] = useState('');
     var [resposta3, setResposta3] = useState('');
     // Quarto trecho de selectResposta
-    const [setSelectedRespostaOption4] = useState('');
     var [resposta4, setResposta4] = useState('');
     // Quinto trecho de selectResposta
-    const [setSelectedRespostaOption5] = useState('');
     var [resposta5, setResposta5] = useState('');
     // Sexto trecho de selectResposta
-    const [setSelectedRespostaOption6] = useState('');
     var [resposta6, setResposta6] = useState('');
     // Sétimo trecho de selectResposta
-    const [setSelectedRespostaOption7] = useState('');
     var [resposta7, setResposta7] = useState('');
     // Oitavo trecho de selectResposta
-    const [setSelectedRespostaOption8] = useState('');
     var [resposta8, setResposta8] = useState('');
     // Nono trecho de selectResposta
-    const [setSelectedRespostaOption9] = useState('');
     var [resposta9, setResposta9] = useState('');
     // Décimo trecho de selectResposta
-    const [setSelectedRespostaOption10] = useState('');
     var [resposta10, setResposta10] = useState('');
 
     // Primeiro trecho de selectImportancia
-    const [setSelectedImportanciaOption1] = useState('');
     var [importancia1, setImportancia1] = useState('');
     // Segundo trecho de selectImportancia
-    const [setSelectedImportanciaOption2] = useState('');
     var [importancia2, setImportancia2] = useState('');
     // Terceiro trecho de selectImportancia
-    const [setSelectedImportanciaOption3] = useState('');
     var [importancia3, setImportancia3] = useState('');
     // Quarto trecho de selectImportancia
-    const [setSelectedImportanciaOption4] = useState('');
     var [importancia4, setImportancia4] = useState('');
     // Quinto trecho de selectImportancia
-    const [setSelectedImportanciaOption5] = useState('');
     var [importancia5, setImportancia5] = useState('');
     // Sexto trecho de selectImportancia
-    const [setSelectedImportanciaOption6] = useState('');
     var [importancia6, setImportancia6] = useState('');
     // Setimo trecho de selectImportancia
-    const [setSelectedImportanciaOption7] = useState('');
     var [importancia7, setImportancia7] = useState('');
     // Oitavo trecho de selectImportancia
-    const [setSelectedImportanciaOption8] = useState('');
     var [importancia8, setImportancia8] = useState('');
     // Nono trecho de selectImportancia
-    const [setSelectedImportanciaOption9] = useState('');
     var [importancia9, setImportancia9] = useState('');
     // Decimo trecho de selectImportancia
-    const [setSelectedImportanciaOption10] = useState('');
     var [importancia10, setImportancia10] = useState('');
 
 
-    
+
     // Pega o valor da resposta e transforma em numero
-    const handleOptionRespostaChange = (event, selectedOptionSetter, respostaSetter) => {
+    const handleOptionRespostaChange = (event, respostaSetter) => {
         const selectedOption = event.target.value;
 
         let resposta;
@@ -78,14 +58,15 @@ function Maturidade1({state}){
             resposta = 2;
         } else if (selectedOption === 'opcao3') {
             resposta = 3;
+        } else if (selectedOption === 'opcao4') {
+            resposta = 4;
         }
       
         respostaSetter(resposta);
-        porcentagemAdm = calculaAdm();
     };
 
     // Pega o valor da importância e transforma em peso
-    const handleOptionImportanciaChange = (event, selectedOptionSetter, importanciaSetter) => {
+    const handleOptionImportanciaChange = (event, importanciaSetter) => {
         const selectedOption = event.target.value;
         
         let importancia;
@@ -170,7 +151,7 @@ function Maturidade1({state}){
                             para suportar as atividades e fluxos de trabalho?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption1, setResposta1)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta1)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: A estrutura organizacional da empresa é pouco definida 
                                     e não é adequada para suportar as atividades e fluxos de trabalho. Há falta de clareza nas 
@@ -190,7 +171,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption1, setImportancia1)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia1)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -204,7 +185,7 @@ function Maturidade1({state}){
                             Existe uma definição clara de metas e objetivos?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption2, setResposta2)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta2)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1:Planejamento estratégico pouco estruturado ou inexistente, 
                                     com falta de metas claras e direção estratégica comprometida.</option>
@@ -218,7 +199,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption2, setImportancia2)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia2)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -232,7 +213,7 @@ function Maturidade1({state}){
                              Eles estão documentados e padronizados?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption3, setResposta3)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta3)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Processos administrativos pouco definidos, documentados ou 
                                     padronizados, resultando em inconsistências e falta de eficiência.</option>
@@ -247,7 +228,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption3, setImportancia3)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia3)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -261,7 +242,7 @@ function Maturidade1({state}){
                             ferramentas utilizadas?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption4, setResposta4)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta4)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão de projetos pouco estruturada ou inexistente, 
                                     sem metodologias ou ferramentas específicas, resultando em falta de controle 
@@ -277,7 +258,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption4, setImportancia4)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia4)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -291,7 +272,7 @@ function Maturidade1({state}){
                             sobre orçamento, fluxo de caixa e contas a pagar/receber?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption5, setResposta5)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta5)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão financeira pouco estruturada ou inexistente, resultando 
                                     em falta de controle, dificuldades na previsão e possíveis problemas de liquidez.</option>
@@ -306,7 +287,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption5, setImportancia5)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia5)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -320,7 +301,7 @@ function Maturidade1({state}){
                             empresa? Existem indicadores e processos de melhoria contínua?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption6, setResposta6)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta6)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Qualidade baixa ou inconsistente nos produtos/serviços, falta de 
                                     indicadores e processos de melhoria contínua. Risco de insatisfação dos clientes e perda de 
@@ -338,7 +319,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption6, setImportancia6)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia6)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -352,7 +333,7 @@ function Maturidade1({state}){
                             práticas de organização e armazenamento eficientes?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption7, setResposta7)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta7)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão de documentos e arquivos pouco estruturada ou inexistente, 
                                     resultando em dificuldades na localização e recuperação de informações importantes. </option>
@@ -367,7 +348,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption7, setImportancia7)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia7)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -381,7 +362,7 @@ function Maturidade1({state}){
                             planos de contingência estabelecidos?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption8, setResposta8)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta8)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão de riscos pouco estruturada ou inexistente, falta de 
                                     análises sistemáticas e planos de contingência. Maior exposição a riscos e falta de preparação para 
@@ -398,7 +379,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption8, setImportancia8)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia8)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -412,7 +393,7 @@ function Maturidade1({state}){
                             práticas de monitoramento e incentivo à eficiência?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption9, setResposta9)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta9)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão do tempo e produtividade inexistente. Falta de monitoramento e 
                                     incentivo à eficiência. Baixa produtividade e possíveis atrasos nos projetos. </option>
@@ -427,7 +408,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                                 <select className="import-select"
-                                        onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption9, setImportancia9)}>
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia9)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
@@ -441,7 +422,7 @@ function Maturidade1({state}){
                             sentem envolvidos e informados sobre as decisões administrativas?</td>
                             <td>
                                 <select className="opcao-select"
-                                        onChange={(event) => handleOptionRespostaChange(event, setSelectedRespostaOption10, setResposta10)}>
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta10,)}>
                                     <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: A empresa carece de um canal de comunicação interna efetivo ou 
                                     inexistente, resultando em colaboradores desinformados e pouco envolvidos nas decisões administrativas,
@@ -458,7 +439,7 @@ function Maturidade1({state}){
                             </td>
                             <td>
                             <select className="import-select"
-                                    onChange={(event) => handleOptionImportanciaChange(event, setSelectedImportanciaOption10, setImportancia10)}>
+                                    onChange={(event) => handleOptionImportanciaChange(event, setImportancia10)}>
                                     <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
