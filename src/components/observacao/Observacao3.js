@@ -11,10 +11,6 @@ function Observacao3({
   onOrientacaoUsoPChange,
   onResultadoEsparadoPChange,
 }) {
-  function clicouNaDuvida() {
-    alert("duvida clicada!");
-  }
-
   const [primeiraLinhaFerramentaObser3, setPrimeiraLinhaFerramentaObser3] =
     useState();
   const [segundaLinhaFerramentaObser3, setSegundaLinhaFerramentaObser3] =
