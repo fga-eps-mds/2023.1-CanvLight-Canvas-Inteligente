@@ -583,3 +583,11 @@
   float: right;
   cursor: pointer;
 }
+
+.todolist{
+  color: white;
+}
+
+.itemtodolist{
+  list-style-type: none;
+}
