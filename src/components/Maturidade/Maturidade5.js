@@ -1,5 +1,8 @@
 import "./Maturidade5.css";
 import {porcentagemAdm} from "./Maturidade1.js";
+import {porcentagemRh} from "./Maturidade2.js";
+import {porcentagemFin} from "./Maturidade3.js";
+import {porcentagemMkt} from "./Maturidade4.js";
 import Situacao1 from "../../images/situacao1.png";
 import Situacao2 from "../../images/situacao2.png";
 import Situacao3 from "../../images/situacao3.png";
@@ -37,11 +40,36 @@ function Maturidade5() {
     modal2.style.display = "none";
   }
   
+  function nivelMaturidade(){
 
+    var adm = porcentagemAdm/100;
+    var rh = porcentagemRh/100;
+    var fin = porcentagemFin/100;
+    var mkt = porcentagemMkt/100;
 
-  var nivel = porcentagemAdm;
+    var soma = adm+rh+fin+mkt;
+    var media = soma/4;
+    var nivel = 1;
+
+    if (media <= 20) {
+      nivel = 1;
+    } else if (media > 20 && media <= 40) {
+      nivel = 2;
+    } else if (media > 40 && media <= 60) {
+      nivel = 3;
+    } else if (media > 60 && media <= 80) {
+      nivel = 4;
+    } else if (media > 80 && media <= 100) {
+      nivel = 5;
+    }
+
+    return nivel;
+  }
+
+  var nivel = nivelMaturidade();
   var imgSituacao = null;
   var textSituacao = null;
+  
   if (nivel === 1) {
     imgSituacao = Situacao1;
     textSituacao = Descricao1;

@@ -97,10 +97,10 @@ function Maturidade1({state}){
         multiplicacao += resposta9*importancia9;
         multiplicacao += resposta10*importancia10;
 
-        var resultado = multiplicacao/120;
+        var resultado = multiplicacao/60;
         resultado = resultado*100;
 
-        return resultado;
+        return resultado.toFixed(0);
     }
 
     porcentagemAdm = calculaAdm();
@@ -135,7 +135,7 @@ function Maturidade1({state}){
                 <button className="close_area1" onClick={(e) => fecharFormMaturidade1(e)}></button>
                 <div className="dot2_area1"></div>
                 <div className="dot3_area1"></div>
-                <h2 className="titulo">Área Administrativa</h2>
+                <h2 className="titulo_area_adm">Área Administrativa</h2>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaAdm"></div>
 
@@ -302,7 +302,7 @@ function Maturidade1({state}){
                             <td>
                                 <select className="opcao-select"
                                         onChange={(event) => handleOptionRespostaChange(event, setResposta6)}>
-                                    <option disabled selected value>Selecione uma resposta</option>
+                                        <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Qualidade baixa ou inconsistente nos produtos/serviços, falta de 
                                     indicadores e processos de melhoria contínua. Risco de insatisfação dos clientes e perda de 
                                     competitividade. </option>

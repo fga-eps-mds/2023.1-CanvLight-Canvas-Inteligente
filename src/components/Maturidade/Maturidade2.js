@@ -92,10 +92,10 @@ function Maturidade2({state}) {
       multiplicacao += resposta8*importancia8;
       multiplicacao += resposta9*importancia9;
 
-      var resultado = multiplicacao/120;
+      var resultado = multiplicacao/54;
       resultado = resultado*100;
 
-      return resultado;
+      return resultado.toFixed(0);
   }
 
   porcentagemRh = calculaRh();

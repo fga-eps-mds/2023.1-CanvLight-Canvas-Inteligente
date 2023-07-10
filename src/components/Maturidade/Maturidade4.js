@@ -1,7 +1,110 @@
 import "./Maturidade4.css";
-import React, { /*useState*/ } from "react";
+import React, { useState } from "react";
 
-function Maturidade4(){
+function Maturidade4({state}){
+
+    // Primeiro trecho de selectResposta
+    var [resposta1, setResposta1] = useState('');
+    // Segundo trecho de selectResposta
+    var [resposta2, setResposta2] = useState('');
+    // Terceiro trecho de selectResposta
+    var [resposta3, setResposta3] = useState('');
+    // Quarto trecho de selectResposta
+    var [resposta4, setResposta4] = useState('');
+    // Quinto trecho de selectResposta
+    var [resposta5, setResposta5] = useState('');
+    // Sexto trecho de selectResposta
+    var [resposta6, setResposta6] = useState('');
+    // Sétimo trecho de selectResposta
+    var [resposta7, setResposta7] = useState('');
+    // Oitavo trecho de selectResposta
+    var [resposta8, setResposta8] = useState('');
+    // Nono trecho de selectResposta
+    var [resposta9, setResposta9] = useState('');
+    // Décimo trecho de selectResposta
+    var [resposta10, setResposta10] = useState('');
+
+    // Primeiro trecho de selectImportancia
+    var [importancia1, setImportancia1] = useState('');
+    // Segundo trecho de selectImportancia
+    var [importancia2, setImportancia2] = useState('');
+    // Terceiro trecho de selectImportancia
+    var [importancia3, setImportancia3] = useState('');
+    // Quarto trecho de selectImportancia
+    var [importancia4, setImportancia4] = useState('');
+    // Quinto trecho de selectImportancia
+    var [importancia5, setImportancia5] = useState('');
+    // Sexto trecho de selectImportancia
+    var [importancia6, setImportancia6] = useState('');
+    // Setimo trecho de selectImportancia
+    var [importancia7, setImportancia7] = useState('');
+    // Oitavo trecho de selectImportancia
+    var [importancia8, setImportancia8] = useState('');
+    // Nono trecho de selectImportancia
+    var [importancia9, setImportancia9] = useState('');
+    // Decimo trecho de selectImportancia
+    var [importancia10, setImportancia10] = useState('');
+
+
+
+    // Pega o valor da resposta e transforma em numero
+    const handleOptionRespostaChange = (event, respostaSetter) => {
+        const selectedOption = event.target.value;
+
+        let resposta;
+        if (selectedOption === 'opcao1') {
+            resposta = 1;
+        } else if (selectedOption === 'opcao2') {
+            resposta = 2;
+        } else if (selectedOption === 'opcao3') {
+            resposta = 3;
+        } else if (selectedOption === 'opcao4') {
+            resposta = 4;
+        }
+      
+        respostaSetter(resposta);
+    };
+
+    // Pega o valor da importância e transforma em peso
+    const handleOptionImportanciaChange = (event, importanciaSetter) => {
+        const selectedOption = event.target.value;
+        
+        let importancia;
+        if (selectedOption === 'opcao1') {
+            importancia = 1;
+        } else if (selectedOption === 'opcao2') {
+            importancia = 2;
+        } else if (selectedOption === 'opcao3') {
+            importancia = 3;
+        }
+      
+        importanciaSetter(importancia);
+    };
+
+
+
+    function calculaMkt(){
+        var multiplicacao = null;
+
+        multiplicacao += resposta1*importancia1;
+        multiplicacao += resposta2*importancia2;
+        multiplicacao += resposta3*importancia3;
+        multiplicacao += resposta4*importancia4;
+        multiplicacao += resposta5*importancia5;
+        multiplicacao += resposta6*importancia6;
+        multiplicacao += resposta7*importancia7;
+        multiplicacao += resposta8*importancia8;
+        multiplicacao += resposta9*importancia9;
+        multiplicacao += resposta10*importancia10;
+
+        var resultado = multiplicacao/60;
+        resultado = resultado*100;
+
+        return resultado.toFixed(0);
+    }
+
+    porcentagemMkt = calculaMkt();
+
     function fecharFormMaturidade4(e) {
         e.preventDefault();
         let modalOverlay = document.querySelector(".modal-overlay");
@@ -57,7 +160,9 @@ function Maturidade4(){
                             <td className="pergunta1">1. Qual é a estratégia de marketing atual da empresa? Quais são 
                             os principais objetivos de marketing estabelecidos pela empresa? </td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta1)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Estratégia de marketing pouco definida ou 
                                     inexistente, resultando em falta de direção e foco nas ações de marketing.
                                     </option>
@@ -75,7 +180,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                            <   select className="import-select">
+                            <   select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia1)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -87,7 +194,9 @@ function Maturidade4(){
                             <td className="pergunta2">2. Como a empresa define e segmenta seu público-alvo? 
                             Quais canais de marketing são utilizados para alcançar o público-alvo?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta2)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Pouca definição e segmentação do público-alvo, 
                                     comunicação genérica e escolha inconsistente dos canais de marketing.
                                     </option>
@@ -105,7 +214,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia2)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -117,7 +228,9 @@ function Maturidade4(){
                             <td className="pergunta3">3. Como são desenvolvidos os produtos ou serviços oferecidos pela 
                             empresa?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta3)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Ausência de processo 
                                     estruturado para o desenvolvimento de produtos ou serviços, resultando em abordagem
                                      improvisada e pouco planejada.
@@ -138,7 +251,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia3)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -150,7 +265,9 @@ function Maturidade4(){
                             <td className="pergunta4">4. Quais estratégias de preço são adotadas e como são 
                             determinados os preços dos produtos ou serviços?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta4)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Ausência de estratégias de preço claras, resultando
                                      em determinação arbitrária dos preços sem análise adequada de custos e concorrência.
                                     </option>
@@ -171,7 +288,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia4)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -183,7 +302,9 @@ function Maturidade4(){
                             <td className="pergunta5">5. Quais estratégias de promoção são utilizadas para divulgar os
                              produtos ou serviços?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta5)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Ausência de estratégias de promoção definidas ou 
                                     consistentes para divulgar produtos ou serviços..</option>
                                     <option value="opcao2">Nível 2: Utilização de estratégias de promoção básicas, como 
@@ -200,7 +321,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia5)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -212,7 +335,9 @@ function Maturidade4(){
                             <td className="pergunta6">6.   Qual é o tamanho e a dinâmica do mercado em que a empresa atua? 
                             Quais são as principais tendências do mercado que podem afetar a empresa?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta6)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Pouca compreensão do tamanho e dinâmica do mercado, 
                                     falta de análise aprofundada e conhecimento sobre oportunidades e ameaças. 
                                     </option>
@@ -228,7 +353,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                            <   select className="import-select">
+                            <   select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia6)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -240,7 +367,9 @@ function Maturidade4(){
                             <td className="pergunta7">7. Quais são os principais concorrentes da empresa e como ela
                              se posiciona em relação a eles?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta7)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1:  Falta de análise dos principais concorrentes e 
                                     posicionamento indefinido em relação a eles.</option>
                                     <option value="opcao2">Nível 2:  Identificação limitada dos concorrentes, entendimento
@@ -254,7 +383,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia7)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -266,7 +397,9 @@ function Maturidade4(){
                             <td className="pergunta8">8. Como a empresa realiza pesquisas de mercado e coleta 
                             dados sobre o comportamento dos consumidores?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta8)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Ausência de pesquisas de mercado e coleta de 
                                     dados sobre o comportamento dos consumidores.</option>
                                     <option value="opcao2">Nível 2: Pesquisas de mercado ocasionais, sem um processo
@@ -280,7 +413,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia8)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -292,7 +427,9 @@ function Maturidade4(){
                             <td className="pergunta9">9. Quais são os indicadores de desempenho 
                             utilizados para avaliar a eficácia das ações de marketing?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta9)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1:  Ausência de indicadores de desempenho
                                      para avaliar as ações de marketing. 
                                      </option>
@@ -309,7 +446,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia9)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -321,7 +460,9 @@ function Maturidade4(){
                             <td className="pergunta10">10. Existe um sistema de gestão do 
                             relacionamento com o cliente implementado pela empresa?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta10,)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Ausência de sistema de gestão do
                                      relacionamento com o cliente. </option>
                                     <option value="opcao2">Nível 2:  Sistema básico de gestão do relacionamento
@@ -334,7 +475,9 @@ function Maturidade4(){
                                 </select>
                             </td>
                             <td>
-                                <select className="import-select">
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia10)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
                                     <option value="opcao1">Pouco importante</option>
                                     <option value="opcao2">Importante</option>
                                     <option value="opcao3">Muito importante</option>
@@ -351,5 +494,7 @@ function Maturidade4(){
         
     );
 }
+
+export let porcentagemMkt = null;
 
 export default Maturidade4;

@@ -82,10 +82,10 @@ function Maturidade3({state}) {
       multiplicacao += resposta6*importancia6;
       multiplicacao += resposta7*importancia7;
 
-      var resultado = multiplicacao/120;
+      var resultado = multiplicacao/42;
       resultado = resultado*100;
 
-      return resultado;
+      return resultado.toFixed(0);
   }
 
   porcentagemFin = calculaFin();
