@@ -135,7 +135,7 @@ function Maturidade1({state}){
                 <button className="close_area1" onClick={(e) => fecharFormMaturidade1(e)}></button>
                 <div className="dot2_area1"></div>
                 <div className="dot3_area1"></div>
-                <h2 className="titulo_area_adm">Área Administrativa</h2>
+                <h2 className="titulo_area_adm">Área Administrativa  {calculaAdm()}%</h2>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaAdm"></div>
 
@@ -449,8 +449,9 @@ function Maturidade1({state}){
                         </tr>
                     </table>
 
-                <div onClick={(e) => irParaFormMaturidade2(e)} className='setaDireita'></div>
+                <div onClick={(e) => irParaFormMaturidade2(e)} className="setaDireitaMaturidade"></div>
             </div>
+            
         </div>
         
     );

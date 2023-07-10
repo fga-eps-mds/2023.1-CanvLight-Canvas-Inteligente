@@ -12,28 +12,15 @@
 .areaAdm {
     z-index: 9999;
     display: none;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    max-width: 1300px;
-    max-height: 2000px;
+    
   }
 
-/*.formAdm {
-    position: absolute;
-    height: 105vh;
-    width: 80vw;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    margin-left: 8%;
-    margin-top: 6%;
-    background-color: var(--back_color);
-    border-radius: 30px;
-    font-family: "Ubuntu";  
-}*/
 .formAdm {
   position: absolute;
   display: block;
@@ -118,6 +105,11 @@
     background-color: var(--back_color);
     border: 1px solid #ff5e00;
   }
+
+  .formAdm table td {
+    background-color: var(--back_color);
+    border: 1px solid #ff5e00;
+  }
   
 .formAdm table input {
     background-color: var(--back_color);
@@ -125,26 +117,24 @@
 }
 
 .pergunta {
-  font-size: 95%;
-  width: 20vw;
+  font-size: 80%;
+  min-width:25vw;
+  height: 10vh;
 }
 
 .opcao-select {
-  padding-top: 10%;
   width: 100%;
-  height: 8vh;
   padding: 25px;
-  font-size: 80%;
+  font-size: 15px;
   border-radius: 3px;
   border: 1px solid var(--font_color);
+  max-width: 20vw;
 }
 
 .opcao-select option{
   padding-top: 10px;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 10%;
-  height: 6%;
   margin-top: 1%;
   margin-right: -5%;
   float: right;
@@ -158,20 +148,18 @@
   font-size: 15px;
   border-radius: 3px;
   border: 1px solid var(--font_color);
+  max-width: 20vw;
 }
 
 .import-select option {
   padding: 5px;
 }  
 
-.setaDireita {
-    background-image: url("../../images/seta-direita.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10%;
-    height: 6%;
-    margin-top: 1%;
-    margin-right: -5%;
-    float: right;
-    cursor: pointer;
+.setaDireitaMaturidade {
+  background-image: url("../../images/seta-direita.png");
+  cursor: pointer;
+  float: right;
 }
+
+
+
