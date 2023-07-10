@@ -1,9 +1,8 @@
 import "./Maturidade1.css";
-import "./Maturidade5.js";
 import React, { useState } from "react";
 
 function Maturidade1({state}){
-
+    
     // Primeiro trecho de selectResposta
     const [setSelectedRespostaOption1] = useState('');
     var [resposta1, setResposta1] = useState('');
@@ -82,6 +81,7 @@ function Maturidade1({state}){
         }
       
         respostaSetter(resposta);
+        porcentagemAdm = calculaAdm();
     };
 
     // Pega o valor da importância e transforma em peso
@@ -116,13 +116,13 @@ function Maturidade1({state}){
         maturidadeAdm += resposta9*importancia9;
         maturidadeAdm += resposta10*importancia10;
 
-        var porcentagemAdm = maturidadeAdm/120;
-        porcentagemAdm = porcentagemAdm*100;
+        var resultado = maturidadeAdm/120;
+        resultado = resultado*100;
 
-        return porcentagemAdm;
+        return resultado;
     }
 
-    var porcentagemAdm = calculaAdm();
+    porcentagemAdm = calculaAdm();
 
     function fecharFormMaturidade1(e) {
         e.preventDefault();
@@ -469,11 +469,12 @@ function Maturidade1({state}){
                     </table>
 
                 <div onClick={(e) => irParaFormMaturidade2(e)} className='setaDireita'></div>
-                <Maturidade1 value={porcentagemAdm}/>
             </div>
         </div>
         
     );
 }
+
+export let porcentagemAdm = null;
 
 export default Maturidade1;
