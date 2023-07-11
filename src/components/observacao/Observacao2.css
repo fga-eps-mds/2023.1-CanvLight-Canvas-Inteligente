@@ -67,6 +67,10 @@ body {
   border-left: none;
   padding: 2%;
 }
+.conceito {
+  width: 90%;
+  height: fit-content;
+}
 .conceito h2 {
   margin-top: 25%;
   margin-left: -83%;
@@ -339,18 +343,25 @@ body {
     margin-top: 20%;
   }
   .conceito {
-    margin-top: 0%;
+    top: 10vh;
+    width: fit-content;
+    margin-top: 90vh;
+    margin-left: 1.5%;
+    font-size: 15px;
   }
   .conceito h2 {
     font-size: 20px;
-    margin-left: -65%;
+    margin-top: 0%;
+    top: 0%;
+    margin-left: -33%;
+    width: 100%;
   }
   .conceito table tr {
     font-size: 10px;
   }
   .duvida_conceito {
-    margin-top: 95%;
-    margin-left: 20%;
+    top: 69.5%;
+    left: 35%;
   }
   .seta-direita_obs2 {
     width: 15%;
