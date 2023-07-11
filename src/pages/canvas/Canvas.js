@@ -88,6 +88,10 @@ function Canvas() {
   const [inteQuatroP, setInteQuatroP] = useState({});
 
   //maturidade
+  const [porcentagemAdm, setPorcentagemAdm] = useState('');
+  const [porcentagemRh, setPorcentagemRh] = useState('');
+  const [porcentagemFin, setPorcentagemFin] = useState('');
+  const [porcentagemMkt, setPorcentagemMkt] = useState('');
   
 
   //intuição
@@ -322,6 +326,18 @@ function Canvas() {
     setInteQuatroP(novosDadosInteQuatroP);
   };
   //Maturidade
+  const handlePorcentagemAdmChange = (novosPorcentagemAdm) => {
+    setPorcentagemAdm(novosPorcentagemAdm);
+  };
+  const handlePorcentagemRhChange = (novosPorcentagemRh) => {
+    setPorcentagemRh(novosPorcentagemRh);
+  };
+  const handlePorcentagemFinChange = (novosPorcentagemFin) => {
+    setPorcentagemFin(novosPorcentagemFin);
+  };
+  const handlePorcentagemMktChange = (novosPorcentagemMkt) => {
+    setPorcentagemMkt(novosPorcentagemMkt);
+  };
   
 
   /*Chamadas para o form de Intuição*/
@@ -375,7 +391,7 @@ function Canvas() {
     modalOverlay.classList.add("modal-overlay");
     document.body.appendChild(modalOverlay);
 
-    let modal = document.querySelector(".areaAdm");
+    let modal = document.querySelector(".areaRh");
     modal.style.display = "block";
 
     let modal2 = document.querySelector(".confirma");
@@ -515,15 +531,28 @@ function Canvas() {
         onInteQuatroPChange={handleInteQuatroPChange}
       />
 
-      <Maturidade1/>
+      <Maturidade1
+        onPorcentagemAdmChange={handlePorcentagemAdmChange}
+      />
       
-      <Maturidade2/>
+      <Maturidade2
+        onPorcentagemRhChange={handlePorcentagemRhChange}
+      />
 
-      <Maturidade3/>
+      <Maturidade3
+        onPorcentagemFinChange={handlePorcentagemFinChange}
+      />
 
-      <Maturidade4/>
+      <Maturidade4
+        onPorcentagemMktChange={handlePorcentagemMktChange}
+      />
 
-      <Maturidade5/>
+      <Maturidade5
+        porcentagemAdm = {porcentagemAdm}
+        porcentagemRh = {porcentagemRh}
+        porcentagemFin = {porcentagemFin}
+        porcentagemMkt = {porcentagemMkt}
+      />
 
       <GeradorPDF
         //intuição

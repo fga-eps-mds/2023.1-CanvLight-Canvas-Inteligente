@@ -1,7 +1,7 @@
 import "./Maturidade1.css";
 import React, { useState } from "react";
 
-function Maturidade1({state}){
+function Maturidade1({state, onPorcentagemAdmChange}){
     
     // Primeiro trecho de selectResposta
     var [resposta1, setResposta1] = useState('');
@@ -82,7 +82,7 @@ function Maturidade1({state}){
     };
 
 
-
+    // eslint-disable-next-line
     function calculaAdm(){
         var multiplicacao = null;
 
@@ -100,10 +100,10 @@ function Maturidade1({state}){
         var resultado = multiplicacao/60;
         resultado = resultado*100;
 
+        onPorcentagemAdmChange(resultado.toFixed(0));
+
         return resultado.toFixed(0);
     }
-
-    porcentagemAdm = calculaAdm();
 
     function fecharFormMaturidade1(e) {
         e.preventDefault();
@@ -135,7 +135,7 @@ function Maturidade1({state}){
                 <button className="close_area1" onClick={(e) => fecharFormMaturidade1(e)}></button>
                 <div className="dot2_area1"></div>
                 <div className="dot3_area1"></div>
-                <h2 className="titulo_area_adm">Área Administrativa  {calculaAdm()}%</h2>
+                <h2 className="titulo_area_adm">Área Administrativa</h2>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaAdm"></div>
 
@@ -456,7 +456,5 @@ function Maturidade1({state}){
         
     );
 }
-
-export let porcentagemAdm = null;
 
 export default Maturidade1;

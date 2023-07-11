@@ -1,7 +1,7 @@
 import "./Maturidade2.css";
 import React, { useState } from "react";
 
-function Maturidade2({state}) {
+function Maturidade2({state, onPorcentagemRhChange}) {
 
   // Primeiro trecho de selectResposta
   var [resposta1, setResposta1] = useState('');

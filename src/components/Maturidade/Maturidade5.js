@@ -1,8 +1,4 @@
 import "./Maturidade5.css";
-import {porcentagemAdm} from "./Maturidade1.js";
-import {porcentagemRh} from "./Maturidade2.js";
-import {porcentagemFin} from "./Maturidade3.js";
-import {porcentagemMkt} from "./Maturidade4.js";
 import Situacao1 from "../../images/situacao1.png";
 import Situacao2 from "../../images/situacao2.png";
 import Situacao3 from "../../images/situacao3.png";
@@ -15,7 +11,7 @@ import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
 import React /*useState*/ from "react";
 
-function Maturidade5() {
+function Maturidade5({porcentagemAdm}) {
   function fecharFormMaturidade5(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -40,7 +36,7 @@ function Maturidade5() {
     modal2.style.display = "none";
   }
   
-  function nivelMaturidade(){
+  /*function nivelMaturidade(){
 
     var adm = porcentagemAdm/100;
     var rh = porcentagemRh/100;
@@ -63,10 +59,10 @@ function Maturidade5() {
       nivel = 5;
     }
 
-    return nivel;
-  }
+    return media;
+  }*/
 
-  var nivel = nivelMaturidade();
+  var nivel = 1;
   var imgSituacao = null;
   var textSituacao = null;
   
