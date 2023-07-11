@@ -285,6 +285,9 @@
     border-radius: 12px;
     border-inline: none;
   }
+  .main-btn1 {
+    width: 35vw;
+  }
   .sobre {
     top: 70%;
   }
