@@ -1,3 +1,4 @@
+import rightArrow from "../../images/seta-direita.png";
 import "./Maturidade4.css";
 import React, { useState } from "react";
 
@@ -144,7 +145,7 @@ function Maturidade4({state, onPorcentagemMktChange}){
                 <button className="close_area4" onClick={(e) => fecharFormMaturidade4(e)}></button>
                 <div className="dot2_area4"></div>
                 <div className="dot3_area4"></div>
-                <h2 className="titulo">Marketing</h2>
+                <h2 className="titulo_maturidade_4">Marketing</h2>
                 <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
                 }}className="duvidaMkt"></div>
 
@@ -485,8 +486,16 @@ function Maturidade4({state, onPorcentagemMktChange}){
                         </tr>
                     </table>
 
-                <div onClick={(e) => irParaFormMaturidade3(e)} className='setaEsquerda'></div>
-                <div onClick={(e) => irParaFormMaturidade5(e)} className='setaDireita'></div>
+                    <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaEsquerdaMaturidade_4"
+                        onClick={(e) => irParaFormMaturidade3(e)}/>
+                    <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaDireitaMaturidade_4"
+                        onClick={(e) => irParaFormMaturidade5(e)}/>     
 
             </div>
         </div>

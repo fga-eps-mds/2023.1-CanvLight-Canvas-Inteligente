@@ -1,3 +1,13 @@
+:root {
+    --back_color: #fcdbc1;
+    --font_color: black;
+  }
+  
+  .dark-mode:root {
+    --back_color: #252525;
+    --font_color: white;
+  }
+
 .areaResult {
     z-index: 9999;
     display: none;
@@ -17,7 +27,7 @@
     padding: 30px;
     margin-left: 8%;
     margin-top: 6%;
-    background-color: #252525;
+    background-color: var(--back_color);
     border-radius: 30px;
     font-family: "Ubuntu";
 }
@@ -62,7 +72,7 @@
     margin-left: -10%;
     font-weight: normal;
     font-size: 3vi;
-    color: white;
+    color: var(--font_color);
 }
 
 .tituloNivel {
@@ -71,7 +81,7 @@
     margin-left: 25%;
     font-weight: normal;
     font-size: 3vi;
-    color: white;
+    color: var(--font_color);
 }
 
 .situacao {
@@ -90,7 +100,7 @@
     margin-right: 20%;
     font-weight: normal;
     font-size: 2vi;
-    color: white;
+    color: var(--font_color);
 }
 
 .tabelaResult {
