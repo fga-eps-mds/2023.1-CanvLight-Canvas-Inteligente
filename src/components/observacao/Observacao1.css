@@ -220,7 +220,7 @@
 
 @media screen and (max-width: 568px) {
   body {
-    overflow: hidden;
+    overflow: auto;
   }
   .benchmarking {
     height: 105vh;

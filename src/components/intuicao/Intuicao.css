@@ -7,6 +7,9 @@
   --back_color: #252525;
   --font_color: white;
 }
+textarea {
+  resize: none;
+}
 body {
   width: 100%;
   overflow-x: hidden;
@@ -251,6 +254,7 @@ body {
   color: var(--font_color);
   width: 35vw;
   height: 20vh;
+  resize: none;
 }
 
 .direita {
@@ -268,6 +272,7 @@ body {
   float: right;
   width: 70%;
   margin-top: 2%;
+  margin-left: 0%;
 }
 
 .tabela_4ps h2 {
@@ -388,8 +393,7 @@ body {
 
 @media screen and (max-width: 568px) {
   body {
-    width: 100%;
-    overflow-x: hidden;
+    height: fit-content;
   }
   h2 {
     font-size: 18px;
@@ -399,6 +403,7 @@ body {
   }
   .form {
     height: 180vh;
+    width: 100vw;
   }
   .centerInt {
     height: 160vh;
@@ -425,6 +430,7 @@ body {
     margin-top: 3vh;
   }
   .inputProjeto {
+    padding: 5px;
     align-self: left;
     margin-top: 4vh;
     left: 5vw;
@@ -459,15 +465,25 @@ body {
     height: 1vh;
   }
   .tabela1 table input {
-    cursor: pointer;
+    z-index: 99999;
     float: left;
     height: 3vh;
     width: 21.5vw;
     font-size: 12px;
   }
+  .esquerda {
+    margin-top: 0vh;
+    width: 90%;
+  }
+  .direita {
+    float: left;
+    width: 90%;
+    margin-top: 80vh;
+    margin-right: auto;
+  }
   .duvidaDNA_int {
-    margin-top: 12.4vh;
-    left: 18vw;
+    margin-top: 11.5vh;
+    left: 22vw;
   }
 
   .parte2 {
@@ -476,19 +492,15 @@ body {
   .parte2 textarea {
     margin-top: -1.5vh;
     width: 67vw;
+    padding: 5px;
   }
   .duvidaIkigai_int {
-    margin-top: -22.9vh;
+    margin-top: -23.3vh;
     margin-left: 18vw;
   }
-  .direita {
-    float: left;
-    width: 100%;
-    margin-left: 0vw;
-  }
   .tabela_4ps {
-    margin-left: 0vw;
-    margin-top: 80vh;
+    margin-left: -1vw;
+    margin-top: 2vh;
   }
   .tabela_4ps h2 {
     float: left;
@@ -496,12 +508,12 @@ body {
   }
   .four_ps {
     margin-top: 1vh;
-    margin-left: -1vw;
+    margin-left: 2vw;
     width: 67vw;
   }
   .duvida_fourps_int {
-    margin-top: -28.5vh;
-    margin-left: 10vw;
+    margin-top: -29vh;
+    margin-left: 12vw;
   }
   .tabela3 table {
     float: left;
@@ -510,15 +522,15 @@ body {
     margin-left: -26vw;
   }
   .tabela3 h2 {
-    margin-top: 115vh;
+    margin-top: 35vh;
     margin-left: -24vw;
   }
   .duvida_sintese_int {
-    margin-top: -22.8vh;
-    margin-left: -100%;
+    margin-top: -24.5vh;
+    left: -35vw;
   }
   .feito_int {
-    margin-top: 3vh;
+    margin-top: 2vh;
     margin-left: 0vw;
     width: 15vw;
     height: 7vh;
