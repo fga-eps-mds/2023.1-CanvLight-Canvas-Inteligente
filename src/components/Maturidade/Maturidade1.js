@@ -1,4 +1,5 @@
 import "./Maturidade1.css";
+import rightArrow from "../../images/seta-direita.png";
 import React, { useState } from "react";
 
 function Maturidade1({state}){
@@ -447,11 +448,14 @@ function Maturidade1({state}){
                                 </select>
                             </td>
                         </tr>
+                        
                     </table>
-
-                <div onClick={(e) => irParaFormMaturidade2(e)} className="setaDireitaMaturidade"></div>
+                    <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaDireitaMaturidade"
+                        onClick={(e) => irParaFormMaturidade2(e)}/>
             </div>
-            
         </div>
         
     );
