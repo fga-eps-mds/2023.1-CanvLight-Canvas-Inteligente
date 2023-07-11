@@ -46,7 +46,11 @@ function Observacao1({
     modal2.style.display = "block";
     window.scrollTo(0, 0);
   }
-
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormIntuicao(e);
+    }
+  });
   const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
   const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
   const [terceiraLinhaEmpresa, setTerceiraLinhaEmpresa] = useState();
