@@ -290,6 +290,11 @@ function Intuicao({
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
   }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormIntuicao(e);
+    }
+  });
 
   return (
     <div className="form">

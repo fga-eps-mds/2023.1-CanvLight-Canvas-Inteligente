@@ -128,9 +128,11 @@ function Interacao({
     onAnaliseQuantidadeChange(novosDadosAnaliseQuantidade);
   };
 
-  const [primeiraLinhaAnaliseCusto, setPrimeiraLinhaAnaliseCusto] = useState("");
+  const [primeiraLinhaAnaliseCusto, setPrimeiraLinhaAnaliseCusto] =
+    useState("");
   const [segundaLinhaAnaliseCusto, setSegundaLinhaAnaliseCusto] = useState("");
-  const [terceiraLinhaAnaliseCusto, setTerceiraLinhaAnaliseCusto] = useState("");
+  const [terceiraLinhaAnaliseCusto, setTerceiraLinhaAnaliseCusto] =
+    useState("");
   const [quartaLinhaAnaliseCusto, setQuartaLinhaAnaliseCusto] = useState("");
 
   const handleInputChangeAnaliseCusto = (e) => {
@@ -156,7 +158,8 @@ function Interacao({
         name === "terceiraLinhaAnaliseCusto"
           ? value
           : terceiraLinhaAnaliseCusto,
-      quartaLinhaAnaliseCusto: name === "quartaLinhaAnaliseCusto" ? value : quartaLinhaAnaliseCusto,
+      quartaLinhaAnaliseCusto:
+        name === "quartaLinhaAnaliseCusto" ? value : quartaLinhaAnaliseCusto,
     };
 
     onAnaliseCustoChange(novosDadosAnaliseCusto);
@@ -821,7 +824,13 @@ function Interacao({
     let medel = document.querySelector(".tela_3_form_interacao");
     medel.style.display = "none";
   }
-
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormInteracao(e);
+      fecharFormInteracaoTela2(e);
+      fecharTela_3(e);
+    }
+  });
   function fecharFormInteracaoTela2(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -1017,11 +1026,13 @@ function Interacao({
                   <td className="nada"></td>
                   <td className="total">TOTAL</td>
                   <td>
-                    <input type="text"
-                    name="quartaLinhaAnaliseCusto"
-                    value={quartaLinhaAnaliseCusto}
-                    onChange={handleInputChangeAnaliseCusto}
-                    maxLength={20} />
+                    <input
+                      type="text"
+                      name="quartaLinhaAnaliseCusto"
+                      value={quartaLinhaAnaliseCusto}
+                      onChange={handleInputChangeAnaliseCusto}
+                      maxLength={20}
+                    />
                   </td>
                 </tr>
               </table>
@@ -1153,7 +1164,7 @@ function Interacao({
         </div>
       </div>
       <div className="tela_2_form_interacao">
-        <div className="center">
+        <div className="centerItr">
           <button
             className="close_itr2"
             onClick={(e) => fecharFormInteracaoTela2(e)}
@@ -1640,7 +1651,7 @@ function Interacao({
       </div>
 
       <div className="tela_3_form_interacao">
-        <div className="center">
+        <div className="centerInt">
           <div className="esquerda">
             <button
               className="close_itr3"
@@ -1857,7 +1868,7 @@ function Interacao({
               </table>
             </div>
             <div className="canais_venda">
-              <p>
+              <p className="h2_4psItr2">
                 4 P's do Projeto:
                 <div
                   onClick={() => {
