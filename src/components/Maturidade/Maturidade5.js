@@ -11,7 +11,7 @@ import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
 import React /*useState*/ from "react";
 
-function Maturidade5({porcentagemAdm}) {
+function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagemMkt}) {
   function fecharFormMaturidade5(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -36,7 +36,7 @@ function Maturidade5({porcentagemAdm}) {
     modal2.style.display = "none";
   }
   
-  /*function nivelMaturidade(){
+  function nivelMaturidade(){
 
     var adm = porcentagemAdm/100;
     var rh = porcentagemRh/100;
@@ -59,10 +59,10 @@ function Maturidade5({porcentagemAdm}) {
       nivel = 5;
     }
 
-    return media;
-  }*/
+    return nivel;
+  }
 
-  var nivel = 1;
+  var nivel = nivelMaturidade();
   var imgSituacao = null;
   var textSituacao = null;
   

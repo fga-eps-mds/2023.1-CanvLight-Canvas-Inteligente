@@ -1,7 +1,7 @@
 import "./Maturidade4.css";
 import React, { useState } from "react";
 
-function Maturidade4({state}){
+function Maturidade4({state, onPorcentagemMktChange}){
 
     // Primeiro trecho de selectResposta
     var [resposta1, setResposta1] = useState('');
@@ -83,6 +83,7 @@ function Maturidade4({state}){
 
 
 
+    // eslint-disable-next-line
     function calculaMkt(){
         var multiplicacao = null;
 
@@ -100,10 +101,8 @@ function Maturidade4({state}){
         var resultado = multiplicacao/60;
         resultado = resultado*100;
 
-        return resultado.toFixed(0);
+        onPorcentagemMktChange(resultado.toFixed(0));
     }
-
-    porcentagemMkt = calculaMkt();
 
     function fecharFormMaturidade4(e) {
         e.preventDefault();
@@ -494,7 +493,5 @@ function Maturidade4({state}){
         
     );
 }
-
-export let porcentagemMkt = null;
 
 export default Maturidade4;

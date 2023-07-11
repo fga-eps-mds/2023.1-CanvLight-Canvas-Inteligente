@@ -391,7 +391,7 @@ function Canvas() {
     modalOverlay.classList.add("modal-overlay");
     document.body.appendChild(modalOverlay);
 
-    let modal = document.querySelector(".areaRh");
+    let modal = document.querySelector(".areaAdm");
     modal.style.display = "block";
 
     let modal2 = document.querySelector(".confirma");

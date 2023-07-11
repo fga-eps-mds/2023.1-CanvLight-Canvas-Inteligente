@@ -80,6 +80,7 @@ function Maturidade2({state, onPorcentagemRhChange}) {
 
   
 
+  // eslint-disable-next-line
   function calculaRh(){
       var multiplicacao = null;
 
@@ -96,10 +97,8 @@ function Maturidade2({state, onPorcentagemRhChange}) {
       var resultado = multiplicacao/54;
       resultado = resultado*100;
 
-      return resultado.toFixed(0);
+      onPorcentagemRhChange(resultado.toFixed(0));
   }
-
-  porcentagemRh = calculaRh();
 
   function fecharFormMaturidade2(e) {
     e.preventDefault();
@@ -638,7 +637,5 @@ function Maturidade2({state, onPorcentagemRhChange}) {
     </div>
   );
 }
-
-export let porcentagemRh = null;
 
 export default Maturidade2;

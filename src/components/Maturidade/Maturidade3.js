@@ -1,7 +1,7 @@
 import "./Maturidade3.css";
 import React, { useState } from "react";
 
-function Maturidade3({state}) {
+function Maturidade3({state, onPorcentagemFinChange}) {
 
   // Primeiro trecho de selectResposta
   var [resposta1, setResposta1] = useState('');
@@ -71,6 +71,7 @@ function Maturidade3({state}) {
 
 
 
+  // eslint-disable-next-line
   function calculaFin(){
       var multiplicacao = null;
 
@@ -85,10 +86,8 @@ function Maturidade3({state}) {
       var resultado = multiplicacao/42;
       resultado = resultado*100;
 
-      return resultado.toFixed(0);
+      onPorcentagemFinChange(resultado.toFixed(0));
   }
-
-  porcentagemFin = calculaFin();
 
   function fecharFormMaturidade3(e) {
     e.preventDefault();
@@ -509,7 +508,5 @@ function Maturidade3({state}) {
     </div>
   );
 }
-
-export let porcentagemFin = null;
 
 export default Maturidade3;

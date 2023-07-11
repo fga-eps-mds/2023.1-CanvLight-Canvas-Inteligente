@@ -102,8 +102,6 @@ function Maturidade1({state, onPorcentagemAdmChange}){
         resultado = resultado*100;
 
         onPorcentagemAdmChange(resultado.toFixed(0));
-
-        return resultado.toFixed(0);
     }
 
     function fecharFormMaturidade1(e) {
