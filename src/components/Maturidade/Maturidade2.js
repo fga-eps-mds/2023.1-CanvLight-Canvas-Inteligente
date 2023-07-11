@@ -1,4 +1,5 @@
 import "./Maturidade2.css";
+import rightArrow from "../../images/seta-direita.png";
 import React, { useState } from "react";
 
 function Maturidade2({state, onPorcentagemRhChange}) {
@@ -143,7 +144,7 @@ function Maturidade2({state, onPorcentagemRhChange}) {
         ></button>
         <div className="dot2_area2"></div>
         <div className="dot3_area2"></div>
-        <h2 className="titulo">Área de Recursos Humanos</h2>
+        <h2 className="titulo_2_maturidade">Área de Recursos Humanos</h2>
         <div
           onClick={() => {
             window.open("tutorial#tut_canais_venda", "_blank");
@@ -622,14 +623,17 @@ function Maturidade2({state, onPorcentagemRhChange}) {
             </td>
           </tr>
         </table>
-        <div
-          onClick={(e) => irParaFormMaturidade1(e)}
-          className="setaEsquerda"
-        ></div>
-        <div
-          onClick={(e) => irParaFormMaturidade3(e)}
-          className="setaDireita"
-        ></div>
+
+        <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaEsquerdaMaturidade_2"
+                        onClick={(e) => irParaFormMaturidade1(e)}/>
+        <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaDireitaMaturidade_2"
+                        onClick={(e) => irParaFormMaturidade3(e)}/>
       </div>
     </div>
   );
