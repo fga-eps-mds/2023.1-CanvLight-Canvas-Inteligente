@@ -146,7 +146,7 @@ function Maturidade2({state, onPorcentagemRhChange}) {
         <h2 className="titulo_2_maturidade">Área de Recursos Humanos</h2>
         <div
           onClick={() => {
-            window.open("tutorial#tut_canais_venda", "_blank");
+            window.open("tutorial#tut_Maturidade", "_blank");
           }}
           className="duvidaFin"
         ></div>

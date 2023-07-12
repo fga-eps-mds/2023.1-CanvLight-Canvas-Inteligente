@@ -136,7 +136,7 @@ function Maturidade3({state, onPorcentagemFinChange}) {
         <h2 className="titulo_financeira">Área Financeira</h2>
         <div
           onClick={() => {
-            window.open("tutorial#tut_canais_venda", "_blank");
+            window.open("tutorial#tut_Maturidade", "_blank");
           }}
           className="duvidaFin"
         ></div>

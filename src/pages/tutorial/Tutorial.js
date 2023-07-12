@@ -533,7 +533,7 @@ function Tutorial() {
           resultados.
         </p>
       </div>
-      <div>
+      <div id="tut_Maturidade" className="tut_Maturidade">
         <h2>• Maturidade</h2>
         <p>
           A maturidade de um negócio é alcançada quando a empresa possui um modelo 
@@ -542,6 +542,7 @@ function Tutorial() {
           e capacidade de se adaptar às mudanças do mercado. Ela busca 
           constantemente inovação e crescimento sustentável, mantendo sua relevância 
           e competitividade.
+          <br />
           <br />
           Passo 1: Leia as perguntas atentamente.
           <br />
