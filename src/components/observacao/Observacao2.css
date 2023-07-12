@@ -180,7 +180,7 @@ body {
   width: 60%;
   height: 5vh;
   border-radius: 15px;
-  margin-left: 98%;
+  margin-left: 100%;
   transform: translateY(-80%);
 }
 
@@ -191,7 +191,7 @@ body {
   width: 60%;
   height: 5vh;
   border-radius: 15px;
-  margin-left: 90%;
+  margin-left: 93%;
   transform: translateY(-80%);
 }
 
@@ -202,7 +202,7 @@ body {
   width: 60%;
   height: 5vh;
   border-radius: 15px;
-  margin-left: 95%;
+  margin-left: 98%;
   transform: translateY(-120%);
 }
 
@@ -271,8 +271,8 @@ body {
   height: 16px;
   position: absolute;
   margin: auto;
-  top: 50vh;
-  left: 13vw;
+  margin-top: -1.5%;
+  left: 12vw;
   text-align: center;
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
