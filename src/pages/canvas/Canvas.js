@@ -637,10 +637,10 @@ function Canvas() {
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
         //Maturidade
-       /*  porcentagemAdm = {porcentagemAdm}
+        porcentagemAdm = {porcentagemAdm}
         porcentagemRh = {porcentagemRh}
         porcentagemFin = {porcentagemFin}
-        porcentagemMkt = {porcentagemMkt} */
+        porcentagemMkt = {porcentagemMkt}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />

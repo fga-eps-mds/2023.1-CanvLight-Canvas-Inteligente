@@ -989,7 +989,9 @@ function GeradorPDF({
     doc.text(`${inteQuatroP.terceiraLinhaInteQuatroP}`, 152, 257);
     doc.text(`${inteQuatroP.quartaLinhaInteQuatroP}`, 224, 257);
 
-    doc.addPage();
+    doc.addPage(); // Maturidade
+    doc.setFillColor('#fcdbc1'); // Seleciona a cor do Fundo #fcdbc1
+    doc.rect(0, 0, 420, 297, 'F'); // Adiciona o Retângulo maior
     var nivel = 5;
     //var imgSituacao = null;
     var textSituacao = null;
