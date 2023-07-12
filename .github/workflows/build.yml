@@ -39,6 +39,12 @@ jobs:
         run: |
           npm ci
           npm run build
+      
+      - name: Tests
+        run: |
+          pip install selenium
+          cd testes
+          py test.py
           
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
