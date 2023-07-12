@@ -671,3 +671,67 @@
 =======
 >>>>>>> 89a290f8 (adicionei um event listner para fechar as telas com ESC)
 }
+
+@media screen and (max-width: 568px) {
+  .centerItr {
+    height: 70%;
+  }
+  .close_itr,
+  .close_itr2,
+  .close_itr3 {
+    margin-left: 3%;
+  }
+  .dot2_itr,
+  .dot2_itr2,
+  .dot2_itr3 {
+    margin-left: 9%;
+  }
+  .dot3_itr,
+  .dot3_itr2,
+  .dot3_itr3 {
+    margin-left: 15%;
+  }
+  .parte1_interacao {
+    margin-top: 8%;
+    width: 70%;
+  }
+  .parte1_interacao p {
+    font-size: 20px;
+  }
+  .tabela_analise_custos table {
+    margin-left: -2%;
+  }
+  .parte2_interacao {
+    margin-top: 15%;
+    width: 75%;
+  }
+  .parte2_interacao p {
+    font-size: 20px;
+  }
+  .tabela_analise_preço table {
+    margin-left: -2%;
+    font-size: 12px;
+  }
+  .tabela_analise_preço table input {
+    width: 11vw;
+  }
+  .right-arrow {
+    width: 20%;
+    height: 20%;
+    margin-top: 25%;
+    margin-right: -5%;
+  }
+  /*INTERAÇÃO 2*/
+  /*checklist*/
+  .parte4_interacao {
+    width: 60%;
+    margin-top: -68vh;
+    margin-left: -65%;
+  }
+  .parte5_interacao {
+    width: 70%;
+    font-size: 20px;
+    margin-top: -200%;
+    margin-left: 0%;
+  }
+}
