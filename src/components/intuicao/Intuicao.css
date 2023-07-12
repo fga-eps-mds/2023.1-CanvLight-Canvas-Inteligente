@@ -1,3 +1,19 @@
+:root {
+  --back_color: #fcdbc1;
+  --font_color: black;
+}
+
+.dark-mode:root {
+  --back_color: #252525;
+  --font_color: white;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+textarea {
+  resize: none;
+}
 .form {
   z-index: 9999;
   display: none;
@@ -15,11 +31,10 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  margin-left: 8%;
-  margin-top: 6%;
-  background-color: #252525;
+  left: 8%;
+  top: 6%;
+  background-color: var(--back_color);
   border-radius: 30px;
-  font-family: "Ubuntu";
 }
 
 .close_int {
@@ -32,17 +47,19 @@
   border: none;
   left: 1.5%;
   top: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .dot2_int {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  background-color: rgb(248, 225, 14);
+  background-color: #ffc300;
   border-radius: 10px;
   position: absolute;
   border: none;
   left: 3.5%;
   top: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .dot3_int {
   cursor: pointer;
@@ -54,6 +71,7 @@
   border: none;
   left: 5.5%;
   top: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .esquerda {
@@ -63,17 +81,17 @@
 }
 
 .h2_project {
-  color: white;
+  color: var(--font_color);
   margin-top: 3%;
 }
 
 .h2_equipe {
   margin-top: 5%;
-  color: white;
+  color: var(--font_color);
 }
 
 .h2_Ikigai {
-  color: white;
+  color: var(--font_color);
   margin-bottom: 3%;
 }
 
@@ -83,7 +101,7 @@
 }
 
 .parte1 form {
-  color: white;
+  color: var(--font_color);
   float: left;
   width: 90%;
 }
@@ -93,11 +111,12 @@
   position: absolute;
   width: 29.7vw;
   height: 4vh;
-  right: 55%;
-  top: 6%;
-  color: white; 
+  left: 6.5vw;
+  top: 5.3vh;
+  padding: 2px;
+  color: var(--font_color);
   border: 2px solid #77216f;
-  background-color: #252525;
+  background-color: var(--back_color);
   border-radius: 20px;
 }
 
@@ -106,25 +125,27 @@
 }
 
 .parte1_2 form {
-  color: white;
+  color: var(--font_color);
   float: left;
   width: 90%;
 }
 
 .inputEquipe {
+  padding: 8px;
   box-sizing: border-box;
   position: absolute;
   width: 34.4vw;
   height: 12vh;
-  right: 55%;
-  top: 15%;
+  left: 1.5vw;
+  top: 16.5vh;
   border: 2px solid #77216f;
-  background-color: #252525;
+  background-color: var(--back_color);
+  color: var(--font_color);
   border-radius: 20px;
 }
 
 .tabela1 {
-  margin-top: 30%;
+  margin-top: 17vh;
   float: center;
   width: 100vw;
 }
@@ -132,18 +153,20 @@
 .tabela1 .tituloDNA {
   margin-bottom: 1%;
   font-size: 25px;
-  color: white;
+  color: var(--font_color);
 }
 
 .duvidaDNA_int {
   background-image: url("../../images/request\ \(1\).png");
+  position: relative;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-right: 50%;
-  margin-top: -65%;
+  right: -3vw;
+  top: -36.3vh;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .tabela1 table {
@@ -156,20 +179,21 @@
 }
 
 .tabela1 table td {
-  height: 50%;
   border-bottom: 1px solid #6c0277;
   border-top: 1px solid #6c0277;
   width: 10vw;
   height: 5vh;
-  background-color: #252525;
+  background-color: var(--back_color);
 }
 
 .tabela1 table input {
-  background-color: #252525;
+  background-color: var(--back_color);
   border: none;
-  height: 4vh;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
   border-color: #6c0277;
-  color: white;
+  color: var(--font_color);
 }
 
 .tabela1 table td.tecnico {
@@ -206,16 +230,17 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  float: right;
+  float: left;
   cursor: pointer;
-  margin-right: 75%;
-  margin-top: -43%;
+  margin-left: 33vw;
+  margin-top: -24vh;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .parte2 {
   float: left;
   width: 90%;
-  color: white;
+  color: var(--font_color);
   margin-top: 3%;
 }
 
@@ -225,12 +250,13 @@
 
 .parte2 textarea {
   font-size: 18px;
-  margin-right: 15%;
+  margin-left: 0%;
   margin-top: -4.6%;
-  background-color: #252525;
+  padding: 2px;
+  background-color: var(--back_color);
   border: 2px solid #6c0277;
   border-radius: 15px;
-  color: white;
+  color: var(--font_color);
   width: 35vw;
   height: 20vh;
 }
@@ -241,37 +267,25 @@
   margin-top: 2%;
 }
 
-.dateInt {
-  height: 4vh;
-  width: 8vw;
-  margin-top: -5%;
-  margin-right: 0%;
-  float: right;
-  cursor: pointer;
-  background-repeat: no-repeat;
-}
-
 .four_ps {
-  color: white;
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color);
   border: 2px solid #6c0277;
   border-radius: 8px;
   padding: 20px;
   float: right;
   width: 70%;
-  margin-right: 5%;
   margin-top: 2%;
-  margin-left: 20%;
 }
 
-.tabela22 h2 {
-  color: white;
+.tabela_4ps h2 {
+  color: var(--font_color);
   margin-left: 20%;
   float: left;
   margin-top: 3%;
 }
 
-.tabela22 table tr {
+.tabela_4ps table tr {
   width: 30%;
   height: 10vh;
   text-align: left;
@@ -280,12 +294,12 @@
   border-radius: 15px;
 }
 
-.tabela22 textarea {
+.tabela_4ps textarea {
   width: 70%;
   height: 100%;
-  color: white;
-  border-bottom: 1px solid white;
-  background-color: #252525;
+  color: var(--font_color);
+  border-bottom: 1px solid var(--font_color);
+  background-color: var(--back_color);
   border-right: none;
   border-top: none;
   border-left: none;
@@ -294,17 +308,19 @@
 
 .duvida_fourps_int {
   background-image: url("../../images/request\ \(1\).png");
+  position: relative;
   width: 20px;
   height: 20px;
   float: left;
   cursor: pointer;
-  margin-right: -23%;
-  margin-top: -2.5%;
+  margin-left: 42vw;
+  margin-top: -30vh;
   background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .tabela3 h2 {
-  color: white;
+  color: var(--font_color);
   margin-top: 40%;
   margin-left: 20%;
 }
@@ -313,10 +329,10 @@
   text-align: center;
   border: 0px solid #6c0277;
   border-radius: 15px;
-  color: white;
+  color: var(--font_color);
   float: right;
   width: 70%;
-  margin-right: 5%;
+  margin-left: 5%;
   margin-top: 2%;
   padding: 0;
   border-spacing: 0;
@@ -343,12 +359,12 @@
   padding: 10px;
   width: 100%;
   border: 0;
-  background-color: #252525;
-
-  color: white;
+  background-color: var(--back_color);
+  color: var(--font_color);
 }
 
-.terceiro-canto {
+.terceiro-canto,
+.terceiro-canto input {
   border-radius: 0 0 15px 0;
 }
 
@@ -358,21 +374,162 @@
 
 .duvida_sintese_int {
   background-image: url("../../images/request\ \(1\).png");
+  position: relative;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  margin-right: 60%;
-  margin-top: -28%;
+  right: -32vw;
+  top: -2.5vh;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .feito_int {
-  background-image: url("../../images/check.png");
   height: 6vh;
   width: 3vw;
-  margin-top: 15%;
-  margin-right: 2%;
+  margin-top: 7vh;
+  margin-left: 10vw;
   float: right;
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .navbar {
+    width: 100vw;
+  }
+  .form {
+    height: 180vh;
+  }
+  .centerInt {
+    height: 160vh;
+  }
+  .close_int {
+    left: 3vw;
+  }
+  .dot2_int {
+    left: 9vw;
+  }
+  .dot3_int {
+    left: 15vw;
+  }
+  .close_int,
+  .dot2_int,
+  .dot3_int {
+    height: 2vh;
+    width: 4vw;
+    top: 1.5vh;
+    margin-left: 1vw;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  }
+  .h2_project {
+    margin-top: 3vh;
+  }
+  .inputProjeto {
+    align-self: left;
+    margin-top: 4vh;
+    left: 5vw;
+    height: 4vh;
+    width: 70vw;
+  }
+  .h2_equipe {
+    margin-top: 5vh;
+  }
+  .inputEquipe {
+    align-self: left;
+    margin-top: 0vh;
+    left: 5vw;
+    width: 70vw;
+  }
+  .tabela1 {
+    margin-top: 15vh;
+  }
+  .tabela1 .tituloDNA {
+    font-size: 18px;
+  }
+  .tabela1 table {
+    width: fit-content;
+    font-size: 12px;
+  }
+  .tabela1 table th {
+    width: 21.5vw;
+    height: 3vh;
+  }
+  .tabela1 table td {
+    width: 21.5vw;
+    height: 1vh;
+  }
+  .tabela1 table input {
+    cursor: pointer;
+    float: left;
+    height: 3vh;
+    width: 21.5vw;
+    font-size: 12px;
+  }
+  .duvidaDNA_int {
+    margin-top: 12.4vh;
+    left: 18vw;
+  }
+
+  .parte2 {
+    margin-top: -12vh;
+  }
+  .parte2 textarea {
+    margin-top: -1.5vh;
+    width: 67vw;
+  }
+  .duvidaIkigai_int {
+    margin-top: -22.9vh;
+    margin-left: 18vw;
+  }
+  .direita {
+    float: left;
+    width: 100%;
+    margin-left: 0vw;
+  }
+  .tabela_4ps {
+    margin-left: 0vw;
+    margin-top: 80vh;
+  }
+  .tabela_4ps h2 {
+    float: left;
+    margin-left: -25vw;
+  }
+  .four_ps {
+    margin-top: 1vh;
+    margin-left: -1vw;
+    width: 67vw;
+  }
+  .duvida_fourps_int {
+    margin-top: -28.5vh;
+    margin-left: 10vw;
+  }
+  .tabela3 table {
+    float: left;
+    width: 67vw;
+    margin-top: 1vh;
+    margin-left: -26vw;
+  }
+  .tabela3 h2 {
+    margin-top: 115vh;
+    margin-left: -24vw;
+  }
+  .duvida_sintese_int {
+    margin-top: -22.8vh;
+    margin-left: -100%;
+  }
+  .feito_int {
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 15vw;
+    height: 7vh;
+  }
 }

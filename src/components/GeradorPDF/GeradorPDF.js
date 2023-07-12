@@ -1,4 +1,5 @@
 import React from "react";
+import checkIcon from "../../images/check.png";
 import { jsPDF } from "jspdf";
 //import logo from "../../images/logo_canvlight.png";
 import Intuicao from "../../images/Intuicao.png";
@@ -87,92 +88,92 @@ function GeradorPDF({
 
     doc.text( //Projeto
       `${intuTextos.primeiraLinhaIntuTextos}`, 
-      65, 
-      30
+      60, 
+      29
     );
 
     doc.text( //equipe
       `${intuTextos.segundaLinhaIntuTextos}`, 
-      33, 
+      27, 
       57
     );
 
     doc.text( //ikigai
       `${intuTextos.terceiraLinhaIntuTextos}`, 
-      33, 
+      27, 
       233
     );
 
     doc.text( //tecnico
       `${intuTecnico.primeiraLinhaIntuTecnico}`, 
-      85, 
+      81, 
       120
     );
 
     doc.text( //tecnico
       `${intuTecnico.segundaLinhaIntuTecnico}`, 
-      155, 
+      151, 
       120
     );
 
     doc.text( //resiliente
       `${intuResiliente.primeiraLinhaIntuResiliente}`, 
-      85, 
+      81, 
       137
     );
 
     doc.text( //resiliente
       `${intuResiliente.segundaLinhaIntuResiliente}`, 
-      155, 
+      153, 
       137
     );
 
     doc.text( //emocional
       `${intuEmocional.primeiraLinhaIntuEmocional}`, 
-      85, 
-      154
+      81, 
+      153
     );
 
     doc.text( //emocional
       `${intuEmocional.segundaLinhaIntuEmocional}`, 
-      155, 
+      153, 
       154
     );
 
     doc.text( //mercadologia
       `${intuMercadologico.primeiraLinhaIntuMercadologico}`, 
-      85, 
+      81, 
       171
     );
 
     doc.text( //mercadologia
       `${intuMercadologico.segundaLinhaIntuMercadologico}`, 
-      155, 
+      153, 
       171
     );
 
     doc.text( //integrador
       `${intuIntegrador.primeiraLinhaIntuIntegrador}`, 
-      85, 
+      81, 
       188
     );
 
     doc.text( //integrador
       `${intuIntegrador.segundaLinhaIntuIntegrador}`, 
-      155, 
+      153, 
       188
     );
 
     doc.text( //p1
       `${intuQuatroP.primeiraLinhaIntuQuatroP}`, 
       270, 
-      60
+      58
     );
 
     doc.text( //p2
       `${intuQuatroP.segundaLinhaIntuQuatroP}`, 
-      340, 
-      60
+      341, 
+      58
     );
 
     doc.text( //p3
@@ -183,44 +184,44 @@ function GeradorPDF({
 
     doc.text( //p4
       `${intuQuatroP.quartaLinhaIntuQuatroP}`, 
-      340, 
+      341, 
       93
     );
 
     doc.text( //potencialidade
       `${sintesePotencialidades.primeiraLinhaSintesePotencialidades}`, 
-      270, 
-      170
+      259, 
+      168
     );
 
     doc.text( //potencialidade
       `${sintesePotencialidades.segundaLinhaSintesePotencialidades}`, 
-      270, 
-      186
+      259, 
+      184
     );
 
     doc.text( //potencialidade
       `${sintesePotencialidades.terceiraLinhaSintesePotencialidades}`, 
-      270, 
-      202
+      259, 
+      200
     );
 
     doc.text( //resultados
       `${sinteseResultados.primeiraLinhaSinteseResultados}`, 
-      340, 
-      170
+      328, 
+      168
     );
 
     doc.text( //resultados
       `${sinteseResultados.segundaLinhaSinteseResultados}`, 
-      340, 
-      186
+      328, 
+      184
     );
 
     doc.text( //resultados
       `${sinteseResultados.terceiraLinhaSinteseResultados}`, 
-      340, 
-      202
+      328, 
+      200
     );
 
 
@@ -230,26 +231,26 @@ function GeradorPDF({
     //tabela1
     doc.text( //empresa
       `${empresa.primeiraLinhaEmpresa}`, 
-      38, 
-      55
+      37, 
+      53
     );
 
     doc.text( //empresa
       `${empresa.segundaLinhaEmpresa}`, 
-      38, 
+      37, 
       70
     );
 
     doc.text( //empresa
       `${empresa.terceiraLinhaEmpresa}`, 
-      38, 
+      37, 
       85
     );
 
     doc.text( //diferenca
       `${diferenca.primeiraLinhaDiferenca}`, 
       88, 
-      55
+      53
     );
 
     doc.text( //diferenca
@@ -267,7 +268,7 @@ function GeradorPDF({
     doc.text( //porte
       `${porte.primeiraLinhaPorte}`, 
       137, 
-      55
+      53
     );
 
     doc.text( //porte
@@ -285,7 +286,7 @@ function GeradorPDF({
     doc.text( //concorrencia
       `${concorrencia.primeiraLinhaConcorrencia}`, 
       187, 
-      55
+      53
     );
 
     doc.text( //concorrencia
@@ -303,7 +304,7 @@ function GeradorPDF({
     doc.text( //localizacao
       `${localizacao.primeiraLinhaLocalizacao}`, 
       238, 
-      55
+      53
     );
 
     doc.text( //localizacao
@@ -321,7 +322,7 @@ function GeradorPDF({
     doc.text( //imitado
       `${imitado.primeiraLinhaImitado}`, 
       289, 
-      55
+      53
     );
 
     doc.text( //imitado
@@ -339,7 +340,7 @@ function GeradorPDF({
     doc.text( //melhorado
       `${melhorar.primeiraLinhaMelhorar}`, 
       340, 
-      55
+      53
     );
 
     doc.text( //melhorar
@@ -357,20 +358,20 @@ function GeradorPDF({
     // tabela dois
 
     doc.text( //Parceiro
-      `${empresa.primeiraLinhaEmpresa}`, 
-      38, 
+      `${parceiro.primeiraLinhaParceiro}`, 
+      37, 
       135
     );
 
     doc.text( //Parceiro
-      `${empresa.segundaLinhaEmpresa}`, 
-      38, 
+      `${parceiro.segundaLinhaParceiro}`, 
+      37, 
       150
     );
 
     doc.text( //Parceiro
-      `${empresa.terceiraLinhaEmpresa}`, 
-      38, 
+      `${parceiro.terceiraLinhaParceiro}`, 
+      37, 
       165
     );
 
@@ -447,7 +448,7 @@ function GeradorPDF({
     );
 
     doc.text( //verticalizar
-      `${verticalizar.primeiraLinhVerticalizar}`, 
+      `${verticalizar.primeiraLinhaVerticalizar}`, 
       289, 
       135
     );
@@ -459,7 +460,7 @@ function GeradorPDF({
     );
 
     doc.text( //verticalizar
-      `${verticalizar.terceiraVerticalizar}`, 
+      `${verticalizar.terceiraLinhaVerticalizar}`, 
       289, 
       165
     );
@@ -484,23 +485,23 @@ function GeradorPDF({
 
     doc.text( //peefil1
       `${perfil1.primeiraLinhaPerfil1}`, 
-      95, 
+      92, 
       230
     );
 
     doc.text( //perfil1
       `${perfil1.segundaLinhaPerfil1}`, 
-      95, 
+      92, 
       246
     );
 
     doc.text( //perfil1
       `${perfil1.terceiraLinhaPerfil1}`, 
-      95, 
+      92, 
       262
     );
 
-    doc.text( //peefil2
+    doc.text( //perfil2
       `${perfil2.primeiraLinhaPerfil2}`, 
       268, 
       230
@@ -526,41 +527,41 @@ function GeradorPDF({
     doc.text( //ps
       `${psObser.primeiroP}`, 
       30, 
-      35
+      31
     );
 
     doc.text( //ps
       `${psObser.segundoP}`, 
-      100, 
-      35
+      102, 
+      31
     );
 
     doc.text( //ps
       `${psObser.terceiroP}`, 
       30, 
-      68
+      66
     );
 
     doc.text( //ps
       `${psObser.quartoP}`, 
-      105, 
-      68
+      102, 
+      66
     );
 
     doc.text( //alinhamentos
       `${aproximados.alinhadosObser2}`, 
-      130, 
-      147
+      129, 
+      148
     );
 
     doc.text( //proximos
-      `${aproximados.proximos}`, 
-      340, 
-      147
+      `${aproximados.concorrenteObser2}`, 
+      341, 
+      148
     );
 
     doc.text( //concorete
-      `${aproximados.concorrenteObser2}`, 
+      `${aproximados.proximos}`, 
       115, 
       163
     );
@@ -580,7 +581,7 @@ function GeradorPDF({
     doc.text( //ferramentas
       `${ferramentas.terceiraLinhaFerramentas}`, 
       55, 
-      254
+      256
     );
 
     doc.text( //requisitos
@@ -598,7 +599,7 @@ function GeradorPDF({
     doc.text( //requisitos
       `${requisitos.terceiraLinhaRequisitos}`, 
       110, 
-      254
+      256
     );
 
     doc.text( //Oportunidades
@@ -616,7 +617,7 @@ function GeradorPDF({
     doc.text( //oportunidades
       `${opotunidades.terceiraLinhaOportunidades}`, 
       165, 
-      254
+      256
     );
 
     doc.text( //indicado
@@ -634,7 +635,7 @@ function GeradorPDF({
     doc.text( //indicado
       `${indicado.terceiraLinhaIndicado}`, 
       220, 
-      254
+      256
     );
 
     doc.text( //orientacao
@@ -652,7 +653,7 @@ function GeradorPDF({
     doc.text( //orientacao
       `${orientacao.terceiraLinhaOrientacao}`, 
       275, 
-      254
+      256
     );
 
     doc.text( //resultado
@@ -670,7 +671,7 @@ function GeradorPDF({
     doc.text( //orientacao
       `${resultado.terceiraLinhaResultado}`, 
       330, 
-      254
+      256
     );
 
     doc.addPage(); //Obervação3
@@ -679,98 +680,98 @@ function GeradorPDF({
 
     doc.text( //Ferramentas
       `${ferramentasObser3.primeiraLinhaFerramentaObser3}`, 
-      50, 
-      70
+      40, 
+      65
     );
 
     doc.text( //Ferramentas
       `${ferramentasObser3.segundaLinhaFerramentaObser3}`, 
-      50, 
-      95
+      40, 
+      87
     );
 
     doc.text( //indicado para
       `${indicadoPara.primeiraLinhaIndicadoPara}`, 
-      120, 
-      70
+      112, 
+      65
     );
 
     doc.text( //indicado para
       `${indicadoPara.segundaLinhaIndicadoPara}`, 
-      120, 
-      95
+      112, 
+      87
     );
 
     doc.text( //orientação uso
       `${orientacaoUso.primeiraLinhaOrientacaoUso}`, 
-      190, 
-      70
+      184, 
+      65
     );
 
     doc.text( //orientação uso
       `${orientacaoUso.segundaLinhaOrientacaoUso}`, 
-      190, 
-      95
+      184, 
+      87
     );
 
     doc.text( //resultado esperado
       `${resultadoEsperado.primeiraLinhaResultadoEsparado}`, 
-      260, 
-      70
+      257, 
+      65
     );
 
     doc.text( //resutado esperado
       `${resultadoEsperado.segundaLinhaResultadoEsparado}`, 
-      260, 
-      95
+      257, 
+      87
     );
 
     doc.text( //Ferramentas
       `${ferramentasObser3P.primeiraLinhaFerramentaObser3P}`, 
-      105, 
-      195
+      100, 
+      191
     );
 
     doc.text( //Ferramentas
       `${ferramentasObser3P.segundaLinhaFerramentaObser3P}`, 
-      105, 
-      220
+      100, 
+      215
     );
 
     doc.text( //indicado para
       `${indicadoParaP.primeiraLinhaIndicadoParaP}`, 
-      175, 
-      195
+      173, 
+      191
     );
 
     doc.text( //indicado para
       `${indicadoParaP.segundaLinhaIndicadoParaP}`, 
-      175, 
-      220
+      172, 
+      215
     );
 
     doc.text( //orientação uso
       `${orientacaoUsoP.primeiraLinhaOrientacaoUsoP}`, 
       245, 
-      195
+      191
     );
 
     doc.text( //orientação uso
       `${orientacaoUsoP.segundaLinhaOrientacaoUsoP}`, 
       245, 
-      220
+      215
     );
 
     doc.text( //resultado esperado
       `${resultadoEsperadoP.primeiraLinhaResultadoEsparadoP}`, 
-      315, 
-      195
+      316, 
+      191
     );
 
     doc.text( //resutado esperado
       `${resultadoEsperadoP.segundaLinhaResultadoEsparadoP}`, 
-      315, 
-      220
+      316, 
+      215
     );
 
 
@@ -783,117 +784,122 @@ function GeradorPDF({
     doc.text( // Analise Custos Descricao
       `${descricao.primeiraLinhaDescricao}`, 
       34, 
-      57
+      58
     );
     doc.text(
       `${descricao.segundaLinhaDescricao}`, 
       34, 
-      75
+      76
     );
     doc.text(
       `${descricao.terceiraLinhaDescricao}`, 
       34, 
-      93
+      94
     );
 
     doc.text( // Analise Custos Preco
       `${analisePreco.primeiraLinhaAnalisePreco}`,
       87,
-      57
+      58
     );
     doc.text(
       `${analisePreco.segundaLinhaAnalisePreco}`,
       87,
-      75
+      76
     );
     doc.text(
       `${analisePreco.terceiraLinhaAnalisePreco}`,
       87,
-      93
+      94
     );
 
     doc.text( // Analise Custos Quantidade
       `${analiseQuantidade.primeiraLinhaAnaliseQuantidade}`,
       141,
-      57
+      58
     );
     doc.text(
       `${analiseQuantidade.segundaLinhaAnaliseQuantidade}`,
       141,
-      75
+      76
     );
     doc.text(
       `${analiseQuantidade.terceiraLinhaAnaliseQuantidade}`,
       141,
-      93
+      94
     );
     
     doc.text( // Analise Custos Custo
       `${analiseCusto.primeiraLinhaAnaliseCusto}`,
       195,
-      57
+      58
     );
     doc.text(
       `${analiseCusto.segundaLinhaAnaliseCusto}`,
       195,
-      75
+      76
     );
     doc.text(
       `${analiseCusto.terceiraLinhaAnaliseCusto}`,
       195,
-      93
+      94
+    );
+    doc.text(
+      `${analiseCusto.quartaLinhaAnaliseCusto}`,
+      195,
+      112
     );
 
     doc.text( // Analise de Preços e Diferenciais Diferencial
       `${analiseDiferencial.primeiraLinhaAnaliseDiferencial}`,
       87,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.segundaLinhaAnaliseDiferencial}`,
       141,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.terceiraLinhaAnaliseDiferencial}`,
       195,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.quartaLinhaAnaliseDiferencial}`,
       249,
-      191
+      192
     );
     doc.text(
       `${analiseDiferencial.quintaLinhaAnaliseDiferencial}`,
       303,
-      191
+      192
     );
 
     doc.text( // Analise de Precos e Diferenciais Precos
       `${analisePreDif.primeiraLinhaAnalisePreDif}`,
       87,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.segundaLinhaAnalisePreDif}`,
       141,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.terceiraLinhaAnalisePreDif}`,
       195,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.quartaLinhaAnalisePreDif}`,
       249,
-      227
+      228
     );
     doc.text(
       `${analisePreDif.quintaLinhaAnalisePreDif}`,
       303,
-      227
+      228
     );
 
     doc.addPage(); // Página Interação2
@@ -915,10 +921,10 @@ function GeradorPDF({
     doc.text(`${mvpOrientacoes.terceiraLinhaMvpOrientacoes}`, 295,88);
     doc.text(`${mvpOrientacoes.quartaLinhaMvpOrientacoes}`, 339,88);
 
-    doc.text(`${mvpResultado.primeiraLinhaMvpResultado}`, 207,116); // MVP Resultado
+    doc.text(`${mvpResultado.primeiraLinhaMvpResultado}`, 207,117); // MVP Resultado
     doc.text(`${mvpResultado.segundaLinhaMvpResultado}`, 251,117);
     doc.text(`${mvpResultado.terceiraLinhaMvpResultado}`, 295,117);
-    doc.text(`${mvpResultado.quartaLinhaMvpResultado}`, 339,116);
+    doc.text(`${mvpResultado.quartaLinhaMvpResultado}`, 339,117);
 
     doc.text(`${formacaoDescricao.primeiraLinhaFormacaoDescricao}`, 33,194); // Formacao do Preco Descricao
     doc.text(`${formacaoDescricao.segundaLinhaFormacaoDescricao}`, 33,212);
@@ -1086,9 +1092,12 @@ function GeradorPDF({
 
   return (
     <div>
-      <button className="btn-gerarpdf" onClick={gerarPDF}>
-        Gerar PDF
-      </button>
+      <img
+        src={checkIcon}
+        alt="Confirma"
+        className="confirma"
+        onClick={gerarPDF}
+      />
     </div>
   );
 }

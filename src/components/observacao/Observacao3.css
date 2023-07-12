@@ -1,22 +1,38 @@
-.Observacao3 .centerObs3 {
-  width: 90%;
-  background-color: #252525;
-  height: 80%;
-  border-radius: 30px;
-  margin: auto;
-  color: white;
+:root {
+  --back_color: #fcdbc1;
+  --font_color: black;
 }
 
-.Observacao3 p {
+.dark-mode:root {
+  --back_color: #252525;
+  --font_color: white;
+}
+
+.Observacao3 {
+  height: 110vh;
+}
+
+.centerObs3 {
+  position: absolute;
+  width: 90%;
+  height: 85%;
+  background-color: var(--back_color);
+  border-radius: 30px;
+  color: var(--font_color);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.Modelo_obs3,
+.Prototipo_obs3 {
   font-size: 30px;
-  margin-top: 3%;
-  margin-left: 3%;
+  margin-top: 4%;
+  margin-left: 5%;
 }
 
 .Observacao3 table {
   width: 80%;
   border-spacing: 0;
-  color: white;
+  color: var(--font_color);
   margin: auto;
   margin-top: 2%;
   height: 20vh;
@@ -28,32 +44,33 @@
   font-size: 20px;
 }
 
-.Observacao3 .primeiro-canto {
+.primeiro-canto {
   border-radius: 15px 0 0 0;
 }
 
-.Observacao3 .segundo-canto {
+.segundo-canto {
   border-radius: 0 15px 0 0;
 }
 
-.Observacao3 .terceiro-canto {
+.terceiro-canto {
   border-radius: 0 0 15px 0;
 }
 
-.Observacao3 .quarto-canto {
+.quarto-canto {
   border-radius: 0 0 0 15px;
 }
 
 .Observacao3 table td {
-  background-color: #252525;
+  background-color: var(--back_color);
   border: 1px solid #fb8218;
 }
 
 .Observacao3 table input {
-  background-color: #252525;
+  color: var(--font_color);
+  background-color: var(--back_color) 25;
   border: none;
   width: 18vw;
-  height: 4vh;
+  height: 100%;
 }
 
 .seta-esquerda_obs3 {
@@ -62,10 +79,11 @@
   background-size: contain;
   width: 10%;
   height: 10%;
-  margin-top: 10%;
+  margin-top: 4%;
   margin-left: 4%;
   float: left;
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .Observacao-finalizada {
@@ -74,29 +92,79 @@
   background-size: contain;
   width: 10%;
   height: 10%;
-  margin-top: 10%;
+  margin-top: 4%;
   float: right;
   cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.duvida5 {
+.duvida_modelo {
   background-image: url("../../images/request\ \(1\).png");
   width: 16px;
   height: 16px;
-  position: absolute;
-  float: right;
+  position: relative;
+  float: left;
   cursor: pointer;
-  top: 6%;
-  left: 14.7%;
+  margin-top: -1.5%;
+  left: 13%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.duvida6 {
+.duvida_prototipo {
   background-image: url("../../images/request\ \(1\).png");
   width: 16px;
   height: 16px;
-  position: absolute;
-  float: right;
+  position: relative;
+  float: left;
   cursor: pointer;
-  top: 34%;
-  right: 83%;
+  margin-top: -1.5%;
+  left: 15%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 568px) {
+  .Modelo_obs3,
+  .Prototipo_obs3 {
+    margin-top: 15%;
+    font-size: 20px;
+  }
+  .Observacao3 {
+    height: 100%;
+  }
+  .centerObs3 {
+    margin-top: 15%;
+    height: 80vh;
+  }
+  .Observacao3 table {
+    margin-top: 5%;
+  }
+  .Observacao3 table input {
+    width: 100%;
+    font-size: 12px;
+  }
+  .Observacao3 tr th {
+    font-size: 12px;
+  }
+  .duvida_modelo {
+    margin-top: -6%;
+    left: 30%;
+  }
+  .duvida_prototipo {
+    margin-top: -6%;
+    left: 35%;
+  }
+  .seta-esquerda_obs3 {
+    width: 15%;
+    height: 15%;
+    margin-top: 20%;
+    margin-left: 4%;
+    cursor: pointer;
+  }
+  .Observacao-finalizada {
+    width: 15%;
+    height: 15%;
+    margin-top: 20%;
+    margin-right: 4%;
+    cursor: pointer;
+  }
 }

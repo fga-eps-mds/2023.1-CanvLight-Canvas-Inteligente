@@ -8,8 +8,12 @@ import Observacao1 from "../../components/observacao/Observacao1.js";
 import Observacao2 from "../../components/observacao/Observacao2.js";
 import Observacao3 from "../../components/observacao/Observacao3.js";
 import Interacao from "../../components/Interacao/Interacao.js";
-import checkIcon from "../../images/check.png";
 import GeradorPDF from "../../components/GeradorPDF/GeradorPDF.js";
+import Maturidade1 from "../../components/Maturidade/Maturidade1.js";
+import Maturidade2 from "../../components/Maturidade/Maturidade2.js";
+import Maturidade3 from "../../components/Maturidade/Maturidade3.js";
+import Maturidade4 from "../../components/Maturidade/Maturidade4.js";
+import Maturidade5 from "../../components/Maturidade/Maturidade5.js";
 
 function Canvas() {
   //intuição
@@ -82,6 +86,9 @@ function Canvas() {
   const [canaisObjetivo, setCanaisObjetivo] = useState({});
   const [canaisMetrica, setCanaisMetrica] = useState({});
   const [inteQuatroP, setInteQuatroP] = useState({});
+
+  //maturidade
+  const [importancia1, setImportancia1] = useState({});
 
   //intuição
   const handleIntuTextosChange = (novosDadosIntuTextos) => {
@@ -252,6 +259,7 @@ function Canvas() {
   const handleEmpresaChange = (novosDadosEmpresa) => {
     setEmpresa(novosDadosEmpresa);
   };
+
   //Interação
   const handleDescricaoChange = (novosDadosDescricao) => {
     setDescricao(novosDadosDescricao);
@@ -313,6 +321,10 @@ function Canvas() {
   const handleInteQuatroPChange = (novosDadosInteQuatroP) => {
     setInteQuatroP(novosDadosInteQuatroP);
   };
+  //Maturidade
+  const handleImportancia1Change = (novosDadosImportancia1) => {
+    setImportancia1(novosDadosImportancia1);
+  };
 
   /*CHamada preview*/
 
@@ -341,7 +353,7 @@ function Canvas() {
     modal2.style.display = "none";
   }
 
-  /*Chamadas para o form de Interção*/
+  /*Chamadas para o form de Interação*/
   function abrirFormInteracao(e) {
     e.preventDefault();
 
@@ -369,6 +381,35 @@ function Canvas() {
     modal2.style.display = "none";
   }
 
+  /*Chamadas para o form de Maturidade1*/
+  function abrirFormMaturidade1(e) {
+    e.preventDefault();
+
+    let modalOverlay = document.createElement("div");
+    modalOverlay.classList.add("modal-overlay");
+    document.body.appendChild(modalOverlay);
+
+    let modal = document.querySelector(".areaAdm");
+    modal.style.display = "block";
+
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "none";
+  }
+
+  //Funcao para alterar para dark mode
+  document.addEventListener("DOMContentLoaded", function () {
+    const $checkbox = document.querySelector("#switch");
+    const $html = document.querySelector("html");
+
+    $checkbox.addEventListener("change", function () {
+      if ($checkbox.checked) {
+        $html.classList.add("dark-mode");
+      } else {
+        $html.classList.remove("dark-mode");
+      }
+    });
+  });
+
   return (
     <div className="body">
       <div className="navbar">
@@ -380,16 +421,17 @@ function Canvas() {
         <Link to="/2023.1-CanvLight-Canvas-Inteligente">
           <p className="name_navbar">CanvLight</p>
         </Link>
-
         <nav className="desktop">
           <ul>
             <Link to="/tutorial">
-              <li>Como usar?</li>
-            </Link>
-            <Link to="/canvas">
-              <li>Gerar canvas</li>
+              <li className="btn_comousar">Como usar?</li>
             </Link>
           </ul>
+          <div className="dark_select">
+            <label for="switch">
+              <input type="checkbox" id="switch" />
+            </label>
+          </div>
         </nav>
       </div>
       <div className="container">
@@ -405,6 +447,9 @@ function Canvas() {
           </button>
           <button className="button3" onClick={(e) => abrirFormInteracao(e)}>
             Interação
+          </button>
+          <button className="button4" onClick={(e) => abrirFormMaturidade1(e)}>
+            Maturidade
           </button>
         </div>
 
@@ -487,6 +532,17 @@ function Canvas() {
         onInteQuatroPChange={handleInteQuatroPChange}
       />
 
+      <Maturidade1
+        onImportancia1Change={handleImportancia1Change}/>
+      
+      <Maturidade2/>
+
+      <Maturidade3/>
+
+      <Maturidade4/>
+
+      <Maturidade5/>
+
       <GeradorPDF
         //intuição
         intuTextos={intuTextos}
@@ -554,13 +610,12 @@ function Canvas() {
         canaisObjetivo={canaisObjetivo}
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
+        //Maturidade
+        importancia1={importancia1}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />
       </Link>
-      <div>
-        <img src={checkIcon} alt="Confirma" className="confirma" />
-      </div>
     </div>
   );
 }

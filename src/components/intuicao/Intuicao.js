@@ -1,175 +1,249 @@
 import "./Intuicao.css";
-import dateIntuition from "../../images/dateIntuition.png";
 import checkImg from "../../images/check.png";
 
 import React, { useState } from "react";
 
-function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, onIntuQuatroPChange, onIntuTecnicoChange, onIntuResilienteChange, onIntuEmocionalChange,
-  onIntuMercadologicoChange, onIntuIntegradorChange, onIntuTextosChange }) {
-
+function Intuicao({
+  onSintesePotencialidadesChange,
+  onSinteseResultadosChange,
+  onIntuQuatroPChange,
+  onIntuTecnicoChange,
+  onIntuResilienteChange,
+  onIntuEmocionalChange,
+  onIntuMercadologicoChange,
+  onIntuIntegradorChange,
+  onIntuTextosChange,
+}) {
   const [primeiraLinhaIntuTextos, setPrimeiraLinhaIntuTextos] = useState("");
   const [segundaLinhaIntuTextos, setSegundaLinhaIntuTextos] = useState("");
   const [terceiraLinhaIntuTextos, setTerceiraLinhaIntuTextos] = useState("");
 
   const handleInputChangeIntuTextos = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaIntuTextos') {
-        setPrimeiraLinhaIntuTextos(value);
-      } else if (name === 'segundaLinhaIntuTextos') {
-        setSegundaLinhaIntuTextos(value);
-      } else if (name === 'terceiraLinhaIntuTextos') {
-        setTerceiraLinhaIntuTextos(value);
-      }
-  
-    const novosDadosIntuTextos = {
-        primeiraLinhaIntuTextos: name === 'primeiraLinhaIntuTextos' ? value : primeiraLinhaIntuTextos,
-        segundaLinhaIntuTextos: name === 'segundaLinhaIntuTextos' ? value : segundaLinhaIntuTextos,
-        terceiraLinhaIntuTextos: name === 'terceiraLinhaIntuTextos' ? value : terceiraLinhaIntuTextos,
-      };
-  
-      onIntuTextosChange(novosDadosIntuTextos);
-  }
+    if (name === "primeiraLinhaIntuTextos") {
+      setPrimeiraLinhaIntuTextos(value);
+    } else if (name === "segundaLinhaIntuTextos") {
+      setSegundaLinhaIntuTextos(value);
+    } else if (name === "terceiraLinhaIntuTextos") {
+      setTerceiraLinhaIntuTextos(value);
+    }
 
-  const [primeiraLinhaIntuIntegrador, setPrimeiraLinhaIntuIntegrador] = useState("");
-  const [segundaLinhaIntuIntegrador, setSegundaLinhaIntuIntegrador] = useState("");
+    const novosDadosIntuTextos = {
+      primeiraLinhaIntuTextos:
+        name === "primeiraLinhaIntuTextos" ? value : primeiraLinhaIntuTextos,
+      segundaLinhaIntuTextos:
+        name === "segundaLinhaIntuTextos" ? value : segundaLinhaIntuTextos,
+      terceiraLinhaIntuTextos:
+        name === "terceiraLinhaIntuTextos" ? value : terceiraLinhaIntuTextos,
+    };
+
+    onIntuTextosChange(novosDadosIntuTextos);
+  };
+
+  const [primeiraLinhaIntuIntegrador, setPrimeiraLinhaIntuIntegrador] =
+    useState("");
+  const [segundaLinhaIntuIntegrador, setSegundaLinhaIntuIntegrador] =
+    useState("");
 
   const handleInputChangeIntuIntegrador = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaIntuIntegrador') {
-        setPrimeiraLinhaIntuIntegrador(value);
-      } else if (name === 'segundaLinhaIntuIntegrador') {
-        setSegundaLinhaIntuIntegrador(value);
-      } 
-  
+    if (name === "primeiraLinhaIntuIntegrador") {
+      setPrimeiraLinhaIntuIntegrador(value);
+    } else if (name === "segundaLinhaIntuIntegrador") {
+      setSegundaLinhaIntuIntegrador(value);
+    }
+
     const novosDadosIntuIntegrador = {
-        primeiraLinhaIntuIntegrador: name === 'primeiraLinhaIntuIntegrador' ? value : primeiraLinhaIntuIntegrador,
-        segundaLinhaIntuIntegrador: name === 'segundaLinhaIntuIntegrador' ? value : segundaLinhaIntuIntegrador,
-      };
-  
-      onIntuIntegradorChange(novosDadosIntuIntegrador);
-  }
-  
-  const [primeiraLinhaIntuMercadologico, setPrimeiraLinhaIntuMercadologico] = useState("");
-  const [segundaLinhaIntuMercadologico, setSegundaLinhaIntuMercadologico] = useState("");
+      primeiraLinhaIntuIntegrador:
+        name === "primeiraLinhaIntuIntegrador"
+          ? value
+          : primeiraLinhaIntuIntegrador,
+      segundaLinhaIntuIntegrador:
+        name === "segundaLinhaIntuIntegrador"
+          ? value
+          : segundaLinhaIntuIntegrador,
+    };
+
+    onIntuIntegradorChange(novosDadosIntuIntegrador);
+  };
+
+  const [primeiraLinhaIntuMercadologico, setPrimeiraLinhaIntuMercadologico] =
+    useState("");
+  const [segundaLinhaIntuMercadologico, setSegundaLinhaIntuMercadologico] =
+    useState("");
 
   const handleInputChangeIntuMercadologico = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaIntuMercadologico') {
-        setPrimeiraLinhaIntuMercadologico(value);
-      } else if (name === 'segundaLinhaIntuMercadologico') {
-        setSegundaLinhaIntuMercadologico(value);
-      } 
-  
-    const novosDadosIntuMercadologico = {
-        primeiraLinhaIntuMercadologico: name === 'primeiraLinhaIntuMercadologico' ? value : primeiraLinhaIntuMercadologico,
-        segundaLinhaIntuMercadologico: name === 'segundaLinhaIntuMercadologico' ? value : segundaLinhaIntuMercadologico,
-      };
-  
-      onIntuMercadologicoChange(novosDadosIntuMercadologico);
-  }
+    if (name === "primeiraLinhaIntuMercadologico") {
+      setPrimeiraLinhaIntuMercadologico(value);
+    } else if (name === "segundaLinhaIntuMercadologico") {
+      setSegundaLinhaIntuMercadologico(value);
+    }
 
-  const [primeiraLinhaIntuEmocional, setPrimeiraLinhaIntuEmocional] = useState("");
-  const [segundaLinhaIntuEmocional, setSegundaLinhaIntuEmocional] = useState("");
+    const novosDadosIntuMercadologico = {
+      primeiraLinhaIntuMercadologico:
+        name === "primeiraLinhaIntuMercadologico"
+          ? value
+          : primeiraLinhaIntuMercadologico,
+      segundaLinhaIntuMercadologico:
+        name === "segundaLinhaIntuMercadologico"
+          ? value
+          : segundaLinhaIntuMercadologico,
+    };
+
+    onIntuMercadologicoChange(novosDadosIntuMercadologico);
+  };
+
+  const [primeiraLinhaIntuEmocional, setPrimeiraLinhaIntuEmocional] =
+    useState("");
+  const [segundaLinhaIntuEmocional, setSegundaLinhaIntuEmocional] =
+    useState("");
 
   const handleInputChangeIntuEmocional = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaIntuEmocional') {
-        setPrimeiraLinhaIntuEmocional(value);
-      } else if (name === 'segundaLinhaIntuEmocional') {
-        setSegundaLinhaIntuEmocional(value);
-      } 
-  
-    const novosDadosIntuEmocional = {
-        primeiraLinhaIntuEmocional: name === 'primeiraLinhaIntuEmocional' ? value : primeiraLinhaIntuEmocional,
-        segundaLinhaIntuEmocional: name === 'segundaLinhaIntuEmocional' ? value : segundaLinhaIntuEmocional,
-      };
-  
-      onIntuEmocionalChange(novosDadosIntuEmocional);
-  }
+    if (name === "primeiraLinhaIntuEmocional") {
+      setPrimeiraLinhaIntuEmocional(value);
+    } else if (name === "segundaLinhaIntuEmocional") {
+      setSegundaLinhaIntuEmocional(value);
+    }
 
-  const [primeiraLinhaIntuResiliente, setPrimeiraLinhaIntuResiliente] = useState("");
-  const [segundaLinhaIntuResiliente, setSegundaLinhaIntuResiliente] = useState("");
+    const novosDadosIntuEmocional = {
+      primeiraLinhaIntuEmocional:
+        name === "primeiraLinhaIntuEmocional"
+          ? value
+          : primeiraLinhaIntuEmocional,
+      segundaLinhaIntuEmocional:
+        name === "segundaLinhaIntuEmocional"
+          ? value
+          : segundaLinhaIntuEmocional,
+    };
+
+    onIntuEmocionalChange(novosDadosIntuEmocional);
+  };
+
+  const [primeiraLinhaIntuResiliente, setPrimeiraLinhaIntuResiliente] =
+    useState("");
+  const [segundaLinhaIntuResiliente, setSegundaLinhaIntuResiliente] =
+    useState("");
 
   const handleInputChangeIntuResiliente = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaIntuResiliente') {
-        setPrimeiraLinhaIntuResiliente(value);
-      } else if (name === 'segundaLinhaIntuResiliente') {
-        setSegundaLinhaIntuResiliente(value);
-      } 
-  
+    if (name === "primeiraLinhaIntuResiliente") {
+      setPrimeiraLinhaIntuResiliente(value);
+    } else if (name === "segundaLinhaIntuResiliente") {
+      setSegundaLinhaIntuResiliente(value);
+    }
+
     const novosDadosIntuResiliente = {
-        primeiraLinhaIntuResiliente: name === 'primeiraLinhaIntuResiliente' ? value : primeiraLinhaIntuResiliente,
-        segundaLinhaIntuResiliente: name === 'segundaLinhaIntuResiliente' ? value : segundaLinhaIntuResiliente,
-      };
-  
-      onIntuResilienteChange(novosDadosIntuResiliente);
-  }
+      primeiraLinhaIntuResiliente:
+        name === "primeiraLinhaIntuResiliente"
+          ? value
+          : primeiraLinhaIntuResiliente,
+      segundaLinhaIntuResiliente:
+        name === "segundaLinhaIntuResiliente"
+          ? value
+          : segundaLinhaIntuResiliente,
+    };
+
+    onIntuResilienteChange(novosDadosIntuResiliente);
+  };
 
   const [primeiraLinhaIntuTecnico, setPrimeiraLinhaIntuTecnico] = useState("");
   const [segundaLinhaIntuTecnico, setSegundaLinhaIntuTecnico] = useState("");
 
   const handleInputChangeIntuTecnico = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaIntuTecnico') {
-        setPrimeiraLinhaIntuTecnico(value);
-      } else if (name === 'segundaLinhaIntuTecnico') {
-        setSegundaLinhaIntuTecnico(value);
-      } 
-  
-    const novosDadosIntuTecnico = {
-        primeiraLinhaIntuTecnico: name === 'primeiraLinhaIntuTecnico' ? value : primeiraLinhaIntuTecnico,
-        segundaLinhaIntuTecnico: name === 'segundaLinhaIntuTecnico' ? value : segundaLinhaIntuTecnico,
-      };
-  
-      onIntuTecnicoChange(novosDadosIntuTecnico);
-  }
+    if (name === "primeiraLinhaIntuTecnico") {
+      setPrimeiraLinhaIntuTecnico(value);
+    } else if (name === "segundaLinhaIntuTecnico") {
+      setSegundaLinhaIntuTecnico(value);
+    }
 
-  const [primeiraLinhaSintesePotencialidades, setPrimeiraLinhaSintesePotencialidades] = useState("");
-  const [segundaLinhaSintesePotencialidades, setSegundaLinhaSintesePotencialidades] = useState("");
-  const [terceiraLinhaSintesePotencialidades, setTerceiraLinhaSintesePotencialidades] = useState("");
+    const novosDadosIntuTecnico = {
+      primeiraLinhaIntuTecnico:
+        name === "primeiraLinhaIntuTecnico" ? value : primeiraLinhaIntuTecnico,
+      segundaLinhaIntuTecnico:
+        name === "segundaLinhaIntuTecnico" ? value : segundaLinhaIntuTecnico,
+    };
+
+    onIntuTecnicoChange(novosDadosIntuTecnico);
+  };
+
+  const [
+    primeiraLinhaSintesePotencialidades,
+    setPrimeiraLinhaSintesePotencialidades,
+  ] = useState("");
+  const [
+    segundaLinhaSintesePotencialidades,
+    setSegundaLinhaSintesePotencialidades,
+  ] = useState("");
+  const [
+    terceiraLinhaSintesePotencialidades,
+    setTerceiraLinhaSintesePotencialidades,
+  ] = useState("");
 
   const handleInputChangeSintesePotencialidades = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaSintesePotencialidades') {
-        setPrimeiraLinhaSintesePotencialidades(value);
-      } else if (name === 'segundaLinhaSintesePotencialidades') {
-        setSegundaLinhaSintesePotencialidades(value);
-      } else if (name === 'terceiraLinhaSintesePotencialidades') {
-        setTerceiraLinhaSintesePotencialidades(value);
-      }
-  
-    const novosDadosSintesePotencialidades = {
-        primeiraLinhaSintesePotencialidades: name === 'primeiraLinhaSintesePotencialidades' ? value : primeiraLinhaSintesePotencialidades,
-        segundaLinhaSintesePotencialidades: name === 'segundaLinhaSintesePotencialidades' ? value : segundaLinhaSintesePotencialidades,
-        terceiraLinhaSintesePotencialidades: name === 'terceiraLinhaSintesePotencialidades' ? value : terceiraLinhaSintesePotencialidades,
-      };
-  
-      onSintesePotencialidadesChange(novosDadosSintesePotencialidades);
-  }
+    if (name === "primeiraLinhaSintesePotencialidades") {
+      setPrimeiraLinhaSintesePotencialidades(value);
+    } else if (name === "segundaLinhaSintesePotencialidades") {
+      setSegundaLinhaSintesePotencialidades(value);
+    } else if (name === "terceiraLinhaSintesePotencialidades") {
+      setTerceiraLinhaSintesePotencialidades(value);
+    }
 
-  const [primeiraLinhaSinteseResultados, setPrimeiraLinhaSinteseResultados] = useState("");
-  const [segundaLinhaSinteseResultados, setSegundaLinhaSinteseResultados] = useState("");
-  const [terceiraLinhaSinteseResultados, setTerceiraLinhaSinteseResultados] = useState("");
+    const novosDadosSintesePotencialidades = {
+      primeiraLinhaSintesePotencialidades:
+        name === "primeiraLinhaSintesePotencialidades"
+          ? value
+          : primeiraLinhaSintesePotencialidades,
+      segundaLinhaSintesePotencialidades:
+        name === "segundaLinhaSintesePotencialidades"
+          ? value
+          : segundaLinhaSintesePotencialidades,
+      terceiraLinhaSintesePotencialidades:
+        name === "terceiraLinhaSintesePotencialidades"
+          ? value
+          : terceiraLinhaSintesePotencialidades,
+    };
+
+    onSintesePotencialidadesChange(novosDadosSintesePotencialidades);
+  };
+
+  const [primeiraLinhaSinteseResultados, setPrimeiraLinhaSinteseResultados] =
+    useState("");
+  const [segundaLinhaSinteseResultados, setSegundaLinhaSinteseResultados] =
+    useState("");
+  const [terceiraLinhaSinteseResultados, setTerceiraLinhaSinteseResultados] =
+    useState("");
 
   const handleInputChangeSinteseResultados = (e) => {
     const { name, value } = e.target;
-      if (name === 'primeiraLinhaSinteseResultados') {
-        setPrimeiraLinhaSinteseResultados(value);
-      } else if (name === 'segundaLinhaSinteseResultados') {
-        setSegundaLinhaSinteseResultados(value);
-      } else if (name === 'terceiraLinhaSinteseResultados') {
-        setTerceiraLinhaSinteseResultados(value);
-      }
-  
+    if (name === "primeiraLinhaSinteseResultados") {
+      setPrimeiraLinhaSinteseResultados(value);
+    } else if (name === "segundaLinhaSinteseResultados") {
+      setSegundaLinhaSinteseResultados(value);
+    } else if (name === "terceiraLinhaSinteseResultados") {
+      setTerceiraLinhaSinteseResultados(value);
+    }
+
     const novosDadosSinteseResultados = {
-        primeiraLinhaSinteseResultados: name === 'primeiraLinhaSinteseResultados' ? value : primeiraLinhaSinteseResultados,
-        segundaLinhaSinteseResultados: name === 'segundaLinhaSinteseResultados' ? value : segundaLinhaSinteseResultados,
-        terceiraLinhaSinteseResultados: name === 'terceiraLinhaSinteseResultados' ? value : terceiraLinhaSinteseResultados,
-      };
-  
-      onSinteseResultadosChange(novosDadosSinteseResultados);
-  }
+      primeiraLinhaSinteseResultados:
+        name === "primeiraLinhaSinteseResultados"
+          ? value
+          : primeiraLinhaSinteseResultados,
+      segundaLinhaSinteseResultados:
+        name === "segundaLinhaSinteseResultados"
+          ? value
+          : segundaLinhaSinteseResultados,
+      terceiraLinhaSinteseResultados:
+        name === "terceiraLinhaSinteseResultados"
+          ? value
+          : terceiraLinhaSinteseResultados,
+    };
+
+    onSinteseResultadosChange(novosDadosSinteseResultados);
+  };
 
   const [primeiraLinhaIntuQuatroP, setPrimeiraLinhaIntuQuatroP] = useState("");
   const [segundaLinhaIntuQuatroP, setSegundaLinhaIntuQuatroP] = useState("");
@@ -178,29 +252,30 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
 
   const handleInputChangeIntuQuatroP = (e) => {
     const { name, value } = e.target;
-    if (name === 'primeiraLinhaIntuQuatroP') {
+    if (name === "primeiraLinhaIntuQuatroP") {
       setPrimeiraLinhaIntuQuatroP(value);
-    } else if (name === 'segundaLinhaIntuQuatroP') {
+    } else if (name === "segundaLinhaIntuQuatroP") {
       setSegundaLinhaIntuQuatroP(value);
-    } else if (name === 'terceiraLinhaIntuQuatroP') {
+    } else if (name === "terceiraLinhaIntuQuatroP") {
       setTerceiraLinhaIntuQuatroP(value);
-    } else if (name === 'quartaLinhaIntuQuatroP') {
+    } else if (name === "quartaLinhaIntuQuatroP") {
       setQuartaLinhaIntuQuatroP(value);
-    } 
+    }
 
     const novosDadosIntuQuatroP = {
-      primeiraLinhaIntuQuatroP: name === 'primeiraLinhaIntuQuatroP' ? value : primeiraLinhaIntuQuatroP,
-      segundaLinhaIntuQuatroP: name === 'segundaLinhaIntuQuatroP' ? value : segundaLinhaIntuQuatroP,
-      terceiraLinhaIntuQuatroP: name === 'terceiraLinhaIntuQuatroP' ? value : terceiraLinhaIntuQuatroP,
-      quartaLinhaIntuQuatroP: name === 'quartaLinhaIntuQuatroP' ? value : quartaLinhaIntuQuatroP,
+      primeiraLinhaIntuQuatroP:
+        name === "primeiraLinhaIntuQuatroP" ? value : primeiraLinhaIntuQuatroP,
+      segundaLinhaIntuQuatroP:
+        name === "segundaLinhaIntuQuatroP" ? value : segundaLinhaIntuQuatroP,
+      terceiraLinhaIntuQuatroP:
+        name === "terceiraLinhaIntuQuatroP" ? value : terceiraLinhaIntuQuatroP,
+      quartaLinhaIntuQuatroP:
+        name === "quartaLinhaIntuQuatroP" ? value : quartaLinhaIntuQuatroP,
     };
     onIntuQuatroPChange(novosDadosIntuQuatroP);
-  }
+  };
 
   //===============================================================================================
-  function clicouNaDuvida() {
-    alert("duvida clicada!");
-  }
 
   function fecharFormIntuicao(e) {
     e.preventDefault();
@@ -227,14 +302,26 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
         <div className="dot3_int"></div>
         <div className="esquerda">
           <div className="parte1">
-            <form> 
+            <form>
               <div>
                 <h2 className="h2_project">Projeto:</h2>
-                <input className="inputProjeto" name='primeiraLinhaIntuTextos' value={primeiraLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
+                <input
+                  className="inputProjeto"
+                  name="primeiraLinhaIntuTextos"
+                  value={primeiraLinhaIntuTextos}
+                  onChange={handleInputChangeIntuTextos}
+                  maxlength="53"
+                />
               </div>
 
-              <h2>Equipe:</h2>
-              <input className="inputEquipe" name='segundaLinhaIntuTextos' value={segundaLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
+              <h2 className="h2_equipe">Equipe:</h2>
+              <textarea
+                className="inputEquipe"
+                name="segundaLinhaIntuTextos"
+                value={segundaLinhaIntuTextos}
+                onChange={handleInputChangeIntuTextos}
+                maxlength="66"
+              />
             </form>
             <div className="clear"></div>
           </div>
@@ -251,102 +338,204 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
               <tr>
                 <td className="tecnico">TÉCNICO</td>
                 <td>
-                  <input type="text" name='primeiraLinhaIntuTecnico' value={primeiraLinhaIntuTecnico} onChange={handleInputChangeIntuTecnico} />
+                  <input
+                    type="text"
+                    name="primeiraLinhaIntuTecnico"
+                    value={primeiraLinhaIntuTecnico}
+                    onChange={handleInputChangeIntuTecnico}
+                    maxlength="26"
+                  />
                 </td>
                 <td className="espacoA1">
-                  <input type="text" name='segundaLinhaIntuTecnico' value={segundaLinhaIntuTecnico} onChange={handleInputChangeIntuTecnico} />
+                  <input
+                    type="text"
+                    name="segundaLinhaIntuTecnico"
+                    value={segundaLinhaIntuTecnico}
+                    onChange={handleInputChangeIntuTecnico}
+                    maxlength="31"
+                  />
                 </td>
               </tr>
 
               <tr>
                 <td className="resiliencia">RESILIENTE</td>
                 <td>
-                  <input type="text" name='primeiraLinhaIntuResiliente' value={primeiraLinhaIntuResiliente} onChange={handleInputChangeIntuResiliente} />
+                  <input
+                    type="text"
+                    name="primeiraLinhaIntuResiliente"
+                    value={primeiraLinhaIntuResiliente}
+                    onChange={handleInputChangeIntuResiliente}
+                    maxlength="26"
+                  />
                 </td>
                 <td className="espacoA2">
-                  <input type="text" name='segundaLinhaIntuResiliente' value={segundaLinhaIntuResiliente} onChange={handleInputChangeIntuResiliente} />
+                  <input
+                    type="text"
+                    name="segundaLinhaIntuResiliente"
+                    value={segundaLinhaIntuResiliente}
+                    onChange={handleInputChangeIntuResiliente}
+                    maxlength="31"
+                  />
                 </td>
               </tr>
 
               <tr>
                 <td className="emocional">EMOCIONAL</td>
                 <td>
-                  <input type="text" name='primeiraLinhaIntuEmocional' value={primeiraLinhaIntuEmocional} onChange={handleInputChangeIntuEmocional} />
+                  <input
+                    type="text"
+                    name="primeiraLinhaIntuEmocional"
+                    value={primeiraLinhaIntuEmocional}
+                    onChange={handleInputChangeIntuEmocional}
+                    maxlength="26"
+                  />
                 </td>
                 <td className="espacoA3">
-                  <input type="text" name='segundaLinhaIntuEmocional' value={segundaLinhaIntuEmocional} onChange={handleInputChangeIntuEmocional} />
+                  <input
+                    type="text"
+                    name="segundaLinhaIntuEmocional"
+                    value={segundaLinhaIntuEmocional}
+                    onChange={handleInputChangeIntuEmocional}
+                    maxlength="31"
+                  />
                 </td>
               </tr>
 
               <tr>
                 <td className="mercadologico">MERCADOLÓGICO</td>
                 <td>
-                  <input type="text" name='primeiraLinhaIntuMercadologico' value={primeiraLinhaIntuMercadologico} onChange={handleInputChangeIntuMercadologico} />
+                  <input
+                    type="text"
+                    name="primeiraLinhaIntuMercadologico"
+                    value={primeiraLinhaIntuMercadologico}
+                    onChange={handleInputChangeIntuMercadologico}
+                    maxlength="26"
+                  />
                 </td>
                 <td className="espacoA4">
-                  <input type="text" name='segundaLinhaIntuMercadologico' value={segundaLinhaIntuMercadologico} onChange={handleInputChangeIntuMercadologico} />
+                  <input
+                    type="text"
+                    name="segundaLinhaIntuMercadologico"
+                    value={segundaLinhaIntuMercadologico}
+                    onChange={handleInputChangeIntuMercadologico}
+                    maxlength="31"
+                  />
                 </td>
               </tr>
 
               <tr>
                 <td className="integrador">INTEGRADOR</td>
                 <td>
-                  <input type="text" name='primeiraLinhaIntuIntegrador' value={primeiraLinhaIntuIntegrador} onChange={handleInputChangeIntuIntegrador} />
+                  <input
+                    type="text"
+                    name="primeiraLinhaIntuIntegrador"
+                    value={primeiraLinhaIntuIntegrador}
+                    onChange={handleInputChangeIntuIntegrador}
+                    maxlength="26"
+                  />
                 </td>
-                
+
                 <td className="quarto-canto">
-                  <input className="quarto-canto" type="text" name='segundaLinhaIntuIntegrador' value={segundaLinhaIntuIntegrador} onChange={handleInputChangeIntuIntegrador} />
+                  <input
+                    className="quarto-canto"
+                    type="text"
+                    name="segundaLinhaIntuIntegrador"
+                    value={segundaLinhaIntuIntegrador}
+                    onChange={handleInputChangeIntuIntegrador}
+                    maxlength="31"
+                  />
                 </td>
               </tr>
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvidaDNA_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#breakpoint_introducao", "_blank");
+            }}
+            className="duvidaDNA_int"
+          ></div>
 
           <div className="parte2">
             <h2 className="h2_Ikigai">Ikigai:</h2>
             <br />
-            <textarea type="text" name='terceiraLinhaIntuTextos' value={terceiraLinhaIntuTextos} onChange={handleInputChangeIntuTextos} />
+            <textarea
+              type="text"
+              name="terceiraLinhaIntuTextos"
+              value={terceiraLinhaIntuTextos}
+              onChange={handleInputChangeIntuTextos}
+              maxlength="79"
+            />
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvidaIkigai_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_dna", "_blank");
+            }}
+            className="duvidaIkigai_int"
+          ></div>
 
           <div className="clear"></div>
         </div>
-        
-        <div className="direita">
-          <div>
-            <img src={dateIntuition} alt="DataIntuicao" className="dateInt" />
-          </div>
 
-          <div className="tabela22">
+        <div className="direita">
+          <div className="tabela_4ps">
             <h2>4P's do projeto:</h2>
             <table className="four_ps">
               <tr>
                 <td>
                   P1:
-                  <textarea  type="text" name="primeiraLinhaIntuQuatroP" value={primeiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea
+                    type="text"
+                    name="primeiraLinhaIntuQuatroP"
+                    value={primeiraLinhaIntuQuatroP}
+                    onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
+                  />
                 </td>
                 <td>
                   P2:
-                  <textarea  type="text" name="segundaLinhaIntuQuatroP" value={segundaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea
+                    type="text"
+                    name="segundaLinhaIntuQuatroP"
+                    value={segundaLinhaIntuQuatroP}
+                    onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
+                  />
                 </td>
               </tr>
 
               <tr>
                 <td>
                   P3:
-                  <textarea type="text" name="terceiraLinhaIntuQuatroP" value={terceiraLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea
+                    type="text"
+                    name="terceiraLinhaIntuQuatroP"
+                    value={terceiraLinhaIntuQuatroP}
+                    onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
+                  />
                 </td>
                 <td>
                   P4:
-                  <textarea type="text" name="quartaLinhaIntuQuatroP" value={quartaLinhaIntuQuatroP} onChange={handleInputChangeIntuQuatroP} />
+                  <textarea
+                    type="text"
+                    name="quartaLinhaIntuQuatroP"
+                    value={quartaLinhaIntuQuatroP}
+                    onChange={handleInputChangeIntuQuatroP}
+                    maxlength="13"
+                  />
                 </td>
               </tr>
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida_fourps_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_ikigai", "_blank");
+            }}
+            className="duvida_fourps_int"
+          ></div>
 
           <div className="tabela3">
             <h2>Síntese:</h2>
@@ -358,19 +547,43 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
 
               <tr>
                 <td>
-                  <input type="text" name='primeiraLinhaSintesePotencialidades' value={primeiraLinhaSintesePotencialidades} onChange={handleInputChangeSintesePotencialidades} />
+                  <input
+                    type="text"
+                    name="primeiraLinhaSintesePotencialidades"
+                    value={primeiraLinhaSintesePotencialidades}
+                    onChange={handleInputChangeSintesePotencialidades}
+                    maxlength="25"
+                  />
                 </td>
                 <td>
-                  <input type="text" name='primeiraLinhaSinteseResultados' value={primeiraLinhaSinteseResultados} onChange={handleInputChangeSinteseResultados} />
+                  <input
+                    type="text"
+                    name="primeiraLinhaSinteseResultados"
+                    value={primeiraLinhaSinteseResultados}
+                    onChange={handleInputChangeSinteseResultados}
+                    maxlength="25"
+                  />
                 </td>
               </tr>
 
               <tr>
                 <td>
-                  <input type="text" name='segundaLinhaSintesePotencialidades' value={segundaLinhaSintesePotencialidades} onChange={handleInputChangeSintesePotencialidades}  />
+                  <input
+                    type="text"
+                    name="segundaLinhaSintesePotencialidades"
+                    value={segundaLinhaSintesePotencialidades}
+                    onChange={handleInputChangeSintesePotencialidades}
+                    maxlength="25"
+                  />
                 </td>
                 <td>
-                  <input type="text" name='segundaLinhaSinteseResultados' value={segundaLinhaSinteseResultados} onChange={handleInputChangeSinteseResultados} />
+                  <input
+                    type="text"
+                    name="segundaLinhaSinteseResultados"
+                    value={segundaLinhaSinteseResultados}
+                    onChange={handleInputChangeSinteseResultados}
+                    maxlength="25"
+                  />
                 </td>
               </tr>
               <tr>
@@ -384,16 +597,35 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
 
               <tr>
                 <td className="quarto-canto">
-                  <input className="quarto-canto" type="text" name='terceiraLinhaSintesePotencialidades' value={terceiraLinhaSintesePotencialidades} onChange={handleInputChangeSintesePotencialidades} />
+                  <input
+                    className="quarto-canto"
+                    type="text"
+                    name="terceiraLinhaSintesePotencialidades"
+                    value={terceiraLinhaSintesePotencialidades}
+                    onChange={handleInputChangeSintesePotencialidades}
+                    maxlength="25"
+                  />
                 </td>
                 <td className="terceiro-canto">
-                  <input className="teceiro-canto" type="text" name='terceiraLinhaSinteseResultados' value={terceiraLinhaSinteseResultados} onChange={handleInputChangeSinteseResultados} />
+                  <input
+                    className="teceiro-canto"
+                    type="text"
+                    name="terceiraLinhaSinteseResultados"
+                    value={terceiraLinhaSinteseResultados}
+                    onChange={handleInputChangeSinteseResultados}
+                    maxlength="25"
+                  />
                 </td>
               </tr>
             </table>
           </div>
 
-          <div onClick={clicouNaDuvida} className="duvida_sintese_int"></div>
+          <div
+            onClick={() => {
+              window.open("tutorial#tut_fourps", "_blank");
+            }}
+            className="duvida_sintese_int"
+          ></div>
 
           <div onClick={(e) => fecharFormIntuicao(e)} className="feito_int">
             <img src={checkImg} className="feito_int" alt="confirma_int" />
@@ -402,8 +634,6 @@ function Intuicao({ onSintesePotencialidadesChange, onSinteseResultadosChange, o
           <div className="clear"></div>
         </div>
       </div>
-
-      
     </div>
   );
 }

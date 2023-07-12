@@ -129,6 +129,7 @@
 
 .membros {
   padding: 50px;
+  background-color: #fcdbc1;
 }
 
 .cabeceira {
@@ -204,9 +205,9 @@
   top: -110vh;
   left: -10vw;
   border-radius: 6px;
+  border-inline: none;
   cursor: pointer;
 
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -225,7 +226,6 @@
   border-radius: 6px;
   cursor: pointer;
 
-  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -264,4 +264,40 @@
 }
 */
 
-/**/
+@media screen and (max-width: 568px) {
+  .desktop ul li {
+    margin-top: 3%;
+  }
+  .sol-inv {
+    position: absolute;
+    height: 40%;
+    top: 20%;
+  }
+  .sol-bg {
+    top: 50vh;
+  }
+  .main-btn,
+  .main-btn1 {
+    top: -80vh;
+    font-size: 20px;
+    width: 30vw;
+    height: 6vh;
+    border-radius: 12px;
+    border-inline: none;
+  }
+  .sobre {
+    top: 70%;
+  }
+  .sobre h2 {
+    font-size: 30px;
+  }
+  .sobre p {
+    font-size: 20px;
+  }
+  .membros {
+    padding: 10px;
+  }
+  .membros ul a li {
+    padding: 48px;
+  }
+}

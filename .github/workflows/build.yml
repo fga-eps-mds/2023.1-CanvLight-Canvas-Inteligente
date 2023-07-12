@@ -9,14 +9,37 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        
+      - name: Set Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          options: |
+            args:
+              - --no-sandbox
+              - --disable-dev-shm-usage
+              
+      - name: Checkout Node
+        uses: actions/setup-node@v1
         with:
           node-version: '20.x'
+        
+      - name: Install dependencies
+        run: |
+          npm install
+          
+      - name: Set Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          
+          
       - name: Build web-app
         run: |
           npm ci
           npm run build
+          
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:

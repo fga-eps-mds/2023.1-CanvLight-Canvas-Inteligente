@@ -1,7 +1,15 @@
 .tut_body {
-  height: 640vh;
+  height: 620vh;
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
+  position: absolute;
+}
+.tutoriais {
+  width: 100vw;
+  height: 620vh;
+  /* background-image: linear-gradient(#e95420, #77216f); */
+  background-color: #fcdbc1;
+  position: absolute;
 }
 
 .introducao {
@@ -342,4 +350,40 @@
   color: #252525;
   font-size: 18px;
   text-align: justify;
+}
+
+@media screen and (max-width: 568px) {
+  .tut_body h2,
+  .tut_body p {
+    font-size: 20px;
+  }
+  .name_navbar {
+    font-size: 20px;
+    top: 1%;
+  }
+  .tut_body {
+    height: fit-content;
+  }
+  .introducao {
+    margin-top: 20%;
+  }
+  .tut_dna,
+  .tut_analise_custo,
+  .tut_analise_preco_diferenciais,
+  .tut_benchmaking,
+  .tut_canais_venda,
+  .tut_conceito,
+  .tut_digitalizacao,
+  .tut_formacao_preco,
+  .tut_melhorias,
+  .tut_modelo,
+  .tut_mvp,
+  .tut_prototipo,
+  .tut_ikigai,
+  .tut_fourps,
+  .tut_sintese,
+  .tut_perfis_cliente,
+  .tut_proposta_valor {
+    margin-top: 20%;
+  }
 }
