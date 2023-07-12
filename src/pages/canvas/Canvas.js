@@ -326,6 +326,18 @@ function Canvas() {
     setImportancia1(novosDadosImportancia1);
   };
 
+  /*CHamada preview*/
+
+  function abrirPreview(e){
+    e.preventDefault();
+
+    let modal = document.querySelector('.modalAbrirPreview');
+    modal.style.display = "block";
+
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "none";
+  }
+
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
     e.preventDefault();
@@ -440,7 +452,10 @@ function Canvas() {
             Maturidade
           </button>
         </div>
+
+        <button className="preview" onClick={(e) => abrirPreview(e)}>preview</button>
       </div>
+
       <Intuicao
         onIntuTextosChange={handleIntuTextosChange}
         onIntuIntegradorChange={handleIntuIntegradorChange}
