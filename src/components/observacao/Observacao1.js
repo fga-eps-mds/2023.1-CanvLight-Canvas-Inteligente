@@ -453,6 +453,20 @@ function Observacao1({
     };
 
     onEmpresaChange(novosDadosEmpresa);
+
+    function verificarTamanhoTela() {
+      var inputElement = document.getElementsByClassName("primeiro-input");
+      var placeholder = inputElement.getAttribute("data-placeholder");
+
+      if (window.innerWidth <= 600) {
+        // Defina aqui o tamanho de tela que você considera pequeno
+        inputElement.setAttribute("placeholder", placeholder);
+      } else {
+        inputElement.removeAttribute("placeholder");
+      }
+    }
+    window.addEventListener("DOMContentLoaded", verificarTamanhoTela);
+    window.addEventListener("resize", verificarTamanhoTela);
   };
 
   return (
@@ -932,6 +946,7 @@ function Observacao1({
               className="primeiro-input"
               type="text"
               name="primeiraLinhaPerfil2"
+              data-placeholder="Perfil e persona do Cliente 2"
               value={primeiraLinhaPerfil2}
               onChange={handleInputChangePerfil2}
               maxLength={36}
