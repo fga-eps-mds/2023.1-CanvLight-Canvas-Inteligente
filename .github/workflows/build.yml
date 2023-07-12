@@ -44,7 +44,7 @@ jobs:
         run: |
           pip install selenium
           cd testes
-          py test.py
+          python test.py
           
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
