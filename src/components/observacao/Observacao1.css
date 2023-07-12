@@ -8,7 +8,7 @@
   --font_color: white;
 }
 
-.benchmarking .centerObs1 {
+.centerObs1 {
   background-color: var(--back_color);
   position: absolute;
   width: 90%;
@@ -61,6 +61,7 @@
   background-color: var(--back_color);
   border: none;
   width: auto;
+  height: 100%;
 }
 
 .benchmarking h2 {
@@ -221,7 +222,7 @@
   .benchmarking {
     height: 105vh;
   }
-  .benchmarking .centerObs1 {
+  .centerObs1 {
     width: 90vw;
   }
   .close_obs,

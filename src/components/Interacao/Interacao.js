@@ -10,7 +10,7 @@ import happy from "../../images/happy.png";
 import checkImg from "../../images/check.png";
 import "./Interacao.css";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 /* import GeradorPDF from "../GeradorPDF/GeradorPDF"; */
 
 function Interacao({
@@ -840,10 +840,17 @@ function Interacao({
     let medel = document.querySelector(".tela_2_form_interacao");
     medel.style.display = "none";
   }
+
+  let[lista, setLista] = useState([]);
+  let[novoItem, setNovoItem] = useState([]);
+
+  useEffect(()=>{
+    setLista([]);
+  },[]);
+
   function newTask() {
-    var input = document.getElementById("input-new-task");
-    var valor = input.value;
-    console.log(valor);
+    setLista([...lista, novoItem]);
+    setNovoItem("");
   }
 
   const checkboxes = document.querySelectorAll(
@@ -1182,8 +1189,10 @@ function Interacao({
                     type="text"
                     id="input-new-task"
                     placeholder="Inserir tarefa"
+                    value={novoItem}
+                    onChange={value=>setNovoItem(value.target.value)}
                   ></input>
-                  <span className="button_tarefa" onClick={(e) => newTask(e)}>
+                  <button className="button_tarefa" onClick={() => newTask()}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="21"
@@ -1194,7 +1203,14 @@ function Interacao({
                     >
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
                     </svg>
-                  </span>
+                  </button>
+                  <ul className="todolist">
+                    {lista.map((item, index)=>(
+                      <li className="itemtodolist">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>

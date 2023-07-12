@@ -10,8 +10,7 @@ function Observacao2({
   onIndicadoChange,
   onOrientacaoChange,
   onResultadoChange,
-}){
-
+}) {
   const [primeiroP, setPrimeiroP] = useState();
   const [segundoP, setSegundoP] = useState();
   const [terceiroP, setTerceiroP] = useState();

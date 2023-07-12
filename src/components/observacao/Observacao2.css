@@ -28,11 +28,9 @@ body {
 .psdoprojeto h2 {
   color: var(--font_color);
   position: absolute;
-  top: 8%;
+  margin-top: 4%;
   left: 4%;
   text-align: left;
-  margin: auto;
-  bottom: 5%;
   font-size: 25px;
 }
 
@@ -64,6 +62,7 @@ body {
   height: 100%;
   border-bottom: 1px solid var(--font_color);
   background-color: var(--back_color);
+  color: var(--font_color);
   border-right: none;
   border-top: none;
   border-left: none;
