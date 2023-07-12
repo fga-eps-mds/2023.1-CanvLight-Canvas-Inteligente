@@ -740,3 +740,119 @@ WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[2]/div/div[3]/img[2]")))
 
 print("Interação 2: Sucesso!")
+
+driver.find_element(
+    By.XPATH, "/html/body/div[1]/div/div[7]/div[2]/div/div[3]/img[1]").click()
+
+print("Testando: Interação 3")
+
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "close_itr3")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[1]/div[3]/p/div")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[1]/div[3]/p")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[1]/div[4]/img[1]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[1]/div[4]/img[2]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[1]/div[4]/img[3]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "zap")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "insta")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "twitter")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "face")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "linkedin")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "whatsapp_bad")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "whatsapp_normal")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "whatsapp_good")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "instagram_bad")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "instagram_normal")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "instagram_good")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "twitter_bad")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "twitter_normal")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "twitter_good")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "facebook_bad")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "facebook_normal")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "facebook_good")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "linkedin_bad")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "linkedin_normal")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "linkedin_good")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[1]/p")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[1]/p/div")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[1]/th[1]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[1]/th[2]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[1]/th[3]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[2]/td[1]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[2]/td[2]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[2]/td[3]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[3]/td[1]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[3]/td[2]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[3]/td[3]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[4]/td[1]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[4]/td[2]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[4]/td[3]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[4]/td[1]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[4]/td[2]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[4]/td[3]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[5]/td[1]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[5]/td[2]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[2]/table/tr[5]/td[3]/input")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[3]/p")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[3]/p/div")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[4]/table/tr[1]/td[1]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[4]/table/tr[1]/td[2]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[4]/table/tr[2]/td[1]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[3]/div/div[2]/div[4]/table/tr[2]/td[2]/input")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "feito_itr")))
+
+print("Interação 3: Sucesso!")
+
+driver.quit()
