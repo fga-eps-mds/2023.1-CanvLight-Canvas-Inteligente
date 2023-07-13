@@ -21,16 +21,23 @@ jobs:
         run: |
           npm install
           
-      - name: Set Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-          
           
       - name: Build web-app
         run: |
           npm ci
           npm run build
+      
+          
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          
+      - name: Set Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
       
       - name: Instalar o Firefox e o GeckoDriver (Web Driver)
         run: |
@@ -46,9 +53,3 @@ jobs:
           pip install -U selenium
           cd testes
           python test.py
-          
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
