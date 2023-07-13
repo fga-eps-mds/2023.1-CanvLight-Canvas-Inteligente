@@ -135,7 +135,7 @@ function Maturidade1({state, onPorcentagemAdmChange}){
                 <div className="dot2_area1"></div>
                 <div className="dot3_area1"></div>
                 <h2 className="titulo_area_adm">Área Administrativa</h2>
-                <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
+                <div onClick={() => {window.open("tutorial#tut_Maturidade", "_blank");
                 }}className="duvidaAdm"></div>
 
                     <table>

@@ -1,12 +1,12 @@
 .tut_body {
-  height: 620vh;
+  height: 630vh;
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
   position: absolute;
 }
 .tutoriais {
   width: 100vw;
-  height: 620vh;
+  height: 630vh;
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
   position: absolute;
@@ -345,6 +345,27 @@
   margin-bottom: 1%;
 }
 .tut_canais_venda p {
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.tut_Maturidade {
+  z-index: 1;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  position: relative;
+}
+
+.tut_Maturidade h2{
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+
+.tut_Maturidade p{
   width: 90%;
   margin-left: 4%;
   color: #252525;

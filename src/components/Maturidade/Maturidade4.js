@@ -146,7 +146,7 @@ function Maturidade4({state, onPorcentagemMktChange}){
                 <div className="dot2_area4"></div>
                 <div className="dot3_area4"></div>
                 <h2 className="titulo_maturidade_4">Marketing</h2>
-                <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
+                <div onClick={() => {window.open("tutorial#tut_Maturidade", "_blank");
                 }}className="duvidaMkt"></div>
 
                     <table>

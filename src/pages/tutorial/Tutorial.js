@@ -527,10 +527,32 @@ function Tutorial() {
           Passo 5: Acompanhe e avalie os resultados com base nas métricas
           definidas, registrando o desempenho de cada canal de venda.
           <br />
-          Passo 6: aça ajustes conforme necessário, com base nos resultados e
+          Passo 6: Faça ajustes conforme necessário, com base nos resultados e
           nas análises obtidas. Isso permitirá otimizar seus canais de venda e
           direcionar seus esforços para aqueles que trazem os melhores
           resultados.
+        </p>
+      </div>
+      <div id="tut_Maturidade" className="tut_Maturidade">
+        <h2>• Maturidade</h2>
+        <p>
+          A maturidade de um negócio é alcançada quando a empresa possui um modelo 
+          sólido, clientes satisfeitos e estabilidade financeira. Nessa fase, a 
+          organização tem processos eficientes, estrutura organizacional definida 
+          e capacidade de se adaptar às mudanças do mercado. Ela busca 
+          constantemente inovação e crescimento sustentável, mantendo sua relevância 
+          e competitividade.
+          <br />
+          <br />
+          Passo 1: Leia as perguntas atentamente.
+          <br />
+          Passo 2: Selecione uma resposta que corresponda ao nível de sua empresa.
+          <br />
+          Passo 3: Selecione a importância da questão em sua empresa.
+          <br />
+          Passo 4: Repita o processo para todas as áreas.
+          <br />
+          Ao final do processo, haverá um gráfico representando a nota de maturidade de seu negócio.
         </p>
       </div>
     </div>
