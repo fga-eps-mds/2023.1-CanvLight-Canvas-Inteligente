@@ -604,6 +604,9 @@
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 11fd87889e73bb8ae1aad3254585074d6f93dfda
 }
 
 @media screen and (max-width: 568px) {
@@ -668,6 +671,9 @@
     margin-top: -200%;
     margin-left: 0%;
   }
+<<<<<<< HEAD
 =======
 >>>>>>> 89a290f8 (adicionei um event listner para fechar as telas com ESC)
+=======
+>>>>>>> 11fd87889e73bb8ae1aad3254585074d6f93dfda
 }
