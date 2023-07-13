@@ -43,7 +43,6 @@ jobs:
       - name: Tests
         run: |
           pip install selenium
-          sudo apt-get install chromium-chromedriver
           cd testes
           python test.py
           
