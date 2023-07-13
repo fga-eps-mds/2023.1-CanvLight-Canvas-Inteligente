@@ -148,7 +148,7 @@ function Maturidade2({state, onPorcentagemRhChange}) {
           onClick={() => {
             window.open("tutorial#tut_Maturidade", "_blank");
           }}
-          className="duvidaFin"
+          className="duvidaRh"
         ></div>
 
         <table>

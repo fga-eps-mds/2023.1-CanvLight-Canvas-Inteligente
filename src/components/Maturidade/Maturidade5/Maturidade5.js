@@ -47,7 +47,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
     let modal = document.querySelector(".areaMkt");
     modal.style.display = "block";
 
-    let modal2 = document.querySelector(".areaResult");
+    let modal2 = document.querySelector(".telaResult");
     modal2.style.display = "none";
   }
   
