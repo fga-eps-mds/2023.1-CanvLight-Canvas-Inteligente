@@ -1,5 +1,9 @@
 .tut_body {
+<<<<<<< HEAD
   height: 630vh;
+=======
+  height: 670vh;
+>>>>>>> b3bc84b83fd2bd39fd4387ad846ff179ddfa92c1
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
   position: absolute;

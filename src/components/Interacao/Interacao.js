@@ -850,12 +850,12 @@ function Interacao({
     medel.style.display = "none";
   }
 
-  let[lista, setLista] = useState([]);
-  let[novoItem, setNovoItem] = useState([]);
+  let [lista, setLista] = useState([]);
+  let [novoItem, setNovoItem] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     setLista([]);
-  },[]);
+  }, []);
 
   function newTask() {
     setLista([...lista, novoItem]);
@@ -1201,7 +1201,7 @@ function Interacao({
                     id="input-new-task"
                     placeholder="Inserir tarefa"
                     value={novoItem}
-                    onChange={value=>setNovoItem(value.target.value)}
+                    onChange={(value) => setNovoItem(value.target.value)}
                   ></input>
                   <button className="button_tarefa" onClick={() => newTask()}>
                     <svg
@@ -1216,10 +1216,8 @@ function Interacao({
                     </svg>
                   </button>
                   <ul className="todolist">
-                    {lista.map((item, index)=>(
-                      <li className="itemtodolist">
-                        {item}
-                      </li>
+                    {lista.map((item, index) => (
+                      <li className="itemtodolist">{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -1667,7 +1665,7 @@ function Interacao({
       </div>
 
       <div className="tela_3_form_interacao">
-        <div className="centerInt">
+        <div className="centerItr3">
           <div className="esquerda">
             <button
               className="close_itr3"

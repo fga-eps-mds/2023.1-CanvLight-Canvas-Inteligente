@@ -19,7 +19,8 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.centerItr {
+.centerItr,
+.centerItr3 {
   width: 90%;
   height: 90%;
   position: absolute;
@@ -606,72 +607,16 @@
 }
 
 @media screen and (max-width: 568px) {
-  .centerItr {
-    height: 70%;
+  body {
+    height: 100vh;
   }
-  .close_itr,
-  .close_itr2,
-  .close_itr3 {
-    margin-left: 3%;
+  .body {
+    height: 180vh;
   }
-  .dot2_itr,
-  .dot2_itr2,
-  .dot2_itr3 {
-    margin-left: 9%;
-  }
-  .dot3_itr,
-  .dot3_itr2,
-  .dot3_itr3 {
-    margin-left: 15%;
-  }
-  .parte1_interacao {
-    margin-top: 8%;
-    width: 70%;
-  }
-  .parte1_interacao p {
-    font-size: 20px;
-  }
-  .tabela_analise_custos table {
-    margin-left: -2%;
-  }
-  .parte2_interacao {
-    margin-top: 15%;
-    width: 75%;
-  }
-  .parte2_interacao p {
-    font-size: 20px;
-  }
-  .tabela_analise_preço table {
-    margin-left: -2%;
-    font-size: 12px;
-  }
-  .tabela_analise_preço table input {
-    width: 11vw;
-  }
-  .right-arrow {
-    width: 20%;
-    height: 20%;
-    margin-top: 25%;
-    margin-right: -5%;
-  }
-  /*INTERAÇÃO 2*/
-  /*checklist*/
-  .parte4_interacao {
-    width: 60%;
-    margin-top: -68vh;
-    margin-left: -65%;
-  }
-  .parte5_interacao {
-    width: 70%;
-    font-size: 20px;
-    margin-top: -200%;
-    margin-left: 0%;
-  }
-}
 
-@media screen and (max-width: 568px) {
   .centerItr {
     height: 70%;
+    margin-top: 15%;
   }
   .close_itr,
   .close_itr2,
@@ -730,5 +675,90 @@
     font-size: 20px;
     margin-top: -200%;
     margin-left: 0%;
+  }
+
+  /*parte 3 interação*/
+
+  .digitalizacao {
+    float: bottom;
+    width: 100%;
+  }
+
+  .esquerda {
+    width: 100%;
+  }
+
+  .direita {
+    width: 100%;
+  }
+
+  .digitalizacao p {
+    margin-top: 12%;
+    color: var(--font_color);
+    font-size: 20px;
+  }
+
+  .checkbox_dig img {
+    width: 18%;
+    height: 1%;
+    margin-right: 2%;
+  }
+
+  .checkbox-image_1 {
+    width: 18%;
+    height: 18%;
+    margin-left: 20%;
+    margin-right: 0.75%;
+    margin-top: 3%;
+  }
+
+  .checkbox-image {
+    width: 18%;
+    height: 18%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+
+  .checkbox_dig input[type="checkbox"] {
+    height: 5vh;
+    width: 12vw;
+  }
+  .canais_venda {
+    margin-top: -470%;
+  }
+  .canais_venda p {
+    min-width: 200px;
+  }
+
+  .h2_4psItr2 {
+    margin-top: 2100%;
+  }
+
+  .tabela2 table {
+    margin-top: 10%;
+  }
+  .tabela2 input {
+    width: 10vw;
+  }
+  .tabela2 table td {
+    width: -20%;
+  }
+
+  .seta_pag_3 {
+    margin-top: 230%;
+  }
+
+  .feito_itr {
+    margin-top: -212%;
+    height: 5vh;
+    width: 11vw;
+  }
+  .centerItr3 {
+    height: 62%;
+    margin-top: 15%;
+  }
+  .tela_3_form_interacao {
+    height: 135%;
+    margin-bottom: 0%;
   }
 }

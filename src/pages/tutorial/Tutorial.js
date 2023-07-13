@@ -30,10 +30,10 @@ function Tutorial() {
 
         <nav className="desktop">
           <ul>
-            <Link to="/tutorial">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/tutorial">
               <li>Como usar?</li>
             </Link>
-            <Link to="/canvas">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/canvas">
               <li>Gerar canvas</li>
             </Link>
           </ul>
