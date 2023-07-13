@@ -280,7 +280,8 @@ body {
 
 @media screen and (max-width: 568px) {
   .Observacao2 {
-    height: 140vh;
+    height: 180vh;
+    overflow: hidden;
   }
   .centerObs2 {
     top: 3%;
@@ -290,7 +291,7 @@ body {
     font-size: 15px;
   }
   .psdoprojeto h2 {
-    margin-top: -3vh;
+    margin-top: 8vh;
     font-size: 20px;
     height: fit-content;
   }

@@ -220,7 +220,7 @@
 
 @media screen and (max-width: 568px) {
   .benchmarking {
-    height: 130vh;
+    height: 180vh;
   }
   .centerObs1 {
     top: 3%;
