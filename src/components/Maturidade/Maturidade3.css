@@ -126,3 +126,57 @@
   height: 60px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 568px) {
+  .areaFin {
+    height: 220vh;
+  }
+  .formFin {
+    margin-top: 15%;
+  }
+  .close_area3,
+  .dot2_area3,
+  .dot3_area3 {
+    margin-top: -7%;
+    height: 5vw;
+    width: 5vw;
+  }
+  .close_area3 {
+    margin-left: 3%;
+  }
+  .dot2_area3 {
+    margin-left: 8%;
+  }
+  .dot3_area3 {
+    margin-left: 13%;
+  }
+  .titulo_financeira {
+    margin-top: 10%;
+    font-size: 20px;
+  }
+  .formFin table {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .formFin table th {
+    font-size: 15px;
+  }
+  .formFin table td,
+  .opcao-select,
+  .import-select {
+    font-size: 12px;
+  }
+  .duvidaFin {
+    margin-top: -14%;
+    margin-left: 20%;
+    height: 4.1vw;
+    width: 4.2vw;
+  }
+  .setaDireitaMaturidade_3,
+  .setaEsquerdaMaturidade_3 {
+    margin-top: 15%;
+    margin-right: -5%;
+    width: 17vw;
+    height: 17vw;
+  }
+}

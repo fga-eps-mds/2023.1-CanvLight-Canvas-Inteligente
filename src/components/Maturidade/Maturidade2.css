@@ -136,6 +136,9 @@
   .areaRh {
     height: 270vh;
   }
+  .formRh {
+    margin-top: 15%;
+  }
   .close_area2,
   .dot2_area2,
   .dot3_area2 {
