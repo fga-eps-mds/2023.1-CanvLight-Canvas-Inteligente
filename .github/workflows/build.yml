@@ -32,18 +32,20 @@ jobs:
           npm ci
           npm run build
       
-      - name: Instalar o GeckoDriver (Web Driver)
+      - name: Instalar o Firefox e o GeckoDriver (Web Driver)
         run: |
           wget https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz
           tar -xvzf geckodriver-v0.30.0-linux64.tar.gz
           chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
+          sudo apt install firefox
+
           
       - name: Tests
         run: |
           pip install -U selenium
           cd testes
-          python -m unittest test.py
+          python test.py
           
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
