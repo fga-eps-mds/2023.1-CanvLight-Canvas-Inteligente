@@ -274,6 +274,27 @@ function Observacao3({
     medel.style.display = "none";
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        fecharFormIntuicao(e);
+      }
+    });
+    window.scrollTo(0, 0);
+  }
+  function fecharFormIntuicao(e) {
+    e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
+    }
+
+    let modal = document.querySelector(".Observacao3");
+
+    modal.style.display = "none";
+    let medel = document.querySelector(".tela_3_form_interacao");
+    medel.style.display = "none";
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
   }
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
