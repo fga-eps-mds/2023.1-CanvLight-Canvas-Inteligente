@@ -808,6 +808,7 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
   function nextpage2(e) {
@@ -816,6 +817,7 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".tela_2_form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
   function returnScreen2(e) {
@@ -823,6 +825,7 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".tela_3_form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
@@ -848,6 +851,7 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".tela_2_form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
   let [lista, setLista] = useState([]);
