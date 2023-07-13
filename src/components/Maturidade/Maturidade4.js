@@ -135,7 +135,7 @@ function Maturidade4({state, onPorcentagemMktChange}){
         let modal = document.querySelector(".areaMkt");
         modal.style.display = "none";
 
-        let modal2 = document.querySelector(".areaResult");
+        let modal2 = document.querySelector(".telaResult");
         modal2.style.display = "block";
     }
 

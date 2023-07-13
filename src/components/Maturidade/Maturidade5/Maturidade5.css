@@ -3,12 +3,12 @@
     --font_color: black;
   }
   
-  .dark-mode:root {
+.dark-mode:root {
     --back_color: #252525;
     --font_color: white;
-  }
+}
 
-.areaResult {
+.telaResult {
     z-index: 9999;
     display: none;
     position: absolute;
@@ -68,7 +68,7 @@
 
 .titulo {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: -10%;
     font-weight: normal;
     font-size: 3vi;
@@ -96,8 +96,8 @@
     text-align: justify;
     text-indent: 50px;
     margin-top: 1%;
-    margin-left: 18.5%;
-    margin-right: 20%;
+    margin-left: 13.5%;
+    margin-right: 13%;
     font-weight: normal;
     font-size: 2vi;
     color: var(--font_color);
@@ -106,34 +106,34 @@
 .tabelaResult {
     box-sizing: border-box;
     position: absolute;
-    width: 47vw;
-    height: 40vh;
+    width: 57vw;
+    height: 50vh;
     float: left;
-    left: 20%;
-    top: 40%;
+    left: 15%;
+    top: 32%;
     border: 2px solid #FF5631;
     border-radius: 20px;
 }
 
 .setaEsquerda {
-    background-image: url("../../images/seta-esquerda.png");
+    background-image: url("../../../images/seta-esquerda.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 10%;
     height: 10%;
-    margin-top: 29%;
+    margin-top: 33%;
     margin-left: 4%;
     float: left;
     cursor: pointer;
 }
 
 .feitoMaturidade {
-    background-image: url("../../images/check.png");
+    background-image: url("../../../images/check.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 10%;
     height: 10%;
-    margin-top: 29%;
+    margin-top: 33%;
     float: right;
     cursor: pointer;
 }

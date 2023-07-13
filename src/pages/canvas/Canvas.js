@@ -13,7 +13,7 @@ import Maturidade1 from "../../components/Maturidade/Maturidade1.js";
 import Maturidade2 from "../../components/Maturidade/Maturidade2.js";
 import Maturidade3 from "../../components/Maturidade/Maturidade3.js";
 import Maturidade4 from "../../components/Maturidade/Maturidade4.js";
-import Maturidade5 from "../../components/Maturidade/Maturidade5.js";
+import Maturidade5 from "../../components/Maturidade/Maturidade5/Maturidade5.js";
 
 function Canvas() {
   //intuição
@@ -326,17 +326,17 @@ function Canvas() {
     setInteQuatroP(novosDadosInteQuatroP);
   };
   //Maturidade
-  const handlePorcentagemAdmChange = (novosPorcentagemAdm) => {
-    setPorcentagemAdm(novosPorcentagemAdm);
+  const handlePorcentagemAdmChange = (novosDadosPorcentagemAdm) => {
+    setPorcentagemAdm(novosDadosPorcentagemAdm);
   };
-  const handlePorcentagemRhChange = (novosPorcentagemRh) => {
-    setPorcentagemRh(novosPorcentagemRh);
+  const handlePorcentagemRhChange = (novosDadosPorcentagemRh) => {
+    setPorcentagemRh(novosDadosPorcentagemRh);
   };
-  const handlePorcentagemFinChange = (novosPorcentagemFin) => {
-    setPorcentagemFin(novosPorcentagemFin);
+  const handlePorcentagemFinChange = (novosDadosPorcentagemFin) => {
+    setPorcentagemFin(novosDadosPorcentagemFin);
   };
-  const handlePorcentagemMktChange = (novosPorcentagemMkt) => {
-    setPorcentagemMkt(novosPorcentagemMkt);
+  const handlePorcentagemMktChange = (novosDadosPorcentagemMkt) => {
+    setPorcentagemMkt(novosDadosPorcentagemMkt);
   };
   
 

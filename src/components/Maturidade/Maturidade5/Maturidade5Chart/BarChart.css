@@ -1,0 +1,7 @@
+:root {
+    --font_color: black;
+}
+  
+.dark-mode:root {
+    --font_color: white;
+}

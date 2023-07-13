@@ -9,11 +9,11 @@ import Observacao3 from "../../images/Observacao3.png"
 import Interacao1 from "../../images/Interacao1.png";
 import Interacao2 from "../../images/Interacao2.png";
 import Interacao3 from "../../images/Interacao3.png";
-import Descricao1 from "../Maturidade/Maturidade5Descricoes/descricao1.json";
-import Descricao2 from "../Maturidade/Maturidade5Descricoes/descricao2.json";
-import Descricao3 from "../Maturidade/Maturidade5Descricoes/descricao3.json";
-import Descricao4 from "../Maturidade/Maturidade5Descricoes/descricao4.json";
-import Descricao5 from "../Maturidade/Maturidade5Descricoes/descricao5.json";
+import Descricao1 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao1.json";
+import Descricao2 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao2.json";
+import Descricao3 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao3.json";
+import Descricao4 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao4.json";
+import Descricao5 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao5.json";
 
 function GeradorPDF({
   sintesePotencialidades,

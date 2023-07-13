@@ -1,17 +1,32 @@
 import "./Maturidade5.css";
-import Situacao1 from "../../images/situacao1.png";
-import Situacao2 from "../../images/situacao2.png";
-import Situacao3 from "../../images/situacao3.png";
-import Situacao4 from "../../images/situacao4.png";
-import Situacao5 from "../../images/situacao5.png";
+import Situacao1 from "../../../images/situacao1.png";
+import Situacao2 from "../../../images/situacao2.png";
+import Situacao3 from "../../../images/situacao3.png";
+import Situacao4 from "../../../images/situacao4.png";
+import Situacao5 from "../../../images/situacao5.png";
 import Descricao1 from "./Maturidade5Descricoes/descricao1.json";
 import Descricao2 from "./Maturidade5Descricoes/descricao2.json";
 import Descricao3 from "./Maturidade5Descricoes/descricao3.json";
 import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
-import React /*useState*/ from "react";
+import BarChart from "./Maturidade5Chart/BarChart";
+import {UserData} from "./Maturidade5Chart/DadosDasAreas.js";
+import React, {useState} from "react";
+import { Filler } from "chart.js";
 
 function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagemMkt}) {
+
+  // eslint-disable-next-line
+  const [userData, setUserData] = useState({
+    labels: UserData.map((data) => data.area),
+    datasets: [{
+      label: "Grau de Maturidade",
+      data: UserData.map((data) => data.porcentagem),
+      backgroundColor: ["#FF5631"],
+      borderRadius: 10,
+    }]
+  });
+
   function fecharFormMaturidade5(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -19,7 +34,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
       modalOverlay.parentNode.removeChild(modalOverlay);
     }
 
-    let modal = document.querySelector(".areaResult");
+    let modal = document.querySelector(".telaResult");
     modal.style.display = "none";
 
     let modal2 = document.querySelector(".confirma");
@@ -36,7 +51,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
     modal2.style.display = "none";
   }
   
-  function nivelMaturidade(){
+  /*function nivelMaturidade(){
 
     var adm = porcentagemAdm/100;
     var rh = porcentagemRh/100;
@@ -60,9 +75,9 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
     }
 
     return nivel;
-  }
+  }*/
 
-  var nivel = nivelMaturidade();
+  var nivel = 1;
   var imgSituacao = null;
   var textSituacao = null;
   
@@ -84,7 +99,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
   }
 
   return (
-    <div className="areaResult">
+    <div className="telaResult">
       <div className="formResult">
         <button
           className="close_area4"
@@ -92,11 +107,20 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
         ></button>
         <div className="dot2_area4"></div>
         <div className="dot3_area4"></div>
+         <h2 className="titulo">{porcentagemAdm}</h2>
+         <h2 className="titulo">{porcentagemRh}</h2>
+         <h2 className="titulo">{porcentagemFin}</h2>
+         <h2 className="titulo">{porcentagemMkt}</h2>
         <h2 className="titulo">Maturidade Nível</h2>
         <h2 className="tituloNivel">{nivel}</h2>
         <img className="situacao" alt="situacao" src={imgSituacao} />
         <div className="descMaturidade">{textSituacao}</div>
-        <table className="tabelaResult"></table>
+        <table className="tabelaResult">
+          <div style={{width: Filler}}>
+            <BarChart chartData={userData}/>
+          </div>
+
+        </table>
         <div
           onClick={(e) => irParaFormMaturidade4(e)}
           className="setaEsquerda"
