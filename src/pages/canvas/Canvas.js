@@ -88,11 +88,10 @@ function Canvas() {
   const [inteQuatroP, setInteQuatroP] = useState({});
 
   //maturidade
-  const [porcentagemAdm, setPorcentagemAdm] = useState('');
-  const [porcentagemRh, setPorcentagemRh] = useState('');
-  const [porcentagemFin, setPorcentagemFin] = useState('');
-  const [porcentagemMkt, setPorcentagemMkt] = useState('');
-  
+  const [porcentagemAdm, setPorcentagemAdm] = useState("");
+  const [porcentagemRh, setPorcentagemRh] = useState("");
+  const [porcentagemFin, setPorcentagemFin] = useState("");
+  const [porcentagemMkt, setPorcentagemMkt] = useState("");
 
   //intuição
   const handleIntuTextosChange = (novosDadosIntuTextos) => {
@@ -338,14 +337,13 @@ function Canvas() {
   const handlePorcentagemMktChange = (novosDadosPorcentagemMkt) => {
     setPorcentagemMkt(novosDadosPorcentagemMkt);
   };
-  
 
   /*CHamada preview*/
 
-  function abrirPreview(e){
+  function abrirPreview(e) {
     e.preventDefault();
 
-    let modal = document.querySelector('.modalAbrirPreview');
+    let modal = document.querySelector(".modalAbrirPreview");
     modal.style.display = "block";
 
     let modal2 = document.querySelector(".confirma");
@@ -467,7 +465,9 @@ function Canvas() {
           </button>
         </div>
 
-        <button className="preview" onClick={(e) => abrirPreview(e)}>preview</button>
+        <button className="preview" onClick={(e) => abrirPreview(e)}>
+          preview
+        </button>
       </div>
 
       <Intuicao
@@ -546,27 +546,19 @@ function Canvas() {
         onInteQuatroPChange={handleInteQuatroPChange}
       />
 
-      <Maturidade1
-        onPorcentagemAdmChange={handlePorcentagemAdmChange}
-      />
-      
-      <Maturidade2
-        onPorcentagemRhChange={handlePorcentagemRhChange}
-      />
+      <Maturidade1 onPorcentagemAdmChange={handlePorcentagemAdmChange} />
 
-      <Maturidade3
-        onPorcentagemFinChange={handlePorcentagemFinChange}
-      />
+      <Maturidade2 onPorcentagemRhChange={handlePorcentagemRhChange} />
 
-      <Maturidade4
-        onPorcentagemMktChange={handlePorcentagemMktChange}
-      />
+      <Maturidade3 onPorcentagemFinChange={handlePorcentagemFinChange} />
+
+      <Maturidade4 onPorcentagemMktChange={handlePorcentagemMktChange} />
 
       <Maturidade5
-        porcentagemAdm = {porcentagemAdm}
-        porcentagemRh = {porcentagemRh}
-        porcentagemFin = {porcentagemFin}
-        porcentagemMkt = {porcentagemMkt}
+        porcentagemAdm={porcentagemAdm}
+        porcentagemRh={porcentagemRh}
+        porcentagemFin={porcentagemFin}
+        porcentagemMkt={porcentagemMkt}
       />
 
       <GeradorPDF
@@ -637,10 +629,10 @@ function Canvas() {
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
         //Maturidade
-        porcentagemAdm = {porcentagemAdm}
-        porcentagemRh = {porcentagemRh}
-        porcentagemFin = {porcentagemFin}
-        porcentagemMkt = {porcentagemMkt}
+        porcentagemAdm={porcentagemAdm}
+        porcentagemRh={porcentagemRh}
+        porcentagemFin={porcentagemFin}
+        porcentagemMkt={porcentagemMkt}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />
