@@ -326,18 +326,6 @@ function Canvas() {
     setImportancia1(novosDadosImportancia1);
   };
 
-  /*CHamada preview*/
-
-  function abrirPreview(e){
-    e.preventDefault();
-
-    let modal = document.querySelector('.modalAbrirPreview');
-    modal.style.display = "block";
-
-    let modal2 = document.querySelector(".confirma");
-    modal2.style.display = "none";
-  }
-
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
     e.preventDefault();
@@ -421,7 +409,7 @@ function Canvas() {
         </Link>
         <nav className="desktop">
           <ul>
-            <Link to="/tutorial">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/tutorial">
               <li className="btn_comousar">Como usar?</li>
             </Link>
           </ul>
@@ -455,8 +443,6 @@ function Canvas() {
             Maturidade
           </button>
         </div>
-
-        <button className="preview" onClick={(e) => abrirPreview(e)}>preview</button>
       </div>
 
       <Intuicao

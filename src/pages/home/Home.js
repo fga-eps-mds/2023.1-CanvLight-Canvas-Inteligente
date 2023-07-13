@@ -16,10 +16,10 @@ function Home() {
 
         <nav className="desktop">
           <ul>
-            <Link to="/tutorial">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/tutorial">
               <li>Como usar?</li>
             </Link>
-            <Link to="/canvas">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/canvas">
               <li>Gerar canvas</li>
             </Link>
           </ul>
@@ -27,10 +27,10 @@ function Home() {
       </div>
       <div className="sol-bg">
         <div className="sol-inv"></div>
-        <Link to="/tutorial">
+        <Link to="/2023.1-CanvLight-Canvas-Inteligente/tutorial">
           <button className="main-btn">Como usar?</button>
         </Link>
-        <Link to="/canvas">
+        <Link to="/2023.1-CanvLight-Canvas-Inteligente/canvas">
           <button className="main-btn1">Gerar Canvas</button>
         </Link>
       </div>
