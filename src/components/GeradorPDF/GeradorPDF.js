@@ -9,6 +9,11 @@ import Observacao3 from "../../images/Observacao3.png"
 import Interacao1 from "../../images/Interacao1.png";
 import Interacao2 from "../../images/Interacao2.png";
 import Interacao3 from "../../images/Interacao3.png";
+import Descricao1 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao1.json";
+import Descricao2 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao2.json";
+import Descricao3 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao3.json";
+import Descricao4 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao4.json";
+import Descricao5 from "../Maturidade/Maturidade5/Maturidade5Descricoes/descricao5.json";
 
 function GeradorPDF({
   sintesePotencialidades,
@@ -72,6 +77,10 @@ function GeradorPDF({
   canaisObjetivo,
   canaisMetrica,
   inteQuatroP,
+  porcentagemAdm,
+  porcentagemRh,
+  porcentagemFin,
+  porcentagemMkt
 }) {
   function gerarPDF() {
     const doc = new jsPDF({
@@ -979,6 +988,36 @@ function GeradorPDF({
     doc.text(`${inteQuatroP.segundaLinhaInteQuatroP}`, 224, 222);
     doc.text(`${inteQuatroP.terceiraLinhaInteQuatroP}`, 152, 257);
     doc.text(`${inteQuatroP.quartaLinhaInteQuatroP}`, 224, 257);
+
+    doc.addPage(); // Maturidade
+    doc.setFillColor('#fcdbc1'); // Seleciona a cor do Fundo #fcdbc1
+    doc.rect(0, 0, 420, 297, 'F'); // Adiciona o Retângulo maior
+    var nivel = 5;
+    //var imgSituacao = null;
+    var textSituacao = null;
+    
+    if (nivel === 1) {
+      //imgSituacao = Situacao1;
+      textSituacao = Descricao1;
+    } else if (nivel === 2) {
+      //imgSituacao = Situacao2;
+      textSituacao = Descricao2;
+    } else if (nivel === 3) {
+      //imgSituacao = Situacao3;
+      textSituacao = Descricao3;
+    } else if (nivel === 4) {
+      //imgSituacao = Situacao4;
+      textSituacao = Descricao4;
+    } else if (nivel === 5) {
+      //imgSituacao = Situacao5;
+      textSituacao = Descricao5;
+    }
+
+    doc.text(`${textSituacao}`, 10, 10);
+    doc.text(`${porcentagemAdm}`, 10, 20);
+    doc.text(`${porcentagemRh}`, 10, 30);
+    doc.text(`${porcentagemFin}`, 10, 40);
+    doc.text(`${porcentagemMkt}`, 10, 50);
   
     // doc.addPage(); // Página Canvas
 

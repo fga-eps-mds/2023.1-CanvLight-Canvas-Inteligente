@@ -1,7 +1,95 @@
 import "./Maturidade3.css";
-import React /*useState*/ from "react";
+import rightArrow from "../../images/seta-direita.png";
+import React, { useState } from "react";
 
-function Maturidade3() {
+function Maturidade3({state, onPorcentagemFinChange}) {
+
+  // Primeiro trecho de selectResposta
+  var [resposta1, setResposta1] = useState('');
+  // Segundo trecho de selectResposta
+  var [resposta2, setResposta2] = useState('');
+  // Terceiro trecho de selectResposta
+  var [resposta3, setResposta3] = useState('');
+  // Quarto trecho de selectResposta
+  var [resposta4, setResposta4] = useState('');
+  // Quinto trecho de selectResposta
+  var [resposta5, setResposta5] = useState('');
+  // Sexto trecho de selectResposta
+  var [resposta6, setResposta6] = useState('');
+  // Sétimo trecho de selectResposta
+  var [resposta7, setResposta7] = useState('');
+
+  // Primeiro trecho de selectImportancia
+  var [importancia1, setImportancia1] = useState('');
+  // Segundo trecho de selectImportancia
+  var [importancia2, setImportancia2] = useState('');
+  // Terceiro trecho de selectImportancia
+  var [importancia3, setImportancia3] = useState('');
+  // Quarto trecho de selectImportancia
+  var [importancia4, setImportancia4] = useState('');
+  // Quinto trecho de selectImportancia
+  var [importancia5, setImportancia5] = useState('');
+  // Sexto trecho de selectImportancia
+  var [importancia6, setImportancia6] = useState('');
+  // Setimo trecho de selectImportancia
+  var [importancia7, setImportancia7] = useState('');
+
+
+
+  // Pega o valor da resposta e transforma em numero
+  const handleOptionRespostaChange = (event, respostaSetter) => {
+      const selectedOption = event.target.value;
+
+      let resposta;
+      if (selectedOption === 'opcao1') {
+          resposta = 1;
+      } else if (selectedOption === 'opcao2') {
+          resposta = 2;
+      } else if (selectedOption === 'opcao3') {
+          resposta = 3;
+      } else if (selectedOption === 'opcao4') {
+          resposta = 4;
+      }
+    
+      respostaSetter(resposta);
+  };
+
+  // Pega o valor da importância e transforma em peso
+  const handleOptionImportanciaChange = (event, importanciaSetter) => {
+      const selectedOption = event.target.value;
+      
+      let importancia;
+      if (selectedOption === 'opcao1') {
+          importancia = 1;
+      } else if (selectedOption === 'opcao2') {
+          importancia = 2;
+      } else if (selectedOption === 'opcao3') {
+          importancia = 3;
+      }
+    
+      importanciaSetter(importancia);
+  };
+
+
+
+  // eslint-disable-next-line
+  function calculaFin(){
+      var multiplicacao = null;
+
+      multiplicacao += resposta1*importancia1;
+      multiplicacao += resposta2*importancia2;
+      multiplicacao += resposta3*importancia3;
+      multiplicacao += resposta4*importancia4;
+      multiplicacao += resposta5*importancia5;
+      multiplicacao += resposta6*importancia6;
+      multiplicacao += resposta7*importancia7;
+
+      var resultado = multiplicacao/42;
+      resultado = resultado*100;
+
+      onPorcentagemFinChange(resultado.toFixed(0));
+  }
+
   function fecharFormMaturidade3(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -45,10 +133,10 @@ function Maturidade3() {
         ></button>
         <div className="dot2_area3"></div>
         <div className="dot3_area3"></div>
-        <h2 className="titulo">Área Financeira</h2>
+        <h2 className="titulo_financeira">Área Financeira</h2>
         <div
           onClick={() => {
-            window.open("tutorial#tut_canais_venda", "_blank");
+            window.open("tutorial#tut_Maturidade", "_blank");
           }}
           className="duvidaFin"
         ></div>
@@ -67,7 +155,9 @@ function Maturidade3() {
               financeiras da empresa?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta1)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui processos financeiros
                   fundamentais bem estabelecidos e não há um sistema adequado
@@ -98,7 +188,9 @@ function Maturidade3() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia1)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -112,7 +204,9 @@ function Maturidade3() {
               avaliar a saúde financeira da empresa?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta2)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui uma definição clara de
                   indicadores financeiros para avaliar sua saúde financeira. Não
@@ -145,7 +239,9 @@ function Maturidade3() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia2)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -159,7 +255,9 @@ function Maturidade3() {
               é elaborado o orçamento financeiro da empresa?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta3)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui um planejamento financeiro anual
                   ou de longo prazo e não elabora um orçamento financeiro
@@ -187,7 +285,9 @@ function Maturidade3() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia3)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -202,7 +302,9 @@ function Maturidade3() {
               diferentes áreas da empresa?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta4)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui objetivos financeiros claramente
                   definidos e não utiliza critérios consistentes para alocar
@@ -223,7 +325,7 @@ function Maturidade3() {
                 </option>
                 <option value="opcao4">
                   Nível 4: A empresa estabelece objetivos financeiros claros,
-                  mensuráveis ​e alinhados com a estratégia de longo prazo. A
+                  mensuráveis e alinhados com a estratégia de longo prazo. A
                   alocação de recursos financeiros é baseada em critérios
                   sólidos, como análise de retorno sobre investimento (ROI),
                   avaliação de riscos e oportunidades, e consideração das
@@ -232,7 +334,9 @@ function Maturidade3() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia4)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -246,7 +350,9 @@ function Maturidade3() {
               principais estratégias adotadas para redução de custos?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta5)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui um controle adequado de custos e
                   não adota estratégias específicas para redução de despesas.
@@ -273,7 +379,9 @@ function Maturidade3() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia5)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -288,7 +396,9 @@ function Maturidade3() {
               em relação ao orçamento planejado?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta6)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui métodos claros para atribuição
                   de custos aos produtos ou serviços e não realiza análise de
@@ -319,7 +429,9 @@ function Maturidade3() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia6)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -333,7 +445,9 @@ function Maturidade3() {
               pela empresa?
             </td>
             <td>
-              <select className="opcao-select">
+              <select className="opcao-select"
+                      onChange={(event) => handleOptionRespostaChange(event, setResposta7)}>
+                <option disabled selected value>Selecione uma resposta</option>
                 <option value="opcao1">
                   Nível 1: A empresa não possui uma identificação clara e um
                   monitoramento sistemático dos riscos financeiros. Os riscos
@@ -373,7 +487,9 @@ function Maturidade3() {
               </select>
             </td>
             <td>
-              <select className="import-select">
+              <select className="import-select"
+                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia7)}>
+                <option disabled selected value>Selecione um nível de importância</option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -381,14 +497,16 @@ function Maturidade3() {
             </td>
           </tr>
         </table>
-        <div
-          onClick={(e) => irParaFormMaturidade2(e)}
-          className="setaEsquerda"
-        ></div>
-        <div
-          onClick={(e) => irParaFormMaturidade4(e)}
-          className="setaDireita"
-        ></div>
+        <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaEsquerdaMaturidade_3"
+                        onClick={(e) => irParaFormMaturidade2(e)}/>
+        <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaDireitaMaturidade_3"
+                        onClick={(e) => irParaFormMaturidade4(e)}/>
       </div>
     </div>
   );

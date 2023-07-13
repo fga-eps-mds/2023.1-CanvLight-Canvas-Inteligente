@@ -13,7 +13,7 @@ import Maturidade1 from "../../components/Maturidade/Maturidade1.js";
 import Maturidade2 from "../../components/Maturidade/Maturidade2.js";
 import Maturidade3 from "../../components/Maturidade/Maturidade3.js";
 import Maturidade4 from "../../components/Maturidade/Maturidade4.js";
-import Maturidade5 from "../../components/Maturidade/Maturidade5.js";
+import Maturidade5 from "../../components/Maturidade/Maturidade5/Maturidade5.js";
 
 function Canvas() {
   //intuição
@@ -88,7 +88,11 @@ function Canvas() {
   const [inteQuatroP, setInteQuatroP] = useState({});
 
   //maturidade
-  const [importancia1, setImportancia1] = useState({});
+  const [porcentagemAdm, setPorcentagemAdm] = useState('');
+  const [porcentagemRh, setPorcentagemRh] = useState('');
+  const [porcentagemFin, setPorcentagemFin] = useState('');
+  const [porcentagemMkt, setPorcentagemMkt] = useState('');
+  
 
   //intuição
   const handleIntuTextosChange = (novosDadosIntuTextos) => {
@@ -322,9 +326,19 @@ function Canvas() {
     setInteQuatroP(novosDadosInteQuatroP);
   };
   //Maturidade
-  const handleImportancia1Change = (novosDadosImportancia1) => {
-    setImportancia1(novosDadosImportancia1);
+  const handlePorcentagemAdmChange = (novosDadosPorcentagemAdm) => {
+    setPorcentagemAdm(novosDadosPorcentagemAdm);
   };
+  const handlePorcentagemRhChange = (novosDadosPorcentagemRh) => {
+    setPorcentagemRh(novosDadosPorcentagemRh);
+  };
+  const handlePorcentagemFinChange = (novosDadosPorcentagemFin) => {
+    setPorcentagemFin(novosDadosPorcentagemFin);
+  };
+  const handlePorcentagemMktChange = (novosDadosPorcentagemMkt) => {
+    setPorcentagemMkt(novosDadosPorcentagemMkt);
+  };
+  
 
   /*CHamada preview*/
 
@@ -533,15 +547,27 @@ function Canvas() {
       />
 
       <Maturidade1
-        onImportancia1Change={handleImportancia1Change}/>
+        onPorcentagemAdmChange={handlePorcentagemAdmChange}
+      />
       
-      <Maturidade2/>
+      <Maturidade2
+        onPorcentagemRhChange={handlePorcentagemRhChange}
+      />
 
-      <Maturidade3/>
+      <Maturidade3
+        onPorcentagemFinChange={handlePorcentagemFinChange}
+      />
 
-      <Maturidade4/>
+      <Maturidade4
+        onPorcentagemMktChange={handlePorcentagemMktChange}
+      />
 
-      <Maturidade5/>
+      <Maturidade5
+        porcentagemAdm = {porcentagemAdm}
+        porcentagemRh = {porcentagemRh}
+        porcentagemFin = {porcentagemFin}
+        porcentagemMkt = {porcentagemMkt}
+      />
 
       <GeradorPDF
         //intuição
@@ -611,7 +637,10 @@ function Canvas() {
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
         //Maturidade
-        importancia1={importancia1}
+        porcentagemAdm = {porcentagemAdm}
+        porcentagemRh = {porcentagemRh}
+        porcentagemFin = {porcentagemFin}
+        porcentagemMkt = {porcentagemMkt}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />

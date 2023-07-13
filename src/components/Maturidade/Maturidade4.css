@@ -1,32 +1,44 @@
+:root {
+    --back_color: #fcdbc1;
+    --font_color: black;
+  }
+  
+  .dark-mode:root {
+    --back_color: #252525;
+    --font_color: white;
+  }
+
 .areaMkt {
     z-index: 9999;
     display: none;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 110%;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
 .formMkt {
     position: absolute;
-    height: 100vh;
-    width: 80vw;
     display: block;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    margin-left: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
     margin-top: 6%;
-    background-color: #252525;
+    background-color: var(--back_color);
     border-radius: 30px;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu"; 
 }
 
 .formMkt table {
-  width: 50;
-  border-spacing: 0;
-  color: white;
-  margin: auto;
+    width: 100%;
+    border-spacing: 0;
+    color: var(--font_color);
+    margin-left: -1%;
+    margin-top: 1vw;
 }
 
 .formMkt table th {
@@ -35,13 +47,13 @@
 }
 
 .formMkt table td {
-    background-color: #252525;
+    background-color: var(--back_color);
     height: 6.5vh;
     border: 1px solid #fb8218;
 }
   
 .formMkt table input {
-    background-color: #252525;
+    background-color: var(--back_color);
     border: none;
     width: auto;
 }
@@ -60,7 +72,7 @@
 }
 .import-select {
     width: 800px;
-    padding: 25px;
+    padding: 29px;
     font-size: 15px;
     border-radius: 3px;
     border: 1px solid white;
@@ -104,11 +116,11 @@
     top: 2%;
 }
 
-.titulo {
+.titulo_maturidade_4 {
     text-align: center;
-    margin-top: 3%;
-    font-size: 3vi;
-    color: white;
+    margin-top: 0%;
+    font-size: 2.3vi;
+    color: var(--font_color);
 }
 
 .duvidaMkt {
@@ -118,30 +130,23 @@
     float: right;
     cursor: pointer;
     position: absolute;
-    left: 68%;
-    top: 9%;
+    left: 57%;
+    top: 4.5%;
 }
 
-.setaEsquerda {
-    background-image: url("../../images/seta-esquerda.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10%;
-    height: 10%;
-    margin-bottom: -20%;
-    margin-left: 10%;
+.setaEsquerdaMaturidade_4 {
+    margin-top: 1%;
     float: left;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
+    transform: rotate(180deg);
 }
 
-.setaDireita {
-    background-image: url("../../images/seta-direita.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10%;
-    height: 10%;
-    margin-top: -2%;
-    margin-right: -5%;
+.setaDireitaMaturidade_4 {
+    margin-top: 1%;
     float: right;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
 }

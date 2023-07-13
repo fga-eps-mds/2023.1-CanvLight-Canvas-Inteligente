@@ -1,98 +1,109 @@
 import "./Maturidade1.css";
+import rightArrow from "../../images/seta-direita.png";
 import React, { useState } from "react";
 
-function Maturidade1({onImportancia1Change}){
+function Maturidade1({state, onPorcentagemAdmChange}){
     
-    const [primeiraLinhaImportancia1, setPrimeiraLinhaImportancia1] =
-    useState("");
-    const [segundaLinhaImportancia1, setSegundaLinhaImportancia1] =
-    useState("");
-    const [terceiraLinhaImportancia1, setTerceiraLinhaImportancia1] =
-    useState("");
-    const [quartaLinhaImportancia1, setQuartaLinhaImportancia1] =
-    useState("");
-    const [quintaLinhaImportancia1, setQuintaLinhaImportancia1] =
-    useState("");
-    const [sextaLinhaImportancia1, setSextaLinhaImportancia1] =
-    useState("");
-    const [setimaLinhaImportancia1, setSetimaLinhaImportancia1] =
-    useState("");
-    const [oitavaLinhaImportancia1, setOitavaLinhaImportancia1] =
-    useState("");
-    const [nonaLinhaImportancia1, setNonaLinhaImportancia1] =
-    useState("");
-    const [decimaLinhaImportancia1, setDecimaLinhaImportancia1] =
-    useState("");
+    // Primeiro trecho de selectResposta
+    var [resposta1, setResposta1] = useState('');
+    // Segundo trecho de selectResposta
+    var [resposta2, setResposta2] = useState('');
+    // Terceiro trecho de selectResposta
+    var [resposta3, setResposta3] = useState('');
+    // Quarto trecho de selectResposta
+    var [resposta4, setResposta4] = useState('');
+    // Quinto trecho de selectResposta
+    var [resposta5, setResposta5] = useState('');
+    // Sexto trecho de selectResposta
+    var [resposta6, setResposta6] = useState('');
+    // Sétimo trecho de selectResposta
+    var [resposta7, setResposta7] = useState('');
+    // Oitavo trecho de selectResposta
+    var [resposta8, setResposta8] = useState('');
+    // Nono trecho de selectResposta
+    var [resposta9, setResposta9] = useState('');
+    // Décimo trecho de selectResposta
+    var [resposta10, setResposta10] = useState('');
 
-    const handleInputChangeImportancia1 = (e) => {
-        const { name, value } = e.target;
-        if (name === "primeiraLinhaImportancia1") {
-            setPrimeiraLinhaImportancia1(value);
-        } else if (name === "segundaLinhaImportancia1") {
-            setSegundaLinhaImportancia1(value);
-        } else if (name === "terceiraLinhaImportancia1") {
-            setTerceiraLinhaImportancia1(value);
-        } else if (name === "quartaLinhaImportancia1") {
-            setQuartaLinhaImportancia1(value);
-        } else if (name === "quintaLinhaImportancia1") {
-            setQuintaLinhaImportancia1(value);
-        } else if (name === "sextaLinhaImportancia1") {
-            setSextaLinhaImportancia1(value);
-        } else if (name === "setimaLinhaImportancia1") {
-            setSetimaLinhaImportancia1(value);
-        } else if (name === "oitavaLinhaImportancia1") {
-            setOitavaLinhaImportancia1(value);
-        } else if (name === "nonaLinhaImportancia1") {
-            setNonaLinhaImportancia1(value);
-        } else if (name === "decimaLinhaImportancia1") {
-            setDecimaLinhaImportancia1(value);
+    // Primeiro trecho de selectImportancia
+    var [importancia1, setImportancia1] = useState('');
+    // Segundo trecho de selectImportancia
+    var [importancia2, setImportancia2] = useState('');
+    // Terceiro trecho de selectImportancia
+    var [importancia3, setImportancia3] = useState('');
+    // Quarto trecho de selectImportancia
+    var [importancia4, setImportancia4] = useState('');
+    // Quinto trecho de selectImportancia
+    var [importancia5, setImportancia5] = useState('');
+    // Sexto trecho de selectImportancia
+    var [importancia6, setImportancia6] = useState('');
+    // Setimo trecho de selectImportancia
+    var [importancia7, setImportancia7] = useState('');
+    // Oitavo trecho de selectImportancia
+    var [importancia8, setImportancia8] = useState('');
+    // Nono trecho de selectImportancia
+    var [importancia9, setImportancia9] = useState('');
+    // Decimo trecho de selectImportancia
+    var [importancia10, setImportancia10] = useState('');
+
+
+
+    // Pega o valor da resposta e transforma em numero
+    const handleOptionRespostaChange = (event, respostaSetter) => {
+        const selectedOption = event.target.value;
+
+        let resposta;
+        if (selectedOption === 'opcao1') {
+            resposta = 1;
+        } else if (selectedOption === 'opcao2') {
+            resposta = 2;
+        } else if (selectedOption === 'opcao3') {
+            resposta = 3;
+        } else if (selectedOption === 'opcao4') {
+            resposta = 4;
         }
-
-        const novosDadosImportancia1 = {
-            primeiraLinhaImportancia1:
-                name === "primeiraLinhaImportancia1"
-                    ? value
-                    : primeiraLinhaImportancia1,
-            segundaLinhaImportancia1:
-                name === "segundaLinhaImportancia1"
-                    ? value
-                    : segundaLinhaImportancia1,
-            terceiraLinhaImportancia1:
-                name === "terceiraLinhaImportancia1"
-                    ? value
-                    : terceiraLinhaImportancia1,
-            quartaLinhaImportancia1:
-                name === "quartaLinhaImportancia1"
-                    ? value
-                    : quartaLinhaImportancia1,
-            quintaLinhaImportancia1:
-                name === "quintaLinhaImportancia1"
-                    ? value
-                    : quintaLinhaImportancia1,
-            sextaLinhaImportancia1:
-                name === "sextaLinhaImportancia1"
-                    ? value
-                    : sextaLinhaImportancia1,
-            setimaLinhaImportancia1:
-                name === "setimaLinhaImportancia1"
-                    ? value
-                    : setimaLinhaImportancia1,
-            oitavaLinhaImportancia1:
-                name === "oitavaLinhaImportancia1"
-                    ? value
-                    : oitavaLinhaImportancia1,
-            nonaLinhaImportancia1:
-                name === "nonaLinhaImportancia1"
-                    ? value
-                    : nonaLinhaImportancia1,
-            decimaLinhaImportancia1:
-                name === "decimaLinhaImportancia1"
-                    ? value
-                    : decimaLinhaImportancia1,
-        };
-        onImportancia1Change(novosDadosImportancia1);
+      
+        respostaSetter(resposta);
     };
-   
+
+    // Pega o valor da importância e transforma em peso
+    const handleOptionImportanciaChange = (event, importanciaSetter) => {
+        const selectedOption = event.target.value;
+        
+        let importancia;
+        if (selectedOption === 'opcao1') {
+            importancia = 1;
+        } else if (selectedOption === 'opcao2') {
+            importancia = 2;
+        } else if (selectedOption === 'opcao3') {
+            importancia = 3;
+        }
+      
+        importanciaSetter(importancia);
+    };
+
+
+    // eslint-disable-next-line
+    function calculaAdm(){
+        var multiplicacao = null;
+
+        multiplicacao += resposta1*importancia1;
+        multiplicacao += resposta2*importancia2;
+        multiplicacao += resposta3*importancia3;
+        multiplicacao += resposta4*importancia4;
+        multiplicacao += resposta5*importancia5;
+        multiplicacao += resposta6*importancia6;
+        multiplicacao += resposta7*importancia7;
+        multiplicacao += resposta8*importancia8;
+        multiplicacao += resposta9*importancia9;
+        multiplicacao += resposta10*importancia10;
+
+        var resultado = multiplicacao/60;
+        resultado = resultado*100;
+
+        onPorcentagemAdmChange(resultado.toFixed(0));
+    }
+
     function fecharFormMaturidade1(e) {
         e.preventDefault();
         let modalOverlay = document.querySelector(".modal-overlay");
@@ -117,14 +128,14 @@ function Maturidade1({onImportancia1Change}){
         modal2.style.display = "block";
       }
 
-    return(
+    return (
         <div className="areaAdm">
             <div className="formAdm">
                 <button className="close_area1" onClick={(e) => fecharFormMaturidade1(e)}></button>
                 <div className="dot2_area1"></div>
                 <div className="dot3_area1"></div>
-                <h2 className="titulo">Área Administrativa</h2>
-                <div onClick={() => {window.open("tutorial#tut_canais_venda", "_blank");
+                <h2 className="titulo_area_adm">Área Administrativa</h2>
+                <div onClick={() => {window.open("tutorial#tut_Maturidade", "_blank");
                 }}className="duvidaAdm"></div>
 
                     <table>
@@ -138,7 +149,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">1. Qual é a estrutura organizacional da empresa? Ela é adequada 
                             para suportar as atividades e fluxos de trabalho?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta1)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: A estrutura organizacional da empresa é pouco definida 
                                     e não é adequada para suportar as atividades e fluxos de trabalho. Há falta de clareza nas 
                                     responsabilidades e comunicação ineficiente entre os membros da equipe.</option>
@@ -156,12 +169,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="primeiraLinhaImportancia1"
-                                value={primeiraLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia1)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -169,7 +183,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">2. Como é realizado o planejamento estratégico da empresa? 
                             Existe uma definição clara de metas e objetivos?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta2)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1:Planejamento estratégico pouco estruturado ou inexistente, 
                                     com falta de metas claras e direção estratégica comprometida.</option>
                                     <option value="opcao2">Nível 2: Planejamento estratégico em desenvolvimento, mas falta 
@@ -181,12 +197,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="segundaLinhaImportancia1"
-                                value={segundaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia2)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -194,7 +211,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">3. Quais são os principais processos administrativos da empresa?
                              Eles estão documentados e padronizados?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta3)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Processos administrativos pouco definidos, documentados ou 
                                     padronizados, resultando em inconsistências e falta de eficiência.</option>
                                     <option value="opcao2">Nível 2: Alguns processos administrativos estão documentados, 
@@ -207,12 +226,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="terceiraLinhaImportancia1"
-                                value={terceiraLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia3)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -220,7 +240,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">4. Como é feita a gestão de projetos na empresa? Existem metodologias e 
                             ferramentas utilizadas?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta4)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão de projetos pouco estruturada ou inexistente, 
                                     sem metodologias ou ferramentas específicas, resultando em falta de controle 
                                     e coordenação efetiva.</option>
@@ -234,12 +256,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="quartaLinhaImportancia1"
-                                value={quartaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia4)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -247,7 +270,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">5. Como é feita a gestão financeira da empresa? Existe controle efetivo 
                             sobre orçamento, fluxo de caixa e contas a pagar/receber?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta5)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão financeira pouco estruturada ou inexistente, resultando 
                                     em falta de controle, dificuldades na previsão e possíveis problemas de liquidez.</option>
                                     <option value="opcao2">Nível 2: Gestão financeira em desenvolvimento, com algum controle, mas é 
@@ -260,12 +285,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="quintaLinhaImportancia1"
-                                value={quintaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia5)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -273,7 +299,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">6. Qual é o nível de qualidade dos produtos ou serviços oferecidos pela 
                             empresa? Existem indicadores e processos de melhoria contínua?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta6)}>
+                                        <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Qualidade baixa ou inconsistente nos produtos/serviços, falta de 
                                     indicadores e processos de melhoria contínua. Risco de insatisfação dos clientes e perda de 
                                     competitividade. </option>
@@ -289,12 +317,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="sextaLinhaImportancia1"
-                                value={sextaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia6)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -302,7 +331,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">7. Como é realizada a gestão de documentos e arquivos na empresa? Existem 
                             práticas de organização e armazenamento eficientes?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta7)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão de documentos e arquivos pouco estruturada ou inexistente, 
                                     resultando em dificuldades na localização e recuperação de informações importantes. </option>
                                     <option value="opcao2">Nível 2: Desenvolvimento da gestão de documentos e arquivos em andamento, com 
@@ -315,12 +346,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="setimaLinhaImportancia1"
-                                value={setimaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia7)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -328,7 +360,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">8. Como é feita a gestão de riscos na empresa? Existem análises de risco e 
                             planos de contingência estabelecidos?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta8)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão de riscos pouco estruturada ou inexistente, falta de 
                                     análises sistemáticas e planos de contingência. Maior exposição a riscos e falta de preparação para 
                                     eventos adversos. </option>
@@ -343,12 +377,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="oitavaLinhaImportancia1"
-                                value={oitavaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia8)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
                         
@@ -356,7 +391,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">9. Como é feita a gestão do tempo e produtividade dos colaboradores? Existem 
                             práticas de monitoramento e incentivo à eficiência?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta9)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: Gestão do tempo e produtividade inexistente. Falta de monitoramento e 
                                     incentivo à eficiência. Baixa produtividade e possíveis atrasos nos projetos. </option>
                                     <option value="opcao2">Nível 2: Desenvolvimento da gestão do tempo e produtividade em andamento. Algumas 
@@ -369,12 +406,13 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="nonaLinhaImportancia1"
-                                value={nonaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                                <select className="import-select"
+                                        onChange={(event) => handleOptionImportanciaChange(event, setImportancia9)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
 
@@ -382,7 +420,9 @@ function Maturidade1({onImportancia1Change}){
                             <td className="pergunta">10. Existe um canal efetivo de comunicação interna na empresa? Os colaboradores se 
                             sentem envolvidos e informados sobre as decisões administrativas?</td>
                             <td>
-                                <select className="opcao-select">
+                                <select className="opcao-select"
+                                        onChange={(event) => handleOptionRespostaChange(event, setResposta10,)}>
+                                    <option disabled selected value>Selecione uma resposta</option>
                                     <option value="opcao1">Nível 1: A empresa carece de um canal de comunicação interna efetivo ou 
                                     inexistente, resultando em colaboradores desinformados e pouco envolvidos nas decisões administrativas,
                                      prejudicando o engajamento e motivação. </option>
@@ -397,18 +437,22 @@ function Maturidade1({onImportancia1Change}){
                                 </select>
                             </td>
                             <td>
-                            <input
-                                type="text"
-                                name="decimaLinhaImportancia1"
-                                value={decimaLinhaImportancia1}
-                                onChange={handleInputChangeImportancia1}
-                            />
+                            <select className="import-select"
+                                    onChange={(event) => handleOptionImportanciaChange(event, setImportancia10)}>
+                                    <option disabled selected value>Selecione um nível de importância</option>
+                                    <option value="opcao1">Pouco importante</option>
+                                    <option value="opcao2">Importante</option>
+                                    <option value="opcao3">Muito importante</option>
+                                </select>
                             </td>
                         </tr>
+                        
                     </table>
-
-                <div onClick={(e) => irParaFormMaturidade2(e)} className='setaDireita'></div>
-
+                    <img
+                        src={rightArrow}
+                        alt="Seta"
+                        className="setaDireitaMaturidade"
+                        onClick={(e) => irParaFormMaturidade2(e)}/>
             </div>
         </div>
         
