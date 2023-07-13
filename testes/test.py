@@ -5,7 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 driver.get("http://localhost:3000/2023.1-CanvLight-Canvas-Inteligente")
 driver.maximize_window()
 print("Testando: Homepage")
