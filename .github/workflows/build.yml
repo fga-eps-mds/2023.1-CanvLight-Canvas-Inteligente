@@ -43,6 +43,7 @@ jobs:
       - name: Tests
         run: |
           pip install selenium
+          chromium --version
           cd testes
           python test.py
           
