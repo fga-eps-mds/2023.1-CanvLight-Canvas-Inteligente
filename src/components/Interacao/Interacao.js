@@ -1667,7 +1667,7 @@ function Interacao({
       </div>
 
       <div className="tela_3_form_interacao">
-        <div className="centerInt">
+        <div className="centerItr3">
           <div className="esquerda">
             <button
               className="close_itr3"
