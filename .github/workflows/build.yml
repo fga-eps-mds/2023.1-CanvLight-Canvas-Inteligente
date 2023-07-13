@@ -43,7 +43,7 @@ jobs:
       - name: Tests
         run: |
           pip install selenium
-          chromium --version
+          sudo apt install firefox
           cd testes
           python test.py
           
