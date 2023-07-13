@@ -219,6 +219,9 @@
 }
 
 @media screen and (max-width: 568px) {
+  body {
+    overflow: hidden;
+  }
   .benchmarking {
     height: 130vh;
   }
@@ -268,7 +271,7 @@
   }
   .parceiro table th {
     font-size: 10px;
-    padding: 0px;
+    padding: 5px;
   }
   .duvida_benchmarking {
     margin-left: 25vw;
@@ -277,6 +280,9 @@
   .txt-perfil {
     margin-top: 1vh;
     font-size: 12px;
+  }
+  input[data-placeholder]::placeholder {
+    color: #fcdbc1;
   }
 
   .img-perfil,
