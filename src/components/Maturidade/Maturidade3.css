@@ -15,7 +15,7 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 120vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -68,6 +68,7 @@
   border: none;
   left: 1.5%;
   top: 2%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 .dot2_area3 {
   cursor: pointer;
@@ -79,6 +80,7 @@
   border: none;
   left: 3.5%;
   top: 2%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 .dot3_area3 {
   cursor: pointer;
@@ -90,6 +92,7 @@
   border: none;
   left: 5.5%;
   top: 2%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .titulo_financeira {
@@ -106,25 +109,28 @@
   float: right;
   cursor: pointer;
   position: absolute;
-  left: 60.5%;
-  top: 6%;
+  left: 62%;
+  top: 5.5%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .setaEsquerdaMaturidade_3 {
-  margin-top: 1%;
+  margin-top: 3%;
   float: left;
-  width: 60px;
-  height: 60px;
+  width: 4vw;
+  height: 4vw;
   cursor: pointer;
   transform: rotate(180deg);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .setaDireitaMaturidade_3 {
-  margin-top: 1%;
+  margin-top: 3%;
   float: right;
-  width: 60px;
-  height: 60px;
+  width: 4vw;
+  height: 4vw;
   cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 @media screen and (max-width: 568px) {
