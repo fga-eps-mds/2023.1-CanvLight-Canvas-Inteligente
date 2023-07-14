@@ -31,6 +31,6 @@ Durante o projeto e as aulas de MDS foi possível ter um _insight_ de como funci
 
 Durante a disciplina aprendi muito sobre como a indústria de Software cresceu durante o tempo e se adaptou ao mercado e a seus problemas internos. ...
 
-### Limírio Guimarães([@fsousac](https://github.com/LimirioGuimaraes))
+### Limírio Guimarães([@LimirioGuimaraes](https://github.com/LimirioGuimaraes))
 
 
