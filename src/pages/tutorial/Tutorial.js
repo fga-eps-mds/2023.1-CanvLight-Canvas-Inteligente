@@ -533,26 +533,28 @@ function Tutorial() {
           resultados.
         </p>
       </div>
-      <div id="tut_Maturidade" className="tut_Maturidade">
+      <div id="tut_maturidade" className="tut_maturidade">
         <h2>• Maturidade</h2>
         <p>
-          A maturidade de um negócio é alcançada quando a empresa possui um modelo 
-          sólido, clientes satisfeitos e estabilidade financeira. Nessa fase, a 
-          organização tem processos eficientes, estrutura organizacional definida 
-          e capacidade de se adaptar às mudanças do mercado. Ela busca 
-          constantemente inovação e crescimento sustentável, mantendo sua relevância 
-          e competitividade.
+          A maturidade de um negócio é alcançada quando a empresa possui um
+          modelo sólido, clientes satisfeitos e estabilidade financeira. Nessa
+          fase, a organização tem processos eficientes, estrutura organizacional
+          definida e capacidade de se adaptar às mudanças do mercado. Ela busca
+          constantemente inovação e crescimento sustentável, mantendo sua
+          relevância e competitividade.
           <br />
           <br />
           Passo 1: Leia as perguntas atentamente.
           <br />
-          Passo 2: Selecione uma resposta que corresponda ao nível de sua empresa.
+          Passo 2: Selecione uma resposta que corresponda ao nível de sua
+          empresa.
           <br />
           Passo 3: Selecione a importância da questão em sua empresa.
           <br />
           Passo 4: Repita o processo para todas as áreas.
           <br />
-          Ao final do processo, haverá um gráfico representando a nota de maturidade de seu negócio.
+          Ao final do processo, haverá um gráfico representando a nota de
+          maturidade de seu negócio.
         </p>
       </div>
     </div>
