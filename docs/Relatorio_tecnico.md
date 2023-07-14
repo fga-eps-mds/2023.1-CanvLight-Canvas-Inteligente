@@ -1,4 +1,4 @@
-# Relatório Técnico do Projeto
+# Relatório Técnico CanvLight
 
 ## 1. Introdução
 
