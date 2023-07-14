@@ -115,11 +115,11 @@ function Maturidade5({
     <div className="telaResult">
       <div className="formResult">
         <button
-          className="close_area4"
+          className="close_area5"
           onClick={(e) => fecharFormMaturidade5(e)}
         ></button>
-        <div className="dot2_area4"></div>
-        <div className="dot3_area4"></div>
+        <div className="dot2_area5"></div>
+        <div className="dot3_area5"></div>
         <h2 className="titulo">{porcentagemAdm}</h2>
         <h2 className="titulo">{porcentagemRh}</h2>
         <h2 className="titulo">{porcentagemFin}</h2>

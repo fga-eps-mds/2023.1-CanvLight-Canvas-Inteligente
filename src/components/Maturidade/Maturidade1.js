@@ -112,6 +112,7 @@ function Maturidade1({ state, onPorcentagemAdmChange }) {
 
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
 
   function irParaFormMaturidade2(e) {

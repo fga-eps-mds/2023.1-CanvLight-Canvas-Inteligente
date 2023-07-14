@@ -107,6 +107,7 @@ function Maturidade2({ state, onPorcentagemRhChange }) {
 
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
 
   function irParaFormMaturidade1(e) {
