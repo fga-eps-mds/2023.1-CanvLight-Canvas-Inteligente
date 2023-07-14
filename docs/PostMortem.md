@@ -33,4 +33,14 @@ Durante a disciplina aprendi muito sobre como a indústria de Software cresceu d
 
 ### Limírio Guimarães([@LimirioGuimaraes](https://github.com/LimirioGuimaraes))
 
+No início do projeto, estávamos um pouco perdidos devido à falta de informações claras sobre o projeto em si. Isso ficou evidente especialmente antes da primeira reunião com a cliente, pois as informações que tínhamos eram vagas e permitiam várias interpretações, o que dificultou o progresso nas duas primeiras sprints. Além disso, tínhamos dificuldades em utilizar as ferramentas, principalmente na documentação do nosso trabalho no GitHub.
+
+No entanto, mesmo diante desses obstáculos, desde a primeira semana o projeto já começou a expandir nosso conhecimento. Fomos capazes de compreender melhor do que se tratava o projeto e nos dedicamos a um estudo extra, pois nenhum de nós tinha experiência com um canvas de negócio. Aprender sobre isso foi um desafio adicional para realizar um bom trabalho. No entanto, acredito que o maior desafio tenha sido o trabalho em equipe. Trabalhar em grupo é sempre uma tarefa complicada, principalmente quando estamos trabalhando remotamente, o que exige um alto nível de comprometimento de todos os envolvidos.
+
+Felizmente, ao final da primeira entrega, grande parte de nossas dúvidas já haviam sido esclarecidas. Tínhamos uma noção clara do que precisávamos fazer, embora não tivéssemos conseguido traçar todos os detalhes exatamente. Além disso, alguns aspectos da arquitetura e dos requisitos ainda não estavam completamente definidos, o que exigiu algumas mudanças posteriores. Inicialmente, havíamos planejado tudo de forma teórica, porém, na prática, algumas coisas não ocorreram como planejado. Felizmente, esses problemas foram resolvidos.
+
+Para a maioria do grupo, as tecnologias utilizadas no desenvolvimento do software eram desconhecidas. No entanto, grande parte do grupo estava empenhada em aprender e, por meio de pesquisas, conseguimos explorar as capacidades necessárias das tecnologias para o bom funcionamento do nosso software. Fiquei satisfeito com os resultados alcançados pela equipe e acredito que nosso software pode agregar muito em diversas áreas.
+
+Quanto às habilidades que aprendi na disciplina de MDS, as tecnologias utilizadas para o desenvolvimento do software não se comparam ao enriquecimento pessoal que obtive como um futuro profissional. Aprendi não apenas a utilizar ferramentas que auxiliam na organização de uma equipe, mas também como trabalhar em equipe e aplicar diferentes métodos de trabalho em grupo para contribuir no desenvolvimento de software. Percebi como uma comunicação clara e direta é fundamental para a maturidade do time e do projeto, além de ter aprimorado nossas habilidades para gerir uma equipe, considerando as capacidades, características, qualidades e defeitos de cada membro, e utilizar isso em benefício de todos.
+
 
