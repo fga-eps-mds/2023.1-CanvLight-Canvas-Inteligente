@@ -2,6 +2,11 @@ import React from "react";
 import checkIcon from "../../images/check.png";
 import { jsPDF } from "jspdf";
 //import logo from "../../images/logo_canvlight.png";
+import Situacao1 from "../../images/situacao1.png";
+import Situacao2 from "../../images/situacao2.png";
+import Situacao3 from "../../images/situacao3.png";
+import Situacao4 from "../../images/situacao4.png";
+import Situacao5 from "../../images/situacao5.png";
 import Intuicao from "../../images/Intuicao.png";
 import Observacao1 from "../../images/Observacao1.png"
 import Observacao2 from "../../images/Observacao2.png"
@@ -993,27 +998,61 @@ function GeradorPDF({
     doc.setFillColor('#fcdbc1'); // Seleciona a cor do Fundo #fcdbc1
     doc.rect(0, 0, 420, 297, 'F'); // Adiciona o Retângulo maior
     var nivel = 5;
-    //var imgSituacao = null;
+    var imgSituacao = null;
     var textSituacao = null;
     
     if (nivel === 1) {
-      //imgSituacao = Situacao1;
+      imgSituacao = Situacao1;
       textSituacao = Descricao1;
     } else if (nivel === 2) {
-      //imgSituacao = Situacao2;
+      imgSituacao = Situacao2;
       textSituacao = Descricao2;
     } else if (nivel === 3) {
-      //imgSituacao = Situacao3;
+      imgSituacao = Situacao3;
       textSituacao = Descricao3;
     } else if (nivel === 4) {
-      //imgSituacao = Situacao4;
+      imgSituacao = Situacao4;
       textSituacao = Descricao4;
     } else if (nivel === 5) {
-      //imgSituacao = Situacao5;
+      imgSituacao = Situacao5;
       textSituacao = Descricao5;
     }
+    doc.addImage(imgSituacao, "png", 246, 42, 30, 30);
+    doc.setFontSize(35);
+    doc.text(`Maturidade Nível ${nivel}`, 140, 62);
 
-    doc.text(`${textSituacao}`, 10, 10);
+    doc.setFontSize(20);
+
+    // Funcao que separa o texto em linhas
+    var tamanhoMaximo = 60;
+    function dividirTextoEmLinhas(texto, tamanhoMaximo) {
+      var linhas = [];
+      var palavras = texto.split(' ');
+      var linhaAtual = '';
+    
+      for (var i = 0; i < palavras.length; i++) {
+        var palavra = palavras[i];
+        
+        if (linhaAtual.length + palavra.length <= tamanhoMaximo) {
+          linhaAtual += palavra + ' ';
+        } else {
+          linhas.push(linhaAtual);
+          linhaAtual = palavra + ' ';
+        }
+      }
+    
+      // Adiciona a última linha
+      linhas.push(linhaAtual);
+    
+      return linhas;
+    };
+    var linhas = dividirTextoEmLinhas(textSituacao, tamanhoMaximo);
+    // Printa o texto separado
+    for (var i = 0; i < linhas.length; i++) {
+      doc.text(100, 80 + (i * 10), linhas[i]);
+    }
+
+    //doc.text(`${textSituacao}`, 20, 80);
     doc.text(`${porcentagemAdm}`, 10, 20);
     doc.text(`${porcentagemRh}`, 10, 30);
     doc.text(`${porcentagemFin}`, 10, 40);
