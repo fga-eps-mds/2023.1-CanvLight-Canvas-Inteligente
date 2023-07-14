@@ -1,16 +1,14 @@
-# Análise Postmortem do Projeto de Canvas de Negócio
+# Postmortem CanvLight
 
 ## Introdução
-A análise postmortem do projeto de Canvas de Negócio tem como objetivo identificar as lições aprendidas, os sucessos e as áreas de melhoria em relação à execução do projeto. O projeto em questão foi desenvolvido para a disciplina de [nome da disciplina], como uma forma de aplicar conceitos teóricos em um contexto prático. A análise a seguir abordará os principais aspectos relacionados à organização, planejamento, execução e resultados alcançados.
+A análise postmortem do projeto de Canvas de Negócio tem como objetivo identificar as lições aprendidas, os sucessos e as áreas de melhoria em relação à execução do projeto. O projeto em questão foi desenvolvido para a disciplina de Métodos de Desenvolvimento de Software (MDS), como uma forma de aplicar conceitos teóricos em um contexto prático. A análise a seguir abordará os principais aspectos relacionados à organização, planejamento, execução e resultados alcançados.
 
-## Metodologia
-A análise postmortem será conduzida por meio de um questionário estruturado, aplicado aos membros da equipe responsável pelo projeto. As respostas fornecidas pelos participantes serão consolidadas para identificar os principais pontos de destaque, tanto positivos quanto negativos.
-
-## Resultados
+## Conclusões Gerais
+Durante o projeto e as aulas de MDS foi possível ter um _insight_ de como funciona o mercado de software em prática. Podemos pontuar como os principais aspectos da disciplina o aprendizado de métodos ágeis, a organização e estruturação de uma equipe e o trabalho a ser realizado.
 
 ### Sucessos
-- Identificação clara dos objetivos e propósito do projeto.
-- Engajamento e colaboração efetiva da equipe durante todas as etapas do projeto.
+- Aprendizados em Front-end cujo a maioria do time não tinha experiência, entretanto, conseguimos entregar um resultado satisfatório para a proposta
+- 
 - Utilização adequada das ferramentas e recursos disponíveis para a elaboração do Canvas de Negócio.
 - Apresentação visualmente atraente e informativa do Canvas, facilitando a compreensão do modelo de negócio proposto.
 - Feedback positivo recebido dos professores e colegas em relação à qualidade do trabalho.
@@ -22,9 +20,15 @@ A análise postmortem será conduzida por meio de um questionário estruturado, 
 - Avaliar a possibilidade de utilizar ferramentas de colaboração online para facilitar a participação da equipe, principalmente durante a fase de desenvolvimento do projeto.
 
 ## Lições Aprendidas
-- A importância de um planejamento adequado, considerando prazos e recursos disponíveis.
+- A valorização da comunicação efetiva e do trabalho em equipe.
 - A valorização da comunicação efetiva e do trabalho em equipe.
 - O aprendizado sobre a construção de um Canvas de Negócio e sua aplicação prática.
 - A necessidade de aprofundamento da pesquisa e análise de mercado para embasar as decisões estratégicas.
 
 ## Conclusões Individuais
+
+### Felipe de Sousa ([@fsousac](https://github.com/fsousac))
+
+Durante a disciplina aprendi muito sobre como a indústria de Software cresceu durante o tempo e se adaptou ao mercado e a seus problemas internos. ...
+
+
