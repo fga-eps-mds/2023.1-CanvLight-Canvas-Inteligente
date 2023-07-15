@@ -215,7 +215,9 @@
 }
 
 .right-arrow,
+.right-arrow2,
 .left-arrow,
+
 .feito_itr {
   margin-top: 2%;
   float: right;
@@ -225,9 +227,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.left-arrow {
+.left-arrow, .left-arrow2 {
+  margin-top: 2%;
+  width: 6%;
+  height: 6%;
   float: left;
   transform: rotate(180deg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* config tela 2 */
@@ -657,7 +663,7 @@
   .tabela_analise_preço table input {
     width: 11vw;
   }
-  .right-arrow {
+  .right-arrow, .right-arrow_2 {
     width: 20%;
     height: 20%;
     margin-top: 25%;
@@ -665,18 +671,52 @@
   }
   /*INTERAÇÃO 2*/
   /*checklist*/
+  .parte3_interacao p{
+    margin-top: 15%;
+    width: 32vw;
+  }
   .parte4_interacao {
     width: 60%;
     margin-top: -68vh;
     margin-left: -65%;
   }
   .parte5_interacao {
-    width: 70%;
+    width: 80%;
     font-size: 20px;
-    margin-top: -200%;
+    margin-top: -220%;
     margin-left: 0%;
   }
+  .tabela_formacao{
+    margin-top: -210%;
+    font-size: 11.5px;
+    margin-left: -7%;
+  }
 
+  .button_tarefa {
+    margin-top: 2%;
+  }
+ 
+  .parte4_interacao{
+    margin-left: 0%;
+    margin-top: -135%;
+  }
+
+  .tabela_MVP {
+    margin-top: -125%;
+    margin-left: 10%;
+  }
+  
+  .left-arrow2{
+    width: 20%;
+    height: 20%;
+    margin-top: -35%;
+  }
+
+  .right-arrow2{
+    width: 20%;
+    height: 20%;
+    margin-top: -35%;
+  }
   /*parte 3 interação*/
 
   .digitalizacao {

@@ -1403,7 +1403,7 @@ function Interacao({
             <div className="parte5_interacao">
               <form>
                 <div>
-                  <p>
+                  <p className="p_formação_de_preco">
                     Formação do Preço:{" "}
                     <div
                       onClick={() => {
@@ -1655,13 +1655,13 @@ function Interacao({
             <img
               src={rightArrow}
               alt="Seta"
-              className="right-arrow"
+              className="right-arrow2"
               onClick={(e) => nextpage2(e)}
             />
             <img
               src={rightArrow}
               alt="Seta"
-              className="left-arrow"
+              className="left-arrow2"
               onClick={(e) => backpage1(e)}
             />
           </div>
