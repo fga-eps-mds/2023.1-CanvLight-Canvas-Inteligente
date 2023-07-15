@@ -1017,7 +1017,7 @@ function GeradorPDF({
       imgSituacao = Situacao5;
       textSituacao = Descricao5;
     }
-    doc.addImage(imgSituacao, "png", 246, 42, 30, 30);
+    doc.addImage(imgSituacao, "png", 250, 42, 26, 26);
     doc.setFontSize(35);
     doc.text(`Maturidade Nível ${nivel}`, 140, 62);
 
