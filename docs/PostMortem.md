@@ -43,4 +43,11 @@ Para a maioria do grupo, as tecnologias utilizadas no desenvolvimento do softwar
 
 Quanto às habilidades que aprendi na disciplina de MDS, as tecnologias utilizadas para o desenvolvimento do software não se comparam ao enriquecimento pessoal que obtive como um futuro profissional. Aprendi não apenas a utilizar ferramentas que auxiliam na organização de uma equipe, mas também como trabalhar em equipe e aplicar diferentes métodos de trabalho em grupo para contribuir no desenvolvimento de software. Percebi como uma comunicação clara e direta é fundamental para a maturidade do time e do projeto, além de ter aprimorado nossas habilidades para gerir uma equipe, considerando as capacidades, características, qualidades e defeitos de cada membro, e utilizar isso em benefício de todos.
 
+### Henrique Batalha ([@HeBatalha](https://github.com/HeBatalha))
+
+No começo, a disciplina foi bem confusa, pois escolhemos um tema desconhecido que não era o que pensávamos, também devido ao aprendizado e aplicação das metodologias ágeis que foram uma novidade à equipe e uma forma muito diferente do estava acostumado. 
+
+Depois do período inicial do projeto, quando começamos a trabalhar de fato no código, foi bem interessante aprender as tecnologias novas (para mim) que usamos. Vale ressaltar que particularmente, eu não possuía quase nenhuma familiaridade com React.js ou front-end em geral. Então diria que foi valioso o aprendizado, embora não fosse o foco.
+
+Acredito que os nossos maiores erros na minha opinião foram uma falta de planejamento e sincronia em certos aspectos, o que diminuiu a nossa produtividade e acabou atrasando um pouco o andamento de certas etapas do projeto. Apesar disso tudo, julgo essa experiência de trabalho em equipe valiosa, sinto que aprendi muito na disciplina e estou satisfeito com o nosso resultad
 
