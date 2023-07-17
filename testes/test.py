@@ -623,9 +623,12 @@ WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[2]/div/div[3]/div[1]/div/div[1]/p/div")))
 WebDriverWait(driver, 20).until(
     EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[7]/div[2]/div/div[3]/div[1]/div/div[1]/p")))
-
-################################# TESTE CHECKLIST #################################
-
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.ID, "input-new-task")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[2]/div/div[3]/div[1]/div/div[1]/p/div")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "button_tarefa")))
 WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[7]/div[2]/div/div[3]/div[2]/div[1]/p/div")))
 WebDriverWait(driver, 20).until(
@@ -854,5 +857,340 @@ WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.CLASS_NAME, "feito_itr")))
 
 print("Interação 3: Sucesso!")
+
+driver.find_element(By.CLASS_NAME, "feito_itr").click()
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "button4")))
+driver.find_element(By.CLASS_NAME, "button4").click()
+
+print("Testando: Maturidade 1")
+
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "close_area1")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "titulo_area_adm")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "duvidaAdm")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[1]/th[1]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[1]/th[2]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[1]/th[3]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[2]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[2]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[2]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[3]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[3]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[3]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[4]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[4]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[4]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[5]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[5]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[5]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[6]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[6]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[6]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[7]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[7]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[7]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[8]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[8]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[8]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[9]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[9]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[9]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[10]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[10]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[10]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[11]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[11]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[8]/div/table/tr[11]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaDireitaMaturidade")))
+
+print("Maturidade 1: Sucesso!")
+
+driver.find_element(By.CLASS_NAME, "setaDireitaMaturidade").click()
+
+print("Testando: Maturidade 2")
+
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "close_area2")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "titulo_2_maturidade")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "duvidaRh")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[1]/th[1]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[1]/th[2]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[1]/th[3]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[2]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[2]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[2]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[3]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[3]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[3]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[4]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[4]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[4]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[5]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[5]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[5]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[6]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[6]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[6]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[7]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[7]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[7]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[8]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[8]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[8]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[9]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[9]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[9]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[10]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[10]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[9]/div/table/tr[10]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaDireitaMaturidade_2")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaEsquerdaMaturidade_2")))
+
+print("Maturidade 2: Sucesso!")
+
+driver.find_element(By.CLASS_NAME, "setaDireitaMaturidade_2").click()
+
+print("Testando: Maturidade 3")
+
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "close_area3")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "titulo_financeira")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "duvidaFin")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[1]/th[1]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[1]/th[2]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[1]/th[3]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[2]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[2]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[2]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[3]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[3]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[3]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[4]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[4]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[4]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[5]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[5]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[5]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[6]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[6]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[6]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[7]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[7]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[7]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[8]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[8]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[10]/div/table/tr[8]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaDireitaMaturidade_3")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaEsquerdaMaturidade_3")))
+
+print("Maturidade 3: Sucesso!")
+
+driver.find_element(By.CLASS_NAME, "setaDireitaMaturidade_3").click()
+
+print("Testando: Maturidade 4")
+
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "close_area4")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "titulo_maturidade_4")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "duvidaMkt")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[1]/th[1]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[1]/th[2]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[1]/th[3]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[2]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[2]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[2]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[3]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[3]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[3]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[4]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[4]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[4]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[5]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[5]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[5]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[6]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[6]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[6]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[7]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[7]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[7]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[8]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[8]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[8]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[9]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[9]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[9]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[10]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[10]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[10]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[11]/td[1]")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[11]/td[2]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[11]/div/table/tr[11]/td[3]/select")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaDireitaMaturidade_4")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaEsquerdaMaturidade_4")))
+
+print("Maturidade 4: Sucesso!")
+
+driver.find_element(By.CLASS_NAME, "setaDireitaMaturidade_4").click()
+
+print("Testando: Maturidade 5")
+
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[12]/div/button")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[12]/div/h2[5]")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "tituloNivel")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "situacao")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "descMaturidade")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "tabelaResult")))
+WebDriverWait(driver, 20).until(
+    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[12]/div/table/div/canvas")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "setaEsquerda")))
+WebDriverWait(driver, 20).until(
+    EC.element_to_be_clickable((By.CLASS_NAME, "feitoMaturidade")))
+
+print("Maturidade 5: Sucesso!")
+
 
 driver.quit()
