@@ -57,13 +57,13 @@ Acredito que os nossos maiores erros na minha opinião foram uma falta de planej
 
 ### Breno Alexandre([@brenoalexandre0](https://github.com/brenoalexandre0))
 
-Desde o início a organização e planejamento do grupo foram fracos, pois a maioria dos integrantes não se conhecia e não sabiamos muito
+Desde o início a organização e planejamento do grupo foram fracos, pois a maioria dos integrantes não se conhecia e não sabíamos muito
 bem como lidar com métodos ágeis.
 
-A escolha do tema foi até um certo nível de forma arbitrária, pois a maior parte do grupo nuncas trabalhou com um canvas de negócio ou usou um. O mesmo vale para a tecnologia usada no projeto. Então graças a isso foi necessário muita pesquisa e estudo do grupo.
+A escolha do tema foi até um certo nível de forma arbitrária, pois a maior parte do grupo nunca trabalhou com um canvas de negócio ou usou um. O mesmo vale para a tecnologia usada no projeto. Então graças a isso foi necessário muita pesquisa e estudo do grupo.
 
-Apenas após a Release 1 o grupo começou a trabalhar melhor em conjunto e ser mais produtivo com o projeto. Mas mesmo assim houve uma desorganização e desinteresse com alguns membros, atrasando o projeto.
+Apenas após a Release 1 o grupo começou a trabalhar melhor em conjunto e a ser mais produtivo com o projeto. Mas mesmo assim houve uma desorganização e desinteresse com alguns membros, atrasando o projeto.
 
 O resultado final do projeto é satisfatório tendo em mente os obstáculos.
 
-Aprendi bastante sobre como é trabalhar em grupo, trabalhar em projetos grandes, codar em JavaScript e React, conheço melhor canvas de negócio e o grau de maturidade de uma empresa e sei usar melhor os comandos de Git e as práticas básicas no GitHub.
+Aprendi bastante sobre como é trabalhar em grupo, trabalhar em projetos grandes, codar em JavaScript e React, conheço melhor canvas de negócio e como calcular o grau de maturidade de uma empresa e sei usar melhor os comandos de Git e as práticas básicas no GitHub.
