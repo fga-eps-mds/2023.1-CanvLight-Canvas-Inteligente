@@ -552,7 +552,29 @@ function Tutorial() {
           <br />
           Passo 4: Repita o processo para todas as áreas.
           <br />
-          Ao final do processo, haverá um gráfico representando a nota de maturidade de seu negócio.
+          Ao final do processo, haverá uma descrição do grau de maturidade de seu negócio
+          e um gráfico representando a porcentagem de maturidade de cada área.
+        </p>
+      </div>
+      <div id="tut_CalcMaturidade" className="tut_CalcMaturidade">
+        <h2>• Cálculo da Maturidade</h2>
+        <p>
+          O cálculo do nível de maturidade de cada área é bem simples, sendo ele a
+          média do produto entre cada resposta(R) e importância(I), dividido por
+          quantidade de perguntas(QP).
+          <br />
+          Ou seja:
+          <br />
+          <p className="tut_CalcMaturidadeCalc">((R1*I1)+(R2+I2)+...)/QP</p>
+          <br />
+          <br />
+          O cálculo do grau de maturidade do negócio se dá basicamente pela média das
+          áreas(A), com um porém: se alguma área tiver com 50% de maturidade ou mais,
+          o grau de maturidade será no mínimo nível 2.
+          <br />
+          O cálculo:
+          <br />
+          <p className="tut_CalcMaturidadeCalc">(A1+A2+A3+A4)/4</p>
         </p>
       </div>
     </div>
