@@ -8,9 +8,9 @@ Este relatório técnico apresenta uma visão geral do projeto do CanvLight, Can
 O Canvas Inteligente de Negócios é uma aplicação web que permite criar e gerenciar quadros com post-its virtuais para organização de ideias e tarefas relacionadas a projetos de negócios. A arquitetura da aplicação seguirá o padrão cliente-servidor, onde o front-end será responsável por fornecer a interface gráfica ao usuário final, enquanto o back-end será responsável por fornecer a lógica de negócios e o acesso aos dados.
 
 ### Front-end:
-O front-end será desenvolvido em HTML, CSS e ReactJS e as bibliotecas JSPDF e ChartJS. O ReactJS é uma biblioteca JavaScript para construção de interfaces de usuário reativas e escaláveis, que permite a construção de componentes reutilizáveis para a interface gráfica. O HTML e CSS serão utilizados para a estruturação e estilização da página.
+O front-end foi desenvolvido em HTML, CSS e ReactJS e as bibliotecas JSPDF e ChartJS. O ReactJS é uma biblioteca JavaScript para construção de interfaces de usuário reativas e escaláveis, que permite a construção de componentes reutilizáveis para a interface gráfica. O HTML e CSS foi utilizado para a estruturação e estilização da página.
 
-A arquitetura utilizada durante o projeto será a Componentização. Devido ao uso do ReactJS e seu formato de atuação, a Componentização respeita as principais práticas da biblioteca e se comunica bem com as outras bibliotecas utilizadas, além de conseguirmos fazer uma paralelização do desenvolvimento do projeto devido a metodologia Agile, usada durante todo o projeto.
+A arquitetura utilizada durante o projeto foi a Componentização. Devido ao uso do ReactJS e seu formato de atuação, a Componentização respeita as principais práticas da biblioteca e se comunica bem com as outras bibliotecas utilizadas, além de conseguirmos fazer uma paralelização do desenvolvimento do projeto devido a metodologia Agile, usada durante todo o projeto.
 
 ## 3. Requisitos do Projeto
 
@@ -42,4 +42,4 @@ Os requisitos do projeto definem as funcionalidades e as restrições que o sist
 
 ## 4. Conclusão
 
-Este relatório técnico apresentou a arquitetura e os requisitos do projeto, fornecendo uma visão geral das principais características e funcionalidades do sistema a ser desenvolvido. O projeto é fundamental para fomentar a democratização da divulgação de empresas e gerar um nível de maturidade com base nos dados atuais fornecidos pelo cliente.
+Este relatório técnico apresentou a arquitetura e os requisitos do projeto, fornecendo uma visão geral das principais características e funcionalidades do sistema desenvolvido. O projeto é fundamental para fomentar a democratização da divulgação de empresas e gerar um nível de maturidade com base nos dados atuais fornecidos pelo cliente.
