@@ -55,7 +55,7 @@ Depois do período inicial do projeto, quando começamos a trabalhar de fato no 
 
 Acredito que os nossos maiores erros na minha opinião foram uma falta de planejamento e sincronia em certos aspectos, o que diminuiu a nossa produtividade e acabou atrasando um pouco o andamento de certas etapas do projeto. Apesar disso tudo, julgo essa experiência de trabalho em equipe valiosa, sinto que aprendi muito na disciplina e estou satisfeito com o nosso resultado.
 
-### Breno Alexandre([@brenoalexandre0](https://github.com/brenoalexandre0))
+### Breno Alexandre ([@brenoalexandre0](https://github.com/brenoalexandre0))
 
 Desde o início a organização e planejamento do grupo foram fracos, pois a maioria dos integrantes não se conhecia e não sabíamos muito
 bem como lidar com métodos ágeis.
