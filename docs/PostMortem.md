@@ -7,29 +7,33 @@ A análise postmortem do projeto de Canvas de Negócio tem como objetivo identif
 Durante o projeto e as aulas de MDS foi possível ter um _insight_ de como funciona o mercado de software em prática. Podemos pontuar como os principais aspectos da disciplina o aprendizado de métodos ágeis, a organização e estruturação de uma equipe e o trabalho a ser realizado.
 
 ### Sucessos
-- Aprendizados em Front-end cujo a maioria do time não tinha experiência, entretanto, conseguimos entregar um resultado satisfatório para a proposta
-- 
-- Utilização adequada das ferramentas e recursos disponíveis para a elaboração do Canvas de Negócio.
-- Apresentação visualmente atraente e informativa do Canvas, facilitando a compreensão do modelo de negócio proposto.
-- Feedback positivo recebido dos professores e colegas em relação à qualidade do trabalho.
+- Aprendizados em Front-end cujo a maioria do time não tinha experiência, entretanto, conseguimos entregar um resultado satisfatório para a proposta.
+- Aplicação de testes, CI e CD.
+- Um contato inicial com o sistema do Ubuntu.
+- Entendimento e aplicação de como agregar valor à um software.
 
 ### Áreas de Melhoria
 - Melhorar o planejamento inicial do projeto, estabelecendo prazos mais realistas e definindo claramente as responsabilidades de cada membro da equipe.
-- Aumentar a comunicação interna da equipe, por meio de reuniões regulares e canais de comunicação eficientes.
-- Aprofundar a pesquisa de mercado e a análise de concorrência, a fim de embasar de forma mais sólida as decisões tomadas durante a elaboração do Canvas.
-- Avaliar a possibilidade de utilizar ferramentas de colaboração online para facilitar a participação da equipe, principalmente durante a fase de desenvolvimento do projeto.
+- Entender mais sobre como definir os requisitos e arquitetura de um projeto.
+- Pesquisar mais sobre a metrificação de issues nos métodos ágeis.
+- Comunicação e comprometimento de toda a equipe no projeto.
 
 ## Lições Aprendidas
 - A valorização da comunicação efetiva e do trabalho em equipe.
-- A valorização da comunicação efetiva e do trabalho em equipe.
+- Como superar as dificuldades encontradas durante o projeto, principalmente após a R1
 - O aprendizado sobre a construção de um Canvas de Negócio e sua aplicação prática.
-- A necessidade de aprofundamento da pesquisa e análise de mercado para embasar as decisões estratégicas.
 
 ## Conclusões Individuais
 
 ### Felipe de Sousa ([@fsousac](https://github.com/fsousac))
 
-Durante a disciplina aprendi muito sobre como a indústria de Software cresceu durante o tempo e se adaptou ao mercado e a seus problemas internos. ...
+Durante a disciplina aprendi muito sobre como a indústria de Software cresceu durante o tempo e se adaptou ao mercado e a seus problemas internos. Aprender sobre metodologias ágeis e como elas são aplicadas em casos reais foi fundamental para me preparar como engenheiro de software para o mercado. Sobre o projeto desenvolvido, não tinhamos muita noção à primeira vista do que era o projeto e menos ainda sobre como faze-lo, entretando, mesmo com as dificuldades conseguimos entender a proposta do nosso tema de Canvas Inteligente e entregar algo satisfatório.
+
+Tendo isso em mente, pontuaria, primeiramente, os pontos positivos da equipe como o desenvolvimento pessoal partindo basicamente do zero em desenvolvimento front-ended, assim como o conhecimento mútuo entre os próprios menbros, que pessoalmente eu não os conhecia, porém descobri várias pessoas muito responsáveis e que desejo continuar cultivando amizade _pós-MDS_. Além desses pontos, podemos destacar o esforço da equipe que mesmo com um resultado bem ruim na priemira _realise_ conseguimos nos esforçar e correr atrás do prejuízo.
+
+Em segundo plano, pontuaria as dificuldades que tive com a equipe, tenho em mente que é algo comum de acontecer, principalmente quando não se tem o conhecimento prévio do time, porém, ainda assim tive muita dificuldade como ScrumMaster de motivar parte da equipe em dedicar-se ao projeto ao mínimo, tendo certas sprints sem nenhuma entrega e sem motivo aparente ou comunicado. Isso pessoalmente causou um afastamento do resto da equipe e das práticas do Agile, fato que infelizmente fez um trabalho de 7 pessoas serem realocadas ocasionalmente em 4.
+
+Por fim, acredito que minha experiência tanto com o projeto, quanto com a disciplina foram positivas e tendem a agregar muito na minha formação dentro da UnB, e aqui, finalizo com um agradecimento à organização e a equipe, além de agradecer especialmente à professora Carla Rocha pela aplicação da disciplina, divulgação dos conhecimentos e inserção da metodologia "não hierárquica" durante a matéria.
 
 ### Limírio Guimarães([@LimirioGuimaraes](https://github.com/LimirioGuimaraes))
 
