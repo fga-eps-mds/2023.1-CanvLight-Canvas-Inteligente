@@ -158,7 +158,7 @@ function Maturidade1({ state, onPorcentagemAdmChange }) {
           </tr>
 
           <tr>
-          <td className="pergunta">1. Qual é a estrutura organizacional da empresa? Ela é adequada 
+            <td className="pergunta">1. Qual é a estrutura organizacional da empresa? Ela é adequada 
                             para suportar as atividades e fluxos de trabalho?</td>
                             <td>
                                 <select className="opcao-select"
