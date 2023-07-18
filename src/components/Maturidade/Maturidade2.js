@@ -160,7 +160,7 @@ function Maturidade2({ state, onPorcentagemRhChange }) {
           <tr>
             <th className="primeiro-canto">PERGUNTA</th>
             <th>RESPOSTA</th>
-            <th className="segundo-canto">IMPORTANCIA</th>
+            <th className="segundo-canto">IMPORTÂNCIA</th>
           </tr>
 
           <tr>

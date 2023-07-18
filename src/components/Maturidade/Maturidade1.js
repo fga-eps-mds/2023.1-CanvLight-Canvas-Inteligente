@@ -154,7 +154,7 @@ function Maturidade1({ state, onPorcentagemAdmChange }) {
           <tr>
             <th className="primeiro-canto">PERGUNTA</th>
             <th>RESPOSTA</th>
-            <th className="segundo-canto">IMPORTANCIA</th>
+            <th className="segundo-canto">IMPORTÂNCIA</th>
           </tr>
 
           <tr>

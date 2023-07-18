@@ -94,11 +94,13 @@ function Maturidade4({ state, onPorcentagemMktChange }) {
     multiplicacao += resposta9 * importancia9;
     multiplicacao += resposta10 * importancia10;
 
-    var resultado = multiplicacao / 60;
+    var resultado = multiplicacao / 120;
     resultado = resultado * 100;
 
-    onPorcentagemMktChange(resultado.toFixed(0));
+    return resultado.toFixed(0);
   }
+
+  onPorcentagemMktChange(calculaMkt());
 
   function fecharFormMaturidade4(e) {
     e.preventDefault();
@@ -152,6 +154,12 @@ function Maturidade4({ state, onPorcentagemMktChange }) {
             <div onClick={() => {window.open("tutorial#tut_Maturidade", "_blank")
             }}className="duvidaMkt"></div>
                     <table>
+                        <tr>
+                            <th className="primeiro-canto">PERGUNTA</th>
+                            <th>RESPOSTA</th>
+                            <th className="segundo-canto">IMPORTÂNCIA</th>
+                        </tr>
+
                         <tr>
                             <td className="pergunta1">1. Qual é a estratégia de marketing atual da empresa? Quais são 
                             os principais objetivos de marketing estabelecidos pela empresa? </td>
