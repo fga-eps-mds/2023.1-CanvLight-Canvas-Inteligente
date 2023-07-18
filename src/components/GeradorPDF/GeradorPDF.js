@@ -2,6 +2,11 @@ import React from "react";
 import checkIcon from "../../images/check.png";
 import { jsPDF } from "jspdf";
 //import logo from "../../images/logo_canvlight.png";
+import Situacao1 from "../../images/situacao1.png";
+import Situacao2 from "../../images/situacao2.png";
+import Situacao3 from "../../images/situacao3.png";
+import Situacao4 from "../../images/situacao4.png";
+import Situacao5 from "../../images/situacao5.png";
 import Intuicao from "../../images/Intuicao.png";
 import Observacao1 from "../../images/Observacao1.png"
 import Observacao2 from "../../images/Observacao2.png"
@@ -992,141 +997,101 @@ function GeradorPDF({
     doc.addPage(); // Maturidade
     doc.setFillColor('#fcdbc1'); // Seleciona a cor do Fundo #fcdbc1
     doc.rect(0, 0, 420, 297, 'F'); // Adiciona o Retângulo maior
-    var nivel = 5;
-    //var imgSituacao = null;
+
+    var porcent1 = +porcentagemAdm;
+    var porcent2 = +porcentagemRh;
+    var porcent3 = +porcentagemFin;
+    var porcent4 = +porcentagemMkt;
+
+    function nivelMaturidade(){
+
+      var adm = porcent1;
+      var rh = porcent2;
+      var fin = porcent3;
+      var mkt = porcent4;
+  
+      var soma = adm+rh+fin+mkt;
+      var media = soma/4;
+      var nivel = null;
+  
+      if (media <= 20) {
+        nivel = 1;
+      } else if (media > 20 && media <= 40) {
+        nivel = 2;
+      } else if (media > 40 && media <= 60) {
+        nivel = 3;
+      } else if (media > 60 && media <= 80) {
+        nivel = 4;
+      } else if (media > 80 && media <= 100) {
+        nivel = 5;
+      }
+  
+      return nivel;
+    }
+  
+    var nivel = nivelMaturidade();
+    var imgSituacao = null;
     var textSituacao = null;
     
     if (nivel === 1) {
-      //imgSituacao = Situacao1;
+      imgSituacao = Situacao1;
       textSituacao = Descricao1;
     } else if (nivel === 2) {
-      //imgSituacao = Situacao2;
+      imgSituacao = Situacao2;
       textSituacao = Descricao2;
     } else if (nivel === 3) {
-      //imgSituacao = Situacao3;
+      imgSituacao = Situacao3;
       textSituacao = Descricao3;
     } else if (nivel === 4) {
-      //imgSituacao = Situacao4;
+      imgSituacao = Situacao4;
       textSituacao = Descricao4;
     } else if (nivel === 5) {
-      //imgSituacao = Situacao5;
+      imgSituacao = Situacao5;
       textSituacao = Descricao5;
     }
+    doc.addImage(imgSituacao, "png", 250, 42, 26, 26);
+    doc.setFontSize(35);
+    doc.text(`Maturidade Nível ${nivel}`, 140, 62);
 
-    doc.text(`${textSituacao}`, 10, 10);
-    doc.text(`${porcentagemAdm}`, 10, 20);
-    doc.text(`${porcentagemRh}`, 10, 30);
-    doc.text(`${porcentagemFin}`, 10, 40);
-    doc.text(`${porcentagemMkt}`, 10, 50);
-  
-    // doc.addPage(); // Página Canvas
+    doc.setFontSize(20);
 
-    // var MargemX = 12; // Variavel para a margem horizontal
-    // var MargemY = 10; // Variavel para a margem vertical
+    // Funcao que separa o texto em linhas
+    var tamanhoMaximo = 60;
+    function dividirTextoEmLinhas(texto, tamanhoMaximo) {
+      var linhas = [];
+      var palavras = texto.split(' ');
+      var linhaAtual = '';
     
-    // doc.addImage(logo, 'PNG', 1, 1, 10, 10); // Adiciona a logo no canto do PDF
-
-    // doc.setFillColor(0, 0, 0, 0.22); // Seleciona a cor do Fundo
-    // doc.rect(MargemX, MargemY, 407, 286, 'F'); // Adiciona o Retângulo maior
-
-    // doc.setFontSize(16) // Tamanho da Fonte
-
-    // doc.rect(MargemX, MargemY, 81, 210 ) // Retangulo Parcerias principais
-    // doc.rect(81+MargemX, MargemY, 81, 105 ) // Retangulo Atividades-chave
-    // doc.rect(81+MargemX, 105+MargemY, 81, 105 ) // Retangulo Recursos Principais
-    // doc.rect(MargemX, 210+MargemY, 203, 76 ) // Retangulo Estrutura de Custo
-    // doc.rect(162+MargemX, MargemY, 81, 210 ) // Retangulo Proposta de Valor
-    // doc.rect(243+MargemX, MargemY, 81, 105 ) // Retangulo Relacionamento com Clientes
-    // doc.rect(243+MargemX, 105+MargemY, 81, 105 ) // Retangulo Canais
-    // doc.rect(324+MargemX, MargemY, 83, 210 ) // Retangulo Segmentos de Clientes *OBS 2mm a mais devido ao erro de calculo
-    // doc.rect(203+MargemX, 210+MargemY, 204, 76 ) // Retangulo Fontes de Receita  *OBS 1mm a mais devido ao erro de calculo
-
-    // //Parceiros Principais
-    // doc.text(
-    //   `Principais Parceiros`,
-    //   15,
-    //   18
-    // );
-
-    // doc.text(
-    //   `${parceiro.primeiraLinhaParceiro}`,
-    //   15,
-    //   28
-    // );
-
-    // doc.text(
-    //   `${parceiro.segundaLinhaParceiro}`,
-    //   15,
-    //   48
-    // );
-
-    // doc.text(
-    //   `${parceiro.terceiraLinhaParceiro}`,
-    //   15,
-    //   68
-    // );
-
-    // //Atividades-cahves
-    // doc.text(
-    //   `Atividades-chaves`,
-    //   96,
-    //   18
-    // );
-
-    // //Recursos Principais
-    // doc.text(
-    //   `Recursos Principais`,
-    //   96,
-    //   123
-    // );
-
-    // //Estrutura de Custo
-    // doc.text(
-    //   `Estrutura de custo`,
-    //   15,
-    //   228
-    // );
-
+      for (var i = 0; i < palavras.length; i++) {
+        var palavra = palavras[i];
+        
+        if (linhaAtual.length + palavra.length <= tamanhoMaximo) {
+          linhaAtual += palavra + ' ';
+        } else {
+          linhas.push(linhaAtual);
+          linhaAtual = palavra + ' ';
+        }
+      }
     
+      // Adiciona a última linha
+      linhas.push(linhaAtual);
+    
+      return linhas;
+    };
+    var linhas = dividirTextoEmLinhas(textSituacao, tamanhoMaximo);
+    // Printa o texto separado
+    var j = 0
+    for (var i = 0; i < linhas.length; i++) {
+      doc.text(100, 80 + (i * 10), linhas[i]);
+      j = i;
+    }
 
-    // //Proposta de Valor
-    // doc.text(
-    //   `Proposta de Valor`,
-    //   177,
-    //   18
-    // );
+    doc.text(`Área Administrativa: ${porcentagemAdm}%`, 100, (80 + (j * 10)) + 20);
+    doc.text(`Área de Recursos Humanos: ${porcentagemRh}%`, 100, (80 + (j * 10))+30);
+    doc.text(`Área Financeira: ${porcentagemFin}%`, 100, (80 + (j * 10))+40);
+    doc.text(`Marketing: ${porcentagemMkt}%`, 100, (80 + (j * 10))+50);
 
-    // //Relacionamento com Clientes
-    // doc.text(
-    //   `Relacionamento com Clientes`,
-    //   258,
-    //   18
-    // );
-
-    // //Canais
-    // doc.text(
-    //   `Canais`,
-    //   258,
-    //   123
-    // );
-
-    // //Segmentos de Clientes
-    // doc.text(
-    //   `Segmentos de Clientes`,
-    //   339,
-    //   18
-    // );
-
-    // //Fontes de Receita
-    // doc.text(
-    //   `Fontes de Receita`,
-    //   218,
-    //   228
-    // );
-
-
-
-    doc.save("Canvas.pdf");
+    doc.save("Canvas.pdf"); // Salva o PDF
   }
 
   return (

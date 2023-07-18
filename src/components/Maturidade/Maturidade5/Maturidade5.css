@@ -108,20 +108,15 @@
   color: var(--font_color);
 }
 
-.tabelaResult {
-  box-sizing: border-box;
-  position: absolute;
-  width: 57vw;
-  height: 50vh;
-  float: left;
-  left: 15%;
-  top: 26%;
-  border: 2px solid #ff5631;
-  border-radius: 20px;
-}
-.tabelaResult div canvas {
-  margin-top: 2%;
-  margin-left: 8%;
+.duvidaResult {
+    background-image: url("../../../images/request\ \(1\).png");
+    width: 0.85vw;
+    height: 1.8vh;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    left: 72%;
+    top: 4.5%;
 }
 
 .setaEsquerda {

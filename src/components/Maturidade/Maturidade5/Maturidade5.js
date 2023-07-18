@@ -9,29 +9,14 @@ import Descricao2 from "./Maturidade5Descricoes/descricao2.json";
 import Descricao3 from "./Maturidade5Descricoes/descricao3.json";
 import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
-import BarChart from "./Maturidade5Chart/BarChart";
-import { UserData } from "./Maturidade5Chart/DadosDasAreas.js";
-import React, { useState } from "react";
-import { Filler } from "chart.js";
+import React from "react";
 
-function Maturidade5({
-  porcentagemAdm,
-  porcentagemRh,
-  porcentagemFin,
-  porcentagemMkt,
-}) {
-  // eslint-disable-next-line
-  const [userData, setUserData] = useState({
-    labels: UserData.map((data) => data.area),
-    datasets: [
-      {
-        label: "Grau de Maturidade",
-        data: UserData.map((data) => data.porcentagem),
-        backgroundColor: ["#FF5631"],
-        borderRadius: 10,
-      },
-    ],
-  });
+function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagemMkt}) {
+
+  var porcent1 = +porcentagemAdm;
+  var porcent2 = +porcentagemRh;
+  var porcent3 = +porcentagemFin;
+  var porcent4 = +porcentagemMkt;
 
   function fecharFormMaturidade5(e) {
     e.preventDefault();
@@ -63,17 +48,17 @@ function Maturidade5({
     modal2.style.display = "none";
     window.scrollTo(0, 0);
   }
+  
+  function nivelMaturidade(){
 
-  /*function nivelMaturidade(){
-
-    var adm = porcentagemAdm/100;
-    var rh = porcentagemRh/100;
-    var fin = porcentagemFin/100;
-    var mkt = porcentagemMkt/100;
+    var adm = porcent1;
+    var rh = porcent2;
+    var fin = porcent3;
+    var mkt = porcent4;
 
     var soma = adm+rh+fin+mkt;
     var media = soma/4;
-    var nivel = 1;
+    var nivel = null;
 
     if (media <= 20) {
       nivel = 1;
@@ -88,9 +73,9 @@ function Maturidade5({
     }
 
     return nivel;
-  }*/
+  }
 
-  var nivel = 1;
+  var nivel = nivelMaturidade();
   var imgSituacao = null;
   var textSituacao = null;
 
@@ -118,21 +103,14 @@ function Maturidade5({
           className="close_area5"
           onClick={(e) => fecharFormMaturidade5(e)}
         ></button>
-        <div className="dot2_area5"></div>
-        <div className="dot3_area5"></div>
-        <h2 className="titulo">{porcentagemAdm}</h2>
-        <h2 className="titulo">{porcentagemRh}</h2>
-        <h2 className="titulo">{porcentagemFin}</h2>
-        <h2 className="titulo">{porcentagemMkt}</h2>
+        <div className="dot2_area4"></div>
+        <div className="dot3_area4"></div>
         <h2 className="titulo">Maturidade Nível</h2>
+        <div onClick={() => {window.open("tutorial#tut_CalcMaturidade", "_blank")
+        }}className="duvidaResult"></div>
         <h2 className="tituloNivel">{nivel}</h2>
         <img className="situacao" alt="situacao" src={imgSituacao} />
         <div className="descMaturidade">{textSituacao}</div>
-        <table className="tabelaResult">
-          <div style={{ width: Filler }}>
-            <BarChart chartData={userData} />
-          </div>
-        </table>
         <div
           onClick={(e) => irParaFormMaturidade4(e)}
           className="setaEsquerda"

@@ -1,5 +1,5 @@
 .tut_body {
-  height: 670vh;
+  height: 730vh;
   /* background-image: linear-gradient(#e95420, #77216f); */
   background-color: #fcdbc1;
   position: absolute;
@@ -371,6 +371,28 @@
   color: #252525;
   font-size: 18px;
   text-align: justify;
+}
+
+.tut_CalcMaturidade {
+  z-index: 1;
+  top: 21%;
+  left: 10%;
+  width: 80%;
+  position: relative;
+}
+.tut_CalcMaturidade h2{
+  color: #ff9000;
+  margin-bottom: 1%;
+}
+.tut_CalcMaturidade p{
+  width: 90%;
+  margin-left: 4%;
+  color: #252525;
+  font-size: 18px;
+  text-align: justify;
+}
+.tut_CalcMaturidadeCalc {
+  text-indent: 50px;
 }
 
 @media screen and (max-width: 568px) {
