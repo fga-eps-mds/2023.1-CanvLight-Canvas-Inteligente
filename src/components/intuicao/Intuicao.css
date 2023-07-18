@@ -492,11 +492,11 @@ textarea {
   }
   .duvidaDNA_int {
     margin-top: 11.5vh;
-    left: 22vw;
+    left: -15vw;
   }
 
   .parte2 {
-    margin-top: -12vh;
+    margin-top: 3vh;
   }
   .parte2 textarea {
     margin-top: -1.5vh;
@@ -508,38 +508,38 @@ textarea {
     margin-left: 18vw;
   }
   .tabela_4ps {
-    margin-left: -1vw;
-    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-top: -78vh;
   }
   .tabela_4ps h2 {
     float: left;
-    margin-left: -25vw;
+    margin-left: -3vw;
   }
   .four_ps {
     margin-top: 1vh;
-    margin-left: 2vw;
+    margin-left: 5vw;
     width: 67vw;
   }
   .duvida_fourps_int {
-    margin-top: -29vh;
-    margin-left: 12vw;
+    margin-top: -77vh;
+    margin-left: 39vw;
   }
   .tabela3 table {
     float: left;
     width: 67vw;
-    margin-top: 1vh;
-    margin-left: -26vw;
+    margin-top: -35vh;
+    margin-left: 0vw;
   }
   .tabela3 h2 {
-    margin-top: 35vh;
-    margin-left: -24vw;
+    margin-top: 33vh;
+    margin-left: 0vw;
   }
   .duvida_sintese_int {
-    margin-top: -24.5vh;
-    left: -35vw;
+    margin-top: -42vh;
+    left: -38vw;
   }
   .feito_int {
-    margin-top: 2vh;
+    margin-top: -7vh;
     margin-left: 0vw;
     width: 15vw;
     height: 7vh;

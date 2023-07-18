@@ -15,7 +15,7 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 130vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -56,7 +56,6 @@
   border: none;
   width: auto;
 }
-
 
 .formRh table input {
   background-color: var(--back_color);
@@ -215,23 +214,21 @@
     width: 17vw;
     height: 17vw;
   }
-  left: 67.5%;
-  top: 5%;
-}
 
-.setaEsquerdaMaturidade_2 {
-  margin-top: 1%;
-  float: left;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  transform: rotate(180deg);
-}
+  .setaEsquerdaMaturidade_2 {
+    margin-top: 1%;
+    float: left;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
 
-.setaDireitaMaturidade_2 {
-  margin-top: 1%;
-  float: right;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
+  .setaDireitaMaturidade_2 {
+    margin-top: 1%;
+    float: right;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
 }
