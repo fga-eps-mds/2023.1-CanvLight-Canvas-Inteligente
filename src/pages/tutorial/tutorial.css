@@ -380,11 +380,11 @@
   width: 80%;
   position: relative;
 }
-.tut_CalcMaturidade h2{
+.tut_CalcMaturidade h2 {
   color: #ff9000;
   margin-bottom: 1%;
 }
-.tut_CalcMaturidade p{
+.tut_CalcMaturidade p {
   width: 90%;
   margin-left: 4%;
   color: #252525;
@@ -392,7 +392,7 @@
   text-align: justify;
 }
 .tut_CalcMaturidadeCalc {
-  text-indent: 50px;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 568px) {
@@ -427,7 +427,8 @@
   .tut_sintese,
   .tut_perfis_cliente,
   .tut_proposta_valor,
-  .tut_maturidade {
+  .tut_maturidade,
+  .tut_CalcMaturidade {
     margin-top: 20%;
   }
 }
