@@ -77,3 +77,12 @@ Ao longo do caminho, encontramos obstáculos que nos desafiaram. No entanto, a e
 Além disso, durante o processo, adquiri conhecimentos valiosos sobre o uso do Git e o desenvolvimento com React. Sinto-me confiante de que me tornei um profissional melhor por meio dessas aprendizagens.
 
 No final, apesar das dificuldades enfrentadas, estamos extremamente orgulhosos do trabalho que realizamos.
+
+### Raquel Andrade ([@raquel-andrade](https://github.com/raquel-andrade))
+
+No início a minha experiência na displina foi de certa forma desafiadora, levando em consideração o fato de que os membros não se conheciam, a temática escolhida era algo novo para todos os integrantes, e eu ainda não havia trabalhado em um grande projeto com uma grande equipe. Até a primeira release não houve a devida organização e por isso a entrega não foi como esperávamos, no entanto, no decorrer do semestre o grupo foi se adaptando à forma de trabalho e às limitações individuais de cada um e assim fizemos um coletivo verdadeiramente eficiente, aprendendo e compreendendo como nos organanizar para, através de metodologias ágeis, atendermos à demanda que nos foi proposta. 
+
+Para mim as tecnologias utilizadas foram em grande parte algo novo, onde eu tive dificuldades para aprender e immplementá-las. Além disso, foi difícil pôr em prática as metologias ágeis devido à demanda das outras disciplinas. 
+
+Pude aprender bastante acerca do desenvolvimento de um software desde o início, trabalho em equipe, atuação em Front-end e React.js, além de compreender o que é um Canvas de negócios. No geral a minha experência foi bastante positiva, consegui aplicar as metodologias, aprendi como lidar com uma equipe de trabalho, e principalmente a importância da comunicação no desenvolvimento do projeto, e acredito que dei meu melhor apesar das dificuldades e obstáculos durante o semestre.
+
