@@ -86,3 +86,16 @@ Para mim as tecnologias utilizadas foram em grande parte algo novo, onde eu tive
 
 Pude aprender bastante acerca do desenvolvimento de um software desde o início, trabalho em equipe, atuação em Front-end e React.js, além de compreender o que é um Canvas de negócios. No geral a minha experência foi bastante positiva, consegui aplicar as metodologias, aprendi como lidar com uma equipe de trabalho, e principalmente a importância da comunicação no desenvolvimento do projeto, e acredito que dei meu melhor apesar das dificuldades e obstáculos durante o semestre.
 
+### Bruno Tarquinio ([@brunotarquinio](https://github.com/brunotarquinio)) 
+
+Ao refletir sobre o projeto, posso afirmar que enfrentamos vários obstáculos ao longo do caminho. No entanto, com determinação e trabalho em equipe, conseguimos superá-los e alcançar nossos objetivos.
+
+Durante o desenvolvimento do projeto, pude aprender e crescer significativamente. Adquiri conhecimentos valiosos em Métodos Ágeis de Desenvolvimento de Software, React.js, front-end, JavaScript, comandos no Git, e também aprimorei a minha capacidade de resolver problemas. Além disso, desenvolvi habilidades de comunicação, trabalho em equipe e adaptação às mudanças, fundamentais para o sucesso no ambiente profissional.
+
+Destaco especialmente o sucesso do projeto e do grupo como um todo. Apesar dos desafios encontrados, conseguimos entregar um software funcional e estilizado, atendendo aos requisitos e expectativas dos clientes. Através da nossa colaboração efetiva, fomos capazes de superar os obstáculos que surgiram, mantendo o foco no objetivo final.
+
+O projeto não apenas alcançou sucesso em termos de entrega do software, mas também consolidou um grupo coeso e colaborativo. Como resultado, conseguimos entregar um produto final de alta qualidade.
+
+Portanto, esse projeto foi uma experiência desafiadora e enriquecedora. Através da superação de obstáculos, aprendi muito e adquiri habilidades valiosas. Destaco o sucesso do projeto e do grupo, na entrega de um software funcional. Estou orgulhoso da equipe e do projeto que conseguimos entregar.
+
+
