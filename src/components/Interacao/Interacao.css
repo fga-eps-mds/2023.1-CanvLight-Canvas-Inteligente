@@ -217,23 +217,23 @@
 .right-arrow,
 .right-arrow2,
 .left-arrow,
-
 .feito_itr {
   margin-top: 2%;
   float: right;
   width: 6%;
   height: 6%;
   cursor: pointer;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
-.left-arrow, .left-arrow2 {
+.left-arrow,
+.left-arrow2 {
   margin-top: 2%;
   width: 6%;
   height: 6%;
   float: left;
   transform: rotate(180deg);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* config tela 2 */
@@ -257,7 +257,7 @@
   border: none;
   top: 1.6%;
   left: 1.6%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*botao de inserir tarefa*/
@@ -397,7 +397,7 @@
   border: none;
   top: 1.6%;
   left: 1.6%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .direita {
@@ -453,7 +453,7 @@
   cursor: pointer;
   transform: rotate(180deg);
   margin-top: 8%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 /*configurações do emoticons*/
 
@@ -599,6 +599,7 @@
 
 .itemtodolist {
   list-style-type: none;
+  color: var(--font_color);
 }
 /*AJUSTES DOS BOTOES DE DUVIDAS*/
 
@@ -609,9 +610,8 @@
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
-
 @media screen and (max-width: 568px) {
   body {
     height: 100vh;
@@ -663,7 +663,8 @@
   .tabela_analise_preço table input {
     width: 11vw;
   }
-  .right-arrow, .right-arrow_2 {
+  .right-arrow,
+  .right-arrow_2 {
     width: 20%;
     height: 20%;
     margin-top: 25%;
@@ -671,9 +672,9 @@
   }
   /*INTERAÇÃO 2*/
   /*checklist*/
-  .parte3_interacao p{
+  .parte3_interacao p {
     margin-top: 15%;
-    width: 32vw;
+    width: 36vw;
   }
   .parte4_interacao {
     width: 60%;
@@ -686,33 +687,39 @@
     margin-top: -220%;
     margin-left: 0%;
   }
-  .tabela_formacao{
+  .tabela_formacao {
     margin-top: -210%;
-    font-size: 11.5px;
-    margin-left: -7%;
+    font-size: 10px;
+    margin-left: -4%;
+  }
+  .p_formação_de_preco {
+    width: 68vw;
   }
 
   .button_tarefa {
     margin-top: 2%;
   }
- 
-  .parte4_interacao{
+
+  .parte4_interacao {
     margin-left: 0%;
     margin-top: -135%;
+  }
+  .parte4_interacao p {
+    width: 30vw;
   }
 
   .tabela_MVP {
     margin-top: -125%;
     margin-left: 10%;
   }
-  
-  .left-arrow2{
+
+  .left-arrow2 {
     width: 20%;
     height: 20%;
     margin-top: -35%;
   }
 
-  .right-arrow2{
+  .right-arrow2 {
     width: 20%;
     height: 20%;
     margin-top: -35%;
@@ -785,13 +792,13 @@
   }
 
   .seta_pag_3 {
-    margin-top: 230%;
+    margin-top: 233%;
   }
 
   .feito_itr {
-    margin-top: -212%;
-    height: 5vh;
-    width: 11vw;
+    margin-top: -210%;
+    height: 6vh;
+    width: 14vw;
   }
   .centerItr3 {
     height: 62%;
