@@ -1080,124 +1080,18 @@ function GeradorPDF({
     };
     var linhas = dividirTextoEmLinhas(textSituacao, tamanhoMaximo);
     // Printa o texto separado
+    var j = 0
     for (var i = 0; i < linhas.length; i++) {
       doc.text(100, 80 + (i * 10), linhas[i]);
+      j = i;
     }
 
-    //doc.text(`${textSituacao}`, 20, 80);
-    doc.text(`${porcentagemAdm}`, 10, 20);
-    doc.text(`${porcentagemRh}`, 10, 30);
-    doc.text(`${porcentagemFin}`, 10, 40);
-    doc.text(`${porcentagemMkt}`, 10, 50);
-  
-    // doc.addPage(); // Página Canvas
+    doc.text(`Área Administrativa: ${porcentagemAdm}%`, 100, (80 + (j * 10)) + 20);
+    doc.text(`Área de Recursos Humanos: ${porcentagemRh}%`, 100, (80 + (j * 10))+30);
+    doc.text(`Área Financeira: ${porcentagemFin}%`, 100, (80 + (j * 10))+40);
+    doc.text(`Marketing: ${porcentagemMkt}%`, 100, (80 + (j * 10))+50);
 
-    // var MargemX = 12; // Variavel para a margem horizontal
-    // var MargemY = 10; // Variavel para a margem vertical
-    
-    // doc.addImage(logo, 'PNG', 1, 1, 10, 10); // Adiciona a logo no canto do PDF
-
-    // doc.setFillColor(0, 0, 0, 0.22); // Seleciona a cor do Fundo
-    // doc.rect(MargemX, MargemY, 407, 286, 'F'); // Adiciona o Retângulo maior
-
-    // doc.setFontSize(16) // Tamanho da Fonte
-
-    // doc.rect(MargemX, MargemY, 81, 210 ) // Retangulo Parcerias principais
-    // doc.rect(81+MargemX, MargemY, 81, 105 ) // Retangulo Atividades-chave
-    // doc.rect(81+MargemX, 105+MargemY, 81, 105 ) // Retangulo Recursos Principais
-    // doc.rect(MargemX, 210+MargemY, 203, 76 ) // Retangulo Estrutura de Custo
-    // doc.rect(162+MargemX, MargemY, 81, 210 ) // Retangulo Proposta de Valor
-    // doc.rect(243+MargemX, MargemY, 81, 105 ) // Retangulo Relacionamento com Clientes
-    // doc.rect(243+MargemX, 105+MargemY, 81, 105 ) // Retangulo Canais
-    // doc.rect(324+MargemX, MargemY, 83, 210 ) // Retangulo Segmentos de Clientes *OBS 2mm a mais devido ao erro de calculo
-    // doc.rect(203+MargemX, 210+MargemY, 204, 76 ) // Retangulo Fontes de Receita  *OBS 1mm a mais devido ao erro de calculo
-
-    // //Parceiros Principais
-    // doc.text(
-    //   `Principais Parceiros`,
-    //   15,
-    //   18
-    // );
-
-    // doc.text(
-    //   `${parceiro.primeiraLinhaParceiro}`,
-    //   15,
-    //   28
-    // );
-
-    // doc.text(
-    //   `${parceiro.segundaLinhaParceiro}`,
-    //   15,
-    //   48
-    // );
-
-    // doc.text(
-    //   `${parceiro.terceiraLinhaParceiro}`,
-    //   15,
-    //   68
-    // );
-
-    // //Atividades-cahves
-    // doc.text(
-    //   `Atividades-chaves`,
-    //   96,
-    //   18
-    // );
-
-    // //Recursos Principais
-    // doc.text(
-    //   `Recursos Principais`,
-    //   96,
-    //   123
-    // );
-
-    // //Estrutura de Custo
-    // doc.text(
-    //   `Estrutura de custo`,
-    //   15,
-    //   228
-    // );
-
-    
-
-    // //Proposta de Valor
-    // doc.text(
-    //   `Proposta de Valor`,
-    //   177,
-    //   18
-    // );
-
-    // //Relacionamento com Clientes
-    // doc.text(
-    //   `Relacionamento com Clientes`,
-    //   258,
-    //   18
-    // );
-
-    // //Canais
-    // doc.text(
-    //   `Canais`,
-    //   258,
-    //   123
-    // );
-
-    // //Segmentos de Clientes
-    // doc.text(
-    //   `Segmentos de Clientes`,
-    //   339,
-    //   18
-    // );
-
-    // //Fontes de Receita
-    // doc.text(
-    //   `Fontes de Receita`,
-    //   218,
-    //   228
-    // );
-
-
-
-    doc.save("Canvas.pdf");
+    doc.save("Canvas.pdf"); // Salva o PDF
   }
 
   return (
