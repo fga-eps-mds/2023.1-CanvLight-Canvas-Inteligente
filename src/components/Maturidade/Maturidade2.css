@@ -15,7 +15,7 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 140vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -36,7 +36,7 @@
   width: 100%;
   border-spacing: 0;
   color: var(--font_color);
-  margin-left: 0%;
+  margin-left: -1%;
   margin-top: 1vw;
 }
 
@@ -55,6 +55,37 @@
   background-color: var(--back_color);
   border: none;
   width: auto;
+}
+
+
+.formRh table input {
+  background-color: var(--back_color);
+  border: none;
+  width: auto;
+}
+
+.opcao-select {
+  width: 100%;
+  padding: 25px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid var(--font_color);
+}
+
+.opcao-select option {
+  padding: 5px;
+}
+
+.import-select {
+  width: 100%;
+  padding: 25px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid var(--font_color);
+}
+
+.import-select option {
+  padding: 5px;
 }
 
 .close_area2 {
@@ -184,4 +215,23 @@
     width: 17vw;
     height: 17vw;
   }
+  left: 67.5%;
+  top: 5%;
+}
+
+.setaEsquerdaMaturidade_2 {
+  margin-top: 1%;
+  float: left;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.setaDireitaMaturidade_2 {
+  margin-top: 1%;
+  float: right;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 }
