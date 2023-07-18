@@ -67,3 +67,13 @@ Apenas após a Release 1 o grupo começou a trabalhar melhor em conjunto e a ser
 O resultado final do projeto é satisfatório tendo em mente os obstáculos.
 
 Aprendi bastante sobre como é trabalhar em grupo, trabalhar em projetos grandes, codar em JavaScript e React, conheço melhor canvas de negócio e como calcular o grau de maturidade de uma empresa e sei usar melhor os comandos de Git e as práticas básicas no GitHub.
+
+### Pedro Cabeceira ([@pkbceira03](https://github.com/pkbceira03))
+
+Estou extremamente satisfeito com o trabalho que realizamos. Durante o processo, enfrentamos algumas dificuldades, especialmente em relação ao tema do projeto, no qual nenhum membro do grupo tinha familiaridade. No entanto, essas dificuldades não foram capazes de nos deter.
+
+Ao longo do caminho, encontramos obstáculos que nos desafiaram. No entanto, a equipe se esforçou ao máximo para superá-los. É impressionante o nosso comprometimento e o progresso que alcançamos até agora. Sinto uma grande felicidade ao olhar para trás e ver tudo o que nossa equipe conseguiu realizar.
+
+Além disso, durante o processo, adquiri conhecimentos valiosos sobre o uso do Git e o desenvolvimento com React. Sinto-me confiante de que me tornei um profissional melhor por meio dessas aprendizagens.
+
+No final, apesar das dificuldades enfrentadas, estamos extremamente orgulhosos do trabalho que realizamos.
