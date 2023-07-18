@@ -84,11 +84,13 @@ function Maturidade3({state, onPorcentagemFinChange}) {
       multiplicacao += resposta6*importancia6;
       multiplicacao += resposta7*importancia7;
 
-      var resultado = multiplicacao/42;
+      var resultado = multiplicacao/84;
       resultado = resultado*100;
 
-      onPorcentagemFinChange(resultado.toFixed(0));
+      return resultado.toFixed(0);
   }
+
+  onPorcentagemFinChange(calculaFin);
 
   function fecharFormMaturidade3(e) {
     e.preventDefault();

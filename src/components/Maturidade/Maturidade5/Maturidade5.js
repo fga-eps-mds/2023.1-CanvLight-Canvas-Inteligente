@@ -10,11 +10,38 @@ import Descricao3 from "./Maturidade5Descricoes/descricao3.json";
 import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
 import BarChart from "./Maturidade5Chart/BarChart";
-import {UserData} from "./Maturidade5Chart/DadosDasAreas.js";
 import React, {useState} from "react";
 import { Filler } from "chart.js";
 
 function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagemMkt}) {
+
+  var porcent1 = +porcentagemAdm;
+  var porcent2 = +porcentagemRh;
+  var porcent3 = +porcentagemFin;
+  var porcent4 = +porcentagemMkt;
+
+  const UserData = [
+    {
+      id: 1,
+      area: "Área Administrativa",
+      porcentagem: porcent1,
+    },
+    {
+      id: 2,
+      area: "Área de Recursos Humanos",
+      porcentagem: porcent2,
+    },
+    {
+      id: 3,
+      area: "Área Financeira",
+      porcentagem: porcent3,
+    },
+    {
+      id: 4,
+      area: "Área de Marketing",
+      porcentagem: porcent4,
+    }
+  ]
 
   // eslint-disable-next-line
   const [userData, setUserData] = useState({
@@ -51,16 +78,16 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
     modal2.style.display = "none";
   }
   
-  /*function nivelMaturidade(){
+  function nivelMaturidade(){
 
-    var adm = porcentagemAdm/100;
-    var rh = porcentagemRh/100;
-    var fin = porcentagemFin/100;
-    var mkt = porcentagemMkt/100;
+    var adm = porcent1;
+    var rh = porcent2;
+    var fin = porcent3;
+    var mkt = porcent4;
 
     var soma = adm+rh+fin+mkt;
     var media = soma/4;
-    var nivel = 1;
+    var nivel = null;
 
     if (media <= 20) {
       nivel = 1;
@@ -75,9 +102,9 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
     }
 
     return nivel;
-  }*/
+  }
 
-  var nivel = 1;
+  var nivel = nivelMaturidade();
   var imgSituacao = null;
   var textSituacao = null;
   

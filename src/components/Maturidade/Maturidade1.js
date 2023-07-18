@@ -98,11 +98,13 @@ function Maturidade1({state, onPorcentagemAdmChange}){
         multiplicacao += resposta9*importancia9;
         multiplicacao += resposta10*importancia10;
 
-        var resultado = multiplicacao/60;
+        var resultado = multiplicacao/120;
         resultado = resultado*100;
 
-        onPorcentagemAdmChange(resultado.toFixed(0));
+        return resultado.toFixed(0);
     }
+
+    onPorcentagemAdmChange(calculaAdm());
 
     function fecharFormMaturidade1(e) {
         e.preventDefault();
