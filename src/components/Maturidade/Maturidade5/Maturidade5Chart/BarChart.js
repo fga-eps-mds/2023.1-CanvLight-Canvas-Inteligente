@@ -11,7 +11,6 @@ function BarChart({chartData}){
         scales: {
             x: {
               ticks: {
-                color: 'var(--font_color)',
                 font: {
                   size: 20,
                 },
@@ -22,7 +21,6 @@ function BarChart({chartData}){
             },
             y: {
                 ticks: {
-                  color: 'var(--font_color)',
                   font: {
                     size: 20,
                   },

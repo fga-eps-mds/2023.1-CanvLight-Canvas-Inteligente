@@ -20,7 +20,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
   var porcent3 = +porcentagemFin;
   var porcent4 = +porcentagemMkt;
 
-  const UserData = [
+  var UserData = [
     {
       id: 1,
       area: "Área Administrativa",
@@ -45,11 +45,11 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
 
   // eslint-disable-next-line
   const [userData, setUserData] = useState({
-    labels: UserData.map((data) => data.area),
+    labels: [],
     datasets: [{
       label: "Grau de Maturidade",
       data: UserData.map((data) => data.porcentagem),
-      backgroundColor: ["#FF5631"],
+      backgroundColor: ["var(--font_color)"],
       borderRadius: 10,
     }]
   });
