@@ -115,6 +115,33 @@ function Maturidade4({ state, onPorcentagemMktChange }) {
     window.scrollTo(0, 0);
   }
 
+  function irParaFormMaturidade3(e) {
+    e.preventDefault();
+
+    let modal = document.querySelector(".areaFin");
+    modal.style.display = "block";
+
+    let modal2 = document.querySelector(".areaMkt");
+    modal2.style.display = "none";
+    window.scrollTo(0, 0);
+  }
+
+  function irParaFormMaturidade5(e) {
+    e.preventDefault();
+
+    let modal = document.querySelector(".areaMkt");
+    modal.style.display = "none";
+
+    let modal2 = document.querySelector(".telaResult");
+    modal2.style.display = "block";
+    window.scrollTo(0, 0);
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormMaturidade4(e);
+    }
+  });
+
   return(
     <div className="areaMkt">
         <div className="formMkt">
