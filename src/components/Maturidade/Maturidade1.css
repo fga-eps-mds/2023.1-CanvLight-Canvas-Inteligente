@@ -117,10 +117,6 @@
   border: none;
 }
 
-.formAdm table input {
-  background-color: var(--back_color);
-  border: none;
-}
 .pergunta {
   font-size: 18px;
   min-width: 25vw;
