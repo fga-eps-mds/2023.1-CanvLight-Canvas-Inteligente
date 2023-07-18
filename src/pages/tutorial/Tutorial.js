@@ -553,7 +553,7 @@ function Tutorial() {
           Passo 4: Repita o processo para todas as áreas.
           <br />
           Ao final do processo, haverá uma descrição do grau de maturidade de seu negócio
-          e um gráfico representando a porcentagem de maturidade de cada área.
+          e uma representação da porcentagem de maturidade de cada área.
         </p>
       </div>
       <div id="tut_CalcMaturidade" className="tut_CalcMaturidade">

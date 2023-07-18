@@ -103,18 +103,6 @@
     color: var(--font_color);
 }
 
-.tabelaResult {
-    box-sizing: border-box;
-    position: absolute;
-    width: 57vw;
-    height: 50vh;
-    float: left;
-    left: 15%;
-    top: 32%;
-    border: 2px solid #FF5631;
-    border-radius: 20px;
-}
-
 .duvidaResult {
     background-image: url("../../../images/request\ \(1\).png");
     width: 0.85vw;

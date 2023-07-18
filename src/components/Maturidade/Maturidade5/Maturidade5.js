@@ -9,9 +9,7 @@ import Descricao2 from "./Maturidade5Descricoes/descricao2.json";
 import Descricao3 from "./Maturidade5Descricoes/descricao3.json";
 import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
-import BarChart from "./Maturidade5Chart/BarChart";
-import React, {useState} from "react";
-import { Filler } from "chart.js";
+import React from "react";
 
 function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagemMkt}) {
 
@@ -19,40 +17,6 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
   var porcent2 = +porcentagemRh;
   var porcent3 = +porcentagemFin;
   var porcent4 = +porcentagemMkt;
-
-  var UserData = [
-    {
-      id: 1,
-      area: "Área Administrativa",
-      porcentagem: porcent1,
-    },
-    {
-      id: 2,
-      area: "Área de Recursos Humanos",
-      porcentagem: porcent2,
-    },
-    {
-      id: 3,
-      area: "Área Financeira",
-      porcentagem: porcent3,
-    },
-    {
-      id: 4,
-      area: "Área de Marketing",
-      porcentagem: porcent4,
-    }
-  ]
-
-  // eslint-disable-next-line
-  const [userData, setUserData] = useState({
-    labels: [],
-    datasets: [{
-      label: "Grau de Maturidade",
-      data: UserData.map((data) => data.porcentagem),
-      backgroundColor: ["var(--font_color)"],
-      borderRadius: 10,
-    }]
-  });
 
   function fecharFormMaturidade5(e) {
     e.preventDefault();
@@ -140,12 +104,6 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
         <h2 className="tituloNivel">{nivel}</h2>
         <img className="situacao" alt="situacao" src={imgSituacao} />
         <div className="descMaturidade">{textSituacao}</div>
-        <table className="tabelaResult">
-          <div style={{width: Filler}}>
-            <BarChart chartData={userData}/>
-          </div>
-
-        </table>
         <div
           onClick={(e) => irParaFormMaturidade4(e)}
           className="setaEsquerda"
