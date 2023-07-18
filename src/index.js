@@ -11,11 +11,11 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "canvas",
+    path: "/2023.1-CanvLight-Canvas-Inteligente/canvas",
     element: <Canvas />,
   },
   {
-    path: "tutorial",
+    path: "/2023.1-CanvLight-Canvas-Inteligente/tutorial",
     element: <Tutorial />,
   },
 ]);

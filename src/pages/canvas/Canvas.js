@@ -88,11 +88,10 @@ function Canvas() {
   const [inteQuatroP, setInteQuatroP] = useState({});
 
   //maturidade
-  const [porcentagemAdm, setPorcentagemAdm] = useState('');
-  const [porcentagemRh, setPorcentagemRh] = useState('');
-  const [porcentagemFin, setPorcentagemFin] = useState('');
-  const [porcentagemMkt, setPorcentagemMkt] = useState('');
-  
+  const [porcentagemAdm, setPorcentagemAdm] = useState("");
+  const [porcentagemRh, setPorcentagemRh] = useState("");
+  const [porcentagemFin, setPorcentagemFin] = useState("");
+  const [porcentagemMkt, setPorcentagemMkt] = useState("");
 
   //intuição
   const handleIntuTextosChange = (novosDadosIntuTextos) => {
@@ -338,19 +337,6 @@ function Canvas() {
   const handlePorcentagemMktChange = (novosDadosPorcentagemMkt) => {
     setPorcentagemMkt(novosDadosPorcentagemMkt);
   };
-  
-
-  /*CHamada preview*/
-
-  function abrirPreview(e){
-    e.preventDefault();
-
-    let modal = document.querySelector('.modalAbrirPreview');
-    modal.style.display = "block";
-
-    let modal2 = document.querySelector(".confirma");
-    modal2.style.display = "none";
-  }
 
   /*Chamadas para o form de Intuição*/
   function abrirFormIntuicao(e) {
@@ -411,18 +397,16 @@ function Canvas() {
   }
 
   //Funcao para alterar para dark mode
-  document.addEventListener("DOMContentLoaded", function () {
-    const $checkbox = document.querySelector("#switch");
-    const $html = document.querySelector("html");
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-    $checkbox.addEventListener("change", function () {
-      if ($checkbox.checked) {
-        $html.classList.add("dark-mode");
-      } else {
-        $html.classList.remove("dark-mode");
-      }
-    });
-  });
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    if (!isDarkMode) {
+      document.documentElement.classList.add("dark-mode");
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+    }
+  };
 
   return (
     <div className="body">
@@ -437,13 +421,18 @@ function Canvas() {
         </Link>
         <nav className="desktop">
           <ul>
-            <Link to="/tutorial">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/tutorial">
               <li className="btn_comousar">Como usar?</li>
             </Link>
           </ul>
           <div className="dark_select">
             <label for="switch">
-              <input type="checkbox" id="switch" />
+              <input
+                type="checkbox"
+                id="switch"
+                checked={isDarkMode}
+                onChange={toggleDarkMode}
+              />
             </label>
           </div>
         </nav>
@@ -466,8 +455,6 @@ function Canvas() {
             Maturidade
           </button>
         </div>
-
-        <button className="preview" onClick={(e) => abrirPreview(e)}>preview</button>
       </div>
 
       <Intuicao
@@ -546,27 +533,19 @@ function Canvas() {
         onInteQuatroPChange={handleInteQuatroPChange}
       />
 
-      <Maturidade1
-        onPorcentagemAdmChange={handlePorcentagemAdmChange}
-      />
-      
-      <Maturidade2
-        onPorcentagemRhChange={handlePorcentagemRhChange}
-      />
+      <Maturidade1 onPorcentagemAdmChange={handlePorcentagemAdmChange} />
 
-      <Maturidade3
-        onPorcentagemFinChange={handlePorcentagemFinChange}
-      />
+      <Maturidade2 onPorcentagemRhChange={handlePorcentagemRhChange} />
 
-      <Maturidade4
-        onPorcentagemMktChange={handlePorcentagemMktChange}
-      />
+      <Maturidade3 onPorcentagemFinChange={handlePorcentagemFinChange} />
+
+      <Maturidade4 onPorcentagemMktChange={handlePorcentagemMktChange} />
 
       <Maturidade5
-        porcentagemAdm = {porcentagemAdm}
-        porcentagemRh = {porcentagemRh}
-        porcentagemFin = {porcentagemFin}
-        porcentagemMkt = {porcentagemMkt}
+        porcentagemAdm={porcentagemAdm}
+        porcentagemRh={porcentagemRh}
+        porcentagemFin={porcentagemFin}
+        porcentagemMkt={porcentagemMkt}
       />
 
       <GeradorPDF
@@ -637,10 +616,10 @@ function Canvas() {
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
         //Maturidade
-        porcentagemAdm = {porcentagemAdm}
-        porcentagemRh = {porcentagemRh}
-        porcentagemFin = {porcentagemFin}
-        porcentagemMkt = {porcentagemMkt}
+        porcentagemAdm={porcentagemAdm}
+        porcentagemRh={porcentagemRh}
+        porcentagemFin={porcentagemFin}
+        porcentagemMkt={porcentagemMkt}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />

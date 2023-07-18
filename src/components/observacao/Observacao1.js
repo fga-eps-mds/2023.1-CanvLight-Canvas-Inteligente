@@ -27,6 +27,7 @@ function Observacao1({
 
     modal.style.display = "none";
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
 
   function fecharFormIntuicao(e) {
@@ -43,8 +44,13 @@ function Observacao1({
     medel.style.display = "none";
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
-
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormIntuicao(e);
+    }
+  });
   const [primeiraLinhaEmpresa, setPrimeiraLinhaEmpresa] = useState();
   const [segundaLinhaEmpresa, setSegundaLinhaEmpresa] = useState();
   const [terceiraLinhaEmpresa, setTerceiraLinhaEmpresa] = useState();
@@ -926,6 +932,7 @@ function Observacao1({
               title="Perfil e persona do Cliente 2"
             ></div>
             <input
+              placeholder="Perfil e persona"
               className="primeiro-input"
               type="text"
               name="primeiraLinhaPerfil2"
@@ -939,6 +946,7 @@ function Observacao1({
               title="Como a proposta potencializa os ganhos do Cliente 2?"
             ></div>
             <input
+              placeholder="Ganhos"
               className="segundo-input"
               type="text"
               name="segundaLinhaPerfil2"
@@ -952,6 +960,7 @@ function Observacao1({
               title="Como a proposta de valor minimiza as dores do Cliente 2?"
             ></div>
             <input
+              placeholder="Dores minimizadas"
               className="terceiro-input"
               type="text"
               name="terceiraLinhaPerfil2"
@@ -968,6 +977,7 @@ function Observacao1({
               title="Perfil e persona do Cliente 1"
             ></div>
             <input
+              placeholder="Perfil e persona"
               type="text"
               name="primeiraLinhaPerfil1"
               value={primeiraLinhaPerfil1}
@@ -980,6 +990,7 @@ function Observacao1({
               title="Como a proposta potencializa os ganhos do Cliente 1?"
             ></div>
             <input
+              placeholder="Ganhos"
               type="text"
               name="segundaLinhaPerfil1"
               value={segundaLinhaPerfil1}
@@ -992,6 +1003,7 @@ function Observacao1({
               title="Como a proposta de valor minimiza as dores do Cliente 1?"
             ></div>
             <input
+              placeholder="Dores minimizadas"
               type="text"
               name="terceiraLinhaPerfil1"
               value={terceiraLinhaPerfil1}

@@ -34,19 +34,19 @@
   color: var(--font_color);
 }
 
-.benchmarking .primeiro-canto {
+.primeiro-canto {
   border-radius: 15px 0 0 0;
 }
 
-.benchmarking .segundo-canto {
+.segundo-canto {
   border-radius: 0 15px 0 0;
 }
 
-.benchmarking .terceiro-canto {
+.terceiro-canto {
   border-radius: 0 0 15px 0;
 }
 
-.benchmarking .quarto-canto {
+.quarto-canto {
   border-radius: 0 0 0 15px;
 }
 
@@ -220,10 +220,12 @@
 
 @media screen and (max-width: 568px) {
   .benchmarking {
-    height: 105vh;
+    height: 180vh;
   }
   .centerObs1 {
+    top: 3%;
     width: 90vw;
+    height: 100vh;
   }
   .close_obs,
   .dot2_obs,
@@ -246,13 +248,12 @@
     margin-top: 2vh;
   }
   .concorrente table {
-    margin-left: -3.5vw;
+    margin-left: -4vw;
     width: 80vw;
   }
   .benchmarking table th {
-    padding: 5px;
-    font-size: 10px;
-    padding: 0;
+    padding: 2px;
+    font-size: 9px;
   }
   .benchmarking table td {
     width: 1vw;
@@ -262,20 +263,22 @@
     height: 100%;
   }
   .parceiro table {
-    margin-left: -1vw;
-    width: 80vw;
+    margin-left: -4vw;
+    width: 90vw;
   }
   .parceiro table th {
-    font-size: 12px;
+    font-size: 10px;
+    padding: 0px;
   }
   .duvida_benchmarking {
-    margin-left: 22vw;
-    margin-top: -1.5vh;
+    margin-left: 25vw;
+    margin-top: -2vh;
   }
   .txt-perfil {
     margin-top: 1vh;
     font-size: 12px;
   }
+
   .img-perfil,
   .dores,
   .crescendo {
@@ -284,17 +287,18 @@
   }
   .perfil input {
     margin: 3%;
-    margin-left: 12%;
+    margin-left: 25%;
     margin-top: 2%;
-    width: 25vw;
+    width: 30vw;
   }
   .duvida_perfis {
-    margin-left: 28vw;
+    margin-left: 30vw;
     margin-top: 2.2vh;
   }
   .setas {
-    width: 13%;
-    margin-top: 10%;
-    margin-right: 0%;
+    width: 20%;
+    height: 7%;
+    margin-top: 20%;
+    margin-right: -4%;
   }
 }
