@@ -133,7 +133,7 @@
   font-size: 15px;
   border-radius: 3px;
   border: 1px solid var(--font_color);
- /* max-width: 20vw; */
+  /* max-width: 20vw; */
 }
 
 .opcao-select option {
@@ -152,7 +152,7 @@
   font-size: 15px;
   border-radius: 3px;
   border: 1px solid var(--font_color);
-  max-width: 20vw; 
+  max-width: 20vw;
 }
 
 .import-select option {

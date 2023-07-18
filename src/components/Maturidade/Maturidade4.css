@@ -30,7 +30,7 @@
   margin-top: 6%;
   background-color: var(--back_color);
   border-radius: 30px;
-  font-family: "Ubuntu"; 
+  font-family: "Ubuntu";
 }
 
 .formMkt table {
@@ -75,7 +75,7 @@
   font-size: 15px;
   border-radius: 3px;
   border: 1px solid var(--font_color);
- /* max-width: 20vw; */
+  /* max-width: 20vw; */
 }
 
 .opcao-select option {
@@ -95,7 +95,7 @@
   font-size: 15px;
   border-radius: 3px;
   border: 1px solid var(--font_color);
-  max-width: 20vw; 
+  max-width: 20vw;
 }
 
 .import-select option {
