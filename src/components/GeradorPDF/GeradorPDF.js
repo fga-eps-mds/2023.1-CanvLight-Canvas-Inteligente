@@ -997,7 +997,39 @@ function GeradorPDF({
     doc.addPage(); // Maturidade
     doc.setFillColor('#fcdbc1'); // Seleciona a cor do Fundo #fcdbc1
     doc.rect(0, 0, 420, 297, 'F'); // Adiciona o Retângulo maior
-    var nivel = 5;
+
+    var porcent1 = +porcentagemAdm;
+    var porcent2 = +porcentagemRh;
+    var porcent3 = +porcentagemFin;
+    var porcent4 = +porcentagemMkt;
+
+    function nivelMaturidade(){
+
+      var adm = porcent1;
+      var rh = porcent2;
+      var fin = porcent3;
+      var mkt = porcent4;
+  
+      var soma = adm+rh+fin+mkt;
+      var media = soma/4;
+      var nivel = null;
+  
+      if (media <= 20) {
+        nivel = 1;
+      } else if (media > 20 && media <= 40) {
+        nivel = 2;
+      } else if (media > 40 && media <= 60) {
+        nivel = 3;
+      } else if (media > 60 && media <= 80) {
+        nivel = 4;
+      } else if (media > 80 && media <= 100) {
+        nivel = 5;
+      }
+  
+      return nivel;
+    }
+  
+    var nivel = nivelMaturidade();
     var imgSituacao = null;
     var textSituacao = null;
     
