@@ -111,6 +111,26 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
         <h2 className="tituloNivel">{nivel}</h2>
         <img className="situacao" alt="situacao" src={imgSituacao} />
         <div className="descMaturidade">{textSituacao}</div>
+        <table className="tabelaResult">
+          <div className="textoAreas">
+            <div>Área Administrativa</div>
+            <br/>
+            <div>Área de Recursos Humanos</div>
+            <br/>
+            <div>Área Financeira</div>
+            <br/>
+            <div>Área de Marketing</div>
+          </div>
+          <div className="porcentagemAreas">
+            <div>{porcent1}%</div>
+            <br/>
+            <div>{porcent2}%</div>
+            <br/>
+            <div>{porcent3}%</div>
+            <br/>
+            <div>{porcent4}%</div>
+          </div>
+        </table>
         <div
           onClick={(e) => irParaFormMaturidade4(e)}
           className="setaEsquerda"

@@ -148,7 +148,7 @@ function Maturidade4({ state, onPorcentagemMktChange }) {
             <button className="close_area4" onClick={(e) => fecharFormMaturidade4(e)}></button>
             <div className="dot2_area4"></div>
             <div className="dot3_area4"></div>
-            <h2 className="titulo_maturidade_4">Marketing</h2>
+            <h2 className="titulo_maturidade_4">Área de Marketing</h2>
             <div onClick={() => {window.open("tutorial#tut_Maturidade", "_blank")
             }}className="duvidaMkt"></div>
                     <table>

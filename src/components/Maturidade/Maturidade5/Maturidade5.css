@@ -70,21 +70,21 @@
 
 .titulo {
   text-align: center;
-  margin-top: 1%;
+  margin-top: 5%;
   margin-left: -4%;
   font-weight: normal;
   width: 100%;
-  font-size: 55px;
+  font-size: 60px;
   color: var(--font_color);
 }
 
 .tituloNivel {
   position: relative;
   text-align: center;
-  margin-top: -4.5%;
-  margin-left: 25%;
+  margin-top: -4.6%;
+  margin-left: 28%;
   font-weight: normal;
-  font-size: 55px;
+  font-size: 60px;
   color: var(--font_color);
 }
 
@@ -92,8 +92,8 @@
   position: relative;
   height: 11vh;
   width: 5vw;
-  margin-top: -6%;
-  margin-left: 65%;
+  margin-top: -20%;
+  margin-left: 66%;
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -108,6 +108,36 @@
   color: var(--font_color);
 }
 
+.tabelaResult {
+  box-sizing: border-box;
+  position: absolute;
+  width: 52.5vw;
+  height: 54vh;
+  float: left;
+  left: 15%;
+  top: 32%;
+  border: 5px solid #FF5631;
+  border-radius: 20px;
+}
+.textoAreas {
+  text-align: left;
+  text-indent: 0px;
+  margin-top: 3%;
+  margin-left: 5%;
+  font-weight: normal;
+  font-size: 50px;
+  color: var(--font_color);
+}
+.porcentagemAreas {
+  text-align: left;
+  text-indent: 0px;
+  margin-top: -40%;
+  margin-left: 85%;
+  font-weight: normal;
+  font-size: 50px;
+  color: var(--font_color);
+}
+
 .duvidaResult {
     background-image: url("../../../images/request\ \(1\).png");
     width: 0.85vw;
@@ -116,7 +146,7 @@
     cursor: pointer;
     position: absolute;
     left: 72%;
-    top: 4.5%;
+    top: 10%;
 }
 
 .setaEsquerda {
@@ -125,7 +155,7 @@
   background-size: contain;
   width: 10%;
   height: 10%;
-  margin-top: 39%;
+  margin-top: 35%;
   margin-left: 4%;
   float: left;
   cursor: pointer;
@@ -138,7 +168,7 @@
   background-size: contain;
   width: 10%;
   height: 10%;
-  margin-top: 39%;
+  margin-top: 35%;
   float: right;
   cursor: pointer;
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
@@ -157,7 +187,6 @@
   .close_area5,
   .dot2_area5,
   .dot3_area5 {
-    margin-top: 0%;
     height: 5vw;
     width: 5vw;
   }
@@ -169,6 +198,11 @@
   }
   .dot3_area5 {
     margin-left: 17%;
+  }
+  .duvidaResult {
+    margin-left: 15%;
+    width: 3.5vw;
+    height: 3vh;
   }
   .titulo,
   .tituloNivel {
@@ -199,18 +233,17 @@
     margin-top: 10%;
     margin-left: -10%;
     width: 80vw;
-    height: 30vh;
+    height: 15vh;
   }
-  .tabelaResult div canvas {
-    width: 10vw;
-    height: 50vh;
-    font-size: 10px;
-    margin-top: 20%;
-    margin-left: 0%;
+  .textoAreas {
+    font-size: 20px;
+  }
+  .porcentagemAreas {
+    font-size: 20px;
   }
   .feitoMaturidade,
   .setaEsquerda {
-    margin-top: 120%;
+    margin-top: 65%;
     margin-right: -5%;
     width: 17vw;
     height: 17vw;
