@@ -107,11 +107,9 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
         ></button>
         <div className="dot2_area4"></div>
         <div className="dot3_area4"></div>
-         <h2 className="titulo">{porcentagemAdm}</h2>
-         <h2 className="titulo">{porcentagemRh}</h2>
-         <h2 className="titulo">{porcentagemFin}</h2>
-         <h2 className="titulo">{porcentagemMkt}</h2>
         <h2 className="titulo">Maturidade Nível</h2>
+        <div onClick={() => {window.open("tutorial#tut_CalcMaturidade", "_blank")
+        }}className="duvidaResult"></div>
         <h2 className="tituloNivel">{nivel}</h2>
         <img className="situacao" alt="situacao" src={imgSituacao} />
         <div className="descMaturidade">{textSituacao}</div>

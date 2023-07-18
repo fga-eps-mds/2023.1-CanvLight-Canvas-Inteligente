@@ -115,6 +115,17 @@
     border-radius: 20px;
 }
 
+.duvidaResult {
+    background-image: url("../../../images/request\ \(1\).png");
+    width: 0.85vw;
+    height: 1.8vh;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    left: 72%;
+    top: 4.5%;
+}
+
 .setaEsquerda {
     background-image: url("../../../images/seta-esquerda.png");
     background-repeat: no-repeat;

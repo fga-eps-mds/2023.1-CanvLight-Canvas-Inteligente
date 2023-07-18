@@ -8,17 +8,16 @@
   --font_color: white;
 }
 
-
 .areaAdm {
-    z-index: 9999;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 130%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 125%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .formAdm {
   position: absolute;
@@ -31,8 +30,7 @@
   margin-top: 6%;
   background-color: var(--back_color);
   border-radius: 30px;
-  font-family: "Ubuntu";  
-  
+  font-family: "Ubuntu";
 }
 
 .close_area1 {
@@ -69,13 +67,12 @@
   top: 2%;
 }
 
-.titulo_area_adm{
+.titulo_area_adm {
   text-align: center;
   margin-top: 0%;
   font-size: 2.3vi;
   color: var(--font_color);
 }
-
 
 .duvidaAdm {
   background-image: url("../../images/request\ \(1\).png");
@@ -102,23 +99,23 @@
 }
 
 .formAdm table td {
-    background-color: var(--back_color);
-    border: 1px solid #ff5e00;
-  }
+  background-color: var(--back_color);
+  border: 1px solid #ff5e00;
+}
 
-  .formAdm table td {
-    background-color: var(--back_color);
-    border: 1px solid #ff5e00;
-  }
-  
+.formAdm table td {
+  background-color: var(--back_color);
+  border: 1px solid #ff5e00;
+}
+
 .formAdm table input {
-    background-color: var(--back_color);
-    border: none;
+  background-color: var(--back_color);
+  border: none;
 }
 
 .pergunta {
   font-size: 100%;
-  min-width:25vw;
+  min-width: 25vw;
   height: 10vh;
 }
 
@@ -131,7 +128,7 @@
  /* max-width: 20vw; */
 }
 
-.opcao-select option{
+.opcao-select option {
   padding-top: 10px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -139,7 +136,6 @@
   margin-right: -5%;
   float: right;
   cursor: pointer;
-
 }
 
 .import-select {
@@ -153,7 +149,7 @@
 
 .import-select option {
   padding: 5px;
-}  
+}
 
 .setaDireitaMaturidade {
   margin-top: 1%;
@@ -162,8 +158,3 @@
   height: 60px;
   cursor: pointer;
 }
-
-
-
-
-
