@@ -11,8 +11,12 @@ import Descricao4 from "./Maturidade5Descricoes/descricao4.json";
 import Descricao5 from "./Maturidade5Descricoes/descricao5.json";
 import React from "react";
 
-function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagemMkt}) {
-
+function Maturidade5({
+  porcentagemAdm,
+  porcentagemRh,
+  porcentagemFin,
+  porcentagemMkt,
+}) {
   var porcent1 = +porcentagemAdm;
   var porcent2 = +porcentagemRh;
   var porcent3 = +porcentagemFin;
@@ -48,16 +52,15 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
     modal2.style.display = "none";
     window.scrollTo(0, 0);
   }
-  
-  function nivelMaturidade(){
 
+  function nivelMaturidade() {
     var adm = porcent1;
     var rh = porcent2;
     var fin = porcent3;
     var mkt = porcent4;
 
-    var soma = adm+rh+fin+mkt;
-    var media = soma/4;
+    var soma = adm + rh + fin + mkt;
+    var media = soma / 4;
     var nivel = null;
 
     if (media <= 20) {
@@ -103,31 +106,35 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
           className="close_area5"
           onClick={(e) => fecharFormMaturidade5(e)}
         ></button>
-        <div className="dot2_area4"></div>
-        <div className="dot3_area4"></div>
+        <div className="dot2_area5"></div>
+        <div className="dot3_area5"></div>
         <h2 className="titulo">Maturidade Nível</h2>
-        <div onClick={() => {window.open("tutorial#tut_CalcMaturidade", "_blank")
-        }}className="duvidaResult"></div>
+        <div
+          onClick={() => {
+            window.open("tutorial#tut_CalcMaturidade", "_blank");
+          }}
+          className="duvidaResult"
+        ></div>
         <h2 className="tituloNivel">{nivel}</h2>
         <img className="situacao" alt="situacao" src={imgSituacao} />
         <div className="descMaturidade">{textSituacao}</div>
         <table className="tabelaResult">
           <div className="textoAreas">
             <div>Área Administrativa</div>
-            <br/>
+            <br />
             <div>Área de Recursos Humanos</div>
-            <br/>
+            <br />
             <div>Área Financeira</div>
-            <br/>
+            <br />
             <div>Área de Marketing</div>
           </div>
           <div className="porcentagemAreas">
             <div>{porcent1}%</div>
-            <br/>
+            <br />
             <div>{porcent2}%</div>
-            <br/>
+            <br />
             <div>{porcent3}%</div>
-            <br/>
+            <br />
             <div>{porcent4}%</div>
           </div>
         </table>

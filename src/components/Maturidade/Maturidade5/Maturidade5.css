@@ -116,7 +116,7 @@
   float: left;
   left: 15%;
   top: 32%;
-  border: 5px solid #FF5631;
+  border: 5px solid #ff5631;
   border-radius: 20px;
 }
 .textoAreas {
@@ -139,14 +139,15 @@
 }
 
 .duvidaResult {
-    background-image: url("../../../images/request\ \(1\).png");
-    width: 0.85vw;
-    height: 1.8vh;
-    float: right;
-    cursor: pointer;
-    position: absolute;
-    left: 72%;
-    top: 10%;
+  background-image: url("../../../images/request\ \(1\).png");
+  width: 0.85vw;
+  height: 1.8vh;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  left: 72%;
+  top: 10%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .setaEsquerda {
@@ -200,9 +201,10 @@
     margin-left: 17%;
   }
   .duvidaResult {
+    margin-top: -5%;
     margin-left: 15%;
-    width: 3.5vw;
-    height: 3vh;
+    width: 4.2vw;
+    height: 1.8vh;
   }
   .titulo,
   .tituloNivel {
@@ -236,15 +238,22 @@
     height: 15vh;
   }
   .textoAreas {
-    font-size: 20px;
+    font-size: 18px;
   }
   .porcentagemAreas {
     font-size: 20px;
+    margin-top: -51%;
+  }
+  .setaEsquerda {
+    float: left;
+    margin-left: -5%;
+  }
+  .feitoMaturidade {
+    margin-right: -5%;
   }
   .feitoMaturidade,
   .setaEsquerda {
-    margin-top: 65%;
-    margin-right: -5%;
+    margin-top: 125%;
     width: 17vw;
     height: 17vw;
   }

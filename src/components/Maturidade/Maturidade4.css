@@ -68,40 +68,6 @@
   height: 10vh;
 }
 
-.opcao-select {
-  width: 40vw;
-  height: 10vh;
-  padding: 5px;
-  font-size: 15px;
-  border-radius: 3px;
-  border: 1px solid var(--font_color);
-  /* max-width: 20vw; */
-}
-
-.opcao-select option {
-  padding-top: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 1%;
-  margin-right: -5%;
-  float: right;
-  cursor: pointer;
-}
-
-.import-select {
-  width: 15vw;
-  height: 10vh;
-  padding: 5px;
-  font-size: 15px;
-  border-radius: 3px;
-  border: 1px solid var(--font_color);
-  max-width: 20vw;
-}
-
-.import-select option {
-  padding: 5px;
-}
-
 .close_area4 {
   cursor: pointer;
   width: 20px;
@@ -212,13 +178,11 @@
   .formMkt table th {
     font-size: 15px;
   }
-  .formMkt table td,
-  .opcao-select,
-  .import-select {
+  .formMkt table td {
     font-size: 12px;
   }
   .duvidaMkt {
-    margin-top: -14%;
+    margin-top: 1%;
     margin-left: 20%;
     height: 4.1vw;
     width: 4.2vw;

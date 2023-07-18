@@ -167,13 +167,11 @@
   .formFin table th {
     font-size: 15px;
   }
-  .formFin table td,
-  .opcao-select,
-  .import-select {
+  .formFin table td {
     font-size: 12px;
   }
   .duvidaFin {
-    margin-top: -14%;
+    margin-top: -5%;
     margin-left: 20%;
     height: 4.1vw;
     width: 4.2vw;

@@ -413,6 +413,7 @@ textarea {
   .form {
     height: 180vh;
     width: 100vw;
+    overflow: hidden;
   }
   .centerInt {
     height: 160vh;
@@ -527,7 +528,7 @@ textarea {
   .tabela3 table {
     float: left;
     width: 67vw;
-    margin-top: -35vh;
+    margin-top: -41vh;
     margin-left: 0vw;
   }
   .tabela3 h2 {

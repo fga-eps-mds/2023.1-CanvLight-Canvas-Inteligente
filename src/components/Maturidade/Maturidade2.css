@@ -63,30 +63,6 @@
   width: auto;
 }
 
-.opcao-select {
-  width: 100%;
-  padding: 25px;
-  font-size: 15px;
-  border-radius: 3px;
-  border: 1px solid var(--font_color);
-}
-
-.opcao-select option {
-  padding: 5px;
-}
-
-.import-select {
-  width: 100%;
-  padding: 25px;
-  font-size: 15px;
-  border-radius: 3px;
-  border: 1px solid var(--font_color);
-}
-
-.import-select option {
-  padding: 5px;
-}
-
 .close_area2 {
   cursor: pointer;
   width: 20px;
@@ -196,16 +172,14 @@
   .formRh table th {
     font-size: 15px;
   }
-  .formRh table td,
-  .opcao-select,
-  .import-select {
+  .formRh table td {
     font-size: 12px;
   }
   .duvidaRh {
-    margin-top: -9%;
+    margin-top: -4%;
     margin-left: 24%;
     height: 4.1vw;
-    width: 4vw;
+    width: 4.2vw;
   }
   .setaDireitaMaturidade_2,
   .setaEsquerdaMaturidade_2 {
