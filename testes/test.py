@@ -1173,7 +1173,7 @@ print("Testando: Maturidade 5")
 WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[12]/div/button")))
 WebDriverWait(driver, 20).until(
-    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[12]/div/h2[5]")))
+    EC.element_to_be_clickable((By.CLASS_NAME, "duvidaResult")))
 WebDriverWait(driver, 20).until(
     EC.visibility_of_element_located((By.CLASS_NAME, "tituloNivel")))
 WebDriverWait(driver, 20).until(
@@ -1181,9 +1181,9 @@ WebDriverWait(driver, 20).until(
 WebDriverWait(driver, 20).until(
     EC.visibility_of_element_located((By.CLASS_NAME, "descMaturidade")))
 WebDriverWait(driver, 20).until(
-    EC.visibility_of_element_located((By.CLASS_NAME, "tabelaResult")))
+    EC.visibility_of_element_located((By.CLASS_NAME, "porcentagemAreas")))
 WebDriverWait(driver, 20).until(
-    EC.visibility_of_element_located((By.XPATH, "/html/body/div[1]/div/div[12]/div/table/div/canvas")))
+    EC.visibility_of_element_located((By.CLASS_NAME, "textoAreas")))
 WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.CLASS_NAME, "setaEsquerda")))
 WebDriverWait(driver, 20).until(
