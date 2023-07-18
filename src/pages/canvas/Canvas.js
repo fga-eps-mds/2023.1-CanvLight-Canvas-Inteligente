@@ -88,10 +88,10 @@ function Canvas() {
   const [inteQuatroP, setInteQuatroP] = useState({});
 
   //maturidade
-  const [porcentagemAdm, setPorcentagemAdm] = useState('');
-  const [porcentagemRh, setPorcentagemRh] = useState('');
-  const [porcentagemFin, setPorcentagemFin] = useState('');
-  const [porcentagemMkt, setPorcentagemMkt] = useState('');
+  const [porcentagemAreaAdm, setPorcentagemAreaAdm] = useState('');
+  const [porcentagemAreaRh, setPorcentagemAreaRh] = useState('');
+  const [porcentagemAreaFin, setPorcentagemAreaFin] = useState('');
+  const [porcentagemAreaMkt, setPorcentagemAreaMkt] = useState('');
   
 
   //intuição
@@ -327,16 +327,16 @@ function Canvas() {
   };
   //Maturidade
   const handlePorcentagemAdmChange = (novosDadosPorcentagemAdm) => {
-    setPorcentagemAdm(novosDadosPorcentagemAdm);
+    setPorcentagemAreaAdm(novosDadosPorcentagemAdm);
   };
   const handlePorcentagemRhChange = (novosDadosPorcentagemRh) => {
-    setPorcentagemRh(novosDadosPorcentagemRh);
+    setPorcentagemAreaRh(novosDadosPorcentagemRh);
   };
   const handlePorcentagemFinChange = (novosDadosPorcentagemFin) => {
-    setPorcentagemFin(novosDadosPorcentagemFin);
+    setPorcentagemAreaFin(novosDadosPorcentagemFin);
   };
   const handlePorcentagemMktChange = (novosDadosPorcentagemMkt) => {
-    setPorcentagemMkt(novosDadosPorcentagemMkt);
+    setPorcentagemAreaMkt(novosDadosPorcentagemMkt);
   };
   
 
@@ -563,10 +563,10 @@ function Canvas() {
       />
 
       <Maturidade5
-        porcentagemAdm = {porcentagemAdm}
-        porcentagemRh = {porcentagemRh}
-        porcentagemFin = {porcentagemFin}
-        porcentagemMkt = {porcentagemMkt}
+        porcentagemAdm = {porcentagemAreaAdm}
+        porcentagemRh = {porcentagemAreaRh}
+        porcentagemFin = {porcentagemAreaFin}
+        porcentagemMkt = {porcentagemAreaMkt}
       />
 
       <GeradorPDF
@@ -637,10 +637,10 @@ function Canvas() {
         canaisMetrica={canaisMetrica}
         inteQuatroP={inteQuatroP}
         //Maturidade
-        porcentagemAdm = {porcentagemAdm}
-        porcentagemRh = {porcentagemRh}
-        porcentagemFin = {porcentagemFin}
-        porcentagemMkt = {porcentagemMkt}
+        porcentagemAdm = {porcentagemAreaAdm}
+        porcentagemRh = {porcentagemAreaRh}
+        porcentagemFin = {porcentagemAreaFin}
+        porcentagemMkt = {porcentagemAreaMkt}
       />
       <Link to="/2023.1-CanvLight-Canvas-Inteligente">
         <img src={arrowIcon} alt="Seta" className="arrow-button" />

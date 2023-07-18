@@ -94,11 +94,13 @@ function Maturidade2({state, onPorcentagemRhChange}) {
       multiplicacao += resposta8*importancia8;
       multiplicacao += resposta9*importancia9;
 
-      var resultado = multiplicacao/54;
+      var resultado = multiplicacao/108;
       resultado = resultado*100;
 
-      onPorcentagemRhChange(resultado.toFixed(0));
-  }
+      return resultado.toFixed(0);
+    }
+
+  onPorcentagemRhChange(calculaRh());
 
   function fecharFormMaturidade2(e) {
     e.preventDefault();
