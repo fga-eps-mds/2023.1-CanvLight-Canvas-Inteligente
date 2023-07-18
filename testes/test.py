@@ -531,7 +531,6 @@ WebDriverWait(driver, 20).until(
 print("Observação 3: Sucesso!")
 
 driver.find_element(By.CLASS_NAME, "Observacao-finalizada").click()
-
 WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.CLASS_NAME, "button3")))
 driver.find_element(By.CLASS_NAME, "button3").click()

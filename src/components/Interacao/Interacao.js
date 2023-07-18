@@ -128,9 +128,11 @@ function Interacao({
     onAnaliseQuantidadeChange(novosDadosAnaliseQuantidade);
   };
 
-  const [primeiraLinhaAnaliseCusto, setPrimeiraLinhaAnaliseCusto] = useState("");
+  const [primeiraLinhaAnaliseCusto, setPrimeiraLinhaAnaliseCusto] =
+    useState("");
   const [segundaLinhaAnaliseCusto, setSegundaLinhaAnaliseCusto] = useState("");
-  const [terceiraLinhaAnaliseCusto, setTerceiraLinhaAnaliseCusto] = useState("");
+  const [terceiraLinhaAnaliseCusto, setTerceiraLinhaAnaliseCusto] =
+    useState("");
   const [quartaLinhaAnaliseCusto, setQuartaLinhaAnaliseCusto] = useState("");
 
   const handleInputChangeAnaliseCusto = (e) => {
@@ -156,7 +158,8 @@ function Interacao({
         name === "terceiraLinhaAnaliseCusto"
           ? value
           : terceiraLinhaAnaliseCusto,
-      quartaLinhaAnaliseCusto: name === "quartaLinhaAnaliseCusto" ? value : quartaLinhaAnaliseCusto,
+      quartaLinhaAnaliseCusto:
+        name === "quartaLinhaAnaliseCusto" ? value : quartaLinhaAnaliseCusto,
     };
 
     onAnaliseCustoChange(novosDadosAnaliseCusto);
@@ -805,6 +808,7 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
   function nextpage2(e) {
@@ -813,6 +817,7 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".tela_2_form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
   function returnScreen2(e) {
@@ -820,8 +825,15 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".tela_3_form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
-
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormInteracao(e);
+      fecharFormInteracaoTela2(e);
+      fecharTela_3(e);
+    }
+  });
   function fecharFormInteracaoTela2(e) {
     e.preventDefault();
     let modalOverlay = document.querySelector(".modal-overlay");
@@ -839,14 +851,15 @@ function Interacao({
     modal.style.display = "block";
     let medel = document.querySelector(".tela_2_form_interacao");
     medel.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
-  let[lista, setLista] = useState([]);
-  let[novoItem, setNovoItem] = useState([]);
+  let [lista, setLista] = useState([]);
+  let [novoItem, setNovoItem] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     setLista([]);
-  },[]);
+  }, []);
 
   function newTask() {
     setLista([...lista, novoItem]);
@@ -1024,11 +1037,13 @@ function Interacao({
                   <td className="nada"></td>
                   <td className="total">TOTAL</td>
                   <td>
-                    <input type="text"
-                    name="quartaLinhaAnaliseCusto"
-                    value={quartaLinhaAnaliseCusto}
-                    onChange={handleInputChangeAnaliseCusto}
-                    maxLength={20} />
+                    <input
+                      type="text"
+                      name="quartaLinhaAnaliseCusto"
+                      value={quartaLinhaAnaliseCusto}
+                      onChange={handleInputChangeAnaliseCusto}
+                      maxLength={20}
+                    />
                   </td>
                 </tr>
               </table>
@@ -1160,7 +1175,7 @@ function Interacao({
         </div>
       </div>
       <div className="tela_2_form_interacao">
-        <div className="center">
+        <div className="centerItr">
           <button
             className="close_itr2"
             onClick={(e) => fecharFormInteracaoTela2(e)}
@@ -1190,7 +1205,7 @@ function Interacao({
                     id="input-new-task"
                     placeholder="Inserir tarefa"
                     value={novoItem}
-                    onChange={value=>setNovoItem(value.target.value)}
+                    onChange={(value) => setNovoItem(value.target.value)}
                   ></input>
                   <button className="button_tarefa" onClick={() => newTask()}>
                     <svg
@@ -1205,10 +1220,8 @@ function Interacao({
                     </svg>
                   </button>
                   <ul className="todolist">
-                    {lista.map((item, index)=>(
-                      <li className="itemtodolist">
-                        {item}
-                      </li>
+                    {lista.map((item, index) => (
+                      <li className="itemtodolist">{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -1390,7 +1403,7 @@ function Interacao({
             <div className="parte5_interacao">
               <form>
                 <div>
-                  <p>
+                  <p className="p_formação_de_preco">
                     Formação do Preço:{" "}
                     <div
                       onClick={() => {
@@ -1642,13 +1655,13 @@ function Interacao({
             <img
               src={rightArrow}
               alt="Seta"
-              className="right-arrow"
+              className="right-arrow2"
               onClick={(e) => nextpage2(e)}
             />
             <img
               src={rightArrow}
               alt="Seta"
-              className="left-arrow"
+              className="left-arrow2"
               onClick={(e) => backpage1(e)}
             />
           </div>
@@ -1656,7 +1669,7 @@ function Interacao({
       </div>
 
       <div className="tela_3_form_interacao">
-        <div className="center">
+        <div className="centerItr3">
           <div className="esquerda">
             <button
               className="close_itr3"
@@ -1873,7 +1886,7 @@ function Interacao({
               </table>
             </div>
             <div className="canais_venda">
-              <p>
+              <p className="h2_4psItr2">
                 4 P's do Projeto:
                 <div
                   onClick={() => {

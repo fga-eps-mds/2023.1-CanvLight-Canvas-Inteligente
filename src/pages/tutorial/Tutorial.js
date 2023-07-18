@@ -30,10 +30,10 @@ function Tutorial() {
 
         <nav className="desktop">
           <ul>
-            <Link to="/tutorial">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/tutorial">
               <li>Como usar?</li>
             </Link>
-            <Link to="/canvas">
+            <Link to="/2023.1-CanvLight-Canvas-Inteligente/canvas">
               <li>Gerar canvas</li>
             </Link>
           </ul>
@@ -533,20 +533,21 @@ function Tutorial() {
           resultados.
         </p>
       </div>
-      <div id="tut_Maturidade" className="tut_Maturidade">
+      <div id="tut_maturidade" className="tut_maturidade">
         <h2>• Maturidade</h2>
         <p>
-          A maturidade de um negócio é alcançada quando a empresa possui um modelo 
-          sólido, clientes satisfeitos e estabilidade financeira. Nessa fase, a 
-          organização tem processos eficientes, estrutura organizacional definida 
-          e capacidade de se adaptar às mudanças do mercado. Ela busca 
-          constantemente inovação e crescimento sustentável, mantendo sua relevância 
-          e competitividade.
+          A maturidade de um negócio é alcançada quando a empresa possui um
+          modelo sólido, clientes satisfeitos e estabilidade financeira. Nessa
+          fase, a organização tem processos eficientes, estrutura organizacional
+          definida e capacidade de se adaptar às mudanças do mercado. Ela busca
+          constantemente inovação e crescimento sustentável, mantendo sua
+          relevância e competitividade.
           <br />
           <br />
           Passo 1: Leia as perguntas atentamente.
           <br />
-          Passo 2: Selecione uma resposta que corresponda ao nível de sua empresa.
+          Passo 2: Selecione uma resposta que corresponda ao nível de sua
+          empresa.
           <br />
           Passo 3: Selecione a importância da questão em sua empresa.
           <br />

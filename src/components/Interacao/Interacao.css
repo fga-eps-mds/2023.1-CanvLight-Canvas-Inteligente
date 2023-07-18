@@ -17,19 +17,20 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  font-family: "Ubuntu";
 }
 
-.centerItr {
+.centerItr,
+.centerItr3 {
+  width: 90%;
+  height: 90%;
   position: absolute;
   display: block;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  margin-right: 500px;
+  margin-left: 5%;
+  margin-top: 5%;
   background-color: var(--back_color);
-  max-width: 1000px;
-  margin: 30px 8%;
   border-radius: 30px;
 }
 
@@ -42,122 +43,123 @@
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
   border-color: transparent;
 }
 
 .dot2_itr {
   position: absolute;
   top: 1.5%;
-  left: 4.4%;
+  left: 3.2%;
   width: 20px;
   height: 20px;
   background-color: #ffc300;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .dot2_itr2 {
   position: absolute;
   top: 1.5%;
-  left: 4.5%;
+  left: 3.2%;
   width: 20px;
   height: 20px;
   background-color: #ffc300;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .dot2_itr3 {
   position: absolute;
   top: 1.5%;
-  left: 4.5%;
+  left: 3.2%;
   width: 20px;
   height: 20px;
   background-color: #ffc300;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .dot3_itr {
   position: absolute;
   top: 1.5%;
-  left: 7.4%;
+  left: 4.8%;
   width: 20px;
   height: 20px;
   background-color: rgb(45, 202, 25);
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .dot3_itr2 {
   position: absolute;
   top: 1.5%;
-  left: 7.5%;
+  left: 4.8%;
   width: 20px;
   height: 20px;
   background-color: rgb(45, 202, 25);
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .dot3_itr3 {
   position: absolute;
   top: 1.5%;
-  left: 7.5%;
+  left: 4.8%;
   width: 20px;
   height: 20px;
   background-color: rgb(45, 202, 25);
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .parte1_interacao {
   float: left;
-  width: 22%;
+  width: 15%;
+  margin-top: 2%;
 }
 
 .parte1_interacao p {
   color: var(--font_color);
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .tabela_analise_custos {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 1%;
   float: left;
-  width: 90%;
+  width: 100%;
   font-weight: 100;
 }
 
 .tabela_analise_custos table {
   box-sizing: border-box;
-  left: 8.11%;
-  right: 41.28%;
-  top: 12.75%;
+  margin-left: 3%;
+  margin-top: 1%;
 
   text-align: center;
+  padding: 1px;
   background-color: #0e78c9;
-  border: 2px solid #0e78c9;
+  border: 1px solid #0e78c9;
   border-radius: 12px;
   color: var(--font_color);
 }
 
 .tabela_analise_custos table td {
-  height: 30px;
+  width: 20vw;
+  height: 6vh;
   border-radius: 10px;
   font-weight: 400;
 }
 
 .tabela_analise_custos table input {
-  width: 97%;
-  height: 96%;
+  width: 100%;
+  height: 100%;
   background-color: var(--back_color);
   border: 1px solid var(--back_color);
   border-radius: 0px;
@@ -167,17 +169,17 @@
 /*config tabela 2*/
 .parte2_interacao {
   float: left;
-  width: 35%;
+  width: 25%;
+  margin-top: 5%;
 }
 
 .parte2_interacao p {
   color: var(--font_color);
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .tabela_analise_preço {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 1%;
   float: left;
   width: 90%;
   font-weight: 100;
@@ -185,37 +187,53 @@
 
 .tabela_analise_preço table {
   box-sizing: border-box;
-  left: 8.11%;
-  right: 41.28%;
-  top: 12.75%;
+  margin-left: 8.11%;
+  margin-top: 1%;
 
   text-align: center;
+  padding: 1px;
   background-color: #0e78c9;
-  border: 2px solid #0e78c9;
+  border: 1px solid #0e78c9;
   border-radius: 12px;
   color: var(--font_color);
 }
 
 .tabela_analise_preço table td {
-  height: 70px;
+  width: 20vw;
+  height: 10vh;
   border-radius: 10px;
   font-weight: 400;
 }
 
 .tabela_analise_preço table input {
-  width: 97%;
-  height: 96%;
+  width: 100%;
+  height: 100%;
   background-color: var(--back_color);
   border: 1px solid var(--back_color);
   border-radius: 0px;
   color: var(--font_color);
 }
 
-.right-arrow {
+.right-arrow,
+.right-arrow2,
+.left-arrow,
+.feito_itr {
+  margin-top: 2%;
   float: right;
-  width: 60px;
-  height: 60px;
+  width: 6%;
+  height: 6%;
   cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.left-arrow,
+.left-arrow2 {
+  margin-top: 2%;
+  width: 6%;
+  height: 6%;
+  float: left;
+  transform: rotate(180deg);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* config tela 2 */
@@ -227,7 +245,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  font-family: "Ubuntu";
 }
 
 .close_itr3 {
@@ -240,6 +257,7 @@
   border: none;
   top: 1.6%;
   left: 1.6%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*botao de inserir tarefa*/
@@ -250,49 +268,47 @@
   background-color: transparent;
   border-color: #0e78c9;
   padding: 3px;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .button_tarefa {
   cursor: pointer;
-  margin-left: 31.5%;
+  margin-left: 1%;
   position: absolute;
-  margin-top: -2.5%;
+  margin-top: 1%;
 }
 
 .parte3_interacao {
   float: left;
-  width: 35%;
+  width: 25%;
 }
 
 .parte3_interacao p {
   color: var(--font_color);
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .parte4_interacao {
   float: left;
-  width: 13%;
+  width: 10%;
+  margin-left: 0%;
 }
 
 .parte4_interacao p {
   color: var(--font_color);
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .tabela_MVP {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 5%;
   float: left;
-  width: 95%;
+  width: 90%;
   font-weight: 100;
 }
 
 .tabela_MVP table {
   box-sizing: border-box;
-  left: 40.42%;
-  right: 16.18%;
-  top: 19.16%;
-  bottom: 50.04%;
+  margin-left: -10%;
+  margin-top: 1%;
 
   text-align: center;
   background-color: #0e78c9;
@@ -302,29 +318,28 @@
 }
 
 .tabela_MVP table td {
-  height: 35px;
+  height: 6vh;
   border-radius: 10px;
   font-weight: 400;
 }
 
 .tabela_MVP table input {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   background-color: var(--back_color);
   border: 1px solid var(--back_color);
-  border-radius: 0px;
   color: var(--font_color);
 }
 
 .parte5_interacao {
-  margin-top: 20%;
+  margin-top: 18%;
   float: left;
-  width: 20%;
+  width: 18%;
 }
 
 .parte5_interacao p {
   color: var(--font_color);
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .tabela_formacao {
@@ -335,6 +350,7 @@
 }
 
 .tabela_formacao table {
+  margin-top: 1%;
   text-align: center;
   background-color: #0e78c9;
   border: 1px solid #0e78c9;
@@ -352,20 +368,12 @@
 }
 
 .tabela_formacao table input {
-  width: 97%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   background-color: var(--back_color);
   border: 1px solid var(--back_color);
   border-radius: 0px;
   color: var(--font_color);
-}
-
-.left-arrow {
-  float: left;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  transform: rotate(180deg);
 }
 
 /*Tela 3 Interação*/
@@ -377,20 +385,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  font-family: "Ubuntu";
-}
-
-.center {
-  position: absolute;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin-right: 500px;
-  background-color: var(--back_color);
-  max-width: 1000px;
-  margin: 30px 8%;
-  border-radius: 30px;
 }
 
 .close_itr2 {
@@ -403,6 +397,7 @@
   border: none;
   top: 1.6%;
   left: 1.6%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 .direita {
@@ -417,12 +412,12 @@
 
 .digitalizacao {
   float: bottom;
-  width: 80%;
+  width: 65%;
 }
 
 .digitalizacao p {
   color: var(--font_color);
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /*Configurações das imagens da tabela*/
@@ -446,9 +441,9 @@
 }
 
 .checkbox_dig input[type="checkbox"] {
-  width: 10%;
-  height: 50px;
-  margin-right: 1.5%;
+  width: 15%;
+  height: 15%;
+  margin-right: 2.5%;
 }
 
 .seta_pag_3 {
@@ -458,6 +453,7 @@
   cursor: pointer;
   transform: rotate(180deg);
   margin-top: 8%;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 /*configurações do emoticons*/
 
@@ -466,6 +462,7 @@
   height: 15%;
   margin-left: 17%;
   margin-right: 0.75%;
+  margin-top: 3%;
 }
 
 .checkbox-image {
@@ -479,7 +476,7 @@
 .checkbox_dig input[type="checkbox"] {
   --checkbox-color-unchecked: #0e78c9;
   width: 15%;
-  height: 50px;
+  height: 8vh;
   /* Estilização da checkbox */
   appearance: none;
   -webkit-appearance: none;
@@ -498,8 +495,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
   background-color: #0e78c9;
   border-radius: 2px;
 }
@@ -508,7 +505,7 @@
 
 .canais_venda {
   float: top;
-  width: 33%;
+  width: 23%;
 }
 
 .canais_venda p {
@@ -521,7 +518,7 @@
   float: center;
   text-align: center;
   background-color: #0e78c9;
-  border: 2px solid #0e78c9;
+  border: 1px solid #0e78c9;
   border-radius: 12px;
   color: var(--font_color);
   margin-top: 1%;
@@ -529,29 +526,33 @@
   margin-right: 8%;
   width: 80%;
   font-weight: 100;
+  padding: 3px;
 }
 
 .tabela_canais_venda th {
-  height: 30px;
+  height: 3vh;
   border-radius: 10px;
   font-weight: 500;
 }
 
 .tabela_canais_venda td {
-  height: 45px;
+  height: 6vh;
   border-radius: 10px;
   font-weight: 500;
 }
 
 .tabela_canais_venda input[type="text"] {
-  width: 97%;
-  height: 96%;
+  width: 100%;
+  height: 100%;
   background-color: var(--back_color);
   border: 1px solid var(--back_color);
   border-radius: 0px;
   color: var(--font_color);
 }
 
+.h2_4psItr2 {
+  margin-top: 10%;
+}
 /*css tabela dos 4 ps*/
 .tabela2 table {
   color: var(--font_color);
@@ -560,12 +561,14 @@
   border-radius: 8px;
   padding: 20px;
   float: left;
-  width: 90%;
+  width: 70%;
+  margin-top: 2%;
+  margin-left: 5%;
 }
 
 .tabela2 table tr {
   width: 30%;
-  height: 100%;
+  height: 10vh;
   text-align: left;
   padding: 10px;
 }
@@ -582,20 +585,21 @@
   color: var(--font_color);
 }
 .feito_itr {
-  height: 6vh;
-  width: 3vw;
-  margin-top: 3.5%;
+  height: 10vh;
+  width: 5vw;
+  margin-top: 7%;
   margin-right: 2%;
   float: right;
   cursor: pointer;
 }
 
-.todolist{
+.todolist {
   color: white;
 }
 
-.itemtodolist{
+.itemtodolist {
   list-style-type: none;
+  color: var(--font_color);
 }
 /*AJUSTES DOS BOTOES DE DUVIDAS*/
 
@@ -606,4 +610,202 @@
   background-repeat: no-repeat;
   float: right;
   cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 568px) {
+  body {
+    height: 100vh;
+  }
+  .body {
+    height: 180vh;
+  }
+
+  .centerItr {
+    height: 50%;
+    margin-top: 15%;
+  }
+  .close_itr,
+  .close_itr2,
+  .close_itr3 {
+    margin-left: 3%;
+  }
+  .dot2_itr,
+  .dot2_itr2,
+  .dot2_itr3 {
+    margin-left: 9%;
+  }
+  .dot3_itr,
+  .dot3_itr2,
+  .dot3_itr3 {
+    margin-left: 15%;
+  }
+  .parte1_interacao {
+    margin-top: 8%;
+    width: 70%;
+  }
+  .parte1_interacao p {
+    font-size: 20px;
+  }
+  .tabela_analise_custos table {
+    margin-left: -2%;
+  }
+  .parte2_interacao {
+    margin-top: 15%;
+    width: 75%;
+  }
+  .parte2_interacao p {
+    font-size: 20px;
+  }
+  .tabela_analise_preço table {
+    margin-left: -2%;
+    font-size: 12px;
+  }
+  .tabela_analise_preço table input {
+    width: 11vw;
+  }
+  .right-arrow,
+  .right-arrow_2 {
+    width: 20%;
+    height: 20%;
+    margin-top: 25%;
+    margin-right: -5%;
+  }
+  /*INTERAÇÃO 2*/
+  /*checklist*/
+  .parte3_interacao p {
+    margin-top: 15%;
+    width: 36vw;
+  }
+  .parte4_interacao {
+    width: 60%;
+    margin-top: -68vh;
+    margin-left: -65%;
+  }
+  .parte5_interacao {
+    width: 80%;
+    font-size: 20px;
+    margin-top: -220%;
+    margin-left: 0%;
+  }
+  .tabela_formacao {
+    margin-top: -210%;
+    font-size: 10px;
+    margin-left: -4%;
+  }
+  .p_formação_de_preco {
+    width: 68vw;
+  }
+
+  .button_tarefa {
+    margin-top: 2%;
+  }
+
+  .parte4_interacao {
+    margin-left: 0%;
+    margin-top: -135%;
+  }
+  .parte4_interacao p {
+    width: 30vw;
+  }
+
+  .tabela_MVP {
+    margin-top: -125%;
+    margin-left: 10%;
+  }
+
+  .left-arrow2 {
+    width: 20%;
+    height: 20%;
+    margin-top: -35%;
+  }
+
+  .right-arrow2 {
+    width: 20%;
+    height: 20%;
+    margin-top: -35%;
+  }
+  /*parte 3 interação*/
+
+  .digitalizacao {
+    float: bottom;
+    width: 100%;
+  }
+
+  .esquerda {
+    width: 100%;
+  }
+
+  .direita {
+    width: 100%;
+  }
+
+  .digitalizacao p {
+    margin-top: 12%;
+    color: var(--font_color);
+    font-size: 20px;
+  }
+
+  .checkbox_dig img {
+    width: 18%;
+    height: 1%;
+    margin-right: 2%;
+  }
+
+  .checkbox-image_1 {
+    width: 18%;
+    height: 18%;
+    margin-left: 20%;
+    margin-right: 0.75%;
+    margin-top: 3%;
+  }
+
+  .checkbox-image {
+    width: 18%;
+    height: 18%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+
+  .checkbox_dig input[type="checkbox"] {
+    height: 5vh;
+    width: 12vw;
+  }
+  .canais_venda {
+    margin-top: -470%;
+  }
+  .canais_venda p {
+    min-width: 200px;
+  }
+
+  .h2_4psItr2 {
+    margin-top: 2100%;
+  }
+
+  .tabela2 table {
+    margin-top: 10%;
+  }
+  .tabela2 input {
+    width: 10vw;
+  }
+  .tabela2 table td {
+    width: -20%;
+  }
+
+  .seta_pag_3 {
+    margin-top: 233%;
+  }
+
+  .feito_itr {
+    margin-top: -210%;
+    height: 6vh;
+    width: 14vw;
+  }
+  .centerItr3 {
+    height: 62%;
+    margin-top: 15%;
+  }
+  .tela_3_form_interacao {
+    height: 135%;
+    margin-bottom: 0%;
+  }
 }

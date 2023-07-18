@@ -30,7 +30,13 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
 
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormMaturidade5(e);
+    }
+  });
 
   function irParaFormMaturidade4(e) {
     e.preventDefault();
@@ -40,6 +46,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
 
     let modal2 = document.querySelector(".telaResult");
     modal2.style.display = "none";
+    window.scrollTo(0, 0);
   }
   
   function nivelMaturidade(){
@@ -71,7 +78,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
   var nivel = nivelMaturidade();
   var imgSituacao = null;
   var textSituacao = null;
-  
+
   if (nivel === 1) {
     imgSituacao = Situacao1;
     textSituacao = Descricao1;
@@ -93,7 +100,7 @@ function Maturidade5({porcentagemAdm, porcentagemRh, porcentagemFin, porcentagem
     <div className="telaResult">
       <div className="formResult">
         <button
-          className="close_area4"
+          className="close_area5"
           onClick={(e) => fecharFormMaturidade5(e)}
         ></button>
         <div className="dot2_area4"></div>

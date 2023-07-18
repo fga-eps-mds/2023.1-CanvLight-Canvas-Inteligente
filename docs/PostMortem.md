@@ -53,5 +53,36 @@ No começo, a disciplina foi bem confusa, pois escolhemos um tema desconhecido q
 
 Depois do período inicial do projeto, quando começamos a trabalhar de fato no código, foi bem interessante aprender as tecnologias novas (para mim) que usamos. Vale ressaltar que particularmente, eu não possuía quase nenhuma familiaridade com React.js ou front-end em geral. Então diria que foi valioso o aprendizado, embora não fosse o foco.
 
-Acredito que os nossos maiores erros na minha opinião foram uma falta de planejamento e sincronia em certos aspectos, o que diminuiu a nossa produtividade e acabou atrasando um pouco o andamento de certas etapas do projeto. Apesar disso tudo, julgo essa experiência de trabalho em equipe valiosa, sinto que aprendi muito na disciplina e estou satisfeito com o nosso resultad
+Acredito que os nossos maiores erros na minha opinião foram uma falta de planejamento e sincronia em certos aspectos, o que diminuiu a nossa produtividade e acabou atrasando um pouco o andamento de certas etapas do projeto. Apesar disso tudo, julgo essa experiência de trabalho em equipe valiosa, sinto que aprendi muito na disciplina e estou satisfeito com o nosso resultado.
+
+### Breno Alexandre ([@brenoalexandre0](https://github.com/brenoalexandre0))
+
+Desde o início a organização e planejamento do grupo foram fracos, pois a maioria dos integrantes não se conhecia e não sabíamos muito
+bem como lidar com métodos ágeis.
+
+A escolha do tema foi até um certo nível de forma arbitrária, pois a maior parte do grupo nunca trabalhou com um canvas de negócio ou usou um. O mesmo vale para a tecnologia usada no projeto. Então graças a isso foi necessário muita pesquisa e estudo do grupo.
+
+Apenas após a Release 1 o grupo começou a trabalhar melhor em conjunto e a ser mais produtivo com o projeto. Mas mesmo assim houve uma desorganização e desinteresse com alguns membros, atrasando o projeto.
+
+O resultado final do projeto é satisfatório tendo em mente os obstáculos.
+
+Aprendi bastante sobre como é trabalhar em grupo, trabalhar em projetos grandes, codar em JavaScript e React, conheço melhor canvas de negócio e como calcular o grau de maturidade de uma empresa e sei usar melhor os comandos de Git e as práticas básicas no GitHub.
+
+### Pedro Cabeceira ([@pkbceira03](https://github.com/pkbceira03))
+
+Estou extremamente satisfeito com o trabalho que realizamos. Durante o processo, enfrentamos algumas dificuldades, especialmente em relação ao tema do projeto, no qual nenhum membro do grupo tinha familiaridade. No entanto, essas dificuldades não foram capazes de nos deter.
+
+Ao longo do caminho, encontramos obstáculos que nos desafiaram. No entanto, a equipe se esforçou ao máximo para superá-los. É impressionante o nosso comprometimento e o progresso que alcançamos até agora. Sinto uma grande felicidade ao olhar para trás e ver tudo o que nossa equipe conseguiu realizar.
+
+Além disso, durante o processo, adquiri conhecimentos valiosos sobre o uso do Git e o desenvolvimento com React. Sinto-me confiante de que me tornei um profissional melhor por meio dessas aprendizagens.
+
+No final, apesar das dificuldades enfrentadas, estamos extremamente orgulhosos do trabalho que realizamos.
+
+### Raquel Andrade ([@raquel-andrade](https://github.com/raquel-andrade))
+
+No início a minha experiência na displina foi de certa forma desafiadora, levando em consideração o fato de que os membros não se conheciam, a temática escolhida era algo novo para todos os integrantes, e eu ainda não havia trabalhado em um grande projeto com uma grande equipe. Até a primeira release não houve a devida organização e por isso a entrega não foi como esperávamos, no entanto, no decorrer do semestre o grupo foi se adaptando à forma de trabalho e às limitações individuais de cada um e assim fizemos um coletivo verdadeiramente eficiente, aprendendo e compreendendo como nos organanizar para, através de metodologias ágeis, atendermos à demanda que nos foi proposta. 
+
+Para mim as tecnologias utilizadas foram em grande parte algo novo, onde eu tive dificuldades para aprender e immplementá-las. Além disso, foi difícil pôr em prática as metologias ágeis devido à demanda das outras disciplinas. 
+
+Pude aprender bastante acerca do desenvolvimento de um software desde o início, trabalho em equipe, atuação em Front-end e React.js, além de compreender o que é um Canvas de negócios. No geral a minha experência foi bastante positiva, consegui aplicar as metodologias, aprendi como lidar com uma equipe de trabalho, e principalmente a importância da comunicação no desenvolvimento do projeto, e acredito que dei meu melhor apesar das dificuldades e obstáculos durante o semestre.
 

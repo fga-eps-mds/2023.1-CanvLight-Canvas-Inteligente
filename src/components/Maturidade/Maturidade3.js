@@ -2,87 +2,82 @@ import "./Maturidade3.css";
 import rightArrow from "../../images/seta-direita.png";
 import React, { useState } from "react";
 
-function Maturidade3({state, onPorcentagemFinChange}) {
-
+function Maturidade3({ state, onPorcentagemFinChange }) {
   // Primeiro trecho de selectResposta
-  var [resposta1, setResposta1] = useState('');
+  var [resposta1, setResposta1] = useState("");
   // Segundo trecho de selectResposta
-  var [resposta2, setResposta2] = useState('');
+  var [resposta2, setResposta2] = useState("");
   // Terceiro trecho de selectResposta
-  var [resposta3, setResposta3] = useState('');
+  var [resposta3, setResposta3] = useState("");
   // Quarto trecho de selectResposta
-  var [resposta4, setResposta4] = useState('');
+  var [resposta4, setResposta4] = useState("");
   // Quinto trecho de selectResposta
-  var [resposta5, setResposta5] = useState('');
+  var [resposta5, setResposta5] = useState("");
   // Sexto trecho de selectResposta
-  var [resposta6, setResposta6] = useState('');
+  var [resposta6, setResposta6] = useState("");
   // Sétimo trecho de selectResposta
-  var [resposta7, setResposta7] = useState('');
+  var [resposta7, setResposta7] = useState("");
 
   // Primeiro trecho de selectImportancia
-  var [importancia1, setImportancia1] = useState('');
+  var [importancia1, setImportancia1] = useState("");
   // Segundo trecho de selectImportancia
-  var [importancia2, setImportancia2] = useState('');
+  var [importancia2, setImportancia2] = useState("");
   // Terceiro trecho de selectImportancia
-  var [importancia3, setImportancia3] = useState('');
+  var [importancia3, setImportancia3] = useState("");
   // Quarto trecho de selectImportancia
-  var [importancia4, setImportancia4] = useState('');
+  var [importancia4, setImportancia4] = useState("");
   // Quinto trecho de selectImportancia
-  var [importancia5, setImportancia5] = useState('');
+  var [importancia5, setImportancia5] = useState("");
   // Sexto trecho de selectImportancia
-  var [importancia6, setImportancia6] = useState('');
+  var [importancia6, setImportancia6] = useState("");
   // Setimo trecho de selectImportancia
-  var [importancia7, setImportancia7] = useState('');
-
-
+  var [importancia7, setImportancia7] = useState("");
 
   // Pega o valor da resposta e transforma em numero
   const handleOptionRespostaChange = (event, respostaSetter) => {
-      const selectedOption = event.target.value;
+    const selectedOption = event.target.value;
 
-      let resposta;
-      if (selectedOption === 'opcao1') {
-          resposta = 1;
-      } else if (selectedOption === 'opcao2') {
-          resposta = 2;
-      } else if (selectedOption === 'opcao3') {
-          resposta = 3;
-      } else if (selectedOption === 'opcao4') {
-          resposta = 4;
-      }
-    
-      respostaSetter(resposta);
+    let resposta;
+    if (selectedOption === "opcao1") {
+      resposta = 1;
+    } else if (selectedOption === "opcao2") {
+      resposta = 2;
+    } else if (selectedOption === "opcao3") {
+      resposta = 3;
+    } else if (selectedOption === "opcao4") {
+      resposta = 4;
+    }
+
+    respostaSetter(resposta);
   };
 
   // Pega o valor da importância e transforma em peso
   const handleOptionImportanciaChange = (event, importanciaSetter) => {
-      const selectedOption = event.target.value;
-      
-      let importancia;
-      if (selectedOption === 'opcao1') {
-          importancia = 1;
-      } else if (selectedOption === 'opcao2') {
-          importancia = 2;
-      } else if (selectedOption === 'opcao3') {
-          importancia = 3;
-      }
-    
-      importanciaSetter(importancia);
+    const selectedOption = event.target.value;
+
+    let importancia;
+    if (selectedOption === "opcao1") {
+      importancia = 1;
+    } else if (selectedOption === "opcao2") {
+      importancia = 2;
+    } else if (selectedOption === "opcao3") {
+      importancia = 3;
+    }
+
+    importanciaSetter(importancia);
   };
 
-
-
   // eslint-disable-next-line
-  function calculaFin(){
-      var multiplicacao = null;
+  function calculaFin() {
+    var multiplicacao = null;
 
-      multiplicacao += resposta1*importancia1;
-      multiplicacao += resposta2*importancia2;
-      multiplicacao += resposta3*importancia3;
-      multiplicacao += resposta4*importancia4;
-      multiplicacao += resposta5*importancia5;
-      multiplicacao += resposta6*importancia6;
-      multiplicacao += resposta7*importancia7;
+    multiplicacao += resposta1 * importancia1;
+    multiplicacao += resposta2 * importancia2;
+    multiplicacao += resposta3 * importancia3;
+    multiplicacao += resposta4 * importancia4;
+    multiplicacao += resposta5 * importancia5;
+    multiplicacao += resposta6 * importancia6;
+    multiplicacao += resposta7 * importancia7;
 
       var resultado = multiplicacao/84;
       resultado = resultado*100;
@@ -90,7 +85,7 @@ function Maturidade3({state, onPorcentagemFinChange}) {
       return resultado.toFixed(0);
   }
 
-  onPorcentagemFinChange(calculaFin);
+  onPorcentagemFinChange(calculaFin());
 
   function fecharFormMaturidade3(e) {
     e.preventDefault();
@@ -104,6 +99,7 @@ function Maturidade3({state, onPorcentagemFinChange}) {
 
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
 
   function irParaFormMaturidade2(e) {
@@ -114,6 +110,7 @@ function Maturidade3({state, onPorcentagemFinChange}) {
 
     let modal2 = document.querySelector(".areaFin");
     modal2.style.display = "none";
+    window.scrollTo(0, 0);
   }
 
   function irParaFormMaturidade4(e) {
@@ -124,7 +121,13 @@ function Maturidade3({state, onPorcentagemFinChange}) {
 
     let modal2 = document.querySelector(".areaMkt");
     modal2.style.display = "block";
+    window.scrollTo(0, 0);
   }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormMaturidade3(e);
+    }
+  });
 
   return (
     <div className="areaFin">
@@ -209,9 +212,15 @@ function Maturidade3({state, onPorcentagemFinChange}) {
               </select>
             </td>
             <td>
-              <select className="import-select"
-                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia1)}>
-                <option disabled selected value>Selecione um nível de importância</option>
+              <select
+                className="import-select"
+                onChange={(event) =>
+                  handleOptionImportanciaChange(event, setImportancia1)
+                }
+              >
+                <option disabled selected value>
+                  Selecione um nível de importância
+                </option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -281,9 +290,15 @@ function Maturidade3({state, onPorcentagemFinChange}) {
               </select>
             </td>
             <td>
-              <select className="import-select"
-                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia2)}>
-                <option disabled selected value>Selecione um nível de importância</option>
+              <select
+                className="import-select"
+                onChange={(event) =>
+                  handleOptionImportanciaChange(event, setImportancia2)
+                }
+              >
+                <option disabled selected value>
+                  Selecione um nível de importância
+                </option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -343,9 +358,15 @@ function Maturidade3({state, onPorcentagemFinChange}) {
               </select>
             </td>
             <td>
-              <select className="import-select"
-                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia3)}>
-                <option disabled selected value>Selecione um nível de importância</option>
+              <select
+                className="import-select"
+                onChange={(event) =>
+                  handleOptionImportanciaChange(event, setImportancia3)
+                }
+              >
+                <option disabled selected value>
+                  Selecione um nível de importância
+                </option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -410,9 +431,15 @@ function Maturidade3({state, onPorcentagemFinChange}) {
               </select>
             </td>
             <td>
-              <select className="import-select"
-                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia4)}>
-                <option disabled selected value>Selecione um nível de importância</option>
+              <select
+                className="import-select"
+                onChange={(event) =>
+                  handleOptionImportanciaChange(event, setImportancia4)
+                }
+              >
+                <option disabled selected value>
+                  Selecione um nível de importância
+                </option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -470,9 +497,15 @@ function Maturidade3({state, onPorcentagemFinChange}) {
               </select>
             </td>
             <td>
-              <select className="import-select"
-                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia5)}>
-                <option disabled selected value>Selecione um nível de importância</option>
+              <select
+                className="import-select"
+                onChange={(event) =>
+                  handleOptionImportanciaChange(event, setImportancia5)
+                }
+              >
+                <option disabled selected value>
+                  Selecione um nível de importância
+                </option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -539,9 +572,15 @@ function Maturidade3({state, onPorcentagemFinChange}) {
               </select>
             </td>
             <td>
-              <select className="import-select"
-                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia6)}>
-                <option disabled selected value>Selecione um nível de importância</option>
+              <select
+                className="import-select"
+                onChange={(event) =>
+                  handleOptionImportanciaChange(event, setImportancia6)
+                }
+              >
+                <option disabled selected value>
+                  Selecione um nível de importância
+                </option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -625,9 +664,15 @@ function Maturidade3({state, onPorcentagemFinChange}) {
               </select>
             </td>
             <td>
-              <select className="import-select"
-                      onChange={(event) => handleOptionImportanciaChange(event, setImportancia7)}>
-                <option disabled selected value>Selecione um nível de importância</option>
+              <select
+                className="import-select"
+                onChange={(event) =>
+                  handleOptionImportanciaChange(event, setImportancia7)
+                }
+              >
+                <option disabled selected value>
+                  Selecione um nível de importância
+                </option>
                 <option value="opcao1">Pouco importante</option>
                 <option value="opcao2">Importante</option>
                 <option value="opcao3">Muito importante</option>
@@ -636,15 +681,17 @@ function Maturidade3({state, onPorcentagemFinChange}) {
           </tr>
         </table>
         <img
-                        src={rightArrow}
-                        alt="Seta"
-                        className="setaEsquerdaMaturidade_3"
-                        onClick={(e) => irParaFormMaturidade2(e)}/>
+          src={rightArrow}
+          alt="Seta"
+          className="setaEsquerdaMaturidade_3"
+          onClick={(e) => irParaFormMaturidade2(e)}
+        />
         <img
-                        src={rightArrow}
-                        alt="Seta"
-                        className="setaDireitaMaturidade_3"
-                        onClick={(e) => irParaFormMaturidade4(e)}/>
+          src={rightArrow}
+          alt="Seta"
+          className="setaDireitaMaturidade_3"
+          onClick={(e) => irParaFormMaturidade4(e)}
+        />
       </div>
     </div>
   );

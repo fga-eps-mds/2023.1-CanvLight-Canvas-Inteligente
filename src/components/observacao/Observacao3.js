@@ -253,13 +253,12 @@ function Observacao3({
     medel.style.display = "none";
     let modal2 = document.querySelector(".confirma");
     modal2.style.display = "block";
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") {
-        fecharFormIntuicao(e);
-      }
-    });
-    window.scrollTo(0, 0);
   }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      fecharFormIntuicao(e);
+    }
+  });
 
   return (
     <div className="Observacao3">

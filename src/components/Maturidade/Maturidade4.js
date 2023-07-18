@@ -2,162 +2,129 @@ import rightArrow from "../../images/seta-direita.png";
 import "./Maturidade4.css";
 import React, { useState } from "react";
 
-function Maturidade4({state, onPorcentagemMktChange}){
+function Maturidade4({ state, onPorcentagemMktChange }) {
+  // Primeiro trecho de selectResposta
+  var [resposta1, setResposta1] = useState("");
+  // Segundo trecho de selectResposta
+  var [resposta2, setResposta2] = useState("");
+  // Terceiro trecho de selectResposta
+  var [resposta3, setResposta3] = useState("");
+  // Quarto trecho de selectResposta
+  var [resposta4, setResposta4] = useState("");
+  // Quinto trecho de selectResposta
+  var [resposta5, setResposta5] = useState("");
+  // Sexto trecho de selectResposta
+  var [resposta6, setResposta6] = useState("");
+  // Sétimo trecho de selectResposta
+  var [resposta7, setResposta7] = useState("");
+  // Oitavo trecho de selectResposta
+  var [resposta8, setResposta8] = useState("");
+  // Nono trecho de selectResposta
+  var [resposta9, setResposta9] = useState("");
+  // Décimo trecho de selectResposta
+  var [resposta10, setResposta10] = useState("");
 
-    // Primeiro trecho de selectResposta
-    var [resposta1, setResposta1] = useState('');
-    // Segundo trecho de selectResposta
-    var [resposta2, setResposta2] = useState('');
-    // Terceiro trecho de selectResposta
-    var [resposta3, setResposta3] = useState('');
-    // Quarto trecho de selectResposta
-    var [resposta4, setResposta4] = useState('');
-    // Quinto trecho de selectResposta
-    var [resposta5, setResposta5] = useState('');
-    // Sexto trecho de selectResposta
-    var [resposta6, setResposta6] = useState('');
-    // Sétimo trecho de selectResposta
-    var [resposta7, setResposta7] = useState('');
-    // Oitavo trecho de selectResposta
-    var [resposta8, setResposta8] = useState('');
-    // Nono trecho de selectResposta
-    var [resposta9, setResposta9] = useState('');
-    // Décimo trecho de selectResposta
-    var [resposta10, setResposta10] = useState('');
+  // Primeiro trecho de selectImportancia
+  var [importancia1, setImportancia1] = useState("");
+  // Segundo trecho de selectImportancia
+  var [importancia2, setImportancia2] = useState("");
+  // Terceiro trecho de selectImportancia
+  var [importancia3, setImportancia3] = useState("");
+  // Quarto trecho de selectImportancia
+  var [importancia4, setImportancia4] = useState("");
+  // Quinto trecho de selectImportancia
+  var [importancia5, setImportancia5] = useState("");
+  // Sexto trecho de selectImportancia
+  var [importancia6, setImportancia6] = useState("");
+  // Setimo trecho de selectImportancia
+  var [importancia7, setImportancia7] = useState("");
+  // Oitavo trecho de selectImportancia
+  var [importancia8, setImportancia8] = useState("");
+  // Nono trecho de selectImportancia
+  var [importancia9, setImportancia9] = useState("");
+  // Decimo trecho de selectImportancia
+  var [importancia10, setImportancia10] = useState("");
 
-    // Primeiro trecho de selectImportancia
-    var [importancia1, setImportancia1] = useState('');
-    // Segundo trecho de selectImportancia
-    var [importancia2, setImportancia2] = useState('');
-    // Terceiro trecho de selectImportancia
-    var [importancia3, setImportancia3] = useState('');
-    // Quarto trecho de selectImportancia
-    var [importancia4, setImportancia4] = useState('');
-    // Quinto trecho de selectImportancia
-    var [importancia5, setImportancia5] = useState('');
-    // Sexto trecho de selectImportancia
-    var [importancia6, setImportancia6] = useState('');
-    // Setimo trecho de selectImportancia
-    var [importancia7, setImportancia7] = useState('');
-    // Oitavo trecho de selectImportancia
-    var [importancia8, setImportancia8] = useState('');
-    // Nono trecho de selectImportancia
-    var [importancia9, setImportancia9] = useState('');
-    // Decimo trecho de selectImportancia
-    var [importancia10, setImportancia10] = useState('');
+  // Pega o valor da resposta e transforma em numero
+  const handleOptionRespostaChange = (event, respostaSetter) => {
+    const selectedOption = event.target.value;
 
-
-
-    // Pega o valor da resposta e transforma em numero
-    const handleOptionRespostaChange = (event, respostaSetter) => {
-        const selectedOption = event.target.value;
-
-        let resposta;
-        if (selectedOption === 'opcao1') {
-            resposta = 1;
-        } else if (selectedOption === 'opcao2') {
-            resposta = 2;
-        } else if (selectedOption === 'opcao3') {
-            resposta = 3;
-        } else if (selectedOption === 'opcao4') {
-            resposta = 4;
-        }
-      
-        respostaSetter(resposta);
-    };
-
-    // Pega o valor da importância e transforma em peso
-    const handleOptionImportanciaChange = (event, importanciaSetter) => {
-        const selectedOption = event.target.value;
-        
-        let importancia;
-        if (selectedOption === 'opcao1') {
-            importancia = 1;
-        } else if (selectedOption === 'opcao2') {
-            importancia = 2;
-        } else if (selectedOption === 'opcao3') {
-            importancia = 3;
-        }
-      
-        importanciaSetter(importancia);
-    };
-
-
-
-    // eslint-disable-next-line
-    function calculaMkt(){
-        var multiplicacao = null;
-
-        multiplicacao += resposta1*importancia1;
-        multiplicacao += resposta2*importancia2;
-        multiplicacao += resposta3*importancia3;
-        multiplicacao += resposta4*importancia4;
-        multiplicacao += resposta5*importancia5;
-        multiplicacao += resposta6*importancia6;
-        multiplicacao += resposta7*importancia7;
-        multiplicacao += resposta8*importancia8;
-        multiplicacao += resposta9*importancia9;
-        multiplicacao += resposta10*importancia10;
-
-        var resultado = multiplicacao/120;
-        resultado = resultado*100;
-
-        return resultado.toFixed(0);
+    let resposta;
+    if (selectedOption === "opcao1") {
+      resposta = 1;
+    } else if (selectedOption === "opcao2") {
+      resposta = 2;
+    } else if (selectedOption === "opcao3") {
+      resposta = 3;
+    } else if (selectedOption === "opcao4") {
+      resposta = 4;
     }
 
-    onPorcentagemMktChange(calculaMkt);
+    respostaSetter(resposta);
+  };
 
-    function fecharFormMaturidade4(e) {
-        e.preventDefault();
-        let modalOverlay = document.querySelector(".modal-overlay");
-        if (modalOverlay) {
-          modalOverlay.parentNode.removeChild(modalOverlay);
-        }
-    
-        let modal = document.querySelector(".areaMkt");
-        modal.style.display = "none";
+  // Pega o valor da importância e transforma em peso
+  const handleOptionImportanciaChange = (event, importanciaSetter) => {
+    const selectedOption = event.target.value;
 
-        let modal2 = document.querySelector(".confirma");
-        modal2.style.display = "block";
-    }
-    
-    function irParaFormMaturidade3(e) {
-        e.preventDefault();
-    
-        let modal = document.querySelector(".areaFin");
-        modal.style.display = "block";
-
-        let modal2 = document.querySelector(".areaMkt");
-        modal2.style.display = "none";
+    let importancia;
+    if (selectedOption === "opcao1") {
+      importancia = 1;
+    } else if (selectedOption === "opcao2") {
+      importancia = 2;
+    } else if (selectedOption === "opcao3") {
+      importancia = 3;
     }
 
-    function irParaFormMaturidade5(e) {
-        e.preventDefault();
-    
-        let modal = document.querySelector(".areaMkt");
-        modal.style.display = "none";
+    importanciaSetter(importancia);
+  };
 
-        let modal2 = document.querySelector(".telaResult");
-        modal2.style.display = "block";
+  // eslint-disable-next-line
+  function calculaMkt() {
+    var multiplicacao = null;
+
+    multiplicacao += resposta1 * importancia1;
+    multiplicacao += resposta2 * importancia2;
+    multiplicacao += resposta3 * importancia3;
+    multiplicacao += resposta4 * importancia4;
+    multiplicacao += resposta5 * importancia5;
+    multiplicacao += resposta6 * importancia6;
+    multiplicacao += resposta7 * importancia7;
+    multiplicacao += resposta8 * importancia8;
+    multiplicacao += resposta9 * importancia9;
+    multiplicacao += resposta10 * importancia10;
+
+    var resultado = multiplicacao / 60;
+    resultado = resultado * 100;
+
+    onPorcentagemMktChange(resultado.toFixed(0));
+  }
+
+  function fecharFormMaturidade4(e) {
+    e.preventDefault();
+    let modalOverlay = document.querySelector(".modal-overlay");
+    if (modalOverlay) {
+      modalOverlay.parentNode.removeChild(modalOverlay);
     }
 
-    return(
-        <div className="areaMkt">
-            <div className="formMkt">
-                <button className="close_area4" onClick={(e) => fecharFormMaturidade4(e)}></button>
-                <div className="dot2_area4"></div>
-                <div className="dot3_area4"></div>
-                <h2 className="titulo_maturidade_4">Marketing</h2>
-                <div onClick={() => {window.open("tutorial#tut_Maturidade", "_blank")
-                }}className="duvidaMkt"></div>
+    let modal = document.querySelector(".areaMkt");
+    modal.style.display = "none";
 
+    let modal2 = document.querySelector(".confirma");
+    modal2.style.display = "block";
+    window.scrollTo(0, 0);
+  }
+
+  return(
+    <div className="areaMkt">
+        <div className="formMkt">
+            <button className="close_area4" onClick={(e) => fecharFormMaturidade4(e)}></button>
+            <div className="dot2_area4"></div>
+            <div className="dot3_area4"></div>
+            <h2 className="titulo_maturidade_4">Marketing</h2>
+            <div onClick={() => {window.open("tutorial#tut_Maturidade", "_blank")
+            }}className="duvidaMkt"></div>
                     <table>
-                        <tr>
-                            <th className="primeiro-canto">PERGUNTA</th>
-                            <th>RESPOSTA</th>
-                            <th className="segundo-canto">IMPORTANCIA</th>
-                        </tr>
-
                         <tr>
                             <td className="pergunta1">1. Qual é a estratégia de marketing atual da empresa? Quais são 
                             os principais objetivos de marketing estabelecidos pela empresa? </td>
@@ -622,21 +589,21 @@ function Maturidade4({state, onPorcentagemMktChange}){
                         </tr>
                     </table>
 
-                    <img
-                        src={rightArrow}
-                        alt="Seta"
-                        className="setaEsquerdaMaturidade_4"
-                        onClick={(e) => irParaFormMaturidade3(e)}/>
-                    <img
-                        src={rightArrow}
-                        alt="Seta"
-                        className="setaDireitaMaturidade_4"
-                        onClick={(e) => irParaFormMaturidade5(e)}/>     
-
-            </div>
-        </div>
-        
-    );
+        <img
+          src={rightArrow}
+          alt="Seta"
+          className="setaEsquerdaMaturidade_4"
+          onClick={(e) => irParaFormMaturidade3(e)}
+        />
+        <img
+          src={rightArrow}
+          alt="Seta"
+          className="setaDireitaMaturidade_4"
+          onClick={(e) => irParaFormMaturidade5(e)}
+        />
+      </div>
+    </div>
+  );
 }
 
 export default Maturidade4;

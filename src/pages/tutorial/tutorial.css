@@ -352,18 +352,20 @@
   text-align: justify;
 }
 
-.tut_Maturidade {
+.tut_maturidade {
   z-index: 1;
   top: 20%;
   left: 10%;
   width: 80%;
   position: relative;
 }
-.tut_Maturidade h2{
+
+.tut_maturidade h2 {
   color: #ff9000;
   margin-bottom: 1%;
 }
-.tut_Maturidade p{
+
+.tut_maturidade p {
   width: 90%;
   margin-left: 4%;
   color: #252525;
@@ -424,7 +426,8 @@
   .tut_fourps,
   .tut_sintese,
   .tut_perfis_cliente,
-  .tut_proposta_valor {
+  .tut_proposta_valor,
+  .tut_maturidade {
     margin-top: 20%;
   }
 }
